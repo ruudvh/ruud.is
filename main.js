@@ -1,4 +1,4 @@
-window.onload = function exampleFunction() {
+window.onload = function mainFunction() {
 
 	// Giphy API defaults
 	const giphy = {
@@ -46,7 +46,7 @@ window.onload = function exampleFunction() {
 	static_audio.volume = 0.3;
 	let renderStatic = () => {
 		static_audio.play();
-		gif_wrap.style.backgroundImage ='url(https://media.giphy.com/media/45aI8f1nI1b071X96C/giphy.gif)';
+		gif_wrap.style.backgroundImage = 'url("./static/tv_static.gif")';
 	};
 
 	// Auto load new gif

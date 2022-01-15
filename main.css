@@ -51,13 +51,15 @@ h2 {
 }
 
 #gifbg {
-	background-image: url(https://media.giphy.com/media/45aI8f1nI1b071X96C/giphy.gif);
+	background-image: url("./static/tv_static.gif");
 	background-size: cover;
 	background-position: center;
 }
 
 .wrapper {
 	text-align: center;
+	word-break: break-word;
+	width: 90%;
 }
 
 .submsg {
