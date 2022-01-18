@@ -42,7 +42,7 @@ h2 {
 }
 #gifbg {
 	background-image: url("./static/tv_static.gif");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	z-index: 1;
 }
