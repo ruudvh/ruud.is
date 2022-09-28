@@ -13,7 +13,7 @@
 ## Built With
 * Plain HTML / CSS / JS
 * Gifs randomly provided by: [Giphy](www.giphy.com) API
-* Glitch effect by: [noriel](https://codepen.io/toperrr/pen/KKqMRjw?editors=1100)
+* TV inspired by: [Manz](https://codepen.io/manz/pen/MWoRMja)
 
 ## License
 Distributed under the MIT License. See `LICENSE.txt` for more information.

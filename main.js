@@ -5,7 +5,12 @@ window.onload = function mainFunction() {
 
 	const gifbg_div = document.getElementById("gifbg");
 	const author_img_div = document.getElementById("author-img");
-
+	
+	const channelDuration = 1000 * 10; // Auto loads new gif after x miliseconds
+	const channels = ["funny","code","animals","space","family","facepalm","new","politics","sports","animate","tv","movie"]
+	let currentChannel = 0; // Based on array `channels`, max 12 channels (max 11 on zero-based index)
+	let currentVolume = 3; // Volume of static (max 11 on zero-based index)
+	
 	// Giphy API defaults
 	const giphy = {
 		baseURL: "https://api.giphy.com/v1/gifs/",
@@ -56,8 +61,14 @@ window.onload = function mainFunction() {
 	};
 
 	// Static gif + sound
+	let on_audio = new Audio('static/tv_on.wav');
+	let off_audio = new Audio('static/tv_off.wav');
+	let dial_audio = new Audio('static/tv_dial.wav');
 	let static_audio = new Audio('static/tv_audio.wav');
-	static_audio.volume = 0.3;
+	on_audio.volume = 0.3;
+	off_audio.volume = 0.3;
+	dial_audio.volume = 0.3;
+	static_audio.volume = currentVolume / 10;
 	let renderStatic = () => {
 		static_audio.play();
 		gifbg_div.style.backgroundImage = 'url("./static/tv_static.gif")';
@@ -65,59 +76,50 @@ window.onload = function mainFunction() {
 
 	// Auto load new gif
 	let refresh;
-	const duration = 1000 * 10;
 	let refreshGif = () => {
 		clearInterval(refresh);
 		refresh = setInterval(function () {
 			renderStatic();
 			newGif();
-		}, duration);
+		}, channelDuration);
 	};
 
+	
 	/***************
-	 ** CONSOLE
+	 ** TV
 	 ***************/
+	 
+	// Get Channel Dials
+	const [channelButton, volumeButton] = document.querySelectorAll(".dial");
+	
+	// Rotate the Dial
+	const moveSelector = (button, direction = 1, event) => {
+	  event.preventDefault();
+	  const oldValue = button.style.getPropertyValue("--value");
+	  const newValue = parseInt(oldValue) + 30 * direction;
+	  
+	  dial_audio.play();
+	  button.style.setProperty("--value", `${newValue}deg`);
+	};
 
-	// TODO
-	// remove Jquery, switch to plain JS
-
-	//Enter button
-	$(document).on('keydown', function (e) {
-		var x = event.which || event.keyCode;
-		if (x === 13 || x == 13) {
-			var consoleLine = $('#tag-input').val();
-			executeLine(consoleLine);
-		}
-	});
-	$(document).on('keydown', function (e) {
-		var x = event.which || event.keyCode;
-		var line = $('#tag-input');
-		var length = line.val().length;
-		if (x != 8) {
-			line.attr("size", 1 + length);
+	// Change Channel
+	const changeChannel = (button, direction = 1, event) => {
+		moveSelector(button, 1, event);
+		
+		if (currentChannel < 11) {
+			currentChannel += 1;
 		} else {
-			line.attr("size", length * .95);
-		}
-		if (length === 0) {
-			$('#tag-input').attr("size", '14');
-		}
-	});
-
-	//Execute the line
-	function executeLine(command) {
-		let CurrentCommand = command.toLowerCase();
-		let giphyCat = CurrentCommand.replace("//", "").split(' ')[0];
-
-		if (giphyCat == '') {
-			giphyCat = 'funny';
-		}
+			currentChannel = 0;
+		}	
+		
+		currentChannelName = channels[currentChannel]; 
 		giphyURL = encodeURI(
 			giphy.baseURL +
 			giphy.type +
 			"?api_key=" +
 			giphy.apiKey +
 			"&tag=" +
-			giphyCat +
+			currentChannelName +
 			"&rating=" +
 			giphy.rating +
 			"&limit=" +
@@ -125,19 +127,44 @@ window.onload = function mainFunction() {
 		);
 
 		$("#tag-input").val('');
-		$("#tag-watching").text("Now watching: '" + giphyCat + "'");
+		$("#tag-watching").text("Now watching: '" + currentChannelName + "'");
 
 		renderStatic();
 		newGif();
 	}
+	channelButton.addEventListener("click", ev => changeChannel(channelButton, 1, ev));
+	channelButton.addEventListener("contextmenu", ev => changeChannel(channelButton, -1, ev));
+	
+	// Change Volume
+	const changeVolume = (button, direction = 1, event) => {
+		moveSelector(button, 1, event);
+		
+		if (currentVolume < 11) {
+			currentVolume += 1;
+		} else {
+			currentVolume = 0;
+		}
+		static_audio.volume = Math.min(currentVolume / 10, 1);
+	}
+	volumeButton.addEventListener("click", ev => changeVolume(volumeButton, 1, ev));
+	volumeButton.addEventListener("contextmenu", ev => changeVolume(volumeButton, -1, ev));
 
+	// Swith TV on/off
+	const [offButton, onButton] = document.querySelectorAll(".button");
+	const tv = document.querySelector(".tv");
+	onButton.addEventListener("click", () => {
+	  static_audio.volume = Math.min(currentVolume / 10, 1);
+	  on_audio.play();
+	  tv.classList.add("on");
+	});
+	offButton.addEventListener("click", () => {
+	  static_audio.volume = 0;
+	  off_audio.play();
+	  tv.classList.remove("on");
+	});
+	
 	/***************
 	 ** Init
 	 ***************/
-
-	// Load gif
-	newGif();
-
-	// Focus input field
-	$('#tag-input').focus();
+	 newGif();
 };

@@ -1,128 +1,673 @@
-* {
-	box-sizing: border-box;
+:root {
+  --television-width: 430px;
+  --television-height: 420px;
+  --television-bgcolor: #4c0d04;
+  --television-bgcolor-dark: #390801;
+}
+body {
+  margin: 0;
+  background: #2b0404;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4em;
+  flex-direction: column;
+}
+.content {
+  color: #80190a;
+  text-align:center;
 }
 
-html,
-body,
-h1,
-h2 {
-	padding: 0;
-	margin: 0;
-	font-family: 'Ubuntu Mono', monospace;
-	color: rgb(187,187,187);
-	font-size: 1em;
-	font-weight: 100;
+.content a {
+	color: #80190a;
 }
 
-.section {
-	background: transparent;
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	position: absolute;
-	top: 0;
-	left: 0;
+.tv {
+  width: var(--television-width);
+  height: var(--television-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.content-wrapper {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index:3;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
+.tv .television-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
 }
-#gifbg {
-	background-image: url("./static/tv_static.gif");
-	background-size: contain;
-	background-position: center;
-	z-index: 1;
+.tv .television-container .television {
+  width: 425px;
+  height: 300px;
+  border-radius: 10px;
+  background: var(--television-bgcolor);
+  box-shadow: 0 4px 12px #0009;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
-.header-container{
-	background: rgba(18, 18, 18, 0.8);
-	padding: 1em;
-	width: 100%;
+.tv .television-container .television .television-inner {
+  width: 95%;
+  height: 90%;
+  background: linear-gradient(to bottom, #454c45 5%, #232522 35% 45%);
+  border: 1px solid #807676;
+  box-shadow: 0 1px 2px #470404 inset;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
-.footer-container{
-	background: rgba(18, 18, 18, 0.8);
-	padding: 1em;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	width: 100%;
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container {
+  width: 75%;
+  border: 1px solid #222;
+  box-shadow: 0 2px 2px #888, 2px 0 2px #444, -2px 0 2px #444, 0 -2px 2px #111;
+  border-radius: 25px;
+  margin: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(70deg, #555 15%, transparent 30%),
+    repeating-conic-gradient(#222 0 30deg, #333 60deg, #222 90deg);
 }
-.now-watching{
-	display: flex;
-	flex-direction: row;
-	font-size: 0.75em;
-	justify-content: space-between;
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt {
+  width: 99%;
+  height: 95%;
+  background: #111;
+  box-shadow: 0 0 5px 2px #111, 0 0 10px 2px #1112;
+  border-radius: 55px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.src-text{
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	width: 50vw;
-	white-space: nowrap;
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen {
+  background: #302d30;
+  width: 95%;
+  height: 95%;
+  border-radius: 60px;
+  box-shadow: 0 0 5px 2px #111 inset;
+  overflow: hidden;
+  position: relative;
 }
-.src-img {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	float: left;
-	height: 30px;
-	margin-right: 10px;
-	width: 30px;
-	background-image: url("./static/tv_static.gif");
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen
+  .noise {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      #aaa4,
+      #8881,
+      #6664,
+      #4445,
+      #2228,
+      #4443,
+      transparent
+    ),
+    repeating-linear-gradient(transparent 0 2px, #25242950 2px 4px);
+  -webkit-animation: moveBand 8s linear infinite;
+  animation: moveBand 8s linear infinite;
+  z-index: 4;
+  position: relative;
+  opacity: 0.5;
 }
-.powered-by {
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen
+  .off {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#222, #1a1a1a, #111);
+  z-index: 5;
+  position: absolute;
+  top: 0;
 }
-.powered-by img {
-	width: 50px;
-	opacity: 0.5;
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen
+  .television-content {
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen
+  .television-content
+  .about-channel {
+  position: absolute;
+  z-index: 0;
+  height: 90%;
+  width: 90%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 15px;
+  left: 15px;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen
+  .television-content
+  #gifbg {
+  background-image: url("./static/tv_static.gif");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen
+  .television-content
+  .about-channel
+  .now-watching {
+  display: flex;
+  flex-direction: row;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen
+  .television-content
+  .about-channel
+  .now-watching
+  .src-text {
+  font-size: 0.5em;
+  color: #fff;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen
+  .television-content
+  .about-channel
+  .now-watching
+  .src-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  height: 30px;
+  margin-left: 5px;
+  width: 30px;
+  background-image: url("./static/tv_static.gif");
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-screen-container
+  .television-crt
+  .television-screen
+  .television-content
+  .about-channel
+  .powered-by
+  img {
+  width: 50px;
+}
+.tv .television-container .television .television-inner .television-lateral {
+  width: 20%;
+  margin: 10px;
+  margin-left: 0;
+  border: 2px solid #333;
+  border-left: 1px solid #444;
+  border-bottom: 2px solid #444;
+  border-radius: 5px;
+  box-shadow: -2px 2px 6px #111 inset, -1px 2px 3px #aaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #6e706f;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  box-shadow: -4px 2px 4px #111, 0 0 1px 2px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data {
+  color: #888;
+  font-size: 6px;
+  text-shadow: 0 0 2px #888;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform-origin: 50% 50%;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(2) {
+  transform: rotate(30deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(3) {
+  transform: rotate(60deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(4) {
+  transform: rotate(90deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(5) {
+  transform: rotate(120deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(6) {
+  transform: rotate(150deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(7) {
+  transform: rotate(180deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(8) {
+  transform: rotate(210deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(9) {
+  transform: rotate(240deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(10) {
+  transform: rotate(270deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(11) {
+  transform: rotate(300deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .data-container
+  .data:nth-child(12) {
+  transform: rotate(330deg);
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .dial-core {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: conic-gradient(#eee 0deg 45deg, #666 70deg 285deg, #eee 320deg);
+  position: absolute;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial
+  .selector {
+  position: absolute;
+  width: 75%;
+  background: linear-gradient(#666 30%, #aaa 40%);
+  height: 4px;
+  border: 1px solid #666;
+  border-radius: 4px / 8px;
+  transform: rotate(calc(var(--value) - 90deg));
+  transition: transform 0.25s linear;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial.channel-button {
+  background: #000;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial.volume-button {
+  background: #ccc;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .dial-container
+  .dial.volume-button
+  .data {
+  color: #444;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .power-container {
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  background-color: #444;
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .power-container
+  .button {
+  width: 15px;
+  height: 25px;
+  margin-right: 5px;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .power-container
+  .button.on-btn {
+  background-color: #620d0b;
+  border: 2px solid #6c0f0d;
+  border-left: 1px solid #370a09;
+  border-bottom: 2px solid #370a09;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .power-container
+  .button.off-btn {
+  background-color: #242323;
+  border: 2px solid #333;
+  border-left: 1px solid #0e0e0e;
+  border-bottom: 2px solid #0e0e0e;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .power-container
+  .button:active {
+  transform: translate(0, 0);
+  box-shadow: 0 0 1px 1px #000;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .speaker-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1px 0;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30%;
+}
+.tv
+  .television-container
+  .television
+  .television-inner
+  .television-lateral
+  .speaker-container
+  div {
+  width: 3px;
+  height: 3px;
+  background: radial-gradient(#000, #222);
+  border-radius: 50%;
+}
+.tv .television-container .television-base {
+  width: 350px;
+  height: 15px;
+  background: var(--television-bgcolor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px #0009;
+}
+.tv .television-container .foot-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.tv .television-container .foot-container .foot {
+  width: 10px;
+  height: 5px;
+  background: var(--television-bgcolor);
+}
+.tv .television-container .foot-container .foot.left {
+  box-shadow: 4px 0 var(--television-bgcolor-dark);
+}
+.tv .television-container .foot-container .foot.right {
+  box-shadow: -4px 0 var(--television-bgcolor-dark);
 }
 
-.wrapper {
-	word-break: break-word;
-	width: 90%;
+.tv .board {
+  width: 750px;
+  height: 15px;
+  background: var(--television-bgcolor-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 20px 30px #0009;
 }
 
-/***************
-** CONSOLE
-***************/
-.terminal-input {
-	background: rgba(0, 0, 0, 0);
-	font-family: monospace;
-	color: transparent;
-	font-size: 14px;
-	outline: none;
-	border: none;
-	-webkit-text-fill-color: rgb(187,187,187);
+/* Animation */
+.tv:not(.on) .off {
+  transition: opacity 0.5s;
+  opacity: 1;
 }
-.console-carrot {
-	vertical-align: middle;
-	background: #00ff00;
-	height: 15px;
-	width: 8px;
-	margin-left: -7px;
-	display: inline-block;
-	animation: blink 1s step-start 0s infinite;
+.tv.on .off {
+  opacity: 0;
 }
-
-::selection {
-	background-color: #fff;
-	color: #000;
+.tv:not(.on) .television-content {
+  transition: opacity 0.5s;
+  opacity: 0;
 }
-
-@keyframes blink {
-	50% {
-		opacity: 0.0;
-	}
+.tv.on .television-content {
+  opacity: 1;
+}
+@-webkit-keyframes moveBand {
+  0% {
+    background-position-y: 0, 0;
+  }
+  100% {
+    background-position-y: -221px, -150px;
+  }
+}
+@keyframes moveBand {
+  0% {
+    background-position-y: 0, 0;
+  }
+  100% {
+    background-position-y: -221px, -150px;
+  }
 }
