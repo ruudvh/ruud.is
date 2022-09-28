@@ -9,7 +9,7 @@ window.onload = function mainFunction() {
 	const channelDuration = 1000 * 10; // Auto loads new gif after x miliseconds
 	const channels = ["funny","code","animals","space","family","facepalm","new","politics","sports","animate","tv","movie"]
 	let currentChannel = 0; // Based on array `channels`, max 12 channels (max 11 on zero-based index)
-	let currentVolume = 3; // Volume of static (max 11 on zero-based index)
+	let currentVolume = 1; // Volume of static (max 11 on zero-based index)
 	
 	// Giphy API defaults
 	const giphy = {
