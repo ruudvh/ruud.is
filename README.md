@@ -12,7 +12,7 @@
 
 ## Built With
 * Plain HTML / CSS / JS
-* Gifs randomly provided by: [Giphy](www.giphy.com) API
+* Gifs randomly provided by: [Giphy](https://www.giphy.com)
 * TV inspired by: [Manz](https://codepen.io/manz/pen/MWoRMja)
 
 ## License
