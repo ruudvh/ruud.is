@@ -10,7 +10,6 @@
 </div>
 
 ## Acknowledgements and Credits
-* Made with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 * Gifs randomly provided by [Giphy](www.giphy.com)
 * TV inspired by [Manz](https://codepen.io/manz/pen/MWoRMja)
 
