@@ -43,6 +43,8 @@ jobs:
             "cairosvg>=2.5" \
             "mkdocs-git-revision-date-localized-plugin>=1.0" \
             "mkdocs-minify-plugin>=0.3" \
+            "mkdocs-git-authors-plugin>=0.6" \
+            "mkdocs-git-committers-plugin-2<1" \
             "pillow<10"
 
       - name: Install build
