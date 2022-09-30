@@ -52,4 +52,4 @@ jobs:
 
       - name: Deploy
         run: |
-          mkdocs gh-deploy --force --config-file mkdocs/mkdocs.yml --site-dir docs
+          mkdocs gh-deploy --force --config-file mkdocs/mkdocs.yml --site-dir notes
