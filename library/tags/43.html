@@ -23,187 +23,324 @@
   
       <div class="relative flex min-w-[1px] flex-col shadow-md dark:shadow-none print:border
               min-h-screen max-w-[1400px] break-words my-0 mx-auto overflow-hidden bg-slate-50 dark:bg-navy-900">
-         <nav class="header print:hidden">
-            <div class="header-container p-4 relative flex w-full bg-white dark:bg-navy-750 print:hidden">
-              <div class="flex w-full items-center justify-between">
-                <div class="flex flex-row items-center space-x-2 text-slate-800 dark:text-navy-50">
-                  <div class="h-7 w-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                    </svg>
-                  </div>
-                  <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
-                </div>
-                <div class="-mr-1.5 flex items-center space-x-2">
-                  <!-- Dark Mode Toggle -->
-                  <button
-                    @click="$store.global.isDarkModeEnabled = !$store.global.isDarkModeEnabled"
-                    class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                  >
-                    <svg
-                      x-show="$store.global.isDarkModeEnabled"
-                      x-transition:enter="transition-transform duration-200 ease-out absolute origin-top"
-                      x-transition:enter-start="scale-75"
-                      x-transition:enter-end="scale-100 static"
-                      class="h-6 w-6 text-amber-400"
-                      fill="currentColor"
-                      viewbox="0 0 24 24"
-                    >
-                      <path
-                        d="M11.75 3.412a.818.818 0 01-.07.917 6.332 6.332 0 00-1.4 3.971c0 3.564 2.98 6.494 6.706 6.494a6.86 6.86 0 002.856-.617.818.818 0 011.1 1.047C19.593 18.614 16.218 21 12.283 21 7.18 21 3 16.973 3 11.956c0-4.563 3.46-8.31 7.925-8.948a.818.818 0 01.826.404z"
-                      />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      x-show="!$store.global.isDarkModeEnabled"
-                      x-transition:enter="transition-transform duration-200 ease-out absolute origin-top"
-                      x-transition:enter-start="scale-75"
-                      x-transition:enter-end="scale-100 static"
-                      class="h-6 w-6 text-amber-400"
-                      viewbox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
+         <nav class="items-center justify-between px-7 py-4 relative flex w-full bg-white dark:bg-navy-750 print:hidden header">
+            <div class="flex flex-row items-center space-x-2 text-slate-800 dark:text-navy-50">
+              <button 
+                class="hidden sm:inline h-7 w-7"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>
+              </button>
+              <button 
+                @click="$dispatch('show-drawer', { drawerId: 'left-drawer' })"
+                class="inline sm:hidden h-7 w-7 text-primary dark:text-accent-light border-primary dark:border-accent-light"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>
+              </button>
+              <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
+            </div>
+            <div class="-mr-1.5 flex items-center space-x-2">
+              <!-- Dark Mode Toggle -->
+              <button
+                @click="$store.global.isDarkModeEnabled = !$store.global.isDarkModeEnabled"
+                class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+              >
+                <svg
+                  x-show="$store.global.isDarkModeEnabled"
+                  x-transition:enter="transition-transform duration-200 ease-out absolute origin-top"
+                  x-transition:enter-start="scale-75"
+                  x-transition:enter-end="scale-100 static"
+                  class="h-6 w-6 text-amber-400"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M11.75 3.412a.818.818 0 01-.07.917 6.332 6.332 0 00-1.4 3.971c0 3.564 2.98 6.494 6.706 6.494a6.86 6.86 0 002.856-.617.818.818 0 011.1 1.047C19.593 18.614 16.218 21 12.283 21 7.18 21 3 16.973 3 11.956c0-4.563 3.46-8.31 7.925-8.948a.818.818 0 01.826.404z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x-show="!$store.global.isDarkModeEnabled"
+                  x-transition:enter="transition-transform duration-200 ease-out absolute origin-top"
+                  x-transition:enter-start="scale-75"
+                  x-transition:enter-end="scale-100 static"
+                  class="h-6 w-6 text-amber-400"
+                  viewbox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
             </div>
           </nav>
 
-         <div class="main-wrapper">
+         <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-               <nav class="main-menu">
-   <div class="pb-4">
-      <div class="font-medium text-base">Browse</div>
-   </div>
-
-   <ul class="font-inter font-medium">
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-         <a
-           class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-           hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-           href="/library/index.html"
-           >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-         </svg>
-          <span>Books</span>
-        </a>
-      </li>
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-        <a
-          class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-          hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-          href="/library/read-books.html"
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+                <ul class="font-inter font-medium">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/index.html"
         >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          <span>Read Books</span>
-        </a>
-      </li>
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-        <a
-          class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-          hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-          href="/library/reading-list.html"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-          </svg>
-          <span>Reading List</span>
-        </a>
-      </li>
-      
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/authors.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+      </svg>
+      <span>Books</span>
+    </a>
+  </li>
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+    <a
+      class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+      href="/library/read-books.html"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      <span>Read Books</span>
+    </a>
+  </li>
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+    <a
+      class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+      href="/library/reading-list.html"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+      </svg>
+      <span>Reading List</span>
+    </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/authors.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
 </svg>                             
-              <span>Authors</span>
-         </a>
-      </li>
-     
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/series.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Authors</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/series.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
 </svg>                             
-              <span>Series</span>
-         </a>
-      </li>
-     
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/publishers.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Series</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/publishers.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
 </svg>                             
-              <span>Publishers</span>
-         </a>
-      </li>
-     
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/languages.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Publishers</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/languages.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
 </svg>                             
-              <span>Languages</span>
-         </a>
-      </li>
-     
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/ratings.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Languages</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/ratings.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
 </svg>                             
-              <span>Ratings</span>
-         </a>
-      </li>
-     
-      <li class="text-slate-800 dark:text-navy-50">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            bg-slate-150 dark:bg-navy-500"
-            href="/library/tags.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Ratings</span>
+      </a>
+  </li>
+  
+  <li class="text-slate-800 dark:text-navy-50">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        bg-slate-150 dark:bg-navy-500"
+        href="/library/tags.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
     <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
 </svg>                             
-              <span>Tags</span>
-         </a>
-      </li>
-     
-    </ul>
-</nav>
+          <span>Tags</span>
+      </a>
+  </li>
+  
+</ul>
+              </nav>
+              <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
+                <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
+                <div class="fixed left-0 top-0 z-[101] h-full w-72">
+                  <div class="flex h-full w-full transform-gpu flex-col bg-white transition-transform duration-200 dark:bg-navy-700" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="ease-in" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" style="display: none;">
+                    <div class="flex flex-row items-center px-5 py-4 space-x-2 text-slate-800 dark:text-navy-50">
+                      <button class="h-7 w-7">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                        </svg>
+                      </button>
+                      <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
+                    </div>
+                    <nav class="grow space-y-1.5 px-5 font-inter font-medium">
+                      <ul class="font-inter font-medium">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/index.html"
+        >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+      </svg>
+      <span>Books</span>
+    </a>
+  </li>
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+    <a
+      class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+      href="/library/read-books.html"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      <span>Read Books</span>
+    </a>
+  </li>
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+    <a
+      class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+      href="/library/reading-list.html"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+      </svg>
+      <span>Reading List</span>
+    </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/authors.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+</svg>                             
+          <span>Authors</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/series.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+</svg>                             
+          <span>Series</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/publishers.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+</svg>                             
+          <span>Publishers</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/languages.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
+</svg>                             
+          <span>Languages</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/ratings.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+</svg>                             
+          <span>Ratings</span>
+      </a>
+  </li>
+  
+  <li class="text-slate-800 dark:text-navy-50">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        bg-slate-150 dark:bg-navy-500"
+        href="/library/tags.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
+</svg>                             
+          <span>Tags</span>
+      </a>
+  </li>
+  
+</ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
             
          
-            <div class="content-wrapper">
+            <div class="w-full overflow-hidden">
                 
    <div x-data="{activeTab:'tabCards'}">
       <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
@@ -248,15 +385,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/125.jpg"
         alt="Four Thousand Weeks: Time Management for Mortals"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Four Thousand Weeks: Time Management for Mortals
             </div>
@@ -304,21 +441,23 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p>AN INSTANT NEW YORK TIMES BESTSELLER"Provocative and appealing . . . well worth your extremely limited time.</p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p>AN INSTANT NEW YORK TIMES BESTSELLER"Provocative and appealing . . . well worth your extremely limited time.</p>
 
 <p>" —Barbara Spindel, The Wall Street JournalThe average human lifespan is absurdly, insultingly brief. Assuming you live to be eighty, you have just over four thousand weeks.</p>
 
 <p>Nobody needs telling there isn’t enough time. We’re obsessed with our lengthening to-do lists, our overfilled inboxes, work-life balance, and the ceaseless battle against distraction; and we’re deluged with advice on becoming more productive and efficient, and “life hacks” to optimize our days. But such techniques often end up making things worse. The sense of anxious hurry grows more intense, and still the most meaningful parts of life seem to lie just beyond the horizon. Still, we rarely make the connection between our daily struggles with time and the ultimate time management problem: the challenge of how best to use our four thousand weeks.</p>
 
 <p>Drawing on the insights of both ancient and contemporary philosophers, psychologists, and spiritual teachers, Oliver Burkeman delivers an entertaining, humorous, practical, and ultimately profound guide to time and time management. Rejecting the futile modern fixation on “getting everything done,” Four Thousand Weeks introduces readers to tools for constructing a meaningful life by embracing finitude, showing how many of the unhelpful ways we’ve come to think about time aren’t inescapable, unchanging truths, but choices we’ve made as individuals and as a society—and that we could do things differently.</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -421,12 +560,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780374159122</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780374159122</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -584,15 +725,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/93.jpg"
         alt="The Bro Code"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               The Bro Code
             </div>
@@ -642,18 +783,20 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Everyone’s life is governed by an internal code of conduct. Some call it morality. Others call it religion. But Bros in the know call this Holy Grail <em>The Bro Code.</em> </p>
 <p><em>The Bro Code</em> is a living document, much like the Constitution. Except instead of outlining a government, or the Bill of Rights, or anything even resembling laws, <em>The Bro Code</em> provides men with all the rules they need to know in order to become a “bro” and behave properly among other bros. Historically a spoken tradition passed from one generation to the next and dating back to the American Revolution, the official code of conduct for Bros appears here in its published form for the first time ever. By upholding the tenets of this sacred and legendary document, any dude can learn to achieve Bro-dom. </p>
 <p>Containing approximately 150 “unspoken” rules, this code of conduct for bros can range from the simple (bros before hos) to the complex (the hot-to-crazy ratio, complete with bar graphs and charts). With helpful sidebros <em>The Bro Code</em> will help any ordinary guy become the best bro he can be. Let ultimate bro and coauthor Barney Stinson and his book, <em>The Bro Code</em> share their wisdom, lest you be caught making eye contact in a devil’s three-way (two dudes, duh).</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -758,12 +901,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781439152935</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781439152935</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -914,15 +1059,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/66.jpg"
         alt="How to Win Friends and Influence People in the Digital Age"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               How to Win Friends and Influence People in the Digital Age
             </div>
@@ -972,18 +1117,20 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>AN UP-TO-THE -MINUTE ADAPTATION OF DALE CARNEGIE ’S TIMELESS PRESCRIPTIONS FOR THE DIGITAL AGE</p>
 <p>DALE CARNEGIE’s commonsense approach to communicating has endured for a century, touching millions and millions of readers. The only diploma that hangs in Warren Buffett’s office is his certificate from Dale Carnegie Training. Lee Iacocca credits Carnegie for giving him the courage to speak in public. Dilbert creator Scott Adams called Carnegie’s teachings “life-changing.”</p>
 <p>In today’s world, where more and more of our communication takes place across wires and screens, Carnegie’s lessons have not only lasted but become all the more critical. Though he never could have predicted technology’s trajectory, Carnegie proves a wise and helpful teacher in this digital landscape. To demonstrate the many ways his lessons remain relevant, Dale Carnegie &amp; Associates, Inc., has reimagined his prescriptions and his advice for this difficult digital age. We may communicate today with different tools and with greater speed, but Carnegie’s advice on how to communicate, lead, and work efficiently remains priceless across the ages.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -1088,12 +1235,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">None</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">None</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -1230,15 +1379,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/64.jpg"
         alt="Harry Lorayne's Page-A-Minute Memory Book"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Harry Lorayne's Page-A-Minute Memory Book
             </div>
@@ -1286,15 +1435,17 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              None
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                None
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -1397,12 +1548,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780207153136</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780207153136</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -1522,15 +1675,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/57.jpg"
         alt="It Doesn't Have to Be Crazy at Work"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               It Doesn't Have to Be Crazy at Work
             </div>
@@ -1580,16 +1733,18 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Jason Fried and David Heinemeier Hansson, the authors of the New York Times bestseller Rework, are back with a manifesto to combat all your modern workplace worries and fears. It Doesn't Have to Be Crazy at Work is a direct successor to Rework, the instant bestseller that showed readers a new path to working effectively. Now Fried and Heinemeier Hansson have returned with a new strategy for the ideal company culture - what they call the calm company . It is a direct attack on the chaos, anxiety and stress that plagues millions of workplaces and billions of people working their day jobs. Working to breaking point with long hours, excessive workload, and a lack of sleep have become a badge of honour for many people these days, when it should be a mark of stupidity. This isn't just a problem for large organisations; individuals, contractors and solopreneurs are burning themselves out in the very same way. As the authors reveal, the answer isn't more hours. Rather, it's less waste and fewer things that induce distraction, always-on anxiety and stress. It is time to stop celebrating crazy and start celebrating calm. Fried and Hansson have the proof to back up their argument. Calm has been the cornerstone of their company's culture since Basecamp began twenty years ago. Destined to become the management guide for the next generation, It Doesn't Have to Be Crazy at Work is a practical and inspiring distillation of their insights and experiences. It isn't a book telling you what to do. It's a book showing you what they've done-and how any manager or executive no matter the industry or size of the company, can do it too.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -1694,12 +1849,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780062874795</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780062874795</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -1852,15 +2009,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/56.jpg"
         alt="What Color Is Your Parachute? 2021: Your Guide to a Lifetime of Meaningful Work and Career Success"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               What Color Is Your Parachute? 2021: Your Guide to a Lifetime of Meaningful Work and Career Success
             </div>
@@ -1910,20 +2067,22 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>With timeless advice, up-to-the-minute insights, and more than ten million copies sold over fifty years, the world’s most popular and best-selling career guide is fully revised and expanded for 2021.</p>
 <p>In today’s challenging job-market, as recent grads face a shifting economic landscape and seek work that pays and inspires, as workers are laid off mid-career, and as people search for an inspiring work-life change, the time-tested advice of What Color Is Your Parachute? is needed more than ever. This completely updated edition features the latest resources, strategies, and perspectives on today’s job market, revealing surprising advice on what works—and what doesn’t—so you can focus your efforts on tactics that yield results.</p>
 <p>This practical manual has been fully revised for 2021 by Vanderbilt University Career Center Director Katharine Brooks, EdD, with modern advice on the job hunt strategies that are working today, such as building an online resume, making the most of social media tools to network effectively, interviewing virtually with confidence, and negotiating the best salary possible.</p>
 <p>At its core is Richard N. Bolles’s famed Flower Exercise, a unique self-inventory that helps you design your career—and your life—around your key passions, transferable skills, traits, and more.</p>
 <p>With the unique and authoritative guidance of What Color Is Your Parachute?, job-hunters and career changers will have all the tools they need to discover—and land—their dream job.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -2028,12 +2187,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">None</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">None</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -2164,15 +2325,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/49.jpg"
         alt="Focus"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Focus
             </div>
@@ -2220,16 +2381,18 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>The author writes, "At the heart of this simple book lies the key to many of the struggles we face these days, from being productive and achieving our goals, to getting healthy and fit in the face of fast food and inactivity, to finding simplicity and peace amidst chaos and confusion. That key is itself simple: focus. Our ability to focus will allow us to create in ways that perhaps we haven't in years. It'll allow us to slow down and find peace of mind. It'll allow us to simplify and focus on less-on the essential things, the things that matter most.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -2332,12 +2495,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781434103079</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781434103079</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -2490,15 +2655,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/48.jpg"
         alt="The Memory Book: The Classic Guide to Improving Your Memory at Work, at School, and at Play"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               The Memory Book: The Classic Guide to Improving Your Memory at Work, at School, and at Play
             </div>
@@ -2548,20 +2713,22 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Unleash the hidden power of your mind</p>
 <p>It’s there in all of us. A mental resource we don’t think much about. Memory. And now there’s a way to master its power....</p>
 <p>Through Harry Lorayne and Jerry Lucas’s simple, fail-safe memory system, you can become more effective, more imaginative, and more powerful at work, at school, in sports, and at play.</p>
 <p>• Read with speed and greater understanding.<br>• File phone numbers, data, figures, and appointments right in your head.<br>• Send those birthday and anniversary cards on time.<br>• Learn foreign words and phrases with ease.<br>• Shine in the classroom and shorten study hours.<br>• Dominate social situations: Remember and use important personal details.</p>
 <p>Begin today. The change in your life will be unforgettable</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -2666,12 +2833,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780345410023</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780345410023</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -2796,15 +2965,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/47.jpg"
         alt="How to Develop a Super Power Memory"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               How to Develop a Super Power Memory
             </div>
@@ -2852,16 +3021,18 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Harry Lorayne, who has trained his own memory to the point where he is acclaimed as having the most phenomenal memory in the world, has written the most practical and lucid memory-training book ever. Now, at last, with the famous Lorayne Link-and-Peg System, readers will be able to recall faces, names, appointments and anything else they need to acquire a winning edge.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -2964,12 +3135,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780722527849</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780722527849</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -3104,15 +3277,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/39.jpg"
         alt="How to Talk to Anyone: 92 Little Tricks for Big Success in Relationships"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               How to Talk to Anyone: 92 Little Tricks for Big Success in Relationships
             </div>
@@ -3160,10 +3333,11 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Never be at a loss for words again!</p>
 <p>Perfect your people skills with his fun, witty and informative guide, containing 92 little tricks to create big success in personal and business relationships.</p>
 <p>In How To Talk To Anyone, bestselling relationships author and internationally renowned life coach Leil Lowndes reveals the secrets and psychology behind successful communication. These extremely usable and intelligent techniques include how to:</p>
@@ -3185,11 +3359,12 @@
 <p>Work a party the way a politician works a room</p>
 <p>Always come across confident, credible, and charismatic wherever you are</p>
 <p>How to Talk to Anyone , which is an update of her popular book, Talking the Winner's Way (see the 5-star reviews of the latter) is based on solid research about techniques that work!</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -3292,12 +3467,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780071418584</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780071418584</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -3460,15 +3637,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/34.jpg"
         alt="Working PeopleSmart: 6 Strategies for Success"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Working PeopleSmart: 6 Strategies for Success
             </div>
@@ -3518,16 +3695,18 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Bringing out the best in others is good business. When we bring both respect and interpersonal savvy to our work relationships, we do more than make people feel good. We enhance personal and organizational performance. And as the workplace grows more complex and competitive, managing our work relationships becomes even more essential and difficult. Now more than ever we need to work people smart. Working PeopleSmart describes the six core strategies used by people-smart individuals and shows how to apply them in the toughest workplace situations. Individuals who are people smart know how to open others up rather than make them defensive or resistant. They have a knack for diffusing tension rather than creating it. They set a good example through their own behavior on the job and can inspire and influence others with less developed skills. Working PeopleSmart can serve as your virtual coach to guide you through difficult work relationships skillfully. How do you deal with a critical colleague? Make your boss listen to you? React to an offensive joke? Get the resources you need? The authors look at over 50 real-life situations and offer people-smart prescriptions for handling them effectively. They provide coaching tips for each scenario and describe exactly what a people-smart response sounds like. As two psychologists with both organizational and clinical expertise, coauthors Mel Silberman and Freda Hansburg are highly qualified to deliver the message that we can emerge from even the toughest interpersonal moments on the job with dignity and grace. Where other books rely on typologies that categorize people according to their interpersonal styles and then offer advice on how to deal with each type, the strategies described in Working PeopleSmart are straightforward and universal. They can be used immediately to deal with any type of person or any situation, no matter how difficult or sensitive.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -3632,12 +3811,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781576752081</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781576752081</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -3778,15 +3959,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/30.jpg"
         alt="Release Your Brilliance: The 4 Steps to Transforming Your Life and Revealing Your Genius to the World"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Release Your Brilliance: The 4 Steps to Transforming Your Life and Revealing Your Genius to the World
             </div>
@@ -3834,17 +4015,19 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Each of us is born brilliant. Then we spend the rest of our lives having our brilliance buried by people, circumstances, and experiences. Eventually, we forget that we ever had genius and special talents, and our brilliance is locked away in a vault deep within. So we settle for who we are, instead of striving for who we were meant to be.</p>
 <p>Release Your Brilliance provides the combination to the vault where your brilliance is kept. After struggling for thirty-two years with disillusion, defeat, and despair, author Simon T. Bailey cracked the code to personal transformation, turning his life around and becoming a highly successful entrepreneur, respected family man and community leader. Using the metaphor that we're all diamonds in the rough, Simon shares the four key steps to cut and polish the gem that is you in order to reawaken your genius, reignite your internal light, and release your potential. He guides your transformation with interactive tools such as Personal Appraisal exercises, Diamond Polishing action steps, and true stories of Living Diamonds. Join the thousands of individuals and organizations worldwide who've sat down with Simon and learned to create lasting change and release their brilliance!</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -3947,12 +4130,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780061752056</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780061752056</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -4084,15 +4269,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/21.jpg"
         alt="How To Stop Worrying And Start Living"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               How To Stop Worrying And Start Living
             </div>
@@ -4142,10 +4327,11 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>The book 'How to stop worrying &amp; start living' suggest many ways to conquer worry and lead a wonderful life.</p>
 <p>The book mentions fundamental facts to know about worry and magic formula for solving worry-some situations.</p>
 <p>Psychologists &amp; Doctors' view:</p>
@@ -4159,11 +4345,12 @@
 <p>The book offers 7 ways to cultivate a mental attitude that will bring you peace and happiness. Also, the golden rule for conquering worry, keeping your energy &amp; spirits high.</p>
 <p>The book consists of some True Stories which will help the readers in conquering worry to lead you to success in life.</p>
 <p>The book is full of similar incidences and narrations which will make our readers to understand the situation in an easy way and lead a happy life. A must read book for everyone.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -4268,12 +4455,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780671035976</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780671035976</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -4434,15 +4623,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/19.jpg"
         alt="How to Win Friends and Influence People"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               How to Win Friends and Influence People
             </div>
@@ -4490,10 +4679,11 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>The most famous confidence-boosting book ever published; with sales of over 16 million copies worldwide Millions of people around the world have improved their lives based on the teachings of Dale Carnegie. In How to Win Friends and Influence People, he offers practical advice and techniques, in his exuberant and conversational style, for how to get out of a mental rut and make life more rewarding. His advice has stood the test of time and will teach you how to: - make friends quickly and easily - increase your popularity - persuade people to follow your way of thinking - enable you to win new clients and customers - become a better speaker - boost enthusiasm among your colleagues This classic book will turn your relationships around and improve your interactions with everyone in your life. Dale Carnegie, known as 'the arch-priest of the art of making friends', pioneered the development of personal business skills, self-confidence and motivational techniques. His books - most notably How to Win Friends and Influence People - have sold tens of millions worldwide and, even in today's changing climate, they remain as popular as ever.</p>
 <p>In the present book, How to Win Friends and Influence People, Dale Carnegie says, "You can make someone want to do what you want them to do by seeing the situation from the other person's point of view and arousing in the other person an eager want.</p>
 <p>" You learn how to make people like you, win people over to your way of thinking, and change people without causing offense or arousing resentment. For instance, "let the other person feel that the idea is his or hers" and "talk about your own mistakes before criticizing the other person.</p>
@@ -4501,11 +4691,12 @@
 <p>In the present book, How to Win Friends and Influence People, Dale Carnegie says, "You can make someone want to do what you want them to do by seeing the situation from the other person's point of view and arousing in the other person an eager want.</p>
 <p>" You learn how to make people like you, win people over to your way of thinking, and change people without causing offense or arousing resentment. For instance, "let the other person feel that the idea is his or hers" and "talk about your own mistakes before criticizing the other person.</p>
 <p>" This book is all about building relationships. With good relationships, personal and business successes are easy and swift to achieve.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -4608,12 +4799,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781409005216</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781409005216</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -4754,15 +4947,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/5.jpg"
         alt="Rework"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Rework
             </div>
@@ -4812,20 +5005,22 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Most business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you're looking for a book like that, put this one back on the shelf.</p>
 <p>Rework shows you a better, faster, easier way to succeed in business. Read it and you'll know why plans are actually harmful, why you don't need outside investors, and why you're better off ignoring the competition. The truth is, you need less than you think. You don't need to be a workaholic. You don't need to staff up. You don't need to waste time on paperwork or meetings. You don't even need an office. Those are all just excuses.</p>
 <p>What you really need to do is stop talking and start working. This book shows you the way. You'll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you.</p>
 <p>With its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who’s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of "downsizing," and artists who don’t want to starve anymore will all find valuable guidance in these pages.</p>
 <p>From the Hardcover edition.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -4930,12 +5125,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780307463760</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780307463760</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -5102,7 +5299,7 @@
             </div>
         </div>
 
-        <div class="text-center p-2">
+        <div class="px-7 text-center p-2">
           Copyright © 2022. Made by <a class="underline decoration-solid" href="https://ruud.is">ruud</a>.
         </div>
     </div>

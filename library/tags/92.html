@@ -23,187 +23,324 @@
   
       <div class="relative flex min-w-[1px] flex-col shadow-md dark:shadow-none print:border
               min-h-screen max-w-[1400px] break-words my-0 mx-auto overflow-hidden bg-slate-50 dark:bg-navy-900">
-         <nav class="header print:hidden">
-            <div class="header-container p-4 relative flex w-full bg-white dark:bg-navy-750 print:hidden">
-              <div class="flex w-full items-center justify-between">
-                <div class="flex flex-row items-center space-x-2 text-slate-800 dark:text-navy-50">
-                  <div class="h-7 w-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                    </svg>
-                  </div>
-                  <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
-                </div>
-                <div class="-mr-1.5 flex items-center space-x-2">
-                  <!-- Dark Mode Toggle -->
-                  <button
-                    @click="$store.global.isDarkModeEnabled = !$store.global.isDarkModeEnabled"
-                    class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-                  >
-                    <svg
-                      x-show="$store.global.isDarkModeEnabled"
-                      x-transition:enter="transition-transform duration-200 ease-out absolute origin-top"
-                      x-transition:enter-start="scale-75"
-                      x-transition:enter-end="scale-100 static"
-                      class="h-6 w-6 text-amber-400"
-                      fill="currentColor"
-                      viewbox="0 0 24 24"
-                    >
-                      <path
-                        d="M11.75 3.412a.818.818 0 01-.07.917 6.332 6.332 0 00-1.4 3.971c0 3.564 2.98 6.494 6.706 6.494a6.86 6.86 0 002.856-.617.818.818 0 011.1 1.047C19.593 18.614 16.218 21 12.283 21 7.18 21 3 16.973 3 11.956c0-4.563 3.46-8.31 7.925-8.948a.818.818 0 01.826.404z"
-                      />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      x-show="!$store.global.isDarkModeEnabled"
-                      x-transition:enter="transition-transform duration-200 ease-out absolute origin-top"
-                      x-transition:enter-start="scale-75"
-                      x-transition:enter-end="scale-100 static"
-                      class="h-6 w-6 text-amber-400"
-                      viewbox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
+         <nav class="items-center justify-between px-7 py-4 relative flex w-full bg-white dark:bg-navy-750 print:hidden header">
+            <div class="flex flex-row items-center space-x-2 text-slate-800 dark:text-navy-50">
+              <button 
+                class="hidden sm:inline h-7 w-7"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>
+              </button>
+              <button 
+                @click="$dispatch('show-drawer', { drawerId: 'left-drawer' })"
+                class="inline sm:hidden h-7 w-7 text-primary dark:text-accent-light border-primary dark:border-accent-light"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>
+              </button>
+              <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
+            </div>
+            <div class="-mr-1.5 flex items-center space-x-2">
+              <!-- Dark Mode Toggle -->
+              <button
+                @click="$store.global.isDarkModeEnabled = !$store.global.isDarkModeEnabled"
+                class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+              >
+                <svg
+                  x-show="$store.global.isDarkModeEnabled"
+                  x-transition:enter="transition-transform duration-200 ease-out absolute origin-top"
+                  x-transition:enter-start="scale-75"
+                  x-transition:enter-end="scale-100 static"
+                  class="h-6 w-6 text-amber-400"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M11.75 3.412a.818.818 0 01-.07.917 6.332 6.332 0 00-1.4 3.971c0 3.564 2.98 6.494 6.706 6.494a6.86 6.86 0 002.856-.617.818.818 0 011.1 1.047C19.593 18.614 16.218 21 12.283 21 7.18 21 3 16.973 3 11.956c0-4.563 3.46-8.31 7.925-8.948a.818.818 0 01.826.404z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x-show="!$store.global.isDarkModeEnabled"
+                  x-transition:enter="transition-transform duration-200 ease-out absolute origin-top"
+                  x-transition:enter-start="scale-75"
+                  x-transition:enter-end="scale-100 static"
+                  class="h-6 w-6 text-amber-400"
+                  viewbox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
             </div>
           </nav>
 
-         <div class="main-wrapper">
+         <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-               <nav class="main-menu">
-   <div class="pb-4">
-      <div class="font-medium text-base">Browse</div>
-   </div>
-
-   <ul class="font-inter font-medium">
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-         <a
-           class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-           hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-           href="/library/index.html"
-           >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-         </svg>
-          <span>Books</span>
-        </a>
-      </li>
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-        <a
-          class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-          hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-          href="/library/read-books.html"
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+                <ul class="font-inter font-medium">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/index.html"
         >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          <span>Read Books</span>
-        </a>
-      </li>
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-        <a
-          class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-          hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-          href="/library/reading-list.html"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-          </svg>
-          <span>Reading List</span>
-        </a>
-      </li>
-      
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/authors.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+      </svg>
+      <span>Books</span>
+    </a>
+  </li>
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+    <a
+      class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+      href="/library/read-books.html"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      <span>Read Books</span>
+    </a>
+  </li>
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+    <a
+      class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+      href="/library/reading-list.html"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+      </svg>
+      <span>Reading List</span>
+    </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/authors.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
 </svg>                             
-              <span>Authors</span>
-         </a>
-      </li>
-     
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/series.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Authors</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/series.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
 </svg>                             
-              <span>Series</span>
-         </a>
-      </li>
-     
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/publishers.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Series</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/publishers.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
 </svg>                             
-              <span>Publishers</span>
-         </a>
-      </li>
-     
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/languages.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Publishers</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/languages.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
 </svg>                             
-              <span>Languages</span>
-         </a>
-      </li>
-     
-      <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-            href="/library/ratings.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Languages</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/ratings.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
 </svg>                             
-              <span>Ratings</span>
-         </a>
-      </li>
-     
-      <li class="text-slate-800 dark:text-navy-50">
-          <a
-            class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-            bg-slate-150 dark:bg-navy-500"
-            href="/library/tags.html"
-          >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <span>Ratings</span>
+      </a>
+  </li>
+  
+  <li class="text-slate-800 dark:text-navy-50">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        bg-slate-150 dark:bg-navy-500"
+        href="/library/tags.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
     <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
 </svg>                             
-              <span>Tags</span>
-         </a>
-      </li>
-     
-    </ul>
-</nav>
+          <span>Tags</span>
+      </a>
+  </li>
+  
+</ul>
+              </nav>
+              <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
+                <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
+                <div class="fixed left-0 top-0 z-[101] h-full w-72">
+                  <div class="flex h-full w-full transform-gpu flex-col bg-white transition-transform duration-200 dark:bg-navy-700" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="ease-in" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" style="display: none;">
+                    <div class="flex flex-row items-center px-5 py-4 space-x-2 text-slate-800 dark:text-navy-50">
+                      <button class="h-7 w-7">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                        </svg>
+                      </button>
+                      <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
+                    </div>
+                    <nav class="grow space-y-1.5 px-5 font-inter font-medium">
+                      <ul class="font-inter font-medium">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/index.html"
+        >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+      </svg>
+      <span>Books</span>
+    </a>
+  </li>
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+    <a
+      class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+      href="/library/read-books.html"
+    >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      <span>Read Books</span>
+    </a>
+  </li>
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+    <a
+      class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+      href="/library/reading-list.html"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+      </svg>
+      <span>Reading List</span>
+    </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/authors.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+</svg>                             
+          <span>Authors</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/series.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+</svg>                             
+          <span>Series</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/publishers.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+</svg>                             
+          <span>Publishers</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/languages.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
+</svg>                             
+          <span>Languages</span>
+      </a>
+  </li>
+  
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
+        href="/library/ratings.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+</svg>                             
+          <span>Ratings</span>
+      </a>
+  </li>
+  
+  <li class="text-slate-800 dark:text-navy-50">
+      <a
+        class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
+        bg-slate-150 dark:bg-navy-500"
+        href="/library/tags.html"
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
+    <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
+</svg>                             
+          <span>Tags</span>
+      </a>
+  </li>
+  
+</ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
             
          
-            <div class="content-wrapper">
+            <div class="w-full overflow-hidden">
                 
    <div x-data="{activeTab:'tabCards'}">
       <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
@@ -248,15 +385,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/148.jpg"
         alt="The Kissing Bug"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               The Kissing Bug
             </div>
@@ -304,18 +441,20 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p>Who does the United States take care of and who does it leave behind? This is a riveting investigation of infectious disease, poverty, racism, and for-profit health care—and the harm caused by decades of silence.  </p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p>Who does the United States take care of and who does it leave behind? This is a riveting investigation of infectious disease, poverty, racism, and for-profit health care—and the harm caused by decades of silence.  </p>
 <p>Growing up in a New Jersey factory town in the 1980s, Daisy Hernández believed that her aunt had become deathly ill from eating an apple. No one in her family, in either the United States or Colombia, spoke of infectious diseases, and even into her thirties, she only knew that her aunt had died of a rare illness called Chagas. But as Hernández dug deeper, she discovered that Chagas—or the kissing bug disease—is more prevalent in the United States than the Zika virus. Today, more than three hundred thousand Americans have Chagas.  </p>
 <p>Why do some infectious diseases make headlines and others fall by the wayside? After her aunt's death, Hernández begins searching for answers about who our nation chooses to take care of and who we ignore. Crisscrossing the country, she interviews patients, epidemiologists, and even veterinarians with the Department of Defense. She learns that outside of Latin America, the United States is the only country with the native insects—the "kissing bugs"—that carry the Chagas parasite. She spends a night in southwest Texas hunting the dreaded bug with university researchers. She also gets to know patients, like a mother whose premature baby was born infected with the parasite, his heart already damaged. And she meets one cardiologist battling the disease in Los Angeles County with local volunteers.  </p>
 <p>The Kissing Bug tells the story of how poverty, racism, and public policies have conspired to keep this disease hidden—and how the disease intersects with Hernández's own identity as a niece, sister, and daughter; a queer woman; a writer and researcher; and a citizen of a country that is only beginning to address the harms caused by Chagas and the dangers it poses. A riveting and nuanced investigation into racial politics and for-profit health care in the United States, The Kissing Bug reveals the intimate history of a marginalized disease and connects us to the lives at the center of it all.</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -418,12 +557,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781953534194</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781953534194</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -572,15 +713,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/147.jpg"
         alt="Real Estate"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Real Estate
             </div>
@@ -630,20 +771,22 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>From one of the great thinkers and writers of our time, comes the highly anticipated final instalment in Deborah Levy's critically acclaimed 'Living Autobiography'<br>'I can't think of any writer aside from Virginia Woolf who writes better about what it is to be a woman' <em>Observer</em> on <em>The Cost of Living</em> </p>
 <p>Following the international critical acclaim of <em>The Cost of Living</em> , this final volume of Deborah Levy's 'Living Autobiography' is an exhilarating, thought-provoking and boldly intimate meditation on home and the spectres that haunt it. </p>
 <p style="font-style: italic">'I began to wonder what myself and all unwritten and unseen women would possess in their property portfolios at the end of their lives. Literally, her physical property and possessions, and then everything else she valued, though it might not be valued by society. What might she claim, own, discard and bequeath? Or is she the real estate, owned by patriarchy? In this sense, Real Estate is a tricky business. We rent it and buy it, sell and inherit it - but we must also knock it down.' </p>
 <p>'Wise, subtle and ironic, Levy's every sentence is a masterpiece of clarity and poise... A brilliant writer' <em>Daily Telegraph</em> on <em>The Cost of Living</em> </p>
 <p>'Extraordinary and beautiful, suffused with wit and razor-sharp insights' <em>Financial Times</em> on <em>The Cost of Living</em></p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -748,12 +891,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780241268018</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780241268018</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -896,15 +1041,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/146.jpg"
         alt="White Magic"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               White Magic
             </div>
@@ -952,17 +1097,19 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Throughout her life, Elissa Washuta has been surrounded by cheap facsimiles of Native spiritual tools and occult trends, “starter witch kits” of sage, rose quartz, and tarot cards packaged together in paper and plastic. Following a decade of abuse, addiction, PTSD, and heavy-duty drug treatment for a misdiagnosis of bipolar disorder, she felt drawn to the real spirits and powers her dispossessed and discarded ancestors knew, while she undertook necessary work to find love and meaning. </p>
 <p>In this collection of intertwined essays, she writes about land, heartbreak, and colonization, about life without the escape hatch of intoxication, and about how she became a powerful witch. She interlaces stories from her forebears with cultural artifacts from her own life— <em>Twin Peaks</em> , the <em>Oregon Trail II</em> video game, a Claymation Satan, a YouTube video of Stevie Nicks and Lindsey Buckingham—to explore questions of cultural inheritance and the particular danger, as a Native woman, of relaxing into romantic love under colonial rule.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -1065,12 +1212,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781951142391</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781951142391</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -1218,15 +1367,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/145.jpg"
         alt="One Friday in April: A Story of Suicide and Survival"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               One Friday in April: A Story of Suicide and Survival
             </div>
@@ -1274,16 +1423,18 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>A searing and brave memoir that offers a new understanding of suicide as a distinct mental illness. As the sun lowered in the sky one Friday afternoon in April 2006, acclaimed author Donald Antrim found himself on the roof of his Brooklyn apartment building, afraid for his life. In this moving memoir, Antrim vividly recounts what led him to the roof and what happened after he came back down: two hospitalizations, weeks of fruitless clinical trials, the terror of submitting to ECT—and the saving call from David Foster Wallace that convinced him to try it—as well as years of fitful recovery and setback. Through a clear and haunting reckoning with the author’s own story, One Friday in April confronts the limits of our understanding of suicide. Donald Antrim’s personal insights reframe suicide—whether in thought or in action—as an illness in its own right, a unique consequence of trauma and personal isolation, rather than the choice of a depressed person. A necessary companion to William Styron’s classic? Darkness Visible, this profound, insightful work sheds light on the tragedy and mystery of suicide, offering solace that may save lives.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -1386,12 +1537,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781324005575</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781324005575</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -1526,15 +1679,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/137.jpg"
         alt="The Loneliest Americans"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               The Loneliest Americans
             </div>
@@ -1582,17 +1735,19 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p>A “provocative and sweeping” (Time) blend of family history and original reportage that explores—and reimagines—Asian American identity in a Black and white world“[Kang’s] exploration of class and identity among Asian Americans will be talked about for years to come.”—Jennifer Szalai, The New York Times Book ReviewONE OF THE BEST BOOKS OF THE YEAR: Time, NPR, Mother Jones  In 1965, a new immigration law lifted a century of restrictions against Asian immigrants to the United States. Nobody, including the lawmakers who passed the bill, expected it to transform the country’s demographics. But over the next four decades, millions arrived, including Jay Caspian Kang’s parents, grandparents, aunts, and uncles. They came with almost no understanding of their new home, much less the history of “Asian America” that was supposed to define them. The Loneliest Americans is the unforgettable story of Kang and his family as they move from a housing project in Cambridge to an idyllic college town in the South and eventually to the West Coast. Their story unfolds against the backdrop of a rapidly expanding Asian America, as millions more immigrants, many of them working-class or undocumented, stream into the country. At the same time, upwardly mobile urban professionals have struggled to reconcile their parents’ assimilationist goals with membership in a multicultural elite—all while trying to carve out a new kind of belonging for their own children, who are neither white nor truly “people of color.” Kang recognizes this existential loneliness in himself and in other Asian Americans who try to locate themselves in the country’s racial binary. There are the businessmen turning Flushing into a center of immigrant wealth; the casualties of the Los Angeles riots; the impoverished parents in New York City who believe that admission to the city’s exam schools is the only way out; the men’s right’s activists on Reddit ranting about intermarriage; and the handful of protesters who show up at Black Lives Matter rallies holding “Yellow Peril Supports Black Power” signs.</p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p>A “provocative and sweeping” (Time) blend of family history and original reportage that explores—and reimagines—Asian American identity in a Black and white world“[Kang’s] exploration of class and identity among Asian Americans will be talked about for years to come.”—Jennifer Szalai, The New York Times Book ReviewONE OF THE BEST BOOKS OF THE YEAR: Time, NPR, Mother Jones  In 1965, a new immigration law lifted a century of restrictions against Asian immigrants to the United States. Nobody, including the lawmakers who passed the bill, expected it to transform the country’s demographics. But over the next four decades, millions arrived, including Jay Caspian Kang’s parents, grandparents, aunts, and uncles. They came with almost no understanding of their new home, much less the history of “Asian America” that was supposed to define them. The Loneliest Americans is the unforgettable story of Kang and his family as they move from a housing project in Cambridge to an idyllic college town in the South and eventually to the West Coast. Their story unfolds against the backdrop of a rapidly expanding Asian America, as millions more immigrants, many of them working-class or undocumented, stream into the country. At the same time, upwardly mobile urban professionals have struggled to reconcile their parents’ assimilationist goals with membership in a multicultural elite—all while trying to carve out a new kind of belonging for their own children, who are neither white nor truly “people of color.” Kang recognizes this existential loneliness in himself and in other Asian Americans who try to locate themselves in the country’s racial binary. There are the businessmen turning Flushing into a center of immigrant wealth; the casualties of the Los Angeles riots; the impoverished parents in New York City who believe that admission to the city’s exam schools is the only way out; the men’s right’s activists on Reddit ranting about intermarriage; and the handful of protesters who show up at Black Lives Matter rallies holding “Yellow Peril Supports Black Power” signs.</p>
 
 <p>Kang’s exquisitely crafted book brings these lonely parallel climbers together and calls for a new immigrant solidarity—one rooted not in bubble tea and elite college admissions but in the struggles of refugees and the working class.</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -1695,12 +1850,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780525576242</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780525576242</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -1842,15 +1999,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/135.jpg"
         alt="Seeing Ghosts: A Memoir"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Seeing Ghosts: A Memoir
             </div>
@@ -1898,18 +2055,20 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Born two years after her parents' only son died just hours after his birth, Kat Chow became unusually fixated with death. She worried constantly about her parents dying -- especially her mother. One morning, when Kat was nine, her mother, a vivacious and mischievous woman, casually made a morbid joke: When she eventually dies, she said laughing, she'd like to be stuffed and displayed in Kat's future apartment in order to always watch over her. </p>
 <p>Four years later when her mother dies unexpectedly from cancer, Kat, her two older sisters, and their father are plunged into a debilitating, lonely grief. With a distinct voice that is wry and heartfelt, Kat weaves together what is part ghost story and part excavation of her family's history of loss spanning three generations and their immigration from China and Hong Kong to America and Cuba. This redemptive coming-of-age story uncovers the uncanny parallels in Kat's lineage, including the strength of sisterhood and the complicated duty of looking after parents, even after death. </p>
 <p><em>Seeing Ghosts</em> asks what it means to claim and tell your family's story: Is writing an exorcism or is it its own form of preservation? What do we owe to our families in our grief, and how does it shape us? In order to answer these questions and to understand her family's ghosts, Kat unearths their sorrow and challenges the power structures of race, class, and gender. The result is an extraordinary new contribution to the literature of grief and the American family, and a provocative and transformative meditation on who we become under the specter of loss.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -2012,12 +2171,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781538716304</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781538716304</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -2162,15 +2323,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/133.jpg"
         alt="Pop Song: Adventures in Art & Intimacy"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Pop Song: Adventures in Art & Intimacy
             </div>
@@ -2218,19 +2379,21 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p>"A warm and expansive portrait of a woman’s mind that feels at once singular and universal," this collection of essays interweaves commentary on modern life, feminism, art, and sex with the author's own experiences of obsession, heartbreak, and vulnerability (BuzzFeed).</p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p>"A warm and expansive portrait of a woman’s mind that feels at once singular and universal," this collection of essays interweaves commentary on modern life, feminism, art, and sex with the author's own experiences of obsession, heartbreak, and vulnerability (BuzzFeed).</p>
 
 <p>Like a song that feels written just for you, Larissa Pham's debut work of nonfiction captures the imagination and refuses to let go. Pop Song is a book about love and about falling in love—with a place, or a painting, or a person—and the joy and terror inherent in the experience of that love. Plumbing the well of culture for clues and patterns about love and loss—from Agnes Martin's abstract paintings to James Turrell's transcendent light works, and Anne Carson's Eros the Bittersweet to Frank Ocean's Blonde—Pham writes of her youthful attempts to find meaning in travel, sex, drugs, and art, before sensing that she might need to turn her gaze upon herself. Pop Song is also a book about distances, near and far. As she travels from Taos, New Mexico, to Shanghai, China and beyond, Pham meditates on the miles we are willing to cover to get away from ourselves, or those who hurt us, and the impossible gaps that can exist between two people sharing a bed. Pop Song is a book about all the routes by which we might escape our own needs before finally finding a way home. There is heartache in these pages, but Pham's electric ways of seeing create a perfectly fractured portrait of modern intimacy that is triumphant in both its vulnerability and restlessness. "Each of the essays in this debut collection reads like a mini-memoir . . . in which the author reflects on her experiences of young love, trauma, and transcendence through discussions of art and music . . . with an intimacy that is at once tender and expansive.</p>
 
 <p>" —New York magazine</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -2333,12 +2496,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781646220274</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781646220274</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -2494,15 +2659,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/131.jpg"
         alt="Girlhood"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Girlhood
             </div>
@@ -2552,19 +2717,21 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p><strong>A gripping set of stories about the forces that shape girls and the adults they become. A wise and brilliant guide to transforming the self and our society.</strong>  </p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p><strong>A gripping set of stories about the forces that shape girls and the adults they become. A wise and brilliant guide to transforming the self and our society.</strong>  </p>
 <p>In her powerful new book, critically acclaimed author Melissa Febos examines the narratives women are told about what it means to be female and what it takes to free oneself from them.  </p>
 <p>When her body began to change at eleven years old, Febos understood immediately that her meaning to other people had changed with it. By her teens, she defined herself based on these perceptions and by the romantic relationships she threw herself into headlong. Over time, Febos increasingly questioned the stories she’d been told about herself and the habits and defenses she’d developed over years of trying to meet others’ expectations. The values she and so many other women had learned in girlhood did not prioritize their personal safety, happiness, or freedom, and she set out to reframe those values and beliefs.  </p>
 <p>Blending investigative reporting, memoir, and scholarship, Febos charts how she and others like her have reimagined relationships and made room for the anger, grief, power, and pleasure women have long been taught to deny.  </p>
 <p>Written with Febos’ characteristic precision, lyricism, and insight, <em>Girlhood</em> is a philosophical treatise, an anthem for women, and a searing study of the transitions into and away from girlhood, toward a chosen self.</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -2669,12 +2836,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781635572520</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781635572520</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -2828,15 +2997,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/130.jpg"
         alt="Mike Nichols: A Life"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Mike Nichols: A Life
             </div>
@@ -2884,21 +3053,23 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p>A National Book Critics Circle finalist • One of People's top 10 books of 2021 • An instant New York Times bestseller • Named a best book of the year by NPR and Time A magnificent biography of one of the most protean creative forces in American entertainment history, a life of dazzling highs and vertiginous plunges—some of the worst largely unknown until now—by the acclaimed author of Pictures at a Revolution and Five Came BackMike Nichols burst onto the scene as a wunderkind: while still in his twenties, he was half of a hit improv duo with Elaine May that was the talk of the country. Next he directed four consecutive hit plays, won back-to-back Tonys, ushered in a new era of Hollywood moviemaking with Who's Afraid of Virginia Woolf?, and followed it with The Graduate, which won him an Oscar and became the third-highest-grossing movie ever. At thirty-five, he lived in a three-story Central Park West penthouse, drove a Rolls-Royce, collected Arabian horses, and counted Jacqueline Kennedy, Elizabeth Taylor, Leonard Bernstein, and Richard Avedon as friends.</p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p>A National Book Critics Circle finalist • One of People's top 10 books of 2021 • An instant New York Times bestseller • Named a best book of the year by NPR and Time A magnificent biography of one of the most protean creative forces in American entertainment history, a life of dazzling highs and vertiginous plunges—some of the worst largely unknown until now—by the acclaimed author of Pictures at a Revolution and Five Came BackMike Nichols burst onto the scene as a wunderkind: while still in his twenties, he was half of a hit improv duo with Elaine May that was the talk of the country. Next he directed four consecutive hit plays, won back-to-back Tonys, ushered in a new era of Hollywood moviemaking with Who's Afraid of Virginia Woolf?, and followed it with The Graduate, which won him an Oscar and became the third-highest-grossing movie ever. At thirty-five, he lived in a three-story Central Park West penthouse, drove a Rolls-Royce, collected Arabian horses, and counted Jacqueline Kennedy, Elizabeth Taylor, Leonard Bernstein, and Richard Avedon as friends.</p>
 
 <p>Where he arrived is even more astonishing given where he had begun: born Igor Peschkowsky to a Jewish couple in Berlin in 1931, he was sent along with his younger brother to America on a ship in 1939. The young immigrant boy caught very few breaks. He was bullied and ostracized--an allergic reaction had rendered him permanently hairless--and his father died when he was just twelve, leaving his mother alone and overwhelmed.</p>
 
 <p>The gulf between these two sets of facts explains a great deal about Nichols's transformation from lonely outsider to the center of more than one cultural universe--the acute powers of observation that first made him famous; the nourishment he drew from his creative partnerships, most enduringly with May; his unquenchable drive; his hunger for security and status; and the depressions and self-medications that brought him to terrible lows. It would take decades for him to come to grips with his demons. In an incomparable portrait that follows Nichols from Berlin to New York to Chicago to Hollywood, Mark Harris explores, with brilliantly vivid detail and insight, the life, work, struggle, and passion of an artist and man in constant motion. Among the 250 people Harris interviewed: Elaine May, Meryl Streep, Stephen Sondheim, Robert Redford, Glenn Close, Tom Hanks, Candice Bergen, Emma Thompson, Annette Bening, Natalie Portman, Julia Roberts, Lorne Michaels, and Gloria Steinem.</p>
 
 <p>Mark Harris gives an intimate and evenhanded accounting of success and failure alike; the portrait is not always flattering, but its ultimate impact is to present the full story of one of the most richly interesting, complicated, and consequential figures the worlds of theater and motion pictures have ever seen. It is a triumph of the biographer's art.</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -3001,12 +3172,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780399562259</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780399562259</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -3152,15 +3325,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/129.jpg"
         alt="1000 Years of Joys and Sorrows: A Memoir"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               1000 Years of Joys and Sorrows: A Memoir
             </div>
@@ -3208,18 +3381,20 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Once an intimate of Mao Zedong and the nation's most celebrated poet, Ai Weiwei's father, Ai Qing, was branded a rightist during the Cultural Revolution, and he and his family were banished to a desolate place known as "Little Siberia," where Ai Qing was sentenced to hard labor cleaning public toilets. Ai Weiwei recounts his childhood in exile, and his difficult decision to leave his family to study art in America, where he befriended Allen Ginsberg and was inspired by Andy Warhol. With candor and wit, he details his return to China and his rise from artistic unknown to art world superstar and international human rights activist--and how his work has been shaped by living under a totalitarian regime. </p>
 <p>Ai Weiwei's sculptures and installations have been viewed by millions around the globe, and his architectural achievements include helping to design the iconic Bird's Nest Olympic Stadium in Beijing. His political activism has long made him a target of the Chinese authorities, which culminated in months of secret detention without charge in 2011. Here, for the first time, Ai Weiwei explores the origins of his exceptional creativity and passionate political beliefs through his life story and that of his father, whose creativity was stifled. </p>
 <p>At once ambitious and intimate, Ai Weiwei's <em>1000 Years of Joys and Sorrows</em> offers a deep understanding of the myriad forces that have shaped modern China, and serves as a timely reminder of the urgent need to protect freedom of expression.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -3322,12 +3497,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780553419467</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780553419467</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -3476,15 +3653,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/128.jpg"
         alt="Crying in H Mart"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Crying in H Mart
             </div>
@@ -3532,17 +3709,19 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p>A memoir about growing up Korean American, losing her mother, and forging her own identity.  </p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p>A memoir about growing up Korean American, losing her mother, and forging her own identity.  </p>
 <p>Michelle Zauner tells of growing up one of the few Asian American kids at her school in Eugene, Oregon; of struggling with her mother's particular, high expectations of her; of a painful adolescence; of treasured months spent in her grandmother's tiny apartment in Seoul, where she and her mother would bond, late at night, over heaping plates of food.  </p>
 <p>As she grew up, moving to the East Coast for college, finding work in the restaurant industry, and performing gigs with her fledgling band--and meeting the man who would become her husband--her Koreanness began to feel ever more distant, even as she found the life she wanted to live. It was her mother's diagnosis of terminal cancer, when Michelle was twenty-five, that forced a reckoning with her identity and brought her to reclaim the gifts of taste, language, and history her mother had given her.</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -3645,12 +3824,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780525657743</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780525657743</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -3784,15 +3965,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/127.jpg"
         alt="Aftershocks: A Memoir"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Aftershocks: A Memoir
             </div>
@@ -3840,15 +4021,17 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p>In the tradition of The Glass Castle, this “gorgeous” (The New York Times, Editors’ Choice) and deeply felt memoir from Whiting Award winner Nadia Owusu tells the “incredible story” (Malala Yousafzai) about the push and pull of belonging, the seismic emotional toll of family secrets, and the heart it takes to pull through. “In Aftershocks, Nadia Owusu tells the incredible story of her young life. How does a girl—abandoned by her mother at age two and orphaned at thirteen when her beloved father dies—find her place in the world? This memoir is the story of Nadia creating her own solid ground across countries and continents. I know the struggle of rebuilding your life in an unfamiliar place. While some of you might be familiar with that and some might not, I hope you’ll take as much inspiration and hope from her story as I did.” —MALALA YOUSAFZAI  ​ONE OF THE BEST BOOKS OF 2021 SELECTED BY VULTURE, TIME, ESQUIRE, NPR, AND VOGUE!Young Nadia Owusu followed her father, a United Nations official, from Europe to Africa and back again. Just as she and her family settled into a new home, her father would tell them it was time to say their goodbyes. The instability wrought by Nadia’s nomadic childhood was deepened by family secrets and fractures, both lived and inherited. Her Armenian American mother, who abandoned Nadia when she was two, would periodically reappear, only to vanish again. Her father, a Ghanaian, the great hero of her life, died when she was thirteen. After his passing, Nadia’s stepmother weighed her down with a revelation that was either a bombshell secret or a lie, rife with shaming innuendo. With these and other ruptures, Nadia arrived in New York as a young woman feeling stateless, motherless, and uncertain about her future, yet eager to find her own identity. What followed, however, were periods of depression in which she struggled to hold herself and her siblings together. “A magnificent, complex assessment of selfhood and why it matters” (Elle), Aftershocks depicts the way she hauled herself from the wreckage of her life’s perpetual quaking, the means by which she has finally come to understand that the only ground firm enough to count on is the one written into existence by her own hand. “Full of narrative risk and untrammeled lyricism” (The Washington Post), Aftershocks joins the likes of Don’t Let’s Go to the Dogs Tonight and William Styron’s Darkness Visible, and does for race identity what Maggie Nelson does for gender identity in The Argonauts.</p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p>In the tradition of The Glass Castle, this “gorgeous” (The New York Times, Editors’ Choice) and deeply felt memoir from Whiting Award winner Nadia Owusu tells the “incredible story” (Malala Yousafzai) about the push and pull of belonging, the seismic emotional toll of family secrets, and the heart it takes to pull through. “In Aftershocks, Nadia Owusu tells the incredible story of her young life. How does a girl—abandoned by her mother at age two and orphaned at thirteen when her beloved father dies—find her place in the world? This memoir is the story of Nadia creating her own solid ground across countries and continents. I know the struggle of rebuilding your life in an unfamiliar place. While some of you might be familiar with that and some might not, I hope you’ll take as much inspiration and hope from her story as I did.” —MALALA YOUSAFZAI  ​ONE OF THE BEST BOOKS OF 2021 SELECTED BY VULTURE, TIME, ESQUIRE, NPR, AND VOGUE!Young Nadia Owusu followed her father, a United Nations official, from Europe to Africa and back again. Just as she and her family settled into a new home, her father would tell them it was time to say their goodbyes. The instability wrought by Nadia’s nomadic childhood was deepened by family secrets and fractures, both lived and inherited. Her Armenian American mother, who abandoned Nadia when she was two, would periodically reappear, only to vanish again. Her father, a Ghanaian, the great hero of her life, died when she was thirteen. After his passing, Nadia’s stepmother weighed her down with a revelation that was either a bombshell secret or a lie, rife with shaming innuendo. With these and other ruptures, Nadia arrived in New York as a young woman feeling stateless, motherless, and uncertain about her future, yet eager to find her own identity. What followed, however, were periods of depression in which she struggled to hold herself and her siblings together. “A magnificent, complex assessment of selfhood and why it matters” (Elle), Aftershocks depicts the way she hauled herself from the wreckage of her life’s perpetual quaking, the means by which she has finally come to understand that the only ground firm enough to count on is the one written into existence by her own hand. “Full of narrative risk and untrammeled lyricism” (The Washington Post), Aftershocks joins the likes of Don’t Let’s Go to the Dogs Tonight and William Styron’s Darkness Visible, and does for race identity what Maggie Nelson does for gender identity in The Argonauts.</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -3951,12 +4134,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781982111236</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781982111236</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -4100,15 +4285,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/124.jpg"
         alt="Empire of Pain: The Secret History of the Sackler Dynasty"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Empire of Pain: The Secret History of the Sackler Dynasty
             </div>
@@ -4156,19 +4341,21 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p>NATIONAL BOOK CRITICS CIRCLE NOMINEE • A NEW YORK TIMES NOTABLE BOOK OF THE YEAR • NEW YORK TIMES BEST SELLER • A grand, devastating portrait of three generations of the Sackler family, famed for their philanthropy, whose fortune was built by Valium and whose reputation was destroyed by OxyContin. From the prize-winning and bestselling author of Say Nothing The history of the Sackler dynasty is rife with drama—baroque personal lives; bitter disputes over estates; fistfights in boardrooms; glittering art collections; Machiavellian courtroom maneuvers; and the calculated use of money to burnish reputations and crush the less powerful. The Sackler name has adorned the walls of many storied institutions—Harvard, the Metropolitan Museum of Art, Oxford, the Louvre. They are one of the richest families in the world, known for their lavish donations to the arts and the sciences. The source of the family fortune was vague, however, until it emerged that the Sacklers were responsible for making and marketing a blockbuster painkiller that was the catalyst for the opioid crisis. Empire of Pain begins with the story of three doctor brothers, Raymond, Mortimer and the incalculably energetic Arthur, who weathered the poverty of the Great Depression and appalling anti-Semitism. Working at a barbaric mental institution, Arthur saw a better way and conducted groundbreaking research into drug treatments. He also had a genius for marketing, especially for pharmaceuticals, and bought a small ad firm.</p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p>NATIONAL BOOK CRITICS CIRCLE NOMINEE • A NEW YORK TIMES NOTABLE BOOK OF THE YEAR • NEW YORK TIMES BEST SELLER • A grand, devastating portrait of three generations of the Sackler family, famed for their philanthropy, whose fortune was built by Valium and whose reputation was destroyed by OxyContin. From the prize-winning and bestselling author of Say Nothing The history of the Sackler dynasty is rife with drama—baroque personal lives; bitter disputes over estates; fistfights in boardrooms; glittering art collections; Machiavellian courtroom maneuvers; and the calculated use of money to burnish reputations and crush the less powerful. The Sackler name has adorned the walls of many storied institutions—Harvard, the Metropolitan Museum of Art, Oxford, the Louvre. They are one of the richest families in the world, known for their lavish donations to the arts and the sciences. The source of the family fortune was vague, however, until it emerged that the Sacklers were responsible for making and marketing a blockbuster painkiller that was the catalyst for the opioid crisis. Empire of Pain begins with the story of three doctor brothers, Raymond, Mortimer and the incalculably energetic Arthur, who weathered the poverty of the Great Depression and appalling anti-Semitism. Working at a barbaric mental institution, Arthur saw a better way and conducted groundbreaking research into drug treatments. He also had a genius for marketing, especially for pharmaceuticals, and bought a small ad firm.</p>
 
 <p>Arthur devised the marketing for Valium, and built the first great Sackler fortune. He purchased a drug manufacturer, Purdue Frederick, which would be run by Raymond and Mortimer. The brothers began collecting art, and wives, and grand residences in exotic locales. Their children and grandchildren grew up in luxury.</p>
 
 <p>Forty years later, Raymond’s son Richard ran the family-owned Purdue. The template Arthur Sackler created to sell Valium—co-opting doctors, influencing the FDA, downplaying the drug’s addictiveness—was employed to launch a far more potent product: OxyContin. The drug went on to generate some thirty-five billion dollars in revenue, and to launch a public health crisis in which hundreds of thousands would die. This is the saga of three generations of a single family and the mark they would leave on the world, a tale that moves from the bustling streets of early twentieth-century Brooklyn to the seaside palaces of Greenwich, Connecticut, and Cap d’Antibes to the corridors of power in Washington, D.C.  Empire of Pain chronicles the multiple investigations of the Sacklers and their company, and the scorched-earth legal tactics that the family has used to evade accountability. Empire of Pain is a masterpiece of narrative reporting and writing, exhaustively documented and ferociously compelling. It is a portrait of the excesses of America’s second Gilded Age, a study of impunity among the super elite and a relentless investigation of the naked greed and indifference to human suffering that built one of the world’s great fortunes.</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -4271,12 +4458,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780385545693</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780385545693</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -4432,15 +4621,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/122.jpg"
         alt="Finding the Mother Tree: Discovering the Wisdom of the Forest"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Finding the Mother Tree: Discovering the Wisdom of the Forest
             </div>
@@ -4488,19 +4677,21 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Suzanne Simard is a pioneer on the frontier of plant communication and intelligence; she's been compared to Rachel Carson, hailed as a scientist who conveys complex, technical ideas in a way that is dazzling and profound. Her work has influenced filmmakers (the Tree of Souls of James Cameron's <em>Avatar</em> ) and her TED talks have been viewed by more than 10 million people worldwide. </p>
 <p>Now, in her first book, Simard brings us into her world, the intimate world of the trees, in which she brilliantly illuminates the fascinating and vital truths--that trees are not simply the source of timber or pulp, but are a complex, interdependent circle of life; that forests are social, cooperative creatures connected through underground networks by which trees communicate their vitality and vulnerabilities with communal lives not that different from our own. </p>
 <p>Simard writes--in inspiring, illuminating, and accessible ways--how trees, living side by side for hundreds of years, have evolved, how they perceive one another, learn and adapt their behaviors, recognize neighbors, and remember the past; how they have agency about the future; elicit warnings and mount defenses, compete and cooperate with one another with sophistication, characteristics ascribed to human intelligence, traits that are the essence of civil societies--and at the center of it all, the Mother Trees: the mysterious, powerful forces that connect and sustain the others that surround them. </p>
 <p>Simard writes of her own life, born and raised into a logging world in the rainforests of British Columbia, of her days as a child spent cataloging the trees from the forest and how she came to love and respect them--embarking on a journey of discovery, and struggle. And as she writes of her scientific quest, she writes of her own journey--of love and loss, of observation and change, of risk and reward, making us understand how deeply human scientific inquiry exists beyond data and technology, that it is about understanding who we are and our place in the world, and, in writing of her own life, we come to see the true connectedness of the Mother Tree that nurtures the forest in the profound ways that families and human societies do, and how these inseparable bonds enable all our survival.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -4603,12 +4794,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780525656104</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780525656104</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -4746,15 +4939,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/121.jpg"
         alt="Unbound: My Story of Liberation and the Birth of the Me Too Movement"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Unbound: My Story of Liberation and the Birth of the Me Too Movement
             </div>
@@ -4802,19 +4995,21 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>From the founder and activist behind one of the largest movements of the twentieth and twenty-first centuries, the "me too" movement, Tarana Burke debuts a powerful memoir about her own journey to saying those two simple yet infinitely powerful words―me too―and how she brought empathy back to an entire generation in one of the largest cultural events in American history. </p>
 <p>Tarana didn’t always have the courage to say "me too." As a child, she reeled from her sexual assault, believing she was responsible. Unable to confess what she thought of as her own sins for fear of shattering her family, her soul split in two. One side was the bright, intellectually curious third generation Bronxite steeped in Black literature and power, and the other was the bad, shame ridden girl who thought of herself as a vile rule breaker, not as a victim. She tucked one away, hidden behind a wall of pain and anger, which seemed to work...until it didn’t. </p>
 <p>Tarana fought to reunite her fractured self, through organizing, pursuing justice, and finding community. In her debut memoir she shares her extensive work supporting and empowering Black and brown girls, and the devastating realization that to truly help these girls she needed to help that scared, ashamed child still in her soul. She needed to stop running and confront what had happened to her, for Heaven and Diamond and the countless other young Black women for whom she cared. They gave her the courage to embrace her power. A power which in turn she shared with the entire world. Through these young Black and brown women, Tarana found that we can only offer empathy to others if we first offer it to ourselves. </p>
 <p>Unbound is the story of an inimitable woman’s inner strength and perseverance, all in pursuit of bringing healing to her community and the world around her, but it is also a story of possibility, of empathy, of power, and of the leader we all have inside ourselves. In sharing her path toward healing and saying "me too," Tarana reaches out a hand to help us all on our own journeys.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -4917,12 +5112,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781250621733</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781250621733</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -5078,15 +5275,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/119.jpg"
         alt="The Copenhagen Trilogy: Childhood; Youth; Dependency"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               The Copenhagen Trilogy: Childhood; Youth; Dependency
             </div>
@@ -5134,18 +5331,20 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Tove Ditlevsen is today celebrated as one of the most important and unique voices in twentieth-century Danish literature, and <em>The Copenhagen Trilogy</em> (1969-71) is her acknowledged masterpiece. <em>Childhood</em> tells the story of a misfit child's single-minded determination to become a poet; <em>Youth</em> describes her early experiences of sex, work, and independence. <em>Dependency</em> picks up the story as the narrator embarks on the first of her four marriages and goes on to describe her horrible descent into drug addiction, enabled by her sinister, gaslighting doctor-husband. </p>
 <p>Throughout, the narrator grapples with the tension between her vocation as a writer and her competing roles as daughter, wife, mother, and drug addict, and she writes about female experience and identity in a way that feels very fresh and pertinent to today's discussions around feminism. Ditlevsen's trilogy is remarkable for its intensity and its immersive depiction of a world of complex female friendships, family and growing up--in this sense, it's Copenhagen's answer to Elena Ferrante's Neapolitan Novels. She can also be seen as a spiritual forerunner of confessional writers like Karl Ove Knausgaard, Annie Ernaux, Rachel Cusk and Deborah Levy. Her trilogy is drawn from her own experiences but reads like the most compelling kind of fiction. </p>
 <p>Born in a working-class neighborhood in Copenhagen in 1917, Ditlevsen became famous for her poetry while still a teenager, and went on to write novels, stories and memoirs before committing suicide in 1976. Having been dismissed by the critical establishment in her lifetime as a working-class, female writer, she is now being rediscovered and championed as one of Denmark's most important modern authors, with Tove fever gripping readers.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -5248,12 +5447,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780374602390</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780374602390</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -5390,15 +5591,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/115.jpg"
         alt="All the Frequent Troubles of Our Days: The True Story of the American Woman at the Heart of the German Resistance to Hitler"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               All the Frequent Troubles of Our Days: The True Story of the American Woman at the Heart of the German Resistance to Hitler
             </div>
@@ -5446,18 +5647,20 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <p>Born and raised in Milwaukee, Mildred Harnack was twenty-six when she enrolled in a PhD program in Germany and witnessed the meteoric rise of the Nazi party. In 1932, she began holding secret meetings in her apartment — a small band of political activists that by 1940 had grown into the largest underground resistance group in Berlin. She recruited working-class Germans into the resistance, helped Jews escape, plotted acts of sabotage, and collaborated in writing leaflets that denounced Hitler and called for revolution. Her co-conspirators circulated through Berlin under the cover of night, slipping the leaflets into mailboxes, public restrooms, phone booths.   </p>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p>Born and raised in Milwaukee, Mildred Harnack was twenty-six when she enrolled in a PhD program in Germany and witnessed the meteoric rise of the Nazi party. In 1932, she began holding secret meetings in her apartment — a small band of political activists that by 1940 had grown into the largest underground resistance group in Berlin. She recruited working-class Germans into the resistance, helped Jews escape, plotted acts of sabotage, and collaborated in writing leaflets that denounced Hitler and called for revolution. Her co-conspirators circulated through Berlin under the cover of night, slipping the leaflets into mailboxes, public restrooms, phone booths.   </p>
 <p>When the first shots of the Second World War were fired, she became a spy, couriering top-secret intelligence to the Allies. On the eve of her escape to Sweden, she was ambushed by the Gestapo. At a Nazi military court, a panel of five judges sentenced her to six years at a prison camp, but Hitler overruled the decision and ordered her execution. On February 16, 1943, she was strapped to a guillotine and beheaded.  </p>
 <p>Historians identify Mildred Harnack as the only American in the leadership of the German resistance, yet her remarkable story has remained almost unknown until now.  </p>
 <p>Harnack’s great-great-niece Rebecca Donner draws on her extensive archival research in Germany, Russia, England, and the U.S. as well as newly uncovered documents in her family archive to produce this astonishing work of narrative nonfiction. Fusing elements of biography, real-life political thriller, and scholarly detective story, Donner brilliantly interweaves letters, diary entries, notes smuggled out of a Berlin prison, survivors’ testimony, and a trove of declassified intelligence documents into a powerful, epic story, reconstructing the moral courage of an enigmatic woman nearly erased by history.</p>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -5560,12 +5763,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780316561693</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780316561693</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -5708,15 +5913,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/114.jpg"
         alt="Somebody's Daughter"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Somebody's Daughter
             </div>
@@ -5764,17 +5969,19 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Through poverty, adolescence, and a fraught relationship with her mother, Ashley C. Ford wishes she could turn to her father for hope and encouragement. There are just a few problems: he’s in prison, and she doesn’t know what he did to end up there. She doesn’t know how to deal with the incessant worries that keep her up at night, or how to handle the changes in her body that draw unwanted attention from men. In her search for unconditional love, Ashley begins dating a boy her mother hates. When the relationship turns sour, he assaults her. Still reeling from the rape, which she keeps secret from her family, Ashley desperately searches for meaning in the chaos. Then, her grandmother reveals the truth about her father’s incarceration . . . and Ashley’s entire world is turned upside down. </p>
 <p>Somebody’s Daughter steps into the world of growing up a poor Black girl in Indiana with a family fragmented by incarceration, exploring how isolating and complex such a childhood can be. As Ashley battles her body and her environment, she embarks on a powerful journey to find the threads between who she is and what she was born into, and the complicated familial love that often binds them.</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -5877,12 +6084,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781250305978</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781250305978</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -6032,15 +6241,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/112.jpg"
         alt="Invisible Child: Poverty, Survival & Hope in an American City"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Invisible Child: Poverty, Survival & Hope in an American City
             </div>
@@ -6088,18 +6297,20 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>In Invisible Child, Pulitzer Prize winner Andrea Elliott follows eight dramatic years in the life of Dasani, a girl whose imagination is as soaring as the skyscrapers near her Brooklyn shelter. In this sweeping narrative, Elliott weaves the story of Dasani’s childhood with the history of her ancestors, tracing their passage from slavery to the Great Migration north. As Dasani comes of age, New York City’s homeless crisis has exploded, deepening the chasm between rich and poor. She must guide her siblings through a world riddled by hunger, violence, racism, drug addiction, and the threat of foster care. Out on the street, Dasani becomes a fierce fighter “to protect those who I love.” When she finally escapes city life to enroll in a boarding school, she faces an impossible question: What if leaving poverty means abandoning your family, and yourself? </p>
 <p>A work of luminous and riveting prose, Elliott’s Invisible Child reads like a page-turning novel. It is an astonishing story about the power of resilience, the importance of family and the cost of inequality—told through the crucible of one remarkable girl. </p>
 <p>Winner of the J. Anthony Lukas Book Prize • Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award • Longlisted for the Baillie Gifford Prize</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -6202,12 +6413,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780812986945</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780812986945</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -6394,15 +6607,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/98.jpg"
         alt="Let's Pretend This Never Happened"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Let's Pretend This Never Happened
             </div>
@@ -6450,16 +6663,18 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>'Even when I was funny, I wasn't this funny.' Augusten Burroughs. For fans of Tina Fey, David Sedaris and anyone who's ever felt like a misfit, an outrageously funny and disturbing memoir from Jenny Lawson, aka The Bloggess. 'When I tell people that my father is kind of a total lunatic, they laugh and nod knowingly. they assure me that theirs is too, and that he's just a "typical father". And they're probably right, if the typical father runs a full-time taxidermy business out of the house, and shows up at the local bar with a miniature donkey and a teddy Roosevelt impersonator, and thinks other people are weird for making such a big deal out of it. If the typical father says things like "Happy birthday! Here's a bathtub of raccoons!" or "We'll have to take your car. Mine has too much blood in it," then yeah, he's totally normal.' When Jenny Lawson was little, all she ever wanted was to fit in. that dream was cut short by her fantastically unbalanced father and a childhood of wearing winter shoes made out of used bread sacks. It did, however, open up an opportunity for Lawson to find the humour in the strange shame-spiral that is her life, and we are all the better for it. Lawson's long-suffering husband and sweet daughter help her uncover the surprising discovery that the most terribly human moments - the ones we want to pretend never happened - are the very same moments that make us the people we are today. Like laughing at a funeral, LEt'S PREtEND tHIS NEVER HAPPENED is both irreverent and impossible to hold back once you get started. 'the Bloggess writes stuff that actually is laugh-out-loud, but you know that really you shouldn't be laughing and probably you'll go to hell for laughing, so maybe you shouldn't read it.' Neil Gaiman 'Even when I was funny, I wasn't this funny.' Augusten Burroughs, author of RUNNING WItH SCISSORS</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -6562,12 +6777,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9781743096444</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781743096444</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -6698,15 +6915,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/96.jpg"
         alt="Is Everyone Hanging Out Without Me? (And Other Concerns)"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Is Everyone Hanging Out Without Me? (And Other Concerns)
             </div>
@@ -6754,20 +6971,22 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Mindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck–impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence “Can I just say one last thing about this, and then I swear I’ll shut up about it?” </p>
 <p>Perhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you’ve come to the right book, mostly! </p>
 <p>With several conveniently placed stopping points for you to run errands and make phone calls, <em>Is Everyone Hanging Out Without Me?</em> proves that Mindy Kaling really is just a Girl Next Door—not so much literally anywhere in the continental United States, but definitely if you live in India or Sri Lanka. </p></div>
 
 <p>Mindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck--impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence "Can I just say one last thing about this, and then I swear I'll shut up about it?" <br><br>Perhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you've come to the right book, mostly!<br><br>In <i>Is Everyone Hanging Out Without Me?, </i>Mindy invites readers on a tour of her life and...
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -6870,12 +7089,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780307886286</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780307886286</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -7028,15 +7249,15 @@
   
 
 
-<div class="card mt-5 h-60 pl-5 pb-5" x-data="{showModal:false}">
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
         src="/library/images/covers/88.jpg"
         alt="Bossypants"
-        class="w-40 h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
-       <div class="p-8 overflow-hidden relative">
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
               Bossypants
             </div>
@@ -7084,16 +7305,18 @@
                   <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
                 </svg>
               
-             </div>
+            </div>
 
-            <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-              <div>
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
 <p>Before Liz Lemon, before "Weekend Update," before "Sarah Palin," Tina Fey was just a young girl with a dream: a recurring stress dream that she was being chased through a local airport by her middle-school gym teacher. She also had a dream that one day she would be a comedian on TV.She has seen both these dreams come true.At last, Tina Fey's story can be told. From her youthful days as a vicious nerd to her tour of duty on <em>Saturday Night Live</em> ; from her passionately halfhearted pursuit of physical beauty to her life as a mother eating things off the floor; from her one-sided college romance to her nearly fatal honeymoon from the beginning of this paragraph to this final sentence.Tina Fey reveals all, and proves what we've always suspected: you're no one until someone calls you bossy.Includes Special, Never-Before-Solicited Opinions on Breastfeeding, Princesses, Photoshop, the Electoral Process, and Italian Rum Cake!</p></div>
+              </div>
             </div>
 
             <div class="mt-4">
               <div
-                class="cursor-pointer space-x-2 badge rounded-full border border-slate-300 text-slate-800 dark:border-navy-450 dark:text-navy-50"
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
                 <span>View Book</span>
@@ -7196,12 +7419,14 @@
                         </td>
                         <td class="">
                           <div class="flex items-center">
-                            <p id="clipboardContent1">9780316056861</p>
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9780316056861</p>
                             <button
-                              class="btn h-6 shrink-0 rounded px-2 text-xs active:bg-white/25"
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
                               @click="$clipboard({
-                                content:document.querySelector('#clipboardContent1').innerText,
-                                success:()=>$notification({text:'Text Copied',variant:'success'}),
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
                                 error:()=>$notification({text:'Error',variant:'error'})
                               })"
                             >
@@ -7358,7 +7583,7 @@
             </div>
         </div>
 
-        <div class="text-center p-2">
+        <div class="px-7 text-center p-2">
           Copyright © 2022. Made by <a class="underline decoration-solid" href="https://ruud.is">ruud</a>.
         </div>
     </div>
