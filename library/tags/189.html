@@ -106,7 +106,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-      <span>Read Books</span>
+      <span>Read</span>
     </a>
   </li>
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
@@ -238,7 +238,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-      <span>Read Books</span>
+      <span>Read</span>
     </a>
   </li>
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
@@ -344,7 +344,7 @@
                 
    <div x-data="{activeTab:'tabCards'}">
       <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Tags > Deep Learning (2)</div>
+         <div class="font-medium text-base">Tags > Deep Learning (3)</div>
          <div class="flex flex-row">
             <button
                @click="activeTab = 'tabCards'"
@@ -375,6 +375,356 @@
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
             class="book-cards"
          >
+            
+               
+                  
+  
+
+
+
+  
+
+
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+    <div class="flex relative">
+       <img 
+        src="/library/images/covers/202.jpg"
+        alt="Make-A-Video: Text-to-Video Generation without Text-Video Data"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        @click="showModal = true"
+        >
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
+              Make-A-Video: Text-to-Video Generation without Text-Video Data
+            </div>
+
+            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
+              
+                <a class="underline decoration-solid" href="/library/authors/228.html">Jie An</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/232.html">Oron Ashual</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/233.html">Oran Gafni</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/235.html">Sonal Gupta</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/226.html">Thomas Hayes</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/230.html">Qiyuan Hu</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/234.html">Devi Parikh</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/225.html">Adam Polyak</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/224.html">Uriel Singer</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/236.html">Yaniv Taigman</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/231.html">Harry Yang</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/227.html">Xi Yin</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/229.html">Songyang Zhang</a>
+               
+            </p>
+
+            <div class="whitespace-nowrap mt-2 text-slate-300">
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+            </div>
+
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
+<p>We propose Make-A-Video -- an approach for directly translating the tremendous recent progress in Text-to-Image (T2I) generation to Text-to-Video (T2V). Our intuition is simple: learn what the world looks like and how it is described from paired text-image data, and learn how the world moves from unsupervised video footage. Make-A-Video has three advantages: (1) it accelerates training of the T2V model (it does not need to learn visual and multimodal representations from scratch), (2) it does not require paired text-video data, and (3) the generated videos inherit the vastness (diversity in aesthetic, fantastical depictions, etc.) of today's image generation models. We design a simple yet effective way to build on T2I models with novel and effective spatial-temporal modules. First, we decompose the full temporal U-Net and attention tensors and approximate them in space and time. Second, we design a spatial temporal pipeline to generate high resolution and frame rate videos with a video decoder, interpolation model and two super resolution models that can enable various applications besides T2V. In all aspects, spatial and temporal resolution, faithfulness to text, and quality, Make-A-Video sets the new state-of-the-art in text-to-video generation, as determined by both qualitative and quantitative measures. </p></div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <div
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                @click="showModal = true"
+              >
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+               </svg>
+              </div>
+            </div>
+       </div>
+    </div>
+
+    <template x-teleport="#x-teleport-target">
+      <div
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+        x-show="showModal"
+        role="dialog"
+        @keydown.window.escape="showModal = false"
+      >
+        <div
+          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+          @click="showModal = false"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <div
+          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        >
+          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 hidden lg:block lg:col-span-4 
+                  bg-[url('/library/images/covers/202.jpg')] bg-cover bg-left rounded-l-lg"
+            ></div>
+            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+              <h1 class="pb-4 ml-0 text-3xl font-semibold">
+                Make-A-Video: Text-to-Video Generation without Text-Video Data
+              </h1>
+
+              <table class="w-full text-left align-top">
+                  <tbody>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Authors:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/228.html">Jie An</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/232.html">Oron Ashual</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/233.html">Oran Gafni</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/235.html">Sonal Gupta</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/226.html">Thomas Hayes</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/230.html">Qiyuan Hu</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/234.html">Devi Parikh</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/225.html">Adam Polyak</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/224.html">Uriel Singer</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/236.html">Yaniv Taigman</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/231.html">Harry Yang</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/227.html">Xi Yin</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/229.html">Songyang Zhang</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Series:
+                        </td>
+                        <td class="space-x-1">
+                             
+                        </td>
+                    </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Publishers:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/publishers/125.html">arXiv</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Publish Date:
+                        </td>
+                        <td class="space-x-1">
+                            2022-09-29
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Languages:
+                        </td>
+                        <td class="space-x-1">
+                            
+                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
+                             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            ISBN:
+                        </td>
+                        <td class="">
+                          <div class="flex items-center">
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">None</p>
+                            <button
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="$clipboard({
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                error:()=>$notification({text:'Error',variant:'error'})
+                              })"
+                            >
+                              Copy
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Rating:
+                          </td>
+                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-1 whitespace-nowrap font-semibold">
+                            Tags:
+                        </td>
+                        <td class="pt-1 space-x-1 space-y-1">
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/191.html">
+                                Computer Science
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/189.html">
+                                Deep Learning
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/186.html">
+                                Machine Learning
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/192.html">
+                                Computer Vision and Pattern Recognition
+                            </a>
+                           
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-4 pb-1 font-semibold">Description:</p>
+              <div 
+                x-init="$el._x_simplebar = new SimpleBar($el)"
+                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
+                <div>
+<p>We propose Make-A-Video -- an approach for directly translating the tremendous recent progress in Text-to-Image (T2I) generation to Text-to-Video (T2V). Our intuition is simple: learn what the world looks like and how it is described from paired text-image data, and learn how the world moves from unsupervised video footage. Make-A-Video has three advantages: (1) it accelerates training of the T2V model (it does not need to learn visual and multimodal representations from scratch), (2) it does not require paired text-video data, and (3) the generated videos inherit the vastness (diversity in aesthetic, fantastical depictions, etc.) of today's image generation models. We design a simple yet effective way to build on T2I models with novel and effective spatial-temporal modules. First, we decompose the full temporal U-Net and attention tensors and approximate them in space and time. Second, we design a spatial temporal pipeline to generate high resolution and frame rate videos with a video decoder, interpolation model and two super resolution models that can enable various applications besides T2V. In all aspects, spatial and temporal resolution, faithfulness to text, and quality, Make-A-Video sets the new state-of-the-art in text-to-video generation, as determined by both qualitative and quantitative measures. </p></div>
+              </div>
+    
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+              <div class="space-x-1 space-y-1">
+                
+                  <a
+                    href="https://arxiv.org/abs/2209.14792" 
+                    target="_blank"
+                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                  >
+                    arXiv
+                  </a>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+ </div>
+               
             
                
                   
@@ -556,7 +906,7 @@
                             Publish Date:
                         </td>
                         <td class="space-x-1">
-                            0101-01-01
+                            2022-08-25
                         </td>
                       </tr>
                       <tr>
@@ -648,12 +998,6 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/192.html">
-                                Computer Vision and Pattern Recognition
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/189.html">
                                 Deep Learning
                             </a>
@@ -666,8 +1010,8 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/190.html">
-                                Programming
+                              href="/library/tags/192.html">
+                                Computer Vision and Pattern Recognition
                             </a>
                            
                         </td>
@@ -884,7 +1228,7 @@
                             Publish Date:
                         </td>
                         <td class="space-x-1">
-                            0101-01-01
+                            2020-04-30
                         </td>
                       </tr>
                       <tr>
@@ -970,8 +1314,8 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/193.html">
-                                Audiot and Speech Processing
+                              href="/library/tags/132.html">
+                                Music
                             </a>
                           
                             <a 
@@ -982,20 +1326,8 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/187.html">
-                                Generative Models
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/186.html">
                                 Machine Learning
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/132.html">
-                                Music
                             </a>
                           
                             <a 
@@ -1006,8 +1338,14 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/190.html">
-                                Programming
+                              href="/library/tags/187.html">
+                                Generative Models
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/193.html">
+                                Audiot and Speech Processing
                             </a>
                            
                         </td>
@@ -1051,7 +1389,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "211,212,213,214,215,216", "authors": [{"avg_rating": null, "count": 1, "id": 216, "name": "Kfir Aberman", "sort": "Aberman, Kfir"}, {"avg_rating": null, "count": 1, "id": 213, "name": "Varun Jampani", "sort": "Jampani, Varun"}, {"avg_rating": null, "count": 1, "id": 212, "name": "Yuanzhen Li", "sort": "Li, Yuanzhen"}, {"avg_rating": null, "count": 1, "id": 214, "name": "Yael Pritch", "sort": "Pritch, Yael"}, {"avg_rating": null, "count": 1, "id": 215, "name": "Michael Rubinstein", "sort": "Rubinstein, Michael"}, {"avg_rating": null, "count": 1, "id": 211, "name": "Nataniel Ruiz", "sort": "Ruiz, Nataniel"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eLarge text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts. In this work, we present a new approach for \"personalization\" of text-to-image diffusion models (specializing them to users\u0027 needs). Given as input just a few images of a subject, we fine-tune a pretrained text-to-image model (Imagen, although our method is not limited to a specific model) such that it learns to bind a unique identifier with that specific subject. Once the subject is embedded in the output domain of the model, the unique identifier can then be used to synthesize fully-novel photorealistic images of the subject contextualized in different scenes. By leveraging the semantic prior embedded in the model with a new autogenous class-specific prior preservation loss, our technique enables synthesizing the subject in diverse scenes, poses, views, and lighting conditions that do not appear in the reference images. We apply our technique to several previously-unassailable tasks, including subject recontextualization, text-guided view synthesis, appearance modification, and artistic rendering (all while preserving the subject\u0027s key features).\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read_date": "2022-08-17", "custom_reading_list": 0, "custom_types": "Paper", "flags": 1, "has_cover": 1, "id": 201, "identifier_ids": "724", "identifiers": [{"book": 201, "id": 724, "name": "arXiv", "path": "https://arxiv.org/abs/2208.12242", "sort": "arxiv", "type": "arxiv", "val": "2208.12242"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-06 10:33:15.984022+00:00", "path": "Nataniel Ruiz/DreamBooth Fine Tuning T2I Diffusio (201)", "pubdate": "0101-01-01", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 2, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 17258364, "tag_ids": "188,189,190,191,192", "tags": [{"avg_rating": null, "count": 1, "id": 191, "name": "Computer Science", "sort": "Computer Science"}, {"avg_rating": null, "count": 1, "id": 192, "name": "Computer Vision and Pattern Recognition", "sort": "Computer Vision and Pattern Recognition"}, {"avg_rating": null, "count": 2, "id": 189, "name": "Deep Learning", "sort": "Deep Learning"}, {"avg_rating": null, "count": 2, "id": 188, "name": "Paper", "sort": "Paper"}, {"avg_rating": null, "count": 2, "id": 190, "name": "Programming", "sort": "Programming"}], "timestamp": "2022-10-06 10:33:15.984022+00:00", "title": "DreamBooth Fine Tuning T2I Diffusion Models for Subject Driven Generation"}, {"author_ids": "217,218,219,220,221,222", "authors": [{"avg_rating": null, "count": 1, "id": 217, "name": "Prafulla Dhariwal", "sort": "Dhariwal, Prafulla"}, {"avg_rating": null, "count": 1, "id": 218, "name": "Heewoo Jun", "sort": "Jun, Heewoo"}, {"avg_rating": null, "count": 1, "id": 220, "name": "Jong Wook Kim", "sort": "Kim, Jong Wook"}, {"avg_rating": null, "count": 1, "id": 219, "name": "Christine Payne", "sort": "Payne, Christine"}, {"avg_rating": null, "count": 1, "id": 221, "name": "Alec Radford", "sort": "Radford, Alec"}, {"avg_rating": null, "count": 1, "id": 222, "name": "Ilya Sutskever", "sort": "Sutskever, Ilya"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWe introduce Jukebox, a model that generates music with singing in the raw audio domain. We tackle the long context of raw audio using a multi-scale VQ-VAE to compress it to discrete codes, and modeling those using autoregressive Transformers. We show that the combined model at scale can generate high-fidelity and diverse songs with coherence up to multiple minutes. We can condition on artist and genre to steer the musical and vocal style, and on unaligned lyrics to make the singing more controllable.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read_date": "2022-08-17", "custom_reading_list": 0, "custom_types": "Paper", "flags": 1, "has_cover": 1, "id": 200, "identifier_ids": "725", "identifiers": [{"book": 200, "id": 725, "name": "arXiv", "path": "https://arxiv.org/abs/2005.00341", "sort": "arxiv", "type": "arxiv", "val": "2005.00341"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-06 10:33:15.488347+00:00", "path": "Prafulla Dhariwal/Jukebox_ A Generative Model for Mus (200)", "pubdate": "0101-01-01", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 2, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 4337599, "tag_ids": "132,186,187,188,189,190,193", "tags": [{"avg_rating": null, "count": 1, "id": 193, "name": "Audiot and Speech Processing", "sort": "Audiot and Speech Processing"}, {"avg_rating": null, "count": 2, "id": 189, "name": "Deep Learning", "sort": "Deep Learning"}, {"avg_rating": null, "count": 1, "id": 187, "name": "Generative Models", "sort": "Generative Models"}, {"avg_rating": null, "count": 1, "id": 186, "name": "Machine Learning", "sort": "Machine Learning"}, {"avg_rating": 7.6, "count": 6, "id": 132, "name": "Music", "sort": "Music"}, {"avg_rating": null, "count": 2, "id": 188, "name": "Paper", "sort": "Paper"}, {"avg_rating": null, "count": 2, "id": 190, "name": "Programming", "sort": "Programming"}], "timestamp": "2022-10-06 10:33:15.488347+00:00", "title": "Jukebox: A Generative Model for Music"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "224,225,226,227,228,229,230,231,232,233,234,235,236", "authors": [{"avg_rating": null, "count": 1, "id": 228, "name": "Jie An", "sort": "An, Jie"}, {"avg_rating": null, "count": 1, "id": 232, "name": "Oron Ashual", "sort": "Ashual, Oron"}, {"avg_rating": null, "count": 1, "id": 233, "name": "Oran Gafni", "sort": "Gafni, Oran"}, {"avg_rating": null, "count": 1, "id": 235, "name": "Sonal Gupta", "sort": "Gupta, Sonal"}, {"avg_rating": null, "count": 1, "id": 226, "name": "Thomas Hayes", "sort": "Hayes, Thomas"}, {"avg_rating": null, "count": 1, "id": 230, "name": "Qiyuan Hu", "sort": "Hu, Qiyuan"}, {"avg_rating": null, "count": 1, "id": 234, "name": "Devi Parikh", "sort": "Parikh, Devi"}, {"avg_rating": null, "count": 1, "id": 225, "name": "Adam Polyak", "sort": "Polyak, Adam"}, {"avg_rating": null, "count": 1, "id": 224, "name": "Uriel Singer", "sort": "Singer, Uriel"}, {"avg_rating": null, "count": 1, "id": 236, "name": "Yaniv Taigman", "sort": "Taigman, Yaniv"}, {"avg_rating": null, "count": 1, "id": 231, "name": "Harry Yang", "sort": "Yang, Harry"}, {"avg_rating": null, "count": 1, "id": 227, "name": "Xi Yin", "sort": "Yin, Xi"}, {"avg_rating": null, "count": 1, "id": 229, "name": "Songyang Zhang", "sort": "Zhang, Songyang"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWe propose Make-A-Video -- an approach for directly translating the tremendous recent progress in Text-to-Image (T2I) generation to Text-to-Video (T2V). Our intuition is simple: learn what the world looks like and how it is described from paired text-image data, and learn how the world moves from unsupervised video footage. Make-A-Video has three advantages: (1) it accelerates training of the T2V model (it does not need to learn visual and multimodal representations from scratch), (2) it does not require paired text-video data, and (3) the generated videos inherit the vastness (diversity in aesthetic, fantastical depictions, etc.) of today\u0027s image generation models. We design a simple yet effective way to build on T2I models with novel and effective spatial-temporal modules. First, we decompose the full temporal U-Net and attention tensors and approximate them in space and time. Second, we design a spatial temporal pipeline to generate high resolution and frame rate videos with a video decoder, interpolation model and two super resolution models that can enable various applications besides T2V. In all aspects, spatial and temporal resolution, faithfulness to text, and quality, Make-A-Video sets the new state-of-the-art in text-to-video generation, as determined by both qualitative and quantitative measures. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 276, "value": 1}], "custom_lists": [{"id": 3, "value": "Machine Learning.Deep Learning"}], "custom_read_date": [{"id": 62, "value": "2022-10-06"}], "custom_reading_list": [{"id": 153, "value": 0}], "custom_types": [{"id": 3, "value": "Paper"}], "flags": 1, "has_cover": 1, "id": 202, "identifier_ids": "726", "identifiers": [{"book": 202, "id": 726, "name": "arXiv", "path": "https://arxiv.org/abs/2209.14792", "sort": "arxiv", "type": "arxiv", "val": "2209.14792"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 122, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 18:10:27.211679+00:00", "order_by": "2022-10-06 12:36:28.135668+00:00", "path": "Uriel Singer/Make-A-Video_ Text-to-Video Generat (202)", "pubdate": "2022-09-29", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 3, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 14464869, "tag_ids": "186,189,191,192", "tags": [{"avg_rating": 10.0, "count": 4, "id": 191, "name": "Computer Science", "sort": 4}, {"avg_rating": null, "count": 3, "id": 189, "name": "Deep Learning", "sort": 3}, {"avg_rating": null, "count": 2, "id": 186, "name": "Machine Learning", "sort": 2}, {"avg_rating": null, "count": 2, "id": 192, "name": "Computer Vision and Pattern Recognition", "sort": 2}], "timestamp": "2022-10-06 12:36:28.135668+00:00", "title": "Make-A-Video: Text-to-Video Generation without Text-Video Data"}, {"author_ids": "211,212,213,214,215,216", "authors": [{"avg_rating": null, "count": 1, "id": 216, "name": "Kfir Aberman", "sort": "Aberman, Kfir"}, {"avg_rating": null, "count": 1, "id": 213, "name": "Varun Jampani", "sort": "Jampani, Varun"}, {"avg_rating": null, "count": 1, "id": 212, "name": "Yuanzhen Li", "sort": "Li, Yuanzhen"}, {"avg_rating": null, "count": 1, "id": 214, "name": "Yael Pritch", "sort": "Pritch, Yael"}, {"avg_rating": null, "count": 1, "id": 215, "name": "Michael Rubinstein", "sort": "Rubinstein, Michael"}, {"avg_rating": null, "count": 1, "id": 211, "name": "Nataniel Ruiz", "sort": "Ruiz, Nataniel"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eLarge text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts. In this work, we present a new approach for \"personalization\" of text-to-image diffusion models (specializing them to users\u0027 needs). Given as input just a few images of a subject, we fine-tune a pretrained text-to-image model (Imagen, although our method is not limited to a specific model) such that it learns to bind a unique identifier with that specific subject. Once the subject is embedded in the output domain of the model, the unique identifier can then be used to synthesize fully-novel photorealistic images of the subject contextualized in different scenes. By leveraging the semantic prior embedded in the model with a new autogenous class-specific prior preservation loss, our technique enables synthesizing the subject in diverse scenes, poses, views, and lighting conditions that do not appear in the reference images. We apply our technique to several previously-unassailable tasks, including subject recontextualization, text-guided view synthesis, appearance modification, and artistic rendering (all while preserving the subject\u0027s key features).\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 274, "value": 1}], "custom_lists": [{"id": 3, "value": "Machine Learning.Deep Learning"}], "custom_read_date": [{"id": 19, "value": "2022-08-17"}], "custom_reading_list": [{"id": 152, "value": 0}], "custom_types": [{"id": 3, "value": "Paper"}], "flags": 1, "has_cover": 1, "id": 201, "identifier_ids": "724", "identifiers": [{"book": 201, "id": 724, "name": "arXiv", "path": "https://arxiv.org/abs/2208.12242", "sort": "arxiv", "type": "arxiv", "val": "2208.12242"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 122, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:25:09.821267+00:00", "order_by": "2022-10-06 10:33:15.984022+00:00", "path": "Nataniel Ruiz/DreamBooth Fine Tuning T2I Diffusio (201)", "pubdate": "2022-08-25", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 3, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 17258364, "tag_ids": "188,189,191,192", "tags": [{"avg_rating": 10.0, "count": 4, "id": 191, "name": "Computer Science", "sort": 4}, {"avg_rating": null, "count": 3, "id": 189, "name": "Deep Learning", "sort": 3}, {"avg_rating": null, "count": 2, "id": 188, "name": "Paper", "sort": 2}, {"avg_rating": null, "count": 2, "id": 192, "name": "Computer Vision and Pattern Recognition", "sort": 2}], "timestamp": "2022-10-06 10:33:15.984022+00:00", "title": "DreamBooth Fine Tuning T2I Diffusion Models for Subject Driven Generation"}, {"author_ids": "217,218,219,220,221,222", "authors": [{"avg_rating": null, "count": 1, "id": 217, "name": "Prafulla Dhariwal", "sort": "Dhariwal, Prafulla"}, {"avg_rating": null, "count": 1, "id": 218, "name": "Heewoo Jun", "sort": "Jun, Heewoo"}, {"avg_rating": null, "count": 1, "id": 220, "name": "Jong Wook Kim", "sort": "Kim, Jong Wook"}, {"avg_rating": null, "count": 1, "id": 219, "name": "Christine Payne", "sort": "Payne, Christine"}, {"avg_rating": null, "count": 1, "id": 221, "name": "Alec Radford", "sort": "Radford, Alec"}, {"avg_rating": null, "count": 1, "id": 222, "name": "Ilya Sutskever", "sort": "Sutskever, Ilya"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWe introduce Jukebox, a model that generates music with singing in the raw audio domain. We tackle the long context of raw audio using a multi-scale VQ-VAE to compress it to discrete codes, and modeling those using autoregressive Transformers. We show that the combined model at scale can generate high-fidelity and diverse songs with coherence up to multiple minutes. We can condition on artist and genre to steer the musical and vocal style, and on unaligned lyrics to make the singing more controllable.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 273, "value": 1}], "custom_lists": [{"id": 3, "value": "Machine Learning.Deep Learning"}], "custom_read_date": [{"id": 20, "value": "2022-08-17"}], "custom_reading_list": [{"id": 151, "value": 0}], "custom_types": [{"id": 3, "value": "Paper"}], "flags": 1, "has_cover": 1, "id": 200, "identifier_ids": "725", "identifiers": [{"book": 200, "id": 725, "name": "arXiv", "path": "https://arxiv.org/abs/2005.00341", "sort": "arxiv", "type": "arxiv", "val": "2005.00341"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 122, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:25:00.713884+00:00", "order_by": "2022-10-06 10:33:15.488347+00:00", "path": "Prafulla Dhariwal/Jukebox_ A Generative Model for Mus (200)", "pubdate": "2020-04-30", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 3, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 4337599, "tag_ids": "132,186,187,188,189,193", "tags": [{"avg_rating": 7.6, "count": 6, "id": 132, "name": "Music", "sort": 6}, {"avg_rating": null, "count": 3, "id": 189, "name": "Deep Learning", "sort": 3}, {"avg_rating": null, "count": 2, "id": 186, "name": "Machine Learning", "sort": 2}, {"avg_rating": null, "count": 2, "id": 188, "name": "Paper", "sort": 2}, {"avg_rating": null, "count": 1, "id": 187, "name": "Generative Models", "sort": 1}, {"avg_rating": null, "count": 1, "id": 193, "name": "Audiot and Speech Processing", "sort": 1}], "timestamp": "2022-10-06 10:33:15.488347+00:00", "title": "Jukebox: A Generative Model for Music"}])'></div>
          </div>
       </div>
    </div>
