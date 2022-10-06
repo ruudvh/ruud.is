@@ -344,7 +344,7 @@
                 
    <div x-data="{activeTab:'tabCards'}">
       <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Tags > Philosophy (8)</div>
+         <div class="font-medium text-base">Tags > Philosophy (9)</div>
          <div class="flex flex-row">
             <button
                @click="activeTab = 'tabCards'"
@@ -375,6 +375,352 @@
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
             class="book-cards"
          >
+            
+               
+                  
+  
+
+
+
+  
+
+
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+    <div class="flex relative">
+       <img 
+        src="/library/images/covers/171.jpg"
+        alt="The Science of Discworld"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        @click="showModal = true"
+        >
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
+              The Science of Discworld
+            </div>
+
+            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
+              
+                <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
+               
+            </p>
+
+            <div class="whitespace-nowrap mt-2 text-slate-300">
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+            </div>
+
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <p><strong>The fantastic first book in the <em>Sunday Times</em> bestselling Science of Discworld series</strong>  </p>
+<p>When a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.  </p>
+<p>The Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.  </p>
+<p>Through this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.  </p>
+<p><strong>Terry Pratchett</strong> is the acclaimed creator of the global bestselling Discworld series, the first of which, <em>The Colour of Magic</em> , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.  </p>
+<p>www.terrypratchett.co.uk<br />
+@terryandrob  </p>
+<p><strong>Professor Ian Stewart</strong> is the author of many popular science books. He is the mathematics consultant for <em>New Scientist</em> and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.  </p>
+<p><strong>Dr Jack Cohen</strong> is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.</p>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <div
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                @click="showModal = true"
+              >
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+               </svg>
+              </div>
+            </div>
+       </div>
+    </div>
+
+    <template x-teleport="#x-teleport-target">
+      <div
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+        x-show="showModal"
+        role="dialog"
+        @keydown.window.escape="showModal = false"
+      >
+        <div
+          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+          @click="showModal = false"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <div
+          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        >
+          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 hidden lg:block lg:col-span-4 
+                  bg-[url('/library/images/covers/171.jpg')] bg-cover bg-left rounded-l-lg"
+            ></div>
+            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+              <h1 class="pb-4 ml-0 text-3xl font-semibold">
+                The Science of Discworld
+              </h1>
+
+              <table class="w-full text-left align-top">
+                  <tbody>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Authors:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Series:
+                        </td>
+                        <td class="space-x-1">
+                             
+                        </td>
+                    </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Publishers:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/publishers/116.html">Ebury Press</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Publish Date:
+                        </td>
+                        <td class="space-x-1">
+                            1999-01-01
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Languages:
+                        </td>
+                        <td class="space-x-1">
+                            
+                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
+                             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            ISBN:
+                        </td>
+                        <td class="">
+                          <div class="flex items-center">
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781448176670</p>
+                            <button
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="$clipboard({
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                error:()=>$notification({text:'Error',variant:'error'})
+                              })"
+                            >
+                              Copy
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Rating:
+                          </td>
+                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-1 whitespace-nowrap font-semibold">
+                            Tags:
+                        </td>
+                        <td class="pt-1 space-x-1 space-y-1">
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/76.html">
+                                Fantasy
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/42.html">
+                                Humour
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/62.html">
+                                Philosophy
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/177.html">
+                                Reference
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/75.html">
+                                Science Fiction
+                            </a>
+                           
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-4 pb-1 font-semibold">Description:</p>
+              <div 
+                x-init="$el._x_simplebar = new SimpleBar($el)"
+                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
+                <p><strong>The fantastic first book in the <em>Sunday Times</em> bestselling Science of Discworld series</strong>  </p>
+<p>When a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.  </p>
+<p>The Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.  </p>
+<p>Through this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.  </p>
+<p><strong>Terry Pratchett</strong> is the acclaimed creator of the global bestselling Discworld series, the first of which, <em>The Colour of Magic</em> , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.  </p>
+<p>www.terrypratchett.co.uk<br />
+@terryandrob  </p>
+<p><strong>Professor Ian Stewart</strong> is the author of many popular science books. He is the mathematics consultant for <em>New Scientist</em> and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.  </p>
+<p><strong>Dr Jack Cohen</strong> is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.</p>
+              </div>
+    
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+              <div class="space-x-1 space-y-1">
+                
+                  <a
+                    href="https://www.worldcat.org/isbn/9781448176670" 
+                    target="_blank"
+                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                  >
+                    ISBN
+                  </a>
+                
+                  <a
+                    href="https://books.google.com/books?id=Q1x0852ip1wC" 
+                    target="_blank"
+                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                  >
+                    Google Books
+                  </a>
+                
+                  <a
+                    href="https://www.goodreads.com/book/show/233674" 
+                    target="_blank"
+                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                  >
+                    Goodreads
+                  </a>
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+ </div>
+               
             
                
                   
@@ -458,7 +804,7 @@
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
-                <span>View Book</span>
+                <span>Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                </svg>
@@ -675,7 +1021,7 @@
 <p>Adembenemend, weids en revolutionair – <em>De meeste mensen deugen</em> herschrijft niet alleen de geschiedenis, maar werpt ook nieuw licht op onze toekomst.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
               <div class="space-x-1 space-y-1">
                 
                   <a
@@ -700,6 +1046,14 @@
                     class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
                   >
                     Goodreads
+                  </a>
+                
+                  <a
+                    href="https://amazon.nl/dp/9082942186" 
+                    target="_blank"
+                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                  >
+                    Amazon NL
                   </a>
                 
                   <a
@@ -800,7 +1154,7 @@
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
-                <span>View Book</span>
+                <span>Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                </svg>
@@ -1015,7 +1369,7 @@
 <p>For readers of Teju Cole’s <em>Known and Strange Things</em> and Mark Greif’s <em>Against Everything</em> , McCarthy’s essays portray a brilliant young critic at work, making sense of our disjointed times while seeking to transform our understanding of race and art, identity and representation.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
               <div class="space-x-1 space-y-1">
                 
                   <a
@@ -1134,7 +1488,7 @@
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
-                <span>View Book</span>
+                <span>Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                </svg>
@@ -1351,7 +1705,7 @@
 <p>" —David Oshinsky, The New York Times Book Review | Editors' ChoiceOne of The New York Times's 100 best books of 2021 | One of The Washington Post's 50 best nonfiction books of 2021 | A Mother Jones best book of 2021In his follow-up to the Pulitzer Prize–winning The Metaphysical Club, Louis Menand offers a new intellectual and cultural history of the postwar yearsThe Cold War was not just a contest of power. It was also about ideas, in the broadest sense—economic and political, artistic and personal. In The Free World, the acclaimed Pulitzer Prize–winning scholar and critic Louis Menand tells the story of American culture in the pivotal years from the end of World War II to Vietnam and shows how changing economic, technological, and social forces put their mark on creations of the mind. How did elitism and an anti-totalitarian skepticism of passion and ideology give way to a new sensibility defined by freewheeling experimentation and loving the Beatles? How was the ideal of “freedom” applied to causes that ranged from anti-communism and civil rights to radical acts of self-creation via art and even crime? With the wit and insight familiar to readers of The Metaphysical Club and his New Yorker essays, Menand takes us inside Hannah Arendt’s Manhattan, the Paris of Jean-Paul Sartre and Simone de Beauvoir, Merce Cunningham and John Cage’s residencies at North Carolina’s Black Mountain College, and the Memphis studio where Sam Phillips and Elvis Presley created a new music for the American teenager. He examines the post war vogue for French existentialism, structuralism and post-structuralism, the rise of abstract expressionism and pop art, Allen Ginsberg’s friendship with Lionel Trilling, James Baldwin’s transformation into a Civil Right spokesman, Susan Sontag’s challenges to the New York Intellectuals, the defeat of obscenity laws, and the rise of the New Hollywood. Stressing the rich flow of ideas across the Atlantic, he also shows how Europeans played a vital role in promoting and influencing American art and entertainment. By the end of the Vietnam era, the American government had lost the moral prestige it enjoyed at the end of the Second World War, but America’s once-despised culture had become respected and adored. With unprecedented verve and range, this book explains how that happened.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
               <div class="space-x-1 space-y-1">
                 
                   <a
@@ -1472,7 +1826,7 @@
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
-                <span>View Book</span>
+                <span>Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                </svg>
@@ -1691,7 +2045,7 @@
 <p>Drawing on the insights of both ancient and contemporary philosophers, psychologists, and spiritual teachers, Oliver Burkeman delivers an entertaining, humorous, practical, and ultimately profound guide to time and time management. Rejecting the futile modern fixation on “getting everything done,” Four Thousand Weeks introduces readers to tools for constructing a meaningful life by embracing finitude, showing how many of the unhelpful ways we’ve come to think about time aren’t inescapable, unchanging truths, but choices we’ve made as individuals and as a society—and that we could do things differently.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
               <div class="space-x-1 space-y-1">
                 
                   <a
@@ -1811,7 +2165,7 @@
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
-                <span>View Book</span>
+                <span>Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                </svg>
@@ -2011,7 +2365,7 @@
 <p>In today’s world, where more and more of our communication takes place across wires and screens, Carnegie’s lessons have not only lasted but become all the more critical. Though he never could have predicted technology’s trajectory, Carnegie proves a wise and helpful teacher in this digital landscape. To demonstrate the many ways his lessons remain relevant, Dale Carnegie &amp; Associates, Inc., has reimagined his prescriptions and his advice for this difficult digital age. We may communicate today with different tools and with greater speed, but Carnegie’s advice on how to communicate, lead, and work efficiently remains priceless across the ages.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
               <div class="space-x-1 space-y-1">
                 
                   <a
@@ -2127,7 +2481,7 @@
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
-                <span>View Book</span>
+                <span>Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                </svg>
@@ -2347,7 +2701,7 @@
 <p>Bob Altemeyer - author of Atheists and The Authoritarian Specter - gives a readable analysis of the nature of authoritarianism and its current impact on American politics.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
               <div class="space-x-1 space-y-1">
                 
                   <a
@@ -2455,7 +2809,7 @@
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
-                <span>View Book</span>
+                <span>Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                </svg>
@@ -2669,7 +3023,7 @@
 <p>The author writes, "At the heart of this simple book lies the key to many of the struggles we face these days, from being productive and achieving our goals, to getting healthy and fit in the face of fast food and inactivity, to finding simplicity and peace amidst chaos and confusion. That key is itself simple: focus. Our ability to focus will allow us to create in ways that perhaps we haven't in years. It'll allow us to slow down and find peace of mind. It'll allow us to simplify and focus on less-on the essential things, the things that matter most.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
               <div class="space-x-1 space-y-1">
                 
                   <a
@@ -2787,7 +3141,7 @@
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
               >
-                <span>View Book</span>
+                <span>Learn More</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
                </svg>
@@ -2979,7 +3333,7 @@
 <p>Filled with counterintuitive insights and including interviews with other leading scientists, this clear and yet profound book will reshape your understanding of science and the limits of what we can know.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
+              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
               <div class="space-x-1 space-y-1">
                 
                   <a
@@ -3015,7 +3369,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "161", "authors": [{"avg_rating": 8.0, "count": 1, "id": 161, "name": "Rutger Bregman", "sort": "Bregman, Rutger"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDe mens is een beest, zeiden de koningen. Een zondaar, zeiden de priesters. Een ego\u00efst, zeiden de boekhouders. Al eeuwen is de westerse cultuur doordrongen van het geloof in de verdorvenheid van de mens. \u003c/p\u003e\n\u003cp\u003eMaar wat als we het al die tijd mis hadden? \u003c/p\u003e\n\u003cp\u003eIn dit boek verweeft Rutger Bregman de jongste inzichten uit de psychologie, de economie, de biologie en de archeologie. Hij neemt ons mee op een reis door de geschiedenis en geeft nieuwe antwoorden op oude vragen. Waarom veroverde juist onze soort de aarde? Hoe verklaren we onze grootste misdaden? En zijn we diep vanbinnen geneigd tot het goede of het kwade? \u003c/p\u003e\n\u003cp\u003eAdembenemend, weids en revolutionair \u2013 \u003cem\u003eDe meeste mensen deugen\u003c/em\u003e herschrijft niet alleen de geschiedenis, maar werpt ook nieuw licht op onze toekomst.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read": 1, "custom_reading_list": 0, "flags": 1, "has_cover": 1, "id": 150, "identifier_ids": "441,442,440,439", "identifiers": [{"book": 150, "id": 439, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789082942187", "sort": "isbn", "type": "isbn", "val": "9789082942187"}, {"book": 150, "id": 440, "name": "Google Books", "path": "https://books.google.com/books?id=UbbpxgEACAAJ", "sort": "google", "type": "google", "val": "UbbpxgEACAAJ"}, {"book": 150, "id": 442, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/45995328", "sort": "goodreads", "type": "goodreads", "val": "45995328"}, {"book": 150, "id": 441, "name": "Amazon", "path": "https://amazon.com/dp/9082942186", "sort": "amazon", "type": "amazon", "val": "9082942186"}], "isbn": "9789082942187", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 11, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-05 18:26:56.705999+00:00", "order_by": "2022-10-05 18:14:43.967457+00:00", "path": "Rutger Bregman/De Meeste Mensen Deugen_ Een Nieuwe (150)", "pubdate": "2019-09-03", "publisher_ids": "97", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 97, "name": "De Correspondent", "sort": "De Correspondent"}], "rating": 4, "series": [], "series_ids": null, "size": 9748908, "tag_ids": "31,57,58,59,60,62", "tags": [{"avg_rating": 8.5, "count": 16, "id": 60, "name": "History", "sort": "History"}, {"avg_rating": 7.75, "count": 8, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.571428571428571, "count": 14, "id": 57, "name": "Politics", "sort": "Politics"}, {"avg_rating": 7.833333333333333, "count": 12, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 8.285714285714286, "count": 8, "id": 58, "name": "Science", "sort": "Science"}, {"avg_rating": 9.0, "count": 4, "id": 59, "name": "Sociology", "sort": "Sociology"}], "timestamp": "2022-10-05 18:14:43.967457+00:00", "title": "De Meeste Mensen Deugen: Een Nieuwe Geschiedenis Van De Mens"}, {"author_ids": "138", "authors": [{"avg_rating": 8.0, "count": 1, "id": 138, "name": "Jesse McCarthy", "sort": "McCarthy, Jesse"}], "comments": "\u003cp\u003eRanging from Ta-Nehisi Coates\u2019s case for reparations to Toni Morrison\u2019s revolutionary humanism to D\u2019Angelo\u2019s simmering blend of R and racial justice, Jesse McCarthy\u2019s bracing essays investigate with virtuosic intensity the art, music, literature, and political stances that have defined the twenty-first century. Even as our world has suffered through successive upheavals, McCarthy contends, \u201csomething was happening in the world of culture: a surging and unprecedented visibility at every level of black art making.\u201d \u003cem\u003eWho Will Pay Reparations on My Soul?\u003c/em\u003e reckons with this resurgence, arguing for the central role of art and intellectual culture in an age of widening inequality and moral crisis.  \u003c/p\u003e\n\u003cp\u003eMcCarthy reinvigorates the essay form as a space not only for argument but for experimental writing that mixes and chops the old ways into new ones. In \u201cNotes on Trap,\u201d he borrows a conceit from Susan Sontag to reveal the social and political significance of trap music, the drug-soaked strain of Southern hip-hop that, as he puts it, is \u201cthe funeral music that the Reagan Revolution deserves.\u201d In \u201cBack in the Day,\u201d McCarthy, a black American raised in France, evokes his childhood in Paris through an elegiac account of French rap in the 1990s. In \u201cThe Master\u2019s Tools,\u201d the relationship between Spanish painter Diego Vel\u00e1zquez and his acolyte-slave, Juan de Pareja, becomes the lens through which Kehinde Wiley\u2019s paintings are viewed, while \u201cTo Make a Poet Black\u201d explores the hidden blackness of Sappho and the erotic power of Phillis Wheatley. Essays on John Edgar Wideman, Claudia Rankine, and Colson Whitehead survey the state of black letters. In his title essay, McCarthy takes on the question of reparations, arguing that true progress will not come until Americans remake their institutions in the service of true equality. As he asks, \u201cWhat can reparations mean when the damage cannot be accounted for in the only system of accounting that a society recognizes?\u201d  \u003c/p\u003e\n\u003cp\u003eFor readers of Teju Cole\u2019s \u003cem\u003eKnown and Strange Things\u003c/em\u003e and Mark Greif\u2019s \u003cem\u003eAgainst Everything\u003c/em\u003e , McCarthy\u2019s essays portray a brilliant young critic at work, making sense of our disjointed times while seeking to transform our understanding of race and art, identity and representation.\u003c/p\u003e", "custom_clean": 1, "custom_read": 0, "custom_reading_list": 0, "flags": 1, "has_cover": 1, "id": 136, "identifier_ids": "329,330,328", "identifiers": [{"book": 136, "id": 328, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781631496486", "sort": "isbn", "type": "isbn", "val": "9781631496486"}, {"book": 136, "id": 330, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53404236", "sort": "goodreads", "type": "goodreads", "val": "53404236"}, {"book": 136, "id": 329, "name": "Amazon", "path": "https://amazon.com/dp/1631496484", "sort": "amazon", "type": "amazon", "val": "1631496484"}], "isbn": "9781631496486", "language_ids": "1", "languages": [{"avg_rating": 8.289473684210526, "count": 89, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-05 18:07:11.431334+00:00", "order_by": "2022-10-05 15:54:12.226768+00:00", "path": "Jesse McCarthy/Who Will Pay Reparations on My Soul (136)", "pubdate": "2021-03-30", "publisher_ids": "84", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 84, "name": "Liveright Publishing", "sort": "Liveright Publishing"}], "rating": 4, "series": [], "series_ids": null, "size": 2484632, "tag_ids": "44,57,60,62,131,134", "tags": [{"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": "Art"}, {"avg_rating": 8.5, "count": 16, "id": 60, "name": "History", "sort": "History"}, {"avg_rating": 7.75, "count": 8, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.0, "count": 2, "id": 134, "name": "Poetry", "sort": "Poetry"}, {"avg_rating": 8.571428571428571, "count": 14, "id": 57, "name": "Politics", "sort": "Politics"}, {"avg_rating": 8.342857142857143, "count": 39, "id": 131, "name": "Time.2021 Must Read", "sort": "Time.2021 Must Read"}], "timestamp": "2022-10-05 15:54:12.226768+00:00", "title": "Who Will Pay Reparations on My Soul?"}, {"author_ids": "134", "authors": [{"avg_rating": 8.0, "count": 1, "id": 134, "name": "Louis Menand", "sort": "Menand, Louis"}], "comments": "\u003cp\u003e\"An engrossing and impossibly wide-ranging project . . . In The Free World, every seat is a good one.\u003c/p\u003e\n\n\u003cp\u003e\" \u2014Carlos Lozada, The Washington Post\"The Free World sparkles. Fully original, beautifully written . . . One hopes Menand has a sequel in mind. The bar is set very high.\u003c/p\u003e\n\n\u003cp\u003e\" \u2014David Oshinsky, The New York Times Book Review | Editors\u0027 ChoiceOne of The New York Times\u0027s 100 best books of 2021 | One of The Washington Post\u0027s 50 best nonfiction books of 2021 | A Mother Jones best book of 2021In his follow-up to the Pulitzer Prize\u2013winning The Metaphysical Club, Louis Menand offers a new intellectual and cultural history of the postwar yearsThe Cold War was not just a contest of power. It was also about ideas, in the broadest sense\u2014economic and political, artistic and personal. In The Free World, the acclaimed Pulitzer Prize\u2013winning scholar and critic Louis Menand tells the story of American culture in the pivotal years from the end of World War II to Vietnam and shows how changing economic, technological, and social forces put their mark on creations of the mind. How did elitism and an anti-totalitarian skepticism of passion and ideology give way to a new sensibility defined by freewheeling experimentation and loving the Beatles? How was the ideal of \u201cfreedom\u201d applied to causes that ranged from anti-communism and civil rights to radical acts of self-creation via art and even crime? With the wit and insight familiar to readers of The Metaphysical Club and his New Yorker essays, Menand takes us inside Hannah Arendt\u2019s Manhattan, the Paris of Jean-Paul Sartre and Simone de Beauvoir, Merce Cunningham and John Cage\u2019s residencies at North Carolina\u2019s Black Mountain College, and the Memphis studio where Sam Phillips and Elvis Presley created a new music for the American teenager. He examines the post war vogue for French existentialism, structuralism and post-structuralism, the rise of abstract expressionism and pop art, Allen Ginsberg\u2019s friendship with Lionel Trilling, James Baldwin\u2019s transformation into a Civil Right spokesman, Susan Sontag\u2019s challenges to the New York Intellectuals, the defeat of obscenity laws, and the rise of the New Hollywood. Stressing the rich flow of ideas across the Atlantic, he also shows how Europeans played a vital role in promoting and influencing American art and entertainment. By the end of the Vietnam era, the American government had lost the moral prestige it enjoyed at the end of the Second World War, but America\u2019s once-despised culture had become respected and adored. With unprecedented verve and range, this book explains how that happened.\u003c/p\u003e", "custom_clean": 1, "custom_read": 0, "custom_reading_list": 0, "flags": 1, "has_cover": 1, "id": 132, "identifier_ids": "315,316,317", "identifiers": [{"book": 132, "id": 317, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780374722913", "sort": "isbn", "type": "isbn", "val": "9780374722913"}, {"book": 132, "id": 316, "name": "Google Books", "path": "https://books.google.com/books?id=rrziDwAAQBAJ", "sort": "google", "type": "google", "val": "rrziDwAAQBAJ"}, {"book": 132, "id": 315, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53317422", "sort": "goodreads", "type": "goodreads", "val": "53317422"}], "isbn": "9780374722913", "language_ids": "1", "languages": [{"avg_rating": 8.289473684210526, "count": 89, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-05 18:07:11.431334+00:00", "order_by": "2022-10-05 15:54:10.771659+00:00", "path": "Louis Menand/The Free World_ Art and Thought in (132)", "pubdate": "2021-04-20", "publisher_ids": "71", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 71, "name": "Farrar, Straus and Giroux", "sort": "Farrar, Straus and Giroux"}], "rating": 4, "series": [], "series_ids": null, "size": 35444855, "tag_ids": "44,57,60,62,131,132", "tags": [{"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": "Art"}, {"avg_rating": 8.5, "count": 16, "id": 60, "name": "History", "sort": "History"}, {"avg_rating": 7.5, "count": 4, "id": 132, "name": "Music", "sort": "Music"}, {"avg_rating": 7.75, "count": 8, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.571428571428571, "count": 14, "id": 57, "name": "Politics", "sort": "Politics"}, {"avg_rating": 8.342857142857143, "count": 39, "id": 131, "name": "Time.2021 Must Read", "sort": "Time.2021 Must Read"}], "timestamp": "2022-10-05 15:54:10.771659+00:00", "title": "The Free World: Art and Thought in the Cold War"}, {"author_ids": "127", "authors": [{"avg_rating": 8.0, "count": 1, "id": 127, "name": "Oliver Burkeman", "sort": "Burkeman, Oliver"}], "comments": "\u003cp\u003eAN INSTANT NEW YORK TIMES BESTSELLER\"Provocative and appealing . . . well worth your extremely limited time.\u003c/p\u003e\n\n\u003cp\u003e\" \u2014Barbara Spindel, The Wall Street JournalThe average human lifespan is absurdly, insultingly brief. Assuming you live to be eighty, you have just over four thousand weeks.\u003c/p\u003e\n\n\u003cp\u003eNobody needs telling there isn\u2019t enough time. We\u2019re obsessed with our lengthening to-do lists, our overfilled inboxes, work-life balance, and the ceaseless battle against distraction; and we\u2019re deluged with advice on becoming more productive and efficient, and \u201clife hacks\u201d to optimize our days. But such techniques often end up making things worse. The sense of anxious hurry grows more intense, and still the most meaningful parts of life seem to lie just beyond the horizon. Still, we rarely make the connection between our daily struggles with time and the ultimate time management problem: the challenge of how best to use our four thousand weeks.\u003c/p\u003e\n\n\u003cp\u003eDrawing on the insights of both ancient and contemporary philosophers, psychologists, and spiritual teachers, Oliver Burkeman delivers an entertaining, humorous, practical, and ultimately profound guide to time and time management. Rejecting the futile modern fixation on \u201cgetting everything done,\u201d Four Thousand Weeks introduces readers to tools for constructing a meaningful life by embracing finitude, showing how many of the unhelpful ways we\u2019ve come to think about time aren\u2019t inescapable, unchanging truths, but choices we\u2019ve made as individuals and as a society\u2014and that we could do things differently.\u003c/p\u003e", "custom_clean": 1, "custom_read": 0, "custom_reading_list": 0, "flags": 1, "has_cover": 1, "id": 125, "identifier_ids": "411,410,409", "identifiers": [{"book": 125, "id": 409, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780374159122", "sort": "isbn", "type": "isbn", "val": "9780374159122"}, {"book": 125, "id": 410, "name": "Google Books", "path": "https://books.google.com/books?id=5my-zQEACAAJ", "sort": "google", "type": "google", "val": "5my-zQEACAAJ"}, {"book": 125, "id": 411, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/54785515", "sort": "goodreads", "type": "goodreads", "val": "54785515"}], "isbn": "9780374159122", "language_ids": "1", "languages": [{"avg_rating": 8.289473684210526, "count": 89, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-05 18:07:11.431334+00:00", "order_by": "2022-10-05 15:54:07.946195+00:00", "path": "Oliver Burkeman/Four Thousand Weeks_ Time Managemen (125)", "pubdate": "2021-08-10", "publisher_ids": "71", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 71, "name": "Farrar, Straus and Giroux", "sort": "Farrar, Straus and Giroux"}], "rating": 4, "series": [], "series_ids": null, "size": 729503, "tag_ids": "31,43,51,62,70,131", "tags": [{"avg_rating": 8.4, "count": 5, "id": 51, "name": "Business", "sort": "Business"}, {"avg_rating": 8.0, "count": 4, "id": 70, "name": "Health", "sort": "Health"}, {"avg_rating": 7.75, "count": 8, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 7.833333333333333, "count": 12, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 7.846153846153846, "count": 15, "id": 43, "name": "Self Help", "sort": "Self Help"}, {"avg_rating": 8.342857142857143, "count": 39, "id": 131, "name": "Time.2021 Must Read", "sort": "Time.2021 Must Read"}], "timestamp": "2022-10-05 15:54:07.946195+00:00", "title": "Four Thousand Weeks: Time Management for Mortals"}, {"author_ids": "17,76", "authors": [{"avg_rating": 8.0, "count": 3, "id": 17, "name": "Dale Carnegie", "sort": "Carnegie, Dale"}, {"avg_rating": 6.0, "count": 1, "id": 76, "name": "Brent Cole", "sort": "Cole, Brent"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAN UP-TO-THE -MINUTE ADAPTATION OF DALE CARNEGIE \u2019S TIMELESS PRESCRIPTIONS FOR THE DIGITAL AGE\u003c/p\u003e\n\u003cp\u003eDALE CARNEGIE\u2019s commonsense approach to communicating has endured for a century, touching millions and millions of readers. The only diploma that hangs in Warren Buffett\u2019s office is his certificate from Dale Carnegie Training. Lee Iacocca credits Carnegie for giving him the courage to speak in public. Dilbert creator Scott Adams called Carnegie\u2019s teachings \u201clife-changing.\u201d\u003c/p\u003e\n\u003cp\u003eIn today\u2019s world, where more and more of our communication takes place across wires and screens, Carnegie\u2019s lessons have not only lasted but become all the more critical. Though he never could have predicted technology\u2019s trajectory, Carnegie proves a wise and helpful teacher in this digital landscape. To demonstrate the many ways his lessons remain relevant, Dale Carnegie \u0026amp; Associates, Inc., has reimagined his prescriptions and his advice for this difficult digital age. We may communicate today with different tools and with greater speed, but Carnegie\u2019s advice on how to communicate, lead, and work efficiently remains priceless across the ages.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read": 1, "custom_reading_list": 0, "flags": 1, "has_cover": 1, "id": 66, "identifier_ids": "133,134,132", "identifiers": [{"book": 66, "id": 132, "name": "Google Books", "path": "https://books.google.com/books?id=4AKsuQAACAAJ", "sort": "google", "type": "google", "val": "4AKsuQAACAAJ"}, {"book": 66, "id": 134, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/12176421", "sort": "goodreads", "type": "goodreads", "val": "12176421"}, {"book": 66, "id": 133, "name": "Amazon", "path": "https://amazon.com/dp/B004U7G81O", "sort": "amazon", "type": "amazon", "val": "B004U7G81O"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.289473684210526, "count": 89, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-05 18:07:11.431334+00:00", "order_by": "2022-10-04 13:46:56.206000+00:00", "path": "Dale Carnegie/How to Win Friends and Influence Peo (66)", "pubdate": "2011-10-04", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": 3, "series": [], "series_ids": null, "size": 3640731, "tag_ids": "31,43,62", "tags": [{"avg_rating": 7.75, "count": 8, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 7.833333333333333, "count": 12, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 7.846153846153846, "count": 15, "id": 43, "name": "Self Help", "sort": "Self Help"}], "timestamp": "2022-10-04 13:46:56.206000+00:00", "title": "How to Win Friends and Influence People in the Digital Age"}, {"author_ids": "49", "authors": [{"avg_rating": 8.0, "count": 1, "id": 49, "name": "Bob Altemeyer", "sort": "Altemeyer, Bob"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBob Altemeyer - author of Atheists and The Authoritarian Specter - gives a readable analysis of the nature of authoritarianism and its current impact on American politics.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read": 0, "custom_reading_list": 0, "flags": 1, "has_cover": 1, "id": 58, "identifier_ids": "54,53", "identifiers": [{"book": 58, "id": 53, "name": "Google Books", "path": "https://books.google.com/books?id=_YY5nQEACAAJ", "sort": "google", "type": "google", "val": "_YY5nQEACAAJ"}, {"book": 58, "id": 54, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1971601", "sort": "goodreads", "type": "goodreads", "val": "1971601"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.289473684210526, "count": 89, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-05 18:07:11.431334+00:00", "order_by": "2022-10-04 13:46:52.915000+00:00", "path": "Bob Altemeyer/The Authoritarians (58)", "pubdate": "2006-01-01", "publisher_ids": "26", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 26, "name": "B. Altemeyer", "sort": "B. Altemeyer"}], "rating": 4, "series": [], "series_ids": null, "size": 1010494, "tag_ids": "31,57,58,59,60,61,62", "tags": [{"avg_rating": 8.5, "count": 16, "id": 60, "name": "History", "sort": "History"}, {"avg_rating": 7.75, "count": 8, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.571428571428571, "count": 14, "id": 57, "name": "Politics", "sort": "Politics"}, {"avg_rating": 7.833333333333333, "count": 12, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 8.0, "count": 1, "id": 61, "name": "Religion", "sort": "Religion"}, {"avg_rating": 8.285714285714286, "count": 8, "id": 58, "name": "Science", "sort": "Science"}, {"avg_rating": 9.0, "count": 4, "id": 59, "name": "Sociology", "sort": "Sociology"}], "timestamp": "2022-10-04 13:46:52.915000+00:00", "title": "The Authoritarians"}, {"author_ids": "72", "authors": [{"avg_rating": 8.0, "count": 1, "id": 72, "name": "Leo Babauta", "sort": "Babauta, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe author writes, \"At the heart of this simple book lies the key to many of the struggles we face these days, from being productive and achieving our goals, to getting healthy and fit in the face of fast food and inactivity, to finding simplicity and peace amidst chaos and confusion. That key is itself simple: focus. Our ability to focus will allow us to create in ways that perhaps we haven\u0027t in years. It\u0027ll allow us to slow down and find peace of mind. It\u0027ll allow us to simplify and focus on less-on the essential things, the things that matter most.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read": 0, "custom_reading_list": 0, "flags": 1, "has_cover": 1, "id": 49, "identifier_ids": "85,83,84", "identifiers": [{"book": 49, "id": 84, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781434103079", "sort": "isbn", "type": "isbn", "val": "9781434103079"}, {"book": 49, "id": 83, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/10008766", "sort": "goodreads", "type": "goodreads", "val": "10008766"}, {"book": 49, "id": 85, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/focus-leo-babauta/1100574344", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/focus-leo-babauta/1100574344"}], "isbn": "9781434103079", "language_ids": "1", "languages": [{"avg_rating": 8.289473684210526, "count": 89, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-05 18:07:11.431334+00:00", "order_by": "2022-10-04 13:46:47.154000+00:00", "path": "Leo Babauta/Focus (49)", "pubdate": "2010-09-10", "publisher_ids": "34", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 34, "name": "Editorium", "sort": "Editorium"}], "rating": 4, "series": [], "series_ids": null, "size": 461240, "tag_ids": "31,43,51,62,70,71", "tags": [{"avg_rating": 8.4, "count": 5, "id": 51, "name": "Business", "sort": "Business"}, {"avg_rating": 8.0, "count": 4, "id": 70, "name": "Health", "sort": "Health"}, {"avg_rating": 8.0, "count": 2, "id": 71, "name": "Inspirational", "sort": "Inspirational"}, {"avg_rating": 7.75, "count": 8, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 7.833333333333333, "count": 12, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 7.846153846153846, "count": 15, "id": 43, "name": "Self Help", "sort": "Self Help"}], "timestamp": "2022-10-04 13:46:47.154000+00:00", "title": "Focus"}, {"author_ids": "24", "authors": [{"avg_rating": 8.0, "count": 1, "id": 24, "name": "Sabine Hossenfelder", "sort": "Hossenfelder, Sabine"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDo we have free will? Is the universe compatible with God? Do we live in a computer simulation? Does the universe think?\u003c/p\u003e\n\u003cp\u003ePhysicists are great at complicated research, but they are less good at telling us why it matters. In this entertaining and groundbreaking book, theoretical physicist Sabine Hossenfelder breaks down why we should care. Drawing on the latest research in quantum mechanics, black holes, string theory and particle physics, Existential Physics explains what modern physics can tell us about the big questions.\u003c/p\u003e\n\u003cp\u003eFilled with counterintuitive insights and including interviews with other leading scientists, this clear and yet profound book will reshape your understanding of science and the limits of what we can know.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read": 0, "custom_reading_list": 1, "flags": 1, "has_cover": 1, "id": 28, "identifier_ids": "80,81", "identifiers": [{"book": 28, "id": 81, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/59695048", "sort": "goodreads", "type": "goodreads", "val": "59695048"}, {"book": 28, "id": 80, "name": "Amazon", "path": "https://amazon.com/dp/B09LH424FY", "sort": "amazon", "type": "amazon", "val": "B09LH424FY"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.289473684210526, "count": 89, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-05 18:07:21.096423+00:00", "order_by": "2022-10-04 13:46:37.533000+00:00", "path": "Sabine Hossenfelder/Existential Physics_ A Scientist\u0027s G (28)", "pubdate": "2022-08-09", "publisher_ids": "90", "publishers": [{"avg_rating": 8.75, "count": 11, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 5236247, "tag_ids": "58,62", "tags": [{"avg_rating": 7.75, "count": 8, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.285714285714286, "count": 8, "id": 58, "name": "Science", "sort": "Science"}], "timestamp": "2022-10-04 13:46:37.533000+00:00", "title": "Existential Physics: A Scientist\u0027s Guide to Life\u0027s Biggest Questions"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 1, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 8.0, "count": 1, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 1, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cp\u003e\u003cstrong\u003eThe fantastic first book in the \u003cem\u003eSunday Times\u003c/em\u003e bestselling Science of Discworld series\u003c/strong\u003e  \u003c/p\u003e\n\u003cp\u003eWhen a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.  \u003c/p\u003e\n\u003cp\u003eThe Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.  \u003c/p\u003e\n\u003cp\u003eThrough this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eTerry Pratchett\u003c/strong\u003e is the acclaimed creator of the global bestselling Discworld series, the first of which, \u003cem\u003eThe Colour of Magic\u003c/em\u003e , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.  \u003c/p\u003e\n\u003cp\u003ewww.terrypratchett.co.uk\u003cbr /\u003e\n@terryandrob  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eProfessor Ian Stewart\u003c/strong\u003e is the author of many popular science books. He is the mathematics consultant for \u003cem\u003eNew Scientist\u003c/em\u003e and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eDr Jack Cohen\u003c/strong\u003e is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.\u003c/p\u003e", "custom_clean": 1, "custom_read_date": null, "custom_reading_list": 0, "custom_types": "eBook", "flags": 1, "has_cover": 1, "id": 171, "identifier_ids": "564,563,562", "identifiers": [{"book": 171, "id": 562, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448176670", "sort": "isbn", "type": "isbn", "val": "9781448176670"}, {"book": 171, "id": 563, "name": "Google Books", "path": "https://books.google.com/books?id=Q1x0852ip1wC", "sort": "google", "type": "google", "val": "Q1x0852ip1wC"}, {"book": 171, "id": 564, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/233674", "sort": "goodreads", "type": "goodreads", "val": "233674"}], "isbn": "9781448176670", "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-06 09:40:30.078477+00:00", "path": "Terry Pratchett/The Science of Discworld (171)", "pubdate": "1999-01-01", "publisher_ids": "116", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 116, "name": "Ebury Press", "sort": "Ebury Press"}], "rating": 4, "series": [], "series_ids": null, "size": 339560, "tag_ids": "42,62,75,76,177", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": "Fantasy"}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": "Humour"}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.0, "count": 1, "id": 177, "name": "Reference", "sort": "Reference"}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": "Science Fiction"}], "timestamp": "2022-10-06 09:40:30.078477+00:00", "title": "The Science of Discworld"}, {"author_ids": "161", "authors": [{"avg_rating": 8.0, "count": 1, "id": 161, "name": "Rutger Bregman", "sort": "Bregman, Rutger"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDe mens is een beest, zeiden de koningen. Een zondaar, zeiden de priesters. Een ego\u00efst, zeiden de boekhouders. Al eeuwen is de westerse cultuur doordrongen van het geloof in de verdorvenheid van de mens. \u003c/p\u003e\n\u003cp\u003eMaar wat als we het al die tijd mis hadden? \u003c/p\u003e\n\u003cp\u003eIn dit boek verweeft Rutger Bregman de jongste inzichten uit de psychologie, de economie, de biologie en de archeologie. Hij neemt ons mee op een reis door de geschiedenis en geeft nieuwe antwoorden op oude vragen. Waarom veroverde juist onze soort de aarde? Hoe verklaren we onze grootste misdaden? En zijn we diep vanbinnen geneigd tot het goede of het kwade? \u003c/p\u003e\n\u003cp\u003eAdembenemend, weids en revolutionair \u2013 \u003cem\u003eDe meeste mensen deugen\u003c/em\u003e herschrijft niet alleen de geschiedenis, maar werpt ook nieuw licht op onze toekomst.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": "eBook", "flags": 1, "has_cover": 1, "id": 150, "identifier_ids": "654,658,657,655,656", "identifiers": [{"book": 150, "id": 656, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789082942187", "sort": "isbn", "type": "isbn", "val": "9789082942187"}, {"book": 150, "id": 655, "name": "Google Books", "path": "https://books.google.com/books?id=UbbpxgEACAAJ", "sort": "google", "type": "google", "val": "UbbpxgEACAAJ"}, {"book": 150, "id": 657, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/45995328", "sort": "goodreads", "type": "goodreads", "val": "45995328"}, {"book": 150, "id": 658, "name": "Amazon NL", "path": "https://amazon.nl/dp/9082942186", "sort": "amazon_nl", "type": "amazon_nl", "val": "9082942186"}, {"book": 150, "id": 654, "name": "Amazon", "path": "https://amazon.com/dp/9082942186", "sort": "amazon", "type": "amazon", "val": "9082942186"}], "isbn": "9789082942187", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-05 18:14:43.967457+00:00", "path": "Rutger Bregman/De Meeste Mensen Deugen_ Een Nieuwe (150)", "pubdate": "2019-09-03", "publisher_ids": "97", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 97, "name": "De Correspondent", "sort": "De Correspondent"}], "rating": 4, "series": [], "series_ids": null, "size": 9748908, "tag_ids": "31,57,58,59,60,62", "tags": [{"avg_rating": 8.444444444444445, "count": 19, "id": 60, "name": "History", "sort": "History"}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": "Politics"}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": "Science"}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": "Sociology"}], "timestamp": "2022-10-05 18:14:43.967457+00:00", "title": "De Meeste Mensen Deugen: Een Nieuwe Geschiedenis Van De Mens"}, {"author_ids": "138", "authors": [{"avg_rating": 8.0, "count": 1, "id": 138, "name": "Jesse McCarthy", "sort": "McCarthy, Jesse"}], "comments": "\u003cp\u003eRanging from Ta-Nehisi Coates\u2019s case for reparations to Toni Morrison\u2019s revolutionary humanism to D\u2019Angelo\u2019s simmering blend of R and racial justice, Jesse McCarthy\u2019s bracing essays investigate with virtuosic intensity the art, music, literature, and political stances that have defined the twenty-first century. Even as our world has suffered through successive upheavals, McCarthy contends, \u201csomething was happening in the world of culture: a surging and unprecedented visibility at every level of black art making.\u201d \u003cem\u003eWho Will Pay Reparations on My Soul?\u003c/em\u003e reckons with this resurgence, arguing for the central role of art and intellectual culture in an age of widening inequality and moral crisis.  \u003c/p\u003e\n\u003cp\u003eMcCarthy reinvigorates the essay form as a space not only for argument but for experimental writing that mixes and chops the old ways into new ones. In \u201cNotes on Trap,\u201d he borrows a conceit from Susan Sontag to reveal the social and political significance of trap music, the drug-soaked strain of Southern hip-hop that, as he puts it, is \u201cthe funeral music that the Reagan Revolution deserves.\u201d In \u201cBack in the Day,\u201d McCarthy, a black American raised in France, evokes his childhood in Paris through an elegiac account of French rap in the 1990s. In \u201cThe Master\u2019s Tools,\u201d the relationship between Spanish painter Diego Vel\u00e1zquez and his acolyte-slave, Juan de Pareja, becomes the lens through which Kehinde Wiley\u2019s paintings are viewed, while \u201cTo Make a Poet Black\u201d explores the hidden blackness of Sappho and the erotic power of Phillis Wheatley. Essays on John Edgar Wideman, Claudia Rankine, and Colson Whitehead survey the state of black letters. In his title essay, McCarthy takes on the question of reparations, arguing that true progress will not come until Americans remake their institutions in the service of true equality. As he asks, \u201cWhat can reparations mean when the damage cannot be accounted for in the only system of accounting that a society recognizes?\u201d  \u003c/p\u003e\n\u003cp\u003eFor readers of Teju Cole\u2019s \u003cem\u003eKnown and Strange Things\u003c/em\u003e and Mark Greif\u2019s \u003cem\u003eAgainst Everything\u003c/em\u003e , McCarthy\u2019s essays portray a brilliant young critic at work, making sense of our disjointed times while seeking to transform our understanding of race and art, identity and representation.\u003c/p\u003e", "custom_clean": 1, "custom_read_date": null, "custom_reading_list": 0, "custom_types": "eBook", "flags": 1, "has_cover": 1, "id": 136, "identifier_ids": "329,330,328", "identifiers": [{"book": 136, "id": 328, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781631496486", "sort": "isbn", "type": "isbn", "val": "9781631496486"}, {"book": 136, "id": 330, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53404236", "sort": "goodreads", "type": "goodreads", "val": "53404236"}, {"book": 136, "id": 329, "name": "Amazon", "path": "https://amazon.com/dp/1631496484", "sort": "amazon", "type": "amazon", "val": "1631496484"}], "isbn": "9781631496486", "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-05 15:54:12.226768+00:00", "path": "Jesse McCarthy/Who Will Pay Reparations on My Soul (136)", "pubdate": "2021-03-30", "publisher_ids": "84", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 84, "name": "Liveright Publishing", "sort": "Liveright Publishing"}], "rating": 4, "series": [], "series_ids": null, "size": 2484632, "tag_ids": "44,57,60,62,131,134", "tags": [{"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": "Art"}, {"avg_rating": 8.444444444444445, "count": 19, "id": 60, "name": "History", "sort": "History"}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.0, "count": 2, "id": 134, "name": "Poetry", "sort": "Poetry"}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": "Politics"}, {"avg_rating": 8.342857142857143, "count": 39, "id": 131, "name": "Time.2021 Must Read", "sort": "Time.2021 Must Read"}], "timestamp": "2022-10-05 15:54:12.226768+00:00", "title": "Who Will Pay Reparations on My Soul?"}, {"author_ids": "134", "authors": [{"avg_rating": 8.0, "count": 1, "id": 134, "name": "Louis Menand", "sort": "Menand, Louis"}], "comments": "\u003cp\u003e\"An engrossing and impossibly wide-ranging project . . . In The Free World, every seat is a good one.\u003c/p\u003e\n\n\u003cp\u003e\" \u2014Carlos Lozada, The Washington Post\"The Free World sparkles. Fully original, beautifully written . . . One hopes Menand has a sequel in mind. The bar is set very high.\u003c/p\u003e\n\n\u003cp\u003e\" \u2014David Oshinsky, The New York Times Book Review | Editors\u0027 ChoiceOne of The New York Times\u0027s 100 best books of 2021 | One of The Washington Post\u0027s 50 best nonfiction books of 2021 | A Mother Jones best book of 2021In his follow-up to the Pulitzer Prize\u2013winning The Metaphysical Club, Louis Menand offers a new intellectual and cultural history of the postwar yearsThe Cold War was not just a contest of power. It was also about ideas, in the broadest sense\u2014economic and political, artistic and personal. In The Free World, the acclaimed Pulitzer Prize\u2013winning scholar and critic Louis Menand tells the story of American culture in the pivotal years from the end of World War II to Vietnam and shows how changing economic, technological, and social forces put their mark on creations of the mind. How did elitism and an anti-totalitarian skepticism of passion and ideology give way to a new sensibility defined by freewheeling experimentation and loving the Beatles? How was the ideal of \u201cfreedom\u201d applied to causes that ranged from anti-communism and civil rights to radical acts of self-creation via art and even crime? With the wit and insight familiar to readers of The Metaphysical Club and his New Yorker essays, Menand takes us inside Hannah Arendt\u2019s Manhattan, the Paris of Jean-Paul Sartre and Simone de Beauvoir, Merce Cunningham and John Cage\u2019s residencies at North Carolina\u2019s Black Mountain College, and the Memphis studio where Sam Phillips and Elvis Presley created a new music for the American teenager. He examines the post war vogue for French existentialism, structuralism and post-structuralism, the rise of abstract expressionism and pop art, Allen Ginsberg\u2019s friendship with Lionel Trilling, James Baldwin\u2019s transformation into a Civil Right spokesman, Susan Sontag\u2019s challenges to the New York Intellectuals, the defeat of obscenity laws, and the rise of the New Hollywood. Stressing the rich flow of ideas across the Atlantic, he also shows how Europeans played a vital role in promoting and influencing American art and entertainment. By the end of the Vietnam era, the American government had lost the moral prestige it enjoyed at the end of the Second World War, but America\u2019s once-despised culture had become respected and adored. With unprecedented verve and range, this book explains how that happened.\u003c/p\u003e", "custom_clean": 1, "custom_read_date": null, "custom_reading_list": 0, "custom_types": "eBook", "flags": 1, "has_cover": 1, "id": 132, "identifier_ids": "315,316,317", "identifiers": [{"book": 132, "id": 317, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780374722913", "sort": "isbn", "type": "isbn", "val": "9780374722913"}, {"book": 132, "id": 316, "name": "Google Books", "path": "https://books.google.com/books?id=rrziDwAAQBAJ", "sort": "google", "type": "google", "val": "rrziDwAAQBAJ"}, {"book": 132, "id": 315, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53317422", "sort": "goodreads", "type": "goodreads", "val": "53317422"}], "isbn": "9780374722913", "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-05 15:54:10.771659+00:00", "path": "Louis Menand/The Free World_ Art and Thought in (132)", "pubdate": "2021-04-20", "publisher_ids": "71", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 71, "name": "Farrar, Straus and Giroux", "sort": "Farrar, Straus and Giroux"}], "rating": 4, "series": [], "series_ids": null, "size": 35444855, "tag_ids": "44,57,60,62,131,132", "tags": [{"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": "Art"}, {"avg_rating": 8.444444444444445, "count": 19, "id": 60, "name": "History", "sort": "History"}, {"avg_rating": 7.6, "count": 6, "id": 132, "name": "Music", "sort": "Music"}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": "Politics"}, {"avg_rating": 8.342857142857143, "count": 39, "id": 131, "name": "Time.2021 Must Read", "sort": "Time.2021 Must Read"}], "timestamp": "2022-10-05 15:54:10.771659+00:00", "title": "The Free World: Art and Thought in the Cold War"}, {"author_ids": "127", "authors": [{"avg_rating": 8.0, "count": 1, "id": 127, "name": "Oliver Burkeman", "sort": "Burkeman, Oliver"}], "comments": "\u003cp\u003eAN INSTANT NEW YORK TIMES BESTSELLER\"Provocative and appealing . . . well worth your extremely limited time.\u003c/p\u003e\n\n\u003cp\u003e\" \u2014Barbara Spindel, The Wall Street JournalThe average human lifespan is absurdly, insultingly brief. Assuming you live to be eighty, you have just over four thousand weeks.\u003c/p\u003e\n\n\u003cp\u003eNobody needs telling there isn\u2019t enough time. We\u2019re obsessed with our lengthening to-do lists, our overfilled inboxes, work-life balance, and the ceaseless battle against distraction; and we\u2019re deluged with advice on becoming more productive and efficient, and \u201clife hacks\u201d to optimize our days. But such techniques often end up making things worse. The sense of anxious hurry grows more intense, and still the most meaningful parts of life seem to lie just beyond the horizon. Still, we rarely make the connection between our daily struggles with time and the ultimate time management problem: the challenge of how best to use our four thousand weeks.\u003c/p\u003e\n\n\u003cp\u003eDrawing on the insights of both ancient and contemporary philosophers, psychologists, and spiritual teachers, Oliver Burkeman delivers an entertaining, humorous, practical, and ultimately profound guide to time and time management. Rejecting the futile modern fixation on \u201cgetting everything done,\u201d Four Thousand Weeks introduces readers to tools for constructing a meaningful life by embracing finitude, showing how many of the unhelpful ways we\u2019ve come to think about time aren\u2019t inescapable, unchanging truths, but choices we\u2019ve made as individuals and as a society\u2014and that we could do things differently.\u003c/p\u003e", "custom_clean": 1, "custom_read_date": null, "custom_reading_list": 0, "custom_types": "eBook", "flags": 1, "has_cover": 1, "id": 125, "identifier_ids": "411,410,409", "identifiers": [{"book": 125, "id": 409, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780374159122", "sort": "isbn", "type": "isbn", "val": "9780374159122"}, {"book": 125, "id": 410, "name": "Google Books", "path": "https://books.google.com/books?id=5my-zQEACAAJ", "sort": "google", "type": "google", "val": "5my-zQEACAAJ"}, {"book": 125, "id": 411, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/54785515", "sort": "goodreads", "type": "goodreads", "val": "54785515"}], "isbn": "9780374159122", "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-05 15:54:07.946195+00:00", "path": "Oliver Burkeman/Four Thousand Weeks_ Time Managemen (125)", "pubdate": "2021-08-10", "publisher_ids": "71", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 71, "name": "Farrar, Straus and Giroux", "sort": "Farrar, Straus and Giroux"}], "rating": 4, "series": [], "series_ids": null, "size": 729503, "tag_ids": "31,43,51,62,70,131", "tags": [{"avg_rating": 8.285714285714286, "count": 7, "id": 51, "name": "Business", "sort": "Business"}, {"avg_rating": 8.0, "count": 4, "id": 70, "name": "Health", "sort": "Health"}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": "Self Help"}, {"avg_rating": 8.342857142857143, "count": 39, "id": 131, "name": "Time.2021 Must Read", "sort": "Time.2021 Must Read"}], "timestamp": "2022-10-05 15:54:07.946195+00:00", "title": "Four Thousand Weeks: Time Management for Mortals"}, {"author_ids": "17,76", "authors": [{"avg_rating": 8.0, "count": 3, "id": 17, "name": "Dale Carnegie", "sort": "Carnegie, Dale"}, {"avg_rating": 6.0, "count": 1, "id": 76, "name": "Brent Cole", "sort": "Cole, Brent"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAN UP-TO-THE -MINUTE ADAPTATION OF DALE CARNEGIE \u2019S TIMELESS PRESCRIPTIONS FOR THE DIGITAL AGE\u003c/p\u003e\n\u003cp\u003eDALE CARNEGIE\u2019s commonsense approach to communicating has endured for a century, touching millions and millions of readers. The only diploma that hangs in Warren Buffett\u2019s office is his certificate from Dale Carnegie Training. Lee Iacocca credits Carnegie for giving him the courage to speak in public. Dilbert creator Scott Adams called Carnegie\u2019s teachings \u201clife-changing.\u201d\u003c/p\u003e\n\u003cp\u003eIn today\u2019s world, where more and more of our communication takes place across wires and screens, Carnegie\u2019s lessons have not only lasted but become all the more critical. Though he never could have predicted technology\u2019s trajectory, Carnegie proves a wise and helpful teacher in this digital landscape. To demonstrate the many ways his lessons remain relevant, Dale Carnegie \u0026amp; Associates, Inc., has reimagined his prescriptions and his advice for this difficult digital age. We may communicate today with different tools and with greater speed, but Carnegie\u2019s advice on how to communicate, lead, and work efficiently remains priceless across the ages.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": "eBook", "flags": 1, "has_cover": 1, "id": 66, "identifier_ids": "133,134,132", "identifiers": [{"book": 66, "id": 132, "name": "Google Books", "path": "https://books.google.com/books?id=4AKsuQAACAAJ", "sort": "google", "type": "google", "val": "4AKsuQAACAAJ"}, {"book": 66, "id": 134, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/12176421", "sort": "goodreads", "type": "goodreads", "val": "12176421"}, {"book": 66, "id": 133, "name": "Amazon", "path": "https://amazon.com/dp/B004U7G81O", "sort": "amazon", "type": "amazon", "val": "B004U7G81O"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-04 13:46:56.206000+00:00", "path": "Dale Carnegie/How to Win Friends and Influence Peo (66)", "pubdate": "2011-10-04", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": 3, "series": [], "series_ids": null, "size": 3640731, "tag_ids": "31,43,62", "tags": [{"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": "Self Help"}], "timestamp": "2022-10-04 13:46:56.206000+00:00", "title": "How to Win Friends and Influence People in the Digital Age"}, {"author_ids": "49", "authors": [{"avg_rating": 8.0, "count": 1, "id": 49, "name": "Bob Altemeyer", "sort": "Altemeyer, Bob"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBob Altemeyer - author of Atheists and The Authoritarian Specter - gives a readable analysis of the nature of authoritarianism and its current impact on American politics.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read_date": null, "custom_reading_list": 0, "custom_types": "eBook", "flags": 1, "has_cover": 1, "id": 58, "identifier_ids": "54,53", "identifiers": [{"book": 58, "id": 53, "name": "Google Books", "path": "https://books.google.com/books?id=_YY5nQEACAAJ", "sort": "google", "type": "google", "val": "_YY5nQEACAAJ"}, {"book": 58, "id": 54, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1971601", "sort": "goodreads", "type": "goodreads", "val": "1971601"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-04 13:46:52.915000+00:00", "path": "Bob Altemeyer/The Authoritarians (58)", "pubdate": "2006-01-01", "publisher_ids": "26", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 26, "name": "B. Altemeyer", "sort": "B. Altemeyer"}], "rating": 4, "series": [], "series_ids": null, "size": 1010494, "tag_ids": "31,57,58,59,60,61,62", "tags": [{"avg_rating": 8.444444444444445, "count": 19, "id": 60, "name": "History", "sort": "History"}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": "Politics"}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 8.0, "count": 1, "id": 61, "name": "Religion", "sort": "Religion"}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": "Science"}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": "Sociology"}], "timestamp": "2022-10-04 13:46:52.915000+00:00", "title": "The Authoritarians"}, {"author_ids": "72", "authors": [{"avg_rating": 8.0, "count": 1, "id": 72, "name": "Leo Babauta", "sort": "Babauta, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe author writes, \"At the heart of this simple book lies the key to many of the struggles we face these days, from being productive and achieving our goals, to getting healthy and fit in the face of fast food and inactivity, to finding simplicity and peace amidst chaos and confusion. That key is itself simple: focus. Our ability to focus will allow us to create in ways that perhaps we haven\u0027t in years. It\u0027ll allow us to slow down and find peace of mind. It\u0027ll allow us to simplify and focus on less-on the essential things, the things that matter most.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read_date": null, "custom_reading_list": 0, "custom_types": "eBook", "flags": 1, "has_cover": 1, "id": 49, "identifier_ids": "85,83,84", "identifiers": [{"book": 49, "id": 84, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781434103079", "sort": "isbn", "type": "isbn", "val": "9781434103079"}, {"book": 49, "id": 83, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/10008766", "sort": "goodreads", "type": "goodreads", "val": "10008766"}, {"book": 49, "id": 85, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/focus-leo-babauta/1100574344", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/focus-leo-babauta/1100574344"}], "isbn": "9781434103079", "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-04 13:46:47.154000+00:00", "path": "Leo Babauta/Focus (49)", "pubdate": "2010-09-10", "publisher_ids": "34", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 34, "name": "Editorium", "sort": "Editorium"}], "rating": 4, "series": [], "series_ids": null, "size": 461240, "tag_ids": "31,43,51,62,70,71", "tags": [{"avg_rating": 8.285714285714286, "count": 7, "id": 51, "name": "Business", "sort": "Business"}, {"avg_rating": 8.0, "count": 4, "id": 70, "name": "Health", "sort": "Health"}, {"avg_rating": 8.0, "count": 2, "id": 71, "name": "Inspirational", "sort": "Inspirational"}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": "Psychology"}, {"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": "Self Help"}], "timestamp": "2022-10-04 13:46:47.154000+00:00", "title": "Focus"}, {"author_ids": "24", "authors": [{"avg_rating": 8.0, "count": 1, "id": 24, "name": "Sabine Hossenfelder", "sort": "Hossenfelder, Sabine"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDo we have free will? Is the universe compatible with God? Do we live in a computer simulation? Does the universe think?\u003c/p\u003e\n\u003cp\u003ePhysicists are great at complicated research, but they are less good at telling us why it matters. In this entertaining and groundbreaking book, theoretical physicist Sabine Hossenfelder breaks down why we should care. Drawing on the latest research in quantum mechanics, black holes, string theory and particle physics, Existential Physics explains what modern physics can tell us about the big questions.\u003c/p\u003e\n\u003cp\u003eFilled with counterintuitive insights and including interviews with other leading scientists, this clear and yet profound book will reshape your understanding of science and the limits of what we can know.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_read_date": null, "custom_reading_list": 1, "custom_types": "eBook", "flags": 1, "has_cover": 1, "id": 28, "identifier_ids": "80,81", "identifiers": [{"book": 28, "id": 81, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/59695048", "sort": "goodreads", "type": "goodreads", "val": "59695048"}, {"book": 28, "id": 80, "name": "Amazon", "path": "https://amazon.com/dp/B09LH424FY", "sort": "amazon", "type": "amazon", "val": "B09LH424FY"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.17142857142857, "count": 121, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 11:14:15.221248+00:00", "order_by": "2022-10-04 13:46:37.533000+00:00", "path": "Sabine Hossenfelder/Existential Physics_ A Scientist\u0027s G (28)", "pubdate": "2022-08-09", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 5236247, "tag_ids": "58,62", "tags": [{"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": "Philosophy"}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": "Science"}], "timestamp": "2022-10-04 13:46:37.533000+00:00", "title": "Existential Physics: A Scientist\u0027s Guide to Life\u0027s Biggest Questions"}])'></div>
          </div>
       </div>
    </div>
