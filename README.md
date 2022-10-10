@@ -12,6 +12,7 @@
 ## Acknowledgements and Credits
 * Gifs randomly provided by [Giphy](www.giphy.com)
 * TV inspired by [Manz](https://codepen.io/manz/pen/MWoRMja)
+* Library built with [TailwindCSS](https://tailwindcss.com/) and [AlpineJS](https://alpinejs.dev/)
 
 ## License
 Distributed under the MIT License. See `LICENSE.txt` for more information.
