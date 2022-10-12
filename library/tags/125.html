@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -452,6 +822,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -723,7 +1094,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "145", "authors": [{"avg_rating": 8.0, "count": 1, "id": 145, "name": "Elizabeth Kolbert", "sort": "Kolbert, Elizabeth"}], "comments": "\u003cp\u003eNATIONAL BESTSELLER * The Pulitzer Prize-winning author of The Sixth Extinction returns to humanity\u0027s transformative impact on the environment, now asking: After doing so much damage, can we change nature, this time to save it?  RECOMMENDED BY PRESIDENT OBAMA AND BILL GATES * SHORTLISTED FOR THE WAINWRIGHT PRIZE FOR WRITING * ONE OF THE TEN BEST BOOKS OF THE YEAR: The Washington Post * ONE OF THE BEST BOOKS OF THE YEAR: Time, Esquire, Publishers Weekly, Kirkus Reviews * \"Beautifully and insistently, Kolbert shows us that it is time to think radically about the ways we manage the environment.\u003c/p\u003e\n\n\u003cp\u003e\"--Helen Macdonald, The New York Times   With a new afterword by the author  That man should have dominion \"over all the earth, and over every creeping thing that creepeth upon the earth\" is a prophecy that has hardened into fact. So pervasive are human impacts on the planet that it\u0027s said we live in a new geological epoch: the Anthropocene.  In Under a White Sky, Elizabeth Kolbert takes a hard look at the new world we are creating. Along the way, she meets biologists who are trying to preserve the world\u0027s rarest fish, which lives in a single tiny pool in the middle of the Mojave; engineers who are turning carbon emissions to stone in Iceland; Australian researchers who are trying to develop a \"super coral\" that can survive on a hotter globe; and physicists who are contemplating shooting tiny diamonds into the stratosphere to cool the earth.  One way to look at human civilization, says Kolbert, is as a ten-thousand-year exercise in defying nature. In The Sixth Extinction, she explored the ways in which our capacity for destruction has reshaped the natural world. Now she examines how the very sorts of interventions that have imperiled our planet are increasingly seen as the only hope for its salvation. By turns inspiring, terrifying, and darkly comic, Under a White Sky is an utterly original examination of the challenges we face.\u003c/p\u003e", "custom_clean": [{"id": 169, "value": 1}], "custom_lists": [{"id": 5, "value": "Must Read.2021 Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 92, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 143, "identifier_ids": "462,461,460,459", "identifiers": [{"book": 143, "id": 459, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780593136287", "sort": "isbn", "type": "isbn", "val": "9780593136287"}, {"book": 143, "id": 460, "name": "Google Books", "path": "https://books.google.com/books?id=qwpjEAAAQBAJ", "sort": "google", "type": "google", "val": "qwpjEAAAQBAJ"}, {"book": 143, "id": 461, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/60757903", "sort": "goodreads", "type": "goodreads", "val": "60757903"}, {"book": 143, "id": 462, "name": "Amazon", "path": "https://amazon.com/dp/B08DMWR6BP", "sort": "amazon", "type": "amazon", "val": "B08DMWR6BP"}], "isbn": "9780593136287", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:14.761371+00:00", "path": "Elizabeth Kolbert/Under a White Sky_ The Nature of th (143)", "pubdate": "2021-02-09", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 4317039, "tag_ids": "57,58,60,124,125,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 8.0, "count": 1, "id": 124, "name": "Nonfiction", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 125, "name": "Climate Crisis", "sort": 1}], "timestamp": "2022-10-05 15:54:14.761371+00:00", "title": "Under a White Sky: The Nature of the Future"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "145", "authors": [{"avg_rating": 8.0, "count": 1, "id": 145, "name": "Elizabeth Kolbert", "sort": "Kolbert, Elizabeth"}], "comments": "\u003cp\u003eNATIONAL BESTSELLER * The Pulitzer Prize-winning author of The Sixth Extinction returns to humanity\u0027s transformative impact on the environment, now asking: After doing so much damage, can we change nature, this time to save it?  RECOMMENDED BY PRESIDENT OBAMA AND BILL GATES * SHORTLISTED FOR THE WAINWRIGHT PRIZE FOR WRITING * ONE OF THE TEN BEST BOOKS OF THE YEAR: The Washington Post * ONE OF THE BEST BOOKS OF THE YEAR: Time, Esquire, Publishers Weekly, Kirkus Reviews * \"Beautifully and insistently, Kolbert shows us that it is time to think radically about the ways we manage the environment.\u003c/p\u003e\n\n\u003cp\u003e\"--Helen Macdonald, The New York Times   With a new afterword by the author  That man should have dominion \"over all the earth, and over every creeping thing that creepeth upon the earth\" is a prophecy that has hardened into fact. So pervasive are human impacts on the planet that it\u0027s said we live in a new geological epoch: the Anthropocene.  In Under a White Sky, Elizabeth Kolbert takes a hard look at the new world we are creating. Along the way, she meets biologists who are trying to preserve the world\u0027s rarest fish, which lives in a single tiny pool in the middle of the Mojave; engineers who are turning carbon emissions to stone in Iceland; Australian researchers who are trying to develop a \"super coral\" that can survive on a hotter globe; and physicists who are contemplating shooting tiny diamonds into the stratosphere to cool the earth.  One way to look at human civilization, says Kolbert, is as a ten-thousand-year exercise in defying nature. In The Sixth Extinction, she explored the ways in which our capacity for destruction has reshaped the natural world. Now she examines how the very sorts of interventions that have imperiled our planet are increasingly seen as the only hope for its salvation. By turns inspiring, terrifying, and darkly comic, Under a White Sky is an utterly original examination of the challenges we face.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 143, "identifier_ids": "462,461,460,459", "identifiers": [{"book": 143, "id": 459, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780593136287", "sort": "isbn", "type": "isbn", "val": "9780593136287"}, {"book": 143, "id": 460, "name": "Google Books", "path": "https://books.google.com/books?id=qwpjEAAAQBAJ", "sort": "google", "type": "google", "val": "qwpjEAAAQBAJ"}, {"book": 143, "id": 461, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/60757903", "sort": "goodreads", "type": "goodreads", "val": "60757903"}, {"book": 143, "id": 462, "name": "Amazon", "path": "https://amazon.com/dp/B08DMWR6BP", "sort": "amazon", "type": "amazon", "val": "B08DMWR6BP"}], "isbn": "9780593136287", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:14.761371+00:00", "path": "Elizabeth Kolbert/Under a White Sky_ The Nature of th (143)", "pubdate": "2021-02-09", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 4317039, "tag_ids": "57,58,60,124,125,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 8.0, "count": 1, "id": 124, "name": "Nonfiction", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 125, "name": "Climate Crisis", "sort": 1}], "timestamp": "2022-10-05 15:54:14.761371+00:00", "title": "Under a White Sky: The Nature of the Future"}])'></div>
          </div>
       </div>
    </div>

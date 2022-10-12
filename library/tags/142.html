@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -455,6 +825,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -743,6 +1114,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -811,6 +1186,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1063,7 +1439,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "243,247,248", "authors": [{"avg_rating": 8.0, "count": 1, "id": 248, "name": "Amy Mandelker", "sort": "Mandelker, Amy"}, {"avg_rating": 8.0, "count": 1, "id": 247, "name": "Louise Maude", "sort": "Maude, Louise"}, {"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTolstoy\u0027s epic masterpiece captures with unprecedented immediacy the broad sweep of life during the Napoleonic wars and the brutal invasion of Russia. Balls and soires, the burning of Moscow, the intrigues of statesmen and generals, scenes of violent battles, the quiet moments of everyday life--all in a work whose extraordinary imaginative power has never been surpassed. The Maudes\u0027 translation of Tolstoy\u0027s epic masterpiece has long been considered the best English version, and now for the first time it has been revised to bring it fully into line with modern approaches to the text. French passages are restored, Anglicization of Russian names removed, and outmoded expressions updated. A new introduction by Amy Mandelker considers the novel\u0027s literary and historical context, the nature of the work, and Tolstoy\u0027s artistic and philosophical aims. New, expanded notes provide historical background and identifications, as well as insight into Russian life and society. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 289, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 161, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 210, "identifier_ids": "745,744,747,746", "identifiers": [{"book": 210, "id": 746, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780191612541", "sort": "isbn", "type": "isbn", "val": "9780191612541"}, {"book": 210, "id": 747, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2600", "sort": "gutenberg", "type": "gutenberg", "val": "2600"}, {"book": 210, "id": 744, "name": "Google Books", "path": "https://books.google.com/books?id=2iiQDwAAQBAJ", "sort": "google", "type": "google", "val": "2iiQDwAAQBAJ"}, {"book": 210, "id": 745, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55393212", "sort": "goodreads", "type": "goodreads", "val": "55393212"}], "isbn": "9780191612541", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.947434+00:00", "path": "Leo Tolstoy/War and Peace (210)", "pubdate": "1869-01-01", "publisher_ids": "129", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 129, "name": "Oxford University Press", "sort": "Oxford University Press"}], "rating": 4, "series": [], "series_ids": null, "size": 10408275, "tag_ids": "4,60,142,153,176,204,205,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 176, "name": "General", "sort": 4}, {"avg_rating": 8.0, "count": 2, "id": 142, "name": "War", "sort": 2}, {"avg_rating": 8.0, "count": 1, "id": 204, "name": "Political", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 205, "name": "Europe", "sort": 1}], "timestamp": "2022-10-10 14:39:36.947434+00:00", "title": "War and Peace"}, {"author_ids": "117", "authors": [{"avg_rating": 8.0, "count": 1, "id": 117, "name": "Rebecca Donner", "sort": "Donner, Rebecca"}], "comments": "\u003cp\u003eBorn and raised in Milwaukee, Mildred Harnack was twenty-six when she enrolled in a PhD program in Germany and witnessed the meteoric rise of the Nazi party. In 1932, she began holding secret meetings in her apartment \u2014 a small band of political activists that by 1940 had grown into the largest underground resistance group in Berlin. She recruited working-class Germans into the resistance, helped Jews escape, plotted acts of sabotage, and collaborated in writing leaflets that denounced Hitler and called for revolution. Her co-conspirators circulated through Berlin under the cover of night, slipping the leaflets into mailboxes, public restrooms, phone booths.   \u003c/p\u003e\n\u003cp\u003eWhen the first shots of the Second World War were fired, she became a spy, couriering top-secret intelligence to the Allies. On the eve of her escape to Sweden, she was ambushed by the Gestapo. At a Nazi military court, a panel of five judges sentenced her to six years at a prison camp, but Hitler overruled the decision and ordered her execution. On February 16, 1943, she was strapped to a guillotine and beheaded.  \u003c/p\u003e\n\u003cp\u003eHistorians identify Mildred Harnack as the only American in the leadership of the German resistance, yet her remarkable story has remained almost unknown until now.  \u003c/p\u003e\n\u003cp\u003eHarnack\u2019s great-great-niece Rebecca Donner draws on her extensive archival research in Germany, Russia, England, and the U.S. as well as newly uncovered documents in her family archive to produce this astonishing work of narrative nonfiction. Fusing elements of biography, real-life political thriller, and scholarly detective story, Donner brilliantly interweaves letters, diary entries, notes smuggled out of a Berlin prison, survivors\u2019 testimony, and a trove of declassified intelligence documents into a powerful, epic story, reconstructing the moral courage of an enigmatic woman nearly erased by history.\u003c/p\u003e", "custom_clean": [{"id": 142, "value": 1}], "custom_lists": [{"id": 5, "value": "Must Read.2021 Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 64, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 115, "identifier_ids": "384,385,383", "identifiers": [{"book": 115, "id": 383, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780316561693", "sort": "isbn", "type": "isbn", "val": "9780316561693"}, {"book": 115, "id": 385, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53023523", "sort": "goodreads", "type": "goodreads", "val": "53023523"}, {"book": 115, "id": 384, "name": "Amazon", "path": "https://amazon.com/dp/031656169X", "sort": "amazon", "type": "amazon", "val": "031656169X"}], "isbn": "9780316561693", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:04.302547+00:00", "path": "Rebecca Donner/All the Frequent Troubles of Our Da (115)", "pubdate": "2021-08-03", "publisher_ids": "68", "publishers": [{"avg_rating": 8.5, "count": 4, "id": 68, "name": "Little, Brown and Company", "sort": "Little, Brown and Company"}], "rating": 4, "series": [], "series_ids": null, "size": 84587899, "tag_ids": "60,92,142,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 2, "id": 142, "name": "War", "sort": 2}], "timestamp": "2022-10-05 15:54:04.302547+00:00", "title": "All the Frequent Troubles of Our Days: The True Story of the American Woman at the Heart of the German Resistance to Hitler"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "243,247,248", "authors": [{"avg_rating": 8.0, "count": 1, "id": 248, "name": "Amy Mandelker", "sort": "Mandelker, Amy"}, {"avg_rating": 8.0, "count": 1, "id": 247, "name": "Louise Maude", "sort": "Maude, Louise"}, {"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTolstoy\u0027s epic masterpiece captures with unprecedented immediacy the broad sweep of life during the Napoleonic wars and the brutal invasion of Russia. Balls and soires, the burning of Moscow, the intrigues of statesmen and generals, scenes of violent battles, the quiet moments of everyday life--all in a work whose extraordinary imaginative power has never been surpassed. The Maudes\u0027 translation of Tolstoy\u0027s epic masterpiece has long been considered the best English version, and now for the first time it has been revised to bring it fully into line with modern approaches to the text. French passages are restored, Anglicization of Russian names removed, and outmoded expressions updated. A new introduction by Amy Mandelker considers the novel\u0027s literary and historical context, the nature of the work, and Tolstoy\u0027s artistic and philosophical aims. New, expanded notes provide historical background and identifications, as well as insight into Russian life and society. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 210, "identifier_ids": "745,744,747,746", "identifiers": [{"book": 210, "id": 746, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780191612541", "sort": "isbn", "type": "isbn", "val": "9780191612541"}, {"book": 210, "id": 747, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2600", "sort": "gutenberg", "type": "gutenberg", "val": "2600"}, {"book": 210, "id": 744, "name": "Google Books", "path": "https://books.google.com/books?id=2iiQDwAAQBAJ", "sort": "google", "type": "google", "val": "2iiQDwAAQBAJ"}, {"book": 210, "id": 745, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55393212", "sort": "goodreads", "type": "goodreads", "val": "55393212"}], "isbn": "9780191612541", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.947434+00:00", "path": "Leo Tolstoy/War and Peace (210)", "pubdate": "1869-01-01", "publisher_ids": "129", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 129, "name": "Oxford University Press", "sort": "Oxford University Press"}], "rating": 4, "series": [], "series_ids": null, "size": 10408275, "tag_ids": "4,60,142,153,176,204,205,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 5, "id": 176, "name": "General", "sort": 5}, {"avg_rating": 8.0, "count": 2, "id": 142, "name": "War", "sort": 2}, {"avg_rating": 8.0, "count": 1, "id": 204, "name": "Political", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 205, "name": "Europe", "sort": 1}], "timestamp": "2022-10-10 14:39:36.947434+00:00", "title": "War and Peace"}, {"author_ids": "117", "authors": [{"avg_rating": 8.0, "count": 1, "id": 117, "name": "Rebecca Donner", "sort": "Donner, Rebecca"}], "comments": "\u003cp\u003eBorn and raised in Milwaukee, Mildred Harnack was twenty-six when she enrolled in a PhD program in Germany and witnessed the meteoric rise of the Nazi party. In 1932, she began holding secret meetings in her apartment \u2014 a small band of political activists that by 1940 had grown into the largest underground resistance group in Berlin. She recruited working-class Germans into the resistance, helped Jews escape, plotted acts of sabotage, and collaborated in writing leaflets that denounced Hitler and called for revolution. Her co-conspirators circulated through Berlin under the cover of night, slipping the leaflets into mailboxes, public restrooms, phone booths.   \u003c/p\u003e\n\u003cp\u003eWhen the first shots of the Second World War were fired, she became a spy, couriering top-secret intelligence to the Allies. On the eve of her escape to Sweden, she was ambushed by the Gestapo. At a Nazi military court, a panel of five judges sentenced her to six years at a prison camp, but Hitler overruled the decision and ordered her execution. On February 16, 1943, she was strapped to a guillotine and beheaded.  \u003c/p\u003e\n\u003cp\u003eHistorians identify Mildred Harnack as the only American in the leadership of the German resistance, yet her remarkable story has remained almost unknown until now.  \u003c/p\u003e\n\u003cp\u003eHarnack\u2019s great-great-niece Rebecca Donner draws on her extensive archival research in Germany, Russia, England, and the U.S. as well as newly uncovered documents in her family archive to produce this astonishing work of narrative nonfiction. Fusing elements of biography, real-life political thriller, and scholarly detective story, Donner brilliantly interweaves letters, diary entries, notes smuggled out of a Berlin prison, survivors\u2019 testimony, and a trove of declassified intelligence documents into a powerful, epic story, reconstructing the moral courage of an enigmatic woman nearly erased by history.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 115, "identifier_ids": "384,385,383", "identifiers": [{"book": 115, "id": 383, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780316561693", "sort": "isbn", "type": "isbn", "val": "9780316561693"}, {"book": 115, "id": 385, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53023523", "sort": "goodreads", "type": "goodreads", "val": "53023523"}, {"book": 115, "id": 384, "name": "Amazon", "path": "https://amazon.com/dp/031656169X", "sort": "amazon", "type": "amazon", "val": "031656169X"}], "isbn": "9780316561693", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:04.302547+00:00", "path": "Rebecca Donner/All the Frequent Troubles of Our Da (115)", "pubdate": "2021-08-03", "publisher_ids": "68", "publishers": [{"avg_rating": 8.5, "count": 4, "id": 68, "name": "Little, Brown and Company", "sort": "Little, Brown and Company"}], "rating": 4, "series": [], "series_ids": null, "size": 84587899, "tag_ids": "60,92,142,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 2, "id": 142, "name": "War", "sort": 2}], "timestamp": "2022-10-05 15:54:04.302547+00:00", "title": "All the Frequent Troubles of Our Days: The True Story of the American Woman at the Heart of the German Resistance to Hitler"}])'></div>
          </div>
       </div>
    </div>

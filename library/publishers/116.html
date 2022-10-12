@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -462,6 +832,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -729,7 +1100,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 1, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 8.0, "count": 1, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 1, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cp\u003e\u003cstrong\u003eThe fantastic first book in the \u003cem\u003eSunday Times\u003c/em\u003e bestselling Science of Discworld series\u003c/strong\u003e  \u003c/p\u003e\n\u003cp\u003eWhen a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.  \u003c/p\u003e\n\u003cp\u003eThe Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.  \u003c/p\u003e\n\u003cp\u003eThrough this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eTerry Pratchett\u003c/strong\u003e is the acclaimed creator of the global bestselling Discworld series, the first of which, \u003cem\u003eThe Colour of Magic\u003c/em\u003e , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.  \u003c/p\u003e\n\u003cp\u003ewww.terrypratchett.co.uk\u003cbr /\u003e\n@terryandrob  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eProfessor Ian Stewart\u003c/strong\u003e is the author of many popular science books. He is the mathematics consultant for \u003cem\u003eNew Scientist\u003c/em\u003e and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eDr Jack Cohen\u003c/strong\u003e is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.\u003c/p\u003e", "custom_clean": [{"id": 218, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 122, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 171, "identifier_ids": "564,563,562", "identifiers": [{"book": 171, "id": 562, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448176670", "sort": "isbn", "type": "isbn", "val": "9781448176670"}, {"book": 171, "id": 563, "name": "Google Books", "path": "https://books.google.com/books?id=Q1x0852ip1wC", "sort": "google", "type": "google", "val": "Q1x0852ip1wC"}, {"book": 171, "id": 564, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/233674", "sort": "goodreads", "type": "goodreads", "val": "233674"}], "isbn": "9781448176670", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:30.078477+00:00", "path": "Terry Pratchett/The Science of Discworld (171)", "pubdate": "1999-01-01", "publisher_ids": "116", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 116, "name": "Ebury Press", "sort": "Ebury Press"}], "rating": 4, "series": [], "series_ids": null, "size": 339560, "tag_ids": "42,62,75,76,177", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": 38}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.0, "count": 1, "id": 177, "name": "Reference", "sort": 1}], "timestamp": "2022-10-06 09:40:30.078477+00:00", "title": "The Science of Discworld"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 1, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 8.0, "count": 1, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 1, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cp\u003e\u003cstrong\u003eThe fantastic first book in the \u003cem\u003eSunday Times\u003c/em\u003e bestselling Science of Discworld series\u003c/strong\u003e  \u003c/p\u003e\n\u003cp\u003eWhen a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.  \u003c/p\u003e\n\u003cp\u003eThe Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.  \u003c/p\u003e\n\u003cp\u003eThrough this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eTerry Pratchett\u003c/strong\u003e is the acclaimed creator of the global bestselling Discworld series, the first of which, \u003cem\u003eThe Colour of Magic\u003c/em\u003e , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.  \u003c/p\u003e\n\u003cp\u003ewww.terrypratchett.co.uk\u003cbr /\u003e\n@terryandrob  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eProfessor Ian Stewart\u003c/strong\u003e is the author of many popular science books. He is the mathematics consultant for \u003cem\u003eNew Scientist\u003c/em\u003e and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eDr Jack Cohen\u003c/strong\u003e is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 171, "identifier_ids": "564,563,562", "identifiers": [{"book": 171, "id": 562, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448176670", "sort": "isbn", "type": "isbn", "val": "9781448176670"}, {"book": 171, "id": 563, "name": "Google Books", "path": "https://books.google.com/books?id=Q1x0852ip1wC", "sort": "google", "type": "google", "val": "Q1x0852ip1wC"}, {"book": 171, "id": 564, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/233674", "sort": "goodreads", "type": "goodreads", "val": "233674"}], "isbn": "9781448176670", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:30.078477+00:00", "path": "Terry Pratchett/The Science of Discworld (171)", "pubdate": "1999-01-01", "publisher_ids": "116", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 116, "name": "Ebury Press", "sort": "Ebury Press"}], "rating": 4, "series": [], "series_ids": null, "size": 339560, "tag_ids": "42,62,75,76,177", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.0, "count": 1, "id": 177, "name": "Reference", "sort": 1}], "timestamp": "2022-10-06 09:40:30.078477+00:00", "title": "The Science of Discworld"}])'></div>
          </div>
       </div>
    </div>

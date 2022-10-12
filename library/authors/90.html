@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -453,6 +823,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -725,6 +1096,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -795,6 +1170,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1069,6 +1445,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1136,6 +1516,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1399,7 +1780,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "90", "authors": [{"avg_rating": 9.333333333333334, "count": 3, "id": 90, "name": "George R.R. Martin", "sort": "Martin, George R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRarely has there been a tale as gripping, or one as likely to seize the minds and hearts of a generation, as George R. R. Martin\u0027s epic high fantasy series. In A Game of Thrones, an ancient kingdom was torn by the ambitions of ruthless men and women; in A Clash of Kings, war, sorcery, and madness swept over the kingdom like a voracious beast of prey. Now, as the brutal struggle for power nears its tumultuous climax, the battered and divided kingdom faces its most terrifying invasion\u2014one that is being spearheaded from beyond the grave....\u003c/p\u003e\n\u003cp\u003eA STORM OF SWORDS\u003c/p\u003e\n\u003cp\u003eOf the five contenders for power, one is dead, another in disfavor, and still the wars rage as violently as ever, as alliances are made and broken. Joffrey, of House Lannister, sits on the Iron Throne, the uneasy ruler of the land of the Seven Kingdoms. His most bitter rival, Lord Stannis, stands defeated and disgraced, the victim of the jealous sorceress who holds him in her evil thrall. But young Robb, of House Stark, still rules the North from the fortress of Riverrun. Robb plots against his despised Lannister enemies, even as they hold his sister hostage at King\u0027s Landing, the seat of the Iron Throne. Meanwhile, making her way across a blood-drenched continent is the exiled queen, Daenerys, mistress of the only three dragons still left in the world. Filled with the stench of death and decay from the destructive dynastic war, Daenerys is gathering allies and strength for an assault on King\u0027s Landing, hoping to win back the crown she believes is rightfully hers. But as opposing forces maneuver for the final titanic showdown, an army of barbaric wildlings bent on overwhelming the Seven Kingdoms arrives from the outermost line of civilization. In their vanguard is a horde of mythical Others\u2014a supernatural army of the living dead whose animated corpses are unstoppable. And as the future of the land hangs in the balance, no one will rest in the quest for victory until the Seven Kingdoms have exploded in a veritable storm of swords.... Brilliantly conceived and grand in scope, A Storm of Swords is the incredible tale of a world of harsh beauty and powerful magic, torn by treachery, ravaged by brutality, and consumed by greed and ambition. It portrays a war-torn landscape in which nobles and commoners, heroes and villains, the freeborn and the enslaved, all struggle to survive and to find their destinies...along with the dazzling bounty and wondrous enchantment that was once their birthright in the Seven Kingdoms.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 41, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 54, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 79, "identifier_ids": "183,184,181,182,180", "identifiers": [{"book": 79, "id": 180, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553106633", "sort": "isbn", "type": "isbn", "val": "9780553106633"}, {"book": 79, "id": 182, "name": "Google Books", "path": "https://books.google.com/books?id=YxpbAAAAMAAJ", "sort": "google", "type": "google", "val": "YxpbAAAAMAAJ"}, {"book": 79, "id": 181, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/10396652", "sort": "goodreads", "type": "goodreads", "val": "10396652"}, {"book": 79, "id": 184, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/storm-of-swords-george-r-r-martin/1100179865", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/storm-of-swords-george-r-r-martin/1100179865"}, {"book": 79, "id": 183, "name": "Amazon", "path": "https://amazon.com/dp/0553106635", "sort": "amazon", "type": "amazon", "val": "0553106635"}], "isbn": "9780553106633", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:41.482947+00:00", "path": "George R.R. Martin/A Storm of Swords (79)", "pubdate": "2000-08-08", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 5, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 2060244, "tag_ids": "50,75,76,84", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": 38}, {"avg_rating": 8.0, "count": 23, "id": 50, "name": "Adult", "sort": 23}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}], "timestamp": "2022-10-04 19:44:41.482947+00:00", "title": "A Storm of Swords"}, {"author_ids": "90", "authors": [{"avg_rating": 9.333333333333334, "count": 3, "id": 90, "name": "George R.R. Martin", "sort": "Martin, George R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFew books have captivated the imagination and won the devotion and praise of readers and critics everywhere as has George R. R. Martin\u2019s monumental epic cycle of high fantasy. Now, in A Feast for Crows* , Martin delivers the long-awaited fourth book of his landmark series, as a kingdom torn asunder finds itself at last on the brink of peace ... only to be launched on an even more terrifying course of destruction.\u003c/p\u003e\n\u003cp\u003e**A FEAST FOR CROWS\u003c/p\u003e\n\u003cp\u003e** It seems too good to be true. After centuries of bitter strife and fatal treachery, the seven powers dividing the land have decimated one another into an uneasy truce. Or so it appears.... With the death of the monstrous King Joffrey, Cersei is ruling as regent in King\u2019s Landing. Robb Stark\u2019s demise has broken the back of the Northern rebels, and his siblings are scattered throughout the kingdom like seeds on barren soil. Few legitimate claims to the once desperately sought Iron Throne still exist\u2014or they are held in hands too weak or too distant to wield them effectively. The war, which raged out of control for so long, has burned itself out.\u003c/p\u003e\n\u003cp\u003eBut as in the aftermath of any climactic struggle, it is not long before the survivors, outlaws, renegades, and carrion eaters start to gather, picking over the bones of the dead and fighting for the spoils of the soon-to-be dead. Now in the Seven Kingdoms, as the human crows assemble over a banquet of ashes, daring new plots and dangerous new alliances are formed, while surprising faces\u2014some familiar, others only just appearing\u2014are seen emerging from an ominous twilight of past struggles and chaos to take up the challenges ahead.\u003c/p\u003e\n\u003cp\u003eIt is a time when the wise and the ambitious, the deceitful and the strong will acquire the skills, the power, and the magic to survive the stark and terrible times that lie before them. It is a time for nobles and commoners, soldiers and sorcerers, assassins and sages to come together and stake their fortunes ... and their lives. For at a feast for crows, many are the guests\u2014but only a few are the survivors.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 42, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 53, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 78, "identifier_ids": "185,188,189,187,186", "identifiers": [{"book": 78, "id": 186, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553801507", "sort": "isbn", "type": "isbn", "val": "9780553801507"}, {"book": 78, "id": 187, "name": "Google Books", "path": "https://books.google.com/books?id=1tmJDQAAQBAJ", "sort": "google", "type": "google", "val": "1tmJDQAAQBAJ"}, {"book": 78, "id": 189, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/147917", "sort": "goodreads", "type": "goodreads", "val": "147917"}, {"book": 78, "id": 188, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/feast-for-crows-george-r-r-martin/1100009926", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/feast-for-crows-george-r-r-martin/1100009926"}, {"book": 78, "id": 185, "name": "Amazon", "path": "https://amazon.com/dp/0553801503", "sort": "amazon", "type": "amazon", "val": "0553801503"}], "isbn": "9780553801507", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:41.304422+00:00", "path": "George R.R. Martin/A Feast for Crows (78)", "pubdate": "2005-10-15", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 4, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 1699331, "tag_ids": "50,75,76,84", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": 38}, {"avg_rating": 8.0, "count": 23, "id": 50, "name": "Adult", "sort": 23}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}], "timestamp": "2022-10-04 19:44:41.304422+00:00", "title": "A Feast for Crows"}, {"author_ids": "90", "authors": [{"avg_rating": 9.333333333333334, "count": 3, "id": 90, "name": "George R.R. Martin", "sort": "Martin, George R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFrom a master of contemporary fantasy comes the first novel of a landmark series unlike any you\u0027ve ever read before. With A Game of Thrones, George R. R. Martin has launched a genuine masterpiece, bringing together the best the genre has to offer. Mystery, intrigue, romance, and adventure fill the pages of this magnificent saga, the first volume in an epic series sure to delight fantasy fans everywhere.\u003c/p\u003e\n\u003cp\u003eLong ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister forces are massing beyond the kingdom\u0027s protective Wall. To the south, the king\u0027s powers are failing--his most trusted adviser dead under mysterious circumstances and his enemies emerging from the shadows of the throne. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the frozen land they were born to. Now Lord Eddard Stark is reluctantly summoned to serve as the king\u0027s new Hand, an appointment that threatens to sunder not only his family but the kingdom itself. Sweeping from a harsh land of cold to a summertime kingdom of epicurean plenty, A Game of Thrones tells a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens. Here an enigmatic band of warriors bear swords of no human metal; a tribe of fierce wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his thro\u2260 a child is lost in the twilight between life and death; and a determined woman undertakes a treacherous journey to protect all she holds dear. Amid plots and counter-plots, tragedy and betrayal, victory and terror, allies and enemies, the fate of the Starks hangs perilously in the balance, as each side endeavors to win that deadliest of conflicts: the game of thrones. Unparalleled in scope and execution, A Game of Thrones is one of those rare reading experiences that catch you up from the opening pages, won\u0027t let you go until the end, and leave you yearning for more.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 43, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 52, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 77, "identifier_ids": "193,194,192,190,191", "identifiers": [{"book": 77, "id": 191, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553103540", "sort": "isbn", "type": "isbn", "val": "9780553103540"}, {"book": 77, "id": 190, "name": "Google Books", "path": "https://books.google.com/books?id=5qNtQgAACAAJ", "sort": "google", "type": "google", "val": "5qNtQgAACAAJ"}, {"book": 77, "id": 192, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/38451264", "sort": "goodreads", "type": "goodreads", "val": "38451264"}, {"book": 77, "id": 194, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/game-of-thrones-george-r-r-martin/1100041703", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/game-of-thrones-george-r-r-martin/1100041703"}, {"book": 77, "id": 193, "name": "Amazon", "path": "https://amazon.com/dp/0553103547", "sort": "amazon", "type": "amazon", "val": "0553103547"}], "isbn": "9780553103540", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:41.131884+00:00", "path": "George R.R. Martin/A Game of Thrones (77)", "pubdate": "1996-08-01", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 5, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 1347449, "tag_ids": "4,76,84", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}], "timestamp": "2022-10-04 19:44:41.131884+00:00", "title": "A Game of Thrones"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "90", "authors": [{"avg_rating": 9.333333333333334, "count": 3, "id": 90, "name": "George R.R. Martin", "sort": "Martin, George R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRarely has there been a tale as gripping, or one as likely to seize the minds and hearts of a generation, as George R. R. Martin\u0027s epic high fantasy series. In A Game of Thrones, an ancient kingdom was torn by the ambitions of ruthless men and women; in A Clash of Kings, war, sorcery, and madness swept over the kingdom like a voracious beast of prey. Now, as the brutal struggle for power nears its tumultuous climax, the battered and divided kingdom faces its most terrifying invasion\u2014one that is being spearheaded from beyond the grave....\u003c/p\u003e\n\u003cp\u003eA STORM OF SWORDS\u003c/p\u003e\n\u003cp\u003eOf the five contenders for power, one is dead, another in disfavor, and still the wars rage as violently as ever, as alliances are made and broken. Joffrey, of House Lannister, sits on the Iron Throne, the uneasy ruler of the land of the Seven Kingdoms. His most bitter rival, Lord Stannis, stands defeated and disgraced, the victim of the jealous sorceress who holds him in her evil thrall. But young Robb, of House Stark, still rules the North from the fortress of Riverrun. Robb plots against his despised Lannister enemies, even as they hold his sister hostage at King\u0027s Landing, the seat of the Iron Throne. Meanwhile, making her way across a blood-drenched continent is the exiled queen, Daenerys, mistress of the only three dragons still left in the world. Filled with the stench of death and decay from the destructive dynastic war, Daenerys is gathering allies and strength for an assault on King\u0027s Landing, hoping to win back the crown she believes is rightfully hers. But as opposing forces maneuver for the final titanic showdown, an army of barbaric wildlings bent on overwhelming the Seven Kingdoms arrives from the outermost line of civilization. In their vanguard is a horde of mythical Others\u2014a supernatural army of the living dead whose animated corpses are unstoppable. And as the future of the land hangs in the balance, no one will rest in the quest for victory until the Seven Kingdoms have exploded in a veritable storm of swords.... Brilliantly conceived and grand in scope, A Storm of Swords is the incredible tale of a world of harsh beauty and powerful magic, torn by treachery, ravaged by brutality, and consumed by greed and ambition. It portrays a war-torn landscape in which nobles and commoners, heroes and villains, the freeborn and the enslaved, all struggle to survive and to find their destinies...along with the dazzling bounty and wondrous enchantment that was once their birthright in the Seven Kingdoms.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 79, "identifier_ids": "183,184,181,182,180", "identifiers": [{"book": 79, "id": 180, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553106633", "sort": "isbn", "type": "isbn", "val": "9780553106633"}, {"book": 79, "id": 182, "name": "Google Books", "path": "https://books.google.com/books?id=YxpbAAAAMAAJ", "sort": "google", "type": "google", "val": "YxpbAAAAMAAJ"}, {"book": 79, "id": 181, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/10396652", "sort": "goodreads", "type": "goodreads", "val": "10396652"}, {"book": 79, "id": 184, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/storm-of-swords-george-r-r-martin/1100179865", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/storm-of-swords-george-r-r-martin/1100179865"}, {"book": 79, "id": 183, "name": "Amazon", "path": "https://amazon.com/dp/0553106635", "sort": "amazon", "type": "amazon", "val": "0553106635"}], "isbn": "9780553106633", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:41.482947+00:00", "path": "George R.R. Martin/A Storm of Swords (79)", "pubdate": "2000-08-08", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 5, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 2060244, "tag_ids": "50,75,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:44:41.482947+00:00", "title": "A Storm of Swords"}, {"author_ids": "90", "authors": [{"avg_rating": 9.333333333333334, "count": 3, "id": 90, "name": "George R.R. Martin", "sort": "Martin, George R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFew books have captivated the imagination and won the devotion and praise of readers and critics everywhere as has George R. R. Martin\u2019s monumental epic cycle of high fantasy. Now, in A Feast for Crows* , Martin delivers the long-awaited fourth book of his landmark series, as a kingdom torn asunder finds itself at last on the brink of peace ... only to be launched on an even more terrifying course of destruction.\u003c/p\u003e\n\u003cp\u003e**A FEAST FOR CROWS\u003c/p\u003e\n\u003cp\u003e** It seems too good to be true. After centuries of bitter strife and fatal treachery, the seven powers dividing the land have decimated one another into an uneasy truce. Or so it appears.... With the death of the monstrous King Joffrey, Cersei is ruling as regent in King\u2019s Landing. Robb Stark\u2019s demise has broken the back of the Northern rebels, and his siblings are scattered throughout the kingdom like seeds on barren soil. Few legitimate claims to the once desperately sought Iron Throne still exist\u2014or they are held in hands too weak or too distant to wield them effectively. The war, which raged out of control for so long, has burned itself out.\u003c/p\u003e\n\u003cp\u003eBut as in the aftermath of any climactic struggle, it is not long before the survivors, outlaws, renegades, and carrion eaters start to gather, picking over the bones of the dead and fighting for the spoils of the soon-to-be dead. Now in the Seven Kingdoms, as the human crows assemble over a banquet of ashes, daring new plots and dangerous new alliances are formed, while surprising faces\u2014some familiar, others only just appearing\u2014are seen emerging from an ominous twilight of past struggles and chaos to take up the challenges ahead.\u003c/p\u003e\n\u003cp\u003eIt is a time when the wise and the ambitious, the deceitful and the strong will acquire the skills, the power, and the magic to survive the stark and terrible times that lie before them. It is a time for nobles and commoners, soldiers and sorcerers, assassins and sages to come together and stake their fortunes ... and their lives. For at a feast for crows, many are the guests\u2014but only a few are the survivors.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 78, "identifier_ids": "185,188,189,187,186", "identifiers": [{"book": 78, "id": 186, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553801507", "sort": "isbn", "type": "isbn", "val": "9780553801507"}, {"book": 78, "id": 187, "name": "Google Books", "path": "https://books.google.com/books?id=1tmJDQAAQBAJ", "sort": "google", "type": "google", "val": "1tmJDQAAQBAJ"}, {"book": 78, "id": 189, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/147917", "sort": "goodreads", "type": "goodreads", "val": "147917"}, {"book": 78, "id": 188, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/feast-for-crows-george-r-r-martin/1100009926", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/feast-for-crows-george-r-r-martin/1100009926"}, {"book": 78, "id": 185, "name": "Amazon", "path": "https://amazon.com/dp/0553801503", "sort": "amazon", "type": "amazon", "val": "0553801503"}], "isbn": "9780553801507", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:41.304422+00:00", "path": "George R.R. Martin/A Feast for Crows (78)", "pubdate": "2005-10-15", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 4, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 1699331, "tag_ids": "50,75,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:44:41.304422+00:00", "title": "A Feast for Crows"}, {"author_ids": "90", "authors": [{"avg_rating": 9.333333333333334, "count": 3, "id": 90, "name": "George R.R. Martin", "sort": "Martin, George R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFrom a master of contemporary fantasy comes the first novel of a landmark series unlike any you\u0027ve ever read before. With A Game of Thrones, George R. R. Martin has launched a genuine masterpiece, bringing together the best the genre has to offer. Mystery, intrigue, romance, and adventure fill the pages of this magnificent saga, the first volume in an epic series sure to delight fantasy fans everywhere.\u003c/p\u003e\n\u003cp\u003eLong ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister forces are massing beyond the kingdom\u0027s protective Wall. To the south, the king\u0027s powers are failing--his most trusted adviser dead under mysterious circumstances and his enemies emerging from the shadows of the throne. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the frozen land they were born to. Now Lord Eddard Stark is reluctantly summoned to serve as the king\u0027s new Hand, an appointment that threatens to sunder not only his family but the kingdom itself. Sweeping from a harsh land of cold to a summertime kingdom of epicurean plenty, A Game of Thrones tells a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens. Here an enigmatic band of warriors bear swords of no human metal; a tribe of fierce wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his thro\u2260 a child is lost in the twilight between life and death; and a determined woman undertakes a treacherous journey to protect all she holds dear. Amid plots and counter-plots, tragedy and betrayal, victory and terror, allies and enemies, the fate of the Starks hangs perilously in the balance, as each side endeavors to win that deadliest of conflicts: the game of thrones. Unparalleled in scope and execution, A Game of Thrones is one of those rare reading experiences that catch you up from the opening pages, won\u0027t let you go until the end, and leave you yearning for more.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 77, "identifier_ids": "193,194,192,190,191", "identifiers": [{"book": 77, "id": 191, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553103540", "sort": "isbn", "type": "isbn", "val": "9780553103540"}, {"book": 77, "id": 190, "name": "Google Books", "path": "https://books.google.com/books?id=5qNtQgAACAAJ", "sort": "google", "type": "google", "val": "5qNtQgAACAAJ"}, {"book": 77, "id": 192, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/38451264", "sort": "goodreads", "type": "goodreads", "val": "38451264"}, {"book": 77, "id": 194, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/game-of-thrones-george-r-r-martin/1100041703", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/game-of-thrones-george-r-r-martin/1100041703"}, {"book": 77, "id": 193, "name": "Amazon", "path": "https://amazon.com/dp/0553103547", "sort": "amazon", "type": "amazon", "val": "0553103547"}], "isbn": "9780553103540", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:41.131884+00:00", "path": "George R.R. Martin/A Game of Thrones (77)", "pubdate": "1996-08-01", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 5, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 1347449, "tag_ids": "4,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}], "timestamp": "2022-10-04 19:44:41.131884+00:00", "title": "A Game of Thrones"}])'></div>
          </div>
       </div>
    </div>

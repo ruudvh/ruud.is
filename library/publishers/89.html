@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -453,6 +823,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -713,6 +1084,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -780,6 +1155,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -957,14 +1333,14 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/92.html">
-                                Biography
+                              href="/library/tags/50.html">
+                                Adult
                             </a>
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/50.html">
-                                Adult
+                              href="/library/tags/92.html">
+                                Biography
                             </a>
                           
                             <a 
@@ -1037,7 +1413,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "151", "authors": [{"avg_rating": 8.0, "count": 1, "id": 151, "name": "Daisy Hern\u00e1ndez", "sort": "Hern\u00e1ndez, Daisy"}], "comments": "\u003cp\u003eWho does the United States take care of and who does it leave behind? This is a riveting investigation of infectious disease, poverty, racism, and for-profit health care\u2014and the harm caused by decades of silence.  \u003c/p\u003e\n\u003cp\u003eGrowing up in a New Jersey factory town in the 1980s, Daisy Hern\u00e1ndez believed that her aunt had become deathly ill from eating an apple. No one in her family, in either the United States or Colombia, spoke of infectious diseases, and even into her thirties, she only knew that her aunt had died of a rare illness called Chagas. But as Hern\u00e1ndez dug deeper, she discovered that Chagas\u2014or the kissing bug disease\u2014is more prevalent in the United States than the Zika virus. Today, more than three hundred thousand Americans have Chagas.  \u003c/p\u003e\n\u003cp\u003eWhy do some infectious diseases make headlines and others fall by the wayside? After her aunt\u0027s death, Hern\u00e1ndez begins searching for answers about who our nation chooses to take care of and who we ignore. Crisscrossing the country, she interviews patients, epidemiologists, and even veterinarians with the Department of Defense. She learns that outside of Latin America, the United States is the only country with the native insects\u2014the \"kissing bugs\"\u2014that carry the Chagas parasite. She spends a night in southwest Texas hunting the dreaded bug with university researchers. She also gets to know patients, like a mother whose premature baby was born infected with the parasite, his heart already damaged. And she meets one cardiologist battling the disease in Los Angeles County with local volunteers.  \u003c/p\u003e\n\u003cp\u003eThe Kissing Bug tells the story of how poverty, racism, and public policies have conspired to keep this disease hidden\u2014and how the disease intersects with Hern\u00e1ndez\u0027s own identity as a niece, sister, and daughter; a queer woman; a writer and researcher; and a citizen of a country that is only beginning to address the harms caused by Chagas and the dangers it poses. A riveting and nuanced investigation into racial politics and for-profit health care in the United States, The Kissing Bug reveals the intimate history of a marginalized disease and connects us to the lives at the center of it all.\u003c/p\u003e", "custom_clean": [{"id": 174, "value": 1}], "custom_lists": [{"id": 5, "value": "Must Read.2021 Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 97, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 148, "identifier_ids": "359,361,360", "identifiers": [{"book": 148, "id": 360, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781953534194", "sort": "isbn", "type": "isbn", "val": "9781953534194"}, {"book": 148, "id": 361, "name": "Google Books", "path": "https://books.google.com/books?id=xC-3zgEACAAJ", "sort": "google", "type": "google", "val": "xC-3zgEACAAJ"}, {"book": 148, "id": 359, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61268043", "sort": "goodreads", "type": "goodreads", "val": "61268043"}], "isbn": "9781953534194", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:16.610501+00:00", "path": "Daisy Hernandez/The Kissing Bug (148)", "pubdate": "2021-06-01", "publisher_ids": "89", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 89, "name": "Tin House Books, LLC", "sort": "Tin House Books, LLC"}], "rating": 4, "series": [], "series_ids": null, "size": 2070235, "tag_ids": "92,121,138,139,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 8.0, "count": 2, "id": 138, "name": "Medical", "sort": 2}, {"avg_rating": 8.0, "count": 2, "id": 139, "name": "Disease \u0026 Health Issues", "sort": 2}], "timestamp": "2022-10-05 15:54:16.610501+00:00", "title": "The Kissing Bug"}, {"author_ids": "149", "authors": [{"avg_rating": 8.0, "count": 1, "id": 149, "name": "Elissa Washuta", "sort": "Washuta, Elissa"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThroughout her life, Elissa Washuta has been surrounded by cheap facsimiles of Native spiritual tools and occult trends, \u201cstarter witch kits\u201d of sage, rose quartz, and tarot cards packaged together in paper and plastic. Following a decade of abuse, addiction, PTSD, and heavy-duty drug treatment for a misdiagnosis of bipolar disorder, she felt drawn to the real spirits and powers her dispossessed and discarded ancestors knew, while she undertook necessary work to find love and meaning. \u003c/p\u003e\n\u003cp\u003eIn this collection of intertwined essays, she writes about land, heartbreak, and colonization, about life without the escape hatch of intoxication, and about how she became a powerful witch. She interlaces stories from her forebears with cultural artifacts from her own life\u2014 \u003cem\u003eTwin Peaks\u003c/em\u003e , the \u003cem\u003eOregon Trail II\u003c/em\u003e video game, a Claymation Satan, a YouTube video of Stevie Nicks and Lindsey Buckingham\u2014to explore questions of cultural inheritance and the particular danger, as a Native woman, of relaxing into romantic love under colonial rule.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 172, "value": 1}], "custom_lists": [{"id": 5, "value": "Must Read.2021 Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 95, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 146, "identifier_ids": "356,355,354", "identifiers": [{"book": 146, "id": 354, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781951142391", "sort": "isbn", "type": "isbn", "val": "9781951142391"}, {"book": 146, "id": 355, "name": "Google Books", "path": "https://books.google.com/books?id=iMqWzQEACAAJ", "sort": "google", "type": "google", "val": "iMqWzQEACAAJ"}, {"book": 146, "id": 356, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/50704742", "sort": "goodreads", "type": "goodreads", "val": "50704742"}], "isbn": "9781951142391", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:15.837582+00:00", "path": "Elissa Washuta/White Magic (146)", "pubdate": "2021-04-27", "publisher_ids": "89", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 89, "name": "Tin House Books, LLC", "sort": "Tin House Books, LLC"}], "rating": 4, "series": [], "series_ids": null, "size": 2890838, "tag_ids": "50,64,92,133,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.0, "count": 23, "id": 50, "name": "Adult", "sort": 23}, {"avg_rating": 8.0, "count": 5, "id": 133, "name": "Feminism", "sort": 5}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}], "timestamp": "2022-10-05 15:54:15.837582+00:00", "title": "White Magic"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "151", "authors": [{"avg_rating": 8.0, "count": 1, "id": 151, "name": "Daisy Hern\u00e1ndez", "sort": "Hern\u00e1ndez, Daisy"}], "comments": "\u003cp\u003eWho does the United States take care of and who does it leave behind? This is a riveting investigation of infectious disease, poverty, racism, and for-profit health care\u2014and the harm caused by decades of silence.  \u003c/p\u003e\n\u003cp\u003eGrowing up in a New Jersey factory town in the 1980s, Daisy Hern\u00e1ndez believed that her aunt had become deathly ill from eating an apple. No one in her family, in either the United States or Colombia, spoke of infectious diseases, and even into her thirties, she only knew that her aunt had died of a rare illness called Chagas. But as Hern\u00e1ndez dug deeper, she discovered that Chagas\u2014or the kissing bug disease\u2014is more prevalent in the United States than the Zika virus. Today, more than three hundred thousand Americans have Chagas.  \u003c/p\u003e\n\u003cp\u003eWhy do some infectious diseases make headlines and others fall by the wayside? After her aunt\u0027s death, Hern\u00e1ndez begins searching for answers about who our nation chooses to take care of and who we ignore. Crisscrossing the country, she interviews patients, epidemiologists, and even veterinarians with the Department of Defense. She learns that outside of Latin America, the United States is the only country with the native insects\u2014the \"kissing bugs\"\u2014that carry the Chagas parasite. She spends a night in southwest Texas hunting the dreaded bug with university researchers. She also gets to know patients, like a mother whose premature baby was born infected with the parasite, his heart already damaged. And she meets one cardiologist battling the disease in Los Angeles County with local volunteers.  \u003c/p\u003e\n\u003cp\u003eThe Kissing Bug tells the story of how poverty, racism, and public policies have conspired to keep this disease hidden\u2014and how the disease intersects with Hern\u00e1ndez\u0027s own identity as a niece, sister, and daughter; a queer woman; a writer and researcher; and a citizen of a country that is only beginning to address the harms caused by Chagas and the dangers it poses. A riveting and nuanced investigation into racial politics and for-profit health care in the United States, The Kissing Bug reveals the intimate history of a marginalized disease and connects us to the lives at the center of it all.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 148, "identifier_ids": "359,361,360", "identifiers": [{"book": 148, "id": 360, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781953534194", "sort": "isbn", "type": "isbn", "val": "9781953534194"}, {"book": 148, "id": 361, "name": "Google Books", "path": "https://books.google.com/books?id=xC-3zgEACAAJ", "sort": "google", "type": "google", "val": "xC-3zgEACAAJ"}, {"book": 148, "id": 359, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61268043", "sort": "goodreads", "type": "goodreads", "val": "61268043"}], "isbn": "9781953534194", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:16.610501+00:00", "path": "Daisy Hernandez/The Kissing Bug (148)", "pubdate": "2021-06-01", "publisher_ids": "89", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 89, "name": "Tin House Books, LLC", "sort": "Tin House Books, LLC"}], "rating": 4, "series": [], "series_ids": null, "size": 2070235, "tag_ids": "92,121,138,139,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 8.0, "count": 2, "id": 138, "name": "Medical", "sort": 2}, {"avg_rating": 8.0, "count": 2, "id": 139, "name": "Disease \u0026 Health Issues", "sort": 2}], "timestamp": "2022-10-05 15:54:16.610501+00:00", "title": "The Kissing Bug"}, {"author_ids": "149", "authors": [{"avg_rating": 8.0, "count": 1, "id": 149, "name": "Elissa Washuta", "sort": "Washuta, Elissa"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThroughout her life, Elissa Washuta has been surrounded by cheap facsimiles of Native spiritual tools and occult trends, \u201cstarter witch kits\u201d of sage, rose quartz, and tarot cards packaged together in paper and plastic. Following a decade of abuse, addiction, PTSD, and heavy-duty drug treatment for a misdiagnosis of bipolar disorder, she felt drawn to the real spirits and powers her dispossessed and discarded ancestors knew, while she undertook necessary work to find love and meaning. \u003c/p\u003e\n\u003cp\u003eIn this collection of intertwined essays, she writes about land, heartbreak, and colonization, about life without the escape hatch of intoxication, and about how she became a powerful witch. She interlaces stories from her forebears with cultural artifacts from her own life\u2014 \u003cem\u003eTwin Peaks\u003c/em\u003e , the \u003cem\u003eOregon Trail II\u003c/em\u003e video game, a Claymation Satan, a YouTube video of Stevie Nicks and Lindsey Buckingham\u2014to explore questions of cultural inheritance and the particular danger, as a Native woman, of relaxing into romantic love under colonial rule.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 146, "identifier_ids": "356,355,354", "identifiers": [{"book": 146, "id": 354, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781951142391", "sort": "isbn", "type": "isbn", "val": "9781951142391"}, {"book": 146, "id": 355, "name": "Google Books", "path": "https://books.google.com/books?id=iMqWzQEACAAJ", "sort": "google", "type": "google", "val": "iMqWzQEACAAJ"}, {"book": 146, "id": 356, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/50704742", "sort": "goodreads", "type": "goodreads", "val": "50704742"}], "isbn": "9781951142391", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:15.837582+00:00", "path": "Elissa Washuta/White Magic (146)", "pubdate": "2021-04-27", "publisher_ids": "89", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 89, "name": "Tin House Books, LLC", "sort": "Tin House Books, LLC"}], "rating": 4, "series": [], "series_ids": null, "size": 2890838, "tag_ids": "50,64,92,133,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.0, "count": 5, "id": 133, "name": "Feminism", "sort": 5}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}], "timestamp": "2022-10-05 15:54:15.837582+00:00", "title": "White Magic"}])'></div>
          </div>
       </div>
    </div>

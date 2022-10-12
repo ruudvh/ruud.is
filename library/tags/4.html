@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -451,6 +821,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -703,6 +1074,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -773,6 +1148,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1061,6 +1437,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1127,6 +1507,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1304,6 +1685,12 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/18.html">
+                                Romance
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/153.html">
                                 Classics
                             </a>
@@ -1312,12 +1699,6 @@
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/214.html">
                                 Gutenberg
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/18.html">
-                                Romance
                             </a>
                           
                             <a 
@@ -1397,6 +1778,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1463,6 +1848,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1719,6 +2105,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1787,6 +2177,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2041,6 +2432,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2108,6 +2503,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2285,14 +2681,14 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/214.html">
-                                Gutenberg
+                              href="/library/tags/18.html">
+                                Romance
                             </a>
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/18.html">
-                                Romance
+                              href="/library/tags/214.html">
+                                Gutenberg
                             </a>
                           
                             <a 
@@ -2373,6 +2769,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2438,6 +2838,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2689,6 +3090,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2755,6 +3160,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3011,6 +3417,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -3077,6 +3487,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3329,6 +3740,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -3394,6 +3809,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3657,6 +4073,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -3723,6 +4143,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3973,6 +4394,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -4039,6 +4464,16 @@
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -4327,6 +4762,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -4393,6 +4832,16 @@
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -4673,6 +5122,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -4739,6 +5192,16 @@
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -5011,6 +5474,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -5080,6 +5547,16 @@
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -5355,6 +5832,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -5421,6 +5902,16 @@
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -5709,6 +6200,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -5775,6 +6270,16 @@
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -6063,6 +6568,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -6130,6 +6639,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -6395,6 +6905,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -6462,6 +6976,16 @@
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -6645,6 +7169,12 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/18.html">
+                                Romance
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/49.html">
                                 Contemporary
                             </a>
@@ -6653,12 +7183,6 @@
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/47.html">
                                 Mystery
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/18.html">
-                                Romance
                             </a>
                           
                             <a 
@@ -6749,7 +7273,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "246", "authors": [{"avg_rating": null, "count": 1, "id": 246, "name": "Mark Twain", "sort": "Twain, Mark"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHilariously picaresque, epic in scope, alive with the poetry and vigor of the American people, Mark Twain\u0027s story about a young boy and his journey down the Mississippi was the first great novel to speak in a truly American voice. Influencing subsequent generations of writers -- from Sherwood Anderson to Twain\u0027s fellow Missourian, T.S. Eliot, from Ernest Hemingway and William Faulkner to J.D. Salinger -- \"Huckleberry Finn,\" like the river which flows through its pages, is one of the great sources which nourished and still nourishes the literature of America.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 287, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 163, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 212, "identifier_ids": "774,772,773", "identifiers": [{"book": 212, "id": 773, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780486280615", "sort": "isbn", "type": "isbn", "val": "9780486280615"}, {"book": 212, "id": 772, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/76", "sort": "gutenberg", "type": "gutenberg", "val": "76"}, {"book": 212, "id": 774, "name": "Google Books", "path": "https://books.google.com/books?id=mWHcDAAAQBAJ", "sort": "google", "type": "google", "val": "mWHcDAAAQBAJ"}], "isbn": "9780486280615", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:37.285529+00:00", "path": "Mark Twain/Adventures of Huckleberry Finn (212)", "pubdate": "1994-05-26", "publisher_ids": "131", "publishers": [{"avg_rating": null, "count": 1, "id": 131, "name": "Courier Corporation", "sort": "Courier Corporation"}], "rating": null, "series": [], "series_ids": null, "size": 1075085, "tag_ids": "4,153,209,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": null, "count": 1, "id": 209, "name": "Action \u0026 Adventure", "sort": 1}], "timestamp": "2022-10-10 14:39:37.285529+00:00", "title": "Adventures of Huckleberry Finn"}, {"author_ids": "243,247,248", "authors": [{"avg_rating": 8.0, "count": 1, "id": 248, "name": "Amy Mandelker", "sort": "Mandelker, Amy"}, {"avg_rating": 8.0, "count": 1, "id": 247, "name": "Louise Maude", "sort": "Maude, Louise"}, {"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTolstoy\u0027s epic masterpiece captures with unprecedented immediacy the broad sweep of life during the Napoleonic wars and the brutal invasion of Russia. Balls and soires, the burning of Moscow, the intrigues of statesmen and generals, scenes of violent battles, the quiet moments of everyday life--all in a work whose extraordinary imaginative power has never been surpassed. The Maudes\u0027 translation of Tolstoy\u0027s epic masterpiece has long been considered the best English version, and now for the first time it has been revised to bring it fully into line with modern approaches to the text. French passages are restored, Anglicization of Russian names removed, and outmoded expressions updated. A new introduction by Amy Mandelker considers the novel\u0027s literary and historical context, the nature of the work, and Tolstoy\u0027s artistic and philosophical aims. New, expanded notes provide historical background and identifications, as well as insight into Russian life and society. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 289, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 161, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 210, "identifier_ids": "745,744,747,746", "identifiers": [{"book": 210, "id": 746, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780191612541", "sort": "isbn", "type": "isbn", "val": "9780191612541"}, {"book": 210, "id": 747, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2600", "sort": "gutenberg", "type": "gutenberg", "val": "2600"}, {"book": 210, "id": 744, "name": "Google Books", "path": "https://books.google.com/books?id=2iiQDwAAQBAJ", "sort": "google", "type": "google", "val": "2iiQDwAAQBAJ"}, {"book": 210, "id": 745, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55393212", "sort": "goodreads", "type": "goodreads", "val": "55393212"}], "isbn": "9780191612541", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.947434+00:00", "path": "Leo Tolstoy/War and Peace (210)", "pubdate": "1869-01-01", "publisher_ids": "129", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 129, "name": "Oxford University Press", "sort": "Oxford University Press"}], "rating": 4, "series": [], "series_ids": null, "size": 10408275, "tag_ids": "4,60,142,153,176,204,205,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 176, "name": "General", "sort": 4}, {"avg_rating": 8.0, "count": 2, "id": 142, "name": "War", "sort": 2}, {"avg_rating": 8.0, "count": 1, "id": 204, "name": "Political", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 205, "name": "Europe", "sort": 1}], "timestamp": "2022-10-10 14:39:36.947434+00:00", "title": "War and Peace"}, {"author_ids": "243", "authors": [{"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConsidered by some to be the greatest novel ever written, Anna Karenina is Tolstoy\u0027s classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 291, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 159, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 208, "identifier_ids": "751,752,750", "identifiers": [{"book": 208, "id": 750, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679783305", "sort": "isbn", "type": "isbn", "val": "9780679783305"}, {"book": 208, "id": 752, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/1399", "sort": "gutenberg", "type": "gutenberg", "val": "1399"}, {"book": 208, "id": 751, "name": "Google Books", "path": "https://books.google.com/books?id=yBJShX4BLVYC", "sort": "google", "type": "google", "val": "yBJShX4BLVYC"}], "isbn": "9780679783305", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.688127+00:00", "path": "Leo Tolstoy/Anna Karenina (208)", "pubdate": "2000-10-10", "publisher_ids": "133", "publishers": [{"avg_rating": null, "count": 1, "id": 133, "name": "Random House Publishing Group", "sort": "Random House Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 3845227, "tag_ids": "4,18,148,152,153,210,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 6, "id": 18, "name": "Romance", "sort": 6}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 1, "id": 210, "name": "Victorian", "sort": 1}], "timestamp": "2022-10-10 14:39:36.688127+00:00", "title": "Anna Karenina"}, {"author_ids": "245", "authors": [{"avg_rating": null, "count": 1, "id": 245, "name": "Vladimir Vladimirovich Nabokov", "sort": "Nabokov, Vladimir Vladimirovich"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen it was published in 1955, Lolita immediately became a cause c\u00e9l\u00e8bre because of the freedom and sophistication with which it handled the unusual erotic predilections of its protagonist. But Vladimir Nabokov\u0027s wise, ironic, elegant masterpiece owes its stature as one of the twentieth century\u0027s novels of record not to the controversy its material aroused but to its author\u0027s use of that material to tell a love story almost shocking in its beauty and tenderness. Awe and exhilaration\u2013along with heartbreak and mordant wit\u2013abound in this account of the aging Humbert Humbert\u0027s obsessive, devouring, and doomed passion for the nymphet Dolores Haze. Lolita is also the story of a hypercivilized European colliding with the cheerful barbarism of postwar America, but most of all, it is a meditation on love\u2013love as outrage and hallucination, madness and transformation. With an introduction by Martin Amis. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 292, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 158, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 207, "identifier_ids": "734,733", "identifiers": [{"book": 207, "id": 733, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679410430", "sort": "isbn", "type": "isbn", "val": "9780679410430"}, {"book": 207, "id": 734, "name": "Google Books", "path": "https://books.google.com/books?id=Sy7uAAAAMAAJ", "sort": "google", "type": "google", "val": "Sy7uAAAAMAAJ"}], "isbn": "9780679410430", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.553487+00:00", "path": "Vladimir Vladimirovich Nabokov/Lolita (207)", "pubdate": "1992-10-15", "publisher_ids": "128", "publishers": [{"avg_rating": null, "count": 1, "id": 128, "name": "Knopf", "sort": "Knopf"}], "rating": null, "series": [], "series_ids": null, "size": 1084575, "tag_ids": "4,151,152,153,176,203", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 4, "id": 176, "name": "General", "sort": 4}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}, {"avg_rating": null, "count": 1, "id": 203, "name": "Erotica", "sort": 1}], "timestamp": "2022-10-10 14:39:36.553487+00:00", "title": "Lolita"}, {"author_ids": "238", "authors": [{"avg_rating": null, "count": 1, "id": 238, "name": "George Eliot", "sort": "Eliot, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA sprawling work set in a provincial English town, Middlemarch boasts a large cast of characters whose stories interweave against a backdrop of political upheaval. \u003c/p\u003e\n\u003cp\u003eInstead of choosing to wed a wealthy landowner and settle for a comfortable life, Dorothea Brooke decides to marry Edward Casaubon\u2014a dull scholar who is her senior by a few decades. Dorothea hopes the union will afford her with the opportunity to share in her husband\u2019s intellectual pursuits, but even her best efforts can\u2019t save the disastrous marriage. Meanwhile, idealistic doctor Tertius Lydgate has progressive ideas about the medical field, and he believes the village of Middlemarch is the place that will embrace his beliefs. But when he weds Rosamond Vincy, the mayor\u2019s beautiful daughter, his ideals come into stark contrast with his new bride\u2019s materialism and vanity, dooming their marriage from the start. \u003c/p\u003e\n\u003cp\u003eLastly, Rosamond\u0027s brother, Fred, is reluctantly destined for the Church. But his childhood sweetheart Mary Garth refuses to accept him until he settles into a more suitable career and one that interests him. But when circumstances lead to Fred losing a sizeable fortune that sets off a calamitous turn of events, he must reevaluate the choices he has made. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 295, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 155, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 204, "identifier_ids": "759,760,761", "identifiers": [{"book": 204, "id": 761, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062356147", "sort": "isbn", "type": "isbn", "val": "9780062356147"}, {"book": 204, "id": 760, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/145", "sort": "gutenberg", "type": "gutenberg", "val": "145"}, {"book": 204, "id": 759, "name": "Google Books", "path": "https://books.google.com/books?id=WhrEsgEACAAJ", "sort": "google", "type": "google", "val": "WhrEsgEACAAJ"}], "isbn": "9780062356147", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.112665+00:00", "path": "George Eliot/Middlemarch (204)", "pubdate": "2015-11-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [], "series_ids": null, "size": 6332096, "tag_ids": "4,152,153,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}], "timestamp": "2022-10-10 14:39:36.112665+00:00", "title": "Middlemarch"}, {"author_ids": "237", "authors": [{"avg_rating": null, "count": 1, "id": 237, "name": "Gustave Flaubert", "sort": "Flaubert, Gustave"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eEmma is bored and wants excitement and makes a complete mess of her life. In the process she destroys the life of her very provincial husband who also happens to be a good man. The story is tragic and at times frustrating but well worth reading. \u003c/p\u003e\n\u003cp\u003eAfter marrying Charles Bovary, an ordinary country doctor, Emma Rouault hopes to have the adventurous life of passion and intrigue that she reads about in books. However, she is disappointed with her husband and her simple life. It is anything but the romantic excitement she longs for. In her desire to fulfill her dreams she travels down a winding path of adultery and deception. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 296, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 154, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 203, "identifier_ids": "763,762,764", "identifiers": [{"book": 203, "id": 764, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9783985947928", "sort": "isbn", "type": "isbn", "val": "9783985947928"}, {"book": 203, "id": 762, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2413", "sort": "gutenberg", "type": "gutenberg", "val": "2413"}, {"book": 203, "id": 763, "name": "Google Books", "path": "https://books.google.com/books?id=FhUxEAAAQBAJ", "sort": "google", "type": "google", "val": "FhUxEAAAQBAJ"}], "isbn": "9783985947928", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:35.973039+00:00", "path": "Gustave Flaubert/Madame Bovary - Gustave Flaubert (203)", "pubdate": "2021-06-15", "publisher_ids": "134", "publishers": [{"avg_rating": null, "count": 1, "id": 134, "name": "Phoemixx Classics Ebooks", "sort": "Phoemixx Classics Ebooks"}], "rating": null, "series": [], "series_ids": null, "size": 1293857, "tag_ids": "4,18,211,212,213,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 6, "id": 18, "name": "Romance", "sort": 6}, {"avg_rating": null, "count": 1, "id": 211, "name": "New Adult", "sort": 1}, {"avg_rating": null, "count": 1, "id": 212, "name": "Literary Criticism", "sort": 1}, {"avg_rating": null, "count": 1, "id": 213, "name": "Gothic \u0026 Romance", "sort": 1}], "timestamp": "2022-10-10 14:39:35.973039+00:00", "title": "Madame Bovary - Gustave Flaubert"}, {"author_ids": "171", "authors": [{"avg_rating": 7.0, "count": 2, "id": 171, "name": "Jules Verne", "sort": "Verne, Jules"}], "comments": "\u003cp\u003eIn de Reformclub in London wordt druk gepraat over de diefstal bij de Bank van Engeland: hoe groot is de kans dat de dief gepakt wordt? De wereld is klein geworden: men kan hem in drie maanden rondreizen! \u0027In tachtig dagen,\u0027 verbetert Phileas Fogg. \u0027Alles meegerekend?\u0027 \u0027Alles inbegrepen: schipbreuk, treinontsporingen, overvallen en andere ongemakken.\u0027 \u0027Ik wil wedden dat zo\u0027n reis onmogelijk is!\u0027 De onverstoorbare Phileas Fogg neemt de uitdaging aan, en zo vertrekt hij met zijn knecht Passepartout op een duizelingwekkende reis.\u003c/p\u003e", "custom_clean": [{"id": 219, "value": 1}], "custom_lists": [{"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 121, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 170, "identifier_ids": "557,556,558", "identifiers": [{"book": 170, "id": 558, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9027443009", "sort": "isbn", "type": "isbn", "val": "9027443009"}, {"book": 170, "id": 556, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/11318", "sort": "gutenberg", "type": "gutenberg", "val": "11318"}, {"book": 170, "id": 557, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/60906552", "sort": "goodreads", "type": "goodreads", "val": "60906552"}], "isbn": "9027443009", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.958795+00:00", "path": "Jules Verne/De reis om de wereld in tachtig dag (170)", "pubdate": "1980-01-01", "publisher_ids": "103", "publishers": [{"avg_rating": 7.0, "count": 2, "id": 103, "name": "Spectrum", "sort": "Spectrum"}], "rating": 3, "series": [], "series_ids": null, "size": 4144846, "tag_ids": "4,84,90,214", "tags": [{"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-06 09:40:29.958795+00:00", "title": "De reis om de wereld in tachtig dagen"}, {"author_ids": "168", "authors": [{"avg_rating": 8.0, "count": 2, "id": 168, "name": "Oscar Wilde", "sort": "Wilde, Oscar"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e\u003cstrong\u003eHet portret van Dorian Gray\u003c/strong\u003e (Engelstalige titel \u003cem\u003eThe Picture of Dorian Gray\u003c/em\u003e) is de enige gepubliceerde \u003ca href=\"https://nl.wikipedia.org/wiki/Roman_(literatuur)\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eroman\u003c/span\u003e\u003c/a\u003e van \u003ca href=\"https://nl.wikipedia.org/wiki/Oscar_Wilde\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eOscar Wilde\u003c/span\u003e\u003c/a\u003e. Hij werd voor het eerst uitgebracht in \u003ca href=\"https://nl.wikipedia.org/wiki/Verenigd_Koninkrijk\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eEngeland\u003c/span\u003e\u003c/a\u003e in 1890. Een Nederlandse vertaling door \u003ca href=\"https://nl.wikipedia.org/wiki/Elisabeth_Couperus-Baud\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eElisabeth Couperus-Baud\u003c/span\u003e\u003c/a\u003e verscheen in 1893. Haar echtgenoot \u003ca href=\"https://nl.wikipedia.org/wiki/Louis_Couperus\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eLouis Couperus\u003c/span\u003e\u003c/a\u003e had het boek rechtstreeks van Oscar Wilde ontvangen en zij was er diep van onder de indruk. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 220, "value": 1}], "custom_lists": [{"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 120, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 169, "identifier_ids": "560,561,559", "identifiers": [{"book": 169, "id": 559, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789046313596", "sort": "isbn", "type": "isbn", "val": "9789046313596"}, {"book": 169, "id": 561, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/10512", "sort": "gutenberg", "type": "gutenberg", "val": "10512"}, {"book": 169, "id": 560, "name": "Google Books", "path": "https://books.google.com/books?id=Hs1uEAAAQBAJ", "sort": "google", "type": "google", "val": "Hs1uEAAAQBAJ"}], "isbn": "9789046313596", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.827160+00:00", "path": "Oscar Wilde/Het portret van Dorian Gray (169)", "pubdate": "2022-05-09", "publisher_ids": null, "publishers": [], "rating": null, "series": [], "series_ids": null, "size": 174044, "tag_ids": "4,60,180,181,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": null, "count": 1, "id": 180, "name": "Supernatural", "sort": 1}, {"avg_rating": null, "count": 1, "id": 181, "name": "Portraits", "sort": 1}], "timestamp": "2022-10-06 09:40:29.827160+00:00", "title": "Het portret van Dorian Gray"}, {"author_ids": "172", "authors": [{"avg_rating": 8.0, "count": 1, "id": 172, "name": "David Foster Wallace", "sort": "Wallace, David Foster"}], "comments": "\u003cp\u003e\u003cem\u003eInfinite Jest\u003c/em\u003e is the name of a movie said to be so entertaining that anyone who watches it loses all desire to do anything but watch. People die happily, viewing it in endless repetition. The novel \u003cem\u003eInfinite Jest\u003c/em\u003e is the story of this addictive entertainment, and in particular how it affects a Boston halfway house for recovering addicts and a nearby tennis academy, whose students have many budding addictions of their own. As the novel unfolds, various individuals, organisations, and governments vie to obtain the master copy of Infinite Jest for their own ends, and the denizens of the tennis school and halfway house are caught up in increasingly desperate efforts to control the movie\u2014as is a cast including burglars, transvestite muggers, scam artists, medical professionals, pro football stars, bookies, drug addicts both active and recovering, film students, political assassins, and one of the most endearingly messed-up families ever captured in a novel.  \u003c/p\u003e\n\u003cp\u003eOn this outrageous frame hangs an exploration of essential questions about what entertainment is, and why it has come to so dominate our lives; about how our desire for entertainment interacts with our need to connect with other humans; and about what the pleasures we choose say about who we are. Equal parts philosophical quest and screwball comedy, Infinite Jest bends every rule of fiction without sacrificing for a moment its own entertainment value. The huge cast and multilevel narrative serve a story that accelerates to a breathtaking, heartbreaking, unfogettable conclusion. It is an exuberant, uniquely American exploration of the passions that make us human and one of those rare books that renew the very idea of what a novel can do.\u003c/p\u003e", "custom_clean": [{"id": 222, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 118, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 167, "identifier_ids": "511,510,512", "identifiers": [{"book": 167, "id": 512, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780316066525", "sort": "isbn", "type": "isbn", "val": "9780316066525"}, {"book": 167, "id": 510, "name": "Google Books", "path": "https://books.google.com/books?id=G1mXngEACAAJ", "sort": "google", "type": "google", "val": "G1mXngEACAAJ"}, {"book": 167, "id": 511, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/75786", "sort": "goodreads", "type": "goodreads", "val": "75786"}], "isbn": "9780316066525", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:29.483057+00:00", "path": "David Foster Wallace/Infinite Jest (167)", "pubdate": "1996-02-01", "publisher_ids": "68", "publishers": [{"avg_rating": 8.5, "count": 4, "id": 68, "name": "Little, Brown and Company", "sort": "Little, Brown and Company"}], "rating": 4, "series": [], "series_ids": null, "size": 1526106, "tag_ids": "4,152,163,176", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 4, "id": 176, "name": "General", "sort": 4}, {"avg_rating": 8.0, "count": 1, "id": 163, "name": "Literature", "sort": 1}], "timestamp": "2022-10-06 09:40:29.483057+00:00", "title": "Infinite Jest"}, {"author_ids": "171", "authors": [{"avg_rating": 7.0, "count": 2, "id": 171, "name": "Jules Verne", "sort": "Verne, Jules"}], "comments": "\u003cp\u003eEen in de 19e eeuw geschreven verhaal over een reis naar de maan, waaruit blijkt dat de schrijver in technisch opzicht zijn tijd ver vooruit was\u003c/p\u003e", "custom_clean": [{"id": 223, "value": 1}], "custom_lists": [{"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 117, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 166, "identifier_ids": "553,555,554", "identifiers": [{"book": 166, "id": 554, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789010012500", "sort": "isbn", "type": "isbn", "val": "9789010012500"}, {"book": 166, "id": 555, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/27309", "sort": "gutenberg", "type": "gutenberg", "val": "27309"}, {"book": 166, "id": 553, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/5810033", "sort": "goodreads", "type": "goodreads", "val": "5810033"}], "isbn": "9789010012500", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.308510+00:00", "path": "Jules Verne/De reis naar de maan in 28 dagen en (166)", "pubdate": "1865-01-01", "publisher_ids": "113", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 113, "name": "Elsevier", "sort": "Elsevier"}], "rating": 4, "series": [], "series_ids": null, "size": 7371520, "tag_ids": "4,75,76,84,183,214", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": 38}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 1, "id": 183, "name": "Space", "sort": 1}], "timestamp": "2022-10-06 09:40:29.308510+00:00", "title": "De reis naar de maan in 28 dagen en 12 uren"}, {"author_ids": "160", "authors": [{"avg_rating": null, "count": 1, "id": 160, "name": "Amor Towles", "sort": "Towles, Amor"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\u0027s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden\u0027s car. Together, they have hatched an altogether different plan for Emmett\u0027s future, one that will take them all on a fateful journey in the opposite direction\u2014to the City of New York. Spanning just ten days and told from multiple points of view, Towles\u0027s third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 145, "value": 1}], "custom_lists": [{"id": 5, "value": "Must Read.2021 Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 67, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 118, "identifier_ids": "423,424", "identifiers": [{"book": 118, "id": 424, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780735222373", "sort": "isbn", "type": "isbn", "val": "9780735222373"}, {"book": 118, "id": 423, "name": "Google Books", "path": "https://books.google.com/books?id=Kn4eEAAAQBAJ", "sort": "google", "type": "google", "val": "Kn4eEAAAQBAJ"}], "isbn": "9780735222373", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.426067+00:00", "path": "Amor Towles/The Lincoln Highway_ A Novel (118)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 6630557, "tag_ids": "4,148,151,152,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}], "timestamp": "2022-10-05 15:54:05.426067+00:00", "title": "The Lincoln Highway: A Novel"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDe zomervakantie is voorbij, maar Harry Potter keert dit jaar niet terug naar Zweinstein. Hij staat voor de gevaarlijke en haast onmogelijke opdracht van Perkamentus: de overgebleven Gruzielementen opsporen en vernietigen. Zal hem dat lukken?\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 95, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 6, "value": "2020-10-06"}], "custom_reading_list": [{"id": 31, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 110, "identifier_ids": "637,635,636,638,634", "identifiers": [{"book": 110, "id": 634, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103524", "sort": "isbn", "type": "isbn", "val": "9781781103524"}, {"book": 110, "id": 638, "name": "Google Books", "path": "https://books.google.com/books?id=XjYQCwAAQBAJ", "sort": "google", "type": "google", "val": "XjYQCwAAQBAJ"}, {"book": 110, "id": 636, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446"}, {"book": 110, "id": 635, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061698324", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061698324"}, {"book": 110, "id": 637, "name": "Amazon", "path": "https://amazon.com/dp/9061698324", "sort": "amazon", "type": "amazon", "val": "9061698324"}], "isbn": "9781781103524", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:13.396044+00:00", "path": "J.K. Rowling/Harry Potter en De Relieken Van De (110)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 939052, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:13.396044+00:00", "title": "Harry Potter en De Relieken Van De Dood"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry kan niet wachten tot hij terug mag naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus, om aan zijn vierde schooljaar te beginnen. Maar voor het zover is, wordt hij door de familie Wemel op spectaculaire wijze bij de Duffelingen opgehaald, om mee te gaan naar de finale van het WK Zwerkbal! Harry weet dan nog niet dat er dat jaar op Zweinstein een nog groter en spannender evenement zal plaatsvinden. Ondanks alle opwinding en magische gebeurtenissen, probeert hij zich toch op zijn lessen te concentreren. Ondertussen zijn er allerlei tekenen die er op wijzen dat Voldemort, met behulp van Duistere tovenaars, weer aan kracht begint te winnen. De angst dat Hij Die Niet Genoemd Mag Worden opnieuw zal toeslaan, wordt steeds groter...\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 90, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 8, "value": "2020-10-06"}], "custom_reading_list": [{"id": 29, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 108, "identifier_ids": "644,643,645,642", "identifiers": [{"book": 108, "id": 642, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103494", "sort": "isbn", "type": "isbn", "val": "9781781103494"}, {"book": 108, "id": 645, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443"}, {"book": 108, "id": 643, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174202", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174202"}, {"book": 108, "id": 644, "name": "Amazon", "path": "https://amazon.com/dp/9076174202", "sort": "amazon", "type": "amazon", "val": "9076174202"}], "isbn": "9781781103494", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:11.832226+00:00", "path": "J.K. Rowling/Harry Potter en De Vuurbeker (108)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 503870, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:11.832226+00:00", "title": "Harry Potter en De Vuurbeker"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry Potter heeft nog nooit van Zweinstein gehoord als de brieven door de bus van Ligusterlaan 4 worden gegooid. De perkamentachtige enveloppen, beschreven met groene inkt en bestempeld met een paars zegel, worden al snel door zijn nare oom en tante in beslag genomen. Op Harry\u0027s verjaardag krijgt hij echter bezoek van een reus van een man met ogen als zwarte torren. Hij heet Rubeus Hagrid en heeft verbazingwekkend nieuws: Harry Potter is een tovenaar, en er is plek voor hem op Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Er staat hem een ongelooflijk avontuur te wachten!\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 89, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 7, "value": "2020-10-06"}], "custom_reading_list": [{"id": 28, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 107, "identifier_ids": "639,641,640", "identifiers": [{"book": 107, "id": 640, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440"}, {"book": 107, "id": 641, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174105", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174105"}, {"book": 107, "id": 639, "name": "Amazon", "path": "https://amazon.com/dp/9076174105", "sort": "amazon", "type": "amazon", "val": "9076174105"}], "isbn": null, "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:11.432295+00:00", "path": "J.K. Rowling/Harry Potter en De Steen Der Wijzen (107)", "pubdate": "2022-08-02", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 62137172, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:11.432295+00:00", "title": "Harry Potter en De Steen Der Wijzen"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen Harry Potter is left on a doorstep as a baby, he has no idea he is the Boy Who Lived, or that he is famous throughout the wizarding world. Years later, he is astonished to receive an acceptance letter to Hogwarts School of Witchcraft and Wizardry and he is soon whisked off on a magical adventure like no other. Join Harry and his fiercely loyal friends, Hermione and Ron, in this story about the power of truth, love and hope. \u003c/p\u003e\n\u003cp\u003eHaving become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.\u003c/p\u003e\u003c/div\u003e\n\n\u003cp\u003eAnthology containing:\u003c/p\u003eBook 1 by The Philosopher s Stone\u003cbr/\u003eBook 2 by The Chamber of Secrets\u003cbr/\u003eBook 3 by The Prisoner of Azkaban\u003cbr/\u003eBook 4 by The Goblet of Fire\u003cbr/\u003eBook 5 by The Order of The Phoenix\u003cbr/\u003eBook 6 by The Half Blood Prince\u003cbr/\u003eBook 7 by The Deathly Hallows", "custom_clean": [{"id": 96, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 9, "value": "2020-10-06"}], "custom_reading_list": [{"id": 27, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 104, "identifier_ids": "291,290,289", "identifiers": [{"book": 104, "id": 289, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781106464", "sort": "isbn", "type": "isbn", "val": "9781781106464"}, {"book": 104, "id": 290, "name": "Google Books", "path": "https://books.google.com/books?id=f280CwAAQBAJ", "sort": "google", "type": "google", "val": "f280CwAAQBAJ"}, {"book": 104, "id": 291, "name": "Amazon", "path": "https://amazon.com/dp/B01B3DIPMW", "sort": "amazon", "type": "amazon", "val": "B01B3DIPMW"}], "isbn": "9781781106464", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:10.482834+00:00", "path": "J.K. Rowling/Harry Potter_ The Complete Collecti (104)", "pubdate": "2015-12-14", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 8079964, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:10.482834+00:00", "title": "Harry Potter: The Complete Collection (1-7)"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry\u2019s verplichte zomervakantie bij oom Herman en tante Petunia op de Ligusterlaan is dit keer nog erger dan alle voorgaande jaren: niet alleen wordt hij door de Duffelingen weer vreselijk behandeld, ook zijn beste vrienden lijken hem deze zomer totaal te negeren. Harry vindt dat hij iets moet doen, maakt niet uit wat, om zo snel mogelijk te kunnen terugkeren naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Maar dan krijgt de vakantie een onverwacht einde en wordt het zelfs onzeker of Harry nog wel aan zijn vijfde schooljaar op Zweinstein mag beginnen. Vreemde gebeurtenissen stapelen zich op en Harry doet ontdekkingen die het hem onmogelijk maken kalm te blijven...\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 93, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 5, "value": "2020-10-06"}], "custom_reading_list": [{"id": 25, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 101, "identifier_ids": "633,631,629,632,630", "identifiers": [{"book": 101, "id": 630, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103500", "sort": "isbn", "type": "isbn", "val": "9781781103500"}, {"book": 101, "id": 632, "name": "Google Books", "path": "https://books.google.com/books?id=rjgQCwAAQBAJ", "sort": "google", "type": "google", "val": "rjgQCwAAQBAJ"}, {"book": 101, "id": 629, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444"}, {"book": 101, "id": 631, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061697018", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061697018"}, {"book": 101, "id": 633, "name": "Amazon", "path": "https://amazon.com/dp/9061697018", "sort": "amazon", "type": "amazon", "val": "9061697018"}], "isbn": "9781781103500", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.645084+00:00", "path": "J.K. Rowling/Harry Potter en De Orde Van De Feni (101)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 984113, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:09.645084+00:00", "title": "Harry Potter en De Orde Van De Feniks"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHet land wordt geteisterd door vreemde rampen en aanslagen en hoewel het hartje zomer is hangt er een hardnekkige, onheilspellende mist. In de Ligusterlaan zit Harry Potter \u2019s avonds laat ongeduldig op de komst van professor Perkamentus te wachten. Wat kan er er zo belangrijk zijn dat Perkamentus hem bij de Duffelingen op komt zoeken en dat niet wachten kan tot Harry\u2019s terugkeer naar Zweinstein? Zou het iets te maken hebben met de oude profetie die Harry aan het eind van zijn vijfde schooljaar gehoord heeft? Harry\u2019s zesde jaar op Zweinstein begint ongebruikelijk, als Voldemort opnieuw aan kracht wint en de werelden van Dreuzels en tovenaars zich steeds meer met elkaar vermengen...\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 94, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 4, "value": "2020-10-06"}], "custom_reading_list": [{"id": 24, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 100, "identifier_ids": "627,625,626,628,624", "identifiers": [{"book": 100, "id": 624, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103517", "sort": "isbn", "type": "isbn", "val": "9781781103517"}, {"book": 100, "id": 628, "name": "Google Books", "path": "https://books.google.com/books?id=iTgQCwAAQBAJ", "sort": "google", "type": "google", "val": "iTgQCwAAQBAJ"}, {"book": 100, "id": 626, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445"}, {"book": 100, "id": 625, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061697670", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061697670"}, {"book": 100, "id": 627, "name": "Amazon", "path": "https://amazon.com/dp/9061697670", "sort": "amazon", "type": "amazon", "val": "9061697670"}], "isbn": "9781781103517", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.369809+00:00", "path": "J.K. Rowling/Harry Potter en De Halfbloed Prins (100)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 1009796, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:09.369809+00:00", "title": "Harry Potter en De Halfbloed Prins"}, {"author_ids": "90", "authors": [{"avg_rating": 9.333333333333334, "count": 3, "id": 90, "name": "George R.R. Martin", "sort": "Martin, George R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFrom a master of contemporary fantasy comes the first novel of a landmark series unlike any you\u0027ve ever read before. With A Game of Thrones, George R. R. Martin has launched a genuine masterpiece, bringing together the best the genre has to offer. Mystery, intrigue, romance, and adventure fill the pages of this magnificent saga, the first volume in an epic series sure to delight fantasy fans everywhere.\u003c/p\u003e\n\u003cp\u003eLong ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister forces are massing beyond the kingdom\u0027s protective Wall. To the south, the king\u0027s powers are failing--his most trusted adviser dead under mysterious circumstances and his enemies emerging from the shadows of the throne. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the frozen land they were born to. Now Lord Eddard Stark is reluctantly summoned to serve as the king\u0027s new Hand, an appointment that threatens to sunder not only his family but the kingdom itself. Sweeping from a harsh land of cold to a summertime kingdom of epicurean plenty, A Game of Thrones tells a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens. Here an enigmatic band of warriors bear swords of no human metal; a tribe of fierce wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his thro\u2260 a child is lost in the twilight between life and death; and a determined woman undertakes a treacherous journey to protect all she holds dear. Amid plots and counter-plots, tragedy and betrayal, victory and terror, allies and enemies, the fate of the Starks hangs perilously in the balance, as each side endeavors to win that deadliest of conflicts: the game of thrones. Unparalleled in scope and execution, A Game of Thrones is one of those rare reading experiences that catch you up from the opening pages, won\u0027t let you go until the end, and leave you yearning for more.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 43, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 52, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 77, "identifier_ids": "193,194,192,190,191", "identifiers": [{"book": 77, "id": 191, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553103540", "sort": "isbn", "type": "isbn", "val": "9780553103540"}, {"book": 77, "id": 190, "name": "Google Books", "path": "https://books.google.com/books?id=5qNtQgAACAAJ", "sort": "google", "type": "google", "val": "5qNtQgAACAAJ"}, {"book": 77, "id": 192, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/38451264", "sort": "goodreads", "type": "goodreads", "val": "38451264"}, {"book": 77, "id": 194, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/game-of-thrones-george-r-r-martin/1100041703", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/game-of-thrones-george-r-r-martin/1100041703"}, {"book": 77, "id": 193, "name": "Amazon", "path": "https://amazon.com/dp/0553103547", "sort": "amazon", "type": "amazon", "val": "0553103547"}], "isbn": "9780553103540", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:41.131884+00:00", "path": "George R.R. Martin/A Game of Thrones (77)", "pubdate": "1996-08-01", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 5, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 1347449, "tag_ids": "4,76,84", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}], "timestamp": "2022-10-04 19:44:41.131884+00:00", "title": "A Game of Thrones"}, {"author_ids": "83", "authors": [{"avg_rating": 8.0, "count": 1, "id": 83, "name": "Gillian Flynn", "sort": "Flynn, Gillian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWho are you?\u003cbr\u003eWhat have we done to each other?\u003c/p\u003e\n\u003cp\u003eThese are the questions Nick Dunne finds himself asking on the morning of his fifth wedding anniversary, when his wife Amy suddenly disappears. The police suspect Nick. Amy\u0027s friends reveal that she was afraid of him, that she kept secrets from him. He swears it isn\u0027t true. A police examination of his computer shows strange searches. He says they weren\u0027t made by him. And then there are the persistent calls on his mobile phone. So what really did happen to Nick\u0027s beautiful wife\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 11, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 10, "value": "2022-10-06"}], "custom_reading_list": [{"id": 1, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 10, "identifier_ids": "46,45,47", "identifiers": [{"book": 10, "id": 47, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780297859406", "sort": "isbn", "type": "isbn", "val": "9780297859406"}, {"book": 10, "id": 45, "name": "Google Books", "path": "https://books.google.com/books?id=hxL2qWMAgv8C", "sort": "google", "type": "google", "val": "hxL2qWMAgv8C"}, {"book": 10, "id": 46, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/15704161", "sort": "goodreads", "type": "goodreads", "val": "15704161"}], "isbn": "9780297859406", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-04-28 01:46:00.291000+00:00", "path": "Gillian Flynn/Gone Girl (10)", "pubdate": "2012-05-14", "publisher_ids": "24", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 24, "name": "Orion", "sort": "Orion"}], "rating": 4, "series": [], "series_ids": null, "size": 1858373, "tag_ids": "4,17,18,19,20,24,47,48,49,50", "tags": [{"avg_rating": 8.0, "count": 23, "id": 50, "name": "Adult", "sort": 23}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 7.875, "count": 16, "id": 47, "name": "Mystery", "sort": 16}, {"avg_rating": 8.0, "count": 6, "id": 18, "name": "Romance", "sort": 6}, {"avg_rating": 7.666666666666667, "count": 6, "id": 48, "name": "Thriller", "sort": 6}, {"avg_rating": 8.0, "count": 4, "id": 17, "name": "Crime", "sort": 4}, {"avg_rating": 8.0, "count": 1, "id": 19, "name": "Suspense", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 20, "name": "Psychological", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 24, "name": "Mystery \u0026 Detective", "sort": 1}], "timestamp": "2022-04-28 01:46:00.291000+00:00", "title": "Gone Girl"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "246", "authors": [{"avg_rating": null, "count": 1, "id": 246, "name": "Mark Twain", "sort": "Twain, Mark"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHilariously picaresque, epic in scope, alive with the poetry and vigor of the American people, Mark Twain\u0027s story about a young boy and his journey down the Mississippi was the first great novel to speak in a truly American voice. Influencing subsequent generations of writers -- from Sherwood Anderson to Twain\u0027s fellow Missourian, T.S. Eliot, from Ernest Hemingway and William Faulkner to J.D. Salinger -- \"Huckleberry Finn,\" like the river which flows through its pages, is one of the great sources which nourished and still nourishes the literature of America.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 212, "identifier_ids": "774,772,773", "identifiers": [{"book": 212, "id": 773, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780486280615", "sort": "isbn", "type": "isbn", "val": "9780486280615"}, {"book": 212, "id": 772, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/76", "sort": "gutenberg", "type": "gutenberg", "val": "76"}, {"book": 212, "id": 774, "name": "Google Books", "path": "https://books.google.com/books?id=mWHcDAAAQBAJ", "sort": "google", "type": "google", "val": "mWHcDAAAQBAJ"}], "isbn": "9780486280615", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:37.285529+00:00", "path": "Mark Twain/Adventures of Huckleberry Finn (212)", "pubdate": "1994-05-26", "publisher_ids": "131", "publishers": [{"avg_rating": null, "count": 1, "id": 131, "name": "Courier Corporation", "sort": "Courier Corporation"}], "rating": null, "series": [], "series_ids": null, "size": 1075085, "tag_ids": "4,153,209,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": null, "count": 1, "id": 209, "name": "Action \u0026 Adventure", "sort": 1}], "timestamp": "2022-10-10 14:39:37.285529+00:00", "title": "Adventures of Huckleberry Finn"}, {"author_ids": "243,247,248", "authors": [{"avg_rating": 8.0, "count": 1, "id": 248, "name": "Amy Mandelker", "sort": "Mandelker, Amy"}, {"avg_rating": 8.0, "count": 1, "id": 247, "name": "Louise Maude", "sort": "Maude, Louise"}, {"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTolstoy\u0027s epic masterpiece captures with unprecedented immediacy the broad sweep of life during the Napoleonic wars and the brutal invasion of Russia. Balls and soires, the burning of Moscow, the intrigues of statesmen and generals, scenes of violent battles, the quiet moments of everyday life--all in a work whose extraordinary imaginative power has never been surpassed. The Maudes\u0027 translation of Tolstoy\u0027s epic masterpiece has long been considered the best English version, and now for the first time it has been revised to bring it fully into line with modern approaches to the text. French passages are restored, Anglicization of Russian names removed, and outmoded expressions updated. A new introduction by Amy Mandelker considers the novel\u0027s literary and historical context, the nature of the work, and Tolstoy\u0027s artistic and philosophical aims. New, expanded notes provide historical background and identifications, as well as insight into Russian life and society. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 210, "identifier_ids": "745,744,747,746", "identifiers": [{"book": 210, "id": 746, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780191612541", "sort": "isbn", "type": "isbn", "val": "9780191612541"}, {"book": 210, "id": 747, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2600", "sort": "gutenberg", "type": "gutenberg", "val": "2600"}, {"book": 210, "id": 744, "name": "Google Books", "path": "https://books.google.com/books?id=2iiQDwAAQBAJ", "sort": "google", "type": "google", "val": "2iiQDwAAQBAJ"}, {"book": 210, "id": 745, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55393212", "sort": "goodreads", "type": "goodreads", "val": "55393212"}], "isbn": "9780191612541", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.947434+00:00", "path": "Leo Tolstoy/War and Peace (210)", "pubdate": "1869-01-01", "publisher_ids": "129", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 129, "name": "Oxford University Press", "sort": "Oxford University Press"}], "rating": 4, "series": [], "series_ids": null, "size": 10408275, "tag_ids": "4,60,142,153,176,204,205,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 5, "id": 176, "name": "General", "sort": 5}, {"avg_rating": 8.0, "count": 2, "id": 142, "name": "War", "sort": 2}, {"avg_rating": 8.0, "count": 1, "id": 204, "name": "Political", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 205, "name": "Europe", "sort": 1}], "timestamp": "2022-10-10 14:39:36.947434+00:00", "title": "War and Peace"}, {"author_ids": "243", "authors": [{"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConsidered by some to be the greatest novel ever written, Anna Karenina is Tolstoy\u0027s classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 208, "identifier_ids": "751,752,750", "identifiers": [{"book": 208, "id": 750, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679783305", "sort": "isbn", "type": "isbn", "val": "9780679783305"}, {"book": 208, "id": 752, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/1399", "sort": "gutenberg", "type": "gutenberg", "val": "1399"}, {"book": 208, "id": 751, "name": "Google Books", "path": "https://books.google.com/books?id=yBJShX4BLVYC", "sort": "google", "type": "google", "val": "yBJShX4BLVYC"}], "isbn": "9780679783305", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.688127+00:00", "path": "Leo Tolstoy/Anna Karenina (208)", "pubdate": "2000-10-10", "publisher_ids": "133", "publishers": [{"avg_rating": null, "count": 1, "id": 133, "name": "Random House Publishing Group", "sort": "Random House Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 3845227, "tag_ids": "4,18,148,152,153,210,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 1, "id": 210, "name": "Victorian", "sort": 1}], "timestamp": "2022-10-10 14:39:36.688127+00:00", "title": "Anna Karenina"}, {"author_ids": "245", "authors": [{"avg_rating": null, "count": 1, "id": 245, "name": "Vladimir Vladimirovich Nabokov", "sort": "Nabokov, Vladimir Vladimirovich"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen it was published in 1955, Lolita immediately became a cause c\u00e9l\u00e8bre because of the freedom and sophistication with which it handled the unusual erotic predilections of its protagonist. But Vladimir Nabokov\u0027s wise, ironic, elegant masterpiece owes its stature as one of the twentieth century\u0027s novels of record not to the controversy its material aroused but to its author\u0027s use of that material to tell a love story almost shocking in its beauty and tenderness. Awe and exhilaration\u2013along with heartbreak and mordant wit\u2013abound in this account of the aging Humbert Humbert\u0027s obsessive, devouring, and doomed passion for the nymphet Dolores Haze. Lolita is also the story of a hypercivilized European colliding with the cheerful barbarism of postwar America, but most of all, it is a meditation on love\u2013love as outrage and hallucination, madness and transformation. With an introduction by Martin Amis. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}], "custom_lists_ids": "6", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 207, "identifier_ids": "734,733", "identifiers": [{"book": 207, "id": 733, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679410430", "sort": "isbn", "type": "isbn", "val": "9780679410430"}, {"book": 207, "id": 734, "name": "Google Books", "path": "https://books.google.com/books?id=Sy7uAAAAMAAJ", "sort": "google", "type": "google", "val": "Sy7uAAAAMAAJ"}], "isbn": "9780679410430", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.553487+00:00", "path": "Vladimir Vladimirovich Nabokov/Lolita (207)", "pubdate": "1992-10-15", "publisher_ids": "128", "publishers": [{"avg_rating": null, "count": 1, "id": 128, "name": "Knopf", "sort": "Knopf"}], "rating": null, "series": [], "series_ids": null, "size": 1084575, "tag_ids": "4,151,152,153,176,203", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.5, "count": 5, "id": 176, "name": "General", "sort": 5}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}, {"avg_rating": null, "count": 1, "id": 203, "name": "Erotica", "sort": 1}], "timestamp": "2022-10-10 14:39:36.553487+00:00", "title": "Lolita"}, {"author_ids": "238", "authors": [{"avg_rating": null, "count": 1, "id": 238, "name": "George Eliot", "sort": "Eliot, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA sprawling work set in a provincial English town, Middlemarch boasts a large cast of characters whose stories interweave against a backdrop of political upheaval. \u003c/p\u003e\n\u003cp\u003eInstead of choosing to wed a wealthy landowner and settle for a comfortable life, Dorothea Brooke decides to marry Edward Casaubon\u2014a dull scholar who is her senior by a few decades. Dorothea hopes the union will afford her with the opportunity to share in her husband\u2019s intellectual pursuits, but even her best efforts can\u2019t save the disastrous marriage. Meanwhile, idealistic doctor Tertius Lydgate has progressive ideas about the medical field, and he believes the village of Middlemarch is the place that will embrace his beliefs. But when he weds Rosamond Vincy, the mayor\u2019s beautiful daughter, his ideals come into stark contrast with his new bride\u2019s materialism and vanity, dooming their marriage from the start. \u003c/p\u003e\n\u003cp\u003eLastly, Rosamond\u0027s brother, Fred, is reluctantly destined for the Church. But his childhood sweetheart Mary Garth refuses to accept him until he settles into a more suitable career and one that interests him. But when circumstances lead to Fred losing a sizeable fortune that sets off a calamitous turn of events, he must reevaluate the choices he has made. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 204, "identifier_ids": "759,760,761", "identifiers": [{"book": 204, "id": 761, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062356147", "sort": "isbn", "type": "isbn", "val": "9780062356147"}, {"book": 204, "id": 760, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/145", "sort": "gutenberg", "type": "gutenberg", "val": "145"}, {"book": 204, "id": 759, "name": "Google Books", "path": "https://books.google.com/books?id=WhrEsgEACAAJ", "sort": "google", "type": "google", "val": "WhrEsgEACAAJ"}], "isbn": "9780062356147", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.112665+00:00", "path": "George Eliot/Middlemarch (204)", "pubdate": "2015-11-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [], "series_ids": null, "size": 6332096, "tag_ids": "4,152,153,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}], "timestamp": "2022-10-10 14:39:36.112665+00:00", "title": "Middlemarch"}, {"author_ids": "237", "authors": [{"avg_rating": null, "count": 1, "id": 237, "name": "Gustave Flaubert", "sort": "Flaubert, Gustave"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eEmma is bored and wants excitement and makes a complete mess of her life. In the process she destroys the life of her very provincial husband who also happens to be a good man. The story is tragic and at times frustrating but well worth reading. \u003c/p\u003e\n\u003cp\u003eAfter marrying Charles Bovary, an ordinary country doctor, Emma Rouault hopes to have the adventurous life of passion and intrigue that she reads about in books. However, she is disappointed with her husband and her simple life. It is anything but the romantic excitement she longs for. In her desire to fulfill her dreams she travels down a winding path of adultery and deception. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 203, "identifier_ids": "763,762,764", "identifiers": [{"book": 203, "id": 764, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9783985947928", "sort": "isbn", "type": "isbn", "val": "9783985947928"}, {"book": 203, "id": 762, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2413", "sort": "gutenberg", "type": "gutenberg", "val": "2413"}, {"book": 203, "id": 763, "name": "Google Books", "path": "https://books.google.com/books?id=FhUxEAAAQBAJ", "sort": "google", "type": "google", "val": "FhUxEAAAQBAJ"}], "isbn": "9783985947928", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:35.973039+00:00", "path": "Gustave Flaubert/Madame Bovary - Gustave Flaubert (203)", "pubdate": "2021-06-15", "publisher_ids": "134", "publishers": [{"avg_rating": null, "count": 1, "id": 134, "name": "Phoemixx Classics Ebooks", "sort": "Phoemixx Classics Ebooks"}], "rating": null, "series": [], "series_ids": null, "size": 1293857, "tag_ids": "4,18,211,212,213,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": null, "count": 1, "id": 211, "name": "New Adult", "sort": 1}, {"avg_rating": null, "count": 1, "id": 212, "name": "Literary Criticism", "sort": 1}, {"avg_rating": null, "count": 1, "id": 213, "name": "Gothic \u0026 Romance", "sort": 1}], "timestamp": "2022-10-10 14:39:35.973039+00:00", "title": "Madame Bovary - Gustave Flaubert"}, {"author_ids": "171", "authors": [{"avg_rating": 7.0, "count": 2, "id": 171, "name": "Jules Verne", "sort": "Verne, Jules"}], "comments": "\u003cp\u003eIn de Reformclub in London wordt druk gepraat over de diefstal bij de Bank van Engeland: hoe groot is de kans dat de dief gepakt wordt? De wereld is klein geworden: men kan hem in drie maanden rondreizen! \u0027In tachtig dagen,\u0027 verbetert Phileas Fogg. \u0027Alles meegerekend?\u0027 \u0027Alles inbegrepen: schipbreuk, treinontsporingen, overvallen en andere ongemakken.\u0027 \u0027Ik wil wedden dat zo\u0027n reis onmogelijk is!\u0027 De onverstoorbare Phileas Fogg neemt de uitdaging aan, en zo vertrekt hij met zijn knecht Passepartout op een duizelingwekkende reis.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 170, "identifier_ids": "557,556,558", "identifiers": [{"book": 170, "id": 558, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9027443009", "sort": "isbn", "type": "isbn", "val": "9027443009"}, {"book": 170, "id": 556, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/11318", "sort": "gutenberg", "type": "gutenberg", "val": "11318"}, {"book": 170, "id": 557, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/60906552", "sort": "goodreads", "type": "goodreads", "val": "60906552"}], "isbn": "9027443009", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.958795+00:00", "path": "Jules Verne/De reis om de wereld in tachtig dag (170)", "pubdate": "1980-01-01", "publisher_ids": "103", "publishers": [{"avg_rating": 7.0, "count": 2, "id": 103, "name": "Spectrum", "sort": "Spectrum"}], "rating": 3, "series": [], "series_ids": null, "size": 4144846, "tag_ids": "4,84,90,214", "tags": [{"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-06 09:40:29.958795+00:00", "title": "De reis om de wereld in tachtig dagen"}, {"author_ids": "168", "authors": [{"avg_rating": 8.0, "count": 2, "id": 168, "name": "Oscar Wilde", "sort": "Wilde, Oscar"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e\u003cstrong\u003eHet portret van Dorian Gray\u003c/strong\u003e (Engelstalige titel \u003cem\u003eThe Picture of Dorian Gray\u003c/em\u003e) is de enige gepubliceerde \u003ca href=\"https://nl.wikipedia.org/wiki/Roman_(literatuur)\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eroman\u003c/span\u003e\u003c/a\u003e van \u003ca href=\"https://nl.wikipedia.org/wiki/Oscar_Wilde\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eOscar Wilde\u003c/span\u003e\u003c/a\u003e. Hij werd voor het eerst uitgebracht in \u003ca href=\"https://nl.wikipedia.org/wiki/Verenigd_Koninkrijk\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eEngeland\u003c/span\u003e\u003c/a\u003e in 1890. Een Nederlandse vertaling door \u003ca href=\"https://nl.wikipedia.org/wiki/Elisabeth_Couperus-Baud\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eElisabeth Couperus-Baud\u003c/span\u003e\u003c/a\u003e verscheen in 1893. Haar echtgenoot \u003ca href=\"https://nl.wikipedia.org/wiki/Louis_Couperus\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eLouis Couperus\u003c/span\u003e\u003c/a\u003e had het boek rechtstreeks van Oscar Wilde ontvangen en zij was er diep van onder de indruk. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 169, "identifier_ids": "560,561,559", "identifiers": [{"book": 169, "id": 559, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789046313596", "sort": "isbn", "type": "isbn", "val": "9789046313596"}, {"book": 169, "id": 561, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/10512", "sort": "gutenberg", "type": "gutenberg", "val": "10512"}, {"book": 169, "id": 560, "name": "Google Books", "path": "https://books.google.com/books?id=Hs1uEAAAQBAJ", "sort": "google", "type": "google", "val": "Hs1uEAAAQBAJ"}], "isbn": "9789046313596", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.827160+00:00", "path": "Oscar Wilde/Het portret van Dorian Gray (169)", "pubdate": "2022-05-09", "publisher_ids": null, "publishers": [], "rating": null, "series": [], "series_ids": null, "size": 174044, "tag_ids": "4,60,180,181,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": null, "count": 1, "id": 180, "name": "Supernatural", "sort": 1}, {"avg_rating": null, "count": 1, "id": 181, "name": "Portraits", "sort": 1}], "timestamp": "2022-10-06 09:40:29.827160+00:00", "title": "Het portret van Dorian Gray"}, {"author_ids": "172", "authors": [{"avg_rating": 8.0, "count": 1, "id": 172, "name": "David Foster Wallace", "sort": "Wallace, David Foster"}], "comments": "\u003cp\u003e\u003cem\u003eInfinite Jest\u003c/em\u003e is the name of a movie said to be so entertaining that anyone who watches it loses all desire to do anything but watch. People die happily, viewing it in endless repetition. The novel \u003cem\u003eInfinite Jest\u003c/em\u003e is the story of this addictive entertainment, and in particular how it affects a Boston halfway house for recovering addicts and a nearby tennis academy, whose students have many budding addictions of their own. As the novel unfolds, various individuals, organisations, and governments vie to obtain the master copy of Infinite Jest for their own ends, and the denizens of the tennis school and halfway house are caught up in increasingly desperate efforts to control the movie\u2014as is a cast including burglars, transvestite muggers, scam artists, medical professionals, pro football stars, bookies, drug addicts both active and recovering, film students, political assassins, and one of the most endearingly messed-up families ever captured in a novel.  \u003c/p\u003e\n\u003cp\u003eOn this outrageous frame hangs an exploration of essential questions about what entertainment is, and why it has come to so dominate our lives; about how our desire for entertainment interacts with our need to connect with other humans; and about what the pleasures we choose say about who we are. Equal parts philosophical quest and screwball comedy, Infinite Jest bends every rule of fiction without sacrificing for a moment its own entertainment value. The huge cast and multilevel narrative serve a story that accelerates to a breathtaking, heartbreaking, unfogettable conclusion. It is an exuberant, uniquely American exploration of the passions that make us human and one of those rare books that renew the very idea of what a novel can do.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 167, "identifier_ids": "511,510,512", "identifiers": [{"book": 167, "id": 512, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780316066525", "sort": "isbn", "type": "isbn", "val": "9780316066525"}, {"book": 167, "id": 510, "name": "Google Books", "path": "https://books.google.com/books?id=G1mXngEACAAJ", "sort": "google", "type": "google", "val": "G1mXngEACAAJ"}, {"book": 167, "id": 511, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/75786", "sort": "goodreads", "type": "goodreads", "val": "75786"}], "isbn": "9780316066525", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:29.483057+00:00", "path": "David Foster Wallace/Infinite Jest (167)", "pubdate": "1996-02-01", "publisher_ids": "68", "publishers": [{"avg_rating": 8.5, "count": 4, "id": 68, "name": "Little, Brown and Company", "sort": "Little, Brown and Company"}], "rating": 4, "series": [], "series_ids": null, "size": 1526106, "tag_ids": "4,152,163,176", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.5, "count": 5, "id": 176, "name": "General", "sort": 5}, {"avg_rating": 8.0, "count": 1, "id": 163, "name": "Literature", "sort": 1}], "timestamp": "2022-10-06 09:40:29.483057+00:00", "title": "Infinite Jest"}, {"author_ids": "171", "authors": [{"avg_rating": 7.0, "count": 2, "id": 171, "name": "Jules Verne", "sort": "Verne, Jules"}], "comments": "\u003cp\u003eEen in de 19e eeuw geschreven verhaal over een reis naar de maan, waaruit blijkt dat de schrijver in technisch opzicht zijn tijd ver vooruit was\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 166, "identifier_ids": "553,555,554", "identifiers": [{"book": 166, "id": 554, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789010012500", "sort": "isbn", "type": "isbn", "val": "9789010012500"}, {"book": 166, "id": 555, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/27309", "sort": "gutenberg", "type": "gutenberg", "val": "27309"}, {"book": 166, "id": 553, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/5810033", "sort": "goodreads", "type": "goodreads", "val": "5810033"}], "isbn": "9789010012500", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.308510+00:00", "path": "Jules Verne/De reis naar de maan in 28 dagen en (166)", "pubdate": "1865-01-01", "publisher_ids": "113", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 113, "name": "Elsevier", "sort": "Elsevier"}], "rating": 4, "series": [], "series_ids": null, "size": 7371520, "tag_ids": "4,75,76,84,183,214", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 1, "id": 183, "name": "Space", "sort": 1}], "timestamp": "2022-10-06 09:40:29.308510+00:00", "title": "De reis naar de maan in 28 dagen en 12 uren"}, {"author_ids": "160", "authors": [{"avg_rating": null, "count": 1, "id": 160, "name": "Amor Towles", "sort": "Towles, Amor"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\u0027s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden\u0027s car. Together, they have hatched an altogether different plan for Emmett\u0027s future, one that will take them all on a fateful journey in the opposite direction\u2014to the City of New York. Spanning just ten days and told from multiple points of view, Towles\u0027s third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 118, "identifier_ids": "423,424", "identifiers": [{"book": 118, "id": 424, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780735222373", "sort": "isbn", "type": "isbn", "val": "9780735222373"}, {"book": 118, "id": 423, "name": "Google Books", "path": "https://books.google.com/books?id=Kn4eEAAAQBAJ", "sort": "google", "type": "google", "val": "Kn4eEAAAQBAJ"}], "isbn": "9780735222373", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.426067+00:00", "path": "Amor Towles/The Lincoln Highway_ A Novel (118)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 6630557, "tag_ids": "4,148,151,152,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}], "timestamp": "2022-10-05 15:54:05.426067+00:00", "title": "The Lincoln Highway: A Novel"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDe zomervakantie is voorbij, maar Harry Potter keert dit jaar niet terug naar Zweinstein. Hij staat voor de gevaarlijke en haast onmogelijke opdracht van Perkamentus: de overgebleven Gruzielementen opsporen en vernietigen. Zal hem dat lukken?\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 110, "identifier_ids": "637,635,636,638,634", "identifiers": [{"book": 110, "id": 634, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103524", "sort": "isbn", "type": "isbn", "val": "9781781103524"}, {"book": 110, "id": 638, "name": "Google Books", "path": "https://books.google.com/books?id=XjYQCwAAQBAJ", "sort": "google", "type": "google", "val": "XjYQCwAAQBAJ"}, {"book": 110, "id": 636, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446"}, {"book": 110, "id": 635, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061698324", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061698324"}, {"book": 110, "id": 637, "name": "Amazon", "path": "https://amazon.com/dp/9061698324", "sort": "amazon", "type": "amazon", "val": "9061698324"}], "isbn": "9781781103524", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:13.396044+00:00", "path": "J.K. Rowling/Harry Potter en De Relieken Van De (110)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 939052, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:13.396044+00:00", "title": "Harry Potter en De Relieken Van De Dood"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry kan niet wachten tot hij terug mag naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus, om aan zijn vierde schooljaar te beginnen. Maar voor het zover is, wordt hij door de familie Wemel op spectaculaire wijze bij de Duffelingen opgehaald, om mee te gaan naar de finale van het WK Zwerkbal! Harry weet dan nog niet dat er dat jaar op Zweinstein een nog groter en spannender evenement zal plaatsvinden. Ondanks alle opwinding en magische gebeurtenissen, probeert hij zich toch op zijn lessen te concentreren. Ondertussen zijn er allerlei tekenen die er op wijzen dat Voldemort, met behulp van Duistere tovenaars, weer aan kracht begint te winnen. De angst dat Hij Die Niet Genoemd Mag Worden opnieuw zal toeslaan, wordt steeds groter...\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 108, "identifier_ids": "644,643,645,642", "identifiers": [{"book": 108, "id": 642, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103494", "sort": "isbn", "type": "isbn", "val": "9781781103494"}, {"book": 108, "id": 645, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443"}, {"book": 108, "id": 643, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174202", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174202"}, {"book": 108, "id": 644, "name": "Amazon", "path": "https://amazon.com/dp/9076174202", "sort": "amazon", "type": "amazon", "val": "9076174202"}], "isbn": "9781781103494", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:11.832226+00:00", "path": "J.K. Rowling/Harry Potter en De Vuurbeker (108)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 503870, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:11.832226+00:00", "title": "Harry Potter en De Vuurbeker"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry Potter heeft nog nooit van Zweinstein gehoord als de brieven door de bus van Ligusterlaan 4 worden gegooid. De perkamentachtige enveloppen, beschreven met groene inkt en bestempeld met een paars zegel, worden al snel door zijn nare oom en tante in beslag genomen. Op Harry\u0027s verjaardag krijgt hij echter bezoek van een reus van een man met ogen als zwarte torren. Hij heet Rubeus Hagrid en heeft verbazingwekkend nieuws: Harry Potter is een tovenaar, en er is plek voor hem op Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Er staat hem een ongelooflijk avontuur te wachten!\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 107, "identifier_ids": "639,641,640", "identifiers": [{"book": 107, "id": 640, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440"}, {"book": 107, "id": 641, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174105", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174105"}, {"book": 107, "id": 639, "name": "Amazon", "path": "https://amazon.com/dp/9076174105", "sort": "amazon", "type": "amazon", "val": "9076174105"}], "isbn": null, "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:11.432295+00:00", "path": "J.K. Rowling/Harry Potter en De Steen Der Wijzen (107)", "pubdate": "2022-08-02", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 62137172, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:11.432295+00:00", "title": "Harry Potter en De Steen Der Wijzen"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen Harry Potter is left on a doorstep as a baby, he has no idea he is the Boy Who Lived, or that he is famous throughout the wizarding world. Years later, he is astonished to receive an acceptance letter to Hogwarts School of Witchcraft and Wizardry and he is soon whisked off on a magical adventure like no other. Join Harry and his fiercely loyal friends, Hermione and Ron, in this story about the power of truth, love and hope. \u003c/p\u003e\n\u003cp\u003eHaving become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.\u003c/p\u003e\u003c/div\u003e\n\n\u003cp\u003eAnthology containing:\u003c/p\u003eBook 1 by The Philosopher s Stone\u003cbr/\u003eBook 2 by The Chamber of Secrets\u003cbr/\u003eBook 3 by The Prisoner of Azkaban\u003cbr/\u003eBook 4 by The Goblet of Fire\u003cbr/\u003eBook 5 by The Order of The Phoenix\u003cbr/\u003eBook 6 by The Half Blood Prince\u003cbr/\u003eBook 7 by The Deathly Hallows", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 104, "identifier_ids": "291,290,289", "identifiers": [{"book": 104, "id": 289, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781106464", "sort": "isbn", "type": "isbn", "val": "9781781106464"}, {"book": 104, "id": 290, "name": "Google Books", "path": "https://books.google.com/books?id=f280CwAAQBAJ", "sort": "google", "type": "google", "val": "f280CwAAQBAJ"}, {"book": 104, "id": 291, "name": "Amazon", "path": "https://amazon.com/dp/B01B3DIPMW", "sort": "amazon", "type": "amazon", "val": "B01B3DIPMW"}], "isbn": "9781781106464", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:10.482834+00:00", "path": "J.K. Rowling/Harry Potter_ The Complete Collecti (104)", "pubdate": "2015-12-14", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 8079964, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:10.482834+00:00", "title": "Harry Potter: The Complete Collection (1-7)"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry\u2019s verplichte zomervakantie bij oom Herman en tante Petunia op de Ligusterlaan is dit keer nog erger dan alle voorgaande jaren: niet alleen wordt hij door de Duffelingen weer vreselijk behandeld, ook zijn beste vrienden lijken hem deze zomer totaal te negeren. Harry vindt dat hij iets moet doen, maakt niet uit wat, om zo snel mogelijk te kunnen terugkeren naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Maar dan krijgt de vakantie een onverwacht einde en wordt het zelfs onzeker of Harry nog wel aan zijn vijfde schooljaar op Zweinstein mag beginnen. Vreemde gebeurtenissen stapelen zich op en Harry doet ontdekkingen die het hem onmogelijk maken kalm te blijven...\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 101, "identifier_ids": "633,631,629,632,630", "identifiers": [{"book": 101, "id": 630, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103500", "sort": "isbn", "type": "isbn", "val": "9781781103500"}, {"book": 101, "id": 632, "name": "Google Books", "path": "https://books.google.com/books?id=rjgQCwAAQBAJ", "sort": "google", "type": "google", "val": "rjgQCwAAQBAJ"}, {"book": 101, "id": 629, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444"}, {"book": 101, "id": 631, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061697018", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061697018"}, {"book": 101, "id": 633, "name": "Amazon", "path": "https://amazon.com/dp/9061697018", "sort": "amazon", "type": "amazon", "val": "9061697018"}], "isbn": "9781781103500", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.645084+00:00", "path": "J.K. Rowling/Harry Potter en De Orde Van De Feni (101)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 984113, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:09.645084+00:00", "title": "Harry Potter en De Orde Van De Feniks"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHet land wordt geteisterd door vreemde rampen en aanslagen en hoewel het hartje zomer is hangt er een hardnekkige, onheilspellende mist. In de Ligusterlaan zit Harry Potter \u2019s avonds laat ongeduldig op de komst van professor Perkamentus te wachten. Wat kan er er zo belangrijk zijn dat Perkamentus hem bij de Duffelingen op komt zoeken en dat niet wachten kan tot Harry\u2019s terugkeer naar Zweinstein? Zou het iets te maken hebben met de oude profetie die Harry aan het eind van zijn vijfde schooljaar gehoord heeft? Harry\u2019s zesde jaar op Zweinstein begint ongebruikelijk, als Voldemort opnieuw aan kracht wint en de werelden van Dreuzels en tovenaars zich steeds meer met elkaar vermengen...\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 100, "identifier_ids": "627,625,626,628,624", "identifiers": [{"book": 100, "id": 624, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103517", "sort": "isbn", "type": "isbn", "val": "9781781103517"}, {"book": 100, "id": 628, "name": "Google Books", "path": "https://books.google.com/books?id=iTgQCwAAQBAJ", "sort": "google", "type": "google", "val": "iTgQCwAAQBAJ"}, {"book": 100, "id": 626, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445"}, {"book": 100, "id": 625, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061697670", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061697670"}, {"book": 100, "id": 627, "name": "Amazon", "path": "https://amazon.com/dp/9061697670", "sort": "amazon", "type": "amazon", "val": "9061697670"}], "isbn": "9781781103517", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.369809+00:00", "path": "J.K. Rowling/Harry Potter en De Halfbloed Prins (100)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 1009796, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:09.369809+00:00", "title": "Harry Potter en De Halfbloed Prins"}, {"author_ids": "90", "authors": [{"avg_rating": 9.333333333333334, "count": 3, "id": 90, "name": "George R.R. Martin", "sort": "Martin, George R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFrom a master of contemporary fantasy comes the first novel of a landmark series unlike any you\u0027ve ever read before. With A Game of Thrones, George R. R. Martin has launched a genuine masterpiece, bringing together the best the genre has to offer. Mystery, intrigue, romance, and adventure fill the pages of this magnificent saga, the first volume in an epic series sure to delight fantasy fans everywhere.\u003c/p\u003e\n\u003cp\u003eLong ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister forces are massing beyond the kingdom\u0027s protective Wall. To the south, the king\u0027s powers are failing--his most trusted adviser dead under mysterious circumstances and his enemies emerging from the shadows of the throne. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the frozen land they were born to. Now Lord Eddard Stark is reluctantly summoned to serve as the king\u0027s new Hand, an appointment that threatens to sunder not only his family but the kingdom itself. Sweeping from a harsh land of cold to a summertime kingdom of epicurean plenty, A Game of Thrones tells a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens. Here an enigmatic band of warriors bear swords of no human metal; a tribe of fierce wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his thro\u2260 a child is lost in the twilight between life and death; and a determined woman undertakes a treacherous journey to protect all she holds dear. Amid plots and counter-plots, tragedy and betrayal, victory and terror, allies and enemies, the fate of the Starks hangs perilously in the balance, as each side endeavors to win that deadliest of conflicts: the game of thrones. Unparalleled in scope and execution, A Game of Thrones is one of those rare reading experiences that catch you up from the opening pages, won\u0027t let you go until the end, and leave you yearning for more.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 77, "identifier_ids": "193,194,192,190,191", "identifiers": [{"book": 77, "id": 191, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553103540", "sort": "isbn", "type": "isbn", "val": "9780553103540"}, {"book": 77, "id": 190, "name": "Google Books", "path": "https://books.google.com/books?id=5qNtQgAACAAJ", "sort": "google", "type": "google", "val": "5qNtQgAACAAJ"}, {"book": 77, "id": 192, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/38451264", "sort": "goodreads", "type": "goodreads", "val": "38451264"}, {"book": 77, "id": 194, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/game-of-thrones-george-r-r-martin/1100041703", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/game-of-thrones-george-r-r-martin/1100041703"}, {"book": 77, "id": 193, "name": "Amazon", "path": "https://amazon.com/dp/0553103547", "sort": "amazon", "type": "amazon", "val": "0553103547"}], "isbn": "9780553103540", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:41.131884+00:00", "path": "George R.R. Martin/A Game of Thrones (77)", "pubdate": "1996-08-01", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 5, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 1347449, "tag_ids": "4,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}], "timestamp": "2022-10-04 19:44:41.131884+00:00", "title": "A Game of Thrones"}, {"author_ids": "83", "authors": [{"avg_rating": 8.0, "count": 1, "id": 83, "name": "Gillian Flynn", "sort": "Flynn, Gillian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWho are you?\u003cbr\u003eWhat have we done to each other?\u003c/p\u003e\n\u003cp\u003eThese are the questions Nick Dunne finds himself asking on the morning of his fifth wedding anniversary, when his wife Amy suddenly disappears. The police suspect Nick. Amy\u0027s friends reveal that she was afraid of him, that she kept secrets from him. He swears it isn\u0027t true. A police examination of his computer shows strange searches. He says they weren\u0027t made by him. And then there are the persistent calls on his mobile phone. So what really did happen to Nick\u0027s beautiful wife\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2022-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 10, "identifier_ids": "46,45,47", "identifiers": [{"book": 10, "id": 47, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780297859406", "sort": "isbn", "type": "isbn", "val": "9780297859406"}, {"book": 10, "id": 45, "name": "Google Books", "path": "https://books.google.com/books?id=hxL2qWMAgv8C", "sort": "google", "type": "google", "val": "hxL2qWMAgv8C"}, {"book": 10, "id": 46, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/15704161", "sort": "goodreads", "type": "goodreads", "val": "15704161"}], "isbn": "9780297859406", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-04-28 01:46:00.291000+00:00", "path": "Gillian Flynn/Gone Girl (10)", "pubdate": "2012-05-14", "publisher_ids": "24", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 24, "name": "Orion", "sort": "Orion"}], "rating": 4, "series": [], "series_ids": null, "size": 1858373, "tag_ids": "4,17,18,19,20,24,47,48,49,50", "tags": [{"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 7.875, "count": 16, "id": 47, "name": "Mystery", "sort": 16}, {"avg_rating": 7.666666666666667, "count": 6, "id": 48, "name": "Thriller", "sort": 6}, {"avg_rating": 8.0, "count": 4, "id": 17, "name": "Crime", "sort": 4}, {"avg_rating": 8.0, "count": 1, "id": 19, "name": "Suspense", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 20, "name": "Psychological", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 24, "name": "Mystery \u0026 Detective", "sort": 1}], "timestamp": "2022-04-28 01:46:00.291000+00:00", "title": "Gone Girl"}])'></div>
          </div>
       </div>
    </div>

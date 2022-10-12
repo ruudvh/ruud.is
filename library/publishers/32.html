@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -453,6 +823,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -707,6 +1078,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -773,6 +1148,16 @@
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1015,6 +1400,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1085,6 +1474,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1337,6 +1727,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1405,6 +1799,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1663,6 +2058,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1730,6 +2129,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1971,7 +2371,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "238", "authors": [{"avg_rating": null, "count": 1, "id": 238, "name": "George Eliot", "sort": "Eliot, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA sprawling work set in a provincial English town, Middlemarch boasts a large cast of characters whose stories interweave against a backdrop of political upheaval. \u003c/p\u003e\n\u003cp\u003eInstead of choosing to wed a wealthy landowner and settle for a comfortable life, Dorothea Brooke decides to marry Edward Casaubon\u2014a dull scholar who is her senior by a few decades. Dorothea hopes the union will afford her with the opportunity to share in her husband\u2019s intellectual pursuits, but even her best efforts can\u2019t save the disastrous marriage. Meanwhile, idealistic doctor Tertius Lydgate has progressive ideas about the medical field, and he believes the village of Middlemarch is the place that will embrace his beliefs. But when he weds Rosamond Vincy, the mayor\u2019s beautiful daughter, his ideals come into stark contrast with his new bride\u2019s materialism and vanity, dooming their marriage from the start. \u003c/p\u003e\n\u003cp\u003eLastly, Rosamond\u0027s brother, Fred, is reluctantly destined for the Church. But his childhood sweetheart Mary Garth refuses to accept him until he settles into a more suitable career and one that interests him. But when circumstances lead to Fred losing a sizeable fortune that sets off a calamitous turn of events, he must reevaluate the choices he has made. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 295, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 155, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 204, "identifier_ids": "759,760,761", "identifiers": [{"book": 204, "id": 761, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062356147", "sort": "isbn", "type": "isbn", "val": "9780062356147"}, {"book": 204, "id": 760, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/145", "sort": "gutenberg", "type": "gutenberg", "val": "145"}, {"book": 204, "id": 759, "name": "Google Books", "path": "https://books.google.com/books?id=WhrEsgEACAAJ", "sort": "google", "type": "google", "val": "WhrEsgEACAAJ"}], "isbn": "9780062356147", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.112665+00:00", "path": "George Eliot/Middlemarch (204)", "pubdate": "2015-11-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [], "series_ids": null, "size": 6332096, "tag_ids": "4,152,153,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}], "timestamp": "2022-10-10 14:39:36.112665+00:00", "title": "Middlemarch"}, {"author_ids": "103", "authors": [{"avg_rating": 8.0, "count": 1, "id": 103, "name": "Jenny Lawson", "sort": "Lawson, Jenny"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e\u0027Even when I was funny, I wasn\u0027t this funny.\u0027 Augusten Burroughs. For fans of Tina Fey, David Sedaris and anyone who\u0027s ever felt like a misfit, an outrageously funny and disturbing memoir from Jenny Lawson, aka The Bloggess. \u0027When I tell people that my father is kind of a total lunatic, they laugh and nod knowingly. they assure me that theirs is too, and that he\u0027s just a \"typical father\". And they\u0027re probably right, if the typical father runs a full-time taxidermy business out of the house, and shows up at the local bar with a miniature donkey and a teddy Roosevelt impersonator, and thinks other people are weird for making such a big deal out of it. If the typical father says things like \"Happy birthday! Here\u0027s a bathtub of raccoons!\" or \"We\u0027ll have to take your car. Mine has too much blood in it,\" then yeah, he\u0027s totally normal.\u0027 When Jenny Lawson was little, all she ever wanted was to fit in. that dream was cut short by her fantastically unbalanced father and a childhood of wearing winter shoes made out of used bread sacks. It did, however, open up an opportunity for Lawson to find the humour in the strange shame-spiral that is her life, and we are all the better for it. Lawson\u0027s long-suffering husband and sweet daughter help her uncover the surprising discovery that the most terribly human moments - the ones we want to pretend never happened - are the very same moments that make us the people we are today. Like laughing at a funeral, LEt\u0027S PREtEND tHIS NEVER HAPPENED is both irreverent and impossible to hold back once you get started. \u0027the Bloggess writes stuff that actually is laugh-out-loud, but you know that really you shouldn\u0027t be laughing and probably you\u0027ll go to hell for laughing, so maybe you shouldn\u0027t read it.\u0027 Neil Gaiman \u0027Even when I was funny, I wasn\u0027t this funny.\u0027 Augusten Burroughs, author of RUNNING WItH SCISSORS\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 76, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 55, "value": "2021-10-06"}], "custom_reading_list": [{"id": 23, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 98, "identifier_ids": "244,243,241,242", "identifiers": [{"book": 98, "id": 242, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781743096444", "sort": "isbn", "type": "isbn", "val": "9781743096444"}, {"book": 98, "id": 241, "name": "Google Books", "path": "https://books.google.com/books?id=9XJnMt0sXp4C", "sort": "google", "type": "google", "val": "9XJnMt0sXp4C"}, {"book": 98, "id": 243, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/35284712", "sort": "goodreads", "type": "goodreads", "val": "35284712"}, {"book": 98, "id": 244, "name": "Amazon", "path": "https://amazon.com/dp/0425261018", "sort": "amazon", "type": "amazon", "val": "0425261018"}], "isbn": "9781743096444", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:04:19.746379+00:00", "path": "Jenny Lawson/Let\u0027s Pretend This Never Happened (98)", "pubdate": "2012-04-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": 4, "series": [], "series_ids": null, "size": 4201264, "tag_ids": "92", "tags": [{"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}], "timestamp": "2022-10-05 15:04:19.746379+00:00", "title": "Let\u0027s Pretend This Never Happened"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConcluding the story begun in The Hobbit, this is the final part of Tolkien s epic masterpiece, The Lord of the Rings, featuring an exclusive cover image from the film, the definitive text, and a detailed map of Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe armies of the Dark Lord Sauron are massing as his evil shadow spreads ever wider. Men, Dwarves, Elves and Ents unite forces to do battle agains the Dark. Meanwhile, Frodo and Sam struggle further into Mordor in their heroic quest to destroy the One Ring.\u003c/p\u003e\n\u003cp\u003eThe devastating conclusion of J.R.R. Tolkien s classic tale of magic and adventure, begun in The Fellowship of the Ring and The Two Towers, features the definitive edition of the text and includes the Appendices and a revised Index in full.\u003c/p\u003e\n\u003cp\u003eTo celebrate the release of the first of Peter Jackson s two-part film adaptation of The Hobbit, THE HOBBIT: AN UNEXPECTED JOURNEY, this third part of The Lord of the Rings is available for a limited time with an exclusive cover image from Peter Jackson s award-winning trilogy.\u003c/p\u003e\n\u003cp\u003e\"\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 52, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 58, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 84, "identifier_ids": "204,203,202", "identifiers": [{"book": 84, "id": 202, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780007488346", "sort": "isbn", "type": "isbn", "val": "9780007488346"}, {"book": 84, "id": 203, "name": "Google Books", "path": "https://books.google.com/books?id=1EcBuwAACAAJ", "sort": "google", "type": "google", "val": "1EcBuwAACAAJ"}, {"book": 84, "id": 204, "name": "Amazon", "path": "https://amazon.com/dp/B007978P18", "sort": "amazon", "type": "amazon", "val": "B007978P18"}], "isbn": "9780007488346", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.852391+00:00", "path": "J.R.R. Tolkien/The Return of the King_ Being the Th (84)", "pubdate": "2012-10-15", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1339613, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": 38}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}], "timestamp": "2022-10-04 19:51:55.852391+00:00", "title": "The Return of the King: Being the Third Part of the Lord of the Rings"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eJason Fried and David Heinemeier Hansson, the authors of the New York Times bestseller Rework, are back with a manifesto to combat all your modern workplace worries and fears. It Doesn\u0027t Have to Be Crazy at Work is a direct successor to Rework, the instant bestseller that showed readers a new path to working effectively. Now Fried and Heinemeier Hansson have returned with a new strategy for the ideal company culture - what they call the calm company . It is a direct attack on the chaos, anxiety and stress that plagues millions of workplaces and billions of people working their day jobs. Working to breaking point with long hours, excessive workload, and a lack of sleep have become a badge of honour for many people these days, when it should be a mark of stupidity. This isn\u0027t just a problem for large organisations; individuals, contractors and solopreneurs are burning themselves out in the very same way. As the authors reveal, the answer isn\u0027t more hours. Rather, it\u0027s less waste and fewer things that induce distraction, always-on anxiety and stress. It is time to stop celebrating crazy and start celebrating calm. Fried and Hansson have the proof to back up their argument. Calm has been the cornerstone of their company\u0027s culture since Basecamp began twenty years ago. Destined to become the management guide for the next generation, It Doesn\u0027t Have to Be Crazy at Work is a practical and inspiring distillation of their insights and experiences. It isn\u0027t a book telling you what to do. It\u0027s a book showing you what they\u0027ve done-and how any manager or executive no matter the industry or size of the company, can do it too.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 19, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 49, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 57, "identifier_ids": "594,596,592,593,595", "identifiers": [{"book": 57, "id": 595, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062874795", "sort": "isbn", "type": "isbn", "val": "9780062874795"}, {"book": 57, "id": 593, "name": "Google Books", "path": "https://books.google.com/books?id=aOlMDwAAQBAJ", "sort": "google", "type": "google", "val": "aOlMDwAAQBAJ"}, {"book": 57, "id": 592, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/39674332", "sort": "goodreads", "type": "goodreads", "val": "39674332"}, {"book": 57, "id": 596, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111"}, {"book": 57, "id": 594, "name": "Amazon", "path": "https://amazon.com/dp/0062874780", "sort": "amazon", "type": "amazon", "val": "0062874780"}], "isbn": "9780062874795", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:52.016000+00:00", "path": "Jason Fried/It Doesn\u0027t Have to Be Crazy at Work (57)", "pubdate": "2018-10-02", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": 4, "series": [], "series_ids": null, "size": 2765822, "tag_ids": "43,51", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 8.285714285714286, "count": 7, "id": 51, "name": "Business", "sort": 7}], "timestamp": "2022-10-04 13:46:52.016000+00:00", "title": "It Doesn\u0027t Have to Be Crazy at Work"}, {"author_ids": "87", "authors": [{"avg_rating": 8.0, "count": 1, "id": 87, "name": "Simon T. Bailey", "sort": "Bailey, Simon T."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eEach of us is born brilliant. Then we spend the rest of our lives having our brilliance buried by people, circumstances, and experiences. Eventually, we forget that we ever had genius and special talents, and our brilliance is locked away in a vault deep within. So we settle for who we are, instead of striving for who we were meant to be.\u003c/p\u003e\n\u003cp\u003eRelease Your Brilliance provides the combination to the vault where your brilliance is kept. After struggling for thirty-two years with disillusion, defeat, and despair, author Simon T. Bailey cracked the code to personal transformation, turning his life around and becoming a highly successful entrepreneur, respected family man and community leader. Using the metaphor that we\u0027re all diamonds in the rough, Simon shares the four key steps to cut and polish the gem that is you in order to reawaken your genius, reignite your internal light, and release your potential. He guides your transformation with interactive tools such as Personal Appraisal exercises, Diamond Polishing action steps, and true stories of Living Diamonds. Join the thousands of individuals and organizations worldwide who\u0027ve sat down with Simon and learned to create lasting change and release their brilliance!\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 26, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 40, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 30, "identifier_ids": "124,127,126,125", "identifiers": [{"book": 30, "id": 125, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780061752056", "sort": "isbn", "type": "isbn", "val": "9780061752056"}, {"book": 30, "id": 126, "name": "Google Books", "path": "https://books.google.com/books?id=I6jGtslxOjcC", "sort": "google", "type": "google", "val": "I6jGtslxOjcC"}, {"book": 30, "id": 127, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/2662903", "sort": "goodreads", "type": "goodreads", "val": "2662903"}, {"book": 30, "id": 124, "name": "Amazon", "path": "https://amazon.com/dp/0061451878", "sort": "amazon", "type": "amazon", "val": "0061451878"}], "isbn": "9780061752056", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:39.942000+00:00", "path": "Simon T. Bailey/Release Your Brilliance_ The 4 Steps (30)", "pubdate": "2005-07-01", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": 4, "series": [], "series_ids": null, "size": 6310712, "tag_ids": "43", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}], "timestamp": "2022-10-04 13:46:39.942000+00:00", "title": "Release Your Brilliance: The 4 Steps to Transforming Your Life and Revealing Your Genius to the World"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "238", "authors": [{"avg_rating": null, "count": 1, "id": 238, "name": "George Eliot", "sort": "Eliot, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA sprawling work set in a provincial English town, Middlemarch boasts a large cast of characters whose stories interweave against a backdrop of political upheaval. \u003c/p\u003e\n\u003cp\u003eInstead of choosing to wed a wealthy landowner and settle for a comfortable life, Dorothea Brooke decides to marry Edward Casaubon\u2014a dull scholar who is her senior by a few decades. Dorothea hopes the union will afford her with the opportunity to share in her husband\u2019s intellectual pursuits, but even her best efforts can\u2019t save the disastrous marriage. Meanwhile, idealistic doctor Tertius Lydgate has progressive ideas about the medical field, and he believes the village of Middlemarch is the place that will embrace his beliefs. But when he weds Rosamond Vincy, the mayor\u2019s beautiful daughter, his ideals come into stark contrast with his new bride\u2019s materialism and vanity, dooming their marriage from the start. \u003c/p\u003e\n\u003cp\u003eLastly, Rosamond\u0027s brother, Fred, is reluctantly destined for the Church. But his childhood sweetheart Mary Garth refuses to accept him until he settles into a more suitable career and one that interests him. But when circumstances lead to Fred losing a sizeable fortune that sets off a calamitous turn of events, he must reevaluate the choices he has made. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 204, "identifier_ids": "759,760,761", "identifiers": [{"book": 204, "id": 761, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062356147", "sort": "isbn", "type": "isbn", "val": "9780062356147"}, {"book": 204, "id": 760, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/145", "sort": "gutenberg", "type": "gutenberg", "val": "145"}, {"book": 204, "id": 759, "name": "Google Books", "path": "https://books.google.com/books?id=WhrEsgEACAAJ", "sort": "google", "type": "google", "val": "WhrEsgEACAAJ"}], "isbn": "9780062356147", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.112665+00:00", "path": "George Eliot/Middlemarch (204)", "pubdate": "2015-11-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [], "series_ids": null, "size": 6332096, "tag_ids": "4,152,153,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}], "timestamp": "2022-10-10 14:39:36.112665+00:00", "title": "Middlemarch"}, {"author_ids": "103", "authors": [{"avg_rating": 8.0, "count": 1, "id": 103, "name": "Jenny Lawson", "sort": "Lawson, Jenny"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e\u0027Even when I was funny, I wasn\u0027t this funny.\u0027 Augusten Burroughs. For fans of Tina Fey, David Sedaris and anyone who\u0027s ever felt like a misfit, an outrageously funny and disturbing memoir from Jenny Lawson, aka The Bloggess. \u0027When I tell people that my father is kind of a total lunatic, they laugh and nod knowingly. they assure me that theirs is too, and that he\u0027s just a \"typical father\". And they\u0027re probably right, if the typical father runs a full-time taxidermy business out of the house, and shows up at the local bar with a miniature donkey and a teddy Roosevelt impersonator, and thinks other people are weird for making such a big deal out of it. If the typical father says things like \"Happy birthday! Here\u0027s a bathtub of raccoons!\" or \"We\u0027ll have to take your car. Mine has too much blood in it,\" then yeah, he\u0027s totally normal.\u0027 When Jenny Lawson was little, all she ever wanted was to fit in. that dream was cut short by her fantastically unbalanced father and a childhood of wearing winter shoes made out of used bread sacks. It did, however, open up an opportunity for Lawson to find the humour in the strange shame-spiral that is her life, and we are all the better for it. Lawson\u0027s long-suffering husband and sweet daughter help her uncover the surprising discovery that the most terribly human moments - the ones we want to pretend never happened - are the very same moments that make us the people we are today. Like laughing at a funeral, LEt\u0027S PREtEND tHIS NEVER HAPPENED is both irreverent and impossible to hold back once you get started. \u0027the Bloggess writes stuff that actually is laugh-out-loud, but you know that really you shouldn\u0027t be laughing and probably you\u0027ll go to hell for laughing, so maybe you shouldn\u0027t read it.\u0027 Neil Gaiman \u0027Even when I was funny, I wasn\u0027t this funny.\u0027 Augusten Burroughs, author of RUNNING WItH SCISSORS\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 98, "identifier_ids": "244,243,241,242", "identifiers": [{"book": 98, "id": 242, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781743096444", "sort": "isbn", "type": "isbn", "val": "9781743096444"}, {"book": 98, "id": 241, "name": "Google Books", "path": "https://books.google.com/books?id=9XJnMt0sXp4C", "sort": "google", "type": "google", "val": "9XJnMt0sXp4C"}, {"book": 98, "id": 243, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/35284712", "sort": "goodreads", "type": "goodreads", "val": "35284712"}, {"book": 98, "id": 244, "name": "Amazon", "path": "https://amazon.com/dp/0425261018", "sort": "amazon", "type": "amazon", "val": "0425261018"}], "isbn": "9781743096444", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:04:19.746379+00:00", "path": "Jenny Lawson/Let\u0027s Pretend This Never Happened (98)", "pubdate": "2012-04-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": 4, "series": [], "series_ids": null, "size": 4201264, "tag_ids": "92", "tags": [{"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}], "timestamp": "2022-10-05 15:04:19.746379+00:00", "title": "Let\u0027s Pretend This Never Happened"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConcluding the story begun in The Hobbit, this is the final part of Tolkien s epic masterpiece, The Lord of the Rings, featuring an exclusive cover image from the film, the definitive text, and a detailed map of Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe armies of the Dark Lord Sauron are massing as his evil shadow spreads ever wider. Men, Dwarves, Elves and Ents unite forces to do battle agains the Dark. Meanwhile, Frodo and Sam struggle further into Mordor in their heroic quest to destroy the One Ring.\u003c/p\u003e\n\u003cp\u003eThe devastating conclusion of J.R.R. Tolkien s classic tale of magic and adventure, begun in The Fellowship of the Ring and The Two Towers, features the definitive edition of the text and includes the Appendices and a revised Index in full.\u003c/p\u003e\n\u003cp\u003eTo celebrate the release of the first of Peter Jackson s two-part film adaptation of The Hobbit, THE HOBBIT: AN UNEXPECTED JOURNEY, this third part of The Lord of the Rings is available for a limited time with an exclusive cover image from Peter Jackson s award-winning trilogy.\u003c/p\u003e\n\u003cp\u003e\"\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 84, "identifier_ids": "204,203,202", "identifiers": [{"book": 84, "id": 202, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780007488346", "sort": "isbn", "type": "isbn", "val": "9780007488346"}, {"book": 84, "id": 203, "name": "Google Books", "path": "https://books.google.com/books?id=1EcBuwAACAAJ", "sort": "google", "type": "google", "val": "1EcBuwAACAAJ"}, {"book": 84, "id": 204, "name": "Amazon", "path": "https://amazon.com/dp/B007978P18", "sort": "amazon", "type": "amazon", "val": "B007978P18"}], "isbn": "9780007488346", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.852391+00:00", "path": "J.R.R. Tolkien/The Return of the King_ Being the Th (84)", "pubdate": "2012-10-15", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1339613, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.852391+00:00", "title": "The Return of the King: Being the Third Part of the Lord of the Rings"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eJason Fried and David Heinemeier Hansson, the authors of the New York Times bestseller Rework, are back with a manifesto to combat all your modern workplace worries and fears. It Doesn\u0027t Have to Be Crazy at Work is a direct successor to Rework, the instant bestseller that showed readers a new path to working effectively. Now Fried and Heinemeier Hansson have returned with a new strategy for the ideal company culture - what they call the calm company . It is a direct attack on the chaos, anxiety and stress that plagues millions of workplaces and billions of people working their day jobs. Working to breaking point with long hours, excessive workload, and a lack of sleep have become a badge of honour for many people these days, when it should be a mark of stupidity. This isn\u0027t just a problem for large organisations; individuals, contractors and solopreneurs are burning themselves out in the very same way. As the authors reveal, the answer isn\u0027t more hours. Rather, it\u0027s less waste and fewer things that induce distraction, always-on anxiety and stress. It is time to stop celebrating crazy and start celebrating calm. Fried and Hansson have the proof to back up their argument. Calm has been the cornerstone of their company\u0027s culture since Basecamp began twenty years ago. Destined to become the management guide for the next generation, It Doesn\u0027t Have to Be Crazy at Work is a practical and inspiring distillation of their insights and experiences. It isn\u0027t a book telling you what to do. It\u0027s a book showing you what they\u0027ve done-and how any manager or executive no matter the industry or size of the company, can do it too.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 57, "identifier_ids": "594,596,592,593,595", "identifiers": [{"book": 57, "id": 595, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062874795", "sort": "isbn", "type": "isbn", "val": "9780062874795"}, {"book": 57, "id": 593, "name": "Google Books", "path": "https://books.google.com/books?id=aOlMDwAAQBAJ", "sort": "google", "type": "google", "val": "aOlMDwAAQBAJ"}, {"book": 57, "id": 592, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/39674332", "sort": "goodreads", "type": "goodreads", "val": "39674332"}, {"book": 57, "id": 596, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111"}, {"book": 57, "id": 594, "name": "Amazon", "path": "https://amazon.com/dp/0062874780", "sort": "amazon", "type": "amazon", "val": "0062874780"}], "isbn": "9780062874795", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:52.016000+00:00", "path": "Jason Fried/It Doesn\u0027t Have to Be Crazy at Work (57)", "pubdate": "2018-10-02", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": 4, "series": [], "series_ids": null, "size": 2765822, "tag_ids": "43,51", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 8.285714285714286, "count": 7, "id": 51, "name": "Business", "sort": 7}], "timestamp": "2022-10-04 13:46:52.016000+00:00", "title": "It Doesn\u0027t Have to Be Crazy at Work"}, {"author_ids": "87", "authors": [{"avg_rating": 8.0, "count": 1, "id": 87, "name": "Simon T. Bailey", "sort": "Bailey, Simon T."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eEach of us is born brilliant. Then we spend the rest of our lives having our brilliance buried by people, circumstances, and experiences. Eventually, we forget that we ever had genius and special talents, and our brilliance is locked away in a vault deep within. So we settle for who we are, instead of striving for who we were meant to be.\u003c/p\u003e\n\u003cp\u003eRelease Your Brilliance provides the combination to the vault where your brilliance is kept. After struggling for thirty-two years with disillusion, defeat, and despair, author Simon T. Bailey cracked the code to personal transformation, turning his life around and becoming a highly successful entrepreneur, respected family man and community leader. Using the metaphor that we\u0027re all diamonds in the rough, Simon shares the four key steps to cut and polish the gem that is you in order to reawaken your genius, reignite your internal light, and release your potential. He guides your transformation with interactive tools such as Personal Appraisal exercises, Diamond Polishing action steps, and true stories of Living Diamonds. Join the thousands of individuals and organizations worldwide who\u0027ve sat down with Simon and learned to create lasting change and release their brilliance!\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 30, "identifier_ids": "124,127,126,125", "identifiers": [{"book": 30, "id": 125, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780061752056", "sort": "isbn", "type": "isbn", "val": "9780061752056"}, {"book": 30, "id": 126, "name": "Google Books", "path": "https://books.google.com/books?id=I6jGtslxOjcC", "sort": "google", "type": "google", "val": "I6jGtslxOjcC"}, {"book": 30, "id": 127, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/2662903", "sort": "goodreads", "type": "goodreads", "val": "2662903"}, {"book": 30, "id": 124, "name": "Amazon", "path": "https://amazon.com/dp/0061451878", "sort": "amazon", "type": "amazon", "val": "0061451878"}], "isbn": "9780061752056", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:39.942000+00:00", "path": "Simon T. Bailey/Release Your Brilliance_ The 4 Steps (30)", "pubdate": "2005-07-01", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": 4, "series": [], "series_ids": null, "size": 6310712, "tag_ids": "43", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}], "timestamp": "2022-10-04 13:46:39.942000+00:00", "title": "Release Your Brilliance: The 4 Steps to Transforming Your Life and Revealing Your Genius to the World"}])'></div>
          </div>
       </div>
    </div>

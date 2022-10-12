@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -451,6 +821,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -703,6 +1074,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -770,6 +1145,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -947,6 +1323,12 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/18.html">
+                                Romance
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/153.html">
                                 Classics
                             </a>
@@ -955,12 +1337,6 @@
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/214.html">
                                 Gutenberg
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/18.html">
-                                Romance
                             </a>
                           
                             <a 
@@ -1061,6 +1437,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1131,6 +1511,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1419,6 +1800,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1485,6 +1870,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1725,6 +2111,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1791,6 +2181,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1968,6 +2359,12 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/18.html">
+                                Romance
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/153.html">
                                 Classics
                             </a>
@@ -1976,12 +2373,6 @@
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/214.html">
                                 Gutenberg
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/18.html">
-                                Romance
                             </a>
                           
                             <a 
@@ -2061,6 +2452,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2127,6 +2522,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2383,6 +2779,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2449,6 +2849,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2703,6 +3104,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2769,6 +3174,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3049,6 +3455,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -3117,6 +3527,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3371,6 +3782,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -3441,6 +3856,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3691,6 +4107,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -3757,6 +4177,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3928,6 +4349,12 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/18.html">
+                                Romance
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/153.html">
                                 Classics
                             </a>
@@ -3936,12 +4363,6 @@
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/42.html">
                                 Humour
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/18.html">
-                                Romance
                             </a>
                            
                         </td>
@@ -4004,6 +4425,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -4079,6 +4504,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -4347,6 +4773,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -4414,6 +4844,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -4675,6 +5106,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -4741,6 +5176,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -4918,14 +5354,14 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/153.html">
-                                Classics
+                              href="/library/tags/18.html">
+                                Romance
                             </a>
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/18.html">
-                                Romance
+                              href="/library/tags/153.html">
+                                Classics
                             </a>
                            
                         </td>
@@ -4977,7 +5413,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "246", "authors": [{"avg_rating": null, "count": 1, "id": 246, "name": "Mark Twain", "sort": "Twain, Mark"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHilariously picaresque, epic in scope, alive with the poetry and vigor of the American people, Mark Twain\u0027s story about a young boy and his journey down the Mississippi was the first great novel to speak in a truly American voice. Influencing subsequent generations of writers -- from Sherwood Anderson to Twain\u0027s fellow Missourian, T.S. Eliot, from Ernest Hemingway and William Faulkner to J.D. Salinger -- \"Huckleberry Finn,\" like the river which flows through its pages, is one of the great sources which nourished and still nourishes the literature of America.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 287, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 163, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 212, "identifier_ids": "774,772,773", "identifiers": [{"book": 212, "id": 773, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780486280615", "sort": "isbn", "type": "isbn", "val": "9780486280615"}, {"book": 212, "id": 772, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/76", "sort": "gutenberg", "type": "gutenberg", "val": "76"}, {"book": 212, "id": 774, "name": "Google Books", "path": "https://books.google.com/books?id=mWHcDAAAQBAJ", "sort": "google", "type": "google", "val": "mWHcDAAAQBAJ"}], "isbn": "9780486280615", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:37.285529+00:00", "path": "Mark Twain/Adventures of Huckleberry Finn (212)", "pubdate": "1994-05-26", "publisher_ids": "131", "publishers": [{"avg_rating": null, "count": 1, "id": 131, "name": "Courier Corporation", "sort": "Courier Corporation"}], "rating": null, "series": [], "series_ids": null, "size": 1075085, "tag_ids": "4,153,209,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": null, "count": 1, "id": 209, "name": "Action \u0026 Adventure", "sort": 1}], "timestamp": "2022-10-10 14:39:37.285529+00:00", "title": "Adventures of Huckleberry Finn"}, {"author_ids": "244", "authors": [{"avg_rating": 8.0, "count": 1, "id": 244, "name": "F. Scott Fitzgerald", "sort": "Fitzgerald, F. Scott"}], "comments": "\u003cp\u003eTHE GREAT GATSBY is a 1925 novel written by American author F. Scott Fitzgerald that follows a cast of characters living in the fictional town of West Egg on prosperous Long Island in the summer of 1922. The story primarily concerns the young and mysterious millionaire Jay Gatsby and his quixotic passion and obsession for the beautiful former debutante Daisy Buchanan. Considered to be Fitzgerald\u0027s magnum opus, The Great Gatsby explores themes of decadence, idealism, resistance to change, social upheaval, and excess, creating a portrait of the Jazz Age or the Roaring Twenties that has been described as a cautionary tale regarding the American Dream. Fitzgerald-inspired by the parties he had attended while visiting Long Island\u0027s north shore-began planning the novel in 1923, desiring to produce, in his words, \"something new-something extraordinary and beautiful and simple and intricately patterned.\u003c/p\u003e\n\n\u003cp\u003e\" Progress was slow, with Fitzgerald completing his first draft following a move to the French Riviera in 1924. His editor, Maxwell Perkins, felt the book was vague and persuaded the author to revise over the next winter. Fitzgerald was repeatedly ambivalent about the book\u0027s title and he considered a variety of alternatives, including titles that referenced the Roman character Trimalchio; the title he was last documented to have desired was Under the Red, White, and Blue. In its first year, the book sold only 20,000 copies. Fitzgerald died in 1940, believing himself to be a failure and his work forgotten. However, the novel experienced a revival during World War II, and became a part of American high school curricula and numerous stage and film adaptations in the following decades. Today, The Great Gatsby is widely considered to be a literary classic and a contender for the title \"Great American Novel\". In 1998, the Modern Library editorial board voted it the 20th century\u0027s best American novel and second best English-language novel of the same time period.\u003c/p\u003e", "custom_clean": [{"id": 288, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 162, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 211, "identifier_ids": "771,768,769,770", "identifiers": [{"book": 211, "id": 770, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789176371213", "sort": "isbn", "type": "isbn", "val": "9789176371213"}, {"book": 211, "id": 769, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/64317", "sort": "gutenberg", "type": "gutenberg", "val": "64317"}, {"book": 211, "id": 768, "name": "Google Books", "path": "https://books.google.com/books?id=u-OCjwEACAAJ", "sort": "google", "type": "google", "val": "u-OCjwEACAAJ"}, {"book": 211, "id": 771, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/28787401", "sort": "goodreads", "type": "goodreads", "val": "28787401"}], "isbn": "9789176371213", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:37.098030+00:00", "path": "F. Scott Fitzgerald/The Great Gatsby (211)", "pubdate": "1925-04-10", "publisher_ids": "130", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 130, "name": "Wisehouse Classics", "sort": "Wisehouse Classics"}], "rating": 4, "series": [], "series_ids": null, "size": 791937, "tag_ids": "18,60,153,176,195,206,207,208,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 6, "id": 18, "name": "Romance", "sort": 6}, {"avg_rating": 8.0, "count": 4, "id": 176, "name": "General", "sort": 4}, {"avg_rating": 8.0, "count": 1, "id": 195, "name": "Download classic literature as completely free eBooks from Planet eBook.", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 206, "name": "North America", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 207, "name": "Drama", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 208, "name": "American", "sort": 1}], "timestamp": "2022-10-10 14:39:37.098030+00:00", "title": "The Great Gatsby"}, {"author_ids": "243,247,248", "authors": [{"avg_rating": 8.0, "count": 1, "id": 248, "name": "Amy Mandelker", "sort": "Mandelker, Amy"}, {"avg_rating": 8.0, "count": 1, "id": 247, "name": "Louise Maude", "sort": "Maude, Louise"}, {"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTolstoy\u0027s epic masterpiece captures with unprecedented immediacy the broad sweep of life during the Napoleonic wars and the brutal invasion of Russia. Balls and soires, the burning of Moscow, the intrigues of statesmen and generals, scenes of violent battles, the quiet moments of everyday life--all in a work whose extraordinary imaginative power has never been surpassed. The Maudes\u0027 translation of Tolstoy\u0027s epic masterpiece has long been considered the best English version, and now for the first time it has been revised to bring it fully into line with modern approaches to the text. French passages are restored, Anglicization of Russian names removed, and outmoded expressions updated. A new introduction by Amy Mandelker considers the novel\u0027s literary and historical context, the nature of the work, and Tolstoy\u0027s artistic and philosophical aims. New, expanded notes provide historical background and identifications, as well as insight into Russian life and society. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 289, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 161, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 210, "identifier_ids": "745,744,747,746", "identifiers": [{"book": 210, "id": 746, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780191612541", "sort": "isbn", "type": "isbn", "val": "9780191612541"}, {"book": 210, "id": 747, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2600", "sort": "gutenberg", "type": "gutenberg", "val": "2600"}, {"book": 210, "id": 744, "name": "Google Books", "path": "https://books.google.com/books?id=2iiQDwAAQBAJ", "sort": "google", "type": "google", "val": "2iiQDwAAQBAJ"}, {"book": 210, "id": 745, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55393212", "sort": "goodreads", "type": "goodreads", "val": "55393212"}], "isbn": "9780191612541", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.947434+00:00", "path": "Leo Tolstoy/War and Peace (210)", "pubdate": "1869-01-01", "publisher_ids": "129", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 129, "name": "Oxford University Press", "sort": "Oxford University Press"}], "rating": 4, "series": [], "series_ids": null, "size": 10408275, "tag_ids": "4,60,142,153,176,204,205,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 176, "name": "General", "sort": 4}, {"avg_rating": 8.0, "count": 2, "id": 142, "name": "War", "sort": 2}, {"avg_rating": 8.0, "count": 1, "id": 204, "name": "Political", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 205, "name": "Europe", "sort": 1}], "timestamp": "2022-10-10 14:39:36.947434+00:00", "title": "War and Peace"}, {"author_ids": "249", "authors": [{"avg_rating": 8.0, "count": 1, "id": 249, "name": "Anton Chekhov", "sort": "Chekhov, Anton"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eContents: A Day in the Country; Old Age; Kashtanka; Enemies; On the Way; Vanka; La Cigale; Grief; An Inadvertence; The Black Monk; The Kiss; In Exile; A Work of Art; Dreams; A Woman\u0027s Kingdom; The Doctor; A Trifling Occurrence; The Hollow; After the Theater; The Runaway; Vierochka; The Steppe; Rothschild\u0027s Fiddle.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 290, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 160, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 209, "identifier_ids": "765,766,767", "identifiers": [{"book": 209, "id": 767, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781419152986", "sort": "isbn", "type": "isbn", "val": "9781419152986"}, {"book": 209, "id": 766, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/57333", "sort": "gutenberg", "type": "gutenberg", "val": "57333"}, {"book": 209, "id": 765, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/3248672", "sort": "goodreads", "type": "goodreads", "val": "3248672"}], "isbn": "9781419152986", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.828751+00:00", "path": "Anton Chekhov/The Stories of Anton Chekhov (209)", "pubdate": "2005-05-04", "publisher_ids": "132", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 132, "name": "Kessinger Publishing", "sort": "Kessinger Publishing"}], "rating": 4, "series": [], "series_ids": null, "size": 1169022, "tag_ids": "153,214", "tags": [{"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}], "timestamp": "2022-10-10 14:39:36.828751+00:00", "title": "The Stories of Anton Chekhov"}, {"author_ids": "243", "authors": [{"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConsidered by some to be the greatest novel ever written, Anna Karenina is Tolstoy\u0027s classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 291, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 159, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 208, "identifier_ids": "751,752,750", "identifiers": [{"book": 208, "id": 750, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679783305", "sort": "isbn", "type": "isbn", "val": "9780679783305"}, {"book": 208, "id": 752, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/1399", "sort": "gutenberg", "type": "gutenberg", "val": "1399"}, {"book": 208, "id": 751, "name": "Google Books", "path": "https://books.google.com/books?id=yBJShX4BLVYC", "sort": "google", "type": "google", "val": "yBJShX4BLVYC"}], "isbn": "9780679783305", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.688127+00:00", "path": "Leo Tolstoy/Anna Karenina (208)", "pubdate": "2000-10-10", "publisher_ids": "133", "publishers": [{"avg_rating": null, "count": 1, "id": 133, "name": "Random House Publishing Group", "sort": "Random House Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 3845227, "tag_ids": "4,18,148,152,153,210,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 6, "id": 18, "name": "Romance", "sort": 6}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 1, "id": 210, "name": "Victorian", "sort": 1}], "timestamp": "2022-10-10 14:39:36.688127+00:00", "title": "Anna Karenina"}, {"author_ids": "245", "authors": [{"avg_rating": null, "count": 1, "id": 245, "name": "Vladimir Vladimirovich Nabokov", "sort": "Nabokov, Vladimir Vladimirovich"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen it was published in 1955, Lolita immediately became a cause c\u00e9l\u00e8bre because of the freedom and sophistication with which it handled the unusual erotic predilections of its protagonist. But Vladimir Nabokov\u0027s wise, ironic, elegant masterpiece owes its stature as one of the twentieth century\u0027s novels of record not to the controversy its material aroused but to its author\u0027s use of that material to tell a love story almost shocking in its beauty and tenderness. Awe and exhilaration\u2013along with heartbreak and mordant wit\u2013abound in this account of the aging Humbert Humbert\u0027s obsessive, devouring, and doomed passion for the nymphet Dolores Haze. Lolita is also the story of a hypercivilized European colliding with the cheerful barbarism of postwar America, but most of all, it is a meditation on love\u2013love as outrage and hallucination, madness and transformation. With an introduction by Martin Amis. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 292, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 158, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 207, "identifier_ids": "734,733", "identifiers": [{"book": 207, "id": 733, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679410430", "sort": "isbn", "type": "isbn", "val": "9780679410430"}, {"book": 207, "id": 734, "name": "Google Books", "path": "https://books.google.com/books?id=Sy7uAAAAMAAJ", "sort": "google", "type": "google", "val": "Sy7uAAAAMAAJ"}], "isbn": "9780679410430", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.553487+00:00", "path": "Vladimir Vladimirovich Nabokov/Lolita (207)", "pubdate": "1992-10-15", "publisher_ids": "128", "publishers": [{"avg_rating": null, "count": 1, "id": 128, "name": "Knopf", "sort": "Knopf"}], "rating": null, "series": [], "series_ids": null, "size": 1084575, "tag_ids": "4,151,152,153,176,203", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 4, "id": 176, "name": "General", "sort": 4}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}, {"avg_rating": null, "count": 1, "id": 203, "name": "Erotica", "sort": 1}], "timestamp": "2022-10-10 14:39:36.553487+00:00", "title": "Lolita"}, {"author_ids": "240", "authors": [{"avg_rating": 8.0, "count": 1, "id": 240, "name": "William Shakespeare", "sort": "Shakespeare, William"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHamlet is Shakespeare\u2019s most popular, and most puzzling, play. It follows the form of a \u201crevenge tragedy,\u201d in which the hero, Hamlet, seeks vengeance against his father\u2019s murderer, his uncle Claudius, now the king of Denmark. Much of its fascination, however, lies in its uncertainties. Among them: What is the Ghost\u2014Hamlet\u2019s father demanding justice, a tempting demon, an angelic messenger? Does Hamlet go mad, or merely pretend to? Once he is sure that Claudius is a murderer, why does he not act? Was his mother, Gertrude, unfaithful to her husband or complicit in his murder?\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 293, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 157, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 206, "identifier_ids": "754,756,755,753", "identifiers": [{"book": 206, "id": 753, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781451669411", "sort": "isbn", "type": "isbn", "val": "9781451669411"}, {"book": 206, "id": 755, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2265", "sort": "gutenberg", "type": "gutenberg", "val": "2265"}, {"book": 206, "id": 756, "name": "Google Books", "path": "https://books.google.com/books?id=UB74EoKvVfsC", "sort": "google", "type": "google", "val": "UB74EoKvVfsC"}, {"book": 206, "id": 754, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1420", "sort": "goodreads", "type": "goodreads", "val": "1420"}], "isbn": "9781451669411", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.389925+00:00", "path": "William Shakespeare/Hamlet (206)", "pubdate": "1601-01-01", "publisher_ids": "127", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 127, "name": "Simon and Schuster", "sort": "Simon and Schuster"}], "rating": 4, "series": [], "series_ids": null, "size": 279553, "tag_ids": "134,153,214", "tags": [{"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 3, "id": 134, "name": "Poetry", "sort": 3}], "timestamp": "2022-10-10 14:39:36.389925+00:00", "title": "Hamlet"}, {"author_ids": "239", "authors": [{"avg_rating": 9.0, "count": 1, "id": 239, "name": "Marcel Proust", "sort": "Proust, Marcel"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRecognized as one of the major literary works of the twentieth-century, Marcel Proust\u0027s monumental seven-volume novel brings together memories of childhood and Parisian society before and during the First World War.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 294, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 156, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 205, "identifier_ids": "757,758", "identifiers": [{"book": 205, "id": 758, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/797309", "sort": "goodreads", "type": "goodreads", "val": "797309"}, {"book": 205, "id": 757, "name": "Amazon", "path": "https://amazon.com/dp/B00EBNZJ5I", "sort": "amazon", "type": "amazon", "val": "B00EBNZJ5I"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.254288+00:00", "path": "Marcel Proust/Remembrance of Things Past (205)", "pubdate": "2013-07-18", "publisher_ids": "126", "publishers": [{"avg_rating": 9.0, "count": 1, "id": 126, "name": "Faber \u0026 Faber Plays", "sort": "Faber \u0026 Faber Plays"}], "rating": 4, "series": [], "series_ids": null, "size": 2838553, "tag_ids": "152,153,184,196,197,198,199,200,201,202", "tags": [{"avg_rating": 7.954545454545454, "count": 23, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 23}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 9.0, "count": 1, "id": 196, "name": "Graphic Novels", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 197, "name": "Literature \u0026 Fiction", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 198, "name": "Dramas \u0026 Plays", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 199, "name": "British \u0026 Irish", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 200, "name": "Arts \u0026 Photography", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 201, "name": "Theater", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 202, "name": "Drama \u0026 Plays", "sort": 1}], "timestamp": "2022-10-10 14:39:36.254288+00:00", "title": "Remembrance of Things Past"}, {"author_ids": "238", "authors": [{"avg_rating": null, "count": 1, "id": 238, "name": "George Eliot", "sort": "Eliot, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA sprawling work set in a provincial English town, Middlemarch boasts a large cast of characters whose stories interweave against a backdrop of political upheaval. \u003c/p\u003e\n\u003cp\u003eInstead of choosing to wed a wealthy landowner and settle for a comfortable life, Dorothea Brooke decides to marry Edward Casaubon\u2014a dull scholar who is her senior by a few decades. Dorothea hopes the union will afford her with the opportunity to share in her husband\u2019s intellectual pursuits, but even her best efforts can\u2019t save the disastrous marriage. Meanwhile, idealistic doctor Tertius Lydgate has progressive ideas about the medical field, and he believes the village of Middlemarch is the place that will embrace his beliefs. But when he weds Rosamond Vincy, the mayor\u2019s beautiful daughter, his ideals come into stark contrast with his new bride\u2019s materialism and vanity, dooming their marriage from the start. \u003c/p\u003e\n\u003cp\u003eLastly, Rosamond\u0027s brother, Fred, is reluctantly destined for the Church. But his childhood sweetheart Mary Garth refuses to accept him until he settles into a more suitable career and one that interests him. But when circumstances lead to Fred losing a sizeable fortune that sets off a calamitous turn of events, he must reevaluate the choices he has made. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 295, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 155, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 204, "identifier_ids": "759,760,761", "identifiers": [{"book": 204, "id": 761, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062356147", "sort": "isbn", "type": "isbn", "val": "9780062356147"}, {"book": 204, "id": 760, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/145", "sort": "gutenberg", "type": "gutenberg", "val": "145"}, {"book": 204, "id": 759, "name": "Google Books", "path": "https://books.google.com/books?id=WhrEsgEACAAJ", "sort": "google", "type": "google", "val": "WhrEsgEACAAJ"}], "isbn": "9780062356147", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.112665+00:00", "path": "George Eliot/Middlemarch (204)", "pubdate": "2015-11-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [], "series_ids": null, "size": 6332096, "tag_ids": "4,152,153,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}], "timestamp": "2022-10-10 14:39:36.112665+00:00", "title": "Middlemarch"}, {"author_ids": "188,189", "authors": [{"avg_rating": 8.0, "count": 1, "id": 188, "name": "Isaac Asimov", "sort": "Asimov, Isaac"}, {"avg_rating": 8.0, "count": 1, "id": 189, "name": "Robert Silverberg", "sort": "Silverberg, Robert"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn 1941, Astounding Science Fiction magazine published a short story by a little-known writer named Isaac Asimov. The story was called \"Nightfall\", and many years later it has long been recognized as a classic, its author a legend. Now, the Gran Master of Science Fiction teams with Robert Silverberg, one of the field\u0027s top award-winning authors, to explore and expand an apocalyptic tale that is more spellbinding today than ever before -- Nightfall: The Novel. \u003c/p\u003e\n\u003cp\u003eImagine living on a planet with six suns that never experiences Darkness. Imagine never having seen the Stars. Then, one by one the suns start to set, gradually leading into Darkness for the first time ever. Kalgash is a world on the edge of chaos, torn between the madness of religious fanaticism and the unyielding rationalism of scientists. Lurking beneath it all is a collective, instinctual fear of the Darkness. For Kalgash knows only the perpetual light of day; to its inhabitants, a gathering twilight portends unspeakable horror. And only a handful of people on the planet are prepared to face the truth, their six suns are setting all at once for the first time in over two thousand years, signaling the end of civilization as it explodes in the awesome splendor of Nightfall. \u003c/p\u003e\n\u003cp\u003eEncompassing the psychology of disaster, the tenacity of the human spirit, and, ultimately, the regenerative power of hope, Nightfall is a tale rich in character and suspense that only the unique collaboration of Isaac Asimov and Robert Silverberg could create.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 226, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 128, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 177, "identifier_ids": "549,548,547", "identifiers": [{"book": 177, "id": 547, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780330320962", "sort": "isbn", "type": "isbn", "val": "9780330320962"}, {"book": 177, "id": 548, "name": "Google Books", "path": "https://books.google.com/books?id=TLY9PgAACAAJ", "sort": "google", "type": "google", "val": "TLY9PgAACAAJ"}, {"book": 177, "id": 549, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/99245", "sort": "goodreads", "type": "goodreads", "val": "99245"}], "isbn": "9780330320962", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:49:13.818458+00:00", "path": "Isaac Asimov/Nightfall (177)", "pubdate": "1990-10-01", "publisher_ids": "120", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 120, "name": "Pan Books", "sort": "Pan Books"}], "rating": 4, "series": [], "series_ids": null, "size": 270593, "tag_ids": "75,76,153", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": 38}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}], "timestamp": "2022-10-06 09:49:13.818458+00:00", "title": "Nightfall"}, {"author_ids": "168", "authors": [{"avg_rating": 8.0, "count": 2, "id": 168, "name": "Oscar Wilde", "sort": "Wilde, Oscar"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHere is Oscar Wilde\u0027s most brilliant tour de force, a witty and buoyant comedy of manners that has delighted millions in countless productions since its first performance in London\u0027s St. James\u0027 Theatre on February 14, 1895.\" The Importance of Being Earnest\" is celebrated not only for the lighthearted ingenuity of its plot, but for its inspired dialogue, rich with scintillating epigrams still savored by all who enjoy artful conversation.\u003cbr\u003eFrom the play\u0027s effervescent beginnings in Algernon Moncrieff\u0027s London flat to its hilarious denouement in the drawing room of Jack Worthing\u0027s country manor in Hertfordshire, this comic masterpiece keeps audiences breathlessly anticipating a new bon mot or a fresh twist of plot moment to moment. A selection of the Common Core State Standards Initiative.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 197, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 112, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 161, "identifier_ids": "485,487,486,488", "identifiers": [{"book": 161, "id": 488, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780486110189", "sort": "isbn", "type": "isbn", "val": "9780486110189"}, {"book": 161, "id": 486, "name": "Google Books", "path": "https://books.google.com/books?id=5KODk_VCN2kC", "sort": "google", "type": "google", "val": "5KODk_VCN2kC"}, {"book": 161, "id": 487, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/20531534", "sort": "goodreads", "type": "goodreads", "val": "20531534"}, {"book": 161, "id": 485, "name": "Amazon", "path": "https://amazon.com/dp/B0B2HQ3TVM", "sort": "amazon", "type": "amazon", "val": "B0B2HQ3TVM"}], "isbn": "9780486110189", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:37:00.744877+00:00", "path": "Oscar Wilde/The Importance of Being Earnest (161)", "pubdate": "1895-02-14", "publisher_ids": "107", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 107, "name": "Dover Publications", "sort": "Dover Publications"}], "rating": 4, "series": [], "series_ids": null, "size": 10866936, "tag_ids": "18,42,153", "tags": [{"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 6, "id": 18, "name": "Romance", "sort": 6}], "timestamp": "2022-10-06 09:37:00.744877+00:00", "title": "The Importance of Being Earnest"}, {"author_ids": "167", "authors": [{"avg_rating": 8.0, "count": 1, "id": 167, "name": "George Orwell", "sort": "Orwell, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhat was a nice Eton boy like Eric Blair doing in scummy slums instead of being upwardly mobile at Oxford or Cambridge? Living \u003cem\u003eDown and Out in Paris and London\u003c/em\u003e , repudiating respectable imperialist society, and reinventing himself as \u003ca href=\"https://www.goodreads.com/search/search?q=George%20Orwell\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eGeorge Orwell\u003c/span\u003e\u003c/a\u003e. His 1933 debut book (ostensibly a novel, but overwhelmingly autobiographical) was rejected by that elitist publisher T. S. Eliot, perhaps because its close-up portrait of lowlife was too pungent for comfort. \u003c/p\u003e\n\u003cp\u003eIn Paris, Orwell lived in verminous rooms and washed dishes at the overpriced \"Hotel X,\" in a remarkably filthy, 110-degree kitchen. He met \"eccentric people \u2013 people who have fallen into solitary, half-mad grooves of life and given up trying to be normal or decent.\" Though Orwell\u0027s tone is that of an outraged reformer, it\u0027s surprising how entertaining many of his adventures are: gnawing poverty only enlivens the imagination, and the wild characters he met often swindled each other and themselves. The wackiest tale involves a miser who ate cats, wore newspapers for underwear, invested 6,000 francs in cocaine, and hid it in a face-powder tin when the cops raided. They had to free him, because the apparently controlled substance turned out to be face powder instead of cocaine. \u003c/p\u003e\n\u003cp\u003eIn London, Orwell studied begging with a crippled expert named Bozo, a great storyteller and philosopher. Orwell devotes a chapter to the fine points of London guttersnipe slang. Years later, he would put his lexical bent to work by inventing Newspeak, and draw on his down-and-out experience to evoke the plight of the Proles in \u003cem\u003e1984\u003c/em\u003e. Though marred by hints of unexamined anti-Semitism, Orwell\u0027s debut remains, as \u003cem\u003eThe Nation\u003c/em\u003e put it, \"the most lucid portrait of poverty in the English language.\" \u003cem\u003e--Tim Appelo\u003c/em\u003e\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 194, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 110, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 159, "identifier_ids": "483,484,481,482", "identifiers": [{"book": 159, "id": 482, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780156262248", "sort": "isbn", "type": "isbn", "val": "9780156262248"}, {"book": 159, "id": 481, "name": "Google Books", "path": "https://books.google.com/books?id=m5vIVN7LjtgC", "sort": "google", "type": "google", "val": "m5vIVN7LjtgC"}, {"book": 159, "id": 484, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/34304872", "sort": "goodreads", "type": "goodreads", "val": "34304872"}, {"book": 159, "id": 483, "name": "Amazon", "path": "https://amazon.com/dp/015626224X", "sort": "amazon", "type": "amazon", "val": "015626224X"}], "isbn": "9780156262248", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:35:53.313990+00:00", "path": "George Orwell/Down and Out in Paris and London (159)", "pubdate": "1933-01-01", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 690052, "tag_ids": "57,60,90,92,153", "tags": [{"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-06 09:35:53.313990+00:00", "title": "Down and Out in Paris and London"}, {"author_ids": "166", "authors": [{"avg_rating": 8.0, "count": 1, "id": 166, "name": "John Kennedy Toole", "sort": "Toole, John Kennedy"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eReleased by Louisiana State University Press in 1980, A Confederacy of Dunces is nothing short of a publishing phenomenon. Rejected by countless publishers and submitted by the author\u0027s mother years after his suicide, the book won the 1981 Pulitzer Prize for Fiction. Today there are almost two million copies in print worldwide in eighteen languages. Now, for the first time, John Kennedy Toole\u0027s comic masterpiece is available in a large print edition. Toole\u0027s lunatic and sage novel introduces one of the most memorable characters in American literature, Ignatius Reilly, whom Walker Percy dubs \"slob extraordinaire, a mad Oliver Hardy, a fat Don Quixote, a perverse Thomas Aquinas rolled into one.\" Set in New Orleans, A Confederacy of Dunces outswifts Swift, one of whose essays gives the book its title. As its characters burst into life, they leave the region and literature forever changed by their presence -- Ignatius and his mother; Miss Trixie, the octogenarian assistant accountant at Levi Pants; inept, wan Patrolman Mancuso; Darlene, the Bourbon Street stripper with a penchant for poultry; Jones the jivecat in spaceage dark glasses. \u003c/p\u003e\n\u003cp\u003eIncluded here is the introduction that writer and New Orleans resident Andrei Codrescu composed for the book\u0027s twentieth anniversary. Set in oversized type for ease in reading, the large print edition will gratify both first-timers seeking to discover this modern-day classic and longtime afficionados wishing to reread a favorite novel.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 191, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 108, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 157, "identifier_ids": "478,477,480,479", "identifiers": [{"book": 157, "id": 479, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780807130087", "sort": "isbn", "type": "isbn", "val": "9780807130087"}, {"book": 157, "id": 480, "name": "Google Books", "path": "https://books.google.com/books?id=WM6OztAsYWQC", "sort": "google", "type": "google", "val": "WM6OztAsYWQC"}, {"book": 157, "id": 477, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/24921", "sort": "goodreads", "type": "goodreads", "val": "24921"}, {"book": 157, "id": 478, "name": "Amazon", "path": "https://amazon.com/dp/0802130208", "sort": "amazon", "type": "amazon", "val": "0802130208"}], "isbn": "9780807130087", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:34:19.501438+00:00", "path": "John Kennedy Toole/A Confederacy of Dunces (157)", "pubdate": "1994-04-01", "publisher_ids": "104", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 104, "name": "LSU Press", "sort": "LSU Press"}], "rating": 4, "series": [], "series_ids": null, "size": 572097, "tag_ids": "42,49,153,154", "tags": [{"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 1, "id": 154, "name": "Unread", "sort": 1}], "timestamp": "2022-10-06 09:34:19.501438+00:00", "title": "A Confederacy of Dunces"}, {"author_ids": "162", "authors": [{"avg_rating": 8.0, "count": 1, "id": 162, "name": "Jan Wolkers", "sort": "Wolkers, Jan"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTurks Fruit, het hartverscheurende verhaal van de gepassioneerde maar onmogelijke liefde tussen Olga en beeldhouwer Eric, verscheen oorspronkelijk in 1969 en bracht een schok teweeg in de Nederlandse letteren. Niet alleen werden liefde, seks en dood tot zo\u0027n pulserend en vitaal geheel gesmeed. De verfilming van Turks Fruit door Paul Verhoeven, met in de hoofdrollen Rutger Hauer en Monique van der Ven, werd uitgeroepen tot de beste Hollandse speelfilm ooit en kreeg in 1974 een oscarnominatie.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 179, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 102, "value": 1}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 151, "identifier_ids": "431,432", "identifiers": [{"book": 151, "id": 432, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789460921278", "sort": "isbn", "type": "isbn", "val": "9789460921278"}, {"book": 151, "id": 431, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/16016510", "sort": "goodreads", "type": "goodreads", "val": "16016510"}], "isbn": "9789460921278", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 18:16:56.394839+00:00", "path": "Jan Wolkers/Turks fruit (151)", "pubdate": "1969-01-01", "publisher_ids": "99", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 99, "name": "J.M. Meulenhoff", "sort": "J.M. Meulenhoff"}], "rating": 4, "series": [], "series_ids": null, "size": 207355, "tag_ids": "18,50,153", "tags": [{"avg_rating": 8.0, "count": 23, "id": 50, "name": "Adult", "sort": 23}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.0, "count": 6, "id": 18, "name": "Romance", "sort": 6}], "timestamp": "2022-10-05 18:16:56.394839+00:00", "title": "Turks fruit"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "246", "authors": [{"avg_rating": null, "count": 1, "id": 246, "name": "Mark Twain", "sort": "Twain, Mark"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHilariously picaresque, epic in scope, alive with the poetry and vigor of the American people, Mark Twain\u0027s story about a young boy and his journey down the Mississippi was the first great novel to speak in a truly American voice. Influencing subsequent generations of writers -- from Sherwood Anderson to Twain\u0027s fellow Missourian, T.S. Eliot, from Ernest Hemingway and William Faulkner to J.D. Salinger -- \"Huckleberry Finn,\" like the river which flows through its pages, is one of the great sources which nourished and still nourishes the literature of America.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 212, "identifier_ids": "774,772,773", "identifiers": [{"book": 212, "id": 773, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780486280615", "sort": "isbn", "type": "isbn", "val": "9780486280615"}, {"book": 212, "id": 772, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/76", "sort": "gutenberg", "type": "gutenberg", "val": "76"}, {"book": 212, "id": 774, "name": "Google Books", "path": "https://books.google.com/books?id=mWHcDAAAQBAJ", "sort": "google", "type": "google", "val": "mWHcDAAAQBAJ"}], "isbn": "9780486280615", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:37.285529+00:00", "path": "Mark Twain/Adventures of Huckleberry Finn (212)", "pubdate": "1994-05-26", "publisher_ids": "131", "publishers": [{"avg_rating": null, "count": 1, "id": 131, "name": "Courier Corporation", "sort": "Courier Corporation"}], "rating": null, "series": [], "series_ids": null, "size": 1075085, "tag_ids": "4,153,209,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": null, "count": 1, "id": 209, "name": "Action \u0026 Adventure", "sort": 1}], "timestamp": "2022-10-10 14:39:37.285529+00:00", "title": "Adventures of Huckleberry Finn"}, {"author_ids": "244", "authors": [{"avg_rating": 8.0, "count": 1, "id": 244, "name": "F. Scott Fitzgerald", "sort": "Fitzgerald, F. Scott"}], "comments": "\u003cp\u003eTHE GREAT GATSBY is a 1925 novel written by American author F. Scott Fitzgerald that follows a cast of characters living in the fictional town of West Egg on prosperous Long Island in the summer of 1922. The story primarily concerns the young and mysterious millionaire Jay Gatsby and his quixotic passion and obsession for the beautiful former debutante Daisy Buchanan. Considered to be Fitzgerald\u0027s magnum opus, The Great Gatsby explores themes of decadence, idealism, resistance to change, social upheaval, and excess, creating a portrait of the Jazz Age or the Roaring Twenties that has been described as a cautionary tale regarding the American Dream. Fitzgerald-inspired by the parties he had attended while visiting Long Island\u0027s north shore-began planning the novel in 1923, desiring to produce, in his words, \"something new-something extraordinary and beautiful and simple and intricately patterned.\u003c/p\u003e\n\n\u003cp\u003e\" Progress was slow, with Fitzgerald completing his first draft following a move to the French Riviera in 1924. His editor, Maxwell Perkins, felt the book was vague and persuaded the author to revise over the next winter. Fitzgerald was repeatedly ambivalent about the book\u0027s title and he considered a variety of alternatives, including titles that referenced the Roman character Trimalchio; the title he was last documented to have desired was Under the Red, White, and Blue. In its first year, the book sold only 20,000 copies. Fitzgerald died in 1940, believing himself to be a failure and his work forgotten. However, the novel experienced a revival during World War II, and became a part of American high school curricula and numerous stage and film adaptations in the following decades. Today, The Great Gatsby is widely considered to be a literary classic and a contender for the title \"Great American Novel\". In 1998, the Modern Library editorial board voted it the 20th century\u0027s best American novel and second best English-language novel of the same time period.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 211, "identifier_ids": "771,768,769,770", "identifiers": [{"book": 211, "id": 770, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789176371213", "sort": "isbn", "type": "isbn", "val": "9789176371213"}, {"book": 211, "id": 769, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/64317", "sort": "gutenberg", "type": "gutenberg", "val": "64317"}, {"book": 211, "id": 768, "name": "Google Books", "path": "https://books.google.com/books?id=u-OCjwEACAAJ", "sort": "google", "type": "google", "val": "u-OCjwEACAAJ"}, {"book": 211, "id": 771, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/28787401", "sort": "goodreads", "type": "goodreads", "val": "28787401"}], "isbn": "9789176371213", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:37.098030+00:00", "path": "F. Scott Fitzgerald/The Great Gatsby (211)", "pubdate": "1925-04-10", "publisher_ids": "130", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 130, "name": "Wisehouse Classics", "sort": "Wisehouse Classics"}], "rating": 4, "series": [], "series_ids": null, "size": 791937, "tag_ids": "18,60,153,176,195,206,207,208,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 5, "id": 176, "name": "General", "sort": 5}, {"avg_rating": 8.0, "count": 1, "id": 195, "name": "Download classic literature as completely free eBooks from Planet eBook.", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 206, "name": "North America", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 207, "name": "Drama", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 208, "name": "American", "sort": 1}], "timestamp": "2022-10-10 14:39:37.098030+00:00", "title": "The Great Gatsby"}, {"author_ids": "243,247,248", "authors": [{"avg_rating": 8.0, "count": 1, "id": 248, "name": "Amy Mandelker", "sort": "Mandelker, Amy"}, {"avg_rating": 8.0, "count": 1, "id": 247, "name": "Louise Maude", "sort": "Maude, Louise"}, {"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTolstoy\u0027s epic masterpiece captures with unprecedented immediacy the broad sweep of life during the Napoleonic wars and the brutal invasion of Russia. Balls and soires, the burning of Moscow, the intrigues of statesmen and generals, scenes of violent battles, the quiet moments of everyday life--all in a work whose extraordinary imaginative power has never been surpassed. The Maudes\u0027 translation of Tolstoy\u0027s epic masterpiece has long been considered the best English version, and now for the first time it has been revised to bring it fully into line with modern approaches to the text. French passages are restored, Anglicization of Russian names removed, and outmoded expressions updated. A new introduction by Amy Mandelker considers the novel\u0027s literary and historical context, the nature of the work, and Tolstoy\u0027s artistic and philosophical aims. New, expanded notes provide historical background and identifications, as well as insight into Russian life and society. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 210, "identifier_ids": "745,744,747,746", "identifiers": [{"book": 210, "id": 746, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780191612541", "sort": "isbn", "type": "isbn", "val": "9780191612541"}, {"book": 210, "id": 747, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2600", "sort": "gutenberg", "type": "gutenberg", "val": "2600"}, {"book": 210, "id": 744, "name": "Google Books", "path": "https://books.google.com/books?id=2iiQDwAAQBAJ", "sort": "google", "type": "google", "val": "2iiQDwAAQBAJ"}, {"book": 210, "id": 745, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55393212", "sort": "goodreads", "type": "goodreads", "val": "55393212"}], "isbn": "9780191612541", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.947434+00:00", "path": "Leo Tolstoy/War and Peace (210)", "pubdate": "1869-01-01", "publisher_ids": "129", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 129, "name": "Oxford University Press", "sort": "Oxford University Press"}], "rating": 4, "series": [], "series_ids": null, "size": 10408275, "tag_ids": "4,60,142,153,176,204,205,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 5, "id": 176, "name": "General", "sort": 5}, {"avg_rating": 8.0, "count": 2, "id": 142, "name": "War", "sort": 2}, {"avg_rating": 8.0, "count": 1, "id": 204, "name": "Political", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 205, "name": "Europe", "sort": 1}], "timestamp": "2022-10-10 14:39:36.947434+00:00", "title": "War and Peace"}, {"author_ids": "249", "authors": [{"avg_rating": 8.0, "count": 1, "id": 249, "name": "Anton Chekhov", "sort": "Chekhov, Anton"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eContents: A Day in the Country; Old Age; Kashtanka; Enemies; On the Way; Vanka; La Cigale; Grief; An Inadvertence; The Black Monk; The Kiss; In Exile; A Work of Art; Dreams; A Woman\u0027s Kingdom; The Doctor; A Trifling Occurrence; The Hollow; After the Theater; The Runaway; Vierochka; The Steppe; Rothschild\u0027s Fiddle.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 209, "identifier_ids": "765,766,767", "identifiers": [{"book": 209, "id": 767, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781419152986", "sort": "isbn", "type": "isbn", "val": "9781419152986"}, {"book": 209, "id": 766, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/57333", "sort": "gutenberg", "type": "gutenberg", "val": "57333"}, {"book": 209, "id": 765, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/3248672", "sort": "goodreads", "type": "goodreads", "val": "3248672"}], "isbn": "9781419152986", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.828751+00:00", "path": "Anton Chekhov/The Stories of Anton Chekhov (209)", "pubdate": "2005-05-04", "publisher_ids": "132", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 132, "name": "Kessinger Publishing", "sort": "Kessinger Publishing"}], "rating": 4, "series": [], "series_ids": null, "size": 1169022, "tag_ids": "153,214", "tags": [{"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}], "timestamp": "2022-10-10 14:39:36.828751+00:00", "title": "The Stories of Anton Chekhov"}, {"author_ids": "243", "authors": [{"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConsidered by some to be the greatest novel ever written, Anna Karenina is Tolstoy\u0027s classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 208, "identifier_ids": "751,752,750", "identifiers": [{"book": 208, "id": 750, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679783305", "sort": "isbn", "type": "isbn", "val": "9780679783305"}, {"book": 208, "id": 752, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/1399", "sort": "gutenberg", "type": "gutenberg", "val": "1399"}, {"book": 208, "id": 751, "name": "Google Books", "path": "https://books.google.com/books?id=yBJShX4BLVYC", "sort": "google", "type": "google", "val": "yBJShX4BLVYC"}], "isbn": "9780679783305", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.688127+00:00", "path": "Leo Tolstoy/Anna Karenina (208)", "pubdate": "2000-10-10", "publisher_ids": "133", "publishers": [{"avg_rating": null, "count": 1, "id": 133, "name": "Random House Publishing Group", "sort": "Random House Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 3845227, "tag_ids": "4,18,148,152,153,210,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 1, "id": 210, "name": "Victorian", "sort": 1}], "timestamp": "2022-10-10 14:39:36.688127+00:00", "title": "Anna Karenina"}, {"author_ids": "245", "authors": [{"avg_rating": null, "count": 1, "id": 245, "name": "Vladimir Vladimirovich Nabokov", "sort": "Nabokov, Vladimir Vladimirovich"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen it was published in 1955, Lolita immediately became a cause c\u00e9l\u00e8bre because of the freedom and sophistication with which it handled the unusual erotic predilections of its protagonist. But Vladimir Nabokov\u0027s wise, ironic, elegant masterpiece owes its stature as one of the twentieth century\u0027s novels of record not to the controversy its material aroused but to its author\u0027s use of that material to tell a love story almost shocking in its beauty and tenderness. Awe and exhilaration\u2013along with heartbreak and mordant wit\u2013abound in this account of the aging Humbert Humbert\u0027s obsessive, devouring, and doomed passion for the nymphet Dolores Haze. Lolita is also the story of a hypercivilized European colliding with the cheerful barbarism of postwar America, but most of all, it is a meditation on love\u2013love as outrage and hallucination, madness and transformation. With an introduction by Martin Amis. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}], "custom_lists_ids": "6", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 207, "identifier_ids": "734,733", "identifiers": [{"book": 207, "id": 733, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679410430", "sort": "isbn", "type": "isbn", "val": "9780679410430"}, {"book": 207, "id": 734, "name": "Google Books", "path": "https://books.google.com/books?id=Sy7uAAAAMAAJ", "sort": "google", "type": "google", "val": "Sy7uAAAAMAAJ"}], "isbn": "9780679410430", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.553487+00:00", "path": "Vladimir Vladimirovich Nabokov/Lolita (207)", "pubdate": "1992-10-15", "publisher_ids": "128", "publishers": [{"avg_rating": null, "count": 1, "id": 128, "name": "Knopf", "sort": "Knopf"}], "rating": null, "series": [], "series_ids": null, "size": 1084575, "tag_ids": "4,151,152,153,176,203", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.5, "count": 5, "id": 176, "name": "General", "sort": 5}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}, {"avg_rating": null, "count": 1, "id": 203, "name": "Erotica", "sort": 1}], "timestamp": "2022-10-10 14:39:36.553487+00:00", "title": "Lolita"}, {"author_ids": "240", "authors": [{"avg_rating": 8.0, "count": 1, "id": 240, "name": "William Shakespeare", "sort": "Shakespeare, William"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHamlet is Shakespeare\u2019s most popular, and most puzzling, play. It follows the form of a \u201crevenge tragedy,\u201d in which the hero, Hamlet, seeks vengeance against his father\u2019s murderer, his uncle Claudius, now the king of Denmark. Much of its fascination, however, lies in its uncertainties. Among them: What is the Ghost\u2014Hamlet\u2019s father demanding justice, a tempting demon, an angelic messenger? Does Hamlet go mad, or merely pretend to? Once he is sure that Claudius is a murderer, why does he not act? Was his mother, Gertrude, unfaithful to her husband or complicit in his murder?\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 206, "identifier_ids": "754,756,755,753", "identifiers": [{"book": 206, "id": 753, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781451669411", "sort": "isbn", "type": "isbn", "val": "9781451669411"}, {"book": 206, "id": 755, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2265", "sort": "gutenberg", "type": "gutenberg", "val": "2265"}, {"book": 206, "id": 756, "name": "Google Books", "path": "https://books.google.com/books?id=UB74EoKvVfsC", "sort": "google", "type": "google", "val": "UB74EoKvVfsC"}, {"book": 206, "id": 754, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1420", "sort": "goodreads", "type": "goodreads", "val": "1420"}], "isbn": "9781451669411", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.389925+00:00", "path": "William Shakespeare/Hamlet (206)", "pubdate": "1601-01-01", "publisher_ids": "127", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 127, "name": "Simon and Schuster", "sort": "Simon and Schuster"}], "rating": 4, "series": [], "series_ids": null, "size": 279553, "tag_ids": "134,153,214", "tags": [{"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 3, "id": 134, "name": "Poetry", "sort": 3}], "timestamp": "2022-10-10 14:39:36.389925+00:00", "title": "Hamlet"}, {"author_ids": "239", "authors": [{"avg_rating": 9.0, "count": 1, "id": 239, "name": "Marcel Proust", "sort": "Proust, Marcel"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRecognized as one of the major literary works of the twentieth-century, Marcel Proust\u0027s monumental seven-volume novel brings together memories of childhood and Parisian society before and during the First World War.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}], "custom_lists_ids": "6", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 205, "identifier_ids": "757,758", "identifiers": [{"book": 205, "id": 758, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/797309", "sort": "goodreads", "type": "goodreads", "val": "797309"}, {"book": 205, "id": 757, "name": "Amazon", "path": "https://amazon.com/dp/B00EBNZJ5I", "sort": "amazon", "type": "amazon", "val": "B00EBNZJ5I"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.254288+00:00", "path": "Marcel Proust/Remembrance of Things Past (205)", "pubdate": "2013-07-18", "publisher_ids": "126", "publishers": [{"avg_rating": 9.0, "count": 1, "id": 126, "name": "Faber \u0026 Faber Plays", "sort": "Faber \u0026 Faber Plays"}], "rating": 4, "series": [], "series_ids": null, "size": 2838553, "tag_ids": "152,153,184,196,197,198,199,200,201,202", "tags": [{"avg_rating": 8.428571428571429, "count": 36, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 36}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 9.0, "count": 1, "id": 196, "name": "Graphic Novels", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 197, "name": "Literature \u0026 Fiction", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 198, "name": "Dramas \u0026 Plays", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 199, "name": "British \u0026 Irish", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 200, "name": "Arts \u0026 Photography", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 201, "name": "Theater", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 202, "name": "Drama \u0026 Plays", "sort": 1}], "timestamp": "2022-10-10 14:39:36.254288+00:00", "title": "Remembrance of Things Past"}, {"author_ids": "238", "authors": [{"avg_rating": null, "count": 1, "id": 238, "name": "George Eliot", "sort": "Eliot, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA sprawling work set in a provincial English town, Middlemarch boasts a large cast of characters whose stories interweave against a backdrop of political upheaval. \u003c/p\u003e\n\u003cp\u003eInstead of choosing to wed a wealthy landowner and settle for a comfortable life, Dorothea Brooke decides to marry Edward Casaubon\u2014a dull scholar who is her senior by a few decades. Dorothea hopes the union will afford her with the opportunity to share in her husband\u2019s intellectual pursuits, but even her best efforts can\u2019t save the disastrous marriage. Meanwhile, idealistic doctor Tertius Lydgate has progressive ideas about the medical field, and he believes the village of Middlemarch is the place that will embrace his beliefs. But when he weds Rosamond Vincy, the mayor\u2019s beautiful daughter, his ideals come into stark contrast with his new bride\u2019s materialism and vanity, dooming their marriage from the start. \u003c/p\u003e\n\u003cp\u003eLastly, Rosamond\u0027s brother, Fred, is reluctantly destined for the Church. But his childhood sweetheart Mary Garth refuses to accept him until he settles into a more suitable career and one that interests him. But when circumstances lead to Fred losing a sizeable fortune that sets off a calamitous turn of events, he must reevaluate the choices he has made. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 204, "identifier_ids": "759,760,761", "identifiers": [{"book": 204, "id": 761, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062356147", "sort": "isbn", "type": "isbn", "val": "9780062356147"}, {"book": 204, "id": 760, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/145", "sort": "gutenberg", "type": "gutenberg", "val": "145"}, {"book": 204, "id": 759, "name": "Google Books", "path": "https://books.google.com/books?id=WhrEsgEACAAJ", "sort": "google", "type": "google", "val": "WhrEsgEACAAJ"}], "isbn": "9780062356147", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.112665+00:00", "path": "George Eliot/Middlemarch (204)", "pubdate": "2015-11-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [], "series_ids": null, "size": 6332096, "tag_ids": "4,152,153,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}], "timestamp": "2022-10-10 14:39:36.112665+00:00", "title": "Middlemarch"}, {"author_ids": "188,189", "authors": [{"avg_rating": 8.0, "count": 1, "id": 188, "name": "Isaac Asimov", "sort": "Asimov, Isaac"}, {"avg_rating": 8.0, "count": 1, "id": 189, "name": "Robert Silverberg", "sort": "Silverberg, Robert"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn 1941, Astounding Science Fiction magazine published a short story by a little-known writer named Isaac Asimov. The story was called \"Nightfall\", and many years later it has long been recognized as a classic, its author a legend. Now, the Gran Master of Science Fiction teams with Robert Silverberg, one of the field\u0027s top award-winning authors, to explore and expand an apocalyptic tale that is more spellbinding today than ever before -- Nightfall: The Novel. \u003c/p\u003e\n\u003cp\u003eImagine living on a planet with six suns that never experiences Darkness. Imagine never having seen the Stars. Then, one by one the suns start to set, gradually leading into Darkness for the first time ever. Kalgash is a world on the edge of chaos, torn between the madness of religious fanaticism and the unyielding rationalism of scientists. Lurking beneath it all is a collective, instinctual fear of the Darkness. For Kalgash knows only the perpetual light of day; to its inhabitants, a gathering twilight portends unspeakable horror. And only a handful of people on the planet are prepared to face the truth, their six suns are setting all at once for the first time in over two thousand years, signaling the end of civilization as it explodes in the awesome splendor of Nightfall. \u003c/p\u003e\n\u003cp\u003eEncompassing the psychology of disaster, the tenacity of the human spirit, and, ultimately, the regenerative power of hope, Nightfall is a tale rich in character and suspense that only the unique collaboration of Isaac Asimov and Robert Silverberg could create.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 177, "identifier_ids": "549,548,547", "identifiers": [{"book": 177, "id": 547, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780330320962", "sort": "isbn", "type": "isbn", "val": "9780330320962"}, {"book": 177, "id": 548, "name": "Google Books", "path": "https://books.google.com/books?id=TLY9PgAACAAJ", "sort": "google", "type": "google", "val": "TLY9PgAACAAJ"}, {"book": 177, "id": 549, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/99245", "sort": "goodreads", "type": "goodreads", "val": "99245"}], "isbn": "9780330320962", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:49:13.818458+00:00", "path": "Isaac Asimov/Nightfall (177)", "pubdate": "1990-10-01", "publisher_ids": "120", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 120, "name": "Pan Books", "sort": "Pan Books"}], "rating": 4, "series": [], "series_ids": null, "size": 270593, "tag_ids": "75,76,153", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}], "timestamp": "2022-10-06 09:49:13.818458+00:00", "title": "Nightfall"}, {"author_ids": "168", "authors": [{"avg_rating": 8.0, "count": 2, "id": 168, "name": "Oscar Wilde", "sort": "Wilde, Oscar"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHere is Oscar Wilde\u0027s most brilliant tour de force, a witty and buoyant comedy of manners that has delighted millions in countless productions since its first performance in London\u0027s St. James\u0027 Theatre on February 14, 1895.\" The Importance of Being Earnest\" is celebrated not only for the lighthearted ingenuity of its plot, but for its inspired dialogue, rich with scintillating epigrams still savored by all who enjoy artful conversation.\u003cbr\u003eFrom the play\u0027s effervescent beginnings in Algernon Moncrieff\u0027s London flat to its hilarious denouement in the drawing room of Jack Worthing\u0027s country manor in Hertfordshire, this comic masterpiece keeps audiences breathlessly anticipating a new bon mot or a fresh twist of plot moment to moment. A selection of the Common Core State Standards Initiative.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 161, "identifier_ids": "485,487,486,488", "identifiers": [{"book": 161, "id": 488, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780486110189", "sort": "isbn", "type": "isbn", "val": "9780486110189"}, {"book": 161, "id": 486, "name": "Google Books", "path": "https://books.google.com/books?id=5KODk_VCN2kC", "sort": "google", "type": "google", "val": "5KODk_VCN2kC"}, {"book": 161, "id": 487, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/20531534", "sort": "goodreads", "type": "goodreads", "val": "20531534"}, {"book": 161, "id": 485, "name": "Amazon", "path": "https://amazon.com/dp/B0B2HQ3TVM", "sort": "amazon", "type": "amazon", "val": "B0B2HQ3TVM"}], "isbn": "9780486110189", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:37:00.744877+00:00", "path": "Oscar Wilde/The Importance of Being Earnest (161)", "pubdate": "1895-02-14", "publisher_ids": "107", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 107, "name": "Dover Publications", "sort": "Dover Publications"}], "rating": 4, "series": [], "series_ids": null, "size": 10866936, "tag_ids": "18,42,153", "tags": [{"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}], "timestamp": "2022-10-06 09:37:00.744877+00:00", "title": "The Importance of Being Earnest"}, {"author_ids": "167", "authors": [{"avg_rating": 8.0, "count": 1, "id": 167, "name": "George Orwell", "sort": "Orwell, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhat was a nice Eton boy like Eric Blair doing in scummy slums instead of being upwardly mobile at Oxford or Cambridge? Living \u003cem\u003eDown and Out in Paris and London\u003c/em\u003e , repudiating respectable imperialist society, and reinventing himself as \u003ca href=\"https://www.goodreads.com/search/search?q=George%20Orwell\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eGeorge Orwell\u003c/span\u003e\u003c/a\u003e. His 1933 debut book (ostensibly a novel, but overwhelmingly autobiographical) was rejected by that elitist publisher T. S. Eliot, perhaps because its close-up portrait of lowlife was too pungent for comfort. \u003c/p\u003e\n\u003cp\u003eIn Paris, Orwell lived in verminous rooms and washed dishes at the overpriced \"Hotel X,\" in a remarkably filthy, 110-degree kitchen. He met \"eccentric people \u2013 people who have fallen into solitary, half-mad grooves of life and given up trying to be normal or decent.\" Though Orwell\u0027s tone is that of an outraged reformer, it\u0027s surprising how entertaining many of his adventures are: gnawing poverty only enlivens the imagination, and the wild characters he met often swindled each other and themselves. The wackiest tale involves a miser who ate cats, wore newspapers for underwear, invested 6,000 francs in cocaine, and hid it in a face-powder tin when the cops raided. They had to free him, because the apparently controlled substance turned out to be face powder instead of cocaine. \u003c/p\u003e\n\u003cp\u003eIn London, Orwell studied begging with a crippled expert named Bozo, a great storyteller and philosopher. Orwell devotes a chapter to the fine points of London guttersnipe slang. Years later, he would put his lexical bent to work by inventing Newspeak, and draw on his down-and-out experience to evoke the plight of the Proles in \u003cem\u003e1984\u003c/em\u003e. Though marred by hints of unexamined anti-Semitism, Orwell\u0027s debut remains, as \u003cem\u003eThe Nation\u003c/em\u003e put it, \"the most lucid portrait of poverty in the English language.\" \u003cem\u003e--Tim Appelo\u003c/em\u003e\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 159, "identifier_ids": "483,484,481,482", "identifiers": [{"book": 159, "id": 482, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780156262248", "sort": "isbn", "type": "isbn", "val": "9780156262248"}, {"book": 159, "id": 481, "name": "Google Books", "path": "https://books.google.com/books?id=m5vIVN7LjtgC", "sort": "google", "type": "google", "val": "m5vIVN7LjtgC"}, {"book": 159, "id": 484, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/34304872", "sort": "goodreads", "type": "goodreads", "val": "34304872"}, {"book": 159, "id": 483, "name": "Amazon", "path": "https://amazon.com/dp/015626224X", "sort": "amazon", "type": "amazon", "val": "015626224X"}], "isbn": "9780156262248", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:35:53.313990+00:00", "path": "George Orwell/Down and Out in Paris and London (159)", "pubdate": "1933-01-01", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 690052, "tag_ids": "57,60,90,92,153", "tags": [{"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-06 09:35:53.313990+00:00", "title": "Down and Out in Paris and London"}, {"author_ids": "166", "authors": [{"avg_rating": 8.0, "count": 1, "id": 166, "name": "John Kennedy Toole", "sort": "Toole, John Kennedy"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eReleased by Louisiana State University Press in 1980, A Confederacy of Dunces is nothing short of a publishing phenomenon. Rejected by countless publishers and submitted by the author\u0027s mother years after his suicide, the book won the 1981 Pulitzer Prize for Fiction. Today there are almost two million copies in print worldwide in eighteen languages. Now, for the first time, John Kennedy Toole\u0027s comic masterpiece is available in a large print edition. Toole\u0027s lunatic and sage novel introduces one of the most memorable characters in American literature, Ignatius Reilly, whom Walker Percy dubs \"slob extraordinaire, a mad Oliver Hardy, a fat Don Quixote, a perverse Thomas Aquinas rolled into one.\" Set in New Orleans, A Confederacy of Dunces outswifts Swift, one of whose essays gives the book its title. As its characters burst into life, they leave the region and literature forever changed by their presence -- Ignatius and his mother; Miss Trixie, the octogenarian assistant accountant at Levi Pants; inept, wan Patrolman Mancuso; Darlene, the Bourbon Street stripper with a penchant for poultry; Jones the jivecat in spaceage dark glasses. \u003c/p\u003e\n\u003cp\u003eIncluded here is the introduction that writer and New Orleans resident Andrei Codrescu composed for the book\u0027s twentieth anniversary. Set in oversized type for ease in reading, the large print edition will gratify both first-timers seeking to discover this modern-day classic and longtime afficionados wishing to reread a favorite novel.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 157, "identifier_ids": "478,477,480,479", "identifiers": [{"book": 157, "id": 479, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780807130087", "sort": "isbn", "type": "isbn", "val": "9780807130087"}, {"book": 157, "id": 480, "name": "Google Books", "path": "https://books.google.com/books?id=WM6OztAsYWQC", "sort": "google", "type": "google", "val": "WM6OztAsYWQC"}, {"book": 157, "id": 477, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/24921", "sort": "goodreads", "type": "goodreads", "val": "24921"}, {"book": 157, "id": 478, "name": "Amazon", "path": "https://amazon.com/dp/0802130208", "sort": "amazon", "type": "amazon", "val": "0802130208"}], "isbn": "9780807130087", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:34:19.501438+00:00", "path": "John Kennedy Toole/A Confederacy of Dunces (157)", "pubdate": "1994-04-01", "publisher_ids": "104", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 104, "name": "LSU Press", "sort": "LSU Press"}], "rating": 4, "series": [], "series_ids": null, "size": 572097, "tag_ids": "42,49,153,154", "tags": [{"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 1, "id": 154, "name": "Unread", "sort": 1}], "timestamp": "2022-10-06 09:34:19.501438+00:00", "title": "A Confederacy of Dunces"}, {"author_ids": "162", "authors": [{"avg_rating": 8.0, "count": 1, "id": 162, "name": "Jan Wolkers", "sort": "Wolkers, Jan"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTurks Fruit, het hartverscheurende verhaal van de gepassioneerde maar onmogelijke liefde tussen Olga en beeldhouwer Eric, verscheen oorspronkelijk in 1969 en bracht een schok teweeg in de Nederlandse letteren. Niet alleen werden liefde, seks en dood tot zo\u0027n pulserend en vitaal geheel gesmeed. De verfilming van Turks Fruit door Paul Verhoeven, met in de hoofdrollen Rutger Hauer en Monique van der Ven, werd uitgeroepen tot de beste Hollandse speelfilm ooit en kreeg in 1974 een oscarnominatie.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 151, "identifier_ids": "431,432", "identifiers": [{"book": 151, "id": 432, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789460921278", "sort": "isbn", "type": "isbn", "val": "9789460921278"}, {"book": 151, "id": 431, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/16016510", "sort": "goodreads", "type": "goodreads", "val": "16016510"}], "isbn": "9789460921278", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 18:16:56.394839+00:00", "path": "Jan Wolkers/Turks fruit (151)", "pubdate": "1969-01-01", "publisher_ids": "99", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 99, "name": "J.M. Meulenhoff", "sort": "J.M. Meulenhoff"}], "rating": 4, "series": [], "series_ids": null, "size": 207355, "tag_ids": "18,50,153", "tags": [{"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}], "timestamp": "2022-10-05 18:16:56.394839+00:00", "title": "Turks fruit"}])'></div>
          </div>
       </div>
    </div>

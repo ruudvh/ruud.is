@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -451,6 +821,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -628,6 +999,12 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/18.html">
+                                Romance
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/153.html">
                                 Classics
                             </a>
@@ -636,12 +1013,6 @@
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/214.html">
                                 Gutenberg
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/18.html">
-                                Romance
                             </a>
                           
                             <a 
@@ -721,6 +1092,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -787,6 +1162,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1043,6 +1419,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1109,6 +1489,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1389,6 +1770,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1457,6 +1842,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1711,6 +2097,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1777,6 +2167,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2029,6 +2420,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2095,6 +2490,7 @@
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2343,7 +2739,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "243", "authors": [{"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConsidered by some to be the greatest novel ever written, Anna Karenina is Tolstoy\u0027s classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 291, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 159, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 208, "identifier_ids": "751,752,750", "identifiers": [{"book": 208, "id": 750, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679783305", "sort": "isbn", "type": "isbn", "val": "9780679783305"}, {"book": 208, "id": 752, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/1399", "sort": "gutenberg", "type": "gutenberg", "val": "1399"}, {"book": 208, "id": 751, "name": "Google Books", "path": "https://books.google.com/books?id=yBJShX4BLVYC", "sort": "google", "type": "google", "val": "yBJShX4BLVYC"}], "isbn": "9780679783305", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.688127+00:00", "path": "Leo Tolstoy/Anna Karenina (208)", "pubdate": "2000-10-10", "publisher_ids": "133", "publishers": [{"avg_rating": null, "count": 1, "id": 133, "name": "Random House Publishing Group", "sort": "Random House Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 3845227, "tag_ids": "4,18,148,152,153,210,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 6, "id": 18, "name": "Romance", "sort": 6}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 1, "id": 210, "name": "Victorian", "sort": 1}], "timestamp": "2022-10-10 14:39:36.688127+00:00", "title": "Anna Karenina"}, {"author_ids": "245", "authors": [{"avg_rating": null, "count": 1, "id": 245, "name": "Vladimir Vladimirovich Nabokov", "sort": "Nabokov, Vladimir Vladimirovich"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen it was published in 1955, Lolita immediately became a cause c\u00e9l\u00e8bre because of the freedom and sophistication with which it handled the unusual erotic predilections of its protagonist. But Vladimir Nabokov\u0027s wise, ironic, elegant masterpiece owes its stature as one of the twentieth century\u0027s novels of record not to the controversy its material aroused but to its author\u0027s use of that material to tell a love story almost shocking in its beauty and tenderness. Awe and exhilaration\u2013along with heartbreak and mordant wit\u2013abound in this account of the aging Humbert Humbert\u0027s obsessive, devouring, and doomed passion for the nymphet Dolores Haze. Lolita is also the story of a hypercivilized European colliding with the cheerful barbarism of postwar America, but most of all, it is a meditation on love\u2013love as outrage and hallucination, madness and transformation. With an introduction by Martin Amis. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 292, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 158, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 207, "identifier_ids": "734,733", "identifiers": [{"book": 207, "id": 733, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679410430", "sort": "isbn", "type": "isbn", "val": "9780679410430"}, {"book": 207, "id": 734, "name": "Google Books", "path": "https://books.google.com/books?id=Sy7uAAAAMAAJ", "sort": "google", "type": "google", "val": "Sy7uAAAAMAAJ"}], "isbn": "9780679410430", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.553487+00:00", "path": "Vladimir Vladimirovich Nabokov/Lolita (207)", "pubdate": "1992-10-15", "publisher_ids": "128", "publishers": [{"avg_rating": null, "count": 1, "id": 128, "name": "Knopf", "sort": "Knopf"}], "rating": null, "series": [], "series_ids": null, "size": 1084575, "tag_ids": "4,151,152,153,176,203", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 4, "id": 176, "name": "General", "sort": 4}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}, {"avg_rating": null, "count": 1, "id": 203, "name": "Erotica", "sort": 1}], "timestamp": "2022-10-10 14:39:36.553487+00:00", "title": "Lolita"}, {"author_ids": "239", "authors": [{"avg_rating": 9.0, "count": 1, "id": 239, "name": "Marcel Proust", "sort": "Proust, Marcel"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRecognized as one of the major literary works of the twentieth-century, Marcel Proust\u0027s monumental seven-volume novel brings together memories of childhood and Parisian society before and during the First World War.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 294, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 156, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 205, "identifier_ids": "757,758", "identifiers": [{"book": 205, "id": 758, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/797309", "sort": "goodreads", "type": "goodreads", "val": "797309"}, {"book": 205, "id": 757, "name": "Amazon", "path": "https://amazon.com/dp/B00EBNZJ5I", "sort": "amazon", "type": "amazon", "val": "B00EBNZJ5I"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.254288+00:00", "path": "Marcel Proust/Remembrance of Things Past (205)", "pubdate": "2013-07-18", "publisher_ids": "126", "publishers": [{"avg_rating": 9.0, "count": 1, "id": 126, "name": "Faber \u0026 Faber Plays", "sort": "Faber \u0026 Faber Plays"}], "rating": 4, "series": [], "series_ids": null, "size": 2838553, "tag_ids": "152,153,184,196,197,198,199,200,201,202", "tags": [{"avg_rating": 7.954545454545454, "count": 23, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 23}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 9.0, "count": 1, "id": 196, "name": "Graphic Novels", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 197, "name": "Literature \u0026 Fiction", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 198, "name": "Dramas \u0026 Plays", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 199, "name": "British \u0026 Irish", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 200, "name": "Arts \u0026 Photography", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 201, "name": "Theater", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 202, "name": "Drama \u0026 Plays", "sort": 1}], "timestamp": "2022-10-10 14:39:36.254288+00:00", "title": "Remembrance of Things Past"}, {"author_ids": "238", "authors": [{"avg_rating": null, "count": 1, "id": 238, "name": "George Eliot", "sort": "Eliot, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA sprawling work set in a provincial English town, Middlemarch boasts a large cast of characters whose stories interweave against a backdrop of political upheaval. \u003c/p\u003e\n\u003cp\u003eInstead of choosing to wed a wealthy landowner and settle for a comfortable life, Dorothea Brooke decides to marry Edward Casaubon\u2014a dull scholar who is her senior by a few decades. Dorothea hopes the union will afford her with the opportunity to share in her husband\u2019s intellectual pursuits, but even her best efforts can\u2019t save the disastrous marriage. Meanwhile, idealistic doctor Tertius Lydgate has progressive ideas about the medical field, and he believes the village of Middlemarch is the place that will embrace his beliefs. But when he weds Rosamond Vincy, the mayor\u2019s beautiful daughter, his ideals come into stark contrast with his new bride\u2019s materialism and vanity, dooming their marriage from the start. \u003c/p\u003e\n\u003cp\u003eLastly, Rosamond\u0027s brother, Fred, is reluctantly destined for the Church. But his childhood sweetheart Mary Garth refuses to accept him until he settles into a more suitable career and one that interests him. But when circumstances lead to Fred losing a sizeable fortune that sets off a calamitous turn of events, he must reevaluate the choices he has made. \u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 295, "value": 1}], "custom_lists": [{"id": 6, "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "value": "Gutenberg Collection"}], "custom_read_date": [], "custom_reading_list": [{"id": 155, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 204, "identifier_ids": "759,760,761", "identifiers": [{"book": 204, "id": 761, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062356147", "sort": "isbn", "type": "isbn", "val": "9780062356147"}, {"book": 204, "id": 760, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/145", "sort": "gutenberg", "type": "gutenberg", "val": "145"}, {"book": 204, "id": 759, "name": "Google Books", "path": "https://books.google.com/books?id=WhrEsgEACAAJ", "sort": "google", "type": "google", "val": "WhrEsgEACAAJ"}], "isbn": "9780062356147", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.112665+00:00", "path": "George Eliot/Middlemarch (204)", "pubdate": "2015-11-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [], "series_ids": null, "size": 6332096, "tag_ids": "4,152,153,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}], "timestamp": "2022-10-10 14:39:36.112665+00:00", "title": "Middlemarch"}, {"author_ids": "172", "authors": [{"avg_rating": 8.0, "count": 1, "id": 172, "name": "David Foster Wallace", "sort": "Wallace, David Foster"}], "comments": "\u003cp\u003e\u003cem\u003eInfinite Jest\u003c/em\u003e is the name of a movie said to be so entertaining that anyone who watches it loses all desire to do anything but watch. People die happily, viewing it in endless repetition. The novel \u003cem\u003eInfinite Jest\u003c/em\u003e is the story of this addictive entertainment, and in particular how it affects a Boston halfway house for recovering addicts and a nearby tennis academy, whose students have many budding addictions of their own. As the novel unfolds, various individuals, organisations, and governments vie to obtain the master copy of Infinite Jest for their own ends, and the denizens of the tennis school and halfway house are caught up in increasingly desperate efforts to control the movie\u2014as is a cast including burglars, transvestite muggers, scam artists, medical professionals, pro football stars, bookies, drug addicts both active and recovering, film students, political assassins, and one of the most endearingly messed-up families ever captured in a novel.  \u003c/p\u003e\n\u003cp\u003eOn this outrageous frame hangs an exploration of essential questions about what entertainment is, and why it has come to so dominate our lives; about how our desire for entertainment interacts with our need to connect with other humans; and about what the pleasures we choose say about who we are. Equal parts philosophical quest and screwball comedy, Infinite Jest bends every rule of fiction without sacrificing for a moment its own entertainment value. The huge cast and multilevel narrative serve a story that accelerates to a breathtaking, heartbreaking, unfogettable conclusion. It is an exuberant, uniquely American exploration of the passions that make us human and one of those rare books that renew the very idea of what a novel can do.\u003c/p\u003e", "custom_clean": [{"id": 222, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 118, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 167, "identifier_ids": "511,510,512", "identifiers": [{"book": 167, "id": 512, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780316066525", "sort": "isbn", "type": "isbn", "val": "9780316066525"}, {"book": 167, "id": 510, "name": "Google Books", "path": "https://books.google.com/books?id=G1mXngEACAAJ", "sort": "google", "type": "google", "val": "G1mXngEACAAJ"}, {"book": 167, "id": 511, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/75786", "sort": "goodreads", "type": "goodreads", "val": "75786"}], "isbn": "9780316066525", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:29.483057+00:00", "path": "David Foster Wallace/Infinite Jest (167)", "pubdate": "1996-02-01", "publisher_ids": "68", "publishers": [{"avg_rating": 8.5, "count": 4, "id": 68, "name": "Little, Brown and Company", "sort": "Little, Brown and Company"}], "rating": 4, "series": [], "series_ids": null, "size": 1526106, "tag_ids": "4,152,163,176", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 4, "id": 176, "name": "General", "sort": 4}, {"avg_rating": 8.0, "count": 1, "id": 163, "name": "Literature", "sort": 1}], "timestamp": "2022-10-06 09:40:29.483057+00:00", "title": "Infinite Jest"}, {"author_ids": "160", "authors": [{"avg_rating": null, "count": 1, "id": 160, "name": "Amor Towles", "sort": "Towles, Amor"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\u0027s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden\u0027s car. Together, they have hatched an altogether different plan for Emmett\u0027s future, one that will take them all on a fateful journey in the opposite direction\u2014to the City of New York. Spanning just ten days and told from multiple points of view, Towles\u0027s third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 145, "value": 1}], "custom_lists": [{"id": 5, "value": "Must Read.2021 Time"}], "custom_read_date": [], "custom_reading_list": [{"id": 67, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 118, "identifier_ids": "423,424", "identifiers": [{"book": 118, "id": 424, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780735222373", "sort": "isbn", "type": "isbn", "val": "9780735222373"}, {"book": 118, "id": 423, "name": "Google Books", "path": "https://books.google.com/books?id=Kn4eEAAAQBAJ", "sort": "google", "type": "google", "val": "Kn4eEAAAQBAJ"}], "isbn": "9780735222373", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.426067+00:00", "path": "Amor Towles/The Lincoln Highway_ A Novel (118)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 6630557, "tag_ids": "4,148,151,152,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}], "timestamp": "2022-10-05 15:54:05.426067+00:00", "title": "The Lincoln Highway: A Novel"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "243", "authors": [{"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConsidered by some to be the greatest novel ever written, Anna Karenina is Tolstoy\u0027s classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 208, "identifier_ids": "751,752,750", "identifiers": [{"book": 208, "id": 750, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679783305", "sort": "isbn", "type": "isbn", "val": "9780679783305"}, {"book": 208, "id": 752, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/1399", "sort": "gutenberg", "type": "gutenberg", "val": "1399"}, {"book": 208, "id": 751, "name": "Google Books", "path": "https://books.google.com/books?id=yBJShX4BLVYC", "sort": "google", "type": "google", "val": "yBJShX4BLVYC"}], "isbn": "9780679783305", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.688127+00:00", "path": "Leo Tolstoy/Anna Karenina (208)", "pubdate": "2000-10-10", "publisher_ids": "133", "publishers": [{"avg_rating": null, "count": 1, "id": 133, "name": "Random House Publishing Group", "sort": "Random House Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 3845227, "tag_ids": "4,18,148,152,153,210,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 1, "id": 210, "name": "Victorian", "sort": 1}], "timestamp": "2022-10-10 14:39:36.688127+00:00", "title": "Anna Karenina"}, {"author_ids": "245", "authors": [{"avg_rating": null, "count": 1, "id": 245, "name": "Vladimir Vladimirovich Nabokov", "sort": "Nabokov, Vladimir Vladimirovich"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen it was published in 1955, Lolita immediately became a cause c\u00e9l\u00e8bre because of the freedom and sophistication with which it handled the unusual erotic predilections of its protagonist. But Vladimir Nabokov\u0027s wise, ironic, elegant masterpiece owes its stature as one of the twentieth century\u0027s novels of record not to the controversy its material aroused but to its author\u0027s use of that material to tell a love story almost shocking in its beauty and tenderness. Awe and exhilaration\u2013along with heartbreak and mordant wit\u2013abound in this account of the aging Humbert Humbert\u0027s obsessive, devouring, and doomed passion for the nymphet Dolores Haze. Lolita is also the story of a hypercivilized European colliding with the cheerful barbarism of postwar America, but most of all, it is a meditation on love\u2013love as outrage and hallucination, madness and transformation. With an introduction by Martin Amis. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}], "custom_lists_ids": "6", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 207, "identifier_ids": "734,733", "identifiers": [{"book": 207, "id": 733, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679410430", "sort": "isbn", "type": "isbn", "val": "9780679410430"}, {"book": 207, "id": 734, "name": "Google Books", "path": "https://books.google.com/books?id=Sy7uAAAAMAAJ", "sort": "google", "type": "google", "val": "Sy7uAAAAMAAJ"}], "isbn": "9780679410430", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.553487+00:00", "path": "Vladimir Vladimirovich Nabokov/Lolita (207)", "pubdate": "1992-10-15", "publisher_ids": "128", "publishers": [{"avg_rating": null, "count": 1, "id": 128, "name": "Knopf", "sort": "Knopf"}], "rating": null, "series": [], "series_ids": null, "size": 1084575, "tag_ids": "4,151,152,153,176,203", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.5, "count": 5, "id": 176, "name": "General", "sort": 5}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}, {"avg_rating": null, "count": 1, "id": 203, "name": "Erotica", "sort": 1}], "timestamp": "2022-10-10 14:39:36.553487+00:00", "title": "Lolita"}, {"author_ids": "239", "authors": [{"avg_rating": 9.0, "count": 1, "id": 239, "name": "Marcel Proust", "sort": "Proust, Marcel"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRecognized as one of the major literary works of the twentieth-century, Marcel Proust\u0027s monumental seven-volume novel brings together memories of childhood and Parisian society before and during the First World War.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}], "custom_lists_ids": "6", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 205, "identifier_ids": "757,758", "identifiers": [{"book": 205, "id": 758, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/797309", "sort": "goodreads", "type": "goodreads", "val": "797309"}, {"book": 205, "id": 757, "name": "Amazon", "path": "https://amazon.com/dp/B00EBNZJ5I", "sort": "amazon", "type": "amazon", "val": "B00EBNZJ5I"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.254288+00:00", "path": "Marcel Proust/Remembrance of Things Past (205)", "pubdate": "2013-07-18", "publisher_ids": "126", "publishers": [{"avg_rating": 9.0, "count": 1, "id": 126, "name": "Faber \u0026 Faber Plays", "sort": "Faber \u0026 Faber Plays"}], "rating": 4, "series": [], "series_ids": null, "size": 2838553, "tag_ids": "152,153,184,196,197,198,199,200,201,202", "tags": [{"avg_rating": 8.428571428571429, "count": 36, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 36}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 9.0, "count": 1, "id": 196, "name": "Graphic Novels", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 197, "name": "Literature \u0026 Fiction", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 198, "name": "Dramas \u0026 Plays", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 199, "name": "British \u0026 Irish", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 200, "name": "Arts \u0026 Photography", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 201, "name": "Theater", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 202, "name": "Drama \u0026 Plays", "sort": 1}], "timestamp": "2022-10-10 14:39:36.254288+00:00", "title": "Remembrance of Things Past"}, {"author_ids": "238", "authors": [{"avg_rating": null, "count": 1, "id": 238, "name": "George Eliot", "sort": "Eliot, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA sprawling work set in a provincial English town, Middlemarch boasts a large cast of characters whose stories interweave against a backdrop of political upheaval. \u003c/p\u003e\n\u003cp\u003eInstead of choosing to wed a wealthy landowner and settle for a comfortable life, Dorothea Brooke decides to marry Edward Casaubon\u2014a dull scholar who is her senior by a few decades. Dorothea hopes the union will afford her with the opportunity to share in her husband\u2019s intellectual pursuits, but even her best efforts can\u2019t save the disastrous marriage. Meanwhile, idealistic doctor Tertius Lydgate has progressive ideas about the medical field, and he believes the village of Middlemarch is the place that will embrace his beliefs. But when he weds Rosamond Vincy, the mayor\u2019s beautiful daughter, his ideals come into stark contrast with his new bride\u2019s materialism and vanity, dooming their marriage from the start. \u003c/p\u003e\n\u003cp\u003eLastly, Rosamond\u0027s brother, Fred, is reluctantly destined for the Church. But his childhood sweetheart Mary Garth refuses to accept him until he settles into a more suitable career and one that interests him. But when circumstances lead to Fred losing a sizeable fortune that sets off a calamitous turn of events, he must reevaluate the choices he has made. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 204, "identifier_ids": "759,760,761", "identifiers": [{"book": 204, "id": 761, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062356147", "sort": "isbn", "type": "isbn", "val": "9780062356147"}, {"book": 204, "id": 760, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/145", "sort": "gutenberg", "type": "gutenberg", "val": "145"}, {"book": 204, "id": 759, "name": "Google Books", "path": "https://books.google.com/books?id=WhrEsgEACAAJ", "sort": "google", "type": "google", "val": "WhrEsgEACAAJ"}], "isbn": "9780062356147", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.112665+00:00", "path": "George Eliot/Middlemarch (204)", "pubdate": "2015-11-17", "publisher_ids": "32", "publishers": [{"avg_rating": 8.0, "count": 5, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [], "series_ids": null, "size": 6332096, "tag_ids": "4,152,153,214", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}], "timestamp": "2022-10-10 14:39:36.112665+00:00", "title": "Middlemarch"}, {"author_ids": "172", "authors": [{"avg_rating": 8.0, "count": 1, "id": 172, "name": "David Foster Wallace", "sort": "Wallace, David Foster"}], "comments": "\u003cp\u003e\u003cem\u003eInfinite Jest\u003c/em\u003e is the name of a movie said to be so entertaining that anyone who watches it loses all desire to do anything but watch. People die happily, viewing it in endless repetition. The novel \u003cem\u003eInfinite Jest\u003c/em\u003e is the story of this addictive entertainment, and in particular how it affects a Boston halfway house for recovering addicts and a nearby tennis academy, whose students have many budding addictions of their own. As the novel unfolds, various individuals, organisations, and governments vie to obtain the master copy of Infinite Jest for their own ends, and the denizens of the tennis school and halfway house are caught up in increasingly desperate efforts to control the movie\u2014as is a cast including burglars, transvestite muggers, scam artists, medical professionals, pro football stars, bookies, drug addicts both active and recovering, film students, political assassins, and one of the most endearingly messed-up families ever captured in a novel.  \u003c/p\u003e\n\u003cp\u003eOn this outrageous frame hangs an exploration of essential questions about what entertainment is, and why it has come to so dominate our lives; about how our desire for entertainment interacts with our need to connect with other humans; and about what the pleasures we choose say about who we are. Equal parts philosophical quest and screwball comedy, Infinite Jest bends every rule of fiction without sacrificing for a moment its own entertainment value. The huge cast and multilevel narrative serve a story that accelerates to a breathtaking, heartbreaking, unfogettable conclusion. It is an exuberant, uniquely American exploration of the passions that make us human and one of those rare books that renew the very idea of what a novel can do.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 167, "identifier_ids": "511,510,512", "identifiers": [{"book": 167, "id": 512, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780316066525", "sort": "isbn", "type": "isbn", "val": "9780316066525"}, {"book": 167, "id": 510, "name": "Google Books", "path": "https://books.google.com/books?id=G1mXngEACAAJ", "sort": "google", "type": "google", "val": "G1mXngEACAAJ"}, {"book": 167, "id": 511, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/75786", "sort": "goodreads", "type": "goodreads", "val": "75786"}], "isbn": "9780316066525", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:29.483057+00:00", "path": "David Foster Wallace/Infinite Jest (167)", "pubdate": "1996-02-01", "publisher_ids": "68", "publishers": [{"avg_rating": 8.5, "count": 4, "id": 68, "name": "Little, Brown and Company", "sort": "Little, Brown and Company"}], "rating": 4, "series": [], "series_ids": null, "size": 1526106, "tag_ids": "4,152,163,176", "tags": [{"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.5, "count": 5, "id": 176, "name": "General", "sort": 5}, {"avg_rating": 8.0, "count": 1, "id": 163, "name": "Literature", "sort": 1}], "timestamp": "2022-10-06 09:40:29.483057+00:00", "title": "Infinite Jest"}, {"author_ids": "160", "authors": [{"avg_rating": null, "count": 1, "id": 160, "name": "Amor Towles", "sort": "Towles, Amor"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\u0027s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden\u0027s car. Together, they have hatched an altogether different plan for Emmett\u0027s future, one that will take them all on a fateful journey in the opposite direction\u2014to the City of New York. Spanning just ten days and told from multiple points of view, Towles\u0027s third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 118, "identifier_ids": "423,424", "identifiers": [{"book": 118, "id": 424, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780735222373", "sort": "isbn", "type": "isbn", "val": "9780735222373"}, {"book": 118, "id": 423, "name": "Google Books", "path": "https://books.google.com/books?id=Kn4eEAAAQBAJ", "sort": "google", "type": "google", "val": "Kn4eEAAAQBAJ"}], "isbn": "9780735222373", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.426067+00:00", "path": "Amor Towles/The Lincoln Highway_ A Novel (118)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 6630557, "tag_ids": "4,148,151,152,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}], "timestamp": "2022-10-05 15:54:05.426067+00:00", "title": "The Lincoln Highway: A Novel"}])'></div>
          </div>
       </div>
    </div>

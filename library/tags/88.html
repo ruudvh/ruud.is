@@ -83,7 +83,7 @@
 
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
-              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-auto lg:w-50 shrink-0">
+              <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter font-medium">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
@@ -201,6 +201,189 @@
       </a>
   </li>
   
+</ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
 </ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
@@ -334,6 +517,189 @@
   </li>
   
 </ul>
+
+<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
+
+<ul class="space-y-1 font-inter font-medium">
+  <li>
+    <div
+      tabindex="0"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <a href="/library/list-7.html">
+        <span>Gutenberg Collection</span>
+      </a>
+    </div>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Machine Learning</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-3.html">
+            <span>Deep Learning</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:false}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Must Read</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-5.html">
+            <span>2021 Time.com</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-6.html">
+            <span>10 Greatest Books of All Time</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li x-data="{expanded:true}">
+    <div
+      tabindex="0"
+      :class="expanded && 'text-slate-800 dark:text-navy-100'"
+      @click="expanded = !expanded"
+      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+    >
+      <button
+        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-4.5 w-4.5 transition-transform"
+          :class="expanded && 'rotate-90'"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <span>Programming</span>
+    </div>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li x-data="{expanded:true}">
+        <div
+          tabindex="0"
+          :class="expanded && 'text-slate-800 dark:text-navy-100'"
+          @click="expanded = !expanded"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <button
+            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4.5 w-4.5 transition-transform"
+              :class="expanded && 'rotate-90'"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <span>Elixir</span>
+        </div>
+        <ul x-show="expanded" x-collapse class="pl-4">
+          <li>
+            <div
+              tabindex="0"
+              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+            >
+              <a href="/library/list-2.html">
+                <span>Phoenix</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul x-show="expanded" x-collapse class="pl-4">
+      <li>
+        <div
+          tabindex="0"
+          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
+        >
+          <a href="/library/list-1.html">
+            <span>Python</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
                     </nav>
                   </div>
                 </div>
@@ -378,6 +744,10 @@
             
                
                   
+  
+
+
+
   
 
 
@@ -451,6 +821,16 @@
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -739,6 +1119,10 @@
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -808,6 +1192,16 @@ Kinderboek
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1095,6 +1489,10 @@ Kinderboek
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1161,6 +1559,16 @@ Kinderboek
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1441,6 +1849,10 @@ Kinderboek
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1507,6 +1919,16 @@ Kinderboek
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -1779,6 +2201,10 @@ Kinderboek
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -1848,6 +2274,16 @@ Kinderboek
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2123,6 +2559,10 @@ Kinderboek
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2190,6 +2630,16 @@ Kinderboek
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2475,6 +2925,10 @@ Kinderboek
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2541,6 +2995,16 @@ Kinderboek
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -2829,6 +3293,10 @@ Kinderboek
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -2895,6 +3363,16 @@ Kinderboek
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3183,6 +3661,10 @@ Kinderboek
   
 
 
+
+  
+
+
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
@@ -3251,6 +3733,7 @@ Kinderboek
             </div>
 
             <div class="mt-4">
+              
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
                 @click="showModal = true"
@@ -3497,7 +3980,7 @@ Kinderboek
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDe zomervakantie is voorbij, maar Harry Potter keert dit jaar niet terug naar Zweinstein. Hij staat voor de gevaarlijke en haast onmogelijke opdracht van Perkamentus: de overgebleven Gruzielementen opsporen en vernietigen. Zal hem dat lukken?\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 95, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 6, "value": "2020-10-06"}], "custom_reading_list": [{"id": 31, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 110, "identifier_ids": "637,635,636,638,634", "identifiers": [{"book": 110, "id": 634, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103524", "sort": "isbn", "type": "isbn", "val": "9781781103524"}, {"book": 110, "id": 638, "name": "Google Books", "path": "https://books.google.com/books?id=XjYQCwAAQBAJ", "sort": "google", "type": "google", "val": "XjYQCwAAQBAJ"}, {"book": 110, "id": 636, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446"}, {"book": 110, "id": 635, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061698324", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061698324"}, {"book": 110, "id": 637, "name": "Amazon", "path": "https://amazon.com/dp/9061698324", "sort": "amazon", "type": "amazon", "val": "9061698324"}], "isbn": "9781781103524", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:13.396044+00:00", "path": "J.K. Rowling/Harry Potter en De Relieken Van De (110)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 939052, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:13.396044+00:00", "title": "Harry Potter en De Relieken Van De Dood"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eNa een verschrikkelijke vakantie bij zijn gemene oom en tante gaat Harry Potter naar de tweede klas van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Het blijkt echter een hele heksentoer te zijn om daar te komen, zodat Harry en zijn vriend Ron ten slotte in een vliegende auto naar school gaan.\u003c/p\u003e\n\u003cp\u003eNa alle avonturen van het eerste schooljaar denkt Harry zich rustig aan zijn lessen Toverdranken, Verweer tegen de Zwarte Kunsten en zijn favoriete sport Zwerkbal te kunnen wijden, maar niets blijkt minder waar. Een mysterieuze stem roept hem, er vinden aanslagen plaats en Harry ontdekt een wel heel bijzonder dagboek.\u003c/p\u003e\u003c/div\u003e\n\nKinderboek", "custom_clean": [{"id": 91, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 2, "value": "2020-10-06"}], "custom_reading_list": [{"id": 30, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 109, "identifier_ids": "617,616,612,613,615,614", "identifiers": [{"book": 109, "id": 614, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103470", "sort": "isbn", "type": "isbn", "val": "9781781103470"}, {"book": 109, "id": 615, "name": "Google Books", "path": "https://books.google.com/books?id=8jYQCwAAQBAJ", "sort": "google", "type": "google", "val": "8jYQCwAAQBAJ"}, {"book": 109, "id": 613, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/2954426", "sort": "goodreads", "type": "goodreads", "val": "2954426"}, {"book": 109, "id": 612, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-geheime-kamer-j-k-rowling/1116540441", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-geheime-kamer-j-k-rowling/1116540441"}, {"book": 109, "id": 616, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174113", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174113"}, {"book": 109, "id": 617, "name": "Amazon", "path": "https://amazon.com/dp/9076174113", "sort": "amazon", "type": "amazon", "val": "9076174113"}], "isbn": "9781781103470", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:12.049645+00:00", "path": "J.K. Rowling/Harry Potter en De Geheime Kamer (109)", "pubdate": "1998-07-02", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": 4, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 67386199, "tag_ids": "75,76,84,88,109", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": 38}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": 9.0, "count": 2, "id": 109, "name": "Childrens", "sort": 2}], "timestamp": "2022-10-05 15:11:12.049645+00:00", "title": "Harry Potter en De Geheime Kamer"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry kan niet wachten tot hij terug mag naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus, om aan zijn vierde schooljaar te beginnen. Maar voor het zover is, wordt hij door de familie Wemel op spectaculaire wijze bij de Duffelingen opgehaald, om mee te gaan naar de finale van het WK Zwerkbal! Harry weet dan nog niet dat er dat jaar op Zweinstein een nog groter en spannender evenement zal plaatsvinden. Ondanks alle opwinding en magische gebeurtenissen, probeert hij zich toch op zijn lessen te concentreren. Ondertussen zijn er allerlei tekenen die er op wijzen dat Voldemort, met behulp van Duistere tovenaars, weer aan kracht begint te winnen. De angst dat Hij Die Niet Genoemd Mag Worden opnieuw zal toeslaan, wordt steeds groter...\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 90, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 8, "value": "2020-10-06"}], "custom_reading_list": [{"id": 29, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 108, "identifier_ids": "644,643,645,642", "identifiers": [{"book": 108, "id": 642, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103494", "sort": "isbn", "type": "isbn", "val": "9781781103494"}, {"book": 108, "id": 645, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443"}, {"book": 108, "id": 643, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174202", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174202"}, {"book": 108, "id": 644, "name": "Amazon", "path": "https://amazon.com/dp/9076174202", "sort": "amazon", "type": "amazon", "val": "9076174202"}], "isbn": "9781781103494", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:11.832226+00:00", "path": "J.K. Rowling/Harry Potter en De Vuurbeker (108)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 503870, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:11.832226+00:00", "title": "Harry Potter en De Vuurbeker"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry Potter heeft nog nooit van Zweinstein gehoord als de brieven door de bus van Ligusterlaan 4 worden gegooid. De perkamentachtige enveloppen, beschreven met groene inkt en bestempeld met een paars zegel, worden al snel door zijn nare oom en tante in beslag genomen. Op Harry\u0027s verjaardag krijgt hij echter bezoek van een reus van een man met ogen als zwarte torren. Hij heet Rubeus Hagrid en heeft verbazingwekkend nieuws: Harry Potter is een tovenaar, en er is plek voor hem op Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Er staat hem een ongelooflijk avontuur te wachten!\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 89, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 7, "value": "2020-10-06"}], "custom_reading_list": [{"id": 28, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 107, "identifier_ids": "639,641,640", "identifiers": [{"book": 107, "id": 640, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440"}, {"book": 107, "id": 641, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174105", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174105"}, {"book": 107, "id": 639, "name": "Amazon", "path": "https://amazon.com/dp/9076174105", "sort": "amazon", "type": "amazon", "val": "9076174105"}], "isbn": null, "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:11.432295+00:00", "path": "J.K. Rowling/Harry Potter en De Steen Der Wijzen (107)", "pubdate": "2022-08-02", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 62137172, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:11.432295+00:00", "title": "Harry Potter en De Steen Der Wijzen"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen Harry Potter is left on a doorstep as a baby, he has no idea he is the Boy Who Lived, or that he is famous throughout the wizarding world. Years later, he is astonished to receive an acceptance letter to Hogwarts School of Witchcraft and Wizardry and he is soon whisked off on a magical adventure like no other. Join Harry and his fiercely loyal friends, Hermione and Ron, in this story about the power of truth, love and hope. \u003c/p\u003e\n\u003cp\u003eHaving become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.\u003c/p\u003e\u003c/div\u003e\n\n\u003cp\u003eAnthology containing:\u003c/p\u003eBook 1 by The Philosopher s Stone\u003cbr/\u003eBook 2 by The Chamber of Secrets\u003cbr/\u003eBook 3 by The Prisoner of Azkaban\u003cbr/\u003eBook 4 by The Goblet of Fire\u003cbr/\u003eBook 5 by The Order of The Phoenix\u003cbr/\u003eBook 6 by The Half Blood Prince\u003cbr/\u003eBook 7 by The Deathly Hallows", "custom_clean": [{"id": 96, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 9, "value": "2020-10-06"}], "custom_reading_list": [{"id": 27, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 104, "identifier_ids": "291,290,289", "identifiers": [{"book": 104, "id": 289, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781106464", "sort": "isbn", "type": "isbn", "val": "9781781106464"}, {"book": 104, "id": 290, "name": "Google Books", "path": "https://books.google.com/books?id=f280CwAAQBAJ", "sort": "google", "type": "google", "val": "f280CwAAQBAJ"}, {"book": 104, "id": 291, "name": "Amazon", "path": "https://amazon.com/dp/B01B3DIPMW", "sort": "amazon", "type": "amazon", "val": "B01B3DIPMW"}], "isbn": "9781781106464", "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:10.482834+00:00", "path": "J.K. Rowling/Harry Potter_ The Complete Collecti (104)", "pubdate": "2015-12-14", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 8079964, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:10.482834+00:00", "title": "Harry Potter: The Complete Collection (1-7)"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eVoordat Harry Potter aan zijn derde jaar op Zweinstein kan beginnen, moet hij de zomervakantie doorbrengen bij zijn gemene oom en tante en vervelende neefje Dirk. Door een magisch ongelukje komt hij \u0027s avonds laat opeens op straat te staan. Dan blijkt, dat Sirius Zwarts, een beruchte volgeling van Voldemort, uit de gevangenis van Azkaban is ontsnapt. Hij is op de vlucht en heeft het wellicht op Harry gemunt. \u003c/p\u003e\n\u003cp\u003eEr volgt een enerverend schooljaar met nieuwe vakken als Dreuzelkunde en Zorg voor Fabeldieren, spannende Zwerkbalwedstrijden en griezelige voorspellingen. \u003cbr\u003eDe school wordt bewaakt door Dementors, de gevreesde bewakers van Azkaban en Harry zal zijn lessen Verweer tegen de Zwarte Kunsten hard nodig hebben.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 92, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 3, "value": "2020-10-06"}], "custom_reading_list": [{"id": 26, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 102, "identifier_ids": "619,623,621,620,622,618", "identifiers": [{"book": 102, "id": 618, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789076174143", "sort": "isbn", "type": "isbn", "val": "9789076174143"}, {"book": 102, "id": 622, "name": "Google Books", "path": "https://books.google.com/books?id=D0mLDAEACAAJ", "sort": "google", "type": "google", "val": "D0mLDAEACAAJ"}, {"book": 102, "id": 620, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/871319", "sort": "goodreads", "type": "goodreads", "val": "871319"}, {"book": 102, "id": 621, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-gevangene-van-azkaban-j-k-rowling/1116540442", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-gevangene-van-azkaban-j-k-rowling/1116540442"}, {"book": 102, "id": 623, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174180", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174180"}, {"book": 102, "id": 619, "name": "Amazon", "path": "https://amazon.com/dp/9076174180", "sort": "amazon", "type": "amazon", "val": "9076174180"}], "isbn": "9789076174143", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.928317+00:00", "path": "J.K. Rowling/Harry Potter en De Gevangene Van Az (102)", "pubdate": "1999-07-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": 5, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 685385, "tag_ids": "75,76,84,88,109", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": 38}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": 9.0, "count": 2, "id": 109, "name": "Childrens", "sort": 2}], "timestamp": "2022-10-05 15:11:09.928317+00:00", "title": "Harry Potter en De Gevangene Van Azkaban"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry\u2019s verplichte zomervakantie bij oom Herman en tante Petunia op de Ligusterlaan is dit keer nog erger dan alle voorgaande jaren: niet alleen wordt hij door de Duffelingen weer vreselijk behandeld, ook zijn beste vrienden lijken hem deze zomer totaal te negeren. Harry vindt dat hij iets moet doen, maakt niet uit wat, om zo snel mogelijk te kunnen terugkeren naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Maar dan krijgt de vakantie een onverwacht einde en wordt het zelfs onzeker of Harry nog wel aan zijn vijfde schooljaar op Zweinstein mag beginnen. Vreemde gebeurtenissen stapelen zich op en Harry doet ontdekkingen die het hem onmogelijk maken kalm te blijven...\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 93, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 5, "value": "2020-10-06"}], "custom_reading_list": [{"id": 25, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 101, "identifier_ids": "633,631,629,632,630", "identifiers": [{"book": 101, "id": 630, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103500", "sort": "isbn", "type": "isbn", "val": "9781781103500"}, {"book": 101, "id": 632, "name": "Google Books", "path": "https://books.google.com/books?id=rjgQCwAAQBAJ", "sort": "google", "type": "google", "val": "rjgQCwAAQBAJ"}, {"book": 101, "id": 629, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444"}, {"book": 101, "id": 631, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061697018", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061697018"}, {"book": 101, "id": 633, "name": "Amazon", "path": "https://amazon.com/dp/9061697018", "sort": "amazon", "type": "amazon", "val": "9061697018"}], "isbn": "9781781103500", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.645084+00:00", "path": "J.K. Rowling/Harry Potter en De Orde Van De Feni (101)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 984113, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:09.645084+00:00", "title": "Harry Potter en De Orde Van De Feniks"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHet land wordt geteisterd door vreemde rampen en aanslagen en hoewel het hartje zomer is hangt er een hardnekkige, onheilspellende mist. In de Ligusterlaan zit Harry Potter \u2019s avonds laat ongeduldig op de komst van professor Perkamentus te wachten. Wat kan er er zo belangrijk zijn dat Perkamentus hem bij de Duffelingen op komt zoeken en dat niet wachten kan tot Harry\u2019s terugkeer naar Zweinstein? Zou het iets te maken hebben met de oude profetie die Harry aan het eind van zijn vijfde schooljaar gehoord heeft? Harry\u2019s zesde jaar op Zweinstein begint ongebruikelijk, als Voldemort opnieuw aan kracht wint en de werelden van Dreuzels en tovenaars zich steeds meer met elkaar vermengen...\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 94, "value": 1}], "custom_lists": [], "custom_read_date": [{"id": 4, "value": "2020-10-06"}], "custom_reading_list": [{"id": 24, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 100, "identifier_ids": "627,625,626,628,624", "identifiers": [{"book": 100, "id": 624, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103517", "sort": "isbn", "type": "isbn", "val": "9781781103517"}, {"book": 100, "id": 628, "name": "Google Books", "path": "https://books.google.com/books?id=iTgQCwAAQBAJ", "sort": "google", "type": "google", "val": "iTgQCwAAQBAJ"}, {"book": 100, "id": 626, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445"}, {"book": 100, "id": 625, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061697670", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061697670"}, {"book": 100, "id": 627, "name": "Amazon", "path": "https://amazon.com/dp/9061697670", "sort": "amazon", "type": "amazon", "val": "9061697670"}], "isbn": "9781781103517", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.369809+00:00", "path": "J.K. Rowling/Harry Potter en De Halfbloed Prins (100)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 1009796, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:09.369809+00:00", "title": "Harry Potter en De Halfbloed Prins"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them\u003c/p\u003e\n\u003cp\u003eIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.\u003c/p\u003e\n\u003cp\u003eIn a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.\u003c/p\u003e\u003c/div\u003e", "custom_clean": [{"id": 54, "value": 1}], "custom_lists": [], "custom_read_date": [], "custom_reading_list": [{"id": 56, "value": 0}], "custom_types": [{"id": 1, "value": "eBook"}], "flags": 1, "has_cover": 1, "id": 82, "identifier_ids": "207,208", "identifiers": [{"book": 82, "id": 208, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215351", "sort": "goodreads", "type": "goodreads", "val": "61215351"}, {"book": 82, "id": 207, "name": "Amazon", "path": "https://amazon.com/dp/B007978NPG", "sort": "amazon", "type": "amazon", "val": "B007978NPG"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.172727272727272, "count": 132, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.348740+00:00", "path": "J.R.R. Tolkien/The Fellowship of the Ring (82)", "pubdate": "1954-07-29", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1906471, "tag_ids": "75,76,84,88", "tags": [{"avg_rating": 8.258064516129032, "count": 40, "id": 76, "name": "Fantasy", "sort": 40}, {"avg_rating": 8.176470588235293, "count": 38, "id": 75, "name": "Science Fiction", "sort": 38}, {"avg_rating": 8.461538461538462, "count": 22, "id": 84, "name": "Adventure", "sort": 22}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}], "timestamp": "2022-10-04 19:51:55.348740+00:00", "title": "The Fellowship of the Ring"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDe zomervakantie is voorbij, maar Harry Potter keert dit jaar niet terug naar Zweinstein. Hij staat voor de gevaarlijke en haast onmogelijke opdracht van Perkamentus: de overgebleven Gruzielementen opsporen en vernietigen. Zal hem dat lukken?\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 110, "identifier_ids": "637,635,636,638,634", "identifiers": [{"book": 110, "id": 634, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103524", "sort": "isbn", "type": "isbn", "val": "9781781103524"}, {"book": 110, "id": 638, "name": "Google Books", "path": "https://books.google.com/books?id=XjYQCwAAQBAJ", "sort": "google", "type": "google", "val": "XjYQCwAAQBAJ"}, {"book": 110, "id": 636, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446"}, {"book": 110, "id": 635, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061698324", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061698324"}, {"book": 110, "id": 637, "name": "Amazon", "path": "https://amazon.com/dp/9061698324", "sort": "amazon", "type": "amazon", "val": "9061698324"}], "isbn": "9781781103524", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:13.396044+00:00", "path": "J.K. Rowling/Harry Potter en De Relieken Van De (110)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 939052, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:13.396044+00:00", "title": "Harry Potter en De Relieken Van De Dood"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eNa een verschrikkelijke vakantie bij zijn gemene oom en tante gaat Harry Potter naar de tweede klas van Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Het blijkt echter een hele heksentoer te zijn om daar te komen, zodat Harry en zijn vriend Ron ten slotte in een vliegende auto naar school gaan.\u003c/p\u003e\n\u003cp\u003eNa alle avonturen van het eerste schooljaar denkt Harry zich rustig aan zijn lessen Toverdranken, Verweer tegen de Zwarte Kunsten en zijn favoriete sport Zwerkbal te kunnen wijden, maar niets blijkt minder waar. Een mysterieuze stem roept hem, er vinden aanslagen plaats en Harry ontdekt een wel heel bijzonder dagboek.\u003c/p\u003e\u003c/div\u003e\n\nKinderboek", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 109, "identifier_ids": "617,616,612,613,615,614", "identifiers": [{"book": 109, "id": 614, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103470", "sort": "isbn", "type": "isbn", "val": "9781781103470"}, {"book": 109, "id": 615, "name": "Google Books", "path": "https://books.google.com/books?id=8jYQCwAAQBAJ", "sort": "google", "type": "google", "val": "8jYQCwAAQBAJ"}, {"book": 109, "id": 613, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/2954426", "sort": "goodreads", "type": "goodreads", "val": "2954426"}, {"book": 109, "id": 612, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-geheime-kamer-j-k-rowling/1116540441", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-geheime-kamer-j-k-rowling/1116540441"}, {"book": 109, "id": 616, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174113", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174113"}, {"book": 109, "id": 617, "name": "Amazon", "path": "https://amazon.com/dp/9076174113", "sort": "amazon", "type": "amazon", "val": "9076174113"}], "isbn": "9781781103470", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:12.049645+00:00", "path": "J.K. Rowling/Harry Potter en De Geheime Kamer (109)", "pubdate": "1998-07-02", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": 4, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 67386199, "tag_ids": "75,76,84,88,109", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": 9.0, "count": 2, "id": 109, "name": "Childrens", "sort": 2}], "timestamp": "2022-10-05 15:11:12.049645+00:00", "title": "Harry Potter en De Geheime Kamer"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry kan niet wachten tot hij terug mag naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus, om aan zijn vierde schooljaar te beginnen. Maar voor het zover is, wordt hij door de familie Wemel op spectaculaire wijze bij de Duffelingen opgehaald, om mee te gaan naar de finale van het WK Zwerkbal! Harry weet dan nog niet dat er dat jaar op Zweinstein een nog groter en spannender evenement zal plaatsvinden. Ondanks alle opwinding en magische gebeurtenissen, probeert hij zich toch op zijn lessen te concentreren. Ondertussen zijn er allerlei tekenen die er op wijzen dat Voldemort, met behulp van Duistere tovenaars, weer aan kracht begint te winnen. De angst dat Hij Die Niet Genoemd Mag Worden opnieuw zal toeslaan, wordt steeds groter...\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 108, "identifier_ids": "644,643,645,642", "identifiers": [{"book": 108, "id": 642, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103494", "sort": "isbn", "type": "isbn", "val": "9781781103494"}, {"book": 108, "id": 645, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443"}, {"book": 108, "id": 643, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174202", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174202"}, {"book": 108, "id": 644, "name": "Amazon", "path": "https://amazon.com/dp/9076174202", "sort": "amazon", "type": "amazon", "val": "9076174202"}], "isbn": "9781781103494", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:11.832226+00:00", "path": "J.K. Rowling/Harry Potter en De Vuurbeker (108)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 503870, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:11.832226+00:00", "title": "Harry Potter en De Vuurbeker"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry Potter heeft nog nooit van Zweinstein gehoord als de brieven door de bus van Ligusterlaan 4 worden gegooid. De perkamentachtige enveloppen, beschreven met groene inkt en bestempeld met een paars zegel, worden al snel door zijn nare oom en tante in beslag genomen. Op Harry\u0027s verjaardag krijgt hij echter bezoek van een reus van een man met ogen als zwarte torren. Hij heet Rubeus Hagrid en heeft verbazingwekkend nieuws: Harry Potter is een tovenaar, en er is plek voor hem op Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Er staat hem een ongelooflijk avontuur te wachten!\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 107, "identifier_ids": "639,641,640", "identifiers": [{"book": 107, "id": 640, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440"}, {"book": 107, "id": 641, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174105", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174105"}, {"book": 107, "id": 639, "name": "Amazon", "path": "https://amazon.com/dp/9076174105", "sort": "amazon", "type": "amazon", "val": "9076174105"}], "isbn": null, "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:11.432295+00:00", "path": "J.K. Rowling/Harry Potter en De Steen Der Wijzen (107)", "pubdate": "2022-08-02", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 62137172, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:11.432295+00:00", "title": "Harry Potter en De Steen Der Wijzen"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen Harry Potter is left on a doorstep as a baby, he has no idea he is the Boy Who Lived, or that he is famous throughout the wizarding world. Years later, he is astonished to receive an acceptance letter to Hogwarts School of Witchcraft and Wizardry and he is soon whisked off on a magical adventure like no other. Join Harry and his fiercely loyal friends, Hermione and Ron, in this story about the power of truth, love and hope. \u003c/p\u003e\n\u003cp\u003eHaving become classics of our time, the Harry Potter eBooks never fail to bring comfort and escapism. With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers.\u003c/p\u003e\u003c/div\u003e\n\n\u003cp\u003eAnthology containing:\u003c/p\u003eBook 1 by The Philosopher s Stone\u003cbr/\u003eBook 2 by The Chamber of Secrets\u003cbr/\u003eBook 3 by The Prisoner of Azkaban\u003cbr/\u003eBook 4 by The Goblet of Fire\u003cbr/\u003eBook 5 by The Order of The Phoenix\u003cbr/\u003eBook 6 by The Half Blood Prince\u003cbr/\u003eBook 7 by The Deathly Hallows", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 104, "identifier_ids": "291,290,289", "identifiers": [{"book": 104, "id": 289, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781106464", "sort": "isbn", "type": "isbn", "val": "9781781106464"}, {"book": 104, "id": 290, "name": "Google Books", "path": "https://books.google.com/books?id=f280CwAAQBAJ", "sort": "google", "type": "google", "val": "f280CwAAQBAJ"}, {"book": 104, "id": 291, "name": "Amazon", "path": "https://amazon.com/dp/B01B3DIPMW", "sort": "amazon", "type": "amazon", "val": "B01B3DIPMW"}], "isbn": "9781781106464", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:10.482834+00:00", "path": "J.K. Rowling/Harry Potter_ The Complete Collecti (104)", "pubdate": "2015-12-14", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 8079964, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:10.482834+00:00", "title": "Harry Potter: The Complete Collection (1-7)"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eVoordat Harry Potter aan zijn derde jaar op Zweinstein kan beginnen, moet hij de zomervakantie doorbrengen bij zijn gemene oom en tante en vervelende neefje Dirk. Door een magisch ongelukje komt hij \u0027s avonds laat opeens op straat te staan. Dan blijkt, dat Sirius Zwarts, een beruchte volgeling van Voldemort, uit de gevangenis van Azkaban is ontsnapt. Hij is op de vlucht en heeft het wellicht op Harry gemunt. \u003c/p\u003e\n\u003cp\u003eEr volgt een enerverend schooljaar met nieuwe vakken als Dreuzelkunde en Zorg voor Fabeldieren, spannende Zwerkbalwedstrijden en griezelige voorspellingen. \u003cbr\u003eDe school wordt bewaakt door Dementors, de gevreesde bewakers van Azkaban en Harry zal zijn lessen Verweer tegen de Zwarte Kunsten hard nodig hebben.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 102, "identifier_ids": "619,623,621,620,622,618", "identifiers": [{"book": 102, "id": 618, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789076174143", "sort": "isbn", "type": "isbn", "val": "9789076174143"}, {"book": 102, "id": 622, "name": "Google Books", "path": "https://books.google.com/books?id=D0mLDAEACAAJ", "sort": "google", "type": "google", "val": "D0mLDAEACAAJ"}, {"book": 102, "id": 620, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/871319", "sort": "goodreads", "type": "goodreads", "val": "871319"}, {"book": 102, "id": 621, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-gevangene-van-azkaban-j-k-rowling/1116540442", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-gevangene-van-azkaban-j-k-rowling/1116540442"}, {"book": 102, "id": 623, "name": "Amazon NL", "path": "https://amazon.nl/dp/9076174180", "sort": "amazon_nl", "type": "amazon_nl", "val": "9076174180"}, {"book": 102, "id": 619, "name": "Amazon", "path": "https://amazon.com/dp/9076174180", "sort": "amazon", "type": "amazon", "val": "9076174180"}], "isbn": "9789076174143", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.928317+00:00", "path": "J.K. Rowling/Harry Potter en De Gevangene Van Az (102)", "pubdate": "1999-07-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": 5, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 685385, "tag_ids": "75,76,84,88,109", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": 9.0, "count": 2, "id": 109, "name": "Childrens", "sort": 2}], "timestamp": "2022-10-05 15:11:09.928317+00:00", "title": "Harry Potter en De Gevangene Van Azkaban"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHarry\u2019s verplichte zomervakantie bij oom Herman en tante Petunia op de Ligusterlaan is dit keer nog erger dan alle voorgaande jaren: niet alleen wordt hij door de Duffelingen weer vreselijk behandeld, ook zijn beste vrienden lijken hem deze zomer totaal te negeren. Harry vindt dat hij iets moet doen, maakt niet uit wat, om zo snel mogelijk te kunnen terugkeren naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Maar dan krijgt de vakantie een onverwacht einde en wordt het zelfs onzeker of Harry nog wel aan zijn vijfde schooljaar op Zweinstein mag beginnen. Vreemde gebeurtenissen stapelen zich op en Harry doet ontdekkingen die het hem onmogelijk maken kalm te blijven...\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 101, "identifier_ids": "633,631,629,632,630", "identifiers": [{"book": 101, "id": 630, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103500", "sort": "isbn", "type": "isbn", "val": "9781781103500"}, {"book": 101, "id": 632, "name": "Google Books", "path": "https://books.google.com/books?id=rjgQCwAAQBAJ", "sort": "google", "type": "google", "val": "rjgQCwAAQBAJ"}, {"book": 101, "id": 629, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444"}, {"book": 101, "id": 631, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061697018", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061697018"}, {"book": 101, "id": 633, "name": "Amazon", "path": "https://amazon.com/dp/9061697018", "sort": "amazon", "type": "amazon", "val": "9061697018"}], "isbn": "9781781103500", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.645084+00:00", "path": "J.K. Rowling/Harry Potter en De Orde Van De Feni (101)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 984113, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:09.645084+00:00", "title": "Harry Potter en De Orde Van De Feniks"}, {"author_ids": "112", "authors": [{"avg_rating": 9.0, "count": 8, "id": 112, "name": "J.K. Rowling", "sort": "Rowling, J.K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHet land wordt geteisterd door vreemde rampen en aanslagen en hoewel het hartje zomer is hangt er een hardnekkige, onheilspellende mist. In de Ligusterlaan zit Harry Potter \u2019s avonds laat ongeduldig op de komst van professor Perkamentus te wachten. Wat kan er er zo belangrijk zijn dat Perkamentus hem bij de Duffelingen op komt zoeken en dat niet wachten kan tot Harry\u2019s terugkeer naar Zweinstein? Zou het iets te maken hebben met de oude profetie die Harry aan het eind van zijn vijfde schooljaar gehoord heeft? Harry\u2019s zesde jaar op Zweinstein begint ongebruikelijk, als Voldemort opnieuw aan kracht wint en de werelden van Dreuzels en tovenaars zich steeds meer met elkaar vermengen...\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 100, "identifier_ids": "627,625,626,628,624", "identifiers": [{"book": 100, "id": 624, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781781103517", "sort": "isbn", "type": "isbn", "val": "9781781103517"}, {"book": 100, "id": 628, "name": "Google Books", "path": "https://books.google.com/books?id=iTgQCwAAQBAJ", "sort": "google", "type": "google", "val": "iTgQCwAAQBAJ"}, {"book": 100, "id": 626, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445"}, {"book": 100, "id": 625, "name": "Amazon NL", "path": "https://amazon.nl/dp/9061697670", "sort": "amazon_nl", "type": "amazon_nl", "val": "9061697670"}, {"book": 100, "id": 627, "name": "Amazon", "path": "https://amazon.com/dp/9061697670", "sort": "amazon", "type": "amazon", "val": "9061697670"}], "isbn": "9781781103517", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:11:09.369809+00:00", "path": "J.K. Rowling/Harry Potter en De Halfbloed Prins (100)", "pubdate": "2015-12-08", "publisher_ids": "65", "publishers": [{"avg_rating": 9.0, "count": 8, "id": 65, "name": "Pottermore", "sort": "Pottermore"}], "rating": null, "series": [{"avg_rating": 9.0, "count": 8, "id": 11, "name": "Harry Potter", "sort": "Harry Potter"}], "series_ids": "11", "size": 1009796, "tag_ids": "4,49,76,84,88,114,130", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}, {"avg_rating": null, "count": 6, "id": 114, "name": "Wizards \u0026 Witches", "sort": 6}, {"avg_rating": null, "count": 6, "id": 130, "name": "Action", "sort": 6}], "timestamp": "2022-10-05 15:11:09.369809+00:00", "title": "Harry Potter en De Halfbloed Prins"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them\u003c/p\u003e\n\u003cp\u003eIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.\u003c/p\u003e\n\u003cp\u003eIn a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 82, "identifier_ids": "207,208", "identifiers": [{"book": 82, "id": 208, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215351", "sort": "goodreads", "type": "goodreads", "val": "61215351"}, {"book": 82, "id": 207, "name": "Amazon", "path": "https://amazon.com/dp/B007978NPG", "sort": "amazon", "type": "amazon", "val": "B007978NPG"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.348740+00:00", "path": "J.R.R. Tolkien/The Fellowship of the Ring (82)", "pubdate": "1954-07-29", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1906471, "tag_ids": "75,76,84,88", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}], "timestamp": "2022-10-04 19:51:55.348740+00:00", "title": "The Fellowship of the Ring"}])'></div>
          </div>
       </div>
    </div>
