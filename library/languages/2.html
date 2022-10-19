@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1024,34 +1024,36 @@
                 <p>Alleen op de wereld (Frans: Sans famille) is de titel van een avonturenverhaal van de Franse schrijver Hector Malot. Het boek werd voor het eerst gepubliceerd in 1878. Het boek is meerdere keren verfilmd. Hector-Henri Malot (La Bouille bij Rouen, 20 mei 1830 - Fontenay-sous-Bois, 17 juli 1907) was een Franse schrijver. Hij studeerde rechten in Rouen en Parijs, maar uiteindelijk werd literatuur zijn passie. Hij werkte als literatuurcriticus voor L'Opinion Nationale en als theatercriticus voor Lloyd Français. Zijn veruit meest bekende boek is Alleen op de wereld. Het boek Alleen op de wereld gaat over de vondeling Remi. Jerôme Barberin woont met zijn vrouw in het (fictieve) dorpje Chavanon, vermoedelijk in Puy-de-Dôme. Hij is meestal niet thuis, want hij werkt als steenhouwer in Parijs. Op een dag vindt hij een kind van een paar maanden. Aan de kleertjes kan Barberin zien dat het kind rijke ouders heeft. De vraag speelt op waarom het kind in Parijs te vondeling is gelegd. Jerôme Barberin is een vrij ruwe man die niet in een kind geïnteresseerd is. Hij hoopt echter dat de rijke ouders het kind komen ophalen en hem een beloning geven. Hij geeft de baby aan zijn vrouw en noemt hem Remi.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781499610949" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="http://www.gutenberg.org/ebooks/19054" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Gutenberg
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=rUS4oAEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781499610949" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="http://www.gutenberg.org/ebooks/19054" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Gutenberg
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=rUS4oAEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1321,34 +1323,36 @@
                 None
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789082821642" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9082821648" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9082821648" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789082821642" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9082821648" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9082821648" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1640,50 +1644,52 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>In <em>Hoe gaan we dit uitleggen</em> beschrijft Jelmer Mommers een van de grootste problemen van onze tijd: klimaatverandering. Een probleem dat bij de meesten van ons vooral een gevoel van machteloosheid oproept. Ten onrechte. Want achter de nieuwsberichten over smeltende ijskappen, uitstervende diersoorten en ontkennende politici groeit een wereldwijde beweging die laat zien: onze toekomst op aarde schrijven we zelf.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789082942149" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=YZe3xQEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/45168480" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9082942143" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9082942143" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789082942149" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=YZe3xQEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/45168480" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9082942143" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9082942143" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1973,34 +1979,36 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>Toen de kleermaker nu zoo eenzaam en verlaten thuis zat, verviel hij in groote treurigheid en had graâg zijn zonen weêr terug gehad, maar niemand wist, wat er van hen was geworden. De oudste was bij een meubelmaker in de leer gegaan; hij werkte daar vlijtig, en toen zijn tijd om was, schonk zijn patroon hem een tafeltje, dat er heel gewoon uitzag en ook van geen bijzondere houtsoort gemaakt was; maar het had een goede eigenschap. Als men het neêrzette, en dan sprak »tafeltje dek je,« dan was het brave tafeltje op eens met een zuiver wit lakentje gedekt; er stond een bord op met mes en vork er naast, en zooveel schalen met gezoden en gebraden als er maar op konden. Ook fonkelde er een groot glas met rooden wijn, dat het je hart goed deed.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9798626106404" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="http://www.gutenberg.org/ebooks/22555" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Gutenberg
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=ash0zQEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9798626106404" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="http://www.gutenberg.org/ebooks/22555" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Gutenberg
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=ash0zQEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2294,34 +2302,36 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
                 <p>In de Reformclub in London wordt druk gepraat over de diefstal bij de Bank van Engeland: hoe groot is de kans dat de dief gepakt wordt? De wereld is klein geworden: men kan hem in drie maanden rondreizen! 'In tachtig dagen,' verbetert Phileas Fogg. 'Alles meegerekend?' 'Alles inbegrepen: schipbreuk, treinontsporingen, overvallen en andere ongemakken.' 'Ik wil wedden dat zo'n reis onmogelijk is!' De onverstoorbare Phileas Fogg neemt de uitdaging aan, en zo vertrekt hij met zijn knecht Passepartout op een duizelingwekkende reis.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9027443009" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="http://www.gutenberg.org/ebooks/11318" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Gutenberg
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/60906552" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9027443009" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="http://www.gutenberg.org/ebooks/11318" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Gutenberg
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/60906552" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2621,34 +2631,36 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p><strong>Het portret van Dorian Gray</strong> (Engelstalige titel <em>The Picture of Dorian Gray</em>) is de enige gepubliceerde <a href="https://nl.wikipedia.org/wiki/Roman_(literatuur)"><span style="color: #6cb4ee">roman</span></a> van <a href="https://nl.wikipedia.org/wiki/Oscar_Wilde"><span style="color: #6cb4ee">Oscar Wilde</span></a>. Hij werd voor het eerst uitgebracht in <a href="https://nl.wikipedia.org/wiki/Verenigd_Koninkrijk"><span style="color: #6cb4ee">Engeland</span></a> in 1890. Een Nederlandse vertaling door <a href="https://nl.wikipedia.org/wiki/Elisabeth_Couperus-Baud"><span style="color: #6cb4ee">Elisabeth Couperus-Baud</span></a> verscheen in 1893. Haar echtgenoot <a href="https://nl.wikipedia.org/wiki/Louis_Couperus"><span style="color: #6cb4ee">Louis Couperus</span></a> had het boek rechtstreeks van Oscar Wilde ontvangen en zij was er diep van onder de indruk. </p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789046313596" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="http://www.gutenberg.org/ebooks/10512" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Gutenberg
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=Hs1uEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789046313596" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="http://www.gutenberg.org/ebooks/10512" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Gutenberg
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=Hs1uEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2940,34 +2952,36 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>Ze moedigt de lezer in <em>De kracht van kwetsbaarheid</em> aan om perfectionisme te laten varen, kwetsbaarheid te omarmen en uitdagingen aan te gaan.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789400502482" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=qei1NAEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/17906355" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789400502482" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=qei1NAEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/17906355" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -3273,34 +3287,36 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
                 <p>Een in de 19e eeuw geschreven verhaal over een reis naar de maan, waaruit blijkt dat de schrijver in technisch opzicht zijn tijd ver vooruit was</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789010012500" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="http://www.gutenberg.org/ebooks/27309" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Gutenberg
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/5810033" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789010012500" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="http://www.gutenberg.org/ebooks/27309" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Gutenberg
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/5810033" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -3576,26 +3592,28 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
                 Dit monumentale boek is nu verfilmd door Jeroen Krabbé, met in de hoofdrollen Stephen Fry, Greg Wise en Emma Fielding. De ontdekking van de hemel, waarin alle thema's en obsessies uit het werk van Harry Mulisch in 65 hoofdstukken bijeenkomen, is tegelijk een psychologische roman, een tijdroman, een ontwikkelingsroman, een avonturenstroom en een allesoverkoepelend mysteriespel. Mulisch' ars combinatoria, onderhoudend, verrasend, grappig, duister, krankzinnig, even eigenzinnig als lichtvoetig uitgevoerd, lijkt na deze roman niet meer te overtreffen. - Die Zeit Het is aan geen twijfel onderhevig, dat Harry Mulisch zich nu definitief in de rijen van de grote Europese vertellers heeft gevoegd. Het is een gelukkige omstandighjeid, dat wij in Harry Mulisch een buurman hebben die ons iets vertellen kan over God en de wereld en over Europa en Duitsland en over het labyrint in onze borst - Süddeutsche Zeitung Net als Homerus, Dante en Milton gebruikt Mulisch de kosmos als toneel en zijn thema is de geschiedenis en de betekenis van alles. - Jamie James, Wall Street Journal Recensie(s) NBD|Biblion recensie Deze turfdikke Mulisch doet vooral denken aan de intellectuele feuilletons van Thomas Mann ('De toverberg', 'Doctor Faustus'): uiterst leesbaar en hoogst interessant tegelijk. Het is ondermeer de artistieke verbeelding van het thema dat in 'De compositie van de wereld' al studieus werd benaderd: de paradox als het laatste woord in zaken van hoofd en hart. Dat thema is ingenieus doorgecomponeerd in de levensgeschiedenissen van twee vrienden (waarvoor de schaker Donner en Mulisch zelf duidelijk model stonden) en de manipulaties van die levens door enkele engelen. Deze engelen zijn ontsteld door de technische almacht van de mens in leven (genetica) en dood (Auschwitz) en willen het verbond tussen God en mens ongedaan maken. De 65 hoofdstukken zijn gesteld in opvallend soepel en verzorgd Nederlands en geven een spectaculair panorama van de preoccupaties en stilistische vaardigheden van deze duivelskunstenaar.
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://amazon.nl/dp/9023461231" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9023461231" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://amazon.nl/dp/9023461231" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9023461231" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -3873,18 +3891,20 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>De brieven van Vincent van Gogh behoren tot de beste kunstenaarsbrieven die ooit zijn geschreven. Deze editie herstelt verschillende passages die in vorige edities waren weggelaten. Zij bevat waar mogelijk complete brieven, aangevuld met teksten van Ronald de Leeuw, die niet alleen ingaan op Van Goghs gedachtewereld, maar ook op de uiterlijke aspecten van zijn leven. De brieven tonen zijn religieuze worstelingen aan, zijn fascinatie voor de Franse Revolutie, zijn zoektocht naar liefde en zijn betrokkenheid bij filantropische kwesties. Het populaire beeld van Van Gogh als een antisociale gek en martelaar blijkt onhoudbaar. Uit deze brieven komt hij naar voren als een man van grote geestelijke diepgang. Wie De brieven van Vincent van Gogh leest, komt oog in oog te staan met een van de meest exemplarische figuren uit de moderne westerse cultuur. </p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.dbnl.org/titels/titel.php?id=gogh006brie01" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    dbNL
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.dbnl.org/titels/titel.php?id=gogh006brie01" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      dbNL
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -4162,18 +4182,20 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>De brieven van Vincent van Gogh behoren tot de beste kunstenaarsbrieven die ooit zijn geschreven. Deze editie herstelt verschillende passages die in vorige edities waren weggelaten. Zij bevat waar mogelijk complete brieven, aangevuld met teksten van Ronald de Leeuw, die niet alleen ingaan op Van Goghs gedachtewereld, maar ook op de uiterlijke aspecten van zijn leven. De brieven tonen zijn religieuze worstelingen aan, zijn fascinatie voor de Franse Revolutie, zijn zoektocht naar liefde en zijn betrokkenheid bij filantropische kwesties. Het populaire beeld van Van Gogh als een antisociale gek en martelaar blijkt onhoudbaar. Uit deze brieven komt hij naar voren als een man van grote geestelijke diepgang. Wie De brieven van Vincent van Gogh leest, komt oog in oog te staan met een van de meest exemplarische figuren uit de moderne westerse cultuur. </p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.dbnl.org/titels/titel.php?id=gogh006brie03" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    dbNL
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.dbnl.org/titels/titel.php?id=gogh006brie03" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      dbNL
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -4451,18 +4473,20 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>De brieven van Vincent van Gogh behoren tot de beste kunstenaarsbrieven die ooit zijn geschreven. Deze editie herstelt verschillende passages die in vorige edities waren weggelaten. Zij bevat waar mogelijk complete brieven, aangevuld met teksten van Ronald de Leeuw, die niet alleen ingaan op Van Goghs gedachtewereld, maar ook op de uiterlijke aspecten van zijn leven. De brieven tonen zijn religieuze worstelingen aan, zijn fascinatie voor de Franse Revolutie, zijn zoektocht naar liefde en zijn betrokkenheid bij filantropische kwesties. Het populaire beeld van Van Gogh als een antisociale gek en martelaar blijkt onhoudbaar. Uit deze brieven komt hij naar voren als een man van grote geestelijke diepgang. Wie De brieven van Vincent van Gogh leest, komt oog in oog te staan met een van de meest exemplarische figuren uit de moderne westerse cultuur. </p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.dbnl.org/titels/titel.php?id=gogh006brie01" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    dbNL
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.dbnl.org/titels/titel.php?id=gogh006brie01" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      dbNL
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -4754,42 +4778,44 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>Walter Isaacson is de voorzitter van het Aspen Institute. In het verleden was hij onder meer hoofdredacteur van Time Magazine en CEO van CNN. Hij schreef eerder gezaghebbende biografieen van Benjamin Franklin, Henry Kissinger en Albert Einstein.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789000348640" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/12981914" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9000348641" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9000348641" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789000348640" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/12981914" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9000348641" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9000348641" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -5079,26 +5105,28 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>Turks Fruit, het hartverscheurende verhaal van de gepassioneerde maar onmogelijke liefde tussen Olga en beeldhouwer Eric, verscheen oorspronkelijk in 1969 en bracht een schok teweeg in de Nederlandse letteren. Niet alleen werden liefde, seks en dood tot zo'n pulserend en vitaal geheel gesmeed. De verfilming van Turks Fruit door Paul Verhoeven, met in de hoofdrollen Rutger Hauer en Monique van der Ven, werd uitgeroepen tot de beste Hollandse speelfilm ooit en kreeg in 1974 een oscarnominatie.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789460921278" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/16016510" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789460921278" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/16016510" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -5421,50 +5449,52 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>Adembenemend, weids en revolutionair – <em>De meeste mensen deugen</em> herschrijft niet alleen de geschiedenis, maar werpt ook nieuw licht op onze toekomst.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789082942187" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=UbbpxgEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/45995328" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9082942186" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9082942186" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789082942187" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=UbbpxgEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/45995328" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9082942186" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9082942186" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -5789,50 +5819,52 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>De zomervakantie is voorbij, maar Harry Potter keert dit jaar niet terug naar Zweinstein. Hij staat voor de gevaarlijke en haast onmogelijke opdracht van Perkamentus: de overgebleven Gruzielementen opsporen en vernietigen. Zal hem dat lukken?</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781781103524" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=XjYQCwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9061698324" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9061698324" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781781103524" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=XjYQCwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/harry-potter-en-de-relieken-van-de-dood-j-k-rowling/1116540446" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9061698324" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9061698324" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -6151,58 +6183,60 @@ Kinderboek
 Kinderboek
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781781103470" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=8jYQCwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/2954426" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/harry-potter-en-de-geheime-kamer-j-k-rowling/1116540441" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9076174113" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9076174113" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781781103470" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=8jYQCwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/2954426" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/harry-potter-en-de-geheime-kamer-j-k-rowling/1116540441" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9076174113" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9076174113" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -6527,42 +6561,44 @@ Kinderboek
 <p>Harry kan niet wachten tot hij terug mag naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus, om aan zijn vierde schooljaar te beginnen. Maar voor het zover is, wordt hij door de familie Wemel op spectaculaire wijze bij de Duffelingen opgehaald, om mee te gaan naar de finale van het WK Zwerkbal! Harry weet dan nog niet dat er dat jaar op Zweinstein een nog groter en spannender evenement zal plaatsvinden. Ondanks alle opwinding en magische gebeurtenissen, probeert hij zich toch op zijn lessen te concentreren. Ondertussen zijn er allerlei tekenen die er op wijzen dat Voldemort, met behulp van Duistere tovenaars, weer aan kracht begint te winnen. De angst dat Hij Die Niet Genoemd Mag Worden opnieuw zal toeslaan, wordt steeds groter...</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781781103494" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9076174202" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9076174202" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781781103494" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/harry-potter-en-de-vuurbeker-j-k-rowling/1116540443" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9076174202" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9076174202" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -6887,34 +6923,36 @@ Kinderboek
 <p>Harry Potter heeft nog nooit van Zweinstein gehoord als de brieven door de bus van Ligusterlaan 4 worden gegooid. De perkamentachtige enveloppen, beschreven met groene inkt en bestempeld met een paars zegel, worden al snel door zijn nare oom en tante in beslag genomen. Op Harry's verjaardag krijgt hij echter bezoek van een reus van een man met ogen als zwarte torren. Hij heet Rubeus Hagrid en heeft verbazingwekkend nieuws: Harry Potter is een tovenaar, en er is plek voor hem op Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Er staat hem een ongelooflijk avontuur te wachten!</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9076174105" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9076174105" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/harry-potter-en-de-steen-der-wijzen-j-k-rowling/1116540440" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9076174105" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9076174105" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -7229,58 +7267,60 @@ Kinderboek
 <p>Er volgt een enerverend schooljaar met nieuwe vakken als Dreuzelkunde en Zorg voor Fabeldieren, spannende Zwerkbalwedstrijden en griezelige voorspellingen. <br>De school wordt bewaakt door Dementors, de gevreesde bewakers van Azkaban en Harry zal zijn lessen Verweer tegen de Zwarte Kunsten hard nodig hebben.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789076174143" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=D0mLDAEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/871319" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/harry-potter-en-de-gevangene-van-azkaban-j-k-rowling/1116540442" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9076174180" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9076174180" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789076174143" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=D0mLDAEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/871319" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/harry-potter-en-de-gevangene-van-azkaban-j-k-rowling/1116540442" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9076174180" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9076174180" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -7605,50 +7645,52 @@ Kinderboek
 <p>Harry’s verplichte zomervakantie bij oom Herman en tante Petunia op de Ligusterlaan is dit keer nog erger dan alle voorgaande jaren: niet alleen wordt hij door de Duffelingen weer vreselijk behandeld, ook zijn beste vrienden lijken hem deze zomer totaal te negeren. Harry vindt dat hij iets moet doen, maakt niet uit wat, om zo snel mogelijk te kunnen terugkeren naar Zweinsteins Hogeschool voor Hekserij en Hocus-Pocus. Maar dan krijgt de vakantie een onverwacht einde en wordt het zelfs onzeker of Harry nog wel aan zijn vijfde schooljaar op Zweinstein mag beginnen. Vreemde gebeurtenissen stapelen zich op en Harry doet ontdekkingen die het hem onmogelijk maken kalm te blijven...</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781781103500" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=rjgQCwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9061697018" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9061697018" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781781103500" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=rjgQCwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/harry-potter-en-de-orde-van-de-feniks-j-k-rowling/1116540444" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9061697018" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9061697018" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -7973,50 +8015,52 @@ Kinderboek
 <p>Het land wordt geteisterd door vreemde rampen en aanslagen en hoewel het hartje zomer is hangt er een hardnekkige, onheilspellende mist. In de Ligusterlaan zit Harry Potter ’s avonds laat ongeduldig op de komst van professor Perkamentus te wachten. Wat kan er er zo belangrijk zijn dat Perkamentus hem bij de Duffelingen op komt zoeken en dat niet wachten kan tot Harry’s terugkeer naar Zweinstein? Zou het iets te maken hebben met de oude profetie die Harry aan het eind van zijn vijfde schooljaar gehoord heeft? Harry’s zesde jaar op Zweinstein begint ongebruikelijk, als Voldemort opnieuw aan kracht wint en de werelden van Dreuzels en tovenaars zich steeds meer met elkaar vermengen...</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781781103517" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=iTgQCwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9061697670" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9061697670" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781781103517" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=iTgQCwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/harry-potter-en-de-halfbloed-prins-j-k-rowling/1116540445" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9061697670" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9061697670" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -8337,34 +8381,36 @@ Kinderboek
 <p>'Herman Koch is razendsnel een van mijn favoriete schrijvers aan het worden. Zijn drie boeken zijn als een ijzersterke EP waarvan elk nummer raak is.' – Stephen King <br></p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789041414540" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=VzgwAgAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/12092228" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789041414540" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=VzgwAgAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/12092228" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -8650,34 +8696,36 @@ Kinderboek
 <p>• Luister meer, praat minder<br>• Zorg voor een positieve houding<br>• Neem tijd voor de ander<br>• Zeg vaker: hoe kan ik je helpen?<br>• Maak de verhouding positieve versus negatieve feedback</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789082050202" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=UmhengEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/40521846" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789082050202" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=UmhengEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/40521846" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>

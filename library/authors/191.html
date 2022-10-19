@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1019,42 +1019,44 @@
 <p>47 and his handler, Diana Burnwood, are a team responsible for some of the most ruthless, efficient and untraceable assassinations across the globe. But before they were operatives of the shadowy International Contracts Association, 47 and Burnwood were on their own separate paths in life - streets lined with blood, bullets and revenge. As 14-year-old Diana begins a mission to track down the people who killed her parents, 47 is struggling to free himself and his friend, 6, from the mysterious Institute which has bred them as killers since they were kids. With a story that stretches from the heartland of America to the Berlin Wall, Lone Wolves will trace the birth of the legendary Hitman and the secret past of the woman behind him who pulls the string and knows just how hard taking a life truly is.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781524106638" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=SMyDDwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/41152834" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B07DD5JX2P" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781524106638" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=SMyDDwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/41152834" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B07DD5JX2P" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1071,7 +1073,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "191", "authors": [{"avg_rating": 6.0, "count": 1, "id": 191, "name": "Christopher Sebela", "sort": "Sebela, Christopher"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e47 and his handler, Diana Burnwood, are a team responsible for some of the most ruthless, efficient and untraceable assassinations across the globe. But before they were operatives of the shadowy International Contracts Association, 47 and Burnwood were on their own separate paths in life - streets lined with blood, bullets and revenge. As 14-year-old Diana begins a mission to track down the people who killed her parents, 47 is struggling to free himself and his friend, 6, from the mysterious Institute which has bred them as killers since they were kids. With a story that stretches from the heartland of America to the Berlin Wall, Lone Wolves will trace the birth of the legendary Hitman and the secret past of the woman behind him who pulls the string and knows just how hard taking a life truly is.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2019-10-06", "custom_reading_list": 0, "custom_types": [{"id": 2, "sort": "Comic", "value": "Comic"}], "custom_types_ids": "2", "flags": 1, "has_cover": 1, "id": 178, "identifier_ids": "670,671,668,669", "identifiers": [{"book": 178, "id": 669, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781524106638", "sort": "isbn", "type": "isbn", "val": "9781524106638"}, {"book": 178, "id": 668, "name": "Google Books", "path": "https://books.google.com/books?id=SMyDDwAAQBAJ", "sort": "google", "type": "google", "val": "SMyDDwAAQBAJ"}, {"book": 178, "id": 671, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/41152834", "sort": "goodreads", "type": "goodreads", "val": "41152834"}, {"book": 178, "id": 670, "name": "Amazon", "path": "https://amazon.com/dp/B07DD5JX2P", "sort": "amazon", "type": "amazon", "val": "B07DD5JX2P"}], "isbn": "9781524106638", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 10:10:20.485880+00:00", "path": "Christopher Sebela/Agent 47_ Birth of the Hitman Vol. (178)", "pubdate": "2018-09-26", "publisher_ids": "121", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 121, "name": "Dynamite Entertainment", "sort": "Dynamite Entertainment"}], "rating": 3, "series": [], "series_ids": null, "size": 226138648, "tag_ids": "184", "tags": [{"avg_rating": 8.428571428571429, "count": 36, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 36}], "timestamp": "2022-10-06 10:10:20.485880+00:00", "title": "Agent 47: Birth of the Hitman Vol. 1"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "191", "authors": [{"avg_rating": 6.0, "count": 1, "id": 191, "name": "Christopher Sebela", "sort": "Sebela, Christopher"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e47 and his handler, Diana Burnwood, are a team responsible for some of the most ruthless, efficient and untraceable assassinations across the globe. But before they were operatives of the shadowy International Contracts Association, 47 and Burnwood were on their own separate paths in life - streets lined with blood, bullets and revenge. As 14-year-old Diana begins a mission to track down the people who killed her parents, 47 is struggling to free himself and his friend, 6, from the mysterious Institute which has bred them as killers since they were kids. With a story that stretches from the heartland of America to the Berlin Wall, Lone Wolves will trace the birth of the legendary Hitman and the secret past of the woman behind him who pulls the string and knows just how hard taking a life truly is.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2019-10-06", "custom_reading_list": 0, "custom_types": [{"id": 2, "sort": "Comic", "value": "Comic"}], "custom_types_ids": "2", "flags": 1, "has_cover": 1, "id": 178, "identifier_ids": "670,671,668,669", "identifiers": [{"book": 178, "id": 669, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781524106638", "sort": "isbn", "type": "isbn", "val": "9781524106638"}, {"book": 178, "id": 668, "name": "Google Books", "path": "https://books.google.com/books?id=SMyDDwAAQBAJ", "sort": "google", "type": "google", "val": "SMyDDwAAQBAJ"}, {"book": 178, "id": 671, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/41152834", "sort": "goodreads", "type": "goodreads", "val": "41152834"}, {"book": 178, "id": 670, "name": "Amazon", "path": "https://amazon.com/dp/B07DD5JX2P", "sort": "amazon", "type": "amazon", "val": "B07DD5JX2P"}], "isbn": "9781524106638", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 10:10:20.485880+00:00", "path": "Christopher Sebela/Agent 47_ Birth of the Hitman Vol. (178)", "pubdate": "2018-09-26", "publisher_ids": "121", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 121, "name": "Dynamite Entertainment", "sort": "Dynamite Entertainment"}], "rating": 3, "series": [], "series_ids": null, "size": 226138648, "tag_ids": "184", "tags": [{"avg_rating": 8.428571428571429, "count": 36, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 36}], "timestamp": "2022-10-06 10:10:20.485880+00:00", "title": "Agent 47: Birth of the Hitman Vol. 1"}])'></div>
          </div>
       </div>
    </div>

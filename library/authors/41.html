@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1041,42 +1041,44 @@
 <p>John Mullins is the author of The New Business Road Test and, with Randy Komisar, the widely acclaimed Getting to Plan B.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781118878859" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=tnLYAwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/20605988" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/the-customer-funded-business-john-mullins/1118139154" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781118878859" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=tnLYAwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/20605988" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/the-customer-funded-business-john-mullins/1118139154" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1093,7 +1095,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "41", "authors": [{"avg_rating": 8.0, "count": 1, "id": 41, "name": "John Mullins", "sort": "Mullins, John"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWho needs investors?\u003c/p\u003e\n\u003cp\u003eMore than two generations ago, the venture capital community \u2013 VCs, business angels, incubators and others \u2013 convinced the entrepreneurial world that writing business plans and raising venture capital constituted the twin centerpieces of entrepreneurial endeavor. They did so for good reasons: the sometimes astonishing returns they\u0027ve delivered to their investors and the astonishingly large companies that their ecosystem has created.\u003c/p\u003e\n\u003cp\u003eBut the vast majority of fast-growing companies never take any venture capital. So where does the money come from to start and grow their companies? From a much more agreeable and hospitable source, their customers. That\u0027s exactly what Michael Dell, Bill Gates and Banana Republic\u0027s Mel and Patricia Ziegler did to get their companies up and running and turn them into iconic brands.\u003c/p\u003e\n\u003cp\u003eIn The Customer Funded Business , best-selling author John Mullins uncovers five novel approaches that scrappy and innovative 21st century entrepreneurs working in companies large and small have ingeniously adapted from their predecessors like Dell, Gates, and the Zieglers:\u003c/p\u003e\n\u003cp\u003eMatchmaker models (Airbnb)\u003c/p\u003e\n\u003cp\u003ePay-in-advance models (Threadless)\u003c/p\u003e\n\u003cp\u003eSubscription models (TutorVista)\u003c/p\u003e\n\u003cp\u003eScarcity models (Vente Privee)\u003c/p\u003e\n\u003cp\u003eService-to-product models (GoViral)\u003c/p\u003e\n\u003cp\u003eThrough the captivating stories of these and other inspiring companies from around the world, Mullins brings to life the five models and identifies the questions that angel or other investors will \u2013 and should! \u2013 ask of entrepreneurs or corporate innovators seeking to apply them. Drawing on in-depth interviews with entrepreneurs and investors who have actually put these models to use, Mullins goes on to address the key implementation issues that characterize each of the models: when to apply them, how best to apply them, and the pitfalls to watch out for.\u003c/p\u003e\n\u003cp\u003eWhether you\u0027re an aspiring entrepreneur lacking the start-up capital you need, an early-stage entrepreneur trying to get your cash-starved venture into take-off mode, an intrapreneur seeking funding within an established company, or an angel investor or mentor who supports high-potential ventures, this book offers the most sure-footed path to starting, financing, or growing your venture.\u003c/p\u003e\n\u003cp\u003eJohn Mullins is the author of The New Business Road Test and, with Randy Komisar, the widely acclaimed Getting to Plan B.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 45, "identifier_ids": "62,65,64,63", "identifiers": [{"book": 45, "id": 63, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781118878859", "sort": "isbn", "type": "isbn", "val": "9781118878859"}, {"book": 45, "id": 64, "name": "Google Books", "path": "https://books.google.com/books?id=tnLYAwAAQBAJ", "sort": "google", "type": "google", "val": "tnLYAwAAQBAJ"}, {"book": 45, "id": 65, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/20605988", "sort": "goodreads", "type": "goodreads", "val": "20605988"}, {"book": 45, "id": 62, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/the-customer-funded-business-john-mullins/1118139154", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/the-customer-funded-business-john-mullins/1118139154"}], "isbn": "9781118878859", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:45.526000+00:00", "path": "John Mullins/The Customer-Funded Business (45)", "pubdate": "2014-07-03", "publisher_ids": "29", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 29, "name": "Wiley", "sort": "Wiley"}], "rating": 4, "series": [], "series_ids": null, "size": 2548583, "tag_ids": "11", "tags": [{"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}], "timestamp": "2022-10-04 13:46:45.526000+00:00", "title": "The Customer-Funded Business"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "41", "authors": [{"avg_rating": 8.0, "count": 1, "id": 41, "name": "John Mullins", "sort": "Mullins, John"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWho needs investors?\u003c/p\u003e\n\u003cp\u003eMore than two generations ago, the venture capital community \u2013 VCs, business angels, incubators and others \u2013 convinced the entrepreneurial world that writing business plans and raising venture capital constituted the twin centerpieces of entrepreneurial endeavor. They did so for good reasons: the sometimes astonishing returns they\u0027ve delivered to their investors and the astonishingly large companies that their ecosystem has created.\u003c/p\u003e\n\u003cp\u003eBut the vast majority of fast-growing companies never take any venture capital. So where does the money come from to start and grow their companies? From a much more agreeable and hospitable source, their customers. That\u0027s exactly what Michael Dell, Bill Gates and Banana Republic\u0027s Mel and Patricia Ziegler did to get their companies up and running and turn them into iconic brands.\u003c/p\u003e\n\u003cp\u003eIn The Customer Funded Business , best-selling author John Mullins uncovers five novel approaches that scrappy and innovative 21st century entrepreneurs working in companies large and small have ingeniously adapted from their predecessors like Dell, Gates, and the Zieglers:\u003c/p\u003e\n\u003cp\u003eMatchmaker models (Airbnb)\u003c/p\u003e\n\u003cp\u003ePay-in-advance models (Threadless)\u003c/p\u003e\n\u003cp\u003eSubscription models (TutorVista)\u003c/p\u003e\n\u003cp\u003eScarcity models (Vente Privee)\u003c/p\u003e\n\u003cp\u003eService-to-product models (GoViral)\u003c/p\u003e\n\u003cp\u003eThrough the captivating stories of these and other inspiring companies from around the world, Mullins brings to life the five models and identifies the questions that angel or other investors will \u2013 and should! \u2013 ask of entrepreneurs or corporate innovators seeking to apply them. Drawing on in-depth interviews with entrepreneurs and investors who have actually put these models to use, Mullins goes on to address the key implementation issues that characterize each of the models: when to apply them, how best to apply them, and the pitfalls to watch out for.\u003c/p\u003e\n\u003cp\u003eWhether you\u0027re an aspiring entrepreneur lacking the start-up capital you need, an early-stage entrepreneur trying to get your cash-starved venture into take-off mode, an intrapreneur seeking funding within an established company, or an angel investor or mentor who supports high-potential ventures, this book offers the most sure-footed path to starting, financing, or growing your venture.\u003c/p\u003e\n\u003cp\u003eJohn Mullins is the author of The New Business Road Test and, with Randy Komisar, the widely acclaimed Getting to Plan B.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 45, "identifier_ids": "62,65,64,63", "identifiers": [{"book": 45, "id": 63, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781118878859", "sort": "isbn", "type": "isbn", "val": "9781118878859"}, {"book": 45, "id": 64, "name": "Google Books", "path": "https://books.google.com/books?id=tnLYAwAAQBAJ", "sort": "google", "type": "google", "val": "tnLYAwAAQBAJ"}, {"book": 45, "id": 65, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/20605988", "sort": "goodreads", "type": "goodreads", "val": "20605988"}, {"book": 45, "id": 62, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/the-customer-funded-business-john-mullins/1118139154", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/the-customer-funded-business-john-mullins/1118139154"}], "isbn": "9781118878859", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:45.526000+00:00", "path": "John Mullins/The Customer-Funded Business (45)", "pubdate": "2014-07-03", "publisher_ids": "29", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 29, "name": "Wiley", "sort": "Wiley"}], "rating": 4, "series": [], "series_ids": null, "size": 2548583, "tag_ids": "11", "tags": [{"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}], "timestamp": "2022-10-04 13:46:45.526000+00:00", "title": "The Customer-Funded Business"}])'></div>
          </div>
       </div>
    </div>

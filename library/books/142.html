@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -861,42 +861,44 @@
           <p>Longlisted for the Booker Prize 2020    A Spectator Book of the Year    'A literary rendering of the Top Boy generation... I cannot conjure another work which captures this culture in such depth - or with such brutal honesty - as only lived experience can tell ' Graeme Armstrong, author of The Young Team  'An astonishingly powerful book' Cathy Rentzenbrink, author of The Last Act of Love    This life is like being in an ocean. Some people keep swimming towards the bottom. Some people touch the bottom with one foot, or even both, and then push themselves off it to get back up to the top, where you can breathe. Others get to the bottom and decide they want to stay there. I don't want to get to the bottom because I'm already drowning.    This is a story of a London you won't find in any guidebooks.    This is a story about what it's like to exist in the moment, about boys too eager to become men, growing up in the hidden war zones of big cities - and the girls trying to make it their own way.    This is a story of reputations made and lost, of violence and vengeance - and never counting the cost.    This is a story of concrete towers and blank eyed windows, of endless nights in police stations and prison cells, of brotherhood and betrayal.    This is about the boredom, the rush, the despair, the fear and the hope.    This is about what's left behind.    Perfect for fans of Diane Cook, Douglas Stuart and Colum McCann.</p>
         </div>
 
-        <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
-        <div class="space-x-1 space-y-1">
-          
-            <a
-              href="https://www.worldcat.org/isbn/9780008374990" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              ISBN
-            </a>
-          
-            <a
-              href="https://books.google.com/books?id=n_ORygEACAAJ" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Google Books
-            </a>
-          
-            <a
-              href="https://www.goodreads.com/book/show/52813345" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Goodreads
-            </a>
-          
-            <a
-              href="https://amazon.com/dp/0008374996" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Amazon
-            </a>
-          
-        </div>
+        
+          <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+          <div class="space-x-1 space-y-1">
+            
+              <a
+                href="https://www.worldcat.org/isbn/9780008374990" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                ISBN
+              </a>
+            
+              <a
+                href="https://books.google.com/books?id=n_ORygEACAAJ" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Google Books
+              </a>
+            
+              <a
+                href="https://www.goodreads.com/book/show/52813345" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Goodreads
+              </a>
+            
+              <a
+                href="https://amazon.com/dp/0008374996" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Amazon
+              </a>
+            
+          </div>
+        
         
       </div>
     </div>

@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1032,34 +1032,36 @@
 <p><strong>Het portret van Dorian Gray</strong> (Engelstalige titel <em>The Picture of Dorian Gray</em>) is de enige gepubliceerde <a href="https://nl.wikipedia.org/wiki/Roman_(literatuur)"><span style="color: #6cb4ee">roman</span></a> van <a href="https://nl.wikipedia.org/wiki/Oscar_Wilde"><span style="color: #6cb4ee">Oscar Wilde</span></a>. Hij werd voor het eerst uitgebracht in <a href="https://nl.wikipedia.org/wiki/Verenigd_Koninkrijk"><span style="color: #6cb4ee">Engeland</span></a> in 1890. Een Nederlandse vertaling door <a href="https://nl.wikipedia.org/wiki/Elisabeth_Couperus-Baud"><span style="color: #6cb4ee">Elisabeth Couperus-Baud</span></a> verscheen in 1893. Haar echtgenoot <a href="https://nl.wikipedia.org/wiki/Louis_Couperus"><span style="color: #6cb4ee">Louis Couperus</span></a> had het boek rechtstreeks van Oscar Wilde ontvangen en zij was er diep van onder de indruk. </p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789046313596" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="http://www.gutenberg.org/ebooks/10512" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Gutenberg
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=Hs1uEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789046313596" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="http://www.gutenberg.org/ebooks/10512" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Gutenberg
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=Hs1uEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1349,42 +1351,44 @@
 <p>Here is Oscar Wilde's most brilliant tour de force, a witty and buoyant comedy of manners that has delighted millions in countless productions since its first performance in London's St. James' Theatre on February 14, 1895." The Importance of Being Earnest" is celebrated not only for the lighthearted ingenuity of its plot, but for its inspired dialogue, rich with scintillating epigrams still savored by all who enjoy artful conversation.<br>From the play's effervescent beginnings in Algernon Moncrieff's London flat to its hilarious denouement in the drawing room of Jack Worthing's country manor in Hertfordshire, this comic masterpiece keeps audiences breathlessly anticipating a new bon mot or a fresh twist of plot moment to moment. A selection of the Common Core State Standards Initiative.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780486110189" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=5KODk_VCN2kC" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/20531534" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B0B2HQ3TVM" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780486110189" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=5KODk_VCN2kC" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/20531534" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B0B2HQ3TVM" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1401,7 +1405,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "168", "authors": [{"avg_rating": 8.0, "count": 2, "id": 168, "name": "Oscar Wilde", "sort": "Wilde, Oscar"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e\u003cstrong\u003eHet portret van Dorian Gray\u003c/strong\u003e (Engelstalige titel \u003cem\u003eThe Picture of Dorian Gray\u003c/em\u003e) is de enige gepubliceerde \u003ca href=\"https://nl.wikipedia.org/wiki/Roman_(literatuur)\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eroman\u003c/span\u003e\u003c/a\u003e van \u003ca href=\"https://nl.wikipedia.org/wiki/Oscar_Wilde\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eOscar Wilde\u003c/span\u003e\u003c/a\u003e. Hij werd voor het eerst uitgebracht in \u003ca href=\"https://nl.wikipedia.org/wiki/Verenigd_Koninkrijk\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eEngeland\u003c/span\u003e\u003c/a\u003e in 1890. Een Nederlandse vertaling door \u003ca href=\"https://nl.wikipedia.org/wiki/Elisabeth_Couperus-Baud\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eElisabeth Couperus-Baud\u003c/span\u003e\u003c/a\u003e verscheen in 1893. Haar echtgenoot \u003ca href=\"https://nl.wikipedia.org/wiki/Louis_Couperus\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eLouis Couperus\u003c/span\u003e\u003c/a\u003e had het boek rechtstreeks van Oscar Wilde ontvangen en zij was er diep van onder de indruk. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 169, "identifier_ids": "560,561,559", "identifiers": [{"book": 169, "id": 559, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789046313596", "sort": "isbn", "type": "isbn", "val": "9789046313596"}, {"book": 169, "id": 561, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/10512", "sort": "gutenberg", "type": "gutenberg", "val": "10512"}, {"book": 169, "id": 560, "name": "Google Books", "path": "https://books.google.com/books?id=Hs1uEAAAQBAJ", "sort": "google", "type": "google", "val": "Hs1uEAAAQBAJ"}], "isbn": "9789046313596", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.827160+00:00", "path": "Oscar Wilde/Het portret van Dorian Gray (169)", "pubdate": "2022-05-09", "publisher_ids": null, "publishers": [], "rating": null, "series": [], "series_ids": null, "size": 174044, "tag_ids": "4,60,180,181,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": null, "count": 1, "id": 180, "name": "Supernatural", "sort": 1}, {"avg_rating": null, "count": 1, "id": 181, "name": "Portraits", "sort": 1}], "timestamp": "2022-10-06 09:40:29.827160+00:00", "title": "Het portret van Dorian Gray"}, {"author_ids": "168", "authors": [{"avg_rating": 8.0, "count": 2, "id": 168, "name": "Oscar Wilde", "sort": "Wilde, Oscar"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHere is Oscar Wilde\u0027s most brilliant tour de force, a witty and buoyant comedy of manners that has delighted millions in countless productions since its first performance in London\u0027s St. James\u0027 Theatre on February 14, 1895.\" The Importance of Being Earnest\" is celebrated not only for the lighthearted ingenuity of its plot, but for its inspired dialogue, rich with scintillating epigrams still savored by all who enjoy artful conversation.\u003cbr\u003eFrom the play\u0027s effervescent beginnings in Algernon Moncrieff\u0027s London flat to its hilarious denouement in the drawing room of Jack Worthing\u0027s country manor in Hertfordshire, this comic masterpiece keeps audiences breathlessly anticipating a new bon mot or a fresh twist of plot moment to moment. A selection of the Common Core State Standards Initiative.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 161, "identifier_ids": "485,487,486,488", "identifiers": [{"book": 161, "id": 488, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780486110189", "sort": "isbn", "type": "isbn", "val": "9780486110189"}, {"book": 161, "id": 486, "name": "Google Books", "path": "https://books.google.com/books?id=5KODk_VCN2kC", "sort": "google", "type": "google", "val": "5KODk_VCN2kC"}, {"book": 161, "id": 487, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/20531534", "sort": "goodreads", "type": "goodreads", "val": "20531534"}, {"book": 161, "id": 485, "name": "Amazon", "path": "https://amazon.com/dp/B0B2HQ3TVM", "sort": "amazon", "type": "amazon", "val": "B0B2HQ3TVM"}], "isbn": "9780486110189", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:37:00.744877+00:00", "path": "Oscar Wilde/The Importance of Being Earnest (161)", "pubdate": "1895-02-14", "publisher_ids": "107", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 107, "name": "Dover Publications", "sort": "Dover Publications"}], "rating": 4, "series": [], "series_ids": null, "size": 10866936, "tag_ids": "18,42,153", "tags": [{"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}], "timestamp": "2022-10-06 09:37:00.744877+00:00", "title": "The Importance of Being Earnest"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "168", "authors": [{"avg_rating": 8.0, "count": 2, "id": 168, "name": "Oscar Wilde", "sort": "Wilde, Oscar"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e\u003cstrong\u003eHet portret van Dorian Gray\u003c/strong\u003e (Engelstalige titel \u003cem\u003eThe Picture of Dorian Gray\u003c/em\u003e) is de enige gepubliceerde \u003ca href=\"https://nl.wikipedia.org/wiki/Roman_(literatuur)\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eroman\u003c/span\u003e\u003c/a\u003e van \u003ca href=\"https://nl.wikipedia.org/wiki/Oscar_Wilde\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eOscar Wilde\u003c/span\u003e\u003c/a\u003e. Hij werd voor het eerst uitgebracht in \u003ca href=\"https://nl.wikipedia.org/wiki/Verenigd_Koninkrijk\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eEngeland\u003c/span\u003e\u003c/a\u003e in 1890. Een Nederlandse vertaling door \u003ca href=\"https://nl.wikipedia.org/wiki/Elisabeth_Couperus-Baud\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eElisabeth Couperus-Baud\u003c/span\u003e\u003c/a\u003e verscheen in 1893. Haar echtgenoot \u003ca href=\"https://nl.wikipedia.org/wiki/Louis_Couperus\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eLouis Couperus\u003c/span\u003e\u003c/a\u003e had het boek rechtstreeks van Oscar Wilde ontvangen en zij was er diep van onder de indruk. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 169, "identifier_ids": "560,561,559", "identifiers": [{"book": 169, "id": 559, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789046313596", "sort": "isbn", "type": "isbn", "val": "9789046313596"}, {"book": 169, "id": 561, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/10512", "sort": "gutenberg", "type": "gutenberg", "val": "10512"}, {"book": 169, "id": 560, "name": "Google Books", "path": "https://books.google.com/books?id=Hs1uEAAAQBAJ", "sort": "google", "type": "google", "val": "Hs1uEAAAQBAJ"}], "isbn": "9789046313596", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.827160+00:00", "path": "Oscar Wilde/Het portret van Dorian Gray (169)", "pubdate": "2022-05-09", "publisher_ids": null, "publishers": [], "rating": null, "series": [], "series_ids": null, "size": 174044, "tag_ids": "4,60,180,181,214", "tags": [{"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": null, "count": 1, "id": 180, "name": "Supernatural", "sort": 1}, {"avg_rating": null, "count": 1, "id": 181, "name": "Portraits", "sort": 1}], "timestamp": "2022-10-06 09:40:29.827160+00:00", "title": "Het portret van Dorian Gray"}, {"author_ids": "168", "authors": [{"avg_rating": 8.0, "count": 2, "id": 168, "name": "Oscar Wilde", "sort": "Wilde, Oscar"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHere is Oscar Wilde\u0027s most brilliant tour de force, a witty and buoyant comedy of manners that has delighted millions in countless productions since its first performance in London\u0027s St. James\u0027 Theatre on February 14, 1895.\" The Importance of Being Earnest\" is celebrated not only for the lighthearted ingenuity of its plot, but for its inspired dialogue, rich with scintillating epigrams still savored by all who enjoy artful conversation.\u003cbr\u003eFrom the play\u0027s effervescent beginnings in Algernon Moncrieff\u0027s London flat to its hilarious denouement in the drawing room of Jack Worthing\u0027s country manor in Hertfordshire, this comic masterpiece keeps audiences breathlessly anticipating a new bon mot or a fresh twist of plot moment to moment. A selection of the Common Core State Standards Initiative.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 161, "identifier_ids": "485,487,486,488", "identifiers": [{"book": 161, "id": 488, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780486110189", "sort": "isbn", "type": "isbn", "val": "9780486110189"}, {"book": 161, "id": 486, "name": "Google Books", "path": "https://books.google.com/books?id=5KODk_VCN2kC", "sort": "google", "type": "google", "val": "5KODk_VCN2kC"}, {"book": 161, "id": 487, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/20531534", "sort": "goodreads", "type": "goodreads", "val": "20531534"}, {"book": 161, "id": 485, "name": "Amazon", "path": "https://amazon.com/dp/B0B2HQ3TVM", "sort": "amazon", "type": "amazon", "val": "B0B2HQ3TVM"}], "isbn": "9780486110189", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:37:00.744877+00:00", "path": "Oscar Wilde/The Importance of Being Earnest (161)", "pubdate": "1895-02-14", "publisher_ids": "107", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 107, "name": "Dover Publications", "sort": "Dover Publications"}], "rating": 4, "series": [], "series_ids": null, "size": 10866936, "tag_ids": "18,42,153", "tags": [{"avg_rating": 8.941176470588236, "count": 19, "id": 18, "name": "Romance", "sort": 19}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}], "timestamp": "2022-10-06 09:37:00.744877+00:00", "title": "The Importance of Being Earnest"}])'></div>
          </div>
       </div>
    </div>

@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -889,86 +889,39 @@
 <p>Search for Two Scoops of Django 1.11 to find and purchase the latest edition. </p>
 <h4 style="font-size: medium">Two Scoops of Django: Best Practices For Django 1.8 is full of more material that will help you with your Django projects.</h4>
 <p>We'll introduce you to various tips, tricks, patterns, code snippets, and techniques that we've picked up over the years.</p>
-<p>We have put thousands of hours into the third edition of the book, writing and revising its material to include significant improvements and new material based on feedback from previous editions.</p>
-<p>Table of Contents</p>
-<ul><li>Chapter 1: Coding Style</li>
-<li>Chapter 2: The Optimal Django Environment Setup</li>
-<li>Chapter 3: How To Lay Out Django Projects</li>
-<li>Chapter 4: Fundamentals of Django App Design</li>
-<li>Chapter 5: Settings and Requirements Files</li>
-<li>Chapter 6: Model Best Practices</li>
-<li>Chapter 7: Queries and the Database Layer</li>
-<li>Chapter 8: Function- and Class-Based Views</li>
-<li>Chapter 9: Best Practices for Function-Based Views</li>
-<li>Chapter 10: Best Practices for Class-Based Views</li>
-<li>Chapter 11: Form Fundamentals</li>
-<li>Chapter 12: Common Patterns for Forms</li>
-<li>Chapter 13: Templates: Best Practices</li>
-<li>Chapter 14: Template Tags and Filters</li>
-<li>Chapter 15: Django Templates and Jinja2</li>
-<li>Chapter 16: Building REST APIs</li>
-<li>Chapter 17: Consuming REST APIs</li>
-<li>Chapter 18: Tradeoffs of Replacing Core Components</li>
-<li>Chapter 19: Working With the Django Admin</li>
-<li>Chapter 20: Dealing with the User Model</li>
-<li>Chapter 21: Django's Secret Sauce: Third-Party Packages</li>
-<li>Chapter 22: Testing Chapter of Doom!</li>
-<li>Chapter 23: Documentation: Be Obsessed</li>
-<li>Chapter 24: Finding and Reducing Bottlenecks</li>
-<li>Chapter 25: Asynchronous Task Queues</li>
-<li>Chapter 26: Security Best Practices</li>
-<li>Chapter 27: Logging: Tips and Tools</li>
-<li>Chapter 28: Signals: Use Cases and Avoidance Techniques</li>
-<li>Chapter 29: What About Those Random Utilities?</li>
-<li>Chapter 30: Deployment: Platforms as a Service</li>
-<li>Chapter 31: Deploying Django Projects</li>
-<li>Chapter 29: Identical Environments: The Holy Grail</li>
-<li>Chapter 32: Continuous Integration</li>
-<li>Chapter 33: The Art of Debugging</li>
-<li>Chapter 34: Where and How to Ask Django Questions</li>
-<li>Chapter 35: Closing Thoughts</li>
-<li>Appendix A: Packages Mentioned In This Book</li>
-<li>Appendix B: Troubleshooting</li>
-<li>Appendix C: Additional Resources</li>
-<li>Appendix D: Internationalization and Localization</li>
-<li>Appendix E: Settings Alternatives</li>
-<li>Appendix F: Working with Python 3</li></ul>
-<h2>What is everyone saying about Two Scoops of Django?</h2>
-<ul><li>I read the first edition cover to cover. The second one raises the bar again. It's pedagogical, entertaining, and thoughtful. -- Aymeric Augustin, Django core developer.</li>
-<li>A single read-through of Two Scoops of Django gave me so many lightbulbs and tips; I had to go back for a second helping. -- Lynn Root, Spotify engineer, PSF Director, and PyLadies ambassador.</li>
-<li>Make sure you have your favorite project next to you while reading. You'll be doing some rewriting. -- Bryan Veloso, GitHubber, PyCon PH Keynote Speaker</li>
-<li>You know those lessons you learn when projects blow up in your face? This book contains several projects worth of such lessons. -- Lennart Regebro, author of "Porting to Python 3"</li>
-<li>This is the book I wished had existed and I could have read when I started to really build Django projects. -- Barry Morrison, Linux systems engineer and Django developer</li></ul></div>
+<p>We have put thousands of hours into the third edition of the book, writing and revising its material to include significant improvements and new material based on feedback from previous editions.</p></div>
         </div>
 
-        <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
-        <div class="space-x-1 space-y-1">
-          
-            <a
-              href="https://www.worldcat.org/isbn/9780981467344" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              ISBN
-            </a>
-          
-            <a
-              href="https://books.google.com/books?id=o_7dsgEACAAJ" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Google Books
-            </a>
-          
-            <a
-              href="https://amazon.com/dp/0981467342" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Amazon
-            </a>
-          
-        </div>
+        
+          <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+          <div class="space-x-1 space-y-1">
+            
+              <a
+                href="https://www.worldcat.org/isbn/9780981467344" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                ISBN
+              </a>
+            
+              <a
+                href="https://books.google.com/books?id=o_7dsgEACAAJ" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Google Books
+              </a>
+            
+              <a
+                href="https://amazon.com/dp/0981467342" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Amazon
+              </a>
+            
+          </div>
+        
         
       </div>
     </div>

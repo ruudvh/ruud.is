@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1023,26 +1023,28 @@
                 None
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780207153136" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=9PCOHwAACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780207153136" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=9PCOHwAACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1059,7 +1061,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "57", "authors": [{"avg_rating": 8.0, "count": 3, "id": 57, "name": "Harry Lorayne", "sort": "Lorayne, Harry"}], "comments": null, "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 64, "identifier_ids": "37,38", "identifiers": [{"book": 64, "id": 38, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780207153136", "sort": "isbn", "type": "isbn", "val": "9780207153136"}, {"book": 64, "id": 37, "name": "Google Books", "path": "https://books.google.com/books?id=9PCOHwAACAAJ", "sort": "google", "type": "google", "val": "9PCOHwAACAAJ"}], "isbn": "9780207153136", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:54.722000+00:00", "path": "Harry Lorayne/Harry Lorayne\u0027s Page-A-Minute Memory (64)", "pubdate": "1986-10-15", "publisher_ids": "23", "publishers": [{"avg_rating": null, "count": 1, "id": 23, "name": "Angus and Robertson", "sort": "Angus and Robertson"}], "rating": null, "series": [], "series_ids": null, "size": 463100, "tag_ids": "43,83", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": null, "count": 2, "id": 83, "name": "Memory", "sort": 2}], "timestamp": "2022-10-04 13:46:54.722000+00:00", "title": "Harry Lorayne\u0027s Page-A-Minute Memory Book"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "57", "authors": [{"avg_rating": 8.0, "count": 3, "id": 57, "name": "Harry Lorayne", "sort": "Lorayne, Harry"}], "comments": null, "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2020-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 64, "identifier_ids": "37,38", "identifiers": [{"book": 64, "id": 38, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780207153136", "sort": "isbn", "type": "isbn", "val": "9780207153136"}, {"book": 64, "id": 37, "name": "Google Books", "path": "https://books.google.com/books?id=9PCOHwAACAAJ", "sort": "google", "type": "google", "val": "9PCOHwAACAAJ"}], "isbn": "9780207153136", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:54.722000+00:00", "path": "Harry Lorayne/Harry Lorayne\u0027s Page-A-Minute Memory (64)", "pubdate": "1986-10-15", "publisher_ids": "23", "publishers": [{"avg_rating": null, "count": 1, "id": 23, "name": "Angus and Robertson", "sort": "Angus and Robertson"}], "rating": null, "series": [], "series_ids": null, "size": 463100, "tag_ids": "43,83", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": null, "count": 2, "id": 83, "name": "Memory", "sort": 2}], "timestamp": "2022-10-04 13:46:54.722000+00:00", "title": "Harry Lorayne\u0027s Page-A-Minute Memory Book"}])'></div>
          </div>
       </div>
    </div>

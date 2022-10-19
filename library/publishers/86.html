@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1014,42 +1014,44 @@
                 <p>Longlisted for the Booker Prize 2020    A Spectator Book of the Year    'A literary rendering of the Top Boy generation... I cannot conjure another work which captures this culture in such depth - or with such brutal honesty - as only lived experience can tell ' Graeme Armstrong, author of The Young Team  'An astonishingly powerful book' Cathy Rentzenbrink, author of The Last Act of Love    This life is like being in an ocean. Some people keep swimming towards the bottom. Some people touch the bottom with one foot, or even both, and then push themselves off it to get back up to the top, where you can breathe. Others get to the bottom and decide they want to stay there. I don't want to get to the bottom because I'm already drowning.    This is a story of a London you won't find in any guidebooks.    This is a story about what it's like to exist in the moment, about boys too eager to become men, growing up in the hidden war zones of big cities - and the girls trying to make it their own way.    This is a story of reputations made and lost, of violence and vengeance - and never counting the cost.    This is a story of concrete towers and blank eyed windows, of endless nights in police stations and prison cells, of brotherhood and betrayal.    This is about the boredom, the rush, the despair, the fear and the hope.    This is about what's left behind.    Perfect for fans of Diane Cook, Douglas Stuart and Colum McCann.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780008374990" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=n_ORygEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/52813345" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0008374996" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780008374990" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=n_ORygEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/52813345" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0008374996" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1066,7 +1068,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "144", "authors": [{"avg_rating": 8.0, "count": 1, "id": 144, "name": "Gabriel Krauze", "sort": "Krauze, Gabriel"}], "comments": "\u003cp\u003eLonglisted for the Booker Prize 2020    A Spectator Book of the Year    \u0027A literary rendering of the Top Boy generation... I cannot conjure another work which captures this culture in such depth - or with such brutal honesty - as only lived experience can tell \u0027 Graeme Armstrong, author of The Young Team  \u0027An astonishingly powerful book\u0027 Cathy Rentzenbrink, author of The Last Act of Love    This life is like being in an ocean. Some people keep swimming towards the bottom. Some people touch the bottom with one foot, or even both, and then push themselves off it to get back up to the top, where you can breathe. Others get to the bottom and decide they want to stay there. I don\u0027t want to get to the bottom because I\u0027m already drowning.    This is a story of a London you won\u0027t find in any guidebooks.    This is a story about what it\u0027s like to exist in the moment, about boys too eager to become men, growing up in the hidden war zones of big cities - and the girls trying to make it their own way.    This is a story of reputations made and lost, of violence and vengeance - and never counting the cost.    This is a story of concrete towers and blank eyed windows, of endless nights in police stations and prison cells, of brotherhood and betrayal.    This is about the boredom, the rush, the despair, the fear and the hope.    This is about what\u0027s left behind.    Perfect for fans of Diane Cook, Douglas Stuart and Colum McCann.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 142, "identifier_ids": "343,344,346,345", "identifiers": [{"book": 142, "id": 345, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780008374990", "sort": "isbn", "type": "isbn", "val": "9780008374990"}, {"book": 142, "id": 346, "name": "Google Books", "path": "https://books.google.com/books?id=n_ORygEACAAJ", "sort": "google", "type": "google", "val": "n_ORygEACAAJ"}, {"book": 142, "id": 344, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/52813345", "sort": "goodreads", "type": "goodreads", "val": "52813345"}, {"book": 142, "id": 343, "name": "Amazon", "path": "https://amazon.com/dp/0008374996", "sort": "amazon", "type": "amazon", "val": "0008374996"}], "isbn": "9780008374990", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:14.383381+00:00", "path": "Gabriel Krauze/Who They Was (142)", "pubdate": "2020-09-03", "publisher_ids": "86", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 86, "name": "4th Estate", "sort": "4th Estate"}], "rating": 4, "series": [], "series_ids": null, "size": 1010714, "tag_ids": "49,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}], "timestamp": "2022-10-05 15:54:14.383381+00:00", "title": "Who They Was"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "144", "authors": [{"avg_rating": 8.0, "count": 1, "id": 144, "name": "Gabriel Krauze", "sort": "Krauze, Gabriel"}], "comments": "\u003cp\u003eLonglisted for the Booker Prize 2020    A Spectator Book of the Year    \u0027A literary rendering of the Top Boy generation... I cannot conjure another work which captures this culture in such depth - or with such brutal honesty - as only lived experience can tell \u0027 Graeme Armstrong, author of The Young Team  \u0027An astonishingly powerful book\u0027 Cathy Rentzenbrink, author of The Last Act of Love    This life is like being in an ocean. Some people keep swimming towards the bottom. Some people touch the bottom with one foot, or even both, and then push themselves off it to get back up to the top, where you can breathe. Others get to the bottom and decide they want to stay there. I don\u0027t want to get to the bottom because I\u0027m already drowning.    This is a story of a London you won\u0027t find in any guidebooks.    This is a story about what it\u0027s like to exist in the moment, about boys too eager to become men, growing up in the hidden war zones of big cities - and the girls trying to make it their own way.    This is a story of reputations made and lost, of violence and vengeance - and never counting the cost.    This is a story of concrete towers and blank eyed windows, of endless nights in police stations and prison cells, of brotherhood and betrayal.    This is about the boredom, the rush, the despair, the fear and the hope.    This is about what\u0027s left behind.    Perfect for fans of Diane Cook, Douglas Stuart and Colum McCann.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 142, "identifier_ids": "343,344,346,345", "identifiers": [{"book": 142, "id": 345, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780008374990", "sort": "isbn", "type": "isbn", "val": "9780008374990"}, {"book": 142, "id": 346, "name": "Google Books", "path": "https://books.google.com/books?id=n_ORygEACAAJ", "sort": "google", "type": "google", "val": "n_ORygEACAAJ"}, {"book": 142, "id": 344, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/52813345", "sort": "goodreads", "type": "goodreads", "val": "52813345"}, {"book": 142, "id": 343, "name": "Amazon", "path": "https://amazon.com/dp/0008374996", "sort": "amazon", "type": "amazon", "val": "0008374996"}], "isbn": "9780008374990", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:14.383381+00:00", "path": "Gabriel Krauze/Who They Was (142)", "pubdate": "2020-09-03", "publisher_ids": "86", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 86, "name": "4th Estate", "sort": "4th Estate"}], "rating": 4, "series": [], "series_ids": null, "size": 1010714, "tag_ids": "49,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}], "timestamp": "2022-10-05 15:54:14.383381+00:00", "title": "Who They Was"}])'></div>
          </div>
       </div>
    </div>

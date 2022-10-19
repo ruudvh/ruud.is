@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1045,42 +1045,44 @@
 <p>Mindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck--impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence "Can I just say one last thing about this, and then I swear I'll shut up about it?" <br><br>Perhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you've come to the right book, mostly!<br><br>In <i>Is Everyone Hanging Out Without Me?, </i>Mindy invites readers on a tour of her life and...
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780307886286" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/11392061" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B004JN1D3M" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780307886286" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/11392061" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B004JN1D3M" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1097,7 +1099,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "102", "authors": [{"avg_rating": 8.0, "count": 1, "id": 102, "name": "Mindy Kaling", "sort": "Kaling, Mindy"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck\u2013impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence \u201cCan I just say one last thing about this, and then I swear I\u2019ll shut up about it?\u201d \u003c/p\u003e\n\u003cp\u003ePerhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you\u2019ve come to the right book, mostly! \u003c/p\u003e\n\u003cp\u003eWith several conveniently placed stopping points for you to run errands and make phone calls, \u003cem\u003eIs Everyone Hanging Out Without Me?\u003c/em\u003e proves that Mindy Kaling really is just a Girl Next Door\u2014not so much literally anywhere in the continental United States, but definitely if you live in India or Sri Lanka. \u003c/p\u003e\u003c/div\u003e\n\n\u003cp\u003eMindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck--impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence \"Can I just say one last thing about this, and then I swear I\u0027ll shut up about it?\" \u003cbr\u003e\u003cbr\u003ePerhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you\u0027ve come to the right book, mostly!\u003cbr\u003e\u003cbr\u003eIn \u003ci\u003eIs Everyone Hanging Out Without Me?, \u003c/i\u003eMindy invites readers on a tour of her life and...", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 96, "identifier_ids": "245,248,247,246", "identifiers": [{"book": 96, "id": 246, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780307886286", "sort": "isbn", "type": "isbn", "val": "9780307886286"}, {"book": 96, "id": 247, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11392061", "sort": "goodreads", "type": "goodreads", "val": "11392061"}, {"book": 96, "id": 248, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838"}, {"book": 96, "id": 245, "name": "Amazon", "path": "https://amazon.com/dp/B004JN1D3M", "sort": "amazon", "type": "amazon", "val": "B004JN1D3M"}], "isbn": "9780307886286", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:04:19.398274+00:00", "path": "Mindy Kaling/Is Everyone Hanging Out Without Me_ (96)", "pubdate": "2011-11-01", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 3546539, "tag_ids": "42,50,64,92", "tags": [{"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}], "timestamp": "2022-10-05 15:04:19.398274+00:00", "title": "Is Everyone Hanging Out Without Me? (And Other Concerns)"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "102", "authors": [{"avg_rating": 8.0, "count": 1, "id": 102, "name": "Mindy Kaling", "sort": "Kaling, Mindy"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck\u2013impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence \u201cCan I just say one last thing about this, and then I swear I\u2019ll shut up about it?\u201d \u003c/p\u003e\n\u003cp\u003ePerhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you\u2019ve come to the right book, mostly! \u003c/p\u003e\n\u003cp\u003eWith several conveniently placed stopping points for you to run errands and make phone calls, \u003cem\u003eIs Everyone Hanging Out Without Me?\u003c/em\u003e proves that Mindy Kaling really is just a Girl Next Door\u2014not so much literally anywhere in the continental United States, but definitely if you live in India or Sri Lanka. \u003c/p\u003e\u003c/div\u003e\n\n\u003cp\u003eMindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck--impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence \"Can I just say one last thing about this, and then I swear I\u0027ll shut up about it?\" \u003cbr\u003e\u003cbr\u003ePerhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you\u0027ve come to the right book, mostly!\u003cbr\u003e\u003cbr\u003eIn \u003ci\u003eIs Everyone Hanging Out Without Me?, \u003c/i\u003eMindy invites readers on a tour of her life and...", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 96, "identifier_ids": "245,248,247,246", "identifiers": [{"book": 96, "id": 246, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780307886286", "sort": "isbn", "type": "isbn", "val": "9780307886286"}, {"book": 96, "id": 247, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11392061", "sort": "goodreads", "type": "goodreads", "val": "11392061"}, {"book": 96, "id": 248, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838"}, {"book": 96, "id": 245, "name": "Amazon", "path": "https://amazon.com/dp/B004JN1D3M", "sort": "amazon", "type": "amazon", "val": "B004JN1D3M"}], "isbn": "9780307886286", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:04:19.398274+00:00", "path": "Mindy Kaling/Is Everyone Hanging Out Without Me_ (96)", "pubdate": "2011-11-01", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 3546539, "tag_ids": "42,50,64,92", "tags": [{"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}], "timestamp": "2022-10-05 15:04:19.398274+00:00", "title": "Is Everyone Hanging Out Without Me? (And Other Concerns)"}])'></div>
          </div>
       </div>
    </div>

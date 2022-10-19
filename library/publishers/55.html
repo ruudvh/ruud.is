@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1030,26 +1030,28 @@
 <p>Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/38819529" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B0079KT81G" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/38819529" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B0079KT81G" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1066,7 +1068,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAn alternate cover edition can be found here and here**\u003c/p\u003e\n\u003cp\u003eA great modern classic and the prelude to The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eBilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon.\u003c/p\u003e\n\u003cp\u003eBilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 81, "identifier_ids": "209,210", "identifiers": [{"book": 81, "id": 210, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/38819529", "sort": "goodreads", "type": "goodreads", "val": "38819529"}, {"book": 81, "id": 209, "name": "Amazon", "path": "https://amazon.com/dp/B0079KT81G", "sort": "amazon", "type": "amazon", "val": "B0079KT81G"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.080455+00:00", "path": "J.R.R. Tolkien/The Hobbit (81)", "pubdate": "1937-09-21", "publisher_ids": "55", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 55, "name": "Houghton Mifflin Harcourt", "sort": "Houghton Mifflin Harcourt"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 767482, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.080455+00:00", "title": "The Hobbit"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAn alternate cover edition can be found here and here**\u003c/p\u003e\n\u003cp\u003eA great modern classic and the prelude to The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eBilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon.\u003c/p\u003e\n\u003cp\u003eBilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 81, "identifier_ids": "209,210", "identifiers": [{"book": 81, "id": 210, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/38819529", "sort": "goodreads", "type": "goodreads", "val": "38819529"}, {"book": 81, "id": 209, "name": "Amazon", "path": "https://amazon.com/dp/B0079KT81G", "sort": "amazon", "type": "amazon", "val": "B0079KT81G"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.080455+00:00", "path": "J.R.R. Tolkien/The Hobbit (81)", "pubdate": "1937-09-21", "publisher_ids": "55", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 55, "name": "Houghton Mifflin Harcourt", "sort": "Houghton Mifflin Harcourt"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 767482, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.080455+00:00", "title": "The Hobbit"}])'></div>
          </div>
       </div>
    </div>

@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1020,10 +1020,7 @@
 <p>Available from www.tangowithdjango.com</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-              </div>
+              
               
             </div>
           </div>
@@ -1040,7 +1037,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "257,258", "authors": [{"avg_rating": null, "count": 1, "id": 257, "name": "Leif Azzopardi", "sort": "Azzopardi, Leif"}, {"avg_rating": null, "count": 1, "id": 258, "name": "David Maxwell", "sort": "Maxwell, David"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAvailable from www.tangowithdjango.com\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 1, "sort": "Programming.Python", "value": "Programming.Python"}], "custom_lists_ids": "1", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 233, "identifier_ids": null, "identifiers": [], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-12 20:13:20.049569+00:00", "order_by": "2022-10-12 20:04:05.967426+00:00", "path": "Leif Azzopardi/Tango With Django 2 (233)", "pubdate": "2019-02-09", "publisher_ids": "137", "publishers": [{"avg_rating": null, "count": 1, "id": 137, "name": "leanpub.com", "sort": "leanpub.com"}], "rating": null, "series": [], "series_ids": null, "size": 8894072, "tag_ids": "190,217", "tags": [{"avg_rating": 8.444444444444445, "count": 11, "id": 190, "name": "Programming", "sort": 11}, {"avg_rating": 8.0, "count": 9, "id": 217, "name": "Python", "sort": 9}], "timestamp": "2022-10-12 20:04:05.967426+00:00", "title": "Tango With Django 2"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "257,258", "authors": [{"avg_rating": null, "count": 1, "id": 257, "name": "Leif Azzopardi", "sort": "Azzopardi, Leif"}, {"avg_rating": null, "count": 1, "id": 258, "name": "David Maxwell", "sort": "Maxwell, David"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAvailable from www.tangowithdjango.com\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 1, "sort": "Programming.Python", "value": "Programming.Python"}], "custom_lists_ids": "1", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 233, "identifier_ids": null, "identifiers": [], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-19 08:31:29.150017+00:00", "order_by": "2021-10-12 20:04:05+00:00", "path": "Leif Azzopardi/Tango With Django 2 (233)", "pubdate": "2019-02-09", "publisher_ids": "137", "publishers": [{"avg_rating": null, "count": 1, "id": 137, "name": "leanpub.com", "sort": "leanpub.com"}], "rating": null, "series": [], "series_ids": null, "size": 8894072, "tag_ids": "190,217", "tags": [{"avg_rating": 8.0, "count": 11, "id": 190, "name": "Programming", "sort": 11}, {"avg_rating": 7.714285714285714, "count": 9, "id": 217, "name": "Python", "sort": 9}], "timestamp": "2021-10-12 20:04:05+00:00", "title": "Tango With Django 2"}])'></div>
          </div>
       </div>
    </div>

@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -710,7 +710,7 @@
                 
    <div x-data="{activeTab:'tabCards', books:[]}">
       <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Ratings > 3 (10)</div>
+         <div class="font-medium text-base">Ratings > 3 (11)</div>
          <div class="flex flex-row">
             <button
                @click="activeTab = 'tabCards'"
@@ -1038,34 +1038,36 @@
 <p>New libraries like TensorFlow are being updated constantly. This is not an encyclopedia for these libraries (as such a thing would be impossible to keep up to date). In the one (1!!!) month since the book was first published, no less than THREE new wrapper libraries for TensorFlow have been released to make coding deep networks easier.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="#" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/29496091" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B01CVJ19E8" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="#" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/29496091" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B01CVJ19E8" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1352,42 +1354,44 @@
 <p>47 and his handler, Diana Burnwood, are a team responsible for some of the most ruthless, efficient and untraceable assassinations across the globe. But before they were operatives of the shadowy International Contracts Association, 47 and Burnwood were on their own separate paths in life - streets lined with blood, bullets and revenge. As 14-year-old Diana begins a mission to track down the people who killed her parents, 47 is struggling to free himself and his friend, 6, from the mysterious Institute which has bred them as killers since they were kids. With a story that stretches from the heartland of America to the Berlin Wall, Lone Wolves will trace the birth of the legendary Hitman and the secret past of the woman behind him who pulls the string and knows just how hard taking a life truly is.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781524106638" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=SMyDDwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/41152834" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B07DD5JX2P" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781524106638" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=SMyDDwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/41152834" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B07DD5JX2P" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1671,34 +1675,36 @@
 <p><em>From the Paperback edition.</em></p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781551995656" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=BIjnEatIaqYC" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/11744898" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781551995656" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=BIjnEatIaqYC" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/11744898" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1992,34 +1998,36 @@
                 <p>In de Reformclub in London wordt druk gepraat over de diefstal bij de Bank van Engeland: hoe groot is de kans dat de dief gepakt wordt? De wereld is klein geworden: men kan hem in drie maanden rondreizen! 'In tachtig dagen,' verbetert Phileas Fogg. 'Alles meegerekend?' 'Alles inbegrepen: schipbreuk, treinontsporingen, overvallen en andere ongemakken.' 'Ik wil wedden dat zo'n reis onmogelijk is!' De onverstoorbare Phileas Fogg neemt de uitdaging aan, en zo vertrekt hij met zijn knecht Passepartout op een duizelingwekkende reis.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9027443009" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="http://www.gutenberg.org/ebooks/11318" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Gutenberg
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/60906552" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9027443009" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="http://www.gutenberg.org/ebooks/11318" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Gutenberg
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/60906552" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2305,34 +2313,36 @@
 <p>From Kate Bush to Nicki Minaj, from Janet Jackson to TLC and Taylor Swift, pop's greatest female pioneers are simply strange: smashing notions of taste and decorum, and replacing them with new ideals of pleasure. Instead of rehashing biographies, Lesley Chow dives deep into the music of these groundbreaking performers, identifying the ecstatic moments in their songs and finding out what makes them unique. You're History is a love letter to pop's most singular achievements, celebrating the innovations of women who are still critically underrated. It's a ride that includes tributes to Chaka Khan, Rihanna, Neneh Cherry, Sade, Shakespears Sister, Azealia Banks, and many more... “The slim, sharp book considers a range of female artists from Janet Jackson and Taylor Swift to TLC and Nicki Minaj, a group that the Australian cultural critic Chow views as ‘outliers, marking moments where the culture might have swerved to incorporate their influence, but somehow contrived not to.’” — New York Times summer reads</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781913462352" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=kHXsDwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/56683912" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781913462352" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=kHXsDwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/56683912" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2653,34 +2663,36 @@
 <p>'Herman Koch is razendsnel een van mijn favoriete schrijvers aan het worden. Zijn drie boeken zijn als een ijzersterke EP waarvan elk nummer raak is.' – Stephen King <br></p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789041414540" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=VzgwAgAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/12092228" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789041414540" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=VzgwAgAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/12092228" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2987,34 +2999,36 @@
 <p>In today’s world, where more and more of our communication takes place across wires and screens, Carnegie’s lessons have not only lasted but become all the more critical. Though he never could have predicted technology’s trajectory, Carnegie proves a wise and helpful teacher in this digital landscape. To demonstrate the many ways his lessons remain relevant, Dale Carnegie &amp; Associates, Inc., has reimagined his prescriptions and his advice for this difficult digital age. We may communicate today with different tools and with greater speed, but Carnegie’s advice on how to communicate, lead, and work efficiently remains priceless across the ages.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://books.google.com/books?id=4AKsuQAACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/12176421" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B004U7G81O" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://books.google.com/books?id=4AKsuQAACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/12176421" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B004U7G81O" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -3315,26 +3329,28 @@
 <p>WHO IS 37SIGNALS?<br>We’re a privately-held Chicago-based company committed to building the best web-based software products possible with the least number of features necessary. Our products do less than the competition — intentionally. We’ve been in business since 1999 and love what we do.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/11553059" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B0053KHGWM" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/11553059" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B0053KHGWM" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -3636,26 +3652,28 @@
 <p>With the unique and authoritative guidance of What Color Is Your Parachute?, job-hunters and career changers will have all the tools they need to discover—and land—their dream job.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/55083611" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B08681HM8W" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/55083611" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B08681HM8W" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -3941,34 +3959,335 @@
 <p>• Luister meer, praat minder<br>• Zorg voor een positieve houding<br>• Neem tijd voor de ander<br>• Zeg vaker: hoe kan ik je helpen?<br>• Maak de verhouding positieve versus negatieve feedback</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789082050202" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=UmhengEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/40521846" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789082050202" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=UmhengEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/40521846" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+ </div>
+               
+            
+               
+                  
+  
+
+
+
+  
+
+
+
+  
+
+
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+    <div class="flex relative">
+       <img 
+        src="/library/images/covers/235.jpg"
+        alt="Learn Python the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        @click="showModal = true"
+        >
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
+              Learn Python the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code
+            </div>
+
+            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
+              
+                <a class="underline decoration-solid" href="/library/authors/311.html">Zed A. Shaw</a>
+               
+            </p>
+
+            <div class="whitespace-nowrap mt-2 text-slate-300">
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+            </div>
+
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
+<p>Zed Shaw has perfected the world's best system for learning Python. Follow it and you will succeed-just like the hundreds of thousands of beginners Zed has taught to date! You bring the discipline, commitment, and persistence; the author supplies everything else.</p>
+<p>In *Learn Python the Hard Way, Third Edition,* you'll learn Python by working through 52 brilliantly crafted exercises. Read them. Type their code precisely. (No copying and pasting!) Fix your mistakes. Watch the programs run. As you do, you'll learn how software works; what good programs look like; how to read, write, and think about code; and how to find and fix your mistakes using tricks professional programmers use. Most importantly, you'll learn the following, which you need to start writing excellent Python software of your own:</p></div>
               </div>
+            </div>
+
+            <div class="mt-4">
+              
+              <div
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                @click="showModal = true"
+              >
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+               </svg>
+              </div>
+            </div>
+       </div>
+    </div>
+
+    <template x-teleport="#x-teleport-target">
+      <div
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+        x-show="showModal"
+        role="dialog"
+        @keydown.window.escape="showModal = false"
+      >
+        <div
+          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+          @click="showModal = false"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <div
+          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        >
+          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 hidden lg:block lg:col-span-4 
+                  bg-[url('/library/images/covers/235.jpg')] bg-cover bg-left rounded-l-lg"
+            ></div>
+            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+              <h1 class="pb-4 ml-0 text-3xl font-semibold">
+                Learn Python the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code
+              </h1>
+
+              <table class="w-full text-left align-top">
+                  <tbody>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Authors:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/311.html">Zed A. Shaw</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Series:
+                        </td>
+                        <td class="space-x-1">
+                             
+                        </td>
+                    </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Publishers:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/publishers/6.html">Addison-Wesley Professional</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Publish Date:
+                        </td>
+                        <td class="space-x-1">
+                            2013-09-27
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Languages:
+                        </td>
+                        <td class="space-x-1">
+                            
+                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
+                             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            ISBN:
+                        </td>
+                        <td class="">
+                          <div class="flex items-center">
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">None</p>
+                            <button
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="$clipboard({
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                error:()=>$notification({text:'Error',variant:'error'})
+                              })"
+                            >
+                              Copy
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Rating:
+                          </td>
+                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-1 whitespace-nowrap font-semibold">
+                            Tags:
+                        </td>
+                        <td class="pt-1 space-x-1 space-y-1">
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/190.html">
+                                Programming
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/217.html">
+                                Python
+                            </a>
+                           
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-4 pb-1 font-semibold">Description:</p>
+              <div 
+                x-init="$el._x_simplebar = new SimpleBar($el)"
+                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
+                <div>
+<p>Zed Shaw has perfected the world's best system for learning Python. Follow it and you will succeed-just like the hundreds of thousands of beginners Zed has taught to date! You bring the discipline, commitment, and persistence; the author supplies everything else.</p>
+<p>In *Learn Python the Hard Way, Third Edition,* you'll learn Python by working through 52 brilliantly crafted exercises. Read them. Type their code precisely. (No copying and pasting!) Fix your mistakes. Watch the programs run. As you do, you'll learn how software works; what good programs look like; how to read, write, and think about code; and how to find and fix your mistakes using tricks professional programmers use. Most importantly, you'll learn the following, which you need to start writing excellent Python software of your own:</p></div>
+              </div>
+    
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://amazon.com/dp/B00FGUS948" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -3985,7 +4304,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "262", "authors": [{"avg_rating": 6.0, "count": 1, "id": 262, "name": "Lazy Programmer", "sort": "Programmer, Lazy"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDeep Learning \u003c/p\u003e\n\u003cp\u003eDeep learning is making waves. At the time of this writing (March 2016), Google\u2019s AlghaGo program just beat 9-dan professional Go player Lee Sedol at the game of Go, a Chinese board game. \u003c/p\u003e\n\u003cp\u003eExperts in the field of Artificial Intelligence thought we were 10 years away from achieving a victory against a top professional Go player, but progress seems to have accelerated! \u003c/p\u003e\n\u003cp\u003eWhile deep learning is a complex subject, it is not any more difficult to learn than any other machine learning algorithm. I wrote this book to introduce you to the basics of neural networks. You will get along fine with undergraduate-level math and programming skill. \u003c/p\u003e\n\u003cp\u003eAll the materials in this book can be downloaded and installed for free. We will use the Python programming language, along with the numerical computing library Numpy. I will also show you in the later chapters how to build a deep network using Theano and TensorFlow, which are libraries built specifically for deep learning and can accelerate computation by taking advantage of the GPU. \u003c/p\u003e\n\u003cp\u003eUnlike other machine learning algorithms, deep learning is particularly powerful because it automatically learns features. That means you don\u2019t need to spend your time trying to come up with and test \u201ckernels\u201d or \u201cinteraction effects\u201d - something only statisticians love to do. Instead, we will let the neural network learn these things for us. Each layer of the neural network learns a different abstraction than the previous layers. For example, in image classification, the first layer might learn different strokes, and in the next layer put the strokes together to learn shapes, and in the next layer put the shapes together to form facial features, and in the next layer have a high level representation of faces. \u003c/p\u003e\n\u003cp\u003eOn top of all this, deep learning is known for winning its fair share Kaggle contests. These are machine learning contests that are open to anyone in the world who are allowed to use any machine learning technique they want. Deep learning is that powerful. \u003c/p\u003e\n\u003cp\u003eDo you want a gentle introduction to this \u201cdark art\u201d, with practical code examples that you can try right away and apply to your own data? Then this book is for you. \u003c/p\u003e\n\u003cp\u003eWho is this book NOT for? \u003c/p\u003e\n\u003cp\u003eDeep Learning and Neural Networks are usually taught at the upper-year undergraduate level. That should give you some idea of the type of knowledge you need to understand this kind of material. \u003c/p\u003e\n\u003cp\u003eYou absolutely need exposure to calculus to understand deep learning, no matter how simple the instructor makes things. Linear algebra would help. I will assume familiarity with Python (although it is an easy language to pick up). You will need to have some concept of machine learning. If you know about algorithms like logistic regression already, this book is perfect for you. If not, you might want to check out my \u201cprerequisites\u201d book, at: http://amzn.com/B01D7GDRQ2 \u003c/p\u003e\n\u003cp\u003eOn the other hand, this book is more like a casual primer than a dry textbook. If you are looking for material on more advanced topics, like LSTMs, convolutional neural networks, or reinforcement learning, I have online courses that teach this material, for example: https://www.udemy.com/deep-learning-c... \u003c/p\u003e\n\u003cp\u003eNew libraries like TensorFlow are being updated constantly. This is not an encyclopedia for these libraries (as such a thing would be impossible to keep up to date). In the one (1!!!) month since the book was first published, no less than THREE new wrapper libraries for TensorFlow have been released to make coding deep networks easier.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 1, "sort": "Programming.Python", "value": "Programming.Python"}], "custom_lists_ids": "1", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 226, "identifier_ids": "820,818,819", "identifiers": [{"book": 226, "id": 819, "name": "", "path": "#", "sort": "mobi-asin", "type": "mobi-asin", "val": "B01CVJ19E8"}, {"book": 226, "id": 818, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/29496091", "sort": "goodreads", "type": "goodreads", "val": "29496091"}, {"book": 226, "id": 820, "name": "Amazon", "path": "https://amazon.com/dp/B01CVJ19E8", "sort": "amazon", "type": "amazon", "val": "B01CVJ19E8"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-12 20:13:20.049569+00:00", "order_by": "2022-10-12 20:04:04.877341+00:00", "path": "Lazy Programmer/Deep Learning in Python_ Master Dat (226)", "pubdate": "2016-03-11", "publisher_ids": null, "publishers": [], "rating": 3, "series": [], "series_ids": null, "size": 208267, "tag_ids": "190,217", "tags": [{"avg_rating": 8.444444444444445, "count": 11, "id": 190, "name": "Programming", "sort": 11}, {"avg_rating": 8.0, "count": 9, "id": 217, "name": "Python", "sort": 9}], "timestamp": "2022-10-12 20:04:04.877341+00:00", "title": "Deep Learning in Python: Master Data Science and Machine Learning With Modern Neural Networks Written in Python, Theano, and TensorFlow (Machine Learning in Python)"}, {"author_ids": "191", "authors": [{"avg_rating": 6.0, "count": 1, "id": 191, "name": "Christopher Sebela", "sort": "Sebela, Christopher"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e47 and his handler, Diana Burnwood, are a team responsible for some of the most ruthless, efficient and untraceable assassinations across the globe. But before they were operatives of the shadowy International Contracts Association, 47 and Burnwood were on their own separate paths in life - streets lined with blood, bullets and revenge. As 14-year-old Diana begins a mission to track down the people who killed her parents, 47 is struggling to free himself and his friend, 6, from the mysterious Institute which has bred them as killers since they were kids. With a story that stretches from the heartland of America to the Berlin Wall, Lone Wolves will trace the birth of the legendary Hitman and the secret past of the woman behind him who pulls the string and knows just how hard taking a life truly is.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2019-10-06", "custom_reading_list": 0, "custom_types": [{"id": 2, "sort": "Comic", "value": "Comic"}], "custom_types_ids": "2", "flags": 1, "has_cover": 1, "id": 178, "identifier_ids": "670,671,668,669", "identifiers": [{"book": 178, "id": 669, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781524106638", "sort": "isbn", "type": "isbn", "val": "9781524106638"}, {"book": 178, "id": 668, "name": "Google Books", "path": "https://books.google.com/books?id=SMyDDwAAQBAJ", "sort": "google", "type": "google", "val": "SMyDDwAAQBAJ"}, {"book": 178, "id": 671, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/41152834", "sort": "goodreads", "type": "goodreads", "val": "41152834"}, {"book": 178, "id": 670, "name": "Amazon", "path": "https://amazon.com/dp/B07DD5JX2P", "sort": "amazon", "type": "amazon", "val": "B07DD5JX2P"}], "isbn": "9781524106638", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 10:10:20.485880+00:00", "path": "Christopher Sebela/Agent 47_ Birth of the Hitman Vol. (178)", "pubdate": "2018-09-26", "publisher_ids": "121", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 121, "name": "Dynamite Entertainment", "sort": "Dynamite Entertainment"}], "rating": 3, "series": [], "series_ids": null, "size": 226138648, "tag_ids": "184", "tags": [{"avg_rating": 8.428571428571429, "count": 36, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 36}], "timestamp": "2022-10-06 10:10:20.485880+00:00", "title": "Agent 47: Birth of the Hitman Vol. 1"}, {"author_ids": "179,185", "authors": [{"avg_rating": 6.0, "count": 1, "id": 185, "name": "Peter Gzowski", "sort": "Gzowski, Peter"}, {"avg_rating": 6.0, "count": 1, "id": 179, "name": "Mordecai Richler", "sort": "Richler, Mordecai"}], "comments": "\u003cp\u003eTransplanted to Toronto from his native Baffin Island, Atuk the poet is an unlikely overnight success. Eagerly adapting to a society steeped in pretension, bigotry, and greed, Atuk soon abandons the literary life in favour of more lucrative \u2013 and hazardous \u2013 schemes.  \u003c/p\u003e\n\u003cp\u003eRichler\u2019s hilarious and devastating satire lampoons the self-deceptions of \u201cthe Canadian identity\u201d and derides the hypocrisy of a nation that seeks cultural independence by slavishly pursuing the American dream.  \u003c/p\u003e\n\u003cp\u003e\u003cem\u003eFrom the Paperback edition.\u003c/em\u003e\u003c/p\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 173, "identifier_ids": "531,532,530", "identifiers": [{"book": 173, "id": 530, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781551995656", "sort": "isbn", "type": "isbn", "val": "9781551995656"}, {"book": 173, "id": 532, "name": "Google Books", "path": "https://books.google.com/books?id=BIjnEatIaqYC", "sort": "google", "type": "google", "val": "BIjnEatIaqYC"}, {"book": 173, "id": 531, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11744898", "sort": "goodreads", "type": "goodreads", "val": "11744898"}], "isbn": "9781551995656", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:30.413580+00:00", "path": "Mordecai Richler/The Incomparable Atuk (173)", "pubdate": "1963-01-01", "publisher_ids": "118", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 118, "name": "New Canadian Library", "sort": "New Canadian Library"}], "rating": 3, "series": [], "series_ids": null, "size": 1907536, "tag_ids": "42", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}], "timestamp": "2022-10-06 09:40:30.413580+00:00", "title": "The Incomparable Atuk"}, {"author_ids": "171", "authors": [{"avg_rating": 7.0, "count": 2, "id": 171, "name": "Jules Verne", "sort": "Verne, Jules"}], "comments": "\u003cp\u003eIn de Reformclub in London wordt druk gepraat over de diefstal bij de Bank van Engeland: hoe groot is de kans dat de dief gepakt wordt? De wereld is klein geworden: men kan hem in drie maanden rondreizen! \u0027In tachtig dagen,\u0027 verbetert Phileas Fogg. \u0027Alles meegerekend?\u0027 \u0027Alles inbegrepen: schipbreuk, treinontsporingen, overvallen en andere ongemakken.\u0027 \u0027Ik wil wedden dat zo\u0027n reis onmogelijk is!\u0027 De onverstoorbare Phileas Fogg neemt de uitdaging aan, en zo vertrekt hij met zijn knecht Passepartout op een duizelingwekkende reis.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 170, "identifier_ids": "557,556,558", "identifiers": [{"book": 170, "id": 558, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9027443009", "sort": "isbn", "type": "isbn", "val": "9027443009"}, {"book": 170, "id": 556, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/11318", "sort": "gutenberg", "type": "gutenberg", "val": "11318"}, {"book": 170, "id": 557, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/60906552", "sort": "goodreads", "type": "goodreads", "val": "60906552"}], "isbn": "9027443009", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.958795+00:00", "path": "Jules Verne/De reis om de wereld in tachtig dag (170)", "pubdate": "1980-01-01", "publisher_ids": "103", "publishers": [{"avg_rating": 7.0, "count": 2, "id": 103, "name": "Spectrum", "sort": "Spectrum"}], "rating": 3, "series": [], "series_ids": null, "size": 4144846, "tag_ids": "4,84,90,214", "tags": [{"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-06 09:40:29.958795+00:00", "title": "De reis om de wereld in tachtig dagen"}, {"author_ids": "136", "authors": [{"avg_rating": 6.0, "count": 1, "id": 136, "name": "Lesley Chow", "sort": "Chow, Lesley"}], "comments": "\u003cp\u003eRaucous, sensual and sublime: how twelve pioneering female artists rewrote the rules of pop.\u003c/p\u003e\n\n\u003cp\u003eFrom Kate Bush to Nicki Minaj, from Janet Jackson to TLC and Taylor Swift, pop\u0027s greatest female pioneers are simply strange: smashing notions of taste and decorum, and replacing them with new ideals of pleasure. Instead of rehashing biographies, Lesley Chow dives deep into the music of these groundbreaking performers, identifying the ecstatic moments in their songs and finding out what makes them unique. You\u0027re History is a love letter to pop\u0027s most singular achievements, celebrating the innovations of women who are still critically underrated. It\u0027s a ride that includes tributes to Chaka Khan, Rihanna, Neneh Cherry, Sade, Shakespears Sister, Azealia Banks, and many more... \u201cThe slim, sharp book considers a range of female artists from Janet Jackson and Taylor Swift to TLC and Nicki Minaj, a group that the Australian cultural critic Chow views as \u2018outliers, marking moments where the culture might have swerved to incorporate their influence, but somehow contrived not to.\u2019\u201d \u2014 New York Times summer reads\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 134, "identifier_ids": "322,321,323", "identifiers": [{"book": 134, "id": 323, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781913462352", "sort": "isbn", "type": "isbn", "val": "9781913462352"}, {"book": 134, "id": 321, "name": "Google Books", "path": "https://books.google.com/books?id=kHXsDwAAQBAJ", "sort": "google", "type": "google", "val": "kHXsDwAAQBAJ"}, {"book": 134, "id": 322, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/56683912", "sort": "goodreads", "type": "goodreads", "val": "56683912"}], "isbn": "9781913462352", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:11.498726+00:00", "path": "Lesley Chow/You\u0027re History_ The Twelve Stranges (134)", "pubdate": "2021-03-09", "publisher_ids": "83", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 83, "name": "Repeater Books", "sort": "Repeater Books"}], "rating": 3, "series": [], "series_ids": null, "size": 1625538, "tag_ids": "132,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 7.6, "count": 6, "id": 132, "name": "Music", "sort": 6}], "timestamp": "2022-10-05 15:54:11.498726+00:00", "title": "You\u0027re History: The Twelve Strangest Women in Music"}, {"author_ids": "93", "authors": [{"avg_rating": 6.0, "count": 1, "id": 93, "name": "Herman Koch", "sort": "Koch, Herman"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHet diner van Herman Koch is een briljante en grensverleggende roman. Het verhaal voltrekt zich binnen de tijdspanne van een avond en ontwikkelt zich tot een adembenemende thriller. Verfilmd in 2017. \u003c/p\u003e\n\u003cp\u003eHerman Koch brak wereldwijd door met Het diner, een weergaloze roman die de vraag opwekt in hoeverre je als ouder verantwoordelijk bent voor de daden van je eigen kind. In soepel proza schotelt Herman Koch de lezer een bloedstollend verhaal voor dat zich binnen de tijdsspanne van een avond voltrekt. \u003c/p\u003e\n\u003cp\u003eTwee echtparen gaan een avond uit eten in een restaurant. Ze praten over alledaagse dingen, dingen waar mensen tijdens etentjes over praten: werk, de laatste films, vakantieplannen. Maar ondertussen vermijden ze waar ze het eigenlijk over moeten hebben: hun kinderen. De twee vijftienjarige zoons van beide echtparen, Michel en Rick, hebben samen iets uitgehaald wat hun toekomst kan verwoesten. Tot dusver zijn alleen vage beelden van de twee in Opsporing verzocht vertoond en zit het onderzoek naar hun identiteit vast. Maar hoe lang nog? Wat de situatie nog ingewikkelder maakt is dat de vader van Rick de beoogde nieuwe minister-president van Nederland is. \u003c/p\u003e\n\u003cp\u003e\u0027De roman ontwikkelt zich tot een adembenemende thriller waarin niemand onschuldig is. Koch houdt de lezer in zijn greep.\u0027 \u2013 Niccol\u00f2 Ammaniti \u003c/p\u003e\n\u003cp\u003e\u0027De beste Nederlandse roman die ik in maanden heb gelezen.\u0027 \u2013 Pieter Steinz in NRC Handelsblad \u003c/p\u003e\n\u003cp\u003e\u0027Een briljante tragikomedie over de rekbaarheid van morele verantwoordelijkheid. De lezer moet voortdurend zijn inzichten bijstellen.\u0027 \u2013 Frankfurter Allgemeine Zeitung \u003c/p\u003e\n\u003cp\u003e\u0027Intrigerend en zeer lezenswaardig.\u0027 \u2013 The New York Times Book Review \u003c/p\u003e\n\u003cp\u003e\u0027Een grensverleggend, intelligent geschreven en belangrijk boek.\u0027 \u2013 Nordjyske \u003c/p\u003e\n\u003cp\u003e\u0027Herman Koch is razendsnel een van mijn favoriete schrijvers aan het worden. Zijn drie boeken zijn als een ijzersterke EP waarvan elk nummer raak is.\u0027 \u2013 Stephen King \u003cbr\u003e\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 87, "identifier_ids": "229,230,228", "identifiers": [{"book": 87, "id": 228, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789041414540", "sort": "isbn", "type": "isbn", "val": "9789041414540"}, {"book": 87, "id": 230, "name": "Google Books", "path": "https://books.google.com/books?id=VzgwAgAAQBAJ", "sort": "google", "type": "google", "val": "VzgwAgAAQBAJ"}, {"book": 87, "id": 229, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/12092228", "sort": "goodreads", "type": "goodreads", "val": "12092228"}], "isbn": "9789041414540", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 14:35:23.994266+00:00", "path": "Herman Koch/Het diner (87)", "pubdate": "2009-01-01", "publisher_ids": "59", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 59, "name": "Anthos", "sort": "Anthos"}], "rating": 3, "series": [], "series_ids": null, "size": 351764, "tag_ids": "47,48,49,50", "tags": [{"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 7.875, "count": 16, "id": 47, "name": "Mystery", "sort": 16}, {"avg_rating": 7.666666666666667, "count": 6, "id": 48, "name": "Thriller", "sort": 6}], "timestamp": "2022-10-05 14:35:23.994266+00:00", "title": "Het diner"}, {"author_ids": "17,76", "authors": [{"avg_rating": 8.0, "count": 3, "id": 17, "name": "Dale Carnegie", "sort": "Carnegie, Dale"}, {"avg_rating": 6.0, "count": 1, "id": 76, "name": "Brent Cole", "sort": "Cole, Brent"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAN UP-TO-THE -MINUTE ADAPTATION OF DALE CARNEGIE \u2019S TIMELESS PRESCRIPTIONS FOR THE DIGITAL AGE\u003c/p\u003e\n\u003cp\u003eDALE CARNEGIE\u2019s commonsense approach to communicating has endured for a century, touching millions and millions of readers. The only diploma that hangs in Warren Buffett\u2019s office is his certificate from Dale Carnegie Training. Lee Iacocca credits Carnegie for giving him the courage to speak in public. Dilbert creator Scott Adams called Carnegie\u2019s teachings \u201clife-changing.\u201d\u003c/p\u003e\n\u003cp\u003eIn today\u2019s world, where more and more of our communication takes place across wires and screens, Carnegie\u2019s lessons have not only lasted but become all the more critical. Though he never could have predicted technology\u2019s trajectory, Carnegie proves a wise and helpful teacher in this digital landscape. To demonstrate the many ways his lessons remain relevant, Dale Carnegie \u0026amp; Associates, Inc., has reimagined his prescriptions and his advice for this difficult digital age. We may communicate today with different tools and with greater speed, but Carnegie\u2019s advice on how to communicate, lead, and work efficiently remains priceless across the ages.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 66, "identifier_ids": "133,134,132", "identifiers": [{"book": 66, "id": 132, "name": "Google Books", "path": "https://books.google.com/books?id=4AKsuQAACAAJ", "sort": "google", "type": "google", "val": "4AKsuQAACAAJ"}, {"book": 66, "id": 134, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/12176421", "sort": "goodreads", "type": "goodreads", "val": "12176421"}, {"book": 66, "id": 133, "name": "Amazon", "path": "https://amazon.com/dp/B004U7G81O", "sort": "amazon", "type": "amazon", "val": "B004U7G81O"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:56.206000+00:00", "path": "Dale Carnegie/How to Win Friends and Influence Peo (66)", "pubdate": "2011-10-04", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": 3, "series": [], "series_ids": null, "size": 3640731, "tag_ids": "31,43,62", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}], "timestamp": "2022-10-04 13:46:56.206000+00:00", "title": "How to Win Friends and Influence People in the Digital Age"}, {"author_ids": "4,12,62", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}, {"avg_rating": 6.0, "count": 1, "id": 62, "name": "Matthew Linderman", "sort": "Linderman, Matthew"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBOOK REPORT\u003cbr\u003eGetting Real is the business, design, programming, and marketing philosophies of 37signals \u2014 a developer of web-based software used by over 1 million people and businesses in 70 countries.\u003c/p\u003e\n\u003cp\u003eWHY IS THE BOOK RELEVANT?\u003cbr\u003e37signals used the unconventional Getting Real process to launch five successful web-based applications (Basecamp, Campfire, Backpack, Writeboard, Ta-da List), and Ruby on Rails, an open-source web application framework, in just two years with no funding, no debt, and only 7 people.\u003c/p\u003e\n\u003cp\u003eWHAT\u0027S IN IT FOR ME?\u003cbr\u003eAnyone working on a web app \u2014 including entrepreneurs, designers, programmers, executives, or marketers \u2014 will find value, fresh perspectives, and inspiration in this practical book. At under 200 pages it\u0027s quick reading too. Makes a great airplane book.\u003c/p\u003e\n\u003cp\u003eWHO IS 37SIGNALS?\u003cbr\u003eWe\u2019re a privately-held Chicago-based company committed to building the best web-based software products possible with the least number of features necessary. Our products do less than the competition \u2014 intentionally. We\u2019ve been in business since 1999 and love what we do.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 59, "identifier_ids": "55,56", "identifiers": [{"book": 59, "id": 56, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11553059", "sort": "goodreads", "type": "goodreads", "val": "11553059"}, {"book": 59, "id": 55, "name": "Amazon", "path": "https://amazon.com/dp/B0053KHGWM", "sort": "amazon", "type": "amazon", "val": "B0053KHGWM"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:53.083000+00:00", "path": "Jason Fried/Getting Real (59)", "pubdate": "2006-01-01", "publisher_ids": "101", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 101, "name": "37signals", "sort": "37signals"}], "rating": 3, "series": [], "series_ids": null, "size": 5118368, "tag_ids": "11", "tags": [{"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}], "timestamp": "2022-10-04 13:46:53.083000+00:00", "title": "Getting Real"}, {"author_ids": "60,85", "authors": [{"avg_rating": 6.0, "count": 1, "id": 60, "name": "Richard Nelson Bolles", "sort": "Bolles, Richard Nelson"}, {"avg_rating": 6.0, "count": 1, "id": 85, "name": "Katharine Brooks", "sort": "Brooks, Katharine"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWith timeless advice, up-to-the-minute insights, and more than ten million copies sold over fifty years, the world\u2019s most popular and best-selling career guide is fully revised and expanded for 2021.\u003c/p\u003e\n\u003cp\u003eIn today\u2019s challenging job-market, as recent grads face a shifting economic landscape and seek work that pays and inspires, as workers are laid off mid-career, and as people search for an inspiring work-life change, the time-tested advice of What Color Is Your Parachute? is needed more than ever. This completely updated edition features the latest resources, strategies, and perspectives on today\u2019s job market, revealing surprising advice on what works\u2014and what doesn\u2019t\u2014so you can focus your efforts on tactics that yield results.\u003c/p\u003e\n\u003cp\u003eThis practical manual has been fully revised for 2021 by Vanderbilt University Career Center Director Katharine Brooks, EdD, with modern advice on the job hunt strategies that are working today, such as building an online resume, making the most of social media tools to network effectively, interviewing virtually with confidence, and negotiating the best salary possible.\u003c/p\u003e\n\u003cp\u003eAt its core is Richard N. Bolles\u2019s famed Flower Exercise, a unique self-inventory that helps you design your career\u2014and your life\u2014around your key passions, transferable skills, traits, and more.\u003c/p\u003e\n\u003cp\u003eWith the unique and authoritative guidance of What Color Is Your Parachute?, job-hunters and career changers will have all the tools they need to discover\u2014and land\u2014their dream job.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 56, "identifier_ids": "49,48", "identifiers": [{"book": 56, "id": 48, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55083611", "sort": "goodreads", "type": "goodreads", "val": "55083611"}, {"book": 56, "id": 49, "name": "Amazon", "path": "https://amazon.com/dp/B08681HM8W", "sort": "amazon", "type": "amazon", "val": "B08681HM8W"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:51.454000+00:00", "path": "Richard Nelson Bolles/What Color Is Your Parachute_ 2021_ (56)", "pubdate": "1970-01-01", "publisher_ids": "25", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 25, "name": "Ten Speed Press", "sort": "Ten Speed Press"}], "rating": 3, "series": [], "series_ids": null, "size": 29321842, "tag_ids": "11,31,43", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}], "timestamp": "2022-10-04 13:46:51.454000+00:00", "title": "What Color Is Your Parachute? 2021: Your Guide to a Lifetime of Meaningful Work and Career Success"}, {"author_ids": "68,69", "authors": [{"avg_rating": 6.0, "count": 1, "id": 68, "name": "Laura van Den Ouden", "sort": "Ouden, Laura van Den"}, {"avg_rating": 6.0, "count": 1, "id": 69, "name": "Erik Smithuis", "sort": "Smithuis, Erik"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAlles is communicatie, je kunt niet niet communiceren. Daarom willen we jou graag via 10 tips inspireren om effectiever te communiceren. Na het lezen van deze 10 tips zul je anderen en jezelf beter begrijpen. Via bewezen theorie\u00ebn en inspirerende voorbeelden ontvang je waardevolle tips en aanwijzingen, waarmee jij je voordeel kunt doen in je werkende leven \u00e9n je priv\u00e9-leven.\u003c/p\u003e\n\u003cp\u003eHieronder een aantal tips dat in het boek aan bod komt:\u003c/p\u003e\n\u003cp\u003e\u2022 Luister meer, praat minder\u003cbr\u003e\u2022 Zorg voor een positieve houding\u003cbr\u003e\u2022 Neem tijd voor de ander\u003cbr\u003e\u2022 Zeg vaker: hoe kan ik je helpen?\u003cbr\u003e\u2022 Maak de verhouding positieve versus negatieve feedback\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 54, "identifier_ids": "68,67,66", "identifiers": [{"book": 54, "id": 66, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789082050202", "sort": "isbn", "type": "isbn", "val": "9789082050202"}, {"book": 54, "id": 67, "name": "Google Books", "path": "https://books.google.com/books?id=UmhengEACAAJ", "sort": "google", "type": "google", "val": "UmhengEACAAJ"}, {"book": 54, "id": 68, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/40521846", "sort": "goodreads", "type": "goodreads", "val": "40521846"}], "isbn": "9789082050202", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:50.775000+00:00", "path": "Laura van Den Ouden/De 10 tips voor Succesvol Communicer (54)", "pubdate": "2013-10-15", "publisher_ids": "30", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 30, "name": "ICM Publishing", "sort": "ICM Publishing"}], "rating": 3, "series": [], "series_ids": null, "size": 253799, "tag_ids": "81", "tags": [{"avg_rating": 6.0, "count": 1, "id": 81, "name": "Communication", "sort": 1}], "timestamp": "2022-10-04 13:46:50.775000+00:00", "title": "De 10 tips voor Succesvol Communiceren"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "262", "authors": [{"avg_rating": 6.0, "count": 1, "id": 262, "name": "Lazy Programmer", "sort": "Programmer, Lazy"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDeep Learning \u003c/p\u003e\n\u003cp\u003eDeep learning is making waves. At the time of this writing (March 2016), Google\u2019s AlghaGo program just beat 9-dan professional Go player Lee Sedol at the game of Go, a Chinese board game. \u003c/p\u003e\n\u003cp\u003eExperts in the field of Artificial Intelligence thought we were 10 years away from achieving a victory against a top professional Go player, but progress seems to have accelerated! \u003c/p\u003e\n\u003cp\u003eWhile deep learning is a complex subject, it is not any more difficult to learn than any other machine learning algorithm. I wrote this book to introduce you to the basics of neural networks. You will get along fine with undergraduate-level math and programming skill. \u003c/p\u003e\n\u003cp\u003eAll the materials in this book can be downloaded and installed for free. We will use the Python programming language, along with the numerical computing library Numpy. I will also show you in the later chapters how to build a deep network using Theano and TensorFlow, which are libraries built specifically for deep learning and can accelerate computation by taking advantage of the GPU. \u003c/p\u003e\n\u003cp\u003eUnlike other machine learning algorithms, deep learning is particularly powerful because it automatically learns features. That means you don\u2019t need to spend your time trying to come up with and test \u201ckernels\u201d or \u201cinteraction effects\u201d - something only statisticians love to do. Instead, we will let the neural network learn these things for us. Each layer of the neural network learns a different abstraction than the previous layers. For example, in image classification, the first layer might learn different strokes, and in the next layer put the strokes together to learn shapes, and in the next layer put the shapes together to form facial features, and in the next layer have a high level representation of faces. \u003c/p\u003e\n\u003cp\u003eOn top of all this, deep learning is known for winning its fair share Kaggle contests. These are machine learning contests that are open to anyone in the world who are allowed to use any machine learning technique they want. Deep learning is that powerful. \u003c/p\u003e\n\u003cp\u003eDo you want a gentle introduction to this \u201cdark art\u201d, with practical code examples that you can try right away and apply to your own data? Then this book is for you. \u003c/p\u003e\n\u003cp\u003eWho is this book NOT for? \u003c/p\u003e\n\u003cp\u003eDeep Learning and Neural Networks are usually taught at the upper-year undergraduate level. That should give you some idea of the type of knowledge you need to understand this kind of material. \u003c/p\u003e\n\u003cp\u003eYou absolutely need exposure to calculus to understand deep learning, no matter how simple the instructor makes things. Linear algebra would help. I will assume familiarity with Python (although it is an easy language to pick up). You will need to have some concept of machine learning. If you know about algorithms like logistic regression already, this book is perfect for you. If not, you might want to check out my \u201cprerequisites\u201d book, at: http://amzn.com/B01D7GDRQ2 \u003c/p\u003e\n\u003cp\u003eOn the other hand, this book is more like a casual primer than a dry textbook. If you are looking for material on more advanced topics, like LSTMs, convolutional neural networks, or reinforcement learning, I have online courses that teach this material, for example: https://www.udemy.com/deep-learning-c... \u003c/p\u003e\n\u003cp\u003eNew libraries like TensorFlow are being updated constantly. This is not an encyclopedia for these libraries (as such a thing would be impossible to keep up to date). In the one (1!!!) month since the book was first published, no less than THREE new wrapper libraries for TensorFlow have been released to make coding deep networks easier.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 1, "sort": "Programming.Python", "value": "Programming.Python"}], "custom_lists_ids": "1", "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 226, "identifier_ids": "820,818,819", "identifiers": [{"book": 226, "id": 819, "name": "", "path": "#", "sort": "mobi-asin", "type": "mobi-asin", "val": "B01CVJ19E8"}, {"book": 226, "id": 818, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/29496091", "sort": "goodreads", "type": "goodreads", "val": "29496091"}, {"book": 226, "id": 820, "name": "Amazon", "path": "https://amazon.com/dp/B01CVJ19E8", "sort": "amazon", "type": "amazon", "val": "B01CVJ19E8"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-19 08:31:49.772857+00:00", "order_by": "2022-10-08 20:04:04+00:00", "path": "Lazy Programmer/Deep Learning in Python_ Master Dat (226)", "pubdate": "2016-03-11", "publisher_ids": null, "publishers": [], "rating": 3, "series": [], "series_ids": null, "size": 208267, "tag_ids": "190,217", "tags": [{"avg_rating": 8.0, "count": 11, "id": 190, "name": "Programming", "sort": 11}, {"avg_rating": 7.714285714285714, "count": 9, "id": 217, "name": "Python", "sort": 9}], "timestamp": "2022-10-08 20:04:04+00:00", "title": "Deep Learning in Python: Master Data Science and Machine Learning With Modern Neural Networks Written in Python, Theano, and TensorFlow (Machine Learning in Python)"}, {"author_ids": "191", "authors": [{"avg_rating": 6.0, "count": 1, "id": 191, "name": "Christopher Sebela", "sort": "Sebela, Christopher"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e47 and his handler, Diana Burnwood, are a team responsible for some of the most ruthless, efficient and untraceable assassinations across the globe. But before they were operatives of the shadowy International Contracts Association, 47 and Burnwood were on their own separate paths in life - streets lined with blood, bullets and revenge. As 14-year-old Diana begins a mission to track down the people who killed her parents, 47 is struggling to free himself and his friend, 6, from the mysterious Institute which has bred them as killers since they were kids. With a story that stretches from the heartland of America to the Berlin Wall, Lone Wolves will trace the birth of the legendary Hitman and the secret past of the woman behind him who pulls the string and knows just how hard taking a life truly is.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2019-10-06", "custom_reading_list": 0, "custom_types": [{"id": 2, "sort": "Comic", "value": "Comic"}], "custom_types_ids": "2", "flags": 1, "has_cover": 1, "id": 178, "identifier_ids": "670,671,668,669", "identifiers": [{"book": 178, "id": 669, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781524106638", "sort": "isbn", "type": "isbn", "val": "9781524106638"}, {"book": 178, "id": 668, "name": "Google Books", "path": "https://books.google.com/books?id=SMyDDwAAQBAJ", "sort": "google", "type": "google", "val": "SMyDDwAAQBAJ"}, {"book": 178, "id": 671, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/41152834", "sort": "goodreads", "type": "goodreads", "val": "41152834"}, {"book": 178, "id": 670, "name": "Amazon", "path": "https://amazon.com/dp/B07DD5JX2P", "sort": "amazon", "type": "amazon", "val": "B07DD5JX2P"}], "isbn": "9781524106638", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 10:10:20.485880+00:00", "path": "Christopher Sebela/Agent 47_ Birth of the Hitman Vol. (178)", "pubdate": "2018-09-26", "publisher_ids": "121", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 121, "name": "Dynamite Entertainment", "sort": "Dynamite Entertainment"}], "rating": 3, "series": [], "series_ids": null, "size": 226138648, "tag_ids": "184", "tags": [{"avg_rating": 8.428571428571429, "count": 36, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 36}], "timestamp": "2022-10-06 10:10:20.485880+00:00", "title": "Agent 47: Birth of the Hitman Vol. 1"}, {"author_ids": "179,185", "authors": [{"avg_rating": 6.0, "count": 1, "id": 185, "name": "Peter Gzowski", "sort": "Gzowski, Peter"}, {"avg_rating": 6.0, "count": 1, "id": 179, "name": "Mordecai Richler", "sort": "Richler, Mordecai"}], "comments": "\u003cp\u003eTransplanted to Toronto from his native Baffin Island, Atuk the poet is an unlikely overnight success. Eagerly adapting to a society steeped in pretension, bigotry, and greed, Atuk soon abandons the literary life in favour of more lucrative \u2013 and hazardous \u2013 schemes.  \u003c/p\u003e\n\u003cp\u003eRichler\u2019s hilarious and devastating satire lampoons the self-deceptions of \u201cthe Canadian identity\u201d and derides the hypocrisy of a nation that seeks cultural independence by slavishly pursuing the American dream.  \u003c/p\u003e\n\u003cp\u003e\u003cem\u003eFrom the Paperback edition.\u003c/em\u003e\u003c/p\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 173, "identifier_ids": "531,532,530", "identifiers": [{"book": 173, "id": 530, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781551995656", "sort": "isbn", "type": "isbn", "val": "9781551995656"}, {"book": 173, "id": 532, "name": "Google Books", "path": "https://books.google.com/books?id=BIjnEatIaqYC", "sort": "google", "type": "google", "val": "BIjnEatIaqYC"}, {"book": 173, "id": 531, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11744898", "sort": "goodreads", "type": "goodreads", "val": "11744898"}], "isbn": "9781551995656", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:30.413580+00:00", "path": "Mordecai Richler/The Incomparable Atuk (173)", "pubdate": "1963-01-01", "publisher_ids": "118", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 118, "name": "New Canadian Library", "sort": "New Canadian Library"}], "rating": 3, "series": [], "series_ids": null, "size": 1907536, "tag_ids": "42", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}], "timestamp": "2022-10-06 09:40:30.413580+00:00", "title": "The Incomparable Atuk"}, {"author_ids": "171", "authors": [{"avg_rating": 7.0, "count": 2, "id": 171, "name": "Jules Verne", "sort": "Verne, Jules"}], "comments": "\u003cp\u003eIn de Reformclub in London wordt druk gepraat over de diefstal bij de Bank van Engeland: hoe groot is de kans dat de dief gepakt wordt? De wereld is klein geworden: men kan hem in drie maanden rondreizen! \u0027In tachtig dagen,\u0027 verbetert Phileas Fogg. \u0027Alles meegerekend?\u0027 \u0027Alles inbegrepen: schipbreuk, treinontsporingen, overvallen en andere ongemakken.\u0027 \u0027Ik wil wedden dat zo\u0027n reis onmogelijk is!\u0027 De onverstoorbare Phileas Fogg neemt de uitdaging aan, en zo vertrekt hij met zijn knecht Passepartout op een duizelingwekkende reis.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 170, "identifier_ids": "557,556,558", "identifiers": [{"book": 170, "id": 558, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9027443009", "sort": "isbn", "type": "isbn", "val": "9027443009"}, {"book": 170, "id": 556, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/11318", "sort": "gutenberg", "type": "gutenberg", "val": "11318"}, {"book": 170, "id": 557, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/60906552", "sort": "goodreads", "type": "goodreads", "val": "60906552"}], "isbn": "9027443009", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-06 09:40:29.958795+00:00", "path": "Jules Verne/De reis om de wereld in tachtig dag (170)", "pubdate": "1980-01-01", "publisher_ids": "103", "publishers": [{"avg_rating": 7.0, "count": 2, "id": 103, "name": "Spectrum", "sort": "Spectrum"}], "rating": 3, "series": [], "series_ids": null, "size": 4144846, "tag_ids": "4,84,90,214", "tags": [{"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-06 09:40:29.958795+00:00", "title": "De reis om de wereld in tachtig dagen"}, {"author_ids": "136", "authors": [{"avg_rating": 6.0, "count": 1, "id": 136, "name": "Lesley Chow", "sort": "Chow, Lesley"}], "comments": "\u003cp\u003eRaucous, sensual and sublime: how twelve pioneering female artists rewrote the rules of pop.\u003c/p\u003e\n\n\u003cp\u003eFrom Kate Bush to Nicki Minaj, from Janet Jackson to TLC and Taylor Swift, pop\u0027s greatest female pioneers are simply strange: smashing notions of taste and decorum, and replacing them with new ideals of pleasure. Instead of rehashing biographies, Lesley Chow dives deep into the music of these groundbreaking performers, identifying the ecstatic moments in their songs and finding out what makes them unique. You\u0027re History is a love letter to pop\u0027s most singular achievements, celebrating the innovations of women who are still critically underrated. It\u0027s a ride that includes tributes to Chaka Khan, Rihanna, Neneh Cherry, Sade, Shakespears Sister, Azealia Banks, and many more... \u201cThe slim, sharp book considers a range of female artists from Janet Jackson and Taylor Swift to TLC and Nicki Minaj, a group that the Australian cultural critic Chow views as \u2018outliers, marking moments where the culture might have swerved to incorporate their influence, but somehow contrived not to.\u2019\u201d \u2014 New York Times summer reads\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 134, "identifier_ids": "322,321,323", "identifiers": [{"book": 134, "id": 323, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781913462352", "sort": "isbn", "type": "isbn", "val": "9781913462352"}, {"book": 134, "id": 321, "name": "Google Books", "path": "https://books.google.com/books?id=kHXsDwAAQBAJ", "sort": "google", "type": "google", "val": "kHXsDwAAQBAJ"}, {"book": 134, "id": 322, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/56683912", "sort": "goodreads", "type": "goodreads", "val": "56683912"}], "isbn": "9781913462352", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:11.498726+00:00", "path": "Lesley Chow/You\u0027re History_ The Twelve Stranges (134)", "pubdate": "2021-03-09", "publisher_ids": "83", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 83, "name": "Repeater Books", "sort": "Repeater Books"}], "rating": 3, "series": [], "series_ids": null, "size": 1625538, "tag_ids": "132,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 7.6, "count": 6, "id": 132, "name": "Music", "sort": 6}], "timestamp": "2022-10-05 15:54:11.498726+00:00", "title": "You\u0027re History: The Twelve Strangest Women in Music"}, {"author_ids": "93", "authors": [{"avg_rating": 6.0, "count": 1, "id": 93, "name": "Herman Koch", "sort": "Koch, Herman"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHet diner van Herman Koch is een briljante en grensverleggende roman. Het verhaal voltrekt zich binnen de tijdspanne van een avond en ontwikkelt zich tot een adembenemende thriller. Verfilmd in 2017. \u003c/p\u003e\n\u003cp\u003eHerman Koch brak wereldwijd door met Het diner, een weergaloze roman die de vraag opwekt in hoeverre je als ouder verantwoordelijk bent voor de daden van je eigen kind. In soepel proza schotelt Herman Koch de lezer een bloedstollend verhaal voor dat zich binnen de tijdsspanne van een avond voltrekt. \u003c/p\u003e\n\u003cp\u003eTwee echtparen gaan een avond uit eten in een restaurant. Ze praten over alledaagse dingen, dingen waar mensen tijdens etentjes over praten: werk, de laatste films, vakantieplannen. Maar ondertussen vermijden ze waar ze het eigenlijk over moeten hebben: hun kinderen. De twee vijftienjarige zoons van beide echtparen, Michel en Rick, hebben samen iets uitgehaald wat hun toekomst kan verwoesten. Tot dusver zijn alleen vage beelden van de twee in Opsporing verzocht vertoond en zit het onderzoek naar hun identiteit vast. Maar hoe lang nog? Wat de situatie nog ingewikkelder maakt is dat de vader van Rick de beoogde nieuwe minister-president van Nederland is. \u003c/p\u003e\n\u003cp\u003e\u0027De roman ontwikkelt zich tot een adembenemende thriller waarin niemand onschuldig is. Koch houdt de lezer in zijn greep.\u0027 \u2013 Niccol\u00f2 Ammaniti \u003c/p\u003e\n\u003cp\u003e\u0027De beste Nederlandse roman die ik in maanden heb gelezen.\u0027 \u2013 Pieter Steinz in NRC Handelsblad \u003c/p\u003e\n\u003cp\u003e\u0027Een briljante tragikomedie over de rekbaarheid van morele verantwoordelijkheid. De lezer moet voortdurend zijn inzichten bijstellen.\u0027 \u2013 Frankfurter Allgemeine Zeitung \u003c/p\u003e\n\u003cp\u003e\u0027Intrigerend en zeer lezenswaardig.\u0027 \u2013 The New York Times Book Review \u003c/p\u003e\n\u003cp\u003e\u0027Een grensverleggend, intelligent geschreven en belangrijk boek.\u0027 \u2013 Nordjyske \u003c/p\u003e\n\u003cp\u003e\u0027Herman Koch is razendsnel een van mijn favoriete schrijvers aan het worden. Zijn drie boeken zijn als een ijzersterke EP waarvan elk nummer raak is.\u0027 \u2013 Stephen King \u003cbr\u003e\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 87, "identifier_ids": "229,230,228", "identifiers": [{"book": 87, "id": 228, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789041414540", "sort": "isbn", "type": "isbn", "val": "9789041414540"}, {"book": 87, "id": 230, "name": "Google Books", "path": "https://books.google.com/books?id=VzgwAgAAQBAJ", "sort": "google", "type": "google", "val": "VzgwAgAAQBAJ"}, {"book": 87, "id": 229, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/12092228", "sort": "goodreads", "type": "goodreads", "val": "12092228"}], "isbn": "9789041414540", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 14:35:23.994266+00:00", "path": "Herman Koch/Het diner (87)", "pubdate": "2009-01-01", "publisher_ids": "59", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 59, "name": "Anthos", "sort": "Anthos"}], "rating": 3, "series": [], "series_ids": null, "size": 351764, "tag_ids": "47,48,49,50", "tags": [{"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}, {"avg_rating": 7.875, "count": 16, "id": 47, "name": "Mystery", "sort": 16}, {"avg_rating": 7.666666666666667, "count": 6, "id": 48, "name": "Thriller", "sort": 6}], "timestamp": "2022-10-05 14:35:23.994266+00:00", "title": "Het diner"}, {"author_ids": "17,76", "authors": [{"avg_rating": 8.0, "count": 3, "id": 17, "name": "Dale Carnegie", "sort": "Carnegie, Dale"}, {"avg_rating": 6.0, "count": 1, "id": 76, "name": "Brent Cole", "sort": "Cole, Brent"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAN UP-TO-THE -MINUTE ADAPTATION OF DALE CARNEGIE \u2019S TIMELESS PRESCRIPTIONS FOR THE DIGITAL AGE\u003c/p\u003e\n\u003cp\u003eDALE CARNEGIE\u2019s commonsense approach to communicating has endured for a century, touching millions and millions of readers. The only diploma that hangs in Warren Buffett\u2019s office is his certificate from Dale Carnegie Training. Lee Iacocca credits Carnegie for giving him the courage to speak in public. Dilbert creator Scott Adams called Carnegie\u2019s teachings \u201clife-changing.\u201d\u003c/p\u003e\n\u003cp\u003eIn today\u2019s world, where more and more of our communication takes place across wires and screens, Carnegie\u2019s lessons have not only lasted but become all the more critical. Though he never could have predicted technology\u2019s trajectory, Carnegie proves a wise and helpful teacher in this digital landscape. To demonstrate the many ways his lessons remain relevant, Dale Carnegie \u0026amp; Associates, Inc., has reimagined his prescriptions and his advice for this difficult digital age. We may communicate today with different tools and with greater speed, but Carnegie\u2019s advice on how to communicate, lead, and work efficiently remains priceless across the ages.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 66, "identifier_ids": "133,134,132", "identifiers": [{"book": 66, "id": 132, "name": "Google Books", "path": "https://books.google.com/books?id=4AKsuQAACAAJ", "sort": "google", "type": "google", "val": "4AKsuQAACAAJ"}, {"book": 66, "id": 134, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/12176421", "sort": "goodreads", "type": "goodreads", "val": "12176421"}, {"book": 66, "id": 133, "name": "Amazon", "path": "https://amazon.com/dp/B004U7G81O", "sort": "amazon", "type": "amazon", "val": "B004U7G81O"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:56.206000+00:00", "path": "Dale Carnegie/How to Win Friends and Influence Peo (66)", "pubdate": "2011-10-04", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": 3, "series": [], "series_ids": null, "size": 3640731, "tag_ids": "31,43,62", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}], "timestamp": "2022-10-04 13:46:56.206000+00:00", "title": "How to Win Friends and Influence People in the Digital Age"}, {"author_ids": "4,12,62", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}, {"avg_rating": 6.0, "count": 1, "id": 62, "name": "Matthew Linderman", "sort": "Linderman, Matthew"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBOOK REPORT\u003cbr\u003eGetting Real is the business, design, programming, and marketing philosophies of 37signals \u2014 a developer of web-based software used by over 1 million people and businesses in 70 countries.\u003c/p\u003e\n\u003cp\u003eWHY IS THE BOOK RELEVANT?\u003cbr\u003e37signals used the unconventional Getting Real process to launch five successful web-based applications (Basecamp, Campfire, Backpack, Writeboard, Ta-da List), and Ruby on Rails, an open-source web application framework, in just two years with no funding, no debt, and only 7 people.\u003c/p\u003e\n\u003cp\u003eWHAT\u0027S IN IT FOR ME?\u003cbr\u003eAnyone working on a web app \u2014 including entrepreneurs, designers, programmers, executives, or marketers \u2014 will find value, fresh perspectives, and inspiration in this practical book. At under 200 pages it\u0027s quick reading too. Makes a great airplane book.\u003c/p\u003e\n\u003cp\u003eWHO IS 37SIGNALS?\u003cbr\u003eWe\u2019re a privately-held Chicago-based company committed to building the best web-based software products possible with the least number of features necessary. Our products do less than the competition \u2014 intentionally. We\u2019ve been in business since 1999 and love what we do.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 59, "identifier_ids": "55,56", "identifiers": [{"book": 59, "id": 56, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11553059", "sort": "goodreads", "type": "goodreads", "val": "11553059"}, {"book": 59, "id": 55, "name": "Amazon", "path": "https://amazon.com/dp/B0053KHGWM", "sort": "amazon", "type": "amazon", "val": "B0053KHGWM"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:53.083000+00:00", "path": "Jason Fried/Getting Real (59)", "pubdate": "2006-01-01", "publisher_ids": "101", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 101, "name": "37signals", "sort": "37signals"}], "rating": 3, "series": [], "series_ids": null, "size": 5118368, "tag_ids": "11", "tags": [{"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}], "timestamp": "2022-10-04 13:46:53.083000+00:00", "title": "Getting Real"}, {"author_ids": "60,85", "authors": [{"avg_rating": 6.0, "count": 1, "id": 60, "name": "Richard Nelson Bolles", "sort": "Bolles, Richard Nelson"}, {"avg_rating": 6.0, "count": 1, "id": 85, "name": "Katharine Brooks", "sort": "Brooks, Katharine"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWith timeless advice, up-to-the-minute insights, and more than ten million copies sold over fifty years, the world\u2019s most popular and best-selling career guide is fully revised and expanded for 2021.\u003c/p\u003e\n\u003cp\u003eIn today\u2019s challenging job-market, as recent grads face a shifting economic landscape and seek work that pays and inspires, as workers are laid off mid-career, and as people search for an inspiring work-life change, the time-tested advice of What Color Is Your Parachute? is needed more than ever. This completely updated edition features the latest resources, strategies, and perspectives on today\u2019s job market, revealing surprising advice on what works\u2014and what doesn\u2019t\u2014so you can focus your efforts on tactics that yield results.\u003c/p\u003e\n\u003cp\u003eThis practical manual has been fully revised for 2021 by Vanderbilt University Career Center Director Katharine Brooks, EdD, with modern advice on the job hunt strategies that are working today, such as building an online resume, making the most of social media tools to network effectively, interviewing virtually with confidence, and negotiating the best salary possible.\u003c/p\u003e\n\u003cp\u003eAt its core is Richard N. Bolles\u2019s famed Flower Exercise, a unique self-inventory that helps you design your career\u2014and your life\u2014around your key passions, transferable skills, traits, and more.\u003c/p\u003e\n\u003cp\u003eWith the unique and authoritative guidance of What Color Is Your Parachute?, job-hunters and career changers will have all the tools they need to discover\u2014and land\u2014their dream job.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 56, "identifier_ids": "49,48", "identifiers": [{"book": 56, "id": 48, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55083611", "sort": "goodreads", "type": "goodreads", "val": "55083611"}, {"book": 56, "id": 49, "name": "Amazon", "path": "https://amazon.com/dp/B08681HM8W", "sort": "amazon", "type": "amazon", "val": "B08681HM8W"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:51.454000+00:00", "path": "Richard Nelson Bolles/What Color Is Your Parachute_ 2021_ (56)", "pubdate": "1970-01-01", "publisher_ids": "25", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 25, "name": "Ten Speed Press", "sort": "Ten Speed Press"}], "rating": 3, "series": [], "series_ids": null, "size": 29321842, "tag_ids": "11,31,43", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}], "timestamp": "2022-10-04 13:46:51.454000+00:00", "title": "What Color Is Your Parachute? 2021: Your Guide to a Lifetime of Meaningful Work and Career Success"}, {"author_ids": "68,69", "authors": [{"avg_rating": 6.0, "count": 1, "id": 68, "name": "Laura van Den Ouden", "sort": "Ouden, Laura van Den"}, {"avg_rating": 6.0, "count": 1, "id": 69, "name": "Erik Smithuis", "sort": "Smithuis, Erik"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAlles is communicatie, je kunt niet niet communiceren. Daarom willen we jou graag via 10 tips inspireren om effectiever te communiceren. Na het lezen van deze 10 tips zul je anderen en jezelf beter begrijpen. Via bewezen theorie\u00ebn en inspirerende voorbeelden ontvang je waardevolle tips en aanwijzingen, waarmee jij je voordeel kunt doen in je werkende leven \u00e9n je priv\u00e9-leven.\u003c/p\u003e\n\u003cp\u003eHieronder een aantal tips dat in het boek aan bod komt:\u003c/p\u003e\n\u003cp\u003e\u2022 Luister meer, praat minder\u003cbr\u003e\u2022 Zorg voor een positieve houding\u003cbr\u003e\u2022 Neem tijd voor de ander\u003cbr\u003e\u2022 Zeg vaker: hoe kan ik je helpen?\u003cbr\u003e\u2022 Maak de verhouding positieve versus negatieve feedback\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 54, "identifier_ids": "68,67,66", "identifiers": [{"book": 54, "id": 66, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789082050202", "sort": "isbn", "type": "isbn", "val": "9789082050202"}, {"book": 54, "id": 67, "name": "Google Books", "path": "https://books.google.com/books?id=UmhengEACAAJ", "sort": "google", "type": "google", "val": "UmhengEACAAJ"}, {"book": 54, "id": 68, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/40521846", "sort": "goodreads", "type": "goodreads", "val": "40521846"}], "isbn": "9789082050202", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:50.775000+00:00", "path": "Laura van Den Ouden/De 10 tips voor Succesvol Communicer (54)", "pubdate": "2013-10-15", "publisher_ids": "30", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 30, "name": "ICM Publishing", "sort": "ICM Publishing"}], "rating": 3, "series": [], "series_ids": null, "size": 253799, "tag_ids": "81", "tags": [{"avg_rating": 6.0, "count": 1, "id": 81, "name": "Communication", "sort": 1}], "timestamp": "2022-10-04 13:46:50.775000+00:00", "title": "De 10 tips voor Succesvol Communiceren"}, {"author_ids": "311", "authors": [{"avg_rating": 7.0, "count": 2, "id": 311, "name": "Zed A. Shaw", "sort": "Shaw, Zed A."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eZed Shaw has perfected the world\u0027s best system for learning Python. Follow it and you will succeed-just like the hundreds of thousands of beginners Zed has taught to date! You bring the discipline, commitment, and persistence; the author supplies everything else.\u003c/p\u003e\n\u003cp\u003eIn *Learn Python the Hard Way, Third Edition,* you\u0027ll learn Python by working through 52 brilliantly crafted exercises. Read them. Type their code precisely. (No copying and pasting!) Fix your mistakes. Watch the programs run. As you do, you\u0027ll learn how software works; what good programs look like; how to read, write, and think about code; and how to find and fix your mistakes using tricks professional programmers use. Most importantly, you\u0027ll learn the following, which you need to start writing excellent Python software of your own:\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 1, "sort": "Programming.Python", "value": "Programming.Python"}], "custom_lists_ids": "1", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 235, "identifier_ids": "833", "identifiers": [{"book": 235, "id": 833, "name": "Amazon", "path": "https://amazon.com/dp/B00FGUS948", "sort": "amazon", "type": "amazon", "val": "B00FGUS948"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-19 08:31:08.909139+00:00", "order_by": "2021-10-12 20:04:06+00:00", "path": "Zed A. Shaw/Learn Python the Hard Way_ A Very S (235)", "pubdate": "2013-09-27", "publisher_ids": "6", "publishers": [{"avg_rating": 7.0, "count": 2, "id": 6, "name": "Addison-Wesley Professional", "sort": "Addison-Wesley Professional"}], "rating": 3, "series": [], "series_ids": null, "size": 2229850, "tag_ids": "190,217", "tags": [{"avg_rating": 8.0, "count": 11, "id": 190, "name": "Programming", "sort": 11}, {"avg_rating": 7.714285714285714, "count": 9, "id": 217, "name": "Python", "sort": 9}], "timestamp": "2021-10-12 20:04:06+00:00", "title": "Learn Python the Hard Way: A Very Simple Introduction to the Terrifyingly Beautiful World of Computers and Code"}])'></div>
          </div>
       </div>
    </div>

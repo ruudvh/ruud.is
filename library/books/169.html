@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -878,34 +878,36 @@
 <p><strong>Het portret van Dorian Gray</strong> (Engelstalige titel <em>The Picture of Dorian Gray</em>) is de enige gepubliceerde <a href="https://nl.wikipedia.org/wiki/Roman_(literatuur)"><span style="color: #6cb4ee">roman</span></a> van <a href="https://nl.wikipedia.org/wiki/Oscar_Wilde"><span style="color: #6cb4ee">Oscar Wilde</span></a>. Hij werd voor het eerst uitgebracht in <a href="https://nl.wikipedia.org/wiki/Verenigd_Koninkrijk"><span style="color: #6cb4ee">Engeland</span></a> in 1890. Een Nederlandse vertaling door <a href="https://nl.wikipedia.org/wiki/Elisabeth_Couperus-Baud"><span style="color: #6cb4ee">Elisabeth Couperus-Baud</span></a> verscheen in 1893. Haar echtgenoot <a href="https://nl.wikipedia.org/wiki/Louis_Couperus"><span style="color: #6cb4ee">Louis Couperus</span></a> had het boek rechtstreeks van Oscar Wilde ontvangen en zij was er diep van onder de indruk. </p></div>
         </div>
 
-        <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
-        <div class="space-x-1 space-y-1">
-          
-            <a
-              href="https://www.worldcat.org/isbn/9789046313596" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              ISBN
-            </a>
-          
-            <a
-              href="http://www.gutenberg.org/ebooks/10512" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Gutenberg
-            </a>
-          
-            <a
-              href="https://books.google.com/books?id=Hs1uEAAAQBAJ" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Google Books
-            </a>
-          
-        </div>
+        
+          <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+          <div class="space-x-1 space-y-1">
+            
+              <a
+                href="https://www.worldcat.org/isbn/9789046313596" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                ISBN
+              </a>
+            
+              <a
+                href="http://www.gutenberg.org/ebooks/10512" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Gutenberg
+              </a>
+            
+              <a
+                href="https://books.google.com/books?id=Hs1uEAAAQBAJ" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Google Books
+              </a>
+            
+          </div>
+        
         
       </div>
     </div>

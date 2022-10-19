@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1047,42 +1047,44 @@
 <p>Other ingredients include sex, voodoo, torture, multiple betrayal, cool military technology, incomprehensible alien constructions, age-old cycles of catastrophe, and--above all--extreme violence. The screw is turned further and further, beyond what seems possible. Readers may find themselves forgetting to breathe. This is a rattling good yarn, for the strong of stomach. --David Langford</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780575075504" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=H_FyPwAACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/1117988" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0345457714" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780575075504" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=H_FyPwAACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/1117988" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0345457714" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1099,7 +1101,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "89", "authors": [{"avg_rating": 8.0, "count": 3, "id": 89, "name": "Richard K. Morgan", "sort": "Morgan, Richard K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBroken Angels is a standalone sequel, to Richard Morgan\u0027s debut novel Altered Carbon--a high-tech, ultra-violent, noir SF thriller which attracted much attention, including a movie deal.\u003c/p\u003e\n\u003cp\u003eThirty years later, our super-soldier hero Takeshi Kovacs is wearing yet another body (swapping is easy in this future), already wounded in a messy war against revolutionary forces on the planet Sanction IV. Very soon he\u0027s lured from his duties into a hunt for a fantastic treasure discovered by archaeologists and carefully hushed up. The long-vanished Martians who once colonised the galaxy have left a buried hyperspace gateway leading to a working starship in distant orbit.\u003c/p\u003e\n\u003cp\u003eKovacs uses frightening violence to get the attention of corporate sponsors even more ruthless than himself. His hastily assembled exploration team must work in a lethal fallout zone, racing to open the gate before they\u0027re stopped by radiation sickness, treacherous sabotage, or the threat of fast-evolving nanoweaponry. And there are repeated hints that if they ever make it through that gateway, worse things are waiting on the far side...\u003c/p\u003e\n\u003cp\u003eIt\u0027s all desperately tense and crafted with appalling inventiveness. Life is cheap and death is no release, because the \"cortical stack\" implanted in everyone\u0027s spine constantly records the total personality, ready for \"re-sleeving\" in a new clone body or storage in virtual reality. So Kovacs goes recruiting at the macabre Soul Market, where thanks to the war there are literal skiploads of hacked-out sections of human spine containing stacks--for sale by the kilogram.\u003c/p\u003e\n\u003cp\u003eOther ingredients include sex, voodoo, torture, multiple betrayal, cool military technology, incomprehensible alien constructions, age-old cycles of catastrophe, and--above all--extreme violence. The screw is turned further and further, beyond what seems possible. Readers may find themselves forgetting to breathe. This is a rattling good yarn, for the strong of stomach. --David Langford\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2022-06-08", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 75, "identifier_ids": "169,168,166,167", "identifiers": [{"book": 75, "id": 167, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780575075504", "sort": "isbn", "type": "isbn", "val": "9780575075504"}, {"book": 75, "id": 166, "name": "Google Books", "path": "https://books.google.com/books?id=H_FyPwAACAAJ", "sort": "google", "type": "google", "val": "H_FyPwAACAAJ"}, {"book": 75, "id": 168, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1117988", "sort": "goodreads", "type": "goodreads", "val": "1117988"}, {"book": 75, "id": 169, "name": "Amazon", "path": "https://amazon.com/dp/0345457714", "sort": "amazon", "type": "amazon", "val": "0345457714"}], "isbn": "9780575075504", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:29:45.875671+00:00", "path": "Richard K. Morgan/Broken Angels (75)", "pubdate": "2003-03-20", "publisher_ids": "45", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 45, "name": "Gollancz", "sort": "Gollancz"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 3, "id": 7, "name": "Takeshi Kovacs Novels", "sort": "Takeshi Kovacs Novels"}], "series_ids": "7", "size": 477940, "tag_ids": "47,48,75,76", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 7.875, "count": 16, "id": 47, "name": "Mystery", "sort": 16}, {"avg_rating": 7.666666666666667, "count": 6, "id": 48, "name": "Thriller", "sort": 6}], "timestamp": "2022-10-04 19:29:45.875671+00:00", "title": "Broken Angels"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "89", "authors": [{"avg_rating": 8.0, "count": 3, "id": 89, "name": "Richard K. Morgan", "sort": "Morgan, Richard K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBroken Angels is a standalone sequel, to Richard Morgan\u0027s debut novel Altered Carbon--a high-tech, ultra-violent, noir SF thriller which attracted much attention, including a movie deal.\u003c/p\u003e\n\u003cp\u003eThirty years later, our super-soldier hero Takeshi Kovacs is wearing yet another body (swapping is easy in this future), already wounded in a messy war against revolutionary forces on the planet Sanction IV. Very soon he\u0027s lured from his duties into a hunt for a fantastic treasure discovered by archaeologists and carefully hushed up. The long-vanished Martians who once colonised the galaxy have left a buried hyperspace gateway leading to a working starship in distant orbit.\u003c/p\u003e\n\u003cp\u003eKovacs uses frightening violence to get the attention of corporate sponsors even more ruthless than himself. His hastily assembled exploration team must work in a lethal fallout zone, racing to open the gate before they\u0027re stopped by radiation sickness, treacherous sabotage, or the threat of fast-evolving nanoweaponry. And there are repeated hints that if they ever make it through that gateway, worse things are waiting on the far side...\u003c/p\u003e\n\u003cp\u003eIt\u0027s all desperately tense and crafted with appalling inventiveness. Life is cheap and death is no release, because the \"cortical stack\" implanted in everyone\u0027s spine constantly records the total personality, ready for \"re-sleeving\" in a new clone body or storage in virtual reality. So Kovacs goes recruiting at the macabre Soul Market, where thanks to the war there are literal skiploads of hacked-out sections of human spine containing stacks--for sale by the kilogram.\u003c/p\u003e\n\u003cp\u003eOther ingredients include sex, voodoo, torture, multiple betrayal, cool military technology, incomprehensible alien constructions, age-old cycles of catastrophe, and--above all--extreme violence. The screw is turned further and further, beyond what seems possible. Readers may find themselves forgetting to breathe. This is a rattling good yarn, for the strong of stomach. --David Langford\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2022-06-08", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 75, "identifier_ids": "169,168,166,167", "identifiers": [{"book": 75, "id": 167, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780575075504", "sort": "isbn", "type": "isbn", "val": "9780575075504"}, {"book": 75, "id": 166, "name": "Google Books", "path": "https://books.google.com/books?id=H_FyPwAACAAJ", "sort": "google", "type": "google", "val": "H_FyPwAACAAJ"}, {"book": 75, "id": 168, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1117988", "sort": "goodreads", "type": "goodreads", "val": "1117988"}, {"book": 75, "id": 169, "name": "Amazon", "path": "https://amazon.com/dp/0345457714", "sort": "amazon", "type": "amazon", "val": "0345457714"}], "isbn": "9780575075504", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:29:45.875671+00:00", "path": "Richard K. Morgan/Broken Angels (75)", "pubdate": "2003-03-20", "publisher_ids": "45", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 45, "name": "Gollancz", "sort": "Gollancz"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 3, "id": 7, "name": "Takeshi Kovacs Novels", "sort": "Takeshi Kovacs Novels"}], "series_ids": "7", "size": 477940, "tag_ids": "47,48,75,76", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 7.875, "count": 16, "id": 47, "name": "Mystery", "sort": 16}, {"avg_rating": 7.666666666666667, "count": 6, "id": 48, "name": "Thriller", "sort": 6}], "timestamp": "2022-10-04 19:29:45.875671+00:00", "title": "Broken Angels"}])'></div>
          </div>
       </div>
    </div>

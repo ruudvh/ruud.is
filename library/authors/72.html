@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1040,34 +1040,36 @@
 <p>The author writes, "At the heart of this simple book lies the key to many of the struggles we face these days, from being productive and achieving our goals, to getting healthy and fit in the face of fast food and inactivity, to finding simplicity and peace amidst chaos and confusion. That key is itself simple: focus. Our ability to focus will allow us to create in ways that perhaps we haven't in years. It'll allow us to slow down and find peace of mind. It'll allow us to simplify and focus on less-on the essential things, the things that matter most.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781434103079" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/10008766" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/focus-leo-babauta/1100574344" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781434103079" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/10008766" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/focus-leo-babauta/1100574344" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1084,7 +1086,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "72", "authors": [{"avg_rating": 8.0, "count": 1, "id": 72, "name": "Leo Babauta", "sort": "Babauta, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe author writes, \"At the heart of this simple book lies the key to many of the struggles we face these days, from being productive and achieving our goals, to getting healthy and fit in the face of fast food and inactivity, to finding simplicity and peace amidst chaos and confusion. That key is itself simple: focus. Our ability to focus will allow us to create in ways that perhaps we haven\u0027t in years. It\u0027ll allow us to slow down and find peace of mind. It\u0027ll allow us to simplify and focus on less-on the essential things, the things that matter most.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 49, "identifier_ids": "85,83,84", "identifiers": [{"book": 49, "id": 84, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781434103079", "sort": "isbn", "type": "isbn", "val": "9781434103079"}, {"book": 49, "id": 83, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/10008766", "sort": "goodreads", "type": "goodreads", "val": "10008766"}, {"book": 49, "id": 85, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/focus-leo-babauta/1100574344", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/focus-leo-babauta/1100574344"}], "isbn": "9781434103079", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:47.154000+00:00", "path": "Leo Babauta/Focus (49)", "pubdate": "2010-09-10", "publisher_ids": "34", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 34, "name": "Editorium", "sort": "Editorium"}], "rating": 4, "series": [], "series_ids": null, "size": 461240, "tag_ids": "31,43,51,62,70,71", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.285714285714286, "count": 7, "id": 51, "name": "Business", "sort": 7}, {"avg_rating": 8.0, "count": 4, "id": 70, "name": "Health", "sort": 4}, {"avg_rating": 8.0, "count": 2, "id": 71, "name": "Inspirational", "sort": 2}], "timestamp": "2022-10-04 13:46:47.154000+00:00", "title": "Focus"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "72", "authors": [{"avg_rating": 8.0, "count": 1, "id": 72, "name": "Leo Babauta", "sort": "Babauta, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe author writes, \"At the heart of this simple book lies the key to many of the struggles we face these days, from being productive and achieving our goals, to getting healthy and fit in the face of fast food and inactivity, to finding simplicity and peace amidst chaos and confusion. That key is itself simple: focus. Our ability to focus will allow us to create in ways that perhaps we haven\u0027t in years. It\u0027ll allow us to slow down and find peace of mind. It\u0027ll allow us to simplify and focus on less-on the essential things, the things that matter most.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 49, "identifier_ids": "85,83,84", "identifiers": [{"book": 49, "id": 84, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781434103079", "sort": "isbn", "type": "isbn", "val": "9781434103079"}, {"book": 49, "id": 83, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/10008766", "sort": "goodreads", "type": "goodreads", "val": "10008766"}, {"book": 49, "id": 85, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/focus-leo-babauta/1100574344", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/focus-leo-babauta/1100574344"}], "isbn": "9781434103079", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:47.154000+00:00", "path": "Leo Babauta/Focus (49)", "pubdate": "2010-09-10", "publisher_ids": "34", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 34, "name": "Editorium", "sort": "Editorium"}], "rating": 4, "series": [], "series_ids": null, "size": 461240, "tag_ids": "31,43,51,62,70,71", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.285714285714286, "count": 7, "id": 51, "name": "Business", "sort": 7}, {"avg_rating": 8.0, "count": 4, "id": 70, "name": "Health", "sort": 4}, {"avg_rating": 8.0, "count": 2, "id": 71, "name": "Inspirational", "sort": 2}], "timestamp": "2022-10-04 13:46:47.154000+00:00", "title": "Focus"}])'></div>
          </div>
       </div>
    </div>

@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1043,34 +1043,36 @@
 <p>"Morgan's debut novel, the first in a series, combines noir mystery with ultra-high tech science to create a complex sf thriller. Featuring a hard-nosed antihero with his own sense of personal honor and ethics, this is highly recommended for sf collections."— Library Journal</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781400101375" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/1777170" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0345457684" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781400101375" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/1777170" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0345457684" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1087,7 +1089,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "89", "authors": [{"avg_rating": 8.0, "count": 3, "id": 89, "name": "Richard K. Morgan", "sort": "Morgan, Richard K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn the twenty-fifth century, humankind has spread throughout the galaxy, monitored by the watchful eye of the U.N. While divisions in race, religion, and class still exist, advances in technology have redefined life itself. Now, assuming one can afford the expensive procedure, a person\u0027s consciousness can be stored in a cortical stack at the base of the brain and easily downloaded into a new body (or \"sleeve\") making death nothing more than a minor blip on a screen.\u003c/p\u003e\n\u003cp\u003eEx-U.N. envoy Takeshi Kovacs has been killed before, but his last death was particularly painful. Dispatched one hundred eighty light-years from home, re-sleeved into a body in Bay City (formerly San Francisco, now with a rusted, dilapidated Golden Gate Bridge), Kovacs is thrown into the dark heart of a shady, far-reaching conspiracy that is vicious even by the standards of a society that treats \"existence\" as something that can be bought and sold. For Kovacs, the shell that blew a hole in his chest was only the beginning....\u003c/p\u003e\n\u003cp\u003e\"Morgan\u0027s debut novel, the first in a series, combines noir mystery with ultra-high tech science to create a complex sf thriller. Featuring a hard-nosed antihero with his own sense of personal honor and ethics, this is highly recommended for sf collections.\"\u2014 Library Journal\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2022-06-08", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 73, "identifier_ids": "175,177,176", "identifiers": [{"book": 73, "id": 176, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781400101375", "sort": "isbn", "type": "isbn", "val": "9781400101375"}, {"book": 73, "id": 177, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1777170", "sort": "goodreads", "type": "goodreads", "val": "1777170"}, {"book": 73, "id": 175, "name": "Amazon", "path": "https://amazon.com/dp/0345457684", "sort": "amazon", "type": "amazon", "val": "0345457684"}], "isbn": "9781400101375", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:29:45.471752+00:00", "path": "Richard K. Morgan/Altered Carbon (73)", "pubdate": "2002-02-28", "publisher_ids": "47", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 47, "name": "Tantor Audio", "sort": "Tantor Audio"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 3, "id": 7, "name": "Takeshi Kovacs Novels", "sort": "Takeshi Kovacs Novels"}], "series_ids": "7", "size": 513186, "tag_ids": "47,48,75,76", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 7.875, "count": 16, "id": 47, "name": "Mystery", "sort": 16}, {"avg_rating": 7.666666666666667, "count": 6, "id": 48, "name": "Thriller", "sort": 6}], "timestamp": "2022-10-04 19:29:45.471752+00:00", "title": "Altered Carbon"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "89", "authors": [{"avg_rating": 8.0, "count": 3, "id": 89, "name": "Richard K. Morgan", "sort": "Morgan, Richard K."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn the twenty-fifth century, humankind has spread throughout the galaxy, monitored by the watchful eye of the U.N. While divisions in race, religion, and class still exist, advances in technology have redefined life itself. Now, assuming one can afford the expensive procedure, a person\u0027s consciousness can be stored in a cortical stack at the base of the brain and easily downloaded into a new body (or \"sleeve\") making death nothing more than a minor blip on a screen.\u003c/p\u003e\n\u003cp\u003eEx-U.N. envoy Takeshi Kovacs has been killed before, but his last death was particularly painful. Dispatched one hundred eighty light-years from home, re-sleeved into a body in Bay City (formerly San Francisco, now with a rusted, dilapidated Golden Gate Bridge), Kovacs is thrown into the dark heart of a shady, far-reaching conspiracy that is vicious even by the standards of a society that treats \"existence\" as something that can be bought and sold. For Kovacs, the shell that blew a hole in his chest was only the beginning....\u003c/p\u003e\n\u003cp\u003e\"Morgan\u0027s debut novel, the first in a series, combines noir mystery with ultra-high tech science to create a complex sf thriller. Featuring a hard-nosed antihero with his own sense of personal honor and ethics, this is highly recommended for sf collections.\"\u2014 Library Journal\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2022-06-08", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 73, "identifier_ids": "175,177,176", "identifiers": [{"book": 73, "id": 176, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781400101375", "sort": "isbn", "type": "isbn", "val": "9781400101375"}, {"book": 73, "id": 177, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1777170", "sort": "goodreads", "type": "goodreads", "val": "1777170"}, {"book": 73, "id": 175, "name": "Amazon", "path": "https://amazon.com/dp/0345457684", "sort": "amazon", "type": "amazon", "val": "0345457684"}], "isbn": "9781400101375", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:29:45.471752+00:00", "path": "Richard K. Morgan/Altered Carbon (73)", "pubdate": "2002-02-28", "publisher_ids": "47", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 47, "name": "Tantor Audio", "sort": "Tantor Audio"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 3, "id": 7, "name": "Takeshi Kovacs Novels", "sort": "Takeshi Kovacs Novels"}], "series_ids": "7", "size": 513186, "tag_ids": "47,48,75,76", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 7.875, "count": 16, "id": 47, "name": "Mystery", "sort": 16}, {"avg_rating": 7.666666666666667, "count": 6, "id": 48, "name": "Thriller", "sort": 6}], "timestamp": "2022-10-04 19:29:45.471752+00:00", "title": "Altered Carbon"}])'></div>
          </div>
       </div>
    </div>

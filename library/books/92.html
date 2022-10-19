@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -863,50 +863,52 @@
 <p>The book that inspired the major film starring Jim Carrey and Zooey Deschanel'I, Danny Wallace, being of sound mind and body, do hereby write this manifesto for my life. I swear I will be more open to opportunity. I swear I will live my life taking every available chance. I will say Yes to every favour, request, suggestion and invitation. I WILL SWEAR TO SAY YES WHERE ONCE I WOULD SAY NO.'Danny Wallace had been staying in. Far too much. Having been dumped by his girlfriend, he really wasn't doing the young, free and single thing very well. Instead he was avoiding people. Texting them instead of calling them. Calling them instead of meeting them. That is until one fateful date when a mystery man on a late-night bus told him to 'say yes more'. These three simple words changed Danny's life forever. Yes Man is the story of what happened when Danny decided to say YES to everything, in order to make his life more interesting. And boy, did it get more interesting.</p></div>
         </div>
 
-        <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
-        <div class="space-x-1 space-y-1">
-          
-            <a
-              href="https://www.worldcat.org/isbn/9781407062266" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              ISBN
-            </a>
-          
-            <a
-              href="https://books.google.com/books?id=OxEAQAKNEuIC" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Google Books
-            </a>
-          
-            <a
-              href="https://www.goodreads.com/book/show/9302702" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Goodreads
-            </a>
-          
-            <a
-              href="https://www.barnesandnoble.com/w/yes-man-danny-wallace/1100367285" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Barnes & Noble
-            </a>
-          
-            <a
-              href="https://amazon.com/dp/B003L77XB8" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Amazon
-            </a>
-          
-        </div>
+        
+          <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+          <div class="space-x-1 space-y-1">
+            
+              <a
+                href="https://www.worldcat.org/isbn/9781407062266" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                ISBN
+              </a>
+            
+              <a
+                href="https://books.google.com/books?id=OxEAQAKNEuIC" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Google Books
+              </a>
+            
+              <a
+                href="https://www.goodreads.com/book/show/9302702" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Goodreads
+              </a>
+            
+              <a
+                href="https://www.barnesandnoble.com/w/yes-man-danny-wallace/1100367285" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Barnes & Noble
+              </a>
+            
+              <a
+                href="https://amazon.com/dp/B003L77XB8" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Amazon
+              </a>
+            
+          </div>
+        
         
       </div>
     </div>

@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1029,50 +1029,52 @@
 <p>Latest edition has an additional dozen Appendix pages as well as 50 photographs.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780989746502" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=TL_1ngEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/17201143" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/the-jokes-on-you-stephen-hoover/1115835457" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/098974650X" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780989746502" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=TL_1ngEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/17201143" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/the-jokes-on-you-stephen-hoover/1115835457" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/098974650X" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1089,7 +1091,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "22", "authors": [{"avg_rating": 8.0, "count": 1, "id": 22, "name": "Stephen Hoover", "sort": "Hoover, Stephen"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eComprehensive guide for comedy writing. Along with a history of comedy and theories about what makes us laugh, the book covers comedy writing in all forms -- sketches, jokes, sitcoms, and feature films.\u003c/p\u003e\n\u003cp\u003eIdeal guide and textbook.\u003c/p\u003e\n\u003cp\u003eLatest edition has an additional dozen Appendix pages as well as 50 photographs.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 26, "identifier_ids": "599,600,598,597,601", "identifiers": [{"book": 26, "id": 601, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780989746502", "sort": "isbn", "type": "isbn", "val": "9780989746502"}, {"book": 26, "id": 597, "name": "Google Books", "path": "https://books.google.com/books?id=TL_1ngEACAAJ", "sort": "google", "type": "google", "val": "TL_1ngEACAAJ"}, {"book": 26, "id": 598, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/17201143", "sort": "goodreads", "type": "goodreads", "val": "17201143"}, {"book": 26, "id": 600, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/the-jokes-on-you-stephen-hoover/1115835457", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/the-jokes-on-you-stephen-hoover/1115835457"}, {"book": 26, "id": 599, "name": "Amazon NL", "path": "https://amazon.nl/dp/098974650X", "sort": "amazon_nl", "type": "amazon_nl", "val": "098974650X"}], "isbn": "9780989746502", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:37.072000+00:00", "path": "Stephen Hoover/The Joke\u0027s on You_ How to Write Come (26)", "pubdate": "2013-05-28", "publisher_ids": "31", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 31, "name": "Stephen Hoover", "sort": "Stephen Hoover"}], "rating": 4, "series": [], "series_ids": null, "size": 1002010, "tag_ids": "42,64", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}], "timestamp": "2022-10-04 13:46:37.072000+00:00", "title": "The Joke\u0027s on You: How to Write Comedy"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "22", "authors": [{"avg_rating": 8.0, "count": 1, "id": 22, "name": "Stephen Hoover", "sort": "Hoover, Stephen"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eComprehensive guide for comedy writing. Along with a history of comedy and theories about what makes us laugh, the book covers comedy writing in all forms -- sketches, jokes, sitcoms, and feature films.\u003c/p\u003e\n\u003cp\u003eIdeal guide and textbook.\u003c/p\u003e\n\u003cp\u003eLatest edition has an additional dozen Appendix pages as well as 50 photographs.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 26, "identifier_ids": "599,600,598,597,601", "identifiers": [{"book": 26, "id": 601, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780989746502", "sort": "isbn", "type": "isbn", "val": "9780989746502"}, {"book": 26, "id": 597, "name": "Google Books", "path": "https://books.google.com/books?id=TL_1ngEACAAJ", "sort": "google", "type": "google", "val": "TL_1ngEACAAJ"}, {"book": 26, "id": 598, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/17201143", "sort": "goodreads", "type": "goodreads", "val": "17201143"}, {"book": 26, "id": 600, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/the-jokes-on-you-stephen-hoover/1115835457", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/the-jokes-on-you-stephen-hoover/1115835457"}, {"book": 26, "id": 599, "name": "Amazon NL", "path": "https://amazon.nl/dp/098974650X", "sort": "amazon_nl", "type": "amazon_nl", "val": "098974650X"}], "isbn": "9780989746502", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:37.072000+00:00", "path": "Stephen Hoover/The Joke\u0027s on You_ How to Write Come (26)", "pubdate": "2013-05-28", "publisher_ids": "31", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 31, "name": "Stephen Hoover", "sort": "Stephen Hoover"}], "rating": 4, "series": [], "series_ids": null, "size": 1002010, "tag_ids": "42,64", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}], "timestamp": "2022-10-04 13:46:37.072000+00:00", "title": "The Joke\u0027s on You: How to Write Comedy"}])'></div>
          </div>
       </div>
    </div>

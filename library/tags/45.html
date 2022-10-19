@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1031,50 +1031,52 @@
 <p>While other books give you tips on how to “write funny,” this book offers a paradigm shift in understanding the mechanics and art of comedy, and the proven, practical tools that help writers translate that understanding into successful, commercial scripts. The Hidden Tools of Comedy unlocks the unique secrets and techniques of writing comedy. Kaplan deconstructs sequences in popular films and TV that work and don’t work, and explains what tools were used (or should have been used).</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781615931408" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=SHKSMQEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/19228619" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/the-hidden-tools-of-comedy-steve-kaplan/1113138314" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B00GPCF84K" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781615931408" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=SHKSMQEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/19228619" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/the-hidden-tools-of-comedy-steve-kaplan/1113138314" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B00GPCF84K" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1091,7 +1093,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "58", "authors": [{"avg_rating": 8.0, "count": 1, "id": 58, "name": "Steve Kaplan", "sort": "Kaplan, Steve"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhile other books give you tips on how to \u201cwrite funny,\u201d this book offers a paradigm shift in understanding the mechanics and art of comedy, and the proven, practical tools that help writers translate that understanding into successful, commercial scripts. The Hidden Tools of Comedy unlocks the unique secrets and techniques of writing comedy. Kaplan deconstructs sequences in popular films and TV that work and don\u2019t work, and explains what tools were used (or should have been used).\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 25, "identifier_ids": "135,139,138,137,136", "identifiers": [{"book": 25, "id": 136, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781615931408", "sort": "isbn", "type": "isbn", "val": "9781615931408"}, {"book": 25, "id": 137, "name": "Google Books", "path": "https://books.google.com/books?id=SHKSMQEACAAJ", "sort": "google", "type": "google", "val": "SHKSMQEACAAJ"}, {"book": 25, "id": 138, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/19228619", "sort": "goodreads", "type": "goodreads", "val": "19228619"}, {"book": 25, "id": 139, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/the-hidden-tools-of-comedy-steve-kaplan/1113138314", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/the-hidden-tools-of-comedy-steve-kaplan/1113138314"}, {"book": 25, "id": 135, "name": "Amazon", "path": "https://amazon.com/dp/B00GPCF84K", "sort": "amazon", "type": "amazon", "val": "B00GPCF84K"}], "isbn": "9781615931408", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:36.853000+00:00", "path": "Steve Kaplan/The Hidden Tools of Comedy_ The Seri (25)", "pubdate": "2013-07-01", "publisher_ids": "15", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 15, "name": "Michael Wiese Productions", "sort": "Michael Wiese Productions"}], "rating": 4, "series": [], "series_ids": null, "size": 1022977, "tag_ids": "42,44,45", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": 6}, {"avg_rating": 8.0, "count": 1, "id": 45, "name": "Performing Arts", "sort": 1}], "timestamp": "2022-10-04 13:46:36.853000+00:00", "title": "The Hidden Tools of Comedy: The Serious Business of Being Funny"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "58", "authors": [{"avg_rating": 8.0, "count": 1, "id": 58, "name": "Steve Kaplan", "sort": "Kaplan, Steve"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhile other books give you tips on how to \u201cwrite funny,\u201d this book offers a paradigm shift in understanding the mechanics and art of comedy, and the proven, practical tools that help writers translate that understanding into successful, commercial scripts. The Hidden Tools of Comedy unlocks the unique secrets and techniques of writing comedy. Kaplan deconstructs sequences in popular films and TV that work and don\u2019t work, and explains what tools were used (or should have been used).\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 25, "identifier_ids": "135,139,138,137,136", "identifiers": [{"book": 25, "id": 136, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781615931408", "sort": "isbn", "type": "isbn", "val": "9781615931408"}, {"book": 25, "id": 137, "name": "Google Books", "path": "https://books.google.com/books?id=SHKSMQEACAAJ", "sort": "google", "type": "google", "val": "SHKSMQEACAAJ"}, {"book": 25, "id": 138, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/19228619", "sort": "goodreads", "type": "goodreads", "val": "19228619"}, {"book": 25, "id": 139, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/the-hidden-tools-of-comedy-steve-kaplan/1113138314", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/the-hidden-tools-of-comedy-steve-kaplan/1113138314"}, {"book": 25, "id": 135, "name": "Amazon", "path": "https://amazon.com/dp/B00GPCF84K", "sort": "amazon", "type": "amazon", "val": "B00GPCF84K"}], "isbn": "9781615931408", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:36.853000+00:00", "path": "Steve Kaplan/The Hidden Tools of Comedy_ The Seri (25)", "pubdate": "2013-07-01", "publisher_ids": "15", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 15, "name": "Michael Wiese Productions", "sort": "Michael Wiese Productions"}], "rating": 4, "series": [], "series_ids": null, "size": 1022977, "tag_ids": "42,44,45", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": 6}, {"avg_rating": 8.0, "count": 1, "id": 45, "name": "Performing Arts", "sort": 1}], "timestamp": "2022-10-04 13:46:36.853000+00:00", "title": "The Hidden Tools of Comedy: The Serious Business of Being Funny"}])'></div>
          </div>
       </div>
    </div>

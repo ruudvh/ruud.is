@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1068,42 +1068,44 @@
 <p>Winner of the J. Anthony Lukas Book Prize • Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award • Longlisted for the Baillie Gifford Prize</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780812986945" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=BzBGEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/57359691" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0812986946" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780812986945" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=BzBGEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/57359691" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0812986946" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1120,7 +1122,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "114", "authors": [{"avg_rating": 10.0, "count": 1, "id": 114, "name": "Andrea Elliott", "sort": "Elliott, Andrea"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn Invisible Child, Pulitzer Prize winner Andrea Elliott follows eight dramatic years in the life of Dasani, a girl whose imagination is as soaring as the skyscrapers near her Brooklyn shelter. In this sweeping narrative, Elliott weaves the story of Dasani\u2019s childhood with the history of her ancestors, tracing their passage from slavery to the Great Migration north. As Dasani comes of age, New York City\u2019s homeless crisis has exploded, deepening the chasm between rich and poor. She must guide her siblings through a world riddled by hunger, violence, racism, drug addiction, and the threat of foster care. Out on the street, Dasani becomes a fierce fighter \u201cto protect those who I love.\u201d When she finally escapes city life to enroll in a boarding school, she faces an impossible question: What if leaving poverty means abandoning your family, and yourself? \u003c/p\u003e\n\u003cp\u003eA work of luminous and riveting prose, Elliott\u2019s Invisible Child reads like a page-turning novel. It is an astonishing story about the power of resilience, the importance of family and the cost of inequality\u2014told through the crucible of one remarkable girl. \u003c/p\u003e\n\u003cp\u003eWinner of the J. Anthony Lukas Book Prize \u2022 Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award \u2022 Longlisted for the Baillie Gifford Prize\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 112, "identifier_ids": "453,451,454,452", "identifiers": [{"book": 112, "id": 452, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780812986945", "sort": "isbn", "type": "isbn", "val": "9780812986945"}, {"book": 112, "id": 454, "name": "Google Books", "path": "https://books.google.com/books?id=BzBGEAAAQBAJ", "sort": "google", "type": "google", "val": "BzBGEAAAQBAJ"}, {"book": 112, "id": 451, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57359691", "sort": "goodreads", "type": "goodreads", "val": "57359691"}, {"book": 112, "id": 453, "name": "Amazon", "path": "https://amazon.com/dp/0812986946", "sort": "amazon", "type": "amazon", "val": "0812986946"}], "isbn": "9780812986945", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:03.195391+00:00", "path": "Andrea Elliott/Invisible Child_ Poverty, Survival (112)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 2805902, "tag_ids": "57,59,60,92,119,120,121,122,123,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 2, "id": 119, "name": "Ethnic \u0026 Regional", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 120, "name": "African American \u0026 Black", "sort": 2}, {"avg_rating": 10.0, "count": 1, "id": 122, "name": "Poverty \u0026 Homelessness", "sort": 1}, {"avg_rating": 10.0, "count": 1, "id": 123, "name": "Social Classes \u0026 Economic Disparity", "sort": 1}], "timestamp": "2022-10-05 15:54:03.195391+00:00", "title": "Invisible Child: Poverty, Survival \u0026 Hope in an American City"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "114", "authors": [{"avg_rating": 10.0, "count": 1, "id": 114, "name": "Andrea Elliott", "sort": "Elliott, Andrea"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn Invisible Child, Pulitzer Prize winner Andrea Elliott follows eight dramatic years in the life of Dasani, a girl whose imagination is as soaring as the skyscrapers near her Brooklyn shelter. In this sweeping narrative, Elliott weaves the story of Dasani\u2019s childhood with the history of her ancestors, tracing their passage from slavery to the Great Migration north. As Dasani comes of age, New York City\u2019s homeless crisis has exploded, deepening the chasm between rich and poor. She must guide her siblings through a world riddled by hunger, violence, racism, drug addiction, and the threat of foster care. Out on the street, Dasani becomes a fierce fighter \u201cto protect those who I love.\u201d When she finally escapes city life to enroll in a boarding school, she faces an impossible question: What if leaving poverty means abandoning your family, and yourself? \u003c/p\u003e\n\u003cp\u003eA work of luminous and riveting prose, Elliott\u2019s Invisible Child reads like a page-turning novel. It is an astonishing story about the power of resilience, the importance of family and the cost of inequality\u2014told through the crucible of one remarkable girl. \u003c/p\u003e\n\u003cp\u003eWinner of the J. Anthony Lukas Book Prize \u2022 Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award \u2022 Longlisted for the Baillie Gifford Prize\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 112, "identifier_ids": "453,451,454,452", "identifiers": [{"book": 112, "id": 452, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780812986945", "sort": "isbn", "type": "isbn", "val": "9780812986945"}, {"book": 112, "id": 454, "name": "Google Books", "path": "https://books.google.com/books?id=BzBGEAAAQBAJ", "sort": "google", "type": "google", "val": "BzBGEAAAQBAJ"}, {"book": 112, "id": 451, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57359691", "sort": "goodreads", "type": "goodreads", "val": "57359691"}, {"book": 112, "id": 453, "name": "Amazon", "path": "https://amazon.com/dp/0812986946", "sort": "amazon", "type": "amazon", "val": "0812986946"}], "isbn": "9780812986945", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:03.195391+00:00", "path": "Andrea Elliott/Invisible Child_ Poverty, Survival (112)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 2805902, "tag_ids": "57,59,60,92,119,120,121,122,123,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 2, "id": 119, "name": "Ethnic \u0026 Regional", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 120, "name": "African American \u0026 Black", "sort": 2}, {"avg_rating": 10.0, "count": 1, "id": 122, "name": "Poverty \u0026 Homelessness", "sort": 1}, {"avg_rating": 10.0, "count": 1, "id": 123, "name": "Social Classes \u0026 Economic Disparity", "sort": 1}], "timestamp": "2022-10-05 15:54:03.195391+00:00", "title": "Invisible Child: Poverty, Survival \u0026 Hope in an American City"}])'></div>
          </div>
       </div>
    </div>

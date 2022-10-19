@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -710,7 +710,7 @@
                 
    <div x-data="{activeTab:'tabCards', books:[]}">
       <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Tags > Machine Learning (5)</div>
+         <div class="font-medium text-base">Tags > Machine Learning (7)</div>
          <div class="flex flex-row">
             <button
                @click="activeTab = 'tabCards'"
@@ -758,21 +758,37 @@
 <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
     <div class="flex relative">
        <img 
-        src="/library/images/covers/240.jpg"
-        alt="Formal Algorithms for Transformers"
+        src="/library/images/covers/242.jpg"
+        alt="Hidden Technical Debt in Machine Learning Systems"
         class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
         @click="showModal = true"
         >
        <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
             <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              Formal Algorithms for Transformers
+              Hidden Technical Debt in Machine Learning Systems
             </div>
 
             <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
               
-                <a class="underline decoration-solid" href="/library/authors/277.html">Marcus Hutter</a>
+                <a class="underline decoration-solid" href="/library/authors/307.html">Vinay Chaudhary</a>
               
-                <a class="underline decoration-solid" href="/library/authors/276.html">Mary Phuong</a>
+                <a class="underline decoration-solid" href="/library/authors/309.html">Jean-François Crespo</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/304.html">Eugene Davydov</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/310.html">Dan Dennison</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/306.html">Dietmar Ebner</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/303.html">Daniel Golovin</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/302.html">Gary Holt</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/305.html">Todd Phillips</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/301.html">D. Sculley</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/308.html">Michael Young</a>
                
             </p>
 
@@ -818,11 +834,23 @@
             <div class="hidden sm:inline-block">
               <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
                 <div>
-<p>This document aims to be a self-contained, mathematically precise overview of transformer architectures and algorithms (*not* results). It covers what transformers are, how they are trained, what they are used for, their key architectural components, and a preview of the most prominent models. The reader is assumed to be familiar with basic ML terminology and simpler neural network architectures such as MLPs. </p></div>
+<p>Machine learning offers a fantastically powerful toolkit for building useful complexprediction systems quickly. This paper argues it is dangerous to think ofthese quick wins as coming for free. Using the software engineering frameworkof technical debt, we find it is common to incur massive ongoing maintenancecosts in real-world ML systems. We explore several ML-specific risk factors toaccount for in system design. These include boundary erosion, entanglement,hidden feedback loops, undeclared consumers, data dependencies, configurationissues, changes in the external world, and a variety of system-level anti-patterns.</p>
+<p> </p>
+<p>Paper available at NIPS:</p>
+<p>https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html</p></div>
               </div>
             </div>
 
             <div class="mt-4">
+              
+                <div
+                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
+                >
+                  <span>Read</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>                  
+                </div>
               
               <div
                 class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
@@ -867,11 +895,11 @@
         >
           <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
             <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/240.jpg')] bg-cover bg-left rounded-l-lg"
+                  bg-[url('/library/images/covers/242.jpg')] bg-cover bg-left rounded-l-lg"
             ></div>
             <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
               <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                Formal Algorithms for Transformers
+                Hidden Technical Debt in Machine Learning Systems
               </h1>
 
               <table class="w-full text-left align-top">
@@ -882,9 +910,25 @@
                           </td>
                           <td class="space-x-1">
                               
-                                  <a class="underline decoration-solid" href="/library/authors/277.html">Marcus Hutter</a>
+                                  <a class="underline decoration-solid" href="/library/authors/307.html">Vinay Chaudhary</a>
                               
-                                  <a class="underline decoration-solid" href="/library/authors/276.html">Mary Phuong</a>
+                                  <a class="underline decoration-solid" href="/library/authors/309.html">Jean-François Crespo</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/304.html">Eugene Davydov</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/310.html">Dan Dennison</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/306.html">Dietmar Ebner</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/303.html">Daniel Golovin</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/302.html">Gary Holt</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/305.html">Todd Phillips</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/301.html">D. Sculley</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/308.html">Michael Young</a>
                                
                           </td>
                       </tr>
@@ -902,7 +946,7 @@
                           </td>
                           <td class="space-x-1">
                               
-                                  <a class="underline decoration-solid" href="/library/publishers/125.html">arXiv</a>
+                                  <a class="underline decoration-solid" href="/library/publishers/142.html">PIPS</a>
                                
                           </td>
                       </tr>
@@ -911,7 +955,7 @@
                             Publish Date:
                         </td>
                         <td class="space-x-1">
-                            2022-07-22
+                            2015-01-01
                         </td>
                       </tr>
                       <tr>
@@ -997,336 +1041,9 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/191.html">
-                                Computer Science
+                              href="/library/tags/190.html">
+                                Programming
                             </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/189.html">
-                                Deep Learning
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/186.html">
-                                Machine Learning
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>This document aims to be a self-contained, mathematically precise overview of transformer architectures and algorithms (*not* results). It covers what transformers are, how they are trained, what they are used for, their key architectural components, and a preview of the most prominent models. The reader is assumed to be familiar with basic ML terminology and simpler neural network architectures such as MLPs. </p></div>
-              </div>
-    
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://arxiv.org/abs/2207.09238" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    arXiv
-                  </a>
-                
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/239.jpg"
-        alt="Model Cards for Model Reporting"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              Model Cards for Model Reporting
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/281.html">Parker Barnes</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/286.html">Timnit Gebru</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/283.html">Ben Hutchinson</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/278.html">Margaret Mitchell</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/285.html">Inioluwa Deborah Raji</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/284.html">Elena Spitzer</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/282.html">Lucy Vasserman</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/279.html">Simone Wu</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/280.html">Andrew Zaldivar</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>Trained machine learning models are increasingly used to perform high-impact tasks in areas such as law enforcement, medicine, education, and employment. In order to clarify the intended use cases of machine learning models and minimize their usage in contexts for which they are not well suited, we recommend that released models be accompanied by documentation detailing their performance characteristics. In this paper, we propose a framework that we call model cards, to encourage such transparent model reporting. Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions, such as across different cultural, demographic, or phenotypic groups (e.g., race, geographic location, sex, Fitzpatrick skin type) and intersectional groups (e.g., age and race, or sex and Fitzpatrick skin type) that are relevant to the intended application domains. Model cards also disclose the context in which models are intended to be used, details of the performance evaluation procedures, and other relevant information. While we focus primarily on human-centered machine learning models in the application fields of computer vision and natural language processing, this framework can be used to document any trained machine learning model. To solidify the concept, we provide cards for two supervised models: One trained to detect smiling faces in images, and one trained to detect toxic comments in text. We propose model cards as a step towards the responsible democratization of machine learning and related AI technology, increasing transparency into how well AI technology works. We hope this work encourages those releasing trained machine learning models to accompany model releases with similar detailed evaluation numbers and other relevant documentation. </p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-               </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/239.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                Model Cards for Model Reporting
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/281.html">Parker Barnes</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/286.html">Timnit Gebru</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/283.html">Ben Hutchinson</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/278.html">Margaret Mitchell</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/285.html">Inioluwa Deborah Raji</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/284.html">Elena Spitzer</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/282.html">Lucy Vasserman</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/279.html">Simone Wu</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/280.html">Andrew Zaldivar</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/125.html">arXiv</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2018-10-05
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">None</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
@@ -1356,338 +1073,13 @@
                 x-init="$el._x_simplebar = new SimpleBar($el)"
                 class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
                 <div>
-<p>Trained machine learning models are increasingly used to perform high-impact tasks in areas such as law enforcement, medicine, education, and employment. In order to clarify the intended use cases of machine learning models and minimize their usage in contexts for which they are not well suited, we recommend that released models be accompanied by documentation detailing their performance characteristics. In this paper, we propose a framework that we call model cards, to encourage such transparent model reporting. Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions, such as across different cultural, demographic, or phenotypic groups (e.g., race, geographic location, sex, Fitzpatrick skin type) and intersectional groups (e.g., age and race, or sex and Fitzpatrick skin type) that are relevant to the intended application domains. Model cards also disclose the context in which models are intended to be used, details of the performance evaluation procedures, and other relevant information. While we focus primarily on human-centered machine learning models in the application fields of computer vision and natural language processing, this framework can be used to document any trained machine learning model. To solidify the concept, we provide cards for two supervised models: One trained to detect smiling faces in images, and one trained to detect toxic comments in text. We propose model cards as a step towards the responsible democratization of machine learning and related AI technology, increasing transparency into how well AI technology works. We hope this work encourages those releasing trained machine learning models to accompany model releases with similar detailed evaluation numbers and other relevant documentation. </p></div>
+<p>Machine learning offers a fantastically powerful toolkit for building useful complexprediction systems quickly. This paper argues it is dangerous to think ofthese quick wins as coming for free. Using the software engineering frameworkof technical debt, we find it is common to incur massive ongoing maintenancecosts in real-world ML systems. We explore several ML-specific risk factors toaccount for in system design. These include boundary erosion, entanglement,hidden feedback loops, undeclared consumers, data dependencies, configurationissues, changes in the external world, and a variety of system-level anti-patterns.</p>
+<p> </p>
+<p>Paper available at NIPS:</p>
+<p>https://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://arxiv.org/abs/1810.03993" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    arXiv
-                  </a>
-                
-              </div>
               
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/238.jpg"
-        alt="Robust Speech Recognition via Large-Scale Weak Supervision"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              Robust Speech Recognition via Large-Scale Weak Supervision
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/289.html">Greg Brockman</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/220.html">Jong Wook Kim</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/290.html">Christine McLeavey</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/287.html">Alex Radford</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/222.html">Ilya Sutskever</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/288.html">Tao Xu</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>Available:</p>
-<p>https://openai.com/blog/whisper/</p>
-<p>We study the capabilities of speech processing systems trained simply to predict large amounts of transcripts of audio on the internet. When scaled to 680,000 hours of multilingual and multitask supervision, the resulting models generalize well to standard benchmarks and are often competitive with prior fully supervised results but in a zero- shot transfer setting without the need for any fine- tuning. When compared to humans, the models approach their accuracy and robustness. We are releasing models and inference code to serve as a foundation for further work on robust speech processing.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-               </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/238.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                Robust Speech Recognition via Large-Scale Weak Supervision
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/289.html">Greg Brockman</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/220.html">Jong Wook Kim</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/290.html">Christine McLeavey</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/287.html">Alex Radford</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/222.html">Ilya Sutskever</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/288.html">Tao Xu</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/141.html">openAI</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2022-09-21
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">None</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/191.html">
-                                Computer Science
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/189.html">
-                                Deep Learning
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/186.html">
-                                Machine Learning
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>Available:</p>
-<p>https://openai.com/blog/whisper/</p>
-<p>We study the capabilities of speech processing systems trained simply to predict large amounts of transcripts of audio on the internet. When scaled to 680,000 hours of multilingual and multitask supervision, the resulting models generalize well to standard benchmarks and are often competitive with prior fully supervised results but in a zero- shot transfer setting without the need for any fine- tuning. When compared to humans, the models approach their accuracy and robustness. We are releasing models and inference code to serve as a foundation for further work on robust speech processing.</p></div>
-              </div>
-    
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-              </div>
               
             </div>
           </div>
@@ -2040,18 +1432,1307 @@
 <p>We propose Make-A-Video -- an approach for directly translating the tremendous recent progress in Text-to-Image (T2I) generation to Text-to-Video (T2V). Our intuition is simple: learn what the world looks like and how it is described from paired text-image data, and learn how the world moves from unsupervised video footage. Make-A-Video has three advantages: (1) it accelerates training of the T2V model (it does not need to learn visual and multimodal representations from scratch), (2) it does not require paired text-video data, and (3) the generated videos inherit the vastness (diversity in aesthetic, fantastical depictions, etc.) of today's image generation models. We design a simple yet effective way to build on T2I models with novel and effective spatial-temporal modules. First, we decompose the full temporal U-Net and attention tensors and approximate them in space and time. Second, we design a spatial temporal pipeline to generate high resolution and frame rate videos with a video decoder, interpolation model and two super resolution models that can enable various applications besides T2V. In all aspects, spatial and temporal resolution, faithfulness to text, and quality, Make-A-Video sets the new state-of-the-art in text-to-video generation, as determined by both qualitative and quantitative measures. </p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://arxiv.org/abs/2209.14792" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    arXiv
-                  </a>
-                
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://arxiv.org/abs/2209.14792" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      arXiv
+                    </a>
+                  
+                </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+ </div>
+               
+            
+               
+                  
+  
+
+
+
+  
+
+
+
+  
+
+
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+    <div class="flex relative">
+       <img 
+        src="/library/images/covers/241.jpg"
+        alt="Attention Is All You Need"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        @click="showModal = true"
+        >
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
+              Attention Is All You Need
+            </div>
+
+            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
+              
+                <a class="underline decoration-solid" href="/library/authors/297.html">Aidan N. Gomez</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/296.html">Llion Jones</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/298.html">Lukasz Kaiser</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/294.html">Niki Parmar</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/299.html">Illia Polosukhin</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/293.html">Noam Shazeer</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/295.html">Jakob Uszkoreit</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/292.html">Ashish Vaswani</a>
+               
+            </p>
+
+            <div class="whitespace-nowrap mt-2 text-slate-300">
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+            </div>
+
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
+<p>The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data. </p></div>
               </div>
+            </div>
+
+            <div class="mt-4">
+              
+              <div
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                @click="showModal = true"
+              >
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+               </svg>
+              </div>
+            </div>
+       </div>
+    </div>
+
+    <template x-teleport="#x-teleport-target">
+      <div
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+        x-show="showModal"
+        role="dialog"
+        @keydown.window.escape="showModal = false"
+      >
+        <div
+          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+          @click="showModal = false"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <div
+          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        >
+          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 hidden lg:block lg:col-span-4 
+                  bg-[url('/library/images/covers/241.jpg')] bg-cover bg-left rounded-l-lg"
+            ></div>
+            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+              <h1 class="pb-4 ml-0 text-3xl font-semibold">
+                Attention Is All You Need
+              </h1>
+
+              <table class="w-full text-left align-top">
+                  <tbody>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Authors:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/297.html">Aidan N. Gomez</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/296.html">Llion Jones</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/298.html">Lukasz Kaiser</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/294.html">Niki Parmar</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/299.html">Illia Polosukhin</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/293.html">Noam Shazeer</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/295.html">Jakob Uszkoreit</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/292.html">Ashish Vaswani</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Series:
+                        </td>
+                        <td class="space-x-1">
+                             
+                        </td>
+                    </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Publishers:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/publishers/125.html">arXiv</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Publish Date:
+                        </td>
+                        <td class="space-x-1">
+                            2017-06-04
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Languages:
+                        </td>
+                        <td class="space-x-1">
+                            
+                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
+                             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            ISBN:
+                        </td>
+                        <td class="">
+                          <div class="flex items-center">
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">None</p>
+                            <button
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="$clipboard({
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                error:()=>$notification({text:'Error',variant:'error'})
+                              })"
+                            >
+                              Copy
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Rating:
+                          </td>
+                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-1 whitespace-nowrap font-semibold">
+                            Tags:
+                        </td>
+                        <td class="pt-1 space-x-1 space-y-1">
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/191.html">
+                                Computer Science
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/189.html">
+                                Deep Learning
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/186.html">
+                                Machine Learning
+                            </a>
+                           
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-4 pb-1 font-semibold">Description:</p>
+              <div 
+                x-init="$el._x_simplebar = new SimpleBar($el)"
+                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
+                <div>
+<p>The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data. </p></div>
+              </div>
+    
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://arxiv.org/abs/1706.03762" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      arXiv
+                    </a>
+                  
+                </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+ </div>
+               
+            
+               
+                  
+  
+
+
+
+  
+
+
+
+  
+
+
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+    <div class="flex relative">
+       <img 
+        src="/library/images/covers/240.jpg"
+        alt="Formal Algorithms for Transformers"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        @click="showModal = true"
+        >
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
+              Formal Algorithms for Transformers
+            </div>
+
+            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
+              
+                <a class="underline decoration-solid" href="/library/authors/277.html">Marcus Hutter</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/276.html">Mary Phuong</a>
+               
+            </p>
+
+            <div class="whitespace-nowrap mt-2 text-slate-300">
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+            </div>
+
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
+<p>This document aims to be a self-contained, mathematically precise overview of transformer architectures and algorithms (*not* results). It covers what transformers are, how they are trained, what they are used for, their key architectural components, and a preview of the most prominent models. The reader is assumed to be familiar with basic ML terminology and simpler neural network architectures such as MLPs. </p></div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              
+              <div
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                @click="showModal = true"
+              >
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+               </svg>
+              </div>
+            </div>
+       </div>
+    </div>
+
+    <template x-teleport="#x-teleport-target">
+      <div
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+        x-show="showModal"
+        role="dialog"
+        @keydown.window.escape="showModal = false"
+      >
+        <div
+          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+          @click="showModal = false"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <div
+          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        >
+          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 hidden lg:block lg:col-span-4 
+                  bg-[url('/library/images/covers/240.jpg')] bg-cover bg-left rounded-l-lg"
+            ></div>
+            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+              <h1 class="pb-4 ml-0 text-3xl font-semibold">
+                Formal Algorithms for Transformers
+              </h1>
+
+              <table class="w-full text-left align-top">
+                  <tbody>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Authors:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/277.html">Marcus Hutter</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/276.html">Mary Phuong</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Series:
+                        </td>
+                        <td class="space-x-1">
+                             
+                        </td>
+                    </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Publishers:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/publishers/125.html">arXiv</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Publish Date:
+                        </td>
+                        <td class="space-x-1">
+                            2022-07-22
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Languages:
+                        </td>
+                        <td class="space-x-1">
+                            
+                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
+                             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            ISBN:
+                        </td>
+                        <td class="">
+                          <div class="flex items-center">
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">None</p>
+                            <button
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="$clipboard({
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                error:()=>$notification({text:'Error',variant:'error'})
+                              })"
+                            >
+                              Copy
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Rating:
+                          </td>
+                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-1 whitespace-nowrap font-semibold">
+                            Tags:
+                        </td>
+                        <td class="pt-1 space-x-1 space-y-1">
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/191.html">
+                                Computer Science
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/189.html">
+                                Deep Learning
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/186.html">
+                                Machine Learning
+                            </a>
+                           
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-4 pb-1 font-semibold">Description:</p>
+              <div 
+                x-init="$el._x_simplebar = new SimpleBar($el)"
+                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
+                <div>
+<p>This document aims to be a self-contained, mathematically precise overview of transformer architectures and algorithms (*not* results). It covers what transformers are, how they are trained, what they are used for, their key architectural components, and a preview of the most prominent models. The reader is assumed to be familiar with basic ML terminology and simpler neural network architectures such as MLPs. </p></div>
+              </div>
+    
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://arxiv.org/abs/2207.09238" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      arXiv
+                    </a>
+                  
+                </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+ </div>
+               
+            
+               
+                  
+  
+
+
+
+  
+
+
+
+  
+
+
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+    <div class="flex relative">
+       <img 
+        src="/library/images/covers/239.jpg"
+        alt="Model Cards for Model Reporting"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        @click="showModal = true"
+        >
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
+              Model Cards for Model Reporting
+            </div>
+
+            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
+              
+                <a class="underline decoration-solid" href="/library/authors/281.html">Parker Barnes</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/286.html">Timnit Gebru</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/283.html">Ben Hutchinson</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/278.html">Margaret Mitchell</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/285.html">Inioluwa Deborah Raji</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/284.html">Elena Spitzer</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/282.html">Lucy Vasserman</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/279.html">Simone Wu</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/280.html">Andrew Zaldivar</a>
+               
+            </p>
+
+            <div class="whitespace-nowrap mt-2 text-slate-300">
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+            </div>
+
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
+<p>Trained machine learning models are increasingly used to perform high-impact tasks in areas such as law enforcement, medicine, education, and employment. In order to clarify the intended use cases of machine learning models and minimize their usage in contexts for which they are not well suited, we recommend that released models be accompanied by documentation detailing their performance characteristics. In this paper, we propose a framework that we call model cards, to encourage such transparent model reporting. Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions, such as across different cultural, demographic, or phenotypic groups (e.g., race, geographic location, sex, Fitzpatrick skin type) and intersectional groups (e.g., age and race, or sex and Fitzpatrick skin type) that are relevant to the intended application domains. Model cards also disclose the context in which models are intended to be used, details of the performance evaluation procedures, and other relevant information. While we focus primarily on human-centered machine learning models in the application fields of computer vision and natural language processing, this framework can be used to document any trained machine learning model. To solidify the concept, we provide cards for two supervised models: One trained to detect smiling faces in images, and one trained to detect toxic comments in text. We propose model cards as a step towards the responsible democratization of machine learning and related AI technology, increasing transparency into how well AI technology works. We hope this work encourages those releasing trained machine learning models to accompany model releases with similar detailed evaluation numbers and other relevant documentation. </p></div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              
+              <div
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                @click="showModal = true"
+              >
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+               </svg>
+              </div>
+            </div>
+       </div>
+    </div>
+
+    <template x-teleport="#x-teleport-target">
+      <div
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+        x-show="showModal"
+        role="dialog"
+        @keydown.window.escape="showModal = false"
+      >
+        <div
+          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+          @click="showModal = false"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <div
+          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        >
+          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 hidden lg:block lg:col-span-4 
+                  bg-[url('/library/images/covers/239.jpg')] bg-cover bg-left rounded-l-lg"
+            ></div>
+            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+              <h1 class="pb-4 ml-0 text-3xl font-semibold">
+                Model Cards for Model Reporting
+              </h1>
+
+              <table class="w-full text-left align-top">
+                  <tbody>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Authors:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/281.html">Parker Barnes</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/286.html">Timnit Gebru</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/283.html">Ben Hutchinson</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/278.html">Margaret Mitchell</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/285.html">Inioluwa Deborah Raji</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/284.html">Elena Spitzer</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/282.html">Lucy Vasserman</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/279.html">Simone Wu</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/280.html">Andrew Zaldivar</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Series:
+                        </td>
+                        <td class="space-x-1">
+                             
+                        </td>
+                    </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Publishers:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/publishers/125.html">arXiv</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Publish Date:
+                        </td>
+                        <td class="space-x-1">
+                            2018-10-05
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Languages:
+                        </td>
+                        <td class="space-x-1">
+                            
+                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
+                             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            ISBN:
+                        </td>
+                        <td class="">
+                          <div class="flex items-center">
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">None</p>
+                            <button
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="$clipboard({
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                error:()=>$notification({text:'Error',variant:'error'})
+                              })"
+                            >
+                              Copy
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Rating:
+                          </td>
+                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-1 whitespace-nowrap font-semibold">
+                            Tags:
+                        </td>
+                        <td class="pt-1 space-x-1 space-y-1">
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/191.html">
+                                Computer Science
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/189.html">
+                                Deep Learning
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/186.html">
+                                Machine Learning
+                            </a>
+                           
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-4 pb-1 font-semibold">Description:</p>
+              <div 
+                x-init="$el._x_simplebar = new SimpleBar($el)"
+                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
+                <div>
+<p>Trained machine learning models are increasingly used to perform high-impact tasks in areas such as law enforcement, medicine, education, and employment. In order to clarify the intended use cases of machine learning models and minimize their usage in contexts for which they are not well suited, we recommend that released models be accompanied by documentation detailing their performance characteristics. In this paper, we propose a framework that we call model cards, to encourage such transparent model reporting. Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions, such as across different cultural, demographic, or phenotypic groups (e.g., race, geographic location, sex, Fitzpatrick skin type) and intersectional groups (e.g., age and race, or sex and Fitzpatrick skin type) that are relevant to the intended application domains. Model cards also disclose the context in which models are intended to be used, details of the performance evaluation procedures, and other relevant information. While we focus primarily on human-centered machine learning models in the application fields of computer vision and natural language processing, this framework can be used to document any trained machine learning model. To solidify the concept, we provide cards for two supervised models: One trained to detect smiling faces in images, and one trained to detect toxic comments in text. We propose model cards as a step towards the responsible democratization of machine learning and related AI technology, increasing transparency into how well AI technology works. We hope this work encourages those releasing trained machine learning models to accompany model releases with similar detailed evaluation numbers and other relevant documentation. </p></div>
+              </div>
+    
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://arxiv.org/abs/1810.03993" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      arXiv
+                    </a>
+                  
+                </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+ </div>
+               
+            
+               
+                  
+  
+
+
+
+  
+
+
+
+  
+
+
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+    <div class="flex relative">
+       <img 
+        src="/library/images/covers/238.jpg"
+        alt="Robust Speech Recognition via Large-Scale Weak Supervision"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        @click="showModal = true"
+        >
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
+              Robust Speech Recognition via Large-Scale Weak Supervision
+            </div>
+
+            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
+              
+                <a class="underline decoration-solid" href="/library/authors/289.html">Greg Brockman</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/220.html">Jong Wook Kim</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/290.html">Christine McLeavey</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/287.html">Alex Radford</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/222.html">Ilya Sutskever</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/288.html">Tao Xu</a>
+               
+            </p>
+
+            <div class="whitespace-nowrap mt-2 text-slate-300">
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+            </div>
+
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
+<p>Available:</p>
+<p>https://openai.com/blog/whisper/</p>
+<p>We study the capabilities of speech processing systems trained simply to predict large amounts of transcripts of audio on the internet. When scaled to 680,000 hours of multilingual and multitask supervision, the resulting models generalize well to standard benchmarks and are often competitive with prior fully supervised results but in a zero- shot transfer setting without the need for any fine- tuning. When compared to humans, the models approach their accuracy and robustness. We are releasing models and inference code to serve as a foundation for further work on robust speech processing.</p></div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              
+              <div
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                @click="showModal = true"
+              >
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+               </svg>
+              </div>
+            </div>
+       </div>
+    </div>
+
+    <template x-teleport="#x-teleport-target">
+      <div
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+        x-show="showModal"
+        role="dialog"
+        @keydown.window.escape="showModal = false"
+      >
+        <div
+          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+          @click="showModal = false"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <div
+          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        >
+          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 hidden lg:block lg:col-span-4 
+                  bg-[url('/library/images/covers/238.jpg')] bg-cover bg-left rounded-l-lg"
+            ></div>
+            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+              <h1 class="pb-4 ml-0 text-3xl font-semibold">
+                Robust Speech Recognition via Large-Scale Weak Supervision
+              </h1>
+
+              <table class="w-full text-left align-top">
+                  <tbody>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Authors:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/289.html">Greg Brockman</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/220.html">Jong Wook Kim</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/290.html">Christine McLeavey</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/287.html">Alex Radford</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/222.html">Ilya Sutskever</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/288.html">Tao Xu</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Series:
+                        </td>
+                        <td class="space-x-1">
+                             
+                        </td>
+                    </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Publishers:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/publishers/141.html">openAI</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Publish Date:
+                        </td>
+                        <td class="space-x-1">
+                            2022-09-21
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Languages:
+                        </td>
+                        <td class="space-x-1">
+                            
+                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
+                             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            ISBN:
+                        </td>
+                        <td class="">
+                          <div class="flex items-center">
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">None</p>
+                            <button
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="$clipboard({
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                error:()=>$notification({text:'Error',variant:'error'})
+                              })"
+                            >
+                              Copy
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Rating:
+                          </td>
+                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-1 whitespace-nowrap font-semibold">
+                            Tags:
+                        </td>
+                        <td class="pt-1 space-x-1 space-y-1">
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/191.html">
+                                Computer Science
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/189.html">
+                                Deep Learning
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/186.html">
+                                Machine Learning
+                            </a>
+                           
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-4 pb-1 font-semibold">Description:</p>
+              <div 
+                x-init="$el._x_simplebar = new SimpleBar($el)"
+                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
+                <div>
+<p>Available:</p>
+<p>https://openai.com/blog/whisper/</p>
+<p>We study the capabilities of speech processing systems trained simply to predict large amounts of transcripts of audio on the internet. When scaled to 680,000 hours of multilingual and multitask supervision, the resulting models generalize well to standard benchmarks and are often competitive with prior fully supervised results but in a zero- shot transfer setting without the need for any fine- tuning. When compared to humans, the models approach their accuracy and robustness. We are releasing models and inference code to serve as a foundation for further work on robust speech processing.</p></div>
+              </div>
+    
+              
               
             </div>
           </div>
@@ -2341,12 +3022,6 @@
                           
                             <a 
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/132.html">
-                                Music
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/189.html">
                                 Deep Learning
                             </a>
@@ -2355,6 +3030,12 @@
                               class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
                               href="/library/tags/186.html">
                                 Machine Learning
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/132.html">
+                                Music
                             </a>
                           
                             <a 
@@ -2388,18 +3069,20 @@
 <p>We introduce Jukebox, a model that generates music with singing in the raw audio domain. We tackle the long context of raw audio using a multi-scale VQ-VAE to compress it to discrete codes, and modeling those using autoregressive Transformers. We show that the combined model at scale can generate high-fidelity and diverse songs with coherence up to multiple minutes. We can condition on artist and genre to steer the musical and vocal style, and on unaligned lyrics to make the singing more controllable.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://arxiv.org/abs/2005.00341" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    arXiv
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://arxiv.org/abs/2005.00341" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      arXiv
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2416,7 +3099,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "276,277", "authors": [{"avg_rating": null, "count": 1, "id": 277, "name": "Marcus Hutter", "sort": "Hutter, Marcus"}, {"avg_rating": null, "count": 1, "id": 276, "name": "Mary Phuong", "sort": "Phuong, Mary"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThis document aims to be a self-contained, mathematically precise overview of transformer architectures and algorithms (*not* results). It covers what transformers are, how they are trained, what they are used for, their key architectural components, and a preview of the most prominent models. The reader is assumed to be familiar with basic ML terminology and simpler neural network architectures such as MLPs. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 0, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 240, "identifier_ids": "834", "identifiers": [{"book": 240, "id": 834, "name": "arXiv", "path": "https://arxiv.org/abs/2207.09238", "sort": "arxiv", "type": "arxiv", "val": "2207.09238"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-12 20:18:01.988783+00:00", "order_by": "2022-10-12 20:13:38.704268+00:00", "path": "Mary Phuong/Formal Algorithms for Transformers (240)", "pubdate": "2022-07-22", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 5, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 514843, "tag_ids": "186,189,191", "tags": [{"avg_rating": 9.5, "count": 9, "id": 191, "name": "Computer Science", "sort": 9}, {"avg_rating": null, "count": 6, "id": 189, "name": "Deep Learning", "sort": 6}, {"avg_rating": null, "count": 5, "id": 186, "name": "Machine Learning", "sort": 5}], "timestamp": "2022-10-12 20:13:38.704268+00:00", "title": "Formal Algorithms for Transformers"}, {"author_ids": "278,279,280,281,282,283,284,285,286", "authors": [{"avg_rating": null, "count": 1, "id": 281, "name": "Parker Barnes", "sort": "Barnes, Parker"}, {"avg_rating": null, "count": 1, "id": 286, "name": "Timnit Gebru", "sort": "Gebru, Timnit"}, {"avg_rating": null, "count": 1, "id": 283, "name": "Ben Hutchinson", "sort": "Hutchinson, Ben"}, {"avg_rating": null, "count": 1, "id": 278, "name": "Margaret Mitchell", "sort": "Mitchell, Margaret"}, {"avg_rating": null, "count": 1, "id": 285, "name": "Inioluwa Deborah Raji", "sort": "Raji, Inioluwa Deborah"}, {"avg_rating": null, "count": 1, "id": 284, "name": "Elena Spitzer", "sort": "Spitzer, Elena"}, {"avg_rating": null, "count": 1, "id": 282, "name": "Lucy Vasserman", "sort": "Vasserman, Lucy"}, {"avg_rating": null, "count": 1, "id": 279, "name": "Simone Wu", "sort": "Wu, Simone"}, {"avg_rating": null, "count": 1, "id": 280, "name": "Andrew Zaldivar", "sort": "Zaldivar, Andrew"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTrained machine learning models are increasingly used to perform high-impact tasks in areas such as law enforcement, medicine, education, and employment. In order to clarify the intended use cases of machine learning models and minimize their usage in contexts for which they are not well suited, we recommend that released models be accompanied by documentation detailing their performance characteristics. In this paper, we propose a framework that we call model cards, to encourage such transparent model reporting. Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions, such as across different cultural, demographic, or phenotypic groups (e.g., race, geographic location, sex, Fitzpatrick skin type) and intersectional groups (e.g., age and race, or sex and Fitzpatrick skin type) that are relevant to the intended application domains. Model cards also disclose the context in which models are intended to be used, details of the performance evaluation procedures, and other relevant information. While we focus primarily on human-centered machine learning models in the application fields of computer vision and natural language processing, this framework can be used to document any trained machine learning model. To solidify the concept, we provide cards for two supervised models: One trained to detect smiling faces in images, and one trained to detect toxic comments in text. We propose model cards as a step towards the responsible democratization of machine learning and related AI technology, increasing transparency into how well AI technology works. We hope this work encourages those releasing trained machine learning models to accompany model releases with similar detailed evaluation numbers and other relevant documentation. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 0, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 239, "identifier_ids": "835", "identifiers": [{"book": 239, "id": 835, "name": "arXiv", "path": "https://arxiv.org/abs/1810.03993", "sort": "arxiv", "type": "arxiv", "val": "1810.03993"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-12 20:18:05.517466+00:00", "order_by": "2022-10-12 20:13:38.586617+00:00", "path": "Margaret Mitchell/Model Cards for Model Reporting (239)", "pubdate": "2018-10-05", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 5, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 995470, "tag_ids": "186,189,191", "tags": [{"avg_rating": 9.5, "count": 9, "id": 191, "name": "Computer Science", "sort": 9}, {"avg_rating": null, "count": 6, "id": 189, "name": "Deep Learning", "sort": 6}, {"avg_rating": null, "count": 5, "id": 186, "name": "Machine Learning", "sort": 5}], "timestamp": "2022-10-12 20:13:38.586617+00:00", "title": "Model Cards for Model Reporting"}, {"author_ids": "220,222,287,288,289,290", "authors": [{"avg_rating": null, "count": 1, "id": 289, "name": "Greg Brockman", "sort": "Brockman, Greg"}, {"avg_rating": null, "count": 2, "id": 220, "name": "Jong Wook Kim", "sort": "Kim, Jong Wook"}, {"avg_rating": null, "count": 1, "id": 290, "name": "Christine McLeavey", "sort": "McLeavey, Christine"}, {"avg_rating": null, "count": 1, "id": 287, "name": "Alex Radford", "sort": "Radford, Alex"}, {"avg_rating": null, "count": 2, "id": 222, "name": "Ilya Sutskever", "sort": "Sutskever, Ilya"}, {"avg_rating": null, "count": 1, "id": 288, "name": "Tao Xu", "sort": "Xu, Tao"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAvailable:\u003c/p\u003e\n\u003cp\u003ehttps://openai.com/blog/whisper/\u003c/p\u003e\n\u003cp\u003eWe study the capabilities of speech processing systems trained simply to predict large amounts of transcripts of audio on the internet. When scaled to 680,000 hours of multilingual and multitask supervision, the resulting models generalize well to standard benchmarks and are often competitive with prior fully supervised results but in a zero- shot transfer setting without the need for any fine- tuning. When compared to humans, the models approach their accuracy and robustness. We are releasing models and inference code to serve as a foundation for further work on robust speech processing.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 0, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 238, "identifier_ids": null, "identifiers": [], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-12 20:20:16.591797+00:00", "order_by": "2022-10-12 20:13:38.408058+00:00", "path": "Alex Radford/Robust Speech Recognition via Large (238)", "pubdate": "2022-09-21", "publisher_ids": "141", "publishers": [{"avg_rating": null, "count": 1, "id": 141, "name": "openAI", "sort": "openAI"}], "rating": null, "series": [], "series_ids": null, "size": 853124, "tag_ids": "186,189,191", "tags": [{"avg_rating": 9.5, "count": 9, "id": 191, "name": "Computer Science", "sort": 9}, {"avg_rating": null, "count": 6, "id": 189, "name": "Deep Learning", "sort": 6}, {"avg_rating": null, "count": 5, "id": 186, "name": "Machine Learning", "sort": 5}], "timestamp": "2022-10-12 20:13:38.408058+00:00", "title": "Robust Speech Recognition via Large-Scale Weak Supervision"}, {"author_ids": "224,225,226,227,228,229,230,231,232,233,234,235,236", "authors": [{"avg_rating": null, "count": 1, "id": 228, "name": "Jie An", "sort": "An, Jie"}, {"avg_rating": null, "count": 1, "id": 232, "name": "Oron Ashual", "sort": "Ashual, Oron"}, {"avg_rating": null, "count": 1, "id": 233, "name": "Oran Gafni", "sort": "Gafni, Oran"}, {"avg_rating": null, "count": 1, "id": 235, "name": "Sonal Gupta", "sort": "Gupta, Sonal"}, {"avg_rating": null, "count": 1, "id": 226, "name": "Thomas Hayes", "sort": "Hayes, Thomas"}, {"avg_rating": null, "count": 1, "id": 230, "name": "Qiyuan Hu", "sort": "Hu, Qiyuan"}, {"avg_rating": null, "count": 1, "id": 234, "name": "Devi Parikh", "sort": "Parikh, Devi"}, {"avg_rating": null, "count": 1, "id": 225, "name": "Adam Polyak", "sort": "Polyak, Adam"}, {"avg_rating": null, "count": 1, "id": 224, "name": "Uriel Singer", "sort": "Singer, Uriel"}, {"avg_rating": null, "count": 1, "id": 236, "name": "Yaniv Taigman", "sort": "Taigman, Yaniv"}, {"avg_rating": null, "count": 1, "id": 231, "name": "Harry Yang", "sort": "Yang, Harry"}, {"avg_rating": null, "count": 1, "id": 227, "name": "Xi Yin", "sort": "Yin, Xi"}, {"avg_rating": null, "count": 1, "id": 229, "name": "Songyang Zhang", "sort": "Zhang, Songyang"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWe propose Make-A-Video -- an approach for directly translating the tremendous recent progress in Text-to-Image (T2I) generation to Text-to-Video (T2V). Our intuition is simple: learn what the world looks like and how it is described from paired text-image data, and learn how the world moves from unsupervised video footage. Make-A-Video has three advantages: (1) it accelerates training of the T2V model (it does not need to learn visual and multimodal representations from scratch), (2) it does not require paired text-video data, and (3) the generated videos inherit the vastness (diversity in aesthetic, fantastical depictions, etc.) of today\u0027s image generation models. We design a simple yet effective way to build on T2I models with novel and effective spatial-temporal modules. First, we decompose the full temporal U-Net and attention tensors and approximate them in space and time. Second, we design a spatial temporal pipeline to generate high resolution and frame rate videos with a video decoder, interpolation model and two super resolution models that can enable various applications besides T2V. In all aspects, spatial and temporal resolution, faithfulness to text, and quality, Make-A-Video sets the new state-of-the-art in text-to-video generation, as determined by both qualitative and quantitative measures. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": "2022-10-06", "custom_reading_list": 0, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 202, "identifier_ids": "726", "identifiers": [{"book": 202, "id": 726, "name": "arXiv", "path": "https://arxiv.org/abs/2209.14792", "sort": "arxiv", "type": "arxiv", "val": "2209.14792"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 18:10:27.211679+00:00", "order_by": "2022-10-06 12:36:28.135668+00:00", "path": "Uriel Singer/Make-A-Video_ Text-to-Video Generat (202)", "pubdate": "2022-09-29", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 5, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 14464869, "tag_ids": "186,189,191,192", "tags": [{"avg_rating": 9.5, "count": 9, "id": 191, "name": "Computer Science", "sort": 9}, {"avg_rating": null, "count": 6, "id": 189, "name": "Deep Learning", "sort": 6}, {"avg_rating": null, "count": 5, "id": 186, "name": "Machine Learning", "sort": 5}, {"avg_rating": null, "count": 2, "id": 192, "name": "Computer Vision and Pattern Recognition", "sort": 2}], "timestamp": "2022-10-06 12:36:28.135668+00:00", "title": "Make-A-Video: Text-to-Video Generation without Text-Video Data"}, {"author_ids": "217,218,219,220,221,222", "authors": [{"avg_rating": null, "count": 1, "id": 217, "name": "Prafulla Dhariwal", "sort": "Dhariwal, Prafulla"}, {"avg_rating": null, "count": 1, "id": 218, "name": "Heewoo Jun", "sort": "Jun, Heewoo"}, {"avg_rating": null, "count": 2, "id": 220, "name": "Jong Wook Kim", "sort": "Kim, Jong Wook"}, {"avg_rating": null, "count": 1, "id": 219, "name": "Christine Payne", "sort": "Payne, Christine"}, {"avg_rating": null, "count": 1, "id": 221, "name": "Alec Radford", "sort": "Radford, Alec"}, {"avg_rating": null, "count": 2, "id": 222, "name": "Ilya Sutskever", "sort": "Sutskever, Ilya"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWe introduce Jukebox, a model that generates music with singing in the raw audio domain. We tackle the long context of raw audio using a multi-scale VQ-VAE to compress it to discrete codes, and modeling those using autoregressive Transformers. We show that the combined model at scale can generate high-fidelity and diverse songs with coherence up to multiple minutes. We can condition on artist and genre to steer the musical and vocal style, and on unaligned lyrics to make the singing more controllable.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": "2022-08-17", "custom_reading_list": 0, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 200, "identifier_ids": "725", "identifiers": [{"book": 200, "id": 725, "name": "arXiv", "path": "https://arxiv.org/abs/2005.00341", "sort": "arxiv", "type": "arxiv", "val": "2005.00341"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:25:00.713884+00:00", "order_by": "2022-10-06 10:33:15.488347+00:00", "path": "Prafulla Dhariwal/Jukebox_ A Generative Model for Mus (200)", "pubdate": "2020-04-30", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 5, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 4337599, "tag_ids": "132,186,187,188,189,193", "tags": [{"avg_rating": 7.6, "count": 6, "id": 132, "name": "Music", "sort": 6}, {"avg_rating": null, "count": 6, "id": 189, "name": "Deep Learning", "sort": 6}, {"avg_rating": null, "count": 5, "id": 186, "name": "Machine Learning", "sort": 5}, {"avg_rating": null, "count": 2, "id": 188, "name": "Paper", "sort": 2}, {"avg_rating": null, "count": 1, "id": 187, "name": "Generative Models", "sort": 1}, {"avg_rating": null, "count": 1, "id": 193, "name": "Audiot and Speech Processing", "sort": 1}], "timestamp": "2022-10-06 10:33:15.488347+00:00", "title": "Jukebox: A Generative Model for Music"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "301,302,303,304,305,306,307,308,309,310", "authors": [{"avg_rating": null, "count": 1, "id": 307, "name": "Vinay Chaudhary", "sort": "Chaudhary, Vinay"}, {"avg_rating": null, "count": 1, "id": 309, "name": "Jean-Fran\u00e7ois Crespo", "sort": "Crespo, Jean-Fran\u00e7ois"}, {"avg_rating": null, "count": 1, "id": 304, "name": "Eugene Davydov", "sort": "Davydov, Eugene"}, {"avg_rating": null, "count": 1, "id": 310, "name": "Dan Dennison", "sort": "Dennison, Dan"}, {"avg_rating": null, "count": 1, "id": 306, "name": "Dietmar Ebner", "sort": "Ebner, Dietmar"}, {"avg_rating": null, "count": 1, "id": 303, "name": "Daniel Golovin", "sort": "Golovin, Daniel"}, {"avg_rating": null, "count": 1, "id": 302, "name": "Gary Holt", "sort": "Holt, Gary"}, {"avg_rating": null, "count": 1, "id": 305, "name": "Todd Phillips", "sort": "Phillips, Todd"}, {"avg_rating": null, "count": 1, "id": 301, "name": "D. Sculley", "sort": "Sculley, D."}, {"avg_rating": null, "count": 1, "id": 308, "name": "Michael Young", "sort": "Young, Michael"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMachine learning offers a fantastically powerful toolkit for building useful complexprediction systems quickly. This paper argues it is dangerous to think ofthese quick wins as coming for free. Using the software engineering frameworkof technical debt, we find it is common to incur massive ongoing maintenancecosts in real-world ML systems. We explore several ML-specific risk factors toaccount for in system design. These include boundary erosion, entanglement,hidden feedback loops, undeclared consumers, data dependencies, configurationissues, changes in the external world, and a variety of system-level anti-patterns.\u003c/p\u003e\n\u003cp\u003e\u00a0\u003c/p\u003e\n\u003cp\u003ePaper available at NIPS:\u003c/p\u003e\n\u003cp\u003ehttps://papers.nips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": "2022-10-19", "custom_reading_list": 0, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 242, "identifier_ids": null, "identifiers": [], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-19 08:30:25.840343+00:00", "order_by": "2022-10-18 20:07:17.812503+00:00", "path": "D. Sculley/Hidden Technical Debt in Machine Le (242)", "pubdate": "2015-01-01", "publisher_ids": "142", "publishers": [{"avg_rating": null, "count": 1, "id": 142, "name": "PIPS", "sort": "PIPS"}], "rating": null, "series": [], "series_ids": null, "size": 165614, "tag_ids": "186,189,190,191", "tags": [{"avg_rating": 8.0, "count": 11, "id": 190, "name": "Programming", "sort": 11}, {"avg_rating": 9.333333333333334, "count": 10, "id": 191, "name": "Computer Science", "sort": 10}, {"avg_rating": null, "count": 8, "id": 189, "name": "Deep Learning", "sort": 8}, {"avg_rating": null, "count": 7, "id": 186, "name": "Machine Learning", "sort": 7}], "timestamp": "2022-10-18 20:07:17.812503+00:00", "title": "Hidden Technical Debt in Machine Learning Systems"}, {"author_ids": "224,225,226,227,228,229,230,231,232,233,234,235,236", "authors": [{"avg_rating": null, "count": 1, "id": 228, "name": "Jie An", "sort": "An, Jie"}, {"avg_rating": null, "count": 1, "id": 232, "name": "Oron Ashual", "sort": "Ashual, Oron"}, {"avg_rating": null, "count": 1, "id": 233, "name": "Oran Gafni", "sort": "Gafni, Oran"}, {"avg_rating": null, "count": 1, "id": 235, "name": "Sonal Gupta", "sort": "Gupta, Sonal"}, {"avg_rating": null, "count": 1, "id": 226, "name": "Thomas Hayes", "sort": "Hayes, Thomas"}, {"avg_rating": null, "count": 1, "id": 230, "name": "Qiyuan Hu", "sort": "Hu, Qiyuan"}, {"avg_rating": null, "count": 1, "id": 234, "name": "Devi Parikh", "sort": "Parikh, Devi"}, {"avg_rating": null, "count": 1, "id": 225, "name": "Adam Polyak", "sort": "Polyak, Adam"}, {"avg_rating": null, "count": 1, "id": 224, "name": "Uriel Singer", "sort": "Singer, Uriel"}, {"avg_rating": null, "count": 1, "id": 236, "name": "Yaniv Taigman", "sort": "Taigman, Yaniv"}, {"avg_rating": null, "count": 1, "id": 231, "name": "Harry Yang", "sort": "Yang, Harry"}, {"avg_rating": null, "count": 1, "id": 227, "name": "Xi Yin", "sort": "Yin, Xi"}, {"avg_rating": null, "count": 1, "id": 229, "name": "Songyang Zhang", "sort": "Zhang, Songyang"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWe propose Make-A-Video -- an approach for directly translating the tremendous recent progress in Text-to-Image (T2I) generation to Text-to-Video (T2V). Our intuition is simple: learn what the world looks like and how it is described from paired text-image data, and learn how the world moves from unsupervised video footage. Make-A-Video has three advantages: (1) it accelerates training of the T2V model (it does not need to learn visual and multimodal representations from scratch), (2) it does not require paired text-video data, and (3) the generated videos inherit the vastness (diversity in aesthetic, fantastical depictions, etc.) of today\u0027s image generation models. We design a simple yet effective way to build on T2I models with novel and effective spatial-temporal modules. First, we decompose the full temporal U-Net and attention tensors and approximate them in space and time. Second, we design a spatial temporal pipeline to generate high resolution and frame rate videos with a video decoder, interpolation model and two super resolution models that can enable various applications besides T2V. In all aspects, spatial and temporal resolution, faithfulness to text, and quality, Make-A-Video sets the new state-of-the-art in text-to-video generation, as determined by both qualitative and quantitative measures. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": "2022-10-06", "custom_reading_list": 0, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 202, "identifier_ids": "726", "identifiers": [{"book": 202, "id": 726, "name": "arXiv", "path": "https://arxiv.org/abs/2209.14792", "sort": "arxiv", "type": "arxiv", "val": "2209.14792"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-19 08:42:25.101498+00:00", "order_by": "2022-10-15 12:36:28+00:00", "path": "Uriel Singer/Make-A-Video_ Text-to-Video Generat (202)", "pubdate": "2022-09-29", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 6, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 14464869, "tag_ids": "186,189,191,192", "tags": [{"avg_rating": 9.333333333333334, "count": 10, "id": 191, "name": "Computer Science", "sort": 10}, {"avg_rating": null, "count": 8, "id": 189, "name": "Deep Learning", "sort": 8}, {"avg_rating": null, "count": 7, "id": 186, "name": "Machine Learning", "sort": 7}, {"avg_rating": null, "count": 2, "id": 192, "name": "Computer Vision and Pattern Recognition", "sort": 2}], "timestamp": "2022-10-15 12:36:28+00:00", "title": "Make-A-Video: Text-to-Video Generation without Text-Video Data"}, {"author_ids": "292,293,294,295,296,297,298,299", "authors": [{"avg_rating": null, "count": 1, "id": 297, "name": "Aidan N. Gomez", "sort": "Gomez, Aidan N."}, {"avg_rating": null, "count": 1, "id": 296, "name": "Llion Jones", "sort": "Jones, Llion"}, {"avg_rating": null, "count": 1, "id": 298, "name": "Lukasz Kaiser", "sort": "Kaiser, Lukasz"}, {"avg_rating": null, "count": 1, "id": 294, "name": "Niki Parmar", "sort": "Parmar, Niki"}, {"avg_rating": null, "count": 1, "id": 299, "name": "Illia Polosukhin", "sort": "Polosukhin, Illia"}, {"avg_rating": null, "count": 1, "id": 293, "name": "Noam Shazeer", "sort": "Shazeer, Noam"}, {"avg_rating": null, "count": 1, "id": 295, "name": "Jakob Uszkoreit", "sort": "Uszkoreit, Jakob"}, {"avg_rating": null, "count": 1, "id": 292, "name": "Ashish Vaswani", "sort": "Vaswani, Ashish"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 241, "identifier_ids": "836", "identifiers": [{"book": 241, "id": 836, "name": "arXiv", "path": "https://arxiv.org/abs/1706.03762", "sort": "arxiv", "type": "arxiv", "val": "1706.03762"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-14 14:21:39.509752+00:00", "order_by": "2022-10-14 14:18:07.798788+00:00", "path": "Ashish Vaswani/Attention Is All You Need (241)", "pubdate": "2017-06-04", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 6, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 2201700, "tag_ids": "186,189,191", "tags": [{"avg_rating": 9.333333333333334, "count": 10, "id": 191, "name": "Computer Science", "sort": 10}, {"avg_rating": null, "count": 8, "id": 189, "name": "Deep Learning", "sort": 8}, {"avg_rating": null, "count": 7, "id": 186, "name": "Machine Learning", "sort": 7}], "timestamp": "2022-10-14 14:18:07.798788+00:00", "title": "Attention Is All You Need"}, {"author_ids": "276,277", "authors": [{"avg_rating": null, "count": 1, "id": 277, "name": "Marcus Hutter", "sort": "Hutter, Marcus"}, {"avg_rating": null, "count": 1, "id": 276, "name": "Mary Phuong", "sort": "Phuong, Mary"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThis document aims to be a self-contained, mathematically precise overview of transformer architectures and algorithms (*not* results). It covers what transformers are, how they are trained, what they are used for, their key architectural components, and a preview of the most prominent models. The reader is assumed to be familiar with basic ML terminology and simpler neural network architectures such as MLPs. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 240, "identifier_ids": "834", "identifiers": [{"book": 240, "id": 834, "name": "arXiv", "path": "https://arxiv.org/abs/2207.09238", "sort": "arxiv", "type": "arxiv", "val": "2207.09238"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-19 08:30:51.938429+00:00", "order_by": "2022-10-12 20:13:38.704268+00:00", "path": "Mary Phuong/Formal Algorithms for Transformers (240)", "pubdate": "2022-07-22", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 6, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 514843, "tag_ids": "186,189,191", "tags": [{"avg_rating": 9.333333333333334, "count": 10, "id": 191, "name": "Computer Science", "sort": 10}, {"avg_rating": null, "count": 8, "id": 189, "name": "Deep Learning", "sort": 8}, {"avg_rating": null, "count": 7, "id": 186, "name": "Machine Learning", "sort": 7}], "timestamp": "2022-10-12 20:13:38.704268+00:00", "title": "Formal Algorithms for Transformers"}, {"author_ids": "278,279,280,281,282,283,284,285,286", "authors": [{"avg_rating": null, "count": 1, "id": 281, "name": "Parker Barnes", "sort": "Barnes, Parker"}, {"avg_rating": null, "count": 1, "id": 286, "name": "Timnit Gebru", "sort": "Gebru, Timnit"}, {"avg_rating": null, "count": 1, "id": 283, "name": "Ben Hutchinson", "sort": "Hutchinson, Ben"}, {"avg_rating": null, "count": 1, "id": 278, "name": "Margaret Mitchell", "sort": "Mitchell, Margaret"}, {"avg_rating": null, "count": 1, "id": 285, "name": "Inioluwa Deborah Raji", "sort": "Raji, Inioluwa Deborah"}, {"avg_rating": null, "count": 1, "id": 284, "name": "Elena Spitzer", "sort": "Spitzer, Elena"}, {"avg_rating": null, "count": 1, "id": 282, "name": "Lucy Vasserman", "sort": "Vasserman, Lucy"}, {"avg_rating": null, "count": 1, "id": 279, "name": "Simone Wu", "sort": "Wu, Simone"}, {"avg_rating": null, "count": 1, "id": 280, "name": "Andrew Zaldivar", "sort": "Zaldivar, Andrew"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eTrained machine learning models are increasingly used to perform high-impact tasks in areas such as law enforcement, medicine, education, and employment. In order to clarify the intended use cases of machine learning models and minimize their usage in contexts for which they are not well suited, we recommend that released models be accompanied by documentation detailing their performance characteristics. In this paper, we propose a framework that we call model cards, to encourage such transparent model reporting. Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions, such as across different cultural, demographic, or phenotypic groups (e.g., race, geographic location, sex, Fitzpatrick skin type) and intersectional groups (e.g., age and race, or sex and Fitzpatrick skin type) that are relevant to the intended application domains. Model cards also disclose the context in which models are intended to be used, details of the performance evaluation procedures, and other relevant information. While we focus primarily on human-centered machine learning models in the application fields of computer vision and natural language processing, this framework can be used to document any trained machine learning model. To solidify the concept, we provide cards for two supervised models: One trained to detect smiling faces in images, and one trained to detect toxic comments in text. We propose model cards as a step towards the responsible democratization of machine learning and related AI technology, increasing transparency into how well AI technology works. We hope this work encourages those releasing trained machine learning models to accompany model releases with similar detailed evaluation numbers and other relevant documentation. \u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 239, "identifier_ids": "835", "identifiers": [{"book": 239, "id": 835, "name": "arXiv", "path": "https://arxiv.org/abs/1810.03993", "sort": "arxiv", "type": "arxiv", "val": "1810.03993"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-19 08:30:48.359073+00:00", "order_by": "2022-10-12 20:13:38.586617+00:00", "path": "Margaret Mitchell/Model Cards for Model Reporting (239)", "pubdate": "2018-10-05", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 6, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 995470, "tag_ids": "186,189,191", "tags": [{"avg_rating": 9.333333333333334, "count": 10, "id": 191, "name": "Computer Science", "sort": 10}, {"avg_rating": null, "count": 8, "id": 189, "name": "Deep Learning", "sort": 8}, {"avg_rating": null, "count": 7, "id": 186, "name": "Machine Learning", "sort": 7}], "timestamp": "2022-10-12 20:13:38.586617+00:00", "title": "Model Cards for Model Reporting"}, {"author_ids": "220,222,287,288,289,290", "authors": [{"avg_rating": null, "count": 1, "id": 289, "name": "Greg Brockman", "sort": "Brockman, Greg"}, {"avg_rating": null, "count": 2, "id": 220, "name": "Jong Wook Kim", "sort": "Kim, Jong Wook"}, {"avg_rating": null, "count": 1, "id": 290, "name": "Christine McLeavey", "sort": "McLeavey, Christine"}, {"avg_rating": null, "count": 1, "id": 287, "name": "Alex Radford", "sort": "Radford, Alex"}, {"avg_rating": null, "count": 2, "id": 222, "name": "Ilya Sutskever", "sort": "Sutskever, Ilya"}, {"avg_rating": null, "count": 1, "id": 288, "name": "Tao Xu", "sort": "Xu, Tao"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAvailable:\u003c/p\u003e\n\u003cp\u003ehttps://openai.com/blog/whisper/\u003c/p\u003e\n\u003cp\u003eWe study the capabilities of speech processing systems trained simply to predict large amounts of transcripts of audio on the internet. When scaled to 680,000 hours of multilingual and multitask supervision, the resulting models generalize well to standard benchmarks and are often competitive with prior fully supervised results but in a zero- shot transfer setting without the need for any fine- tuning. When compared to humans, the models approach their accuracy and robustness. We are releasing models and inference code to serve as a foundation for further work on robust speech processing.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 238, "identifier_ids": null, "identifiers": [], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-19 08:30:43.266413+00:00", "order_by": "2022-10-12 20:13:38.408058+00:00", "path": "Alex Radford/Robust Speech Recognition via Large (238)", "pubdate": "2022-09-21", "publisher_ids": "141", "publishers": [{"avg_rating": null, "count": 1, "id": 141, "name": "openAI", "sort": "openAI"}], "rating": null, "series": [], "series_ids": null, "size": 853124, "tag_ids": "186,189,191", "tags": [{"avg_rating": 9.333333333333334, "count": 10, "id": 191, "name": "Computer Science", "sort": 10}, {"avg_rating": null, "count": 8, "id": 189, "name": "Deep Learning", "sort": 8}, {"avg_rating": null, "count": 7, "id": 186, "name": "Machine Learning", "sort": 7}], "timestamp": "2022-10-12 20:13:38.408058+00:00", "title": "Robust Speech Recognition via Large-Scale Weak Supervision"}, {"author_ids": "217,218,219,220,221,222", "authors": [{"avg_rating": null, "count": 1, "id": 217, "name": "Prafulla Dhariwal", "sort": "Dhariwal, Prafulla"}, {"avg_rating": null, "count": 1, "id": 218, "name": "Heewoo Jun", "sort": "Jun, Heewoo"}, {"avg_rating": null, "count": 2, "id": 220, "name": "Jong Wook Kim", "sort": "Kim, Jong Wook"}, {"avg_rating": null, "count": 1, "id": 219, "name": "Christine Payne", "sort": "Payne, Christine"}, {"avg_rating": null, "count": 1, "id": 221, "name": "Alec Radford", "sort": "Radford, Alec"}, {"avg_rating": null, "count": 2, "id": 222, "name": "Ilya Sutskever", "sort": "Sutskever, Ilya"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWe introduce Jukebox, a model that generates music with singing in the raw audio domain. We tackle the long context of raw audio using a multi-scale VQ-VAE to compress it to discrete codes, and modeling those using autoregressive Transformers. We show that the combined model at scale can generate high-fidelity and diverse songs with coherence up to multiple minutes. We can condition on artist and genre to steer the musical and vocal style, and on unaligned lyrics to make the singing more controllable.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 3, "sort": "Machine Learning.Deep Learning", "value": "Machine Learning.Deep Learning"}], "custom_lists_ids": "3", "custom_read_date": "2022-08-17", "custom_reading_list": 0, "custom_types": [{"id": 3, "sort": "Paper", "value": "Paper"}], "custom_types_ids": "3", "flags": 1, "has_cover": 1, "id": 200, "identifier_ids": "725", "identifiers": [{"book": 200, "id": 725, "name": "arXiv", "path": "https://arxiv.org/abs/2005.00341", "sort": "arxiv", "type": "arxiv", "val": "2005.00341"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:25:00.713884+00:00", "order_by": "2022-10-06 10:33:15.488347+00:00", "path": "Prafulla Dhariwal/Jukebox_ A Generative Model for Mus (200)", "pubdate": "2020-04-30", "publisher_ids": "125", "publishers": [{"avg_rating": null, "count": 6, "id": 125, "name": "arXiv", "sort": "arXiv"}], "rating": null, "series": [], "series_ids": null, "size": 4337599, "tag_ids": "132,186,187,188,189,193", "tags": [{"avg_rating": null, "count": 8, "id": 189, "name": "Deep Learning", "sort": 8}, {"avg_rating": null, "count": 7, "id": 186, "name": "Machine Learning", "sort": 7}, {"avg_rating": 7.6, "count": 6, "id": 132, "name": "Music", "sort": 6}, {"avg_rating": null, "count": 2, "id": 188, "name": "Paper", "sort": 2}, {"avg_rating": null, "count": 1, "id": 187, "name": "Generative Models", "sort": 1}, {"avg_rating": null, "count": 1, "id": 193, "name": "Audiot and Speech Processing", "sort": 1}], "timestamp": "2022-10-06 10:33:15.488347+00:00", "title": "Jukebox: A Generative Model for Music"}])'></div>
          </div>
       </div>
    </div>

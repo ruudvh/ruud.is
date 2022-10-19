@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="text-slate-800 dark:text-navy-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -856,42 +856,44 @@
 <p>'Even when I was funny, I wasn't this funny.' Augusten Burroughs. For fans of Tina Fey, David Sedaris and anyone who's ever felt like a misfit, an outrageously funny and disturbing memoir from Jenny Lawson, aka The Bloggess. 'When I tell people that my father is kind of a total lunatic, they laugh and nod knowingly. they assure me that theirs is too, and that he's just a "typical father". And they're probably right, if the typical father runs a full-time taxidermy business out of the house, and shows up at the local bar with a miniature donkey and a teddy Roosevelt impersonator, and thinks other people are weird for making such a big deal out of it. If the typical father says things like "Happy birthday! Here's a bathtub of raccoons!" or "We'll have to take your car. Mine has too much blood in it," then yeah, he's totally normal.' When Jenny Lawson was little, all she ever wanted was to fit in. that dream was cut short by her fantastically unbalanced father and a childhood of wearing winter shoes made out of used bread sacks. It did, however, open up an opportunity for Lawson to find the humour in the strange shame-spiral that is her life, and we are all the better for it. Lawson's long-suffering husband and sweet daughter help her uncover the surprising discovery that the most terribly human moments - the ones we want to pretend never happened - are the very same moments that make us the people we are today. Like laughing at a funeral, LEt'S PREtEND tHIS NEVER HAPPENED is both irreverent and impossible to hold back once you get started. 'the Bloggess writes stuff that actually is laugh-out-loud, but you know that really you shouldn't be laughing and probably you'll go to hell for laughing, so maybe you shouldn't read it.' Neil Gaiman 'Even when I was funny, I wasn't this funny.' Augusten Burroughs, author of RUNNING WItH SCISSORS</p></div>
         </div>
 
-        <p class="pt-4 pb-1 font-semibold">Find the book at:</p>
-        <div class="space-x-1 space-y-1">
-          
-            <a
-              href="https://www.worldcat.org/isbn/9781743096444" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              ISBN
-            </a>
-          
-            <a
-              href="https://books.google.com/books?id=9XJnMt0sXp4C" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Google Books
-            </a>
-          
-            <a
-              href="https://www.goodreads.com/book/show/35284712" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Goodreads
-            </a>
-          
-            <a
-              href="https://amazon.com/dp/0425261018" 
-              target="_blank"
-              class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-            >
-              Amazon
-            </a>
-          
-        </div>
+        
+          <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+          <div class="space-x-1 space-y-1">
+            
+              <a
+                href="https://www.worldcat.org/isbn/9781743096444" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                ISBN
+              </a>
+            
+              <a
+                href="https://books.google.com/books?id=9XJnMt0sXp4C" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Google Books
+              </a>
+            
+              <a
+                href="https://www.goodreads.com/book/show/35284712" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Goodreads
+              </a>
+            
+              <a
+                href="https://amazon.com/dp/0425261018" 
+                target="_blank"
+                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+              >
+                Amazon
+              </a>
+            
+          </div>
+        
         
       </div>
     </div>

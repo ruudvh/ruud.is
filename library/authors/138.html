@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1042,34 +1042,36 @@
 <p>For readers of Teju Cole’s <em>Known and Strange Things</em> and Mark Greif’s <em>Against Everything</em> , McCarthy’s essays portray a brilliant young critic at work, making sense of our disjointed times while seeking to transform our understanding of race and art, identity and representation.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781631496486" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/53404236" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/1631496484" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781631496486" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/53404236" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/1631496484" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1086,7 +1088,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "138", "authors": [{"avg_rating": 8.0, "count": 1, "id": 138, "name": "Jesse McCarthy", "sort": "McCarthy, Jesse"}], "comments": "\u003cp\u003eRanging from Ta-Nehisi Coates\u2019s case for reparations to Toni Morrison\u2019s revolutionary humanism to D\u2019Angelo\u2019s simmering blend of R and racial justice, Jesse McCarthy\u2019s bracing essays investigate with virtuosic intensity the art, music, literature, and political stances that have defined the twenty-first century. Even as our world has suffered through successive upheavals, McCarthy contends, \u201csomething was happening in the world of culture: a surging and unprecedented visibility at every level of black art making.\u201d \u003cem\u003eWho Will Pay Reparations on My Soul?\u003c/em\u003e reckons with this resurgence, arguing for the central role of art and intellectual culture in an age of widening inequality and moral crisis.  \u003c/p\u003e\n\u003cp\u003eMcCarthy reinvigorates the essay form as a space not only for argument but for experimental writing that mixes and chops the old ways into new ones. In \u201cNotes on Trap,\u201d he borrows a conceit from Susan Sontag to reveal the social and political significance of trap music, the drug-soaked strain of Southern hip-hop that, as he puts it, is \u201cthe funeral music that the Reagan Revolution deserves.\u201d In \u201cBack in the Day,\u201d McCarthy, a black American raised in France, evokes his childhood in Paris through an elegiac account of French rap in the 1990s. In \u201cThe Master\u2019s Tools,\u201d the relationship between Spanish painter Diego Vel\u00e1zquez and his acolyte-slave, Juan de Pareja, becomes the lens through which Kehinde Wiley\u2019s paintings are viewed, while \u201cTo Make a Poet Black\u201d explores the hidden blackness of Sappho and the erotic power of Phillis Wheatley. Essays on John Edgar Wideman, Claudia Rankine, and Colson Whitehead survey the state of black letters. In his title essay, McCarthy takes on the question of reparations, arguing that true progress will not come until Americans remake their institutions in the service of true equality. As he asks, \u201cWhat can reparations mean when the damage cannot be accounted for in the only system of accounting that a society recognizes?\u201d  \u003c/p\u003e\n\u003cp\u003eFor readers of Teju Cole\u2019s \u003cem\u003eKnown and Strange Things\u003c/em\u003e and Mark Greif\u2019s \u003cem\u003eAgainst Everything\u003c/em\u003e , McCarthy\u2019s essays portray a brilliant young critic at work, making sense of our disjointed times while seeking to transform our understanding of race and art, identity and representation.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 136, "identifier_ids": "329,330,328", "identifiers": [{"book": 136, "id": 328, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781631496486", "sort": "isbn", "type": "isbn", "val": "9781631496486"}, {"book": 136, "id": 330, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53404236", "sort": "goodreads", "type": "goodreads", "val": "53404236"}, {"book": 136, "id": 329, "name": "Amazon", "path": "https://amazon.com/dp/1631496484", "sort": "amazon", "type": "amazon", "val": "1631496484"}], "isbn": "9781631496486", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:12.226768+00:00", "path": "Jesse McCarthy/Who Will Pay Reparations on My Soul (136)", "pubdate": "2021-03-30", "publisher_ids": "84", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 84, "name": "Liveright Publishing", "sort": "Liveright Publishing"}], "rating": 4, "series": [], "series_ids": null, "size": 2484632, "tag_ids": "44,57,60,62,134,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 134, "name": "Poetry", "sort": 3}], "timestamp": "2022-10-05 15:54:12.226768+00:00", "title": "Who Will Pay Reparations on My Soul?"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "138", "authors": [{"avg_rating": 8.0, "count": 1, "id": 138, "name": "Jesse McCarthy", "sort": "McCarthy, Jesse"}], "comments": "\u003cp\u003eRanging from Ta-Nehisi Coates\u2019s case for reparations to Toni Morrison\u2019s revolutionary humanism to D\u2019Angelo\u2019s simmering blend of R and racial justice, Jesse McCarthy\u2019s bracing essays investigate with virtuosic intensity the art, music, literature, and political stances that have defined the twenty-first century. Even as our world has suffered through successive upheavals, McCarthy contends, \u201csomething was happening in the world of culture: a surging and unprecedented visibility at every level of black art making.\u201d \u003cem\u003eWho Will Pay Reparations on My Soul?\u003c/em\u003e reckons with this resurgence, arguing for the central role of art and intellectual culture in an age of widening inequality and moral crisis.  \u003c/p\u003e\n\u003cp\u003eMcCarthy reinvigorates the essay form as a space not only for argument but for experimental writing that mixes and chops the old ways into new ones. In \u201cNotes on Trap,\u201d he borrows a conceit from Susan Sontag to reveal the social and political significance of trap music, the drug-soaked strain of Southern hip-hop that, as he puts it, is \u201cthe funeral music that the Reagan Revolution deserves.\u201d In \u201cBack in the Day,\u201d McCarthy, a black American raised in France, evokes his childhood in Paris through an elegiac account of French rap in the 1990s. In \u201cThe Master\u2019s Tools,\u201d the relationship between Spanish painter Diego Vel\u00e1zquez and his acolyte-slave, Juan de Pareja, becomes the lens through which Kehinde Wiley\u2019s paintings are viewed, while \u201cTo Make a Poet Black\u201d explores the hidden blackness of Sappho and the erotic power of Phillis Wheatley. Essays on John Edgar Wideman, Claudia Rankine, and Colson Whitehead survey the state of black letters. In his title essay, McCarthy takes on the question of reparations, arguing that true progress will not come until Americans remake their institutions in the service of true equality. As he asks, \u201cWhat can reparations mean when the damage cannot be accounted for in the only system of accounting that a society recognizes?\u201d  \u003c/p\u003e\n\u003cp\u003eFor readers of Teju Cole\u2019s \u003cem\u003eKnown and Strange Things\u003c/em\u003e and Mark Greif\u2019s \u003cem\u003eAgainst Everything\u003c/em\u003e , McCarthy\u2019s essays portray a brilliant young critic at work, making sense of our disjointed times while seeking to transform our understanding of race and art, identity and representation.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 136, "identifier_ids": "329,330,328", "identifiers": [{"book": 136, "id": 328, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781631496486", "sort": "isbn", "type": "isbn", "val": "9781631496486"}, {"book": 136, "id": 330, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53404236", "sort": "goodreads", "type": "goodreads", "val": "53404236"}, {"book": 136, "id": 329, "name": "Amazon", "path": "https://amazon.com/dp/1631496484", "sort": "amazon", "type": "amazon", "val": "1631496484"}], "isbn": "9781631496486", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:12.226768+00:00", "path": "Jesse McCarthy/Who Will Pay Reparations on My Soul (136)", "pubdate": "2021-03-30", "publisher_ids": "84", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 84, "name": "Liveright Publishing", "sort": "Liveright Publishing"}], "rating": 4, "series": [], "series_ids": null, "size": 2484632, "tag_ids": "44,57,60,62,134,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 134, "name": "Poetry", "sort": 3}], "timestamp": "2022-10-05 15:54:12.226768+00:00", "title": "Who Will Pay Reparations on My Soul?"}])'></div>
          </div>
       </div>
    </div>

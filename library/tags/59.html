@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1024,50 +1024,52 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>In <em>Hoe gaan we dit uitleggen</em> beschrijft Jelmer Mommers een van de grootste problemen van onze tijd: klimaatverandering. Een probleem dat bij de meesten van ons vooral een gevoel van machteloosheid oproept. Ten onrechte. Want achter de nieuwsberichten over smeltende ijskappen, uitstervende diersoorten en ontkennende politici groeit een wereldwijde beweging die laat zien: onze toekomst op aarde schrijven we zelf.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789082942149" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=YZe3xQEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/45168480" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9082942143" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9082942143" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789082942149" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=YZe3xQEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/45168480" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9082942143" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9082942143" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1390,50 +1392,52 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>Adembenemend, weids en revolutionair – <em>De meeste mensen deugen</em> herschrijft niet alleen de geschiedenis, maar werpt ook nieuw licht op onze toekomst.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9789082942187" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=UbbpxgEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/45995328" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.nl/dp/9082942186" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon NL
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/9082942186" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9789082942187" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=UbbpxgEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/45995328" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.nl/dp/9082942186" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon NL
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/9082942186" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1733,34 +1737,36 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>McGhee marshals economic and sociological research to paint a story of racism's costs, but at the heart of the book are the humble stories of people yearning to be part of a better America, including white supremacy's collateral victims: white people themselves. With startling empathy, this heartfelt message from a Black woman to a multiracial America leaves us with a new vision for a future in which we finally realize that life can be more than a zero-sum game.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780525509561" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/53231851" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0525509569" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780525509561" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/53231851" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0525509569" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2096,42 +2102,44 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>Winner of the J. Anthony Lukas Book Prize • Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award • Longlisted for the Baillie Gifford Prize</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780812986945" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=BzBGEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/57359691" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0812986946" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780812986945" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=BzBGEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/57359691" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0812986946" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2445,26 +2453,28 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
 <p>Bob Altemeyer - author of Atheists and The Authoritarian Specter - gives a readable analysis of the nature of authoritarianism and its current impact on American politics.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://books.google.com/books?id=_YY5nQEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/1971601" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://books.google.com/books?id=_YY5nQEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/1971601" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2481,7 +2491,7 @@ Maar hoe erg het wordt, dat bepalen we zelf.  </p>
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "180", "authors": [{"avg_rating": 8.0, "count": 1, "id": 180, "name": "Jelmer Mommers", "sort": "Mommers, Jelmer"}], "comments": "\u003cp\u003eWe stoten al meer dan honderd jaar zo veel broeikasgassen uit dat de aarde nu gevaarlijk opwarmt. Als we zo doorgaan, stevenen we af op een onleefbare planeet.\u003cbr /\u003e\nMaar hoe erg het wordt, dat bepalen we zelf.  \u003c/p\u003e\n\u003cp\u003eIn \u003cem\u003eHoe gaan we dit uitleggen\u003c/em\u003e beschrijft Jelmer Mommers een van de grootste problemen van onze tijd: klimaatverandering. Een probleem dat bij de meesten van ons vooral een gevoel van machteloosheid oproept. Ten onrechte. Want achter de nieuwsberichten over smeltende ijskappen, uitstervende diersoorten en ontkennende politici groeit een wereldwijde beweging die laat zien: onze toekomst op aarde schrijven we zelf.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 174, "identifier_ids": "652,651,649,653,650", "identifiers": [{"book": 174, "id": 650, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789082942149", "sort": "isbn", "type": "isbn", "val": "9789082942149"}, {"book": 174, "id": 653, "name": "Google Books", "path": "https://books.google.com/books?id=YZe3xQEACAAJ", "sort": "google", "type": "google", "val": "YZe3xQEACAAJ"}, {"book": 174, "id": 649, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/45168480", "sort": "goodreads", "type": "goodreads", "val": "45168480"}, {"book": 174, "id": 651, "name": "Amazon NL", "path": "https://amazon.nl/dp/9082942143", "sort": "amazon_nl", "type": "amazon_nl", "val": "9082942143"}, {"book": 174, "id": 652, "name": "Amazon", "path": "https://amazon.com/dp/9082942143", "sort": "amazon", "type": "amazon", "val": "9082942143"}], "isbn": "9789082942149", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:31.823812+00:00", "path": "Jelmer Mommers/Hoe gaan we dit uitleggen (174)", "pubdate": "2019-06-04", "publisher_ids": "97", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 97, "name": "De Correspondent", "sort": "De Correspondent"}], "rating": 4, "series": [], "series_ids": null, "size": 3737346, "tag_ids": "57,58,59", "tags": [{"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}], "timestamp": "2022-10-06 09:40:31.823812+00:00", "title": "Hoe gaan we dit uitleggen"}, {"author_ids": "161", "authors": [{"avg_rating": 8.0, "count": 1, "id": 161, "name": "Rutger Bregman", "sort": "Bregman, Rutger"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDe mens is een beest, zeiden de koningen. Een zondaar, zeiden de priesters. Een ego\u00efst, zeiden de boekhouders. Al eeuwen is de westerse cultuur doordrongen van het geloof in de verdorvenheid van de mens. \u003c/p\u003e\n\u003cp\u003eMaar wat als we het al die tijd mis hadden? \u003c/p\u003e\n\u003cp\u003eIn dit boek verweeft Rutger Bregman de jongste inzichten uit de psychologie, de economie, de biologie en de archeologie. Hij neemt ons mee op een reis door de geschiedenis en geeft nieuwe antwoorden op oude vragen. Waarom veroverde juist onze soort de aarde? Hoe verklaren we onze grootste misdaden? En zijn we diep vanbinnen geneigd tot het goede of het kwade? \u003c/p\u003e\n\u003cp\u003eAdembenemend, weids en revolutionair \u2013 \u003cem\u003eDe meeste mensen deugen\u003c/em\u003e herschrijft niet alleen de geschiedenis, maar werpt ook nieuw licht op onze toekomst.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 150, "identifier_ids": "654,658,657,655,656", "identifiers": [{"book": 150, "id": 656, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789082942187", "sort": "isbn", "type": "isbn", "val": "9789082942187"}, {"book": 150, "id": 655, "name": "Google Books", "path": "https://books.google.com/books?id=UbbpxgEACAAJ", "sort": "google", "type": "google", "val": "UbbpxgEACAAJ"}, {"book": 150, "id": 657, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/45995328", "sort": "goodreads", "type": "goodreads", "val": "45995328"}, {"book": 150, "id": 658, "name": "Amazon NL", "path": "https://amazon.nl/dp/9082942186", "sort": "amazon_nl", "type": "amazon_nl", "val": "9082942186"}, {"book": 150, "id": 654, "name": "Amazon", "path": "https://amazon.com/dp/9082942186", "sort": "amazon", "type": "amazon", "val": "9082942186"}], "isbn": "9789082942187", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 18:14:43.967457+00:00", "path": "Rutger Bregman/De Meeste Mensen Deugen_ Een Nieuwe (150)", "pubdate": "2019-09-03", "publisher_ids": "97", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 97, "name": "De Correspondent", "sort": "De Correspondent"}], "rating": 4, "series": [], "series_ids": null, "size": 9748908, "tag_ids": "31,57,58,59,60,62", "tags": [{"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}], "timestamp": "2022-10-05 18:14:43.967457+00:00", "title": "De Meeste Mensen Deugen: Een Nieuwe Geschiedenis Van De Mens"}, {"author_ids": "140", "authors": [{"avg_rating": 10.0, "count": 1, "id": 140, "name": "Heather McGhee", "sort": "McGhee, Heather"}], "comments": "\u003cp\u003eHeather McGhee\u0027s specialty is the American economy--and the mystery of why it so often fails the American public. From the financial crisis to rising student debt to collapsing public infrastructure, she found a common root problem: racism. But not just in the most obvious indignities for people of color. Racism has costs for white people, too. It is the common denominator of our most vexing public problems, the core dysfunction of our democracy and constitutive of the spiritual and moral crises that grip us all. But how did this happen? And is there a way out?  \u003c/p\u003e\n\u003cp\u003eMcGhee embarks on a deeply personal journey across the country from Maine to Mississippi to California, tallying what we lose when we buy into the zero-sum paradigm--the idea that progress for some of us must come at the expense of others. Along the way, she meets white people who confide in her about losing their homes, their dreams, and their shot at better jobs to the toxic mix of American racism and greed. This is the story of how public goods in this country--from parks and pools to functioning schools--have become private luxuries; of how unions collapsed, wages stagnated, and inequality increased; and of how this country, unique among the world\u0027s advanced economies, has thwarted universal healthcare.  \u003c/p\u003e\n\u003cp\u003eBut in unlikely places of worship and work, McGhee finds proof of what she calls the Solidarity Dividend: gains that come when people come together across race, to accomplish what we simply can\u0027t do on our own.  \u003c/p\u003e\n\u003cp\u003eMcGhee marshals economic and sociological research to paint a story of racism\u0027s costs, but at the heart of the book are the humble stories of people yearning to be part of a better America, including white supremacy\u0027s collateral victims: white people themselves. With startling empathy, this heartfelt message from a Black woman to a multiracial America leaves us with a new vision for a future in which we finally realize that life can be more than a zero-sum game.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 138, "identifier_ids": "334,335,336", "identifiers": [{"book": 138, "id": 336, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780525509561", "sort": "isbn", "type": "isbn", "val": "9780525509561"}, {"book": 138, "id": 335, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53231851", "sort": "goodreads", "type": "goodreads", "val": "53231851"}, {"book": 138, "id": 334, "name": "Amazon", "path": "https://amazon.com/dp/0525509569", "sort": "amazon", "type": "amazon", "val": "0525509569"}], "isbn": "9780525509561", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:12.983745+00:00", "path": "Heather McGhee/The Sum of Us_ What Racism Costs Ev (138)", "pubdate": "2021-02-16", "publisher_ids": "85", "publishers": [{"avg_rating": 10.0, "count": 1, "id": 85, "name": "One World", "sort": "One World"}], "rating": 5, "series": [], "series_ids": null, "size": 7516711, "tag_ids": "57,59,60,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}], "timestamp": "2022-10-05 15:54:12.983745+00:00", "title": "The Sum of Us: What Racism Costs Everyone and How We Can Prosper Together"}, {"author_ids": "114", "authors": [{"avg_rating": 10.0, "count": 1, "id": 114, "name": "Andrea Elliott", "sort": "Elliott, Andrea"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn Invisible Child, Pulitzer Prize winner Andrea Elliott follows eight dramatic years in the life of Dasani, a girl whose imagination is as soaring as the skyscrapers near her Brooklyn shelter. In this sweeping narrative, Elliott weaves the story of Dasani\u2019s childhood with the history of her ancestors, tracing their passage from slavery to the Great Migration north. As Dasani comes of age, New York City\u2019s homeless crisis has exploded, deepening the chasm between rich and poor. She must guide her siblings through a world riddled by hunger, violence, racism, drug addiction, and the threat of foster care. Out on the street, Dasani becomes a fierce fighter \u201cto protect those who I love.\u201d When she finally escapes city life to enroll in a boarding school, she faces an impossible question: What if leaving poverty means abandoning your family, and yourself? \u003c/p\u003e\n\u003cp\u003eA work of luminous and riveting prose, Elliott\u2019s Invisible Child reads like a page-turning novel. It is an astonishing story about the power of resilience, the importance of family and the cost of inequality\u2014told through the crucible of one remarkable girl. \u003c/p\u003e\n\u003cp\u003eWinner of the J. Anthony Lukas Book Prize \u2022 Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award \u2022 Longlisted for the Baillie Gifford Prize\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 112, "identifier_ids": "453,451,454,452", "identifiers": [{"book": 112, "id": 452, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780812986945", "sort": "isbn", "type": "isbn", "val": "9780812986945"}, {"book": 112, "id": 454, "name": "Google Books", "path": "https://books.google.com/books?id=BzBGEAAAQBAJ", "sort": "google", "type": "google", "val": "BzBGEAAAQBAJ"}, {"book": 112, "id": 451, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57359691", "sort": "goodreads", "type": "goodreads", "val": "57359691"}, {"book": 112, "id": 453, "name": "Amazon", "path": "https://amazon.com/dp/0812986946", "sort": "amazon", "type": "amazon", "val": "0812986946"}], "isbn": "9780812986945", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:03.195391+00:00", "path": "Andrea Elliott/Invisible Child_ Poverty, Survival (112)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 2805902, "tag_ids": "57,59,60,92,119,120,121,122,123,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 2, "id": 119, "name": "Ethnic \u0026 Regional", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 120, "name": "African American \u0026 Black", "sort": 2}, {"avg_rating": 10.0, "count": 1, "id": 122, "name": "Poverty \u0026 Homelessness", "sort": 1}, {"avg_rating": 10.0, "count": 1, "id": 123, "name": "Social Classes \u0026 Economic Disparity", "sort": 1}], "timestamp": "2022-10-05 15:54:03.195391+00:00", "title": "Invisible Child: Poverty, Survival \u0026 Hope in an American City"}, {"author_ids": "49", "authors": [{"avg_rating": 8.0, "count": 1, "id": 49, "name": "Bob Altemeyer", "sort": "Altemeyer, Bob"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBob Altemeyer - author of Atheists and The Authoritarian Specter - gives a readable analysis of the nature of authoritarianism and its current impact on American politics.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 58, "identifier_ids": "54,53", "identifiers": [{"book": 58, "id": 53, "name": "Google Books", "path": "https://books.google.com/books?id=_YY5nQEACAAJ", "sort": "google", "type": "google", "val": "_YY5nQEACAAJ"}, {"book": 58, "id": 54, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1971601", "sort": "goodreads", "type": "goodreads", "val": "1971601"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:52.915000+00:00", "path": "Bob Altemeyer/The Authoritarians (58)", "pubdate": "2006-01-01", "publisher_ids": "26", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 26, "name": "B. Altemeyer", "sort": "B. Altemeyer"}], "rating": 4, "series": [], "series_ids": null, "size": 1010494, "tag_ids": "31,57,58,59,60,61,62", "tags": [{"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}, {"avg_rating": 8.0, "count": 1, "id": 61, "name": "Religion", "sort": 1}], "timestamp": "2022-10-04 13:46:52.915000+00:00", "title": "The Authoritarians"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "180", "authors": [{"avg_rating": 8.0, "count": 1, "id": 180, "name": "Jelmer Mommers", "sort": "Mommers, Jelmer"}], "comments": "\u003cp\u003eWe stoten al meer dan honderd jaar zo veel broeikasgassen uit dat de aarde nu gevaarlijk opwarmt. Als we zo doorgaan, stevenen we af op een onleefbare planeet.\u003cbr /\u003e\nMaar hoe erg het wordt, dat bepalen we zelf.  \u003c/p\u003e\n\u003cp\u003eIn \u003cem\u003eHoe gaan we dit uitleggen\u003c/em\u003e beschrijft Jelmer Mommers een van de grootste problemen van onze tijd: klimaatverandering. Een probleem dat bij de meesten van ons vooral een gevoel van machteloosheid oproept. Ten onrechte. Want achter de nieuwsberichten over smeltende ijskappen, uitstervende diersoorten en ontkennende politici groeit een wereldwijde beweging die laat zien: onze toekomst op aarde schrijven we zelf.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 174, "identifier_ids": "652,651,649,653,650", "identifiers": [{"book": 174, "id": 650, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789082942149", "sort": "isbn", "type": "isbn", "val": "9789082942149"}, {"book": 174, "id": 653, "name": "Google Books", "path": "https://books.google.com/books?id=YZe3xQEACAAJ", "sort": "google", "type": "google", "val": "YZe3xQEACAAJ"}, {"book": 174, "id": 649, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/45168480", "sort": "goodreads", "type": "goodreads", "val": "45168480"}, {"book": 174, "id": 651, "name": "Amazon NL", "path": "https://amazon.nl/dp/9082942143", "sort": "amazon_nl", "type": "amazon_nl", "val": "9082942143"}, {"book": 174, "id": 652, "name": "Amazon", "path": "https://amazon.com/dp/9082942143", "sort": "amazon", "type": "amazon", "val": "9082942143"}], "isbn": "9789082942149", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:31.823812+00:00", "path": "Jelmer Mommers/Hoe gaan we dit uitleggen (174)", "pubdate": "2019-06-04", "publisher_ids": "97", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 97, "name": "De Correspondent", "sort": "De Correspondent"}], "rating": 4, "series": [], "series_ids": null, "size": 3737346, "tag_ids": "57,58,59", "tags": [{"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}], "timestamp": "2022-10-06 09:40:31.823812+00:00", "title": "Hoe gaan we dit uitleggen"}, {"author_ids": "161", "authors": [{"avg_rating": 8.0, "count": 1, "id": 161, "name": "Rutger Bregman", "sort": "Bregman, Rutger"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDe mens is een beest, zeiden de koningen. Een zondaar, zeiden de priesters. Een ego\u00efst, zeiden de boekhouders. Al eeuwen is de westerse cultuur doordrongen van het geloof in de verdorvenheid van de mens. \u003c/p\u003e\n\u003cp\u003eMaar wat als we het al die tijd mis hadden? \u003c/p\u003e\n\u003cp\u003eIn dit boek verweeft Rutger Bregman de jongste inzichten uit de psychologie, de economie, de biologie en de archeologie. Hij neemt ons mee op een reis door de geschiedenis en geeft nieuwe antwoorden op oude vragen. Waarom veroverde juist onze soort de aarde? Hoe verklaren we onze grootste misdaden? En zijn we diep vanbinnen geneigd tot het goede of het kwade? \u003c/p\u003e\n\u003cp\u003eAdembenemend, weids en revolutionair \u2013 \u003cem\u003eDe meeste mensen deugen\u003c/em\u003e herschrijft niet alleen de geschiedenis, maar werpt ook nieuw licht op onze toekomst.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 150, "identifier_ids": "654,658,657,655,656", "identifiers": [{"book": 150, "id": 656, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789082942187", "sort": "isbn", "type": "isbn", "val": "9789082942187"}, {"book": 150, "id": 655, "name": "Google Books", "path": "https://books.google.com/books?id=UbbpxgEACAAJ", "sort": "google", "type": "google", "val": "UbbpxgEACAAJ"}, {"book": 150, "id": 657, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/45995328", "sort": "goodreads", "type": "goodreads", "val": "45995328"}, {"book": 150, "id": 658, "name": "Amazon NL", "path": "https://amazon.nl/dp/9082942186", "sort": "amazon_nl", "type": "amazon_nl", "val": "9082942186"}, {"book": 150, "id": 654, "name": "Amazon", "path": "https://amazon.com/dp/9082942186", "sort": "amazon", "type": "amazon", "val": "9082942186"}], "isbn": "9789082942187", "language_ids": "2", "languages": [{"avg_rating": 7.666666666666667, "count": 24, "id": 2, "name": "NLD", "sort": "NLD"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 18:14:43.967457+00:00", "path": "Rutger Bregman/De Meeste Mensen Deugen_ Een Nieuwe (150)", "pubdate": "2019-09-03", "publisher_ids": "97", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 97, "name": "De Correspondent", "sort": "De Correspondent"}], "rating": 4, "series": [], "series_ids": null, "size": 9748908, "tag_ids": "31,57,58,59,60,62", "tags": [{"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}], "timestamp": "2022-10-05 18:14:43.967457+00:00", "title": "De Meeste Mensen Deugen: Een Nieuwe Geschiedenis Van De Mens"}, {"author_ids": "140", "authors": [{"avg_rating": 10.0, "count": 1, "id": 140, "name": "Heather McGhee", "sort": "McGhee, Heather"}], "comments": "\u003cp\u003eHeather McGhee\u0027s specialty is the American economy--and the mystery of why it so often fails the American public. From the financial crisis to rising student debt to collapsing public infrastructure, she found a common root problem: racism. But not just in the most obvious indignities for people of color. Racism has costs for white people, too. It is the common denominator of our most vexing public problems, the core dysfunction of our democracy and constitutive of the spiritual and moral crises that grip us all. But how did this happen? And is there a way out?  \u003c/p\u003e\n\u003cp\u003eMcGhee embarks on a deeply personal journey across the country from Maine to Mississippi to California, tallying what we lose when we buy into the zero-sum paradigm--the idea that progress for some of us must come at the expense of others. Along the way, she meets white people who confide in her about losing their homes, their dreams, and their shot at better jobs to the toxic mix of American racism and greed. This is the story of how public goods in this country--from parks and pools to functioning schools--have become private luxuries; of how unions collapsed, wages stagnated, and inequality increased; and of how this country, unique among the world\u0027s advanced economies, has thwarted universal healthcare.  \u003c/p\u003e\n\u003cp\u003eBut in unlikely places of worship and work, McGhee finds proof of what she calls the Solidarity Dividend: gains that come when people come together across race, to accomplish what we simply can\u0027t do on our own.  \u003c/p\u003e\n\u003cp\u003eMcGhee marshals economic and sociological research to paint a story of racism\u0027s costs, but at the heart of the book are the humble stories of people yearning to be part of a better America, including white supremacy\u0027s collateral victims: white people themselves. With startling empathy, this heartfelt message from a Black woman to a multiracial America leaves us with a new vision for a future in which we finally realize that life can be more than a zero-sum game.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 138, "identifier_ids": "334,335,336", "identifiers": [{"book": 138, "id": 336, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780525509561", "sort": "isbn", "type": "isbn", "val": "9780525509561"}, {"book": 138, "id": 335, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53231851", "sort": "goodreads", "type": "goodreads", "val": "53231851"}, {"book": 138, "id": 334, "name": "Amazon", "path": "https://amazon.com/dp/0525509569", "sort": "amazon", "type": "amazon", "val": "0525509569"}], "isbn": "9780525509561", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:12.983745+00:00", "path": "Heather McGhee/The Sum of Us_ What Racism Costs Ev (138)", "pubdate": "2021-02-16", "publisher_ids": "85", "publishers": [{"avg_rating": 10.0, "count": 1, "id": 85, "name": "One World", "sort": "One World"}], "rating": 5, "series": [], "series_ids": null, "size": 7516711, "tag_ids": "57,59,60,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}], "timestamp": "2022-10-05 15:54:12.983745+00:00", "title": "The Sum of Us: What Racism Costs Everyone and How We Can Prosper Together"}, {"author_ids": "114", "authors": [{"avg_rating": 10.0, "count": 1, "id": 114, "name": "Andrea Elliott", "sort": "Elliott, Andrea"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn Invisible Child, Pulitzer Prize winner Andrea Elliott follows eight dramatic years in the life of Dasani, a girl whose imagination is as soaring as the skyscrapers near her Brooklyn shelter. In this sweeping narrative, Elliott weaves the story of Dasani\u2019s childhood with the history of her ancestors, tracing their passage from slavery to the Great Migration north. As Dasani comes of age, New York City\u2019s homeless crisis has exploded, deepening the chasm between rich and poor. She must guide her siblings through a world riddled by hunger, violence, racism, drug addiction, and the threat of foster care. Out on the street, Dasani becomes a fierce fighter \u201cto protect those who I love.\u201d When she finally escapes city life to enroll in a boarding school, she faces an impossible question: What if leaving poverty means abandoning your family, and yourself? \u003c/p\u003e\n\u003cp\u003eA work of luminous and riveting prose, Elliott\u2019s Invisible Child reads like a page-turning novel. It is an astonishing story about the power of resilience, the importance of family and the cost of inequality\u2014told through the crucible of one remarkable girl. \u003c/p\u003e\n\u003cp\u003eWinner of the J. Anthony Lukas Book Prize \u2022 Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award \u2022 Longlisted for the Baillie Gifford Prize\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 112, "identifier_ids": "453,451,454,452", "identifiers": [{"book": 112, "id": 452, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780812986945", "sort": "isbn", "type": "isbn", "val": "9780812986945"}, {"book": 112, "id": 454, "name": "Google Books", "path": "https://books.google.com/books?id=BzBGEAAAQBAJ", "sort": "google", "type": "google", "val": "BzBGEAAAQBAJ"}, {"book": 112, "id": 451, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57359691", "sort": "goodreads", "type": "goodreads", "val": "57359691"}, {"book": 112, "id": 453, "name": "Amazon", "path": "https://amazon.com/dp/0812986946", "sort": "amazon", "type": "amazon", "val": "0812986946"}], "isbn": "9780812986945", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:03.195391+00:00", "path": "Andrea Elliott/Invisible Child_ Poverty, Survival (112)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 2805902, "tag_ids": "57,59,60,92,119,120,121,122,123,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 2, "id": 119, "name": "Ethnic \u0026 Regional", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 120, "name": "African American \u0026 Black", "sort": 2}, {"avg_rating": 10.0, "count": 1, "id": 122, "name": "Poverty \u0026 Homelessness", "sort": 1}, {"avg_rating": 10.0, "count": 1, "id": 123, "name": "Social Classes \u0026 Economic Disparity", "sort": 1}], "timestamp": "2022-10-05 15:54:03.195391+00:00", "title": "Invisible Child: Poverty, Survival \u0026 Hope in an American City"}, {"author_ids": "49", "authors": [{"avg_rating": 8.0, "count": 1, "id": 49, "name": "Bob Altemeyer", "sort": "Altemeyer, Bob"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBob Altemeyer - author of Atheists and The Authoritarian Specter - gives a readable analysis of the nature of authoritarianism and its current impact on American politics.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 58, "identifier_ids": "54,53", "identifiers": [{"book": 58, "id": 53, "name": "Google Books", "path": "https://books.google.com/books?id=_YY5nQEACAAJ", "sort": "google", "type": "google", "val": "_YY5nQEACAAJ"}, {"book": 58, "id": 54, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1971601", "sort": "goodreads", "type": "goodreads", "val": "1971601"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:52.915000+00:00", "path": "Bob Altemeyer/The Authoritarians (58)", "pubdate": "2006-01-01", "publisher_ids": "26", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 26, "name": "B. Altemeyer", "sort": "B. Altemeyer"}], "rating": 4, "series": [], "series_ids": null, "size": 1010494, "tag_ids": "31,57,58,59,60,61,62", "tags": [{"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}, {"avg_rating": 8.0, "count": 1, "id": 61, "name": "Religion", "sort": 1}], "timestamp": "2022-10-04 13:46:52.915000+00:00", "title": "The Authoritarians"}])'></div>
          </div>
       </div>
    </div>

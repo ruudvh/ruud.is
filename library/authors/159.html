@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1028,34 +1028,36 @@
 <p>Partly inspired by award-winning author Sunjeev Sahota's family history, <em>China Room</em> is at once a deft exploration of how systems of power circumscribe individual lives and a deeply moving portrait of the unconquerable human capacity to resist them. At once sweeping and intimate, lush and propulsive, it ** is a stunning achievement from a contemporary master.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780593298145" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=VKZPEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/55994371" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780593298145" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=VKZPEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/55994371" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1072,7 +1074,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "159", "authors": [{"avg_rating": 8.0, "count": 1, "id": 159, "name": "Sunjeev Sahota", "sort": "Sahota, Sunjeev"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA transfixing novel about two unforgettable characters seeking to free themselves--one from the expectations of women in early 20th century Punjab, and the other from the weight of life in the contemporary Indian diaspora \u003c/p\u003e\n\u003cp\u003eMehar, a young bride in rural 1929 Punjab, is trying to discover the identity of her new husband. Married to three brothers in a single ceremony, she and her now-sisters spend their days hard at work in the family\u0027s \"china room,\" sequestered from contact with the men--except when their domineering mother-in-law, Mai, summons them to a darkened chamber at night. Curious and strong willed, Mehar tries to piece together what Mai doesn\u0027t want her to know. From beneath her veil, she studies the sounds of the men\u0027s voices, the calluses on their fingers as she serves them tea. Soon she glimpses something that seems to confirm which of the brothers is her husband, and a series of events is set in motion that will put more than one life at risk. As the early stirrings of the Indian independence movement rise around her, Mehar must weigh her own desires against the reality--and danger--of her situation. \u003c/p\u003e\n\u003cp\u003eSpiraling around Mehar\u0027s story is that of a young man who arrives at his uncle\u0027s house in Punjab in the summer of 1999, hoping to shake an addiction that has held him in its grip for more than two years. Growing up in small-town England as the son of an immigrant shopkeeper, his experiences of racism, violence, and estrangement from the culture of his birth led him to seek a dangerous form of escape. As he rides out his withdrawal at his family\u0027s ancestral home--an abandoned farmstead, its china room mysteriously locked and barred--he begins to knit himself back together, gathering strength for the journey home. \u003c/p\u003e\n\u003cp\u003ePartly inspired by award-winning author Sunjeev Sahota\u0027s family history, \u003cem\u003eChina Room\u003c/em\u003e is at once a deft exploration of how systems of power circumscribe individual lives and a deeply moving portrait of the unconquerable human capacity to resist them. At once sweeping and intimate, lush and propulsive, it ** is a stunning achievement from a contemporary master.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 140, "identifier_ids": "420,422,421", "identifiers": [{"book": 140, "id": 421, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780593298145", "sort": "isbn", "type": "isbn", "val": "9780593298145"}, {"book": 140, "id": 422, "name": "Google Books", "path": "https://books.google.com/books?id=VKZPEAAAQBAJ", "sort": "google", "type": "google", "val": "VKZPEAAAQBAJ"}, {"book": 140, "id": 420, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55994371", "sort": "goodreads", "type": "goodreads", "val": "55994371"}], "isbn": "9780593298145", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:13.748740+00:00", "path": "Sunjeev Sahota/China Room (140)", "pubdate": "2021-05-06", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 2469407, "tag_ids": "49,50,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}], "timestamp": "2022-10-05 15:54:13.748740+00:00", "title": "China Room"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "159", "authors": [{"avg_rating": 8.0, "count": 1, "id": 159, "name": "Sunjeev Sahota", "sort": "Sahota, Sunjeev"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA transfixing novel about two unforgettable characters seeking to free themselves--one from the expectations of women in early 20th century Punjab, and the other from the weight of life in the contemporary Indian diaspora \u003c/p\u003e\n\u003cp\u003eMehar, a young bride in rural 1929 Punjab, is trying to discover the identity of her new husband. Married to three brothers in a single ceremony, she and her now-sisters spend their days hard at work in the family\u0027s \"china room,\" sequestered from contact with the men--except when their domineering mother-in-law, Mai, summons them to a darkened chamber at night. Curious and strong willed, Mehar tries to piece together what Mai doesn\u0027t want her to know. From beneath her veil, she studies the sounds of the men\u0027s voices, the calluses on their fingers as she serves them tea. Soon she glimpses something that seems to confirm which of the brothers is her husband, and a series of events is set in motion that will put more than one life at risk. As the early stirrings of the Indian independence movement rise around her, Mehar must weigh her own desires against the reality--and danger--of her situation. \u003c/p\u003e\n\u003cp\u003eSpiraling around Mehar\u0027s story is that of a young man who arrives at his uncle\u0027s house in Punjab in the summer of 1999, hoping to shake an addiction that has held him in its grip for more than two years. Growing up in small-town England as the son of an immigrant shopkeeper, his experiences of racism, violence, and estrangement from the culture of his birth led him to seek a dangerous form of escape. As he rides out his withdrawal at his family\u0027s ancestral home--an abandoned farmstead, its china room mysteriously locked and barred--he begins to knit himself back together, gathering strength for the journey home. \u003c/p\u003e\n\u003cp\u003ePartly inspired by award-winning author Sunjeev Sahota\u0027s family history, \u003cem\u003eChina Room\u003c/em\u003e is at once a deft exploration of how systems of power circumscribe individual lives and a deeply moving portrait of the unconquerable human capacity to resist them. At once sweeping and intimate, lush and propulsive, it ** is a stunning achievement from a contemporary master.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 140, "identifier_ids": "420,422,421", "identifiers": [{"book": 140, "id": 421, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780593298145", "sort": "isbn", "type": "isbn", "val": "9780593298145"}, {"book": 140, "id": 422, "name": "Google Books", "path": "https://books.google.com/books?id=VKZPEAAAQBAJ", "sort": "google", "type": "google", "val": "VKZPEAAAQBAJ"}, {"book": 140, "id": 420, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55994371", "sort": "goodreads", "type": "goodreads", "val": "55994371"}], "isbn": "9780593298145", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:13.748740+00:00", "path": "Sunjeev Sahota/China Room (140)", "pubdate": "2021-05-06", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 2469407, "tag_ids": "49,50,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}], "timestamp": "2022-10-05 15:54:13.748740+00:00", "title": "China Room"}])'></div>
          </div>
       </div>
    </div>

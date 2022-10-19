@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1032,42 +1032,44 @@
 <p>Frodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin—alone, that is, save for the mysterious creeping figure that follows wherever they go.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780008108304" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=ns2qoAEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/61215372" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B007978PKY" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780008108304" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=ns2qoAEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/61215372" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B007978PKY" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1369,26 +1371,28 @@
 <p>In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/61215351" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B007978NPG" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/61215351" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B007978NPG" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1405,7 +1409,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBegin your journey into Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe inspiration for the upcoming original series on Prime Video, The Lord of the Rings: The Rings of Power.\u003c/p\u003e\n\u003cp\u003eThe Two Towers is the second part of J.R.R. Tolkien\u2019s epic adventure The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.\u003c/p\u003e\n\u003cp\u003eFrodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin\u2014alone, that is, save for the mysterious creeping figure that follows wherever they go.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 85, "identifier_ids": "200,201,199,198", "identifiers": [{"book": 85, "id": 198, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780008108304", "sort": "isbn", "type": "isbn", "val": "9780008108304"}, {"book": 85, "id": 199, "name": "Google Books", "path": "https://books.google.com/books?id=ns2qoAEACAAJ", "sort": "google", "type": "google", "val": "ns2qoAEACAAJ"}, {"book": 85, "id": 201, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215372", "sort": "goodreads", "type": "goodreads", "val": "61215372"}, {"book": 85, "id": 200, "name": "Amazon", "path": "https://amazon.com/dp/B007978PKY", "sort": "amazon", "type": "amazon", "val": "B007978PKY"}], "isbn": "9780008108304", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:56.058839+00:00", "path": "J.R.R. Tolkien/The Two Towers (85)", "pubdate": "1954-11-11", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1627453, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:56.058839+00:00", "title": "The Two Towers"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them\u003c/p\u003e\n\u003cp\u003eIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.\u003c/p\u003e\n\u003cp\u003eIn a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 82, "identifier_ids": "207,208", "identifiers": [{"book": 82, "id": 208, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215351", "sort": "goodreads", "type": "goodreads", "val": "61215351"}, {"book": 82, "id": 207, "name": "Amazon", "path": "https://amazon.com/dp/B007978NPG", "sort": "amazon", "type": "amazon", "val": "B007978NPG"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.348740+00:00", "path": "J.R.R. Tolkien/The Fellowship of the Ring (82)", "pubdate": "1954-07-29", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1906471, "tag_ids": "75,76,84,88", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}], "timestamp": "2022-10-04 19:51:55.348740+00:00", "title": "The Fellowship of the Ring"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBegin your journey into Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe inspiration for the upcoming original series on Prime Video, The Lord of the Rings: The Rings of Power.\u003c/p\u003e\n\u003cp\u003eThe Two Towers is the second part of J.R.R. Tolkien\u2019s epic adventure The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.\u003c/p\u003e\n\u003cp\u003eFrodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin\u2014alone, that is, save for the mysterious creeping figure that follows wherever they go.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 85, "identifier_ids": "200,201,199,198", "identifiers": [{"book": 85, "id": 198, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780008108304", "sort": "isbn", "type": "isbn", "val": "9780008108304"}, {"book": 85, "id": 199, "name": "Google Books", "path": "https://books.google.com/books?id=ns2qoAEACAAJ", "sort": "google", "type": "google", "val": "ns2qoAEACAAJ"}, {"book": 85, "id": 201, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215372", "sort": "goodreads", "type": "goodreads", "val": "61215372"}, {"book": 85, "id": 200, "name": "Amazon", "path": "https://amazon.com/dp/B007978PKY", "sort": "amazon", "type": "amazon", "val": "B007978PKY"}], "isbn": "9780008108304", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:56.058839+00:00", "path": "J.R.R. Tolkien/The Two Towers (85)", "pubdate": "1954-11-11", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1627453, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:56.058839+00:00", "title": "The Two Towers"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them\u003c/p\u003e\n\u003cp\u003eIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.\u003c/p\u003e\n\u003cp\u003eIn a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 82, "identifier_ids": "207,208", "identifiers": [{"book": 82, "id": 208, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215351", "sort": "goodreads", "type": "goodreads", "val": "61215351"}, {"book": 82, "id": 207, "name": "Amazon", "path": "https://amazon.com/dp/B007978NPG", "sort": "amazon", "type": "amazon", "val": "B007978NPG"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.348740+00:00", "path": "J.R.R. Tolkien/The Fellowship of the Ring (82)", "pubdate": "1954-07-29", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1906471, "tag_ids": "75,76,84,88", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}], "timestamp": "2022-10-04 19:51:55.348740+00:00", "title": "The Fellowship of the Ring"}])'></div>
          </div>
       </div>
    </div>

@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1024,42 +1024,44 @@
 <p>Abdurraqib writes prose brimming with jubilation and pain, infused with the lyricism and rhythm of the musicians he loves. With care and generosity, he explains the poignancy of performances big and small, each one feeling intensely familiar and vital, both timeless and desperately urgent. Filled with sharp insight, humor, and heart, <em>A Little Devil in America</em> exalts the Black performance that unfolds in specific moments in time and space—from midcentury Paris to the moon, and back down again to a cramped living room in Columbus, Ohio.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780141995793" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=sNeLzgEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/49247757" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/1984801198" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780141995793" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=sNeLzgEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/49247757" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/1984801198" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1076,7 +1078,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "141", "authors": [{"avg_rating": 10.0, "count": 1, "id": 141, "name": "Hanif Abdurraqib", "sort": "Abdurraqib, Hanif"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAt the March on Washington in 1963, Josephine Baker was fifty-seven years old, well beyond her most prolific days. But in her speech she was in a mood to consider her life, her legacy, her departure from the country she was now triumphantly returning to. \u201cI was a devil in other countries, and I was a little devil in America, too,\u201d she told the crowd. Inspired by these few words, Hanif Abdurraqib has written a profound and lasting reflection on how Black performance is inextricably woven into the fabric of American culture. Each moment in every performance he examines\u2014whether it\u2019s the twenty-seven seconds in \u201cGimme Shelter\u201d in which Merry Clayton wails the words \u201crape, murder,\u201d a schoolyard fistfight, a dance marathon, or the instant in a game of spades right after the cards are dealt\u2014has layers of resonance in Black and white cultures, the politics of American empire, and Abdurraqib\u2019s own personal history of love, grief, and performance. \u003c/p\u003e\n\u003cp\u003eAbdurraqib writes prose brimming with jubilation and pain, infused with the lyricism and rhythm of the musicians he loves. With care and generosity, he explains the poignancy of performances big and small, each one feeling intensely familiar and vital, both timeless and desperately urgent. Filled with sharp insight, humor, and heart, \u003cem\u003eA Little Devil in America\u003c/em\u003e exalts the Black performance that unfolds in specific moments in time and space\u2014from midcentury Paris to the moon, and back down again to a cramped living room in Columbus, Ohio.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 139, "identifier_ids": "340,337,338,339", "identifiers": [{"book": 139, "id": 339, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780141995793", "sort": "isbn", "type": "isbn", "val": "9780141995793"}, {"book": 139, "id": 338, "name": "Google Books", "path": "https://books.google.com/books?id=sNeLzgEACAAJ", "sort": "google", "type": "google", "val": "sNeLzgEACAAJ"}, {"book": 139, "id": 337, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/49247757", "sort": "goodreads", "type": "goodreads", "val": "49247757"}, {"book": 139, "id": 340, "name": "Amazon", "path": "https://amazon.com/dp/1984801198", "sort": "amazon", "type": "amazon", "val": "1984801198"}], "isbn": "9780141995793", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:13.410602+00:00", "path": "Hanif Abdurraqib/A Little Devil in America_ Notes in (139)", "pubdate": "2021-03-30", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 813043, "tag_ids": "121,135,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 1, "id": 135, "name": "Popular Culture", "sort": 1}], "timestamp": "2022-10-05 15:54:13.410602+00:00", "title": "A Little Devil in America: Notes in Praise of Black Performance"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "141", "authors": [{"avg_rating": 10.0, "count": 1, "id": 141, "name": "Hanif Abdurraqib", "sort": "Abdurraqib, Hanif"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAt the March on Washington in 1963, Josephine Baker was fifty-seven years old, well beyond her most prolific days. But in her speech she was in a mood to consider her life, her legacy, her departure from the country she was now triumphantly returning to. \u201cI was a devil in other countries, and I was a little devil in America, too,\u201d she told the crowd. Inspired by these few words, Hanif Abdurraqib has written a profound and lasting reflection on how Black performance is inextricably woven into the fabric of American culture. Each moment in every performance he examines\u2014whether it\u2019s the twenty-seven seconds in \u201cGimme Shelter\u201d in which Merry Clayton wails the words \u201crape, murder,\u201d a schoolyard fistfight, a dance marathon, or the instant in a game of spades right after the cards are dealt\u2014has layers of resonance in Black and white cultures, the politics of American empire, and Abdurraqib\u2019s own personal history of love, grief, and performance. \u003c/p\u003e\n\u003cp\u003eAbdurraqib writes prose brimming with jubilation and pain, infused with the lyricism and rhythm of the musicians he loves. With care and generosity, he explains the poignancy of performances big and small, each one feeling intensely familiar and vital, both timeless and desperately urgent. Filled with sharp insight, humor, and heart, \u003cem\u003eA Little Devil in America\u003c/em\u003e exalts the Black performance that unfolds in specific moments in time and space\u2014from midcentury Paris to the moon, and back down again to a cramped living room in Columbus, Ohio.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 139, "identifier_ids": "340,337,338,339", "identifiers": [{"book": 139, "id": 339, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780141995793", "sort": "isbn", "type": "isbn", "val": "9780141995793"}, {"book": 139, "id": 338, "name": "Google Books", "path": "https://books.google.com/books?id=sNeLzgEACAAJ", "sort": "google", "type": "google", "val": "sNeLzgEACAAJ"}, {"book": 139, "id": 337, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/49247757", "sort": "goodreads", "type": "goodreads", "val": "49247757"}, {"book": 139, "id": 340, "name": "Amazon", "path": "https://amazon.com/dp/1984801198", "sort": "amazon", "type": "amazon", "val": "1984801198"}], "isbn": "9780141995793", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:13.410602+00:00", "path": "Hanif Abdurraqib/A Little Devil in America_ Notes in (139)", "pubdate": "2021-03-30", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 813043, "tag_ids": "121,135,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 1, "id": 135, "name": "Popular Culture", "sort": 1}], "timestamp": "2022-10-05 15:54:13.410602+00:00", "title": "A Little Devil in America: Notes in Praise of Black Performance"}])'></div>
          </div>
       </div>
    </div>

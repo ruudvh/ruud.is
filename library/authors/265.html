@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1018,18 +1018,20 @@
                 None
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/55822151" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/55822151" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1046,7 +1048,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "265,266", "authors": [{"avg_rating": 8.0, "count": 1, "id": 266, "name": "Audrey Feldroy", "sort": "Feldroy, Audrey"}, {"avg_rating": 8.0, "count": 1, "id": 265, "name": "Daniel Feldroy", "sort": "Feldroy, Daniel"}], "comments": null, "custom_clean": 1, "custom_lists": [{"id": 1, "sort": "Programming.Python", "value": "Programming.Python"}], "custom_lists_ids": "1", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 228, "identifier_ids": "823", "identifiers": [{"book": 228, "id": 823, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55822151", "sort": "goodreads", "type": "goodreads", "val": "55822151"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-12 20:13:20.049569+00:00", "order_by": "2022-10-12 20:04:05.285250+00:00", "path": "Daniel Feldroy/Two Scoops of Django 3.X_ Best Prac (228)", "pubdate": "2020-05-01", "publisher_ids": "139", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 139, "name": "Two Scoops Press", "sort": "Two Scoops Press"}], "rating": 4, "series": [], "series_ids": null, "size": 4032838, "tag_ids": "190,217", "tags": [{"avg_rating": 8.444444444444445, "count": 11, "id": 190, "name": "Programming", "sort": 11}, {"avg_rating": 8.0, "count": 9, "id": 217, "name": "Python", "sort": 9}], "timestamp": "2022-10-12 20:04:05.285250+00:00", "title": "Two Scoops of Django 3.X: Best Practices for the Django Web Framework"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "265,266", "authors": [{"avg_rating": 8.0, "count": 1, "id": 266, "name": "Audrey Feldroy", "sort": "Feldroy, Audrey"}, {"avg_rating": 8.0, "count": 1, "id": 265, "name": "Daniel Feldroy", "sort": "Feldroy, Daniel"}], "comments": null, "custom_clean": 1, "custom_lists": [{"id": 1, "sort": "Programming.Python", "value": "Programming.Python"}], "custom_lists_ids": "1", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 228, "identifier_ids": "823", "identifiers": [{"book": 228, "id": 823, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55822151", "sort": "goodreads", "type": "goodreads", "val": "55822151"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-19 08:31:18.551384+00:00", "order_by": "2021-10-12 20:04:05+00:00", "path": "Daniel Feldroy/Two Scoops of Django 3.X_ Best Prac (228)", "pubdate": "2020-05-01", "publisher_ids": "139", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 139, "name": "Two Scoops Press", "sort": "Two Scoops Press"}], "rating": 4, "series": [], "series_ids": null, "size": 4032838, "tag_ids": "190,217", "tags": [{"avg_rating": 8.0, "count": 11, "id": 190, "name": "Programming", "sort": 11}, {"avg_rating": 7.714285714285714, "count": 9, "id": 217, "name": "Python", "sort": 9}], "timestamp": "2021-10-12 20:04:05+00:00", "title": "Two Scoops of Django 3.X: Best Practices for the Django Web Framework"}])'></div>
          </div>
       </div>
    </div>

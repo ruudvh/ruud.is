@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1064,26 +1064,28 @@
 <p>Recognized as one of the major literary works of the twentieth-century, Marcel Proust's monumental seven-volume novel brings together memories of childhood and Parisian society before and during the First World War.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/797309" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B00EBNZJ5I" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/797309" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B00EBNZJ5I" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1100,7 +1102,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "239", "authors": [{"avg_rating": 9.0, "count": 1, "id": 239, "name": "Marcel Proust", "sort": "Proust, Marcel"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRecognized as one of the major literary works of the twentieth-century, Marcel Proust\u0027s monumental seven-volume novel brings together memories of childhood and Parisian society before and during the First World War.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}], "custom_lists_ids": "6", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 205, "identifier_ids": "757,758", "identifiers": [{"book": 205, "id": 758, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/797309", "sort": "goodreads", "type": "goodreads", "val": "797309"}, {"book": 205, "id": 757, "name": "Amazon", "path": "https://amazon.com/dp/B00EBNZJ5I", "sort": "amazon", "type": "amazon", "val": "B00EBNZJ5I"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.254288+00:00", "path": "Marcel Proust/Remembrance of Things Past (205)", "pubdate": "2013-07-18", "publisher_ids": "126", "publishers": [{"avg_rating": 9.0, "count": 1, "id": 126, "name": "Faber \u0026 Faber Plays", "sort": "Faber \u0026 Faber Plays"}], "rating": 4, "series": [], "series_ids": null, "size": 2838553, "tag_ids": "152,153,184,196,197,198,199,200,201,202", "tags": [{"avg_rating": 8.428571428571429, "count": 36, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 36}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 9.0, "count": 1, "id": 196, "name": "Graphic Novels", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 197, "name": "Literature \u0026 Fiction", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 198, "name": "Dramas \u0026 Plays", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 199, "name": "British \u0026 Irish", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 200, "name": "Arts \u0026 Photography", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 201, "name": "Theater", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 202, "name": "Drama \u0026 Plays", "sort": 1}], "timestamp": "2022-10-10 14:39:36.254288+00:00", "title": "Remembrance of Things Past"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "239", "authors": [{"avg_rating": 9.0, "count": 1, "id": 239, "name": "Marcel Proust", "sort": "Proust, Marcel"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRecognized as one of the major literary works of the twentieth-century, Marcel Proust\u0027s monumental seven-volume novel brings together memories of childhood and Parisian society before and during the First World War.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}], "custom_lists_ids": "6", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 205, "identifier_ids": "757,758", "identifiers": [{"book": 205, "id": 758, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/797309", "sort": "goodreads", "type": "goodreads", "val": "797309"}, {"book": 205, "id": 757, "name": "Amazon", "path": "https://amazon.com/dp/B00EBNZJ5I", "sort": "amazon", "type": "amazon", "val": "B00EBNZJ5I"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:40.329955+00:00", "order_by": "2022-10-10 14:39:36.254288+00:00", "path": "Marcel Proust/Remembrance of Things Past (205)", "pubdate": "2013-07-18", "publisher_ids": "126", "publishers": [{"avg_rating": 9.0, "count": 1, "id": 126, "name": "Faber \u0026 Faber Plays", "sort": "Faber \u0026 Faber Plays"}], "rating": 4, "series": [], "series_ids": null, "size": 2838553, "tag_ids": "152,153,184,196,197,198,199,200,201,202", "tags": [{"avg_rating": 8.428571428571429, "count": 36, "id": 184, "name": "Comics \u0026 Graphic Novels", "sort": 36}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 9.0, "count": 1, "id": 196, "name": "Graphic Novels", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 197, "name": "Literature \u0026 Fiction", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 198, "name": "Dramas \u0026 Plays", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 199, "name": "British \u0026 Irish", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 200, "name": "Arts \u0026 Photography", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 201, "name": "Theater", "sort": 1}, {"avg_rating": 9.0, "count": 1, "id": 202, "name": "Drama \u0026 Plays", "sort": 1}], "timestamp": "2022-10-10 14:39:36.254288+00:00", "title": "Remembrance of Things Past"}])'></div>
          </div>
       </div>
    </div>

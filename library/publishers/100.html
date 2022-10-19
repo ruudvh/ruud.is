@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1042,42 +1042,44 @@
 <p>"--Helen Macdonald, The New York Times   With a new afterword by the author  That man should have dominion "over all the earth, and over every creeping thing that creepeth upon the earth" is a prophecy that has hardened into fact. So pervasive are human impacts on the planet that it's said we live in a new geological epoch: the Anthropocene.  In Under a White Sky, Elizabeth Kolbert takes a hard look at the new world we are creating. Along the way, she meets biologists who are trying to preserve the world's rarest fish, which lives in a single tiny pool in the middle of the Mojave; engineers who are turning carbon emissions to stone in Iceland; Australian researchers who are trying to develop a "super coral" that can survive on a hotter globe; and physicists who are contemplating shooting tiny diamonds into the stratosphere to cool the earth.  One way to look at human civilization, says Kolbert, is as a ten-thousand-year exercise in defying nature. In The Sixth Extinction, she explored the ways in which our capacity for destruction has reshaped the natural world. Now she examines how the very sorts of interventions that have imperiled our planet are increasingly seen as the only hope for its salvation. By turns inspiring, terrifying, and darkly comic, Under a White Sky is an utterly original examination of the challenges we face.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780593136287" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=qwpjEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/60757903" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B08DMWR6BP" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780593136287" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=qwpjEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/60757903" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B08DMWR6BP" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1375,34 +1377,36 @@
 <p>Kang’s exquisitely crafted book brings these lonely parallel climbers together and calls for a new immigrant solidarity—one rooted not in bubble tea and elite college admissions but in the struggles of refugees and the working class.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780525576242" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=vYMvEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/58145392" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780525576242" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=vYMvEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/58145392" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1708,34 +1712,36 @@
 <p>At once ambitious and intimate, Ai Weiwei's <em>1000 Years of Joys and Sorrows</em> offers a deep understanding of the myriad forces that have shaped modern China, and serves as a timely reminder of the urgent need to protect freedom of expression.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780553419467" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/57423429" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0553419463" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780553419467" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/57423429" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0553419463" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2048,42 +2054,44 @@
 <p>Mindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck--impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence "Can I just say one last thing about this, and then I swear I'll shut up about it?" <br><br>Perhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you've come to the right book, mostly!<br><br>In <i>Is Everyone Hanging Out Without Me?, </i>Mindy invites readers on a tour of her life and...
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780307886286" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/11392061" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B004JN1D3M" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780307886286" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/11392061" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B004JN1D3M" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2390,34 +2398,36 @@
 <p>Zero to One presents at once an optimistic view of the future of progress in America and a new way of thinking about innovation: it starts by learning to ask the questions that lead you to find value in unexpected places.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780804139304" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=ZH4oAwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/zero-to-one-peter-thiel/1115559270" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780804139304" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=ZH4oAwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/zero-to-one-peter-thiel/1115559270" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2725,50 +2735,52 @@
 <p>From the Hardcover edition.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780307463760" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=U77um_h_dgcC" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/7850546" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/rework-jason-fried/1102048884" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0307463761" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780307463760" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=U77um_h_dgcC" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/7850546" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/rework-jason-fried/1102048884" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0307463761" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2785,7 +2797,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "145", "authors": [{"avg_rating": 8.0, "count": 1, "id": 145, "name": "Elizabeth Kolbert", "sort": "Kolbert, Elizabeth"}], "comments": "\u003cp\u003eNATIONAL BESTSELLER * The Pulitzer Prize-winning author of The Sixth Extinction returns to humanity\u0027s transformative impact on the environment, now asking: After doing so much damage, can we change nature, this time to save it?  RECOMMENDED BY PRESIDENT OBAMA AND BILL GATES * SHORTLISTED FOR THE WAINWRIGHT PRIZE FOR WRITING * ONE OF THE TEN BEST BOOKS OF THE YEAR: The Washington Post * ONE OF THE BEST BOOKS OF THE YEAR: Time, Esquire, Publishers Weekly, Kirkus Reviews * \"Beautifully and insistently, Kolbert shows us that it is time to think radically about the ways we manage the environment.\u003c/p\u003e\n\n\u003cp\u003e\"--Helen Macdonald, The New York Times   With a new afterword by the author  That man should have dominion \"over all the earth, and over every creeping thing that creepeth upon the earth\" is a prophecy that has hardened into fact. So pervasive are human impacts on the planet that it\u0027s said we live in a new geological epoch: the Anthropocene.  In Under a White Sky, Elizabeth Kolbert takes a hard look at the new world we are creating. Along the way, she meets biologists who are trying to preserve the world\u0027s rarest fish, which lives in a single tiny pool in the middle of the Mojave; engineers who are turning carbon emissions to stone in Iceland; Australian researchers who are trying to develop a \"super coral\" that can survive on a hotter globe; and physicists who are contemplating shooting tiny diamonds into the stratosphere to cool the earth.  One way to look at human civilization, says Kolbert, is as a ten-thousand-year exercise in defying nature. In The Sixth Extinction, she explored the ways in which our capacity for destruction has reshaped the natural world. Now she examines how the very sorts of interventions that have imperiled our planet are increasingly seen as the only hope for its salvation. By turns inspiring, terrifying, and darkly comic, Under a White Sky is an utterly original examination of the challenges we face.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 143, "identifier_ids": "462,461,460,459", "identifiers": [{"book": 143, "id": 459, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780593136287", "sort": "isbn", "type": "isbn", "val": "9780593136287"}, {"book": 143, "id": 460, "name": "Google Books", "path": "https://books.google.com/books?id=qwpjEAAAQBAJ", "sort": "google", "type": "google", "val": "qwpjEAAAQBAJ"}, {"book": 143, "id": 461, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/60757903", "sort": "goodreads", "type": "goodreads", "val": "60757903"}, {"book": 143, "id": 462, "name": "Amazon", "path": "https://amazon.com/dp/B08DMWR6BP", "sort": "amazon", "type": "amazon", "val": "B08DMWR6BP"}], "isbn": "9780593136287", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:14.761371+00:00", "path": "Elizabeth Kolbert/Under a White Sky_ The Nature of th (143)", "pubdate": "2021-02-09", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 4317039, "tag_ids": "57,58,60,124,125,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 8.0, "count": 1, "id": 124, "name": "Nonfiction", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 125, "name": "Climate Crisis", "sort": 1}], "timestamp": "2022-10-05 15:54:14.761371+00:00", "title": "Under a White Sky: The Nature of the Future"}, {"author_ids": "139", "authors": [{"avg_rating": 8.0, "count": 1, "id": 139, "name": "Jay Caspian Kang", "sort": "Kang, Jay Caspian"}], "comments": "\u003cp\u003eA \u201cprovocative and sweeping\u201d (Time) blend of family history and original reportage that explores\u2014and reimagines\u2014Asian American identity in a Black and white world\u201c[Kang\u2019s] exploration of class and identity among Asian Americans will be talked about for years to come.\u201d\u2014Jennifer Szalai, The New York Times Book ReviewONE OF THE BEST BOOKS OF THE YEAR: Time, NPR, Mother Jones\u00a0\u00a0In 1965, a new immigration law lifted a century of restrictions against Asian immigrants to the United States. Nobody, including the lawmakers who passed the bill, expected it to transform the country\u2019s demographics. But over the next four decades, millions arrived, including Jay Caspian Kang\u2019s parents, grandparents, aunts, and uncles. They came with almost no understanding of their new home, much less the history of \u201cAsian America\u201d that was supposed to define them.\u00a0The Loneliest Americans is the unforgettable story of Kang and his family as they move from a housing project in Cambridge to an idyllic college town in the South and eventually to the West Coast. Their story unfolds against the backdrop of a rapidly expanding Asian America, as millions more immigrants, many of them working-class or undocumented, stream into the country. At the same time, upwardly mobile urban professionals have struggled to reconcile their parents\u2019 assimilationist goals with membership in a multicultural elite\u2014all while trying to carve out a new kind of belonging for their own children, who are neither white nor truly \u201cpeople of color.\u201d\u00a0Kang recognizes this existential loneliness in himself and in other Asian Americans who try to locate themselves in the country\u2019s racial binary. There are the businessmen turning Flushing into a center of immigrant wealth; the casualties of the Los Angeles riots; the impoverished parents in New York City who believe that admission to the city\u2019s exam schools is the only way out; the men\u2019s right\u2019s activists on Reddit ranting about intermarriage; and the handful of protesters who show up at Black Lives Matter rallies holding \u201cYellow Peril Supports Black Power\u201d signs.\u003c/p\u003e\n\n\u003cp\u003eKang\u2019s exquisitely crafted book brings these lonely parallel climbers together and calls for a new immigrant solidarity\u2014one rooted not in bubble tea and elite college admissions but in the struggles of refugees and the working class.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 137, "identifier_ids": "332,333,331", "identifiers": [{"book": 137, "id": 331, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780525576242", "sort": "isbn", "type": "isbn", "val": "9780525576242"}, {"book": 137, "id": 333, "name": "Google Books", "path": "https://books.google.com/books?id=vYMvEAAAQBAJ", "sort": "google", "type": "google", "val": "vYMvEAAAQBAJ"}, {"book": 137, "id": 332, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/58145392", "sort": "goodreads", "type": "goodreads", "val": "58145392"}], "isbn": "9780525576242", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:12.577840+00:00", "path": "Jay Caspian Kang/The Loneliest Americans (137)", "pubdate": "2021-10-12", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 1727399, "tag_ids": "57,60,92,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}], "timestamp": "2022-10-05 15:54:12.577840+00:00", "title": "The Loneliest Americans"}, {"author_ids": "163", "authors": [{"avg_rating": 8.0, "count": 1, "id": 163, "name": "Weiwei Ai", "sort": "Ai, Weiwei"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOnce an intimate of Mao Zedong and the nation\u0027s most celebrated poet, Ai Weiwei\u0027s father, Ai Qing, was branded a rightist during the Cultural Revolution, and he and his family were banished to a desolate place known as \"Little Siberia,\" where Ai Qing was sentenced to hard labor cleaning public toilets. Ai Weiwei recounts his childhood in exile, and his difficult decision to leave his family to study art in America, where he befriended Allen Ginsberg and was inspired by Andy Warhol. With candor and wit, he details his return to China and his rise from artistic unknown to art world superstar and international human rights activist--and how his work has been shaped by living under a totalitarian regime. \u003c/p\u003e\n\u003cp\u003eAi Weiwei\u0027s sculptures and installations have been viewed by millions around the globe, and his architectural achievements include helping to design the iconic Bird\u0027s Nest Olympic Stadium in Beijing. His political activism has long made him a target of the Chinese authorities, which culminated in months of secret detention without charge in 2011. Here, for the first time, Ai Weiwei explores the origins of his exceptional creativity and passionate political beliefs through his life story and that of his father, whose creativity was stifled. \u003c/p\u003e\n\u003cp\u003eAt once ambitious and intimate, Ai Weiwei\u0027s \u003cem\u003e1000 Years of Joys and Sorrows\u003c/em\u003e offers a deep understanding of the myriad forces that have shaped modern China, and serves as a timely reminder of the urgent need to protect freedom of expression.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 129, "identifier_ids": "665,664,663", "identifiers": [{"book": 129, "id": 663, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553419467", "sort": "isbn", "type": "isbn", "val": "9780553419467"}, {"book": 129, "id": 664, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57423429", "sort": "goodreads", "type": "goodreads", "val": "57423429"}, {"book": 129, "id": 665, "name": "Amazon", "path": "https://amazon.com/dp/0553419463", "sort": "amazon", "type": "amazon", "val": "0553419463"}], "isbn": "9780553419467", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:09.684578+00:00", "path": "Weiwei Ai/1000 Years of Joys and Sorrows_ A M (129)", "pubdate": "2021-11-02", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 51807772, "tag_ids": "44,57,60,92,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": 6}], "timestamp": "2022-10-05 15:54:09.684578+00:00", "title": "1000 Years of Joys and Sorrows: A Memoir"}, {"author_ids": "102", "authors": [{"avg_rating": 8.0, "count": 1, "id": 102, "name": "Mindy Kaling", "sort": "Kaling, Mindy"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck\u2013impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence \u201cCan I just say one last thing about this, and then I swear I\u2019ll shut up about it?\u201d \u003c/p\u003e\n\u003cp\u003ePerhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you\u2019ve come to the right book, mostly! \u003c/p\u003e\n\u003cp\u003eWith several conveniently placed stopping points for you to run errands and make phone calls, \u003cem\u003eIs Everyone Hanging Out Without Me?\u003c/em\u003e proves that Mindy Kaling really is just a Girl Next Door\u2014not so much literally anywhere in the continental United States, but definitely if you live in India or Sri Lanka. \u003c/p\u003e\u003c/div\u003e\n\n\u003cp\u003eMindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck--impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence \"Can I just say one last thing about this, and then I swear I\u0027ll shut up about it?\" \u003cbr\u003e\u003cbr\u003ePerhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you\u0027ve come to the right book, mostly!\u003cbr\u003e\u003cbr\u003eIn \u003ci\u003eIs Everyone Hanging Out Without Me?, \u003c/i\u003eMindy invites readers on a tour of her life and...", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 96, "identifier_ids": "245,248,247,246", "identifiers": [{"book": 96, "id": 246, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780307886286", "sort": "isbn", "type": "isbn", "val": "9780307886286"}, {"book": 96, "id": 247, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11392061", "sort": "goodreads", "type": "goodreads", "val": "11392061"}, {"book": 96, "id": 248, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838"}, {"book": 96, "id": 245, "name": "Amazon", "path": "https://amazon.com/dp/B004JN1D3M", "sort": "amazon", "type": "amazon", "val": "B004JN1D3M"}], "isbn": "9780307886286", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:04:19.398274+00:00", "path": "Mindy Kaling/Is Everyone Hanging Out Without Me_ (96)", "pubdate": "2011-11-01", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 3546539, "tag_ids": "42,50,64,92", "tags": [{"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}], "timestamp": "2022-10-05 15:04:19.398274+00:00", "title": "Is Everyone Hanging Out Without Me? (And Other Concerns)"}, {"author_ids": "52,53", "authors": [{"avg_rating": null, "count": 1, "id": 53, "name": "Blake Masters", "sort": "Masters, Blake"}, {"avg_rating": null, "count": 1, "id": 52, "name": "Peter Thiel", "sort": "Thiel, Peter"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e#1 NEW YORK TIMES BESTSELLER \"This book delivers completely new and refreshing ideas on how to create value in the world.\"\u2014Mark Zuckerberg, CEO of Meta\u003c/p\u003e\n\u003cp\u003e\"Peter Thiel has built multiple breakthrough companies, and Zero to One shows how.\"\u2014Elon Musk, CEO of SpaceX and Tesla\u003c/p\u003e\n\u003cp\u003eThe great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. In Zero to One , legendary entrepreneur and investor Peter Thiel shows how we can find singular ways to create those new things.\u003c/p\u003e\n\u003cp\u003eThiel begins with the contrarian premise that we live in an age of technological stagnation, even if we\u2019re too distracted by shiny mobile devices to notice. Information technology has improved rapidly, but there is no reason why progress should be limited to computers or Silicon Valley. Progress can be achieved in any industry or area of business. It comes from the most important skill that every leader must master: learning to think for yourself.\u003c/p\u003e\n\u003cp\u003eDoing what someone else already knows how to do takes the world from 1 to n, adding more of something familiar. But when you do something new, you go from 0 to 1. The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won\u2019t make a search engine. Tomorrow\u2019s champions will not win by competing ruthlessly in today\u2019s marketplace. They will escape competition altogether, because their businesses will be unique.\u003c/p\u003e\n\u003cp\u003eZero to One presents at once an optimistic view of the future of progress in America and a new way of thinking about innovation: it starts by learning to ask the questions that lead you to find value in unexpected places.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 63, "identifier_ids": "51,50,52", "identifiers": [{"book": 63, "id": 52, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780804139304", "sort": "isbn", "type": "isbn", "val": "9780804139304"}, {"book": 63, "id": 50, "name": "Google Books", "path": "https://books.google.com/books?id=ZH4oAwAAQBAJ", "sort": "google", "type": "google", "val": "ZH4oAwAAQBAJ"}, {"book": 63, "id": 51, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/zero-to-one-peter-thiel/1115559270", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/zero-to-one-peter-thiel/1115559270"}], "isbn": "9780804139304", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:54.487000+00:00", "path": "Peter Thiel/Zero to One_ Notes on Startups, or H (63)", "pubdate": "2014-09-16", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 6072228, "tag_ids": "11,12", "tags": [{"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}, {"avg_rating": 8.666666666666666, "count": 4, "id": 12, "name": "Entrepreneurship", "sort": 4}], "timestamp": "2022-10-04 13:46:54.487000+00:00", "title": "Zero to One: Notes on Startups, or How to Build the Future"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMost business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you\u0027re looking for a book like that, put this one back on the shelf.\u003c/p\u003e\n\u003cp\u003eRework shows you a better, faster, easier way to succeed in business. Read it and you\u0027ll know why plans are actually harmful, why you don\u0027t need outside investors, and why you\u0027re better off ignoring the competition. The truth is, you need less than you think. You don\u0027t need to be a workaholic. You don\u0027t need to staff up. You don\u0027t need to waste time on paperwork or meetings. You don\u0027t even need an office. Those are all just excuses.\u003c/p\u003e\n\u003cp\u003eWhat you really need to do is stop talking and start working. This book shows you the way. You\u0027ll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you.\u003c/p\u003e\n\u003cp\u003eWith its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who\u2019s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of \"downsizing,\" and artists who don\u2019t want to starve anymore will all find valuable guidance in these pages.\u003c/p\u003e\n\u003cp\u003eFrom the Hardcover edition.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 5, "identifier_ids": "99,103,100,101,102", "identifiers": [{"book": 5, "id": 102, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780307463760", "sort": "isbn", "type": "isbn", "val": "9780307463760"}, {"book": 5, "id": 101, "name": "Google Books", "path": "https://books.google.com/books?id=U77um_h_dgcC", "sort": "google", "type": "google", "val": "U77um_h_dgcC"}, {"book": 5, "id": 100, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/7850546", "sort": "goodreads", "type": "goodreads", "val": "7850546"}, {"book": 5, "id": 103, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/rework-jason-fried/1102048884", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/rework-jason-fried/1102048884"}, {"book": 5, "id": 99, "name": "Amazon", "path": "https://amazon.com/dp/0307463761", "sort": "amazon", "type": "amazon", "val": "0307463761"}], "isbn": "9780307463760", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2021-10-13 19:46:04.494000+00:00", "path": "Jason Fried/Rework (5)", "pubdate": "2010-03-09", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 7004338, "tag_ids": "11,12,26,43", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}, {"avg_rating": 8.666666666666666, "count": 4, "id": 12, "name": "Entrepreneurship", "sort": 4}, {"avg_rating": 9.0, "count": 2, "id": 26, "name": "Personal Growth", "sort": 2}], "timestamp": "2021-10-13 19:46:04.494000+00:00", "title": "Rework"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "145", "authors": [{"avg_rating": 8.0, "count": 1, "id": 145, "name": "Elizabeth Kolbert", "sort": "Kolbert, Elizabeth"}], "comments": "\u003cp\u003eNATIONAL BESTSELLER * The Pulitzer Prize-winning author of The Sixth Extinction returns to humanity\u0027s transformative impact on the environment, now asking: After doing so much damage, can we change nature, this time to save it?  RECOMMENDED BY PRESIDENT OBAMA AND BILL GATES * SHORTLISTED FOR THE WAINWRIGHT PRIZE FOR WRITING * ONE OF THE TEN BEST BOOKS OF THE YEAR: The Washington Post * ONE OF THE BEST BOOKS OF THE YEAR: Time, Esquire, Publishers Weekly, Kirkus Reviews * \"Beautifully and insistently, Kolbert shows us that it is time to think radically about the ways we manage the environment.\u003c/p\u003e\n\n\u003cp\u003e\"--Helen Macdonald, The New York Times   With a new afterword by the author  That man should have dominion \"over all the earth, and over every creeping thing that creepeth upon the earth\" is a prophecy that has hardened into fact. So pervasive are human impacts on the planet that it\u0027s said we live in a new geological epoch: the Anthropocene.  In Under a White Sky, Elizabeth Kolbert takes a hard look at the new world we are creating. Along the way, she meets biologists who are trying to preserve the world\u0027s rarest fish, which lives in a single tiny pool in the middle of the Mojave; engineers who are turning carbon emissions to stone in Iceland; Australian researchers who are trying to develop a \"super coral\" that can survive on a hotter globe; and physicists who are contemplating shooting tiny diamonds into the stratosphere to cool the earth.  One way to look at human civilization, says Kolbert, is as a ten-thousand-year exercise in defying nature. In The Sixth Extinction, she explored the ways in which our capacity for destruction has reshaped the natural world. Now she examines how the very sorts of interventions that have imperiled our planet are increasingly seen as the only hope for its salvation. By turns inspiring, terrifying, and darkly comic, Under a White Sky is an utterly original examination of the challenges we face.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 143, "identifier_ids": "462,461,460,459", "identifiers": [{"book": 143, "id": 459, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780593136287", "sort": "isbn", "type": "isbn", "val": "9780593136287"}, {"book": 143, "id": 460, "name": "Google Books", "path": "https://books.google.com/books?id=qwpjEAAAQBAJ", "sort": "google", "type": "google", "val": "qwpjEAAAQBAJ"}, {"book": 143, "id": 461, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/60757903", "sort": "goodreads", "type": "goodreads", "val": "60757903"}, {"book": 143, "id": 462, "name": "Amazon", "path": "https://amazon.com/dp/B08DMWR6BP", "sort": "amazon", "type": "amazon", "val": "B08DMWR6BP"}], "isbn": "9780593136287", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:14.761371+00:00", "path": "Elizabeth Kolbert/Under a White Sky_ The Nature of th (143)", "pubdate": "2021-02-09", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 4317039, "tag_ids": "57,58,60,124,125,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 8.0, "count": 1, "id": 124, "name": "Nonfiction", "sort": 1}, {"avg_rating": 8.0, "count": 1, "id": 125, "name": "Climate Crisis", "sort": 1}], "timestamp": "2022-10-05 15:54:14.761371+00:00", "title": "Under a White Sky: The Nature of the Future"}, {"author_ids": "139", "authors": [{"avg_rating": 8.0, "count": 1, "id": 139, "name": "Jay Caspian Kang", "sort": "Kang, Jay Caspian"}], "comments": "\u003cp\u003eA \u201cprovocative and sweeping\u201d (Time) blend of family history and original reportage that explores\u2014and reimagines\u2014Asian American identity in a Black and white world\u201c[Kang\u2019s] exploration of class and identity among Asian Americans will be talked about for years to come.\u201d\u2014Jennifer Szalai, The New York Times Book ReviewONE OF THE BEST BOOKS OF THE YEAR: Time, NPR, Mother Jones\u00a0\u00a0In 1965, a new immigration law lifted a century of restrictions against Asian immigrants to the United States. Nobody, including the lawmakers who passed the bill, expected it to transform the country\u2019s demographics. But over the next four decades, millions arrived, including Jay Caspian Kang\u2019s parents, grandparents, aunts, and uncles. They came with almost no understanding of their new home, much less the history of \u201cAsian America\u201d that was supposed to define them.\u00a0The Loneliest Americans is the unforgettable story of Kang and his family as they move from a housing project in Cambridge to an idyllic college town in the South and eventually to the West Coast. Their story unfolds against the backdrop of a rapidly expanding Asian America, as millions more immigrants, many of them working-class or undocumented, stream into the country. At the same time, upwardly mobile urban professionals have struggled to reconcile their parents\u2019 assimilationist goals with membership in a multicultural elite\u2014all while trying to carve out a new kind of belonging for their own children, who are neither white nor truly \u201cpeople of color.\u201d\u00a0Kang recognizes this existential loneliness in himself and in other Asian Americans who try to locate themselves in the country\u2019s racial binary. There are the businessmen turning Flushing into a center of immigrant wealth; the casualties of the Los Angeles riots; the impoverished parents in New York City who believe that admission to the city\u2019s exam schools is the only way out; the men\u2019s right\u2019s activists on Reddit ranting about intermarriage; and the handful of protesters who show up at Black Lives Matter rallies holding \u201cYellow Peril Supports Black Power\u201d signs.\u003c/p\u003e\n\n\u003cp\u003eKang\u2019s exquisitely crafted book brings these lonely parallel climbers together and calls for a new immigrant solidarity\u2014one rooted not in bubble tea and elite college admissions but in the struggles of refugees and the working class.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 137, "identifier_ids": "332,333,331", "identifiers": [{"book": 137, "id": 331, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780525576242", "sort": "isbn", "type": "isbn", "val": "9780525576242"}, {"book": 137, "id": 333, "name": "Google Books", "path": "https://books.google.com/books?id=vYMvEAAAQBAJ", "sort": "google", "type": "google", "val": "vYMvEAAAQBAJ"}, {"book": 137, "id": 332, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/58145392", "sort": "goodreads", "type": "goodreads", "val": "58145392"}], "isbn": "9780525576242", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:12.577840+00:00", "path": "Jay Caspian Kang/The Loneliest Americans (137)", "pubdate": "2021-10-12", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 1727399, "tag_ids": "57,60,92,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}], "timestamp": "2022-10-05 15:54:12.577840+00:00", "title": "The Loneliest Americans"}, {"author_ids": "163", "authors": [{"avg_rating": 8.0, "count": 1, "id": 163, "name": "Weiwei Ai", "sort": "Ai, Weiwei"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOnce an intimate of Mao Zedong and the nation\u0027s most celebrated poet, Ai Weiwei\u0027s father, Ai Qing, was branded a rightist during the Cultural Revolution, and he and his family were banished to a desolate place known as \"Little Siberia,\" where Ai Qing was sentenced to hard labor cleaning public toilets. Ai Weiwei recounts his childhood in exile, and his difficult decision to leave his family to study art in America, where he befriended Allen Ginsberg and was inspired by Andy Warhol. With candor and wit, he details his return to China and his rise from artistic unknown to art world superstar and international human rights activist--and how his work has been shaped by living under a totalitarian regime. \u003c/p\u003e\n\u003cp\u003eAi Weiwei\u0027s sculptures and installations have been viewed by millions around the globe, and his architectural achievements include helping to design the iconic Bird\u0027s Nest Olympic Stadium in Beijing. His political activism has long made him a target of the Chinese authorities, which culminated in months of secret detention without charge in 2011. Here, for the first time, Ai Weiwei explores the origins of his exceptional creativity and passionate political beliefs through his life story and that of his father, whose creativity was stifled. \u003c/p\u003e\n\u003cp\u003eAt once ambitious and intimate, Ai Weiwei\u0027s \u003cem\u003e1000 Years of Joys and Sorrows\u003c/em\u003e offers a deep understanding of the myriad forces that have shaped modern China, and serves as a timely reminder of the urgent need to protect freedom of expression.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 129, "identifier_ids": "665,664,663", "identifiers": [{"book": 129, "id": 663, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553419467", "sort": "isbn", "type": "isbn", "val": "9780553419467"}, {"book": 129, "id": 664, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57423429", "sort": "goodreads", "type": "goodreads", "val": "57423429"}, {"book": 129, "id": 665, "name": "Amazon", "path": "https://amazon.com/dp/0553419463", "sort": "amazon", "type": "amazon", "val": "0553419463"}], "isbn": "9780553419467", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:09.684578+00:00", "path": "Weiwei Ai/1000 Years of Joys and Sorrows_ A M (129)", "pubdate": "2021-11-02", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 51807772, "tag_ids": "44,57,60,92,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": 6}], "timestamp": "2022-10-05 15:54:09.684578+00:00", "title": "1000 Years of Joys and Sorrows: A Memoir"}, {"author_ids": "102", "authors": [{"avg_rating": 8.0, "count": 1, "id": 102, "name": "Mindy Kaling", "sort": "Kaling, Mindy"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck\u2013impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence \u201cCan I just say one last thing about this, and then I swear I\u2019ll shut up about it?\u201d \u003c/p\u003e\n\u003cp\u003ePerhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you\u2019ve come to the right book, mostly! \u003c/p\u003e\n\u003cp\u003eWith several conveniently placed stopping points for you to run errands and make phone calls, \u003cem\u003eIs Everyone Hanging Out Without Me?\u003c/em\u003e proves that Mindy Kaling really is just a Girl Next Door\u2014not so much literally anywhere in the continental United States, but definitely if you live in India or Sri Lanka. \u003c/p\u003e\u003c/div\u003e\n\n\u003cp\u003eMindy Kaling has lived many lives: the obedient child of immigrant professionals, a timid chubster afraid of her own bike, a Ben Affleck--impersonating Off-Broadway performer and playwright, and, finally, a comedy writer and actress prone to starting fights with her friends and coworkers with the sentence \"Can I just say one last thing about this, and then I swear I\u0027ll shut up about it?\" \u003cbr\u003e\u003cbr\u003ePerhaps you want to know what Mindy thinks makes a great best friend (someone who will fill your prescription in the middle of the night), or what makes a great guy (one who is aware of all elderly people in any room at any time and acts accordingly), or what is the perfect amount of fame (so famous you can never get convicted of murder in a court of law), or how to maintain a trim figure (you will not find that information in these pages). If so, you\u0027ve come to the right book, mostly!\u003cbr\u003e\u003cbr\u003eIn \u003ci\u003eIs Everyone Hanging Out Without Me?, \u003c/i\u003eMindy invites readers on a tour of her life and...", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 96, "identifier_ids": "245,248,247,246", "identifiers": [{"book": 96, "id": 246, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780307886286", "sort": "isbn", "type": "isbn", "val": "9780307886286"}, {"book": 96, "id": 247, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11392061", "sort": "goodreads", "type": "goodreads", "val": "11392061"}, {"book": 96, "id": 248, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/is-everyone-hanging-out-without-me-mindy-kaling/1111582838"}, {"book": 96, "id": 245, "name": "Amazon", "path": "https://amazon.com/dp/B004JN1D3M", "sort": "amazon", "type": "amazon", "val": "B004JN1D3M"}], "isbn": "9780307886286", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 15:04:19.398274+00:00", "path": "Mindy Kaling/Is Everyone Hanging Out Without Me_ (96)", "pubdate": "2011-11-01", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 3546539, "tag_ids": "42,50,64,92", "tags": [{"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}], "timestamp": "2022-10-05 15:04:19.398274+00:00", "title": "Is Everyone Hanging Out Without Me? (And Other Concerns)"}, {"author_ids": "52,53", "authors": [{"avg_rating": null, "count": 1, "id": 53, "name": "Blake Masters", "sort": "Masters, Blake"}, {"avg_rating": null, "count": 1, "id": 52, "name": "Peter Thiel", "sort": "Thiel, Peter"}], "comments": "\u003cdiv\u003e\n\u003cp\u003e#1 NEW YORK TIMES BESTSELLER \"This book delivers completely new and refreshing ideas on how to create value in the world.\"\u2014Mark Zuckerberg, CEO of Meta\u003c/p\u003e\n\u003cp\u003e\"Peter Thiel has built multiple breakthrough companies, and Zero to One shows how.\"\u2014Elon Musk, CEO of SpaceX and Tesla\u003c/p\u003e\n\u003cp\u003eThe great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. In Zero to One , legendary entrepreneur and investor Peter Thiel shows how we can find singular ways to create those new things.\u003c/p\u003e\n\u003cp\u003eThiel begins with the contrarian premise that we live in an age of technological stagnation, even if we\u2019re too distracted by shiny mobile devices to notice. Information technology has improved rapidly, but there is no reason why progress should be limited to computers or Silicon Valley. Progress can be achieved in any industry or area of business. It comes from the most important skill that every leader must master: learning to think for yourself.\u003c/p\u003e\n\u003cp\u003eDoing what someone else already knows how to do takes the world from 1 to n, adding more of something familiar. But when you do something new, you go from 0 to 1. The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won\u2019t make a search engine. Tomorrow\u2019s champions will not win by competing ruthlessly in today\u2019s marketplace. They will escape competition altogether, because their businesses will be unique.\u003c/p\u003e\n\u003cp\u003eZero to One presents at once an optimistic view of the future of progress in America and a new way of thinking about innovation: it starts by learning to ask the questions that lead you to find value in unexpected places.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 63, "identifier_ids": "51,50,52", "identifiers": [{"book": 63, "id": 52, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780804139304", "sort": "isbn", "type": "isbn", "val": "9780804139304"}, {"book": 63, "id": 50, "name": "Google Books", "path": "https://books.google.com/books?id=ZH4oAwAAQBAJ", "sort": "google", "type": "google", "val": "ZH4oAwAAQBAJ"}, {"book": 63, "id": 51, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/zero-to-one-peter-thiel/1115559270", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/zero-to-one-peter-thiel/1115559270"}], "isbn": "9780804139304", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:54.487000+00:00", "path": "Peter Thiel/Zero to One_ Notes on Startups, or H (63)", "pubdate": "2014-09-16", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 6072228, "tag_ids": "11,12", "tags": [{"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}, {"avg_rating": 8.666666666666666, "count": 4, "id": 12, "name": "Entrepreneurship", "sort": 4}], "timestamp": "2022-10-04 13:46:54.487000+00:00", "title": "Zero to One: Notes on Startups, or How to Build the Future"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMost business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you\u0027re looking for a book like that, put this one back on the shelf.\u003c/p\u003e\n\u003cp\u003eRework shows you a better, faster, easier way to succeed in business. Read it and you\u0027ll know why plans are actually harmful, why you don\u0027t need outside investors, and why you\u0027re better off ignoring the competition. The truth is, you need less than you think. You don\u0027t need to be a workaholic. You don\u0027t need to staff up. You don\u0027t need to waste time on paperwork or meetings. You don\u0027t even need an office. Those are all just excuses.\u003c/p\u003e\n\u003cp\u003eWhat you really need to do is stop talking and start working. This book shows you the way. You\u0027ll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you.\u003c/p\u003e\n\u003cp\u003eWith its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who\u2019s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of \"downsizing,\" and artists who don\u2019t want to starve anymore will all find valuable guidance in these pages.\u003c/p\u003e\n\u003cp\u003eFrom the Hardcover edition.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 5, "identifier_ids": "99,103,100,101,102", "identifiers": [{"book": 5, "id": 102, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780307463760", "sort": "isbn", "type": "isbn", "val": "9780307463760"}, {"book": 5, "id": 101, "name": "Google Books", "path": "https://books.google.com/books?id=U77um_h_dgcC", "sort": "google", "type": "google", "val": "U77um_h_dgcC"}, {"book": 5, "id": 100, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/7850546", "sort": "goodreads", "type": "goodreads", "val": "7850546"}, {"book": 5, "id": 103, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/rework-jason-fried/1102048884", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/rework-jason-fried/1102048884"}, {"book": 5, "id": 99, "name": "Amazon", "path": "https://amazon.com/dp/0307463761", "sort": "amazon", "type": "amazon", "val": "0307463761"}], "isbn": "9780307463760", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2021-10-13 19:46:04.494000+00:00", "path": "Jason Fried/Rework (5)", "pubdate": "2010-03-09", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 7004338, "tag_ids": "11,12,26,43", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 8.0, "count": 10, "id": 11, "name": "Business \u0026 Economics", "sort": 10}, {"avg_rating": 8.666666666666666, "count": 4, "id": 12, "name": "Entrepreneurship", "sort": 4}, {"avg_rating": 9.0, "count": 2, "id": 26, "name": "Personal Growth", "sort": 2}], "timestamp": "2021-10-13 19:46:04.494000+00:00", "title": "Rework"}])'></div>
          </div>
       </div>
    </div>

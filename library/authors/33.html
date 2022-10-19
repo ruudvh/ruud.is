@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1032,34 +1032,36 @@
 <p>• Hundreds of updated one-liners, anecdotes, and bits from top comedians like Louis C.K., Conan O’Brien, Tina Fey, Amy Schumer, Rodney Dangerfield, Jon Stewart, Steve Martin, Ellen DeGeneres, Jimmy Fallon, George Carlin, Zach Galifianakis, Stephen Colbert, Erma Bombeck, and more.<br>• Exclusive tips for injecting humor into articles, speeches, advertisements, greeting cards, and more.<br>• New instruction on writing for online markets and social media.<br>• Advice on brainstorming and editing to beat writer's block and generate new material.<br>• Exercises and expanded instructions for exaggeration, reverses, word play and more to practice and refine your writing skills.<br>For more than twenty years, Comedy Writing Secrets has helped humor writers of all skill levels write and sell their work. With Comedy Writing Secrets 3rd Edition , you'll be laugh-out-loud funny and leave readers wanting more.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781599639635" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=giFjDwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/comedy-writing-secrets-mark-shatz/1122432004" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781599639635" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=giFjDwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/comedy-writing-secrets-mark-shatz/1122432004" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1076,7 +1078,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "32,33", "authors": [{"avg_rating": null, "count": 1, "id": 32, "name": "Mel Helitzer", "sort": "Helitzer, Mel"}, {"avg_rating": null, "count": 1, "id": 33, "name": "Mark Shatz", "sort": "Shatz, Mark"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe Must-Have Guide to Humor Writing\u003c/p\u003e\n\u003cp\u003eBring on the funny! With Comedy Writing Secrets 3rd Edition , you can discover the secrets of humor writing that will keep your readers rolling in their seats. Learn the basics of joke construction, as well as in-depth comedy-writing techniques that you can apply to a variety of print and online markets. If your aim is to make \u0027em laughand make a career in comedy writingthen look no further.\u003c/p\u003e\n\u003cp\u003eIn this completely revised and refreshed edition, you\u0027ll discover:\u003c/p\u003e\n\u003cp\u003e\u2022 Hundreds of updated one-liners, anecdotes, and bits from top comedians like Louis C.K., Conan O\u2019Brien, Tina Fey, Amy Schumer, Rodney Dangerfield, Jon Stewart, Steve Martin, Ellen DeGeneres, Jimmy Fallon, George Carlin, Zach Galifianakis, Stephen Colbert, Erma Bombeck, and more.\u003cbr\u003e\u2022 Exclusive tips for injecting humor into articles, speeches, advertisements, greeting cards, and more.\u003cbr\u003e\u2022 New instruction on writing for online markets and social media.\u003cbr\u003e\u2022 Advice on brainstorming and editing to beat writer\u0027s block and generate new material.\u003cbr\u003e\u2022 Exercises and expanded instructions for exaggeration, reverses, word play and more to practice and refine your writing skills.\u003cbr\u003eFor more than twenty years, Comedy Writing Secrets has helped humor writers of all skill levels write and sell their work. With Comedy Writing Secrets 3rd Edition , you\u0027ll be laugh-out-loud funny and leave readers wanting more.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 36, "identifier_ids": "57,58,59", "identifiers": [{"book": 36, "id": 59, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781599639635", "sort": "isbn", "type": "isbn", "val": "9781599639635"}, {"book": 36, "id": 58, "name": "Google Books", "path": "https://books.google.com/books?id=giFjDwAAQBAJ", "sort": "google", "type": "google", "val": "giFjDwAAQBAJ"}, {"book": 36, "id": 57, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/comedy-writing-secrets-mark-shatz/1122432004", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/comedy-writing-secrets-mark-shatz/1122432004"}], "isbn": "9781599639635", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:41.942000+00:00", "path": "Mel Helitzer/Comedy Writing Secrets_ The Best-Sel (36)", "pubdate": "2016-02-18", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 2016139, "tag_ids": "42,64,65", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}, {"avg_rating": null, "count": 1, "id": 65, "name": "Composition", "sort": 1}], "timestamp": "2022-10-04 13:46:41.942000+00:00", "title": "Comedy Writing Secrets: The Best-Selling Guide to Writing Funny and Getting Paid for It"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "32,33", "authors": [{"avg_rating": null, "count": 1, "id": 32, "name": "Mel Helitzer", "sort": "Helitzer, Mel"}, {"avg_rating": null, "count": 1, "id": 33, "name": "Mark Shatz", "sort": "Shatz, Mark"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe Must-Have Guide to Humor Writing\u003c/p\u003e\n\u003cp\u003eBring on the funny! With Comedy Writing Secrets 3rd Edition , you can discover the secrets of humor writing that will keep your readers rolling in their seats. Learn the basics of joke construction, as well as in-depth comedy-writing techniques that you can apply to a variety of print and online markets. If your aim is to make \u0027em laughand make a career in comedy writingthen look no further.\u003c/p\u003e\n\u003cp\u003eIn this completely revised and refreshed edition, you\u0027ll discover:\u003c/p\u003e\n\u003cp\u003e\u2022 Hundreds of updated one-liners, anecdotes, and bits from top comedians like Louis C.K., Conan O\u2019Brien, Tina Fey, Amy Schumer, Rodney Dangerfield, Jon Stewart, Steve Martin, Ellen DeGeneres, Jimmy Fallon, George Carlin, Zach Galifianakis, Stephen Colbert, Erma Bombeck, and more.\u003cbr\u003e\u2022 Exclusive tips for injecting humor into articles, speeches, advertisements, greeting cards, and more.\u003cbr\u003e\u2022 New instruction on writing for online markets and social media.\u003cbr\u003e\u2022 Advice on brainstorming and editing to beat writer\u0027s block and generate new material.\u003cbr\u003e\u2022 Exercises and expanded instructions for exaggeration, reverses, word play and more to practice and refine your writing skills.\u003cbr\u003eFor more than twenty years, Comedy Writing Secrets has helped humor writers of all skill levels write and sell their work. With Comedy Writing Secrets 3rd Edition , you\u0027ll be laugh-out-loud funny and leave readers wanting more.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 36, "identifier_ids": "57,58,59", "identifiers": [{"book": 36, "id": 59, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781599639635", "sort": "isbn", "type": "isbn", "val": "9781599639635"}, {"book": 36, "id": 58, "name": "Google Books", "path": "https://books.google.com/books?id=giFjDwAAQBAJ", "sort": "google", "type": "google", "val": "giFjDwAAQBAJ"}, {"book": 36, "id": 57, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/comedy-writing-secrets-mark-shatz/1122432004", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/comedy-writing-secrets-mark-shatz/1122432004"}], "isbn": "9781599639635", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:41.942000+00:00", "path": "Mel Helitzer/Comedy Writing Secrets_ The Best-Sel (36)", "pubdate": "2016-02-18", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 2016139, "tag_ids": "42,64,65", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}, {"avg_rating": null, "count": 1, "id": 65, "name": "Composition", "sort": 1}], "timestamp": "2022-10-04 13:46:41.942000+00:00", "title": "Comedy Writing Secrets: The Best-Selling Guide to Writing Funny and Getting Paid for It"}])'></div>
          </div>
       </div>
    </div>

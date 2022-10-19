@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1034,34 +1034,36 @@
 <p>Here is the second volume in George R.R. Martin magnificent cycle of novels that includes <em>A Game of Thrones</em> and <em>A Storm of Swords</em>. As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R.R. Martin stunning series is destined to stand as one of the great achievements of imaginative fiction.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780553381696" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/10572" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0553108034" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780553381696" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/10572" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0553108034" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1078,7 +1080,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "164", "authors": [{"avg_rating": 8.0, "count": 1, "id": 164, "name": "George R. R. Martin", "sort": "Martin, George R. R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA comet the color of blood and flame cuts across the sky. Two great leaders\u2014Lord Eddard Stark and Robert Baratheon\u2014who hold sway over an age of enforced peace are dead, victims of royal treachery. Now, from the ancient citadel of Dragonstone to the forbidding shores of Winterfell, chaos reigns. Six factions struggle for control of a divided land and the Iron Throne of the Seven Kingdoms, preparing to stake their claims through tempest, turmoil, and war. \u003c/p\u003e\n\u003cp\u003eIt is a tale in which brother plots against brother and the dead rise to walk in the night. Here a princess masquerades as an orphan boy; a knight of the mind prepares a poison for a treacherous sorceress; and wild men descend from the Mountains of the Moon to ravage the countryside. Against a backdrop of incest and fratricide, alchemy and murder, victory may go to the men and women possessed of the coldest steel...and the coldest hearts. For when kings clash, the whole land trembles. \u003c/p\u003e\n\u003cp\u003eHere is the second volume in George R.R. Martin magnificent cycle of novels that includes \u003cem\u003eA Game of Thrones\u003c/em\u003e and \u003cem\u003eA Storm of Swords\u003c/em\u003e. As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R.R. Martin stunning series is destined to stand as one of the great achievements of imaginative fiction.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 76, "identifier_ids": "437,436,438", "identifiers": [{"book": 76, "id": 438, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553381696", "sort": "isbn", "type": "isbn", "val": "9780553381696"}, {"book": 76, "id": 436, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/10572", "sort": "goodreads", "type": "goodreads", "val": "10572"}, {"book": 76, "id": 437, "name": "Amazon", "path": "https://amazon.com/dp/0553108034", "sort": "amazon", "type": "amazon", "val": "0553108034"}], "isbn": "9780553381696", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:40.950369+00:00", "path": "George R. R. Martin/A Clash of Kings (76)", "pubdate": "1998-11-16", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 4, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 864638, "tag_ids": "50,75,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:44:40.950369+00:00", "title": "A Clash of Kings"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "164", "authors": [{"avg_rating": 8.0, "count": 1, "id": 164, "name": "George R. R. Martin", "sort": "Martin, George R. R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA comet the color of blood and flame cuts across the sky. Two great leaders\u2014Lord Eddard Stark and Robert Baratheon\u2014who hold sway over an age of enforced peace are dead, victims of royal treachery. Now, from the ancient citadel of Dragonstone to the forbidding shores of Winterfell, chaos reigns. Six factions struggle for control of a divided land and the Iron Throne of the Seven Kingdoms, preparing to stake their claims through tempest, turmoil, and war. \u003c/p\u003e\n\u003cp\u003eIt is a tale in which brother plots against brother and the dead rise to walk in the night. Here a princess masquerades as an orphan boy; a knight of the mind prepares a poison for a treacherous sorceress; and wild men descend from the Mountains of the Moon to ravage the countryside. Against a backdrop of incest and fratricide, alchemy and murder, victory may go to the men and women possessed of the coldest steel...and the coldest hearts. For when kings clash, the whole land trembles. \u003c/p\u003e\n\u003cp\u003eHere is the second volume in George R.R. Martin magnificent cycle of novels that includes \u003cem\u003eA Game of Thrones\u003c/em\u003e and \u003cem\u003eA Storm of Swords\u003c/em\u003e. As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R.R. Martin stunning series is destined to stand as one of the great achievements of imaginative fiction.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 76, "identifier_ids": "437,436,438", "identifiers": [{"book": 76, "id": 438, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780553381696", "sort": "isbn", "type": "isbn", "val": "9780553381696"}, {"book": 76, "id": 436, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/10572", "sort": "goodreads", "type": "goodreads", "val": "10572"}, {"book": 76, "id": 437, "name": "Amazon", "path": "https://amazon.com/dp/0553108034", "sort": "amazon", "type": "amazon", "val": "0553108034"}], "isbn": "9780553381696", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:44:40.950369+00:00", "path": "George R. R. Martin/A Clash of Kings (76)", "pubdate": "1998-11-16", "publisher_ids": "50", "publishers": [{"avg_rating": 9.0, "count": 4, "id": 50, "name": "Bantam", "sort": "Bantam"}], "rating": 4, "series": [{"avg_rating": 9.0, "count": 4, "id": 8, "name": "A Song of Ice and Fire", "sort": "A Song of Ice and Fire"}], "series_ids": "8", "size": 864638, "tag_ids": "50,75,76,84", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:44:40.950369+00:00", "title": "A Clash of Kings"}])'></div>
          </div>
       </div>
    </div>

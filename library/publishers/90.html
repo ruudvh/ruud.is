@@ -84,7 +84,7 @@
          <div class="w-full flex grow px-7 pb-12 mt-5 overflow-hidden">
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
-                <ul class="font-inter font-medium">
+                <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -205,7 +205,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -216,7 +216,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -255,7 +255,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -399,7 +399,7 @@
                       <p><a class="underline decoration-solid" href="https://ruud.is">ruud.is</a> Library</p>
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
-                      <ul class="font-inter font-medium">
+                      <ul class="font-inter">
   <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
@@ -520,7 +520,7 @@
 
 <div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
 
-<ul class="space-y-1 font-inter font-medium">
+<ul class="space-y-1 font-inter">
   <li>
     <div
       tabindex="0"
@@ -531,7 +531,7 @@
       </a>
     </div>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -570,7 +570,7 @@
       </li>
     </ul>
   </li>
-  <li x-data="{expanded:false}">
+  <li x-data="{expanded:true}">
     <div
       tabindex="0"
       :class="expanded && 'text-slate-800 dark:text-navy-100'"
@@ -1038,42 +1038,44 @@
 <p>In London, Orwell studied begging with a crippled expert named Bozo, a great storyteller and philosopher. Orwell devotes a chapter to the fine points of London guttersnipe slang. Years later, he would put his lexical bent to work by inventing Newspeak, and draw on his down-and-out experience to evoke the plight of the Proles in <em>1984</em>. Though marred by hints of unexamined anti-Semitism, Orwell's debut remains, as <em>The Nation</em> put it, "the most lucid portrait of poverty in the English language." <em>--Tim Appelo</em></p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780156262248" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=m5vIVN7LjtgC" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/34304872" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/015626224X" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780156262248" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=m5vIVN7LjtgC" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/34304872" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/015626224X" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1369,34 +1371,36 @@
 <p>Partly inspired by award-winning author Sunjeev Sahota's family history, <em>China Room</em> is at once a deft exploration of how systems of power circumscribe individual lives and a deeply moving portrait of the unconquerable human capacity to resist them. At once sweeping and intimate, lush and propulsive, it ** is a stunning achievement from a contemporary master.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780593298145" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=VKZPEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/55994371" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780593298145" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=VKZPEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/55994371" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -1688,42 +1692,44 @@
 <p>Abdurraqib writes prose brimming with jubilation and pain, infused with the lyricism and rhythm of the musicians he loves. With care and generosity, he explains the poignancy of performances big and small, each one feeling intensely familiar and vital, both timeless and desperately urgent. Filled with sharp insight, humor, and heart, <em>A Little Devil in America</em> exalts the Black performance that unfolds in specific moments in time and space—from midcentury Paris to the moon, and back down again to a cramped living room in Columbus, Ohio.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780141995793" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=sNeLzgEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/49247757" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/1984801198" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780141995793" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=sNeLzgEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/49247757" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/1984801198" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2029,34 +2035,36 @@
 <p>Mark Harris gives an intimate and evenhanded accounting of success and failure alike; the portrait is not always flattering, but its ultimate impact is to present the full story of one of the most richly interesting, complicated, and consequential figures the worlds of theater and motion pictures have ever seen. It is a triumph of the biographer's art.</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780399562259" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=DQTlDwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/53479533" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780399562259" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=DQTlDwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/53479533" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2338,26 +2346,28 @@
 <p>The search to uncover this history is part of the story itself. For where the historical record falls short of capturing Rose’s, Ashley’s, and Ruth’s full lives, Miles turns to objects and to art as equally important sources, assembling a chorus of women’s and families’ stories and critiquing the scant archives that for decades have overlooked so many. The contents of Ashley’s sack—a tattered dress, handfuls of pecans, a braid of hair, “my Love always”—are eloquent evidence of the lives these women lived. As she follows Ashley’s journey, Miles metaphorically unpacks the bag, deepening its emotional resonance and exploring the meanings and significance of everything it contained.<br><em><br>All That She Carried</em> is a poignant story of resilience and of love passed down through generations of women against steep odds. It honors the creativity and fierce resourcefulness of people who preserved family ties even when official systems refused to do so, and it serves as a visionary illustration of how to reconstruct and recount their stories today.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781984854995" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/1984854992" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781984854995" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/1984854992" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2659,26 +2669,28 @@
 <p>The bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett's intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden's car. Together, they have hatched an altogether different plan for Emmett's future, one that will take them all on a fateful journey in the opposite direction—to the City of New York. Spanning just ten days and told from multiple points of view, Towles's third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780735222373" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=Kn4eEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780735222373" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=Kn4eEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -2960,34 +2972,36 @@
                 <p>The breakout poetry collection by presidential inaugural poet Amanda Gorman  The breakout poetry collection by Sunday Times bestselling author and presidential inaugural poet Amanda Gorman  Including 'The Hill We Climb,' the stirring poem read at the inauguration of the 46th President of the United States, Joe Biden, this luminous poetry collection by Amanda Gorman captures a shipwrecked moment in time and transforms it into a lyric of hope and healing. In Call Us What We Carry, Gorman explores history, language, identity, and erasure through an imaginative and intimate collage. Harnessing the collective grief of a global pandemic, these poems shine a light on a moment of reckoning and reveal that Gorman has become our messenger from the past, our voice for the future.  Praise for 'The Hill We Climb'- 'I was profoundly moved... The power of your words blew me away' Michelle Obama, TIME 'I was thrilled' Hillary Clinton 'She spoke truth to power and embodied clear-eyed hope to a weary nation. She revealed us to ourselves' Lin-Manuel Miranda, TIME</p>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781784744618" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=8sYzzgEACAAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B08TVG7BPD" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781784744618" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=8sYzzgEACAAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B08TVG7BPD" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -3323,42 +3337,44 @@
 <p>Winner of the J. Anthony Lukas Book Prize • Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award • Longlisted for the Baillie Gifford Prize</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780812986945" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=BzBGEAAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/57359691" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/0812986946" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780812986945" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=BzBGEAAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/57359691" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/0812986946" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -3653,50 +3669,52 @@
 <p>The book that inspired the major film starring Jim Carrey and Zooey Deschanel'I, Danny Wallace, being of sound mind and body, do hereby write this manifesto for my life. I swear I will be more open to opportunity. I swear I will live my life taking every available chance. I will say Yes to every favour, request, suggestion and invitation. I WILL SWEAR TO SAY YES WHERE ONCE I WOULD SAY NO.'Danny Wallace had been staying in. Far too much. Having been dumped by his girlfriend, he really wasn't doing the young, free and single thing very well. Instead he was avoiding people. Texting them instead of calling them. Calling them instead of meeting them. That is until one fateful date when a mystery man on a late-night bus told him to 'say yes more'. These three simple words changed Danny's life forever. Yes Man is the story of what happened when Danny decided to say YES to everything, in order to make his life more interesting. And boy, did it get more interesting.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781407062266" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=OxEAQAKNEuIC" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/9302702" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/yes-man-danny-wallace/1100367285" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B003L77XB8" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781407062266" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=OxEAQAKNEuIC" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/9302702" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/yes-man-danny-wallace/1100367285" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B003L77XB8" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -4001,26 +4019,28 @@
 <p>Begin today. The change in your life will be unforgettable</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9780345410023" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/memory-book-harry-lorayne/1101889940" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9780345410023" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/memory-book-harry-lorayne/1101889940" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -4320,34 +4340,36 @@
 <p>• Hundreds of updated one-liners, anecdotes, and bits from top comedians like Louis C.K., Conan O’Brien, Tina Fey, Amy Schumer, Rodney Dangerfield, Jon Stewart, Steve Martin, Ellen DeGeneres, Jimmy Fallon, George Carlin, Zach Galifianakis, Stephen Colbert, Erma Bombeck, and more.<br>• Exclusive tips for injecting humor into articles, speeches, advertisements, greeting cards, and more.<br>• New instruction on writing for online markets and social media.<br>• Advice on brainstorming and editing to beat writer's block and generate new material.<br>• Exercises and expanded instructions for exaggeration, reverses, word play and more to practice and refine your writing skills.<br>For more than twenty years, Comedy Writing Secrets has helped humor writers of all skill levels write and sell their work. With Comedy Writing Secrets 3rd Edition , you'll be laugh-out-loud funny and leave readers wanting more.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781599639635" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=giFjDwAAQBAJ" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://www.barnesandnoble.com/w/comedy-writing-secrets-mark-shatz/1122432004" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Barnes & Noble
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781599639635" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=giFjDwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.barnesandnoble.com/w/comedy-writing-secrets-mark-shatz/1122432004" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Barnes & Noble
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -4635,26 +4657,28 @@
 <p>Filled with counterintuitive insights and including interviews with other leading scientists, this clear and yet profound book will reshape your understanding of science and the limits of what we can know.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.goodreads.com/book/show/59695048" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Goodreads
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/B09LH424FY" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/59695048" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/B09LH424FY" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -4965,34 +4989,36 @@
 <p>" This book is all about building relationships. With good relationships, personal and business successes are easy and swift to achieve.</p></div>
               </div>
     
-              <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-              <div class="space-x-1 space-y-1">
-                
-                  <a
-                    href="https://www.worldcat.org/isbn/9781409005216" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    ISBN
-                  </a>
-                
-                  <a
-                    href="https://books.google.com/books?id=0dJDdw39UDMC" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Google Books
-                  </a>
-                
-                  <a
-                    href="https://amazon.com/dp/8190646605" 
-                    target="_blank"
-                    class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                  >
-                    Amazon
-                  </a>
-                
-              </div>
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781409005216" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=0dJDdw39UDMC" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://amazon.com/dp/8190646605" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Amazon
+                    </a>
+                  
+                </div>
+              
               
             </div>
           </div>
@@ -5009,7 +5035,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "167", "authors": [{"avg_rating": 8.0, "count": 1, "id": 167, "name": "George Orwell", "sort": "Orwell, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhat was a nice Eton boy like Eric Blair doing in scummy slums instead of being upwardly mobile at Oxford or Cambridge? Living \u003cem\u003eDown and Out in Paris and London\u003c/em\u003e , repudiating respectable imperialist society, and reinventing himself as \u003ca href=\"https://www.goodreads.com/search/search?q=George%20Orwell\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eGeorge Orwell\u003c/span\u003e\u003c/a\u003e. His 1933 debut book (ostensibly a novel, but overwhelmingly autobiographical) was rejected by that elitist publisher T. S. Eliot, perhaps because its close-up portrait of lowlife was too pungent for comfort. \u003c/p\u003e\n\u003cp\u003eIn Paris, Orwell lived in verminous rooms and washed dishes at the overpriced \"Hotel X,\" in a remarkably filthy, 110-degree kitchen. He met \"eccentric people \u2013 people who have fallen into solitary, half-mad grooves of life and given up trying to be normal or decent.\" Though Orwell\u0027s tone is that of an outraged reformer, it\u0027s surprising how entertaining many of his adventures are: gnawing poverty only enlivens the imagination, and the wild characters he met often swindled each other and themselves. The wackiest tale involves a miser who ate cats, wore newspapers for underwear, invested 6,000 francs in cocaine, and hid it in a face-powder tin when the cops raided. They had to free him, because the apparently controlled substance turned out to be face powder instead of cocaine. \u003c/p\u003e\n\u003cp\u003eIn London, Orwell studied begging with a crippled expert named Bozo, a great storyteller and philosopher. Orwell devotes a chapter to the fine points of London guttersnipe slang. Years later, he would put his lexical bent to work by inventing Newspeak, and draw on his down-and-out experience to evoke the plight of the Proles in \u003cem\u003e1984\u003c/em\u003e. Though marred by hints of unexamined anti-Semitism, Orwell\u0027s debut remains, as \u003cem\u003eThe Nation\u003c/em\u003e put it, \"the most lucid portrait of poverty in the English language.\" \u003cem\u003e--Tim Appelo\u003c/em\u003e\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 159, "identifier_ids": "483,484,481,482", "identifiers": [{"book": 159, "id": 482, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780156262248", "sort": "isbn", "type": "isbn", "val": "9780156262248"}, {"book": 159, "id": 481, "name": "Google Books", "path": "https://books.google.com/books?id=m5vIVN7LjtgC", "sort": "google", "type": "google", "val": "m5vIVN7LjtgC"}, {"book": 159, "id": 484, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/34304872", "sort": "goodreads", "type": "goodreads", "val": "34304872"}, {"book": 159, "id": 483, "name": "Amazon", "path": "https://amazon.com/dp/015626224X", "sort": "amazon", "type": "amazon", "val": "015626224X"}], "isbn": "9780156262248", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:35:53.313990+00:00", "path": "George Orwell/Down and Out in Paris and London (159)", "pubdate": "1933-01-01", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 690052, "tag_ids": "57,60,90,92,153", "tags": [{"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-06 09:35:53.313990+00:00", "title": "Down and Out in Paris and London"}, {"author_ids": "159", "authors": [{"avg_rating": 8.0, "count": 1, "id": 159, "name": "Sunjeev Sahota", "sort": "Sahota, Sunjeev"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA transfixing novel about two unforgettable characters seeking to free themselves--one from the expectations of women in early 20th century Punjab, and the other from the weight of life in the contemporary Indian diaspora \u003c/p\u003e\n\u003cp\u003eMehar, a young bride in rural 1929 Punjab, is trying to discover the identity of her new husband. Married to three brothers in a single ceremony, she and her now-sisters spend their days hard at work in the family\u0027s \"china room,\" sequestered from contact with the men--except when their domineering mother-in-law, Mai, summons them to a darkened chamber at night. Curious and strong willed, Mehar tries to piece together what Mai doesn\u0027t want her to know. From beneath her veil, she studies the sounds of the men\u0027s voices, the calluses on their fingers as she serves them tea. Soon she glimpses something that seems to confirm which of the brothers is her husband, and a series of events is set in motion that will put more than one life at risk. As the early stirrings of the Indian independence movement rise around her, Mehar must weigh her own desires against the reality--and danger--of her situation. \u003c/p\u003e\n\u003cp\u003eSpiraling around Mehar\u0027s story is that of a young man who arrives at his uncle\u0027s house in Punjab in the summer of 1999, hoping to shake an addiction that has held him in its grip for more than two years. Growing up in small-town England as the son of an immigrant shopkeeper, his experiences of racism, violence, and estrangement from the culture of his birth led him to seek a dangerous form of escape. As he rides out his withdrawal at his family\u0027s ancestral home--an abandoned farmstead, its china room mysteriously locked and barred--he begins to knit himself back together, gathering strength for the journey home. \u003c/p\u003e\n\u003cp\u003ePartly inspired by award-winning author Sunjeev Sahota\u0027s family history, \u003cem\u003eChina Room\u003c/em\u003e is at once a deft exploration of how systems of power circumscribe individual lives and a deeply moving portrait of the unconquerable human capacity to resist them. At once sweeping and intimate, lush and propulsive, it ** is a stunning achievement from a contemporary master.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 140, "identifier_ids": "420,422,421", "identifiers": [{"book": 140, "id": 421, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780593298145", "sort": "isbn", "type": "isbn", "val": "9780593298145"}, {"book": 140, "id": 422, "name": "Google Books", "path": "https://books.google.com/books?id=VKZPEAAAQBAJ", "sort": "google", "type": "google", "val": "VKZPEAAAQBAJ"}, {"book": 140, "id": 420, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55994371", "sort": "goodreads", "type": "goodreads", "val": "55994371"}], "isbn": "9780593298145", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:13.748740+00:00", "path": "Sunjeev Sahota/China Room (140)", "pubdate": "2021-05-06", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 2469407, "tag_ids": "49,50,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}], "timestamp": "2022-10-05 15:54:13.748740+00:00", "title": "China Room"}, {"author_ids": "141", "authors": [{"avg_rating": 10.0, "count": 1, "id": 141, "name": "Hanif Abdurraqib", "sort": "Abdurraqib, Hanif"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAt the March on Washington in 1963, Josephine Baker was fifty-seven years old, well beyond her most prolific days. But in her speech she was in a mood to consider her life, her legacy, her departure from the country she was now triumphantly returning to. \u201cI was a devil in other countries, and I was a little devil in America, too,\u201d she told the crowd. Inspired by these few words, Hanif Abdurraqib has written a profound and lasting reflection on how Black performance is inextricably woven into the fabric of American culture. Each moment in every performance he examines\u2014whether it\u2019s the twenty-seven seconds in \u201cGimme Shelter\u201d in which Merry Clayton wails the words \u201crape, murder,\u201d a schoolyard fistfight, a dance marathon, or the instant in a game of spades right after the cards are dealt\u2014has layers of resonance in Black and white cultures, the politics of American empire, and Abdurraqib\u2019s own personal history of love, grief, and performance. \u003c/p\u003e\n\u003cp\u003eAbdurraqib writes prose brimming with jubilation and pain, infused with the lyricism and rhythm of the musicians he loves. With care and generosity, he explains the poignancy of performances big and small, each one feeling intensely familiar and vital, both timeless and desperately urgent. Filled with sharp insight, humor, and heart, \u003cem\u003eA Little Devil in America\u003c/em\u003e exalts the Black performance that unfolds in specific moments in time and space\u2014from midcentury Paris to the moon, and back down again to a cramped living room in Columbus, Ohio.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 139, "identifier_ids": "340,337,338,339", "identifiers": [{"book": 139, "id": 339, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780141995793", "sort": "isbn", "type": "isbn", "val": "9780141995793"}, {"book": 139, "id": 338, "name": "Google Books", "path": "https://books.google.com/books?id=sNeLzgEACAAJ", "sort": "google", "type": "google", "val": "sNeLzgEACAAJ"}, {"book": 139, "id": 337, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/49247757", "sort": "goodreads", "type": "goodreads", "val": "49247757"}, {"book": 139, "id": 340, "name": "Amazon", "path": "https://amazon.com/dp/1984801198", "sort": "amazon", "type": "amazon", "val": "1984801198"}], "isbn": "9780141995793", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:13.410602+00:00", "path": "Hanif Abdurraqib/A Little Devil in America_ Notes in (139)", "pubdate": "2021-03-30", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 813043, "tag_ids": "121,135,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 1, "id": 135, "name": "Popular Culture", "sort": 1}], "timestamp": "2022-10-05 15:54:13.410602+00:00", "title": "A Little Devil in America: Notes in Praise of Black Performance"}, {"author_ids": "132", "authors": [{"avg_rating": 8.0, "count": 1, "id": 132, "name": "Mark Harris", "sort": "Harris, Mark"}], "comments": "\u003cp\u003eA National Book Critics Circle finalist \u2022 One of People\u0027s\u00a0top 10 books of 2021 \u2022 An instant New York Times bestseller\u00a0\u2022\u00a0Named a best book of the year by NPR and Time A magnificent biography of one of the most protean creative forces in American entertainment history, a life of dazzling highs and vertiginous plunges\u2014some of the worst largely unknown until now\u2014by the acclaimed author of Pictures at a Revolution and Five Came BackMike Nichols burst onto the scene as a wunderkind: while still in his twenties, he was half of a hit improv duo with Elaine May that was the talk of the country. Next he directed four consecutive hit plays, won back-to-back Tonys, ushered in a new era of Hollywood moviemaking with Who\u0027s Afraid of Virginia Woolf?, and followed it with The Graduate, which won him an Oscar and became the third-highest-grossing movie ever. At thirty-five, he lived in a three-story Central Park West penthouse, drove a Rolls-Royce, collected Arabian horses, and counted Jacqueline Kennedy, Elizabeth Taylor, Leonard Bernstein, and Richard Avedon as friends.\u003c/p\u003e\n\n\u003cp\u003eWhere he arrived is even more astonishing given where he had begun: born Igor Peschkowsky to a Jewish couple in Berlin in 1931, he was sent along with his younger brother to America on a ship in 1939. The young immigrant boy caught very few breaks. He was bullied and ostracized--an allergic reaction had rendered him permanently hairless--and his father died when he was just twelve, leaving his mother alone and overwhelmed.\u003c/p\u003e\n\n\u003cp\u003eThe gulf between these two sets of facts explains a great deal about Nichols\u0027s transformation from lonely outsider to the center of more than one cultural universe--the acute powers of observation that first made him famous; the nourishment he drew from his creative partnerships, most enduringly with May; his unquenchable drive; his hunger for security and status; and the depressions and self-medications that brought him to terrible lows. It would take decades for him to come to grips with his demons. In an incomparable portrait that follows Nichols from Berlin to New York to Chicago to Hollywood, Mark Harris explores, with brilliantly vivid detail and insight, the life, work, struggle, and passion of an artist and man in constant motion. Among the 250 people Harris interviewed: Elaine May, Meryl Streep, Stephen Sondheim, Robert Redford, Glenn Close, Tom Hanks, Candice Bergen, Emma Thompson, Annette Bening, Natalie Portman, Julia Roberts, Lorne Michaels, and Gloria Steinem.\u003c/p\u003e\n\n\u003cp\u003eMark Harris gives an intimate and evenhanded accounting of success and failure alike; the portrait is not always flattering, but its ultimate impact is to present the full story of one of the most richly interesting, complicated, and consequential figures the worlds of theater and motion pictures have ever seen. It is a triumph of the biographer\u0027s art.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 130, "identifier_ids": "309,307,308", "identifiers": [{"book": 130, "id": 308, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780399562259", "sort": "isbn", "type": "isbn", "val": "9780399562259"}, {"book": 130, "id": 307, "name": "Google Books", "path": "https://books.google.com/books?id=DQTlDwAAQBAJ", "sort": "google", "type": "google", "val": "DQTlDwAAQBAJ"}, {"book": 130, "id": 309, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53479533", "sort": "goodreads", "type": "goodreads", "val": "53479533"}], "isbn": "9780399562259", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:10.022661+00:00", "path": "Mark Harris/Mike Nichols_ A Life (130)", "pubdate": "2021-02-02", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 9271697, "tag_ids": "44,60,92,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": 6}], "timestamp": "2022-10-05 15:54:10.022661+00:00", "title": "Mike Nichols: A Life"}, {"author_ids": "122", "authors": [{"avg_rating": 8.0, "count": 1, "id": 122, "name": "Tiya Miles", "sort": "Miles, Tiya"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn 1850s South Carolina, an enslaved woman named Rose faced a crisis, the imminent sale of her daughter Ashley. Thinking quickly, she packed a cotton bag with a few precious items as a token of love and to try to ensure Ashley\u2019s survival. Soon after, the nine-year-old girl was separated from her mother and sold. \u003c/p\u003e\n\u003cp\u003eDecades later, Ashley\u2019s granddaughter Ruth embroidered this family history on the bag in spare yet haunting language\u2014including Rose\u2019s wish that \u201cIt be filled with my Love always.\u201d Ruth\u2019s sewn words, the reason we remember Ashley\u2019s sack today, evoke a sweeping family story of loss and of love passed down through generations. Now, in this illuminating, deeply moving book inspired by Rose\u2019s gift to Ashley, historian Tiya Miles carefully unearths these women\u2019s faint presence in archival records to follow the paths of their lives\u2014and the lives of so many women like them\u2014to write a singular and revelatory history of the experience of slavery, and the uncertain freedom afterward, in the United States. \u003c/p\u003e\n\u003cp\u003eThe search to uncover this history is part of the story itself. For where the historical record falls short of capturing Rose\u2019s, Ashley\u2019s, and Ruth\u2019s full lives, Miles turns to objects and to art as equally important sources, assembling a chorus of women\u2019s and families\u2019 stories and critiquing the scant archives that for decades have overlooked so many. The contents of Ashley\u2019s sack\u2014a tattered dress, handfuls of pecans, a braid of hair, \u201cmy Love always\u201d\u2014are eloquent evidence of the lives these women lived. As she follows Ashley\u2019s journey, Miles metaphorically unpacks the bag, deepening its emotional resonance and exploring the meanings and significance of everything it contained.\u003cbr\u003e\u003cem\u003e\u003cbr\u003eAll That She Carried\u003c/em\u003e is a poignant story of resilience and of love passed down through generations of women against steep odds. It honors the creativity and fierce resourcefulness of people who preserved family ties even when official systems refused to do so, and it serves as a visionary illustration of how to reconstruct and recount their stories today.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 120, "identifier_ids": "586,587", "identifiers": [{"book": 120, "id": 587, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781984854995", "sort": "isbn", "type": "isbn", "val": "9781984854995"}, {"book": 120, "id": 586, "name": "Amazon", "path": "https://amazon.com/dp/1984854992", "sort": "amazon", "type": "amazon", "val": "1984854992"}], "isbn": "9781984854995", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:06.021573+00:00", "path": "Tiya Miles/All That She Carried_ The Journey o (120)", "pubdate": "2021-06-08", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 43918451, "tag_ids": "194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}], "timestamp": "2022-10-05 15:54:06.021573+00:00", "title": "All That She Carried: The Journey of Ashley\u0027s Sack, a Black Family Keepsake"}, {"author_ids": "160", "authors": [{"avg_rating": null, "count": 1, "id": 160, "name": "Amor Towles", "sort": "Towles, Amor"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\u0027s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden\u0027s car. Together, they have hatched an altogether different plan for Emmett\u0027s future, one that will take them all on a fateful journey in the opposite direction\u2014to the City of New York. Spanning just ten days and told from multiple points of view, Towles\u0027s third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 118, "identifier_ids": "423,424", "identifiers": [{"book": 118, "id": 424, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780735222373", "sort": "isbn", "type": "isbn", "val": "9780735222373"}, {"book": 118, "id": 423, "name": "Google Books", "path": "https://books.google.com/books?id=Kn4eEAAAQBAJ", "sort": "google", "type": "google", "val": "Kn4eEAAAQBAJ"}], "isbn": "9780735222373", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.426067+00:00", "path": "Amor Towles/The Lincoln Highway_ A Novel (118)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 6630557, "tag_ids": "4,148,151,152,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}], "timestamp": "2022-10-05 15:54:05.426067+00:00", "title": "The Lincoln Highway: A Novel"}, {"author_ids": "118", "authors": [{"avg_rating": null, "count": 1, "id": 118, "name": "Amanda Gorman", "sort": "Gorman, Amanda"}], "comments": "\u003cp\u003eThe breakout poetry collection by presidential inaugural poet Amanda Gorman  The breakout poetry collection by Sunday Times bestselling author and presidential inaugural poet Amanda Gorman  Including \u0027The Hill We Climb,\u0027 the stirring poem read at the inauguration of the 46th President of the United States, Joe Biden, this luminous poetry collection by Amanda Gorman captures a shipwrecked moment in time and transforms it into a lyric of hope and healing. In Call Us What We Carry, Gorman explores history, language, identity, and erasure through an imaginative and intimate collage. Harnessing the collective grief of a global pandemic, these poems shine a light on a moment of reckoning and reveal that Gorman has become our messenger from the past, our voice for the future.  Praise for \u0027The Hill We Climb\u0027- \u0027I was profoundly moved... The power of your words blew me away\u0027 Michelle Obama, TIME \u0027I was thrilled\u0027 Hillary Clinton \u0027She spoke truth to power and embodied clear-eyed hope to a weary nation. She revealed us to ourselves\u0027 Lin-Manuel Miranda, TIME\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 116, "identifier_ids": "445,444,443", "identifiers": [{"book": 116, "id": 443, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781784744618", "sort": "isbn", "type": "isbn", "val": "9781784744618"}, {"book": 116, "id": 444, "name": "Google Books", "path": "https://books.google.com/books?id=8sYzzgEACAAJ", "sort": "google", "type": "google", "val": "8sYzzgEACAAJ"}, {"book": 116, "id": 445, "name": "Amazon", "path": "https://amazon.com/dp/B08TVG7BPD", "sort": "amazon", "type": "amazon", "val": "B08TVG7BPD"}], "isbn": "9781784744618", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:04.711556+00:00", "path": "Amanda Gorman/Call Us What We Carry_ The Debut Co (116)", "pubdate": "2021-12-07", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 1604309, "tag_ids": "134,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.0, "count": 3, "id": 134, "name": "Poetry", "sort": 3}], "timestamp": "2022-10-05 15:54:04.711556+00:00", "title": "Call Us What We Carry: The Debut Collection From the Bestselling Phenomenon Who Performed at the Presidential Inauguration"}, {"author_ids": "114", "authors": [{"avg_rating": 10.0, "count": 1, "id": 114, "name": "Andrea Elliott", "sort": "Elliott, Andrea"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn Invisible Child, Pulitzer Prize winner Andrea Elliott follows eight dramatic years in the life of Dasani, a girl whose imagination is as soaring as the skyscrapers near her Brooklyn shelter. In this sweeping narrative, Elliott weaves the story of Dasani\u2019s childhood with the history of her ancestors, tracing their passage from slavery to the Great Migration north. As Dasani comes of age, New York City\u2019s homeless crisis has exploded, deepening the chasm between rich and poor. She must guide her siblings through a world riddled by hunger, violence, racism, drug addiction, and the threat of foster care. Out on the street, Dasani becomes a fierce fighter \u201cto protect those who I love.\u201d When she finally escapes city life to enroll in a boarding school, she faces an impossible question: What if leaving poverty means abandoning your family, and yourself? \u003c/p\u003e\n\u003cp\u003eA work of luminous and riveting prose, Elliott\u2019s Invisible Child reads like a page-turning novel. It is an astonishing story about the power of resilience, the importance of family and the cost of inequality\u2014told through the crucible of one remarkable girl. \u003c/p\u003e\n\u003cp\u003eWinner of the J. Anthony Lukas Book Prize \u2022 Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award \u2022 Longlisted for the Baillie Gifford Prize\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 112, "identifier_ids": "453,451,454,452", "identifiers": [{"book": 112, "id": 452, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780812986945", "sort": "isbn", "type": "isbn", "val": "9780812986945"}, {"book": 112, "id": 454, "name": "Google Books", "path": "https://books.google.com/books?id=BzBGEAAAQBAJ", "sort": "google", "type": "google", "val": "BzBGEAAAQBAJ"}, {"book": 112, "id": 451, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57359691", "sort": "goodreads", "type": "goodreads", "val": "57359691"}, {"book": 112, "id": 453, "name": "Amazon", "path": "https://amazon.com/dp/0812986946", "sort": "amazon", "type": "amazon", "val": "0812986946"}], "isbn": "9780812986945", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:03.195391+00:00", "path": "Andrea Elliott/Invisible Child_ Poverty, Survival (112)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 2805902, "tag_ids": "57,59,60,92,119,120,121,122,123,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 2, "id": 119, "name": "Ethnic \u0026 Regional", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 120, "name": "African American \u0026 Black", "sort": 2}, {"avg_rating": 10.0, "count": 1, "id": 122, "name": "Poverty \u0026 Homelessness", "sort": 1}, {"avg_rating": 10.0, "count": 1, "id": 123, "name": "Social Classes \u0026 Economic Disparity", "sort": 1}], "timestamp": "2022-10-05 15:54:03.195391+00:00", "title": "Invisible Child: Poverty, Survival \u0026 Hope in an American City"}, {"author_ids": "99", "authors": [{"avg_rating": 8.0, "count": 1, "id": 99, "name": "Danny Wallace", "sort": "Wallace, Danny"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOne word. Unlimited consequences. \u003c/p\u003e\n\u003cp\u003eThe book that inspired the major film starring Jim Carrey and Zooey Deschanel\u0027I, Danny Wallace, being of sound mind and body, do hereby write this manifesto for my life. I swear I will be more open to opportunity. I swear I will live my life taking every available chance. I will say Yes to every favour, request, suggestion and invitation. I WILL SWEAR TO SAY YES WHERE ONCE I WOULD SAY NO.\u0027Danny Wallace had been staying in. Far too much. Having been dumped by his girlfriend, he really wasn\u0027t doing the young, free and single thing very well. Instead he was avoiding people. Texting them instead of calling them. Calling them instead of meeting them. That is until one fateful date when a mystery man on a late-night bus told him to \u0027say yes more\u0027. These three simple words changed Danny\u0027s life forever. Yes Man is the story of what happened when Danny decided to say YES to everything, in order to make his life more interesting. And boy, did it get more interesting.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 92, "identifier_ids": "467,463,464,466,465", "identifiers": [{"book": 92, "id": 465, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781407062266", "sort": "isbn", "type": "isbn", "val": "9781407062266"}, {"book": 92, "id": 466, "name": "Google Books", "path": "https://books.google.com/books?id=OxEAQAKNEuIC", "sort": "google", "type": "google", "val": "OxEAQAKNEuIC"}, {"book": 92, "id": 464, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/9302702", "sort": "goodreads", "type": "goodreads", "val": "9302702"}, {"book": 92, "id": 463, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/yes-man-danny-wallace/1100367285", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/yes-man-danny-wallace/1100367285"}, {"book": 92, "id": 467, "name": "Amazon", "path": "https://amazon.com/dp/B003L77XB8", "sort": "amazon", "type": "amazon", "val": "B003L77XB8"}], "isbn": "9781407062266", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 14:48:01.464882+00:00", "path": "Danny Wallace/Yes man (92)", "pubdate": "2005-07-07", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 4104738, "tag_ids": "42,90", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-05 14:48:01.464882+00:00", "title": "Yes man"}, {"author_ids": "57,73", "authors": [{"avg_rating": 8.0, "count": 3, "id": 57, "name": "Harry Lorayne", "sort": "Lorayne, Harry"}, {"avg_rating": null, "count": 1, "id": 73, "name": "Jerry Lucas", "sort": "Lucas, Jerry"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eUnleash the hidden power of your mind\u003c/p\u003e\n\u003cp\u003eIt\u2019s there in all of us. A mental resource we don\u2019t think much about. Memory. And now there\u2019s a way to master its power....\u003c/p\u003e\n\u003cp\u003eThrough Harry Lorayne and Jerry Lucas\u2019s simple, fail-safe memory system, you can become more effective, more imaginative, and more powerful at work, at school, in sports, and at play.\u003c/p\u003e\n\u003cp\u003e\u2022 Read with speed and greater understanding.\u003cbr\u003e\u2022 File phone numbers, data, figures, and appointments right in your head.\u003cbr\u003e\u2022 Send those birthday and anniversary cards on time.\u003cbr\u003e\u2022 Learn foreign words and phrases with ease.\u003cbr\u003e\u2022 Shine in the classroom and shorten study hours.\u003cbr\u003e\u2022 Dominate social situations: Remember and use important personal details.\u003c/p\u003e\n\u003cp\u003eBegin today. The change in your life will be unforgettable\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 48, "identifier_ids": "86,87", "identifiers": [{"book": 48, "id": 87, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780345410023", "sort": "isbn", "type": "isbn", "val": "9780345410023"}, {"book": 48, "id": 86, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/memory-book-harry-lorayne/1101889940", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/memory-book-harry-lorayne/1101889940"}], "isbn": "9780345410023", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:46.770000+00:00", "path": "Harry Lorayne/The Memory Book_ The Classic Guide t (48)", "pubdate": "1996-08-27", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 10701386, "tag_ids": "43,83", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": null, "count": 2, "id": 83, "name": "Memory", "sort": 2}], "timestamp": "2022-10-04 13:46:46.770000+00:00", "title": "The Memory Book: The Classic Guide to Improving Your Memory at Work, at School, and at Play"}, {"author_ids": "32,33", "authors": [{"avg_rating": null, "count": 1, "id": 32, "name": "Mel Helitzer", "sort": "Helitzer, Mel"}, {"avg_rating": null, "count": 1, "id": 33, "name": "Mark Shatz", "sort": "Shatz, Mark"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe Must-Have Guide to Humor Writing\u003c/p\u003e\n\u003cp\u003eBring on the funny! With Comedy Writing Secrets 3rd Edition , you can discover the secrets of humor writing that will keep your readers rolling in their seats. Learn the basics of joke construction, as well as in-depth comedy-writing techniques that you can apply to a variety of print and online markets. If your aim is to make \u0027em laughand make a career in comedy writingthen look no further.\u003c/p\u003e\n\u003cp\u003eIn this completely revised and refreshed edition, you\u0027ll discover:\u003c/p\u003e\n\u003cp\u003e\u2022 Hundreds of updated one-liners, anecdotes, and bits from top comedians like Louis C.K., Conan O\u2019Brien, Tina Fey, Amy Schumer, Rodney Dangerfield, Jon Stewart, Steve Martin, Ellen DeGeneres, Jimmy Fallon, George Carlin, Zach Galifianakis, Stephen Colbert, Erma Bombeck, and more.\u003cbr\u003e\u2022 Exclusive tips for injecting humor into articles, speeches, advertisements, greeting cards, and more.\u003cbr\u003e\u2022 New instruction on writing for online markets and social media.\u003cbr\u003e\u2022 Advice on brainstorming and editing to beat writer\u0027s block and generate new material.\u003cbr\u003e\u2022 Exercises and expanded instructions for exaggeration, reverses, word play and more to practice and refine your writing skills.\u003cbr\u003eFor more than twenty years, Comedy Writing Secrets has helped humor writers of all skill levels write and sell their work. With Comedy Writing Secrets 3rd Edition , you\u0027ll be laugh-out-loud funny and leave readers wanting more.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 36, "identifier_ids": "57,58,59", "identifiers": [{"book": 36, "id": 59, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781599639635", "sort": "isbn", "type": "isbn", "val": "9781599639635"}, {"book": 36, "id": 58, "name": "Google Books", "path": "https://books.google.com/books?id=giFjDwAAQBAJ", "sort": "google", "type": "google", "val": "giFjDwAAQBAJ"}, {"book": 36, "id": 57, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/comedy-writing-secrets-mark-shatz/1122432004", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/comedy-writing-secrets-mark-shatz/1122432004"}], "isbn": "9781599639635", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:41.942000+00:00", "path": "Mel Helitzer/Comedy Writing Secrets_ The Best-Sel (36)", "pubdate": "2016-02-18", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 2016139, "tag_ids": "42,64,65", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}, {"avg_rating": null, "count": 1, "id": 65, "name": "Composition", "sort": 1}], "timestamp": "2022-10-04 13:46:41.942000+00:00", "title": "Comedy Writing Secrets: The Best-Selling Guide to Writing Funny and Getting Paid for It"}, {"author_ids": "24", "authors": [{"avg_rating": 8.0, "count": 1, "id": 24, "name": "Sabine Hossenfelder", "sort": "Hossenfelder, Sabine"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDo we have free will? Is the universe compatible with God? Do we live in a computer simulation? Does the universe think?\u003c/p\u003e\n\u003cp\u003ePhysicists are great at complicated research, but they are less good at telling us why it matters. In this entertaining and groundbreaking book, theoretical physicist Sabine Hossenfelder breaks down why we should care. Drawing on the latest research in quantum mechanics, black holes, string theory and particle physics, Existential Physics explains what modern physics can tell us about the big questions.\u003c/p\u003e\n\u003cp\u003eFilled with counterintuitive insights and including interviews with other leading scientists, this clear and yet profound book will reshape your understanding of science and the limits of what we can know.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 28, "identifier_ids": "80,81", "identifiers": [{"book": 28, "id": 81, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/59695048", "sort": "goodreads", "type": "goodreads", "val": "59695048"}, {"book": 28, "id": 80, "name": "Amazon", "path": "https://amazon.com/dp/B09LH424FY", "sort": "amazon", "type": "amazon", "val": "B09LH424FY"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:37.533000+00:00", "path": "Sabine Hossenfelder/Existential Physics_ A Scientist\u0027s G (28)", "pubdate": "2022-08-09", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 5236247, "tag_ids": "58,62", "tags": [{"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}], "timestamp": "2022-10-04 13:46:37.533000+00:00", "title": "Existential Physics: A Scientist\u0027s Guide to Life\u0027s Biggest Questions"}, {"author_ids": "17", "authors": [{"avg_rating": 8.0, "count": 3, "id": 17, "name": "Dale Carnegie", "sort": "Carnegie, Dale"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe most famous confidence-boosting book ever published; with sales of over 16 million copies worldwide Millions of people around the world have improved their lives based on the teachings of Dale Carnegie. In How to Win Friends and Influence People, he offers practical advice and techniques, in his exuberant and conversational style, for how to get out of a mental rut and make life more rewarding. His advice has stood the test of time and will teach you how to: - make friends quickly and easily - increase your popularity - persuade people to follow your way of thinking - enable you to win new clients and customers - become a better speaker - boost enthusiasm among your colleagues This classic book will turn your relationships around and improve your interactions with everyone in your life. Dale Carnegie, known as \u0027the arch-priest of the art of making friends\u0027, pioneered the development of personal business skills, self-confidence and motivational techniques. His books - most notably How to Win Friends and Influence People - have sold tens of millions worldwide and, even in today\u0027s changing climate, they remain as popular as ever.\u003c/p\u003e\n\u003cp\u003eIn the present book, How to Win Friends and Influence People, Dale Carnegie says, \"You can make someone want to do what you want them to do by seeing the situation from the other person\u0027s point of view and arousing in the other person an eager want.\u003c/p\u003e\n\u003cp\u003e\" You learn how to make people like you, win people over to your way of thinking, and change people without causing offense or arousing resentment. For instance, \"let the other person feel that the idea is his or hers\" and \"talk about your own mistakes before criticizing the other person.\u003c/p\u003e\n\u003cp\u003e\" This book is all about building relationships. With good relationships, personal and business successes are easy and swift to achieve.\u003c/p\u003e\n\u003cp\u003eIn the present book, How to Win Friends and Influence People, Dale Carnegie says, \"You can make someone want to do what you want them to do by seeing the situation from the other person\u0027s point of view and arousing in the other person an eager want.\u003c/p\u003e\n\u003cp\u003e\" You learn how to make people like you, win people over to your way of thinking, and change people without causing offense or arousing resentment. For instance, \"let the other person feel that the idea is his or hers\" and \"talk about your own mistakes before criticizing the other person.\u003c/p\u003e\n\u003cp\u003e\" This book is all about building relationships. With good relationships, personal and business successes are easy and swift to achieve.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 19, "identifier_ids": "140,141,142", "identifiers": [{"book": 19, "id": 142, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781409005216", "sort": "isbn", "type": "isbn", "val": "9781409005216"}, {"book": 19, "id": 141, "name": "Google Books", "path": "https://books.google.com/books?id=0dJDdw39UDMC", "sort": "google", "type": "google", "val": "0dJDdw39UDMC"}, {"book": 19, "id": 140, "name": "Amazon", "path": "https://amazon.com/dp/8190646605", "sort": "amazon", "type": "amazon", "val": "8190646605"}], "isbn": "9781409005216", "language_ids": "1", "languages": [{"avg_rating": 8.26923076923077, "count": 157, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:32:15.291000+00:00", "path": "Dale Carnegie/How to Win Friends and Influence Peo (19)", "pubdate": "2010-09-30", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 3624020, "tag_ids": "26,31,43", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 9.0, "count": 2, "id": 26, "name": "Personal Growth", "sort": 2}], "timestamp": "2022-10-04 13:32:15.291000+00:00", "title": "How to Win Friends and Influence People"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "167", "authors": [{"avg_rating": 8.0, "count": 1, "id": 167, "name": "George Orwell", "sort": "Orwell, George"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhat was a nice Eton boy like Eric Blair doing in scummy slums instead of being upwardly mobile at Oxford or Cambridge? Living \u003cem\u003eDown and Out in Paris and London\u003c/em\u003e , repudiating respectable imperialist society, and reinventing himself as \u003ca href=\"https://www.goodreads.com/search/search?q=George%20Orwell\"\u003e\u003cspan style=\"color: #6cb4ee\"\u003eGeorge Orwell\u003c/span\u003e\u003c/a\u003e. His 1933 debut book (ostensibly a novel, but overwhelmingly autobiographical) was rejected by that elitist publisher T. S. Eliot, perhaps because its close-up portrait of lowlife was too pungent for comfort. \u003c/p\u003e\n\u003cp\u003eIn Paris, Orwell lived in verminous rooms and washed dishes at the overpriced \"Hotel X,\" in a remarkably filthy, 110-degree kitchen. He met \"eccentric people \u2013 people who have fallen into solitary, half-mad grooves of life and given up trying to be normal or decent.\" Though Orwell\u0027s tone is that of an outraged reformer, it\u0027s surprising how entertaining many of his adventures are: gnawing poverty only enlivens the imagination, and the wild characters he met often swindled each other and themselves. The wackiest tale involves a miser who ate cats, wore newspapers for underwear, invested 6,000 francs in cocaine, and hid it in a face-powder tin when the cops raided. They had to free him, because the apparently controlled substance turned out to be face powder instead of cocaine. \u003c/p\u003e\n\u003cp\u003eIn London, Orwell studied begging with a crippled expert named Bozo, a great storyteller and philosopher. Orwell devotes a chapter to the fine points of London guttersnipe slang. Years later, he would put his lexical bent to work by inventing Newspeak, and draw on his down-and-out experience to evoke the plight of the Proles in \u003cem\u003e1984\u003c/em\u003e. Though marred by hints of unexamined anti-Semitism, Orwell\u0027s debut remains, as \u003cem\u003eThe Nation\u003c/em\u003e put it, \"the most lucid portrait of poverty in the English language.\" \u003cem\u003e--Tim Appelo\u003c/em\u003e\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 159, "identifier_ids": "483,484,481,482", "identifiers": [{"book": 159, "id": 482, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780156262248", "sort": "isbn", "type": "isbn", "val": "9780156262248"}, {"book": 159, "id": 481, "name": "Google Books", "path": "https://books.google.com/books?id=m5vIVN7LjtgC", "sort": "google", "type": "google", "val": "m5vIVN7LjtgC"}, {"book": 159, "id": 484, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/34304872", "sort": "goodreads", "type": "goodreads", "val": "34304872"}, {"book": 159, "id": 483, "name": "Amazon", "path": "https://amazon.com/dp/015626224X", "sort": "amazon", "type": "amazon", "val": "015626224X"}], "isbn": "9780156262248", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:35:53.313990+00:00", "path": "George Orwell/Down and Out in Paris and London (159)", "pubdate": "1933-01-01", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 690052, "tag_ids": "57,60,90,92,153", "tags": [{"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-06 09:35:53.313990+00:00", "title": "Down and Out in Paris and London"}, {"author_ids": "159", "authors": [{"avg_rating": 8.0, "count": 1, "id": 159, "name": "Sunjeev Sahota", "sort": "Sahota, Sunjeev"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eA transfixing novel about two unforgettable characters seeking to free themselves--one from the expectations of women in early 20th century Punjab, and the other from the weight of life in the contemporary Indian diaspora \u003c/p\u003e\n\u003cp\u003eMehar, a young bride in rural 1929 Punjab, is trying to discover the identity of her new husband. Married to three brothers in a single ceremony, she and her now-sisters spend their days hard at work in the family\u0027s \"china room,\" sequestered from contact with the men--except when their domineering mother-in-law, Mai, summons them to a darkened chamber at night. Curious and strong willed, Mehar tries to piece together what Mai doesn\u0027t want her to know. From beneath her veil, she studies the sounds of the men\u0027s voices, the calluses on their fingers as she serves them tea. Soon she glimpses something that seems to confirm which of the brothers is her husband, and a series of events is set in motion that will put more than one life at risk. As the early stirrings of the Indian independence movement rise around her, Mehar must weigh her own desires against the reality--and danger--of her situation. \u003c/p\u003e\n\u003cp\u003eSpiraling around Mehar\u0027s story is that of a young man who arrives at his uncle\u0027s house in Punjab in the summer of 1999, hoping to shake an addiction that has held him in its grip for more than two years. Growing up in small-town England as the son of an immigrant shopkeeper, his experiences of racism, violence, and estrangement from the culture of his birth led him to seek a dangerous form of escape. As he rides out his withdrawal at his family\u0027s ancestral home--an abandoned farmstead, its china room mysteriously locked and barred--he begins to knit himself back together, gathering strength for the journey home. \u003c/p\u003e\n\u003cp\u003ePartly inspired by award-winning author Sunjeev Sahota\u0027s family history, \u003cem\u003eChina Room\u003c/em\u003e is at once a deft exploration of how systems of power circumscribe individual lives and a deeply moving portrait of the unconquerable human capacity to resist them. At once sweeping and intimate, lush and propulsive, it ** is a stunning achievement from a contemporary master.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 140, "identifier_ids": "420,422,421", "identifiers": [{"book": 140, "id": 421, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780593298145", "sort": "isbn", "type": "isbn", "val": "9780593298145"}, {"book": 140, "id": 422, "name": "Google Books", "path": "https://books.google.com/books?id=VKZPEAAAQBAJ", "sort": "google", "type": "google", "val": "VKZPEAAAQBAJ"}, {"book": 140, "id": 420, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/55994371", "sort": "goodreads", "type": "goodreads", "val": "55994371"}], "isbn": "9780593298145", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:13.748740+00:00", "path": "Sunjeev Sahota/China Room (140)", "pubdate": "2021-05-06", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 2469407, "tag_ids": "49,50,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.444444444444445, "count": 36, "id": 50, "name": "Adult", "sort": 36}, {"avg_rating": 7.818181818181818, "count": 17, "id": 49, "name": "Contemporary", "sort": 17}], "timestamp": "2022-10-05 15:54:13.748740+00:00", "title": "China Room"}, {"author_ids": "141", "authors": [{"avg_rating": 10.0, "count": 1, "id": 141, "name": "Hanif Abdurraqib", "sort": "Abdurraqib, Hanif"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAt the March on Washington in 1963, Josephine Baker was fifty-seven years old, well beyond her most prolific days. But in her speech she was in a mood to consider her life, her legacy, her departure from the country she was now triumphantly returning to. \u201cI was a devil in other countries, and I was a little devil in America, too,\u201d she told the crowd. Inspired by these few words, Hanif Abdurraqib has written a profound and lasting reflection on how Black performance is inextricably woven into the fabric of American culture. Each moment in every performance he examines\u2014whether it\u2019s the twenty-seven seconds in \u201cGimme Shelter\u201d in which Merry Clayton wails the words \u201crape, murder,\u201d a schoolyard fistfight, a dance marathon, or the instant in a game of spades right after the cards are dealt\u2014has layers of resonance in Black and white cultures, the politics of American empire, and Abdurraqib\u2019s own personal history of love, grief, and performance. \u003c/p\u003e\n\u003cp\u003eAbdurraqib writes prose brimming with jubilation and pain, infused with the lyricism and rhythm of the musicians he loves. With care and generosity, he explains the poignancy of performances big and small, each one feeling intensely familiar and vital, both timeless and desperately urgent. Filled with sharp insight, humor, and heart, \u003cem\u003eA Little Devil in America\u003c/em\u003e exalts the Black performance that unfolds in specific moments in time and space\u2014from midcentury Paris to the moon, and back down again to a cramped living room in Columbus, Ohio.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 139, "identifier_ids": "340,337,338,339", "identifiers": [{"book": 139, "id": 339, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780141995793", "sort": "isbn", "type": "isbn", "val": "9780141995793"}, {"book": 139, "id": 338, "name": "Google Books", "path": "https://books.google.com/books?id=sNeLzgEACAAJ", "sort": "google", "type": "google", "val": "sNeLzgEACAAJ"}, {"book": 139, "id": 337, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/49247757", "sort": "goodreads", "type": "goodreads", "val": "49247757"}, {"book": 139, "id": 340, "name": "Amazon", "path": "https://amazon.com/dp/1984801198", "sort": "amazon", "type": "amazon", "val": "1984801198"}], "isbn": "9780141995793", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:13.410602+00:00", "path": "Hanif Abdurraqib/A Little Devil in America_ Notes in (139)", "pubdate": "2021-03-30", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 813043, "tag_ids": "121,135,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 1, "id": 135, "name": "Popular Culture", "sort": 1}], "timestamp": "2022-10-05 15:54:13.410602+00:00", "title": "A Little Devil in America: Notes in Praise of Black Performance"}, {"author_ids": "132", "authors": [{"avg_rating": 8.0, "count": 1, "id": 132, "name": "Mark Harris", "sort": "Harris, Mark"}], "comments": "\u003cp\u003eA National Book Critics Circle finalist \u2022 One of People\u0027s\u00a0top 10 books of 2021 \u2022 An instant New York Times bestseller\u00a0\u2022\u00a0Named a best book of the year by NPR and Time A magnificent biography of one of the most protean creative forces in American entertainment history, a life of dazzling highs and vertiginous plunges\u2014some of the worst largely unknown until now\u2014by the acclaimed author of Pictures at a Revolution and Five Came BackMike Nichols burst onto the scene as a wunderkind: while still in his twenties, he was half of a hit improv duo with Elaine May that was the talk of the country. Next he directed four consecutive hit plays, won back-to-back Tonys, ushered in a new era of Hollywood moviemaking with Who\u0027s Afraid of Virginia Woolf?, and followed it with The Graduate, which won him an Oscar and became the third-highest-grossing movie ever. At thirty-five, he lived in a three-story Central Park West penthouse, drove a Rolls-Royce, collected Arabian horses, and counted Jacqueline Kennedy, Elizabeth Taylor, Leonard Bernstein, and Richard Avedon as friends.\u003c/p\u003e\n\n\u003cp\u003eWhere he arrived is even more astonishing given where he had begun: born Igor Peschkowsky to a Jewish couple in Berlin in 1931, he was sent along with his younger brother to America on a ship in 1939. The young immigrant boy caught very few breaks. He was bullied and ostracized--an allergic reaction had rendered him permanently hairless--and his father died when he was just twelve, leaving his mother alone and overwhelmed.\u003c/p\u003e\n\n\u003cp\u003eThe gulf between these two sets of facts explains a great deal about Nichols\u0027s transformation from lonely outsider to the center of more than one cultural universe--the acute powers of observation that first made him famous; the nourishment he drew from his creative partnerships, most enduringly with May; his unquenchable drive; his hunger for security and status; and the depressions and self-medications that brought him to terrible lows. It would take decades for him to come to grips with his demons. In an incomparable portrait that follows Nichols from Berlin to New York to Chicago to Hollywood, Mark Harris explores, with brilliantly vivid detail and insight, the life, work, struggle, and passion of an artist and man in constant motion. Among the 250 people Harris interviewed: Elaine May, Meryl Streep, Stephen Sondheim, Robert Redford, Glenn Close, Tom Hanks, Candice Bergen, Emma Thompson, Annette Bening, Natalie Portman, Julia Roberts, Lorne Michaels, and Gloria Steinem.\u003c/p\u003e\n\n\u003cp\u003eMark Harris gives an intimate and evenhanded accounting of success and failure alike; the portrait is not always flattering, but its ultimate impact is to present the full story of one of the most richly interesting, complicated, and consequential figures the worlds of theater and motion pictures have ever seen. It is a triumph of the biographer\u0027s art.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 130, "identifier_ids": "309,307,308", "identifiers": [{"book": 130, "id": 308, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780399562259", "sort": "isbn", "type": "isbn", "val": "9780399562259"}, {"book": 130, "id": 307, "name": "Google Books", "path": "https://books.google.com/books?id=DQTlDwAAQBAJ", "sort": "google", "type": "google", "val": "DQTlDwAAQBAJ"}, {"book": 130, "id": 309, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/53479533", "sort": "goodreads", "type": "goodreads", "val": "53479533"}], "isbn": "9780399562259", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:10.022661+00:00", "path": "Mark Harris/Mike Nichols_ A Life (130)", "pubdate": "2021-02-02", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 9271697, "tag_ids": "44,60,92,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.0, "count": 6, "id": 44, "name": "Art", "sort": 6}], "timestamp": "2022-10-05 15:54:10.022661+00:00", "title": "Mike Nichols: A Life"}, {"author_ids": "122", "authors": [{"avg_rating": 8.0, "count": 1, "id": 122, "name": "Tiya Miles", "sort": "Miles, Tiya"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn 1850s South Carolina, an enslaved woman named Rose faced a crisis, the imminent sale of her daughter Ashley. Thinking quickly, she packed a cotton bag with a few precious items as a token of love and to try to ensure Ashley\u2019s survival. Soon after, the nine-year-old girl was separated from her mother and sold. \u003c/p\u003e\n\u003cp\u003eDecades later, Ashley\u2019s granddaughter Ruth embroidered this family history on the bag in spare yet haunting language\u2014including Rose\u2019s wish that \u201cIt be filled with my Love always.\u201d Ruth\u2019s sewn words, the reason we remember Ashley\u2019s sack today, evoke a sweeping family story of loss and of love passed down through generations. Now, in this illuminating, deeply moving book inspired by Rose\u2019s gift to Ashley, historian Tiya Miles carefully unearths these women\u2019s faint presence in archival records to follow the paths of their lives\u2014and the lives of so many women like them\u2014to write a singular and revelatory history of the experience of slavery, and the uncertain freedom afterward, in the United States. \u003c/p\u003e\n\u003cp\u003eThe search to uncover this history is part of the story itself. For where the historical record falls short of capturing Rose\u2019s, Ashley\u2019s, and Ruth\u2019s full lives, Miles turns to objects and to art as equally important sources, assembling a chorus of women\u2019s and families\u2019 stories and critiquing the scant archives that for decades have overlooked so many. The contents of Ashley\u2019s sack\u2014a tattered dress, handfuls of pecans, a braid of hair, \u201cmy Love always\u201d\u2014are eloquent evidence of the lives these women lived. As she follows Ashley\u2019s journey, Miles metaphorically unpacks the bag, deepening its emotional resonance and exploring the meanings and significance of everything it contained.\u003cbr\u003e\u003cem\u003e\u003cbr\u003eAll That She Carried\u003c/em\u003e is a poignant story of resilience and of love passed down through generations of women against steep odds. It honors the creativity and fierce resourcefulness of people who preserved family ties even when official systems refused to do so, and it serves as a visionary illustration of how to reconstruct and recount their stories today.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 120, "identifier_ids": "586,587", "identifiers": [{"book": 120, "id": 587, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781984854995", "sort": "isbn", "type": "isbn", "val": "9781984854995"}, {"book": 120, "id": 586, "name": "Amazon", "path": "https://amazon.com/dp/1984854992", "sort": "amazon", "type": "amazon", "val": "1984854992"}], "isbn": "9781984854995", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:06.021573+00:00", "path": "Tiya Miles/All That She Carried_ The Journey o (120)", "pubdate": "2021-06-08", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 43918451, "tag_ids": "194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}], "timestamp": "2022-10-05 15:54:06.021573+00:00", "title": "All That She Carried: The Journey of Ashley\u0027s Sack, a Black Family Keepsake"}, {"author_ids": "160", "authors": [{"avg_rating": null, "count": 1, "id": 160, "name": "Amor Towles", "sort": "Towles, Amor"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\u0027s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden\u0027s car. Together, they have hatched an altogether different plan for Emmett\u0027s future, one that will take them all on a fateful journey in the opposite direction\u2014to the City of New York. Spanning just ten days and told from multiple points of view, Towles\u0027s third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 118, "identifier_ids": "423,424", "identifiers": [{"book": 118, "id": 424, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780735222373", "sort": "isbn", "type": "isbn", "val": "9780735222373"}, {"book": 118, "id": 423, "name": "Google Books", "path": "https://books.google.com/books?id=Kn4eEAAAQBAJ", "sort": "google", "type": "google", "val": "Kn4eEAAAQBAJ"}], "isbn": "9780735222373", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.426067+00:00", "path": "Amor Towles/The Lincoln Highway_ A Novel (118)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 6630557, "tag_ids": "4,148,151,152,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.0, "count": 19, "id": 4, "name": "Fiction", "sort": 19}, {"avg_rating": 8.5, "count": 6, "id": 152, "name": "Literary", "sort": 6}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 2, "id": 151, "name": "Coming of Age", "sort": 2}], "timestamp": "2022-10-05 15:54:05.426067+00:00", "title": "The Lincoln Highway: A Novel"}, {"author_ids": "118", "authors": [{"avg_rating": null, "count": 1, "id": 118, "name": "Amanda Gorman", "sort": "Gorman, Amanda"}], "comments": "\u003cp\u003eThe breakout poetry collection by presidential inaugural poet Amanda Gorman  The breakout poetry collection by Sunday Times bestselling author and presidential inaugural poet Amanda Gorman  Including \u0027The Hill We Climb,\u0027 the stirring poem read at the inauguration of the 46th President of the United States, Joe Biden, this luminous poetry collection by Amanda Gorman captures a shipwrecked moment in time and transforms it into a lyric of hope and healing. In Call Us What We Carry, Gorman explores history, language, identity, and erasure through an imaginative and intimate collage. Harnessing the collective grief of a global pandemic, these poems shine a light on a moment of reckoning and reveal that Gorman has become our messenger from the past, our voice for the future.  Praise for \u0027The Hill We Climb\u0027- \u0027I was profoundly moved... The power of your words blew me away\u0027 Michelle Obama, TIME \u0027I was thrilled\u0027 Hillary Clinton \u0027She spoke truth to power and embodied clear-eyed hope to a weary nation. She revealed us to ourselves\u0027 Lin-Manuel Miranda, TIME\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 116, "identifier_ids": "445,444,443", "identifiers": [{"book": 116, "id": 443, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781784744618", "sort": "isbn", "type": "isbn", "val": "9781784744618"}, {"book": 116, "id": 444, "name": "Google Books", "path": "https://books.google.com/books?id=8sYzzgEACAAJ", "sort": "google", "type": "google", "val": "8sYzzgEACAAJ"}, {"book": 116, "id": 445, "name": "Amazon", "path": "https://amazon.com/dp/B08TVG7BPD", "sort": "amazon", "type": "amazon", "val": "B08TVG7BPD"}], "isbn": "9781784744618", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:04.711556+00:00", "path": "Amanda Gorman/Call Us What We Carry_ The Debut Co (116)", "pubdate": "2021-12-07", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 1604309, "tag_ids": "134,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.0, "count": 3, "id": 134, "name": "Poetry", "sort": 3}], "timestamp": "2022-10-05 15:54:04.711556+00:00", "title": "Call Us What We Carry: The Debut Collection From the Bestselling Phenomenon Who Performed at the Presidential Inauguration"}, {"author_ids": "114", "authors": [{"avg_rating": 10.0, "count": 1, "id": 114, "name": "Andrea Elliott", "sort": "Elliott, Andrea"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eIn Invisible Child, Pulitzer Prize winner Andrea Elliott follows eight dramatic years in the life of Dasani, a girl whose imagination is as soaring as the skyscrapers near her Brooklyn shelter. In this sweeping narrative, Elliott weaves the story of Dasani\u2019s childhood with the history of her ancestors, tracing their passage from slavery to the Great Migration north. As Dasani comes of age, New York City\u2019s homeless crisis has exploded, deepening the chasm between rich and poor. She must guide her siblings through a world riddled by hunger, violence, racism, drug addiction, and the threat of foster care. Out on the street, Dasani becomes a fierce fighter \u201cto protect those who I love.\u201d When she finally escapes city life to enroll in a boarding school, she faces an impossible question: What if leaving poverty means abandoning your family, and yourself? \u003c/p\u003e\n\u003cp\u003eA work of luminous and riveting prose, Elliott\u2019s Invisible Child reads like a page-turning novel. It is an astonishing story about the power of resilience, the importance of family and the cost of inequality\u2014told through the crucible of one remarkable girl. \u003c/p\u003e\n\u003cp\u003eWinner of the J. Anthony Lukas Book Prize \u2022 Finalist for the Bernstein Award and the PEN/John Kenneth Galbraith Award \u2022 Longlisted for the Baillie Gifford Prize\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 112, "identifier_ids": "453,451,454,452", "identifiers": [{"book": 112, "id": 452, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780812986945", "sort": "isbn", "type": "isbn", "val": "9780812986945"}, {"book": 112, "id": 454, "name": "Google Books", "path": "https://books.google.com/books?id=BzBGEAAAQBAJ", "sort": "google", "type": "google", "val": "BzBGEAAAQBAJ"}, {"book": 112, "id": 451, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57359691", "sort": "goodreads", "type": "goodreads", "val": "57359691"}, {"book": 112, "id": 453, "name": "Amazon", "path": "https://amazon.com/dp/0812986946", "sort": "amazon", "type": "amazon", "val": "0812986946"}], "isbn": "9780812986945", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:03.195391+00:00", "path": "Andrea Elliott/Invisible Child_ Poverty, Survival (112)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 2805902, "tag_ids": "57,59,60,92,119,120,121,122,123,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 8.363636363636363, "count": 22, "id": 57, "name": "Politics", "sort": 22}, {"avg_rating": 8.4, "count": 21, "id": 60, "name": "History", "sort": 21}, {"avg_rating": 8.8, "count": 5, "id": 59, "name": "Sociology", "sort": 5}, {"avg_rating": 9.5, "count": 5, "id": 121, "name": "Social Science", "sort": 5}, {"avg_rating": 10.0, "count": 2, "id": 119, "name": "Ethnic \u0026 Regional", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 120, "name": "African American \u0026 Black", "sort": 2}, {"avg_rating": 10.0, "count": 1, "id": 122, "name": "Poverty \u0026 Homelessness", "sort": 1}, {"avg_rating": 10.0, "count": 1, "id": 123, "name": "Social Classes \u0026 Economic Disparity", "sort": 1}], "timestamp": "2022-10-05 15:54:03.195391+00:00", "title": "Invisible Child: Poverty, Survival \u0026 Hope in an American City"}, {"author_ids": "99", "authors": [{"avg_rating": 8.0, "count": 1, "id": 99, "name": "Danny Wallace", "sort": "Wallace, Danny"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOne word. Unlimited consequences. \u003c/p\u003e\n\u003cp\u003eThe book that inspired the major film starring Jim Carrey and Zooey Deschanel\u0027I, Danny Wallace, being of sound mind and body, do hereby write this manifesto for my life. I swear I will be more open to opportunity. I swear I will live my life taking every available chance. I will say Yes to every favour, request, suggestion and invitation. I WILL SWEAR TO SAY YES WHERE ONCE I WOULD SAY NO.\u0027Danny Wallace had been staying in. Far too much. Having been dumped by his girlfriend, he really wasn\u0027t doing the young, free and single thing very well. Instead he was avoiding people. Texting them instead of calling them. Calling them instead of meeting them. That is until one fateful date when a mystery man on a late-night bus told him to \u0027say yes more\u0027. These three simple words changed Danny\u0027s life forever. Yes Man is the story of what happened when Danny decided to say YES to everything, in order to make his life more interesting. And boy, did it get more interesting.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 92, "identifier_ids": "467,463,464,466,465", "identifiers": [{"book": 92, "id": 465, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781407062266", "sort": "isbn", "type": "isbn", "val": "9781407062266"}, {"book": 92, "id": 466, "name": "Google Books", "path": "https://books.google.com/books?id=OxEAQAKNEuIC", "sort": "google", "type": "google", "val": "OxEAQAKNEuIC"}, {"book": 92, "id": 464, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/9302702", "sort": "goodreads", "type": "goodreads", "val": "9302702"}, {"book": 92, "id": 463, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/yes-man-danny-wallace/1100367285", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/yes-man-danny-wallace/1100367285"}, {"book": 92, "id": 467, "name": "Amazon", "path": "https://amazon.com/dp/B003L77XB8", "sort": "amazon", "type": "amazon", "val": "B003L77XB8"}], "isbn": "9781407062266", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-05 14:48:01.464882+00:00", "path": "Danny Wallace/Yes man (92)", "pubdate": "2005-07-07", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 4104738, "tag_ids": "42,90", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 7.5, "count": 4, "id": 90, "name": "Travel", "sort": 4}], "timestamp": "2022-10-05 14:48:01.464882+00:00", "title": "Yes man"}, {"author_ids": "57,73", "authors": [{"avg_rating": 8.0, "count": 3, "id": 57, "name": "Harry Lorayne", "sort": "Lorayne, Harry"}, {"avg_rating": null, "count": 1, "id": 73, "name": "Jerry Lucas", "sort": "Lucas, Jerry"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eUnleash the hidden power of your mind\u003c/p\u003e\n\u003cp\u003eIt\u2019s there in all of us. A mental resource we don\u2019t think much about. Memory. And now there\u2019s a way to master its power....\u003c/p\u003e\n\u003cp\u003eThrough Harry Lorayne and Jerry Lucas\u2019s simple, fail-safe memory system, you can become more effective, more imaginative, and more powerful at work, at school, in sports, and at play.\u003c/p\u003e\n\u003cp\u003e\u2022 Read with speed and greater understanding.\u003cbr\u003e\u2022 File phone numbers, data, figures, and appointments right in your head.\u003cbr\u003e\u2022 Send those birthday and anniversary cards on time.\u003cbr\u003e\u2022 Learn foreign words and phrases with ease.\u003cbr\u003e\u2022 Shine in the classroom and shorten study hours.\u003cbr\u003e\u2022 Dominate social situations: Remember and use important personal details.\u003c/p\u003e\n\u003cp\u003eBegin today. The change in your life will be unforgettable\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 48, "identifier_ids": "86,87", "identifiers": [{"book": 48, "id": 87, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780345410023", "sort": "isbn", "type": "isbn", "val": "9780345410023"}, {"book": 48, "id": 86, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/memory-book-harry-lorayne/1101889940", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/memory-book-harry-lorayne/1101889940"}], "isbn": "9780345410023", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:46.770000+00:00", "path": "Harry Lorayne/The Memory Book_ The Classic Guide t (48)", "pubdate": "1996-08-27", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 10701386, "tag_ids": "43,83", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": null, "count": 2, "id": 83, "name": "Memory", "sort": 2}], "timestamp": "2022-10-04 13:46:46.770000+00:00", "title": "The Memory Book: The Classic Guide to Improving Your Memory at Work, at School, and at Play"}, {"author_ids": "32,33", "authors": [{"avg_rating": null, "count": 1, "id": 32, "name": "Mel Helitzer", "sort": "Helitzer, Mel"}, {"avg_rating": null, "count": 1, "id": 33, "name": "Mark Shatz", "sort": "Shatz, Mark"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe Must-Have Guide to Humor Writing\u003c/p\u003e\n\u003cp\u003eBring on the funny! With Comedy Writing Secrets 3rd Edition , you can discover the secrets of humor writing that will keep your readers rolling in their seats. Learn the basics of joke construction, as well as in-depth comedy-writing techniques that you can apply to a variety of print and online markets. If your aim is to make \u0027em laughand make a career in comedy writingthen look no further.\u003c/p\u003e\n\u003cp\u003eIn this completely revised and refreshed edition, you\u0027ll discover:\u003c/p\u003e\n\u003cp\u003e\u2022 Hundreds of updated one-liners, anecdotes, and bits from top comedians like Louis C.K., Conan O\u2019Brien, Tina Fey, Amy Schumer, Rodney Dangerfield, Jon Stewart, Steve Martin, Ellen DeGeneres, Jimmy Fallon, George Carlin, Zach Galifianakis, Stephen Colbert, Erma Bombeck, and more.\u003cbr\u003e\u2022 Exclusive tips for injecting humor into articles, speeches, advertisements, greeting cards, and more.\u003cbr\u003e\u2022 New instruction on writing for online markets and social media.\u003cbr\u003e\u2022 Advice on brainstorming and editing to beat writer\u0027s block and generate new material.\u003cbr\u003e\u2022 Exercises and expanded instructions for exaggeration, reverses, word play and more to practice and refine your writing skills.\u003cbr\u003eFor more than twenty years, Comedy Writing Secrets has helped humor writers of all skill levels write and sell their work. With Comedy Writing Secrets 3rd Edition , you\u0027ll be laugh-out-loud funny and leave readers wanting more.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 36, "identifier_ids": "57,58,59", "identifiers": [{"book": 36, "id": 59, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781599639635", "sort": "isbn", "type": "isbn", "val": "9781599639635"}, {"book": 36, "id": 58, "name": "Google Books", "path": "https://books.google.com/books?id=giFjDwAAQBAJ", "sort": "google", "type": "google", "val": "giFjDwAAQBAJ"}, {"book": 36, "id": 57, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/comedy-writing-secrets-mark-shatz/1122432004", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/comedy-writing-secrets-mark-shatz/1122432004"}], "isbn": "9781599639635", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:41.942000+00:00", "path": "Mel Helitzer/Comedy Writing Secrets_ The Best-Sel (36)", "pubdate": "2016-02-18", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 2016139, "tag_ids": "42,64,65", "tags": [{"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 8.0, "count": 4, "id": 64, "name": "Writing", "sort": 4}, {"avg_rating": null, "count": 1, "id": 65, "name": "Composition", "sort": 1}], "timestamp": "2022-10-04 13:46:41.942000+00:00", "title": "Comedy Writing Secrets: The Best-Selling Guide to Writing Funny and Getting Paid for It"}, {"author_ids": "24", "authors": [{"avg_rating": 8.0, "count": 1, "id": 24, "name": "Sabine Hossenfelder", "sort": "Hossenfelder, Sabine"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eDo we have free will? Is the universe compatible with God? Do we live in a computer simulation? Does the universe think?\u003c/p\u003e\n\u003cp\u003ePhysicists are great at complicated research, but they are less good at telling us why it matters. In this entertaining and groundbreaking book, theoretical physicist Sabine Hossenfelder breaks down why we should care. Drawing on the latest research in quantum mechanics, black holes, string theory and particle physics, Existential Physics explains what modern physics can tell us about the big questions.\u003c/p\u003e\n\u003cp\u003eFilled with counterintuitive insights and including interviews with other leading scientists, this clear and yet profound book will reshape your understanding of science and the limits of what we can know.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 28, "identifier_ids": "80,81", "identifiers": [{"book": 28, "id": 81, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/59695048", "sort": "goodreads", "type": "goodreads", "val": "59695048"}, {"book": 28, "id": 80, "name": "Amazon", "path": "https://amazon.com/dp/B09LH424FY", "sort": "amazon", "type": "amazon", "val": "B09LH424FY"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:37.533000+00:00", "path": "Sabine Hossenfelder/Existential Physics_ A Scientist\u0027s G (28)", "pubdate": "2022-08-09", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 4, "series": [], "series_ids": null, "size": 5236247, "tag_ids": "58,62", "tags": [{"avg_rating": 8.25, "count": 9, "id": 58, "name": "Science", "sort": 9}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}], "timestamp": "2022-10-04 13:46:37.533000+00:00", "title": "Existential Physics: A Scientist\u0027s Guide to Life\u0027s Biggest Questions"}, {"author_ids": "17", "authors": [{"avg_rating": 8.0, "count": 3, "id": 17, "name": "Dale Carnegie", "sort": "Carnegie, Dale"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe most famous confidence-boosting book ever published; with sales of over 16 million copies worldwide Millions of people around the world have improved their lives based on the teachings of Dale Carnegie. In How to Win Friends and Influence People, he offers practical advice and techniques, in his exuberant and conversational style, for how to get out of a mental rut and make life more rewarding. His advice has stood the test of time and will teach you how to: - make friends quickly and easily - increase your popularity - persuade people to follow your way of thinking - enable you to win new clients and customers - become a better speaker - boost enthusiasm among your colleagues This classic book will turn your relationships around and improve your interactions with everyone in your life. Dale Carnegie, known as \u0027the arch-priest of the art of making friends\u0027, pioneered the development of personal business skills, self-confidence and motivational techniques. His books - most notably How to Win Friends and Influence People - have sold tens of millions worldwide and, even in today\u0027s changing climate, they remain as popular as ever.\u003c/p\u003e\n\u003cp\u003eIn the present book, How to Win Friends and Influence People, Dale Carnegie says, \"You can make someone want to do what you want them to do by seeing the situation from the other person\u0027s point of view and arousing in the other person an eager want.\u003c/p\u003e\n\u003cp\u003e\" You learn how to make people like you, win people over to your way of thinking, and change people without causing offense or arousing resentment. For instance, \"let the other person feel that the idea is his or hers\" and \"talk about your own mistakes before criticizing the other person.\u003c/p\u003e\n\u003cp\u003e\" This book is all about building relationships. With good relationships, personal and business successes are easy and swift to achieve.\u003c/p\u003e\n\u003cp\u003eIn the present book, How to Win Friends and Influence People, Dale Carnegie says, \"You can make someone want to do what you want them to do by seeing the situation from the other person\u0027s point of view and arousing in the other person an eager want.\u003c/p\u003e\n\u003cp\u003e\" You learn how to make people like you, win people over to your way of thinking, and change people without causing offense or arousing resentment. For instance, \"let the other person feel that the idea is his or hers\" and \"talk about your own mistakes before criticizing the other person.\u003c/p\u003e\n\u003cp\u003e\" This book is all about building relationships. With good relationships, personal and business successes are easy and swift to achieve.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 19, "identifier_ids": "140,141,142", "identifiers": [{"book": 19, "id": 142, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781409005216", "sort": "isbn", "type": "isbn", "val": "9781409005216"}, {"book": 19, "id": 141, "name": "Google Books", "path": "https://books.google.com/books?id=0dJDdw39UDMC", "sort": "google", "type": "google", "val": "0dJDdw39UDMC"}, {"book": 19, "id": 140, "name": "Amazon", "path": "https://amazon.com/dp/8190646605", "sort": "amazon", "type": "amazon", "val": "8190646605"}], "isbn": "9781409005216", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:32:15.291000+00:00", "path": "Dale Carnegie/How to Win Friends and Influence Peo (19)", "pubdate": "2010-09-30", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": 5, "series": [], "series_ids": null, "size": 3624020, "tag_ids": "26,31,43", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 9.0, "count": 2, "id": 26, "name": "Personal Growth", "sort": 2}], "timestamp": "2022-10-04 13:32:15.291000+00:00", "title": "How to Win Friends and Influence People"}])'></div>
          </div>
       </div>
    </div>
