@@ -710,7 +710,7 @@
                 
    <div x-data="{activeTab:'tabCards', books:[]}">
       <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Publishers > Simon & Schuster (3)</div>
+         <div class="font-medium text-base">Publishers > Simon & Schuster (4)</div>
          <div class="flex flex-row">
             <button
                @click="activeTab = 'tabCards'"
@@ -741,6 +741,333 @@
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
             class="book-cards"
          >
+            
+               
+                  
+  
+
+
+
+  
+
+
+
+  
+
+
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+    <div class="flex relative">
+       <img 
+        src="/library/images/covers/206.jpg"
+        alt="Hamlet"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        @click="showModal = true"
+        >
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
+              Hamlet
+            </div>
+
+            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
+              
+                <a class="underline decoration-solid" href="/library/authors/240.html">William Shakespeare</a>
+               
+            </p>
+
+            <div class="whitespace-nowrap mt-2 text-slate-300">
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+            </div>
+
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
+<p>Hamlet is Shakespeare’s most popular, and most puzzling, play. It follows the form of a “revenge tragedy,” in which the hero, Hamlet, seeks vengeance against his father’s murderer, his uncle Claudius, now the king of Denmark. Much of its fascination, however, lies in its uncertainties. Among them: What is the Ghost—Hamlet’s father demanding justice, a tempting demon, an angelic messenger? Does Hamlet go mad, or merely pretend to? Once he is sure that Claudius is a murderer, why does he not act? Was his mother, Gertrude, unfaithful to her husband or complicit in his murder?</p></div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              
+              <div
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                @click="showModal = true"
+              >
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+               </svg>
+              </div>
+            </div>
+       </div>
+    </div>
+
+    <template x-teleport="#x-teleport-target">
+      <div
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+        x-show="showModal"
+        role="dialog"
+        @keydown.window.escape="showModal = false"
+      >
+        <div
+          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+          @click="showModal = false"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <div
+          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        >
+          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 hidden lg:block lg:col-span-4 
+                  bg-[url('/library/images/covers/206.jpg')] bg-cover bg-left rounded-l-lg"
+            ></div>
+            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+              <h1 class="pb-4 ml-0 text-3xl font-semibold">
+                Hamlet
+              </h1>
+
+              <table class="w-full text-left align-top">
+                  <tbody>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Authors:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/240.html">William Shakespeare</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Series:
+                        </td>
+                        <td class="space-x-1">
+                             
+                        </td>
+                    </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Publishers:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/publishers/22.html">Simon & Schuster</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Publish Date:
+                        </td>
+                        <td class="space-x-1">
+                            1601-01-01
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Languages:
+                        </td>
+                        <td class="space-x-1">
+                            
+                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
+                             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            ISBN:
+                        </td>
+                        <td class="">
+                          <div class="flex items-center">
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781451669411</p>
+                            <button
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="$clipboard({
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                error:()=>$notification({text:'Error',variant:'error'})
+                              })"
+                            >
+                              Copy
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Rating:
+                          </td>
+                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-1 whitespace-nowrap font-semibold">
+                            Tags:
+                        </td>
+                        <td class="pt-1 space-x-1 space-y-1">
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/153.html">
+                                Classics
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/214.html">
+                                Gutenberg
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/134.html">
+                                Poetry
+                            </a>
+                           
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-4 pb-1 font-semibold">Description:</p>
+              <div 
+                x-init="$el._x_simplebar = new SimpleBar($el)"
+                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
+                <div>
+<p>Hamlet is Shakespeare’s most popular, and most puzzling, play. It follows the form of a “revenge tragedy,” in which the hero, Hamlet, seeks vengeance against his father’s murderer, his uncle Claudius, now the king of Denmark. Much of its fascination, however, lies in its uncertainties. Among them: What is the Ghost—Hamlet’s father demanding justice, a tempting demon, an angelic messenger? Does Hamlet go mad, or merely pretend to? Once he is sure that Claudius is a murderer, why does he not act? Was his mother, Gertrude, unfaithful to her husband or complicit in his murder?</p></div>
+              </div>
+    
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781451669411" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="http://www.gutenberg.org/ebooks/2265" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Gutenberg
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=UB74EoKvVfsC" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                    <a
+                      href="https://www.goodreads.com/book/show/1420" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Goodreads
+                    </a>
+                  
+                </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+ </div>
+               
             
                
                   
@@ -1711,7 +2038,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "129", "authors": [{"avg_rating": null, "count": 1, "id": 129, "name": "Nadia Owusu", "sort": "Owusu, Nadia"}], "comments": "\u003cp\u003eIn the tradition of The Glass Castle, this \u201cgorgeous\u201d (The New York Times, Editors\u2019 Choice) and deeply felt memoir from Whiting Award winner Nadia Owusu tells the \u201cincredible story\u201d (Malala Yousafzai) about the push and pull of belonging, the seismic emotional toll of family secrets, and the heart it takes to pull through. \u201cIn Aftershocks, Nadia Owusu tells the incredible story of her young life. How does a girl\u2014abandoned by her mother at age two and orphaned at thirteen when her beloved father dies\u2014find her place in the world? This memoir is the story of Nadia creating her own solid ground across countries and continents. I know the struggle of rebuilding your life in an unfamiliar place. While some of you might be familiar with that and some might not, I hope you\u2019ll take as much inspiration and hope from her story as I did.\u201d \u2014MALALA YOUSAFZAI  \u200bONE OF THE BEST BOOKS OF 2021 SELECTED BY VULTURE, TIME, ESQUIRE, NPR, AND VOGUE!Young Nadia Owusu followed her father, a United Nations official, from Europe to Africa and back again. Just as she and her family settled into a new home, her father would tell them it was time to say their goodbyes. The instability wrought by Nadia\u2019s nomadic childhood was deepened by family secrets and fractures, both lived and inherited. Her Armenian American mother, who abandoned Nadia when she was two, would periodically reappear, only to vanish again. Her father, a Ghanaian, the great hero of her life, died when she was thirteen. After his passing, Nadia\u2019s stepmother weighed her down with a revelation that was either a bombshell secret or a lie, rife with shaming innuendo. With these and other ruptures, Nadia arrived in New York as a young woman feeling stateless, motherless, and uncertain about her future, yet eager to find her own identity. What followed, however, were periods of depression in which she struggled to hold herself and her siblings together. \u201cA magnificent, complex assessment of selfhood and why it matters\u201d (Elle), Aftershocks depicts the way she hauled herself from the wreckage of her life\u2019s perpetual quaking, the means by which she has finally come to understand that the only ground firm enough to count on is the one written into existence by her own hand. \u201cFull of narrative risk and untrammeled lyricism\u201d (The Washington Post), Aftershocks joins the likes of Don\u2019t Let\u2019s Go to the Dogs Tonight and William Styron\u2019s Darkness Visible, and does for race identity what Maggie Nelson does for gender identity in The Argonauts.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 127, "identifier_ids": "415,416", "identifiers": [{"book": 127, "id": 416, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781982111236", "sort": "isbn", "type": "isbn", "val": "9781982111236"}, {"book": 127, "id": 415, "name": "Google Books", "path": "https://books.google.com/books?id=VBQ3EAAAQBAJ", "sort": "google", "type": "google", "val": "VBQ3EAAAQBAJ"}], "isbn": "9781982111236", "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:08.709178+00:00", "path": "Nadia Owusu/Aftershocks_ A Memoir (127)", "pubdate": "2021-08-03", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": null, "series": [], "series_ids": null, "size": 3951047, "tag_ids": "92,119,120,147,150,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 10.0, "count": 2, "id": 119, "name": "Ethnic \u0026 Regional", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 120, "name": "African American \u0026 Black", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 147, "name": "Women", "sort": 2}, {"avg_rating": null, "count": 1, "id": 150, "name": "Cultural", "sort": 1}], "timestamp": "2022-10-05 15:54:08.709178+00:00", "title": "Aftershocks: A Memoir"}, {"author_ids": "119", "authors": [{"avg_rating": 9.0, "count": 2, "id": 119, "name": "Walter Isaacson", "sort": "Isaacson, Walter"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen Jennifer Doudna was in sixth grade, she came home one day to find that her dad had left a paperback titled \u003cem\u003eThe Double Helix\u003c/em\u003e on her bed. She put it aside, thinking it was one of those detective tales she loved. When she read it on a rainy Saturday, she discovered she was right, in a way. As she sped through the pages, she became enthralled by the intense drama behind the competition to discover the building block of life. Even though her high school counselor told her girls didn\u0027t become scientists, she decided she would. \u003cbr\u003e\u003cbr\u003eDriven by a passion to understand how nature works and to turn discoveries into inventions, she would help to make what the book\u0027s author, James Watson, told her was...\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 117, "identifier_ids": "581,582", "identifiers": [{"book": 117, "id": 582, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57464035", "sort": "goodreads", "type": "goodreads", "val": "57464035"}, {"book": 117, "id": 581, "name": "Amazon", "path": "https://amazon.com/dp/B08G1XNG7J", "sort": "amazon", "type": "amazon", "val": "B08G1XNG7J"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.046686+00:00", "path": "Walter Isaacson/The Code Breaker_ Jennifer Doudna, (117)", "pubdate": "2021-03-09", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": 5, "series": [], "series_ids": null, "size": 49389246, "tag_ids": "194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}], "timestamp": "2022-10-05 15:54:05.046686+00:00", "title": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race"}, {"author_ids": "17,76", "authors": [{"avg_rating": 8.0, "count": 3, "id": 17, "name": "Dale Carnegie", "sort": "Carnegie, Dale"}, {"avg_rating": 6.0, "count": 1, "id": 76, "name": "Brent Cole", "sort": "Cole, Brent"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAN UP-TO-THE -MINUTE ADAPTATION OF DALE CARNEGIE \u2019S TIMELESS PRESCRIPTIONS FOR THE DIGITAL AGE\u003c/p\u003e\n\u003cp\u003eDALE CARNEGIE\u2019s commonsense approach to communicating has endured for a century, touching millions and millions of readers. The only diploma that hangs in Warren Buffett\u2019s office is his certificate from Dale Carnegie Training. Lee Iacocca credits Carnegie for giving him the courage to speak in public. Dilbert creator Scott Adams called Carnegie\u2019s teachings \u201clife-changing.\u201d\u003c/p\u003e\n\u003cp\u003eIn today\u2019s world, where more and more of our communication takes place across wires and screens, Carnegie\u2019s lessons have not only lasted but become all the more critical. Though he never could have predicted technology\u2019s trajectory, Carnegie proves a wise and helpful teacher in this digital landscape. To demonstrate the many ways his lessons remain relevant, Dale Carnegie \u0026amp; Associates, Inc., has reimagined his prescriptions and his advice for this difficult digital age. We may communicate today with different tools and with greater speed, but Carnegie\u2019s advice on how to communicate, lead, and work efficiently remains priceless across the ages.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 66, "identifier_ids": "133,134,132", "identifiers": [{"book": 66, "id": 132, "name": "Google Books", "path": "https://books.google.com/books?id=4AKsuQAACAAJ", "sort": "google", "type": "google", "val": "4AKsuQAACAAJ"}, {"book": 66, "id": 134, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/12176421", "sort": "goodreads", "type": "goodreads", "val": "12176421"}, {"book": 66, "id": 133, "name": "Amazon", "path": "https://amazon.com/dp/B004U7G81O", "sort": "amazon", "type": "amazon", "val": "B004U7G81O"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.24031007751938, "count": 158, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:56.206000+00:00", "path": "Dale Carnegie/How to Win Friends and Influence Peo (66)", "pubdate": "2011-10-04", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 3, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": 3, "series": [], "series_ids": null, "size": 3640731, "tag_ids": "31,43,62", "tags": [{"avg_rating": 7.857142857142857, "count": 16, "id": 43, "name": "Self Help", "sort": 16}, {"avg_rating": 7.846153846153846, "count": 13, "id": 31, "name": "Psychology", "sort": 13}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}], "timestamp": "2022-10-04 13:46:56.206000+00:00", "title": "How to Win Friends and Influence People in the Digital Age"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "240", "authors": [{"avg_rating": 8.0, "count": 1, "id": 240, "name": "William Shakespeare", "sort": "Shakespeare, William"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eHamlet is Shakespeare\u2019s most popular, and most puzzling, play. It follows the form of a \u201crevenge tragedy,\u201d in which the hero, Hamlet, seeks vengeance against his father\u2019s murderer, his uncle Claudius, now the king of Denmark. Much of its fascination, however, lies in its uncertainties. Among them: What is the Ghost\u2014Hamlet\u2019s father demanding justice, a tempting demon, an angelic messenger? Does Hamlet go mad, or merely pretend to? Once he is sure that Claudius is a murderer, why does he not act? Was his mother, Gertrude, unfaithful to her husband or complicit in his murder?\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 206, "identifier_ids": "754,756,755,753", "identifiers": [{"book": 206, "id": 753, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781451669411", "sort": "isbn", "type": "isbn", "val": "9781451669411"}, {"book": 206, "id": 755, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/2265", "sort": "gutenberg", "type": "gutenberg", "val": "2265"}, {"book": 206, "id": 756, "name": "Google Books", "path": "https://books.google.com/books?id=UB74EoKvVfsC", "sort": "google", "type": "google", "val": "UB74EoKvVfsC"}, {"book": 206, "id": 754, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/1420", "sort": "goodreads", "type": "goodreads", "val": "1420"}], "isbn": "9781451669411", "language_ids": "1", "languages": [{"avg_rating": 8.251908396946565, "count": 163, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-27 09:34:03.641303+00:00", "order_by": "2022-10-10 14:39:36.389925+00:00", "path": "William Shakespeare/Hamlet (206)", "pubdate": "1601-01-01", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": 4, "series": [], "series_ids": null, "size": 279553, "tag_ids": "134,153,214", "tags": [{"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 13, "id": 214, "name": "Gutenberg", "sort": 13}, {"avg_rating": 8.0, "count": 3, "id": 134, "name": "Poetry", "sort": 3}], "timestamp": "2022-10-10 14:39:36.389925+00:00", "title": "Hamlet"}, {"author_ids": "129", "authors": [{"avg_rating": null, "count": 1, "id": 129, "name": "Nadia Owusu", "sort": "Owusu, Nadia"}], "comments": "\u003cp\u003eIn the tradition of The Glass Castle, this \u201cgorgeous\u201d (The New York Times, Editors\u2019 Choice) and deeply felt memoir from Whiting Award winner Nadia Owusu tells the \u201cincredible story\u201d (Malala Yousafzai) about the push and pull of belonging, the seismic emotional toll of family secrets, and the heart it takes to pull through. \u201cIn Aftershocks, Nadia Owusu tells the incredible story of her young life. How does a girl\u2014abandoned by her mother at age two and orphaned at thirteen when her beloved father dies\u2014find her place in the world? This memoir is the story of Nadia creating her own solid ground across countries and continents. I know the struggle of rebuilding your life in an unfamiliar place. While some of you might be familiar with that and some might not, I hope you\u2019ll take as much inspiration and hope from her story as I did.\u201d \u2014MALALA YOUSAFZAI  \u200bONE OF THE BEST BOOKS OF 2021 SELECTED BY VULTURE, TIME, ESQUIRE, NPR, AND VOGUE!Young Nadia Owusu followed her father, a United Nations official, from Europe to Africa and back again. Just as she and her family settled into a new home, her father would tell them it was time to say their goodbyes. The instability wrought by Nadia\u2019s nomadic childhood was deepened by family secrets and fractures, both lived and inherited. Her Armenian American mother, who abandoned Nadia when she was two, would periodically reappear, only to vanish again. Her father, a Ghanaian, the great hero of her life, died when she was thirteen. After his passing, Nadia\u2019s stepmother weighed her down with a revelation that was either a bombshell secret or a lie, rife with shaming innuendo. With these and other ruptures, Nadia arrived in New York as a young woman feeling stateless, motherless, and uncertain about her future, yet eager to find her own identity. What followed, however, were periods of depression in which she struggled to hold herself and her siblings together. \u201cA magnificent, complex assessment of selfhood and why it matters\u201d (Elle), Aftershocks depicts the way she hauled herself from the wreckage of her life\u2019s perpetual quaking, the means by which she has finally come to understand that the only ground firm enough to count on is the one written into existence by her own hand. \u201cFull of narrative risk and untrammeled lyricism\u201d (The Washington Post), Aftershocks joins the likes of Don\u2019t Let\u2019s Go to the Dogs Tonight and William Styron\u2019s Darkness Visible, and does for race identity what Maggie Nelson does for gender identity in The Argonauts.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 127, "identifier_ids": "415,416", "identifiers": [{"book": 127, "id": 416, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781982111236", "sort": "isbn", "type": "isbn", "val": "9781982111236"}, {"book": 127, "id": 415, "name": "Google Books", "path": "https://books.google.com/books?id=VBQ3EAAAQBAJ", "sort": "google", "type": "google", "val": "VBQ3EAAAQBAJ"}], "isbn": "9781982111236", "language_ids": "1", "languages": [{"avg_rating": 8.251908396946565, "count": 163, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:08.709178+00:00", "path": "Nadia Owusu/Aftershocks_ A Memoir (127)", "pubdate": "2021-08-03", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": null, "series": [], "series_ids": null, "size": 3951047, "tag_ids": "92,119,120,147,150,194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}, {"avg_rating": 8.25, "count": 28, "id": 92, "name": "Biography", "sort": 28}, {"avg_rating": 10.0, "count": 2, "id": 119, "name": "Ethnic \u0026 Regional", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 120, "name": "African American \u0026 Black", "sort": 2}, {"avg_rating": 10.0, "count": 2, "id": 147, "name": "Women", "sort": 2}, {"avg_rating": null, "count": 1, "id": 150, "name": "Cultural", "sort": 1}], "timestamp": "2022-10-05 15:54:08.709178+00:00", "title": "Aftershocks: A Memoir"}, {"author_ids": "119", "authors": [{"avg_rating": 9.0, "count": 2, "id": 119, "name": "Walter Isaacson", "sort": "Isaacson, Walter"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eWhen Jennifer Doudna was in sixth grade, she came home one day to find that her dad had left a paperback titled \u003cem\u003eThe Double Helix\u003c/em\u003e on her bed. She put it aside, thinking it was one of those detective tales she loved. When she read it on a rainy Saturday, she discovered she was right, in a way. As she sped through the pages, she became enthralled by the intense drama behind the competition to discover the building block of life. Even though her high school counselor told her girls didn\u0027t become scientists, she decided she would. \u003cbr\u003e\u003cbr\u003eDriven by a passion to understand how nature works and to turn discoveries into inventions, she would help to make what the book\u0027s author, James Watson, told her was...\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 117, "identifier_ids": "581,582", "identifiers": [{"book": 117, "id": 582, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/57464035", "sort": "goodreads", "type": "goodreads", "val": "57464035"}, {"book": 117, "id": 581, "name": "Amazon", "path": "https://amazon.com/dp/B08G1XNG7J", "sort": "amazon", "type": "amazon", "val": "B08G1XNG7J"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.251908396946565, "count": 163, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.046686+00:00", "path": "Walter Isaacson/The Code Breaker_ Jennifer Doudna, (117)", "pubdate": "2021-03-09", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": 5, "series": [], "series_ids": null, "size": 49389246, "tag_ids": "194", "tags": [{"avg_rating": 8.342857142857143, "count": 39, "id": 194, "name": "Time", "sort": 39}], "timestamp": "2022-10-05 15:54:05.046686+00:00", "title": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race"}, {"author_ids": "17,76", "authors": [{"avg_rating": 8.0, "count": 3, "id": 17, "name": "Dale Carnegie", "sort": "Carnegie, Dale"}, {"avg_rating": 6.0, "count": 1, "id": 76, "name": "Brent Cole", "sort": "Cole, Brent"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAN UP-TO-THE -MINUTE ADAPTATION OF DALE CARNEGIE \u2019S TIMELESS PRESCRIPTIONS FOR THE DIGITAL AGE\u003c/p\u003e\n\u003cp\u003eDALE CARNEGIE\u2019s commonsense approach to communicating has endured for a century, touching millions and millions of readers. The only diploma that hangs in Warren Buffett\u2019s office is his certificate from Dale Carnegie Training. Lee Iacocca credits Carnegie for giving him the courage to speak in public. Dilbert creator Scott Adams called Carnegie\u2019s teachings \u201clife-changing.\u201d\u003c/p\u003e\n\u003cp\u003eIn today\u2019s world, where more and more of our communication takes place across wires and screens, Carnegie\u2019s lessons have not only lasted but become all the more critical. Though he never could have predicted technology\u2019s trajectory, Carnegie proves a wise and helpful teacher in this digital landscape. To demonstrate the many ways his lessons remain relevant, Dale Carnegie \u0026amp; Associates, Inc., has reimagined his prescriptions and his advice for this difficult digital age. We may communicate today with different tools and with greater speed, but Carnegie\u2019s advice on how to communicate, lead, and work efficiently remains priceless across the ages.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 66, "identifier_ids": "133,134,132", "identifiers": [{"book": 66, "id": 132, "name": "Google Books", "path": "https://books.google.com/books?id=4AKsuQAACAAJ", "sort": "google", "type": "google", "val": "4AKsuQAACAAJ"}, {"book": 66, "id": 134, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/12176421", "sort": "goodreads", "type": "goodreads", "val": "12176421"}, {"book": 66, "id": 133, "name": "Amazon", "path": "https://amazon.com/dp/B004U7G81O", "sort": "amazon", "type": "amazon", "val": "B004U7G81O"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.251908396946565, "count": 163, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:56.206000+00:00", "path": "Dale Carnegie/How to Win Friends and Influence Peo (66)", "pubdate": "2011-10-04", "publisher_ids": "22", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 22, "name": "Simon \u0026 Schuster", "sort": "Simon \u0026 Schuster"}], "rating": 3, "series": [], "series_ids": null, "size": 3640731, "tag_ids": "31,43,62", "tags": [{"avg_rating": 8.0, "count": 17, "id": 43, "name": "Self Help", "sort": 17}, {"avg_rating": 8.0, "count": 14, "id": 31, "name": "Psychology", "sort": 14}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}], "timestamp": "2022-10-04 13:46:56.206000+00:00", "title": "How to Win Friends and Influence People in the Digital Age"}])'></div>
          </div>
       </div>
    </div>
