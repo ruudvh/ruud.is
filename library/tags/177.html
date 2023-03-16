@@ -710,7 +710,7 @@
                 
    <div x-data="{activeTab:'tabCards', books:[]}">
       <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Tags > Reference (1)</div>
+         <div class="font-medium text-base">Tags > Reference (2)</div>
          <div class="flex flex-row">
             <button
                @click="activeTab = 'tabCards'"
@@ -741,6 +741,339 @@
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
             class="book-cards"
          >
+            
+               
+                  
+  
+
+
+
+  
+
+
+
+  
+
+
+<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+    <div class="flex relative">
+       <img 
+        src="/library/images/covers/262.jpg"
+        alt="Wine Simple: A Totally Approachable Guide From a World-Class Sommelier"
+        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+        @click="showModal = true"
+        >
+       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
+              Wine Simple: A Totally Approachable Guide From a World-Class Sommelier
+            </div>
+
+            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
+              
+                <a class="underline decoration-solid" href="/library/authors/347.html">Christine Muhlke</a>
+              
+                <a class="underline decoration-solid" href="/library/authors/346.html">Aldo Sohm</a>
+               
+            </p>
+
+            <div class="whitespace-nowrap mt-2 text-slate-300">
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+                <svg
+                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                >
+                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                </svg>
+              
+            </div>
+
+            <div class="hidden sm:inline-block">
+              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
+                <div>
+<p>From the world-renowned sommelier Aldo Sohm, a dynamic, essential wine guide for a new generation NAMED ONE OF THE BEST COOKBOOKS OF THE YEAR BY FOOD52 Aldo Sohm is one of the most respected and widely lauded sommeliers in the world. He's worked with celebrated chef Eric Ripert as wine director of three-Michelin-starred Le Bernardin for over a decade, yet his philosophy and approach to wine is much more casual. Aldo's debut book, Wine Simple, is full of confidence-building infographics and illustrations, an unbeatable depth of knowledge, effusive encouragement, and, most important, strong opinions on wine so you can learn to form your own. Imbued with Aldo's insatiable passion and eagerness to teach others, Wine Simple is accessible, deeply educational, and lively and fun, both in voice and visuals. This essential guide begins with the fundamentals of wine in easy-to-absorb hits of information and pragmatic, everyday tips—key varietals and winemaking regions, how to taste, when to save and when to splurge, and how to set up a wine tasting at home. Aldo then teaches you how to take your wine knowledge to the next level and evolve your palate, including techniques on building a “flavor library,” a cheat sheet to good (and great) vintages (and why you shouldn't put everything on the line for them), tips on troubleshooting tricky wines (corked? mousy?), and, for the daring, even how to saber a bottle of champagne. This visual, user-friendly approach will inspire readers to have the confidence, curiosity, and enthusiasm to taste smarter, drink boldly, and dive headfirst fearlessly into the exciting world of wine.</p></div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              
+              <div
+                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                @click="showModal = true"
+              >
+                <span>Learn More</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+               </svg>
+              </div>
+            </div>
+       </div>
+    </div>
+
+    <template x-teleport="#x-teleport-target">
+      <div
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+        x-show="showModal"
+        role="dialog"
+        @keydown.window.escape="showModal = false"
+      >
+        <div
+          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+          @click="showModal = false"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <div
+          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+          x-show="showModal"
+          x-transition:enter="ease-out"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="ease-in"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        >
+          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+            <div class="col-span-12 hidden lg:block lg:col-span-4 
+                  bg-[url('/library/images/covers/262.jpg')] bg-cover bg-left rounded-l-lg"
+            ></div>
+            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+              <h1 class="pb-4 ml-0 text-3xl font-semibold">
+                Wine Simple: A Totally Approachable Guide From a World-Class Sommelier
+              </h1>
+
+              <table class="w-full text-left align-top">
+                  <tbody>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Authors:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/347.html">Christine Muhlke</a>
+                              
+                                  <a class="underline decoration-solid" href="/library/authors/346.html">Aldo Sohm</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Series:
+                        </td>
+                        <td class="space-x-1">
+                             
+                        </td>
+                    </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Publishers:
+                          </td>
+                          <td class="space-x-1">
+                              
+                                  <a class="underline decoration-solid" href="/library/publishers/172.html">Clarkson Potter/Ten Speed</a>
+                               
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Publish Date:
+                        </td>
+                        <td class="space-x-1">
+                            2019-11-19
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            Languages:
+                        </td>
+                        <td class="space-x-1">
+                            
+                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
+                             
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap font-semibold">
+                            ISBN:
+                        </td>
+                        <td class="">
+                          <div class="flex items-center">
+                            <p 
+                              class="text-xs px-1 border border-slate-400 rounded-md"
+                              id="clipboardISBN">9781984824257</p>
+                            <button
+                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="$clipboard({
+                                content:document.querySelector('#clipboardISBN').innerText,
+                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                error:()=>$notification({text:'Error',variant:'error'})
+                              })"
+                            >
+                              Copy
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td class="whitespace-nowrap font-semibold">
+                              Rating:
+                          </td>
+                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                              <svg
+                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                              >
+                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
+                              </svg>
+                            
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="pt-1 whitespace-nowrap font-semibold">
+                            Tags:
+                        </td>
+                        <td class="pt-1 space-x-1 space-y-1">
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/80.html">
+                                Cooking
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/177.html">
+                                Reference
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/267.html">
+                                Beverages
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/268.html">
+                                Alcoholic
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/269.html">
+                                Wine
+                            </a>
+                          
+                            <a 
+                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                              href="/library/tags/270.html">
+                                Entertaining
+                            </a>
+                           
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+
+              <p class="pt-4 pb-1 font-semibold">Description:</p>
+              <div 
+                x-init="$el._x_simplebar = new SimpleBar($el)"
+                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
+                <div>
+<p>From the world-renowned sommelier Aldo Sohm, a dynamic, essential wine guide for a new generation NAMED ONE OF THE BEST COOKBOOKS OF THE YEAR BY FOOD52 Aldo Sohm is one of the most respected and widely lauded sommeliers in the world. He's worked with celebrated chef Eric Ripert as wine director of three-Michelin-starred Le Bernardin for over a decade, yet his philosophy and approach to wine is much more casual. Aldo's debut book, Wine Simple, is full of confidence-building infographics and illustrations, an unbeatable depth of knowledge, effusive encouragement, and, most important, strong opinions on wine so you can learn to form your own. Imbued with Aldo's insatiable passion and eagerness to teach others, Wine Simple is accessible, deeply educational, and lively and fun, both in voice and visuals. This essential guide begins with the fundamentals of wine in easy-to-absorb hits of information and pragmatic, everyday tips—key varietals and winemaking regions, how to taste, when to save and when to splurge, and how to set up a wine tasting at home. Aldo then teaches you how to take your wine knowledge to the next level and evolve your palate, including techniques on building a “flavor library,” a cheat sheet to good (and great) vintages (and why you shouldn't put everything on the line for them), tips on troubleshooting tricky wines (corked? mousy?), and, for the daring, even how to saber a bottle of champagne. This visual, user-friendly approach will inspire readers to have the confidence, curiosity, and enthusiasm to taste smarter, drink boldly, and dive headfirst fearlessly into the exciting world of wine.</p></div>
+              </div>
+    
+              
+                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                <div class="space-x-1 space-y-1">
+                  
+                    <a
+                      href="https://www.worldcat.org/isbn/9781984824257" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      ISBN
+                    </a>
+                  
+                    <a
+                      href="https://books.google.com/books?id=c2y4DwAAQBAJ" 
+                      target="_blank"
+                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                    >
+                      Google Books
+                    </a>
+                  
+                </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+ </div>
+               
             
                
                   
@@ -1102,7 +1435,7 @@
             x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
             x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
          >
-            <div x-data='tables.initGridTable([{"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 1, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 8.0, "count": 1, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 1, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cp\u003e\u003cstrong\u003eThe fantastic first book in the \u003cem\u003eSunday Times\u003c/em\u003e bestselling Science of Discworld series\u003c/strong\u003e  \u003c/p\u003e\n\u003cp\u003eWhen a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.  \u003c/p\u003e\n\u003cp\u003eThe Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.  \u003c/p\u003e\n\u003cp\u003eThrough this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eTerry Pratchett\u003c/strong\u003e is the acclaimed creator of the global bestselling Discworld series, the first of which, \u003cem\u003eThe Colour of Magic\u003c/em\u003e , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.  \u003c/p\u003e\n\u003cp\u003ewww.terrypratchett.co.uk\u003cbr /\u003e\n@terryandrob  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eProfessor Ian Stewart\u003c/strong\u003e is the author of many popular science books. He is the mathematics consultant for \u003cem\u003eNew Scientist\u003c/em\u003e and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eDr Jack Cohen\u003c/strong\u003e is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 171, "identifier_ids": "564,563,562", "identifiers": [{"book": 171, "id": 562, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448176670", "sort": "isbn", "type": "isbn", "val": "9781448176670"}, {"book": 171, "id": 563, "name": "Google Books", "path": "https://books.google.com/books?id=Q1x0852ip1wC", "sort": "google", "type": "google", "val": "Q1x0852ip1wC"}, {"book": 171, "id": 564, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/233674", "sort": "goodreads", "type": "goodreads", "val": "233674"}], "isbn": "9781448176670", "language_ids": "1", "languages": [{"avg_rating": 8.251908396946565, "count": 163, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:30.078477+00:00", "path": "Terry Pratchett/The Science of Discworld (171)", "pubdate": "1999-01-01", "publisher_ids": "116", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 116, "name": "Ebury Press", "sort": "Ebury Press"}], "rating": 4, "series": [], "series_ids": null, "size": 339560, "tag_ids": "42,62,75,76,177", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 7.777777777777778, "count": 9, "id": 62, "name": "Philosophy", "sort": 9}, {"avg_rating": 8.0, "count": 1, "id": 177, "name": "Reference", "sort": 1}], "timestamp": "2022-10-06 09:40:30.078477+00:00", "title": "The Science of Discworld"}])'></div>
+            <div x-data='tables.initGridTable([{"author_ids": "346,347", "authors": [{"avg_rating": null, "count": 1, "id": 347, "name": "Christine Muhlke", "sort": "Muhlke, Christine"}, {"avg_rating": null, "count": 1, "id": 346, "name": "Aldo Sohm", "sort": "Sohm, Aldo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFrom the world-renowned sommelier Aldo Sohm, a dynamic, essential wine guide for a new generation NAMED ONE OF THE BEST COOKBOOKS OF THE YEAR BY FOOD52 Aldo Sohm is one of the most respected and widely lauded sommeliers in the world. He\u0027s worked with celebrated chef Eric Ripert as wine director of three-Michelin-starred Le Bernardin for over a decade, yet his philosophy and approach to wine is much more casual. Aldo\u0027s debut book, Wine Simple, is full of confidence-building infographics and illustrations, an unbeatable depth of knowledge, effusive encouragement, and, most important, strong opinions on wine so you can learn to form your own. Imbued with Aldo\u0027s insatiable passion and eagerness to teach others, Wine Simple is accessible, deeply educational, and lively and fun, both in voice and visuals. This essential guide begins with the fundamentals of wine in easy-to-absorb hits of information and pragmatic, everyday tips\u2014key varietals and winemaking regions, how to taste, when to save and when to splurge, and how to set up a wine tasting at home. Aldo then teaches you how to take your wine knowledge to the next level and evolve your palate, including techniques on building a\u00a0\u201cflavor library,\u201d\u00a0a cheat sheet to good (and great) vintages (and why you shouldn\u0027t put everything on the line for them), tips on troubleshooting tricky wines (corked? mousy?), and, for the daring, even how to saber a bottle of champagne. This visual, user-friendly approach will inspire readers to have the confidence, curiosity, and enthusiasm to taste smarter, drink boldly, and dive headfirst fearlessly into the exciting world of wine.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 262, "identifier_ids": "918,919", "identifiers": [{"book": 262, "id": 919, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781984824257", "sort": "isbn", "type": "isbn", "val": "9781984824257"}, {"book": 262, "id": 918, "name": "Google Books", "path": "https://books.google.com/books?id=c2y4DwAAQBAJ", "sort": "google", "type": "google", "val": "c2y4DwAAQBAJ"}], "isbn": "9781984824257", "language_ids": "1", "languages": [{"avg_rating": 8.244755244755245, "count": 184, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-03-16 21:59:20.688139+00:00", "order_by": "2023-03-16 21:46:34.225245+00:00", "path": "Aldo Sohm/Wine Simple_ A Totally Approachable (262)", "pubdate": "2019-11-19", "publisher_ids": "172", "publishers": [{"avg_rating": null, "count": 1, "id": 172, "name": "Clarkson Potter/Ten Speed", "sort": "Clarkson Potter/Ten Speed"}], "rating": null, "series": [], "series_ids": null, "size": 47946392, "tag_ids": "80,177,267,268,269,270", "tags": [{"avg_rating": 8.0, "count": 2, "id": 80, "name": "Cooking", "sort": 2}, {"avg_rating": 8.0, "count": 2, "id": 177, "name": "Reference", "sort": 2}, {"avg_rating": null, "count": 1, "id": 267, "name": "Beverages", "sort": 1}, {"avg_rating": null, "count": 1, "id": 268, "name": "Alcoholic", "sort": 1}, {"avg_rating": null, "count": 1, "id": 269, "name": "Wine", "sort": 1}, {"avg_rating": null, "count": 1, "id": 270, "name": "Entertaining", "sort": 1}], "timestamp": "2023-03-16 21:46:34.225245+00:00", "title": "Wine Simple: A Totally Approachable Guide From a World-Class Sommelier"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 1, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 8.0, "count": 1, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 1, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cp\u003e\u003cstrong\u003eThe fantastic first book in the \u003cem\u003eSunday Times\u003c/em\u003e bestselling Science of Discworld series\u003c/strong\u003e  \u003c/p\u003e\n\u003cp\u003eWhen a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.  \u003c/p\u003e\n\u003cp\u003eThe Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.  \u003c/p\u003e\n\u003cp\u003eThrough this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eTerry Pratchett\u003c/strong\u003e is the acclaimed creator of the global bestselling Discworld series, the first of which, \u003cem\u003eThe Colour of Magic\u003c/em\u003e , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.  \u003c/p\u003e\n\u003cp\u003ewww.terrypratchett.co.uk\u003cbr /\u003e\n@terryandrob  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eProfessor Ian Stewart\u003c/strong\u003e is the author of many popular science books. He is the mathematics consultant for \u003cem\u003eNew Scientist\u003c/em\u003e and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.  \u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003eDr Jack Cohen\u003c/strong\u003e is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.\u003c/p\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 171, "identifier_ids": "564,563,562", "identifiers": [{"book": 171, "id": 562, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448176670", "sort": "isbn", "type": "isbn", "val": "9781448176670"}, {"book": 171, "id": 563, "name": "Google Books", "path": "https://books.google.com/books?id=Q1x0852ip1wC", "sort": "google", "type": "google", "val": "Q1x0852ip1wC"}, {"book": 171, "id": 564, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/233674", "sort": "goodreads", "type": "goodreads", "val": "233674"}], "isbn": "9781448176670", "language_ids": "1", "languages": [{"avg_rating": 8.244755244755245, "count": 184, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-06 09:40:30.078477+00:00", "path": "Terry Pratchett/The Science of Discworld (171)", "pubdate": "1999-01-01", "publisher_ids": "116", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 116, "name": "Ebury Press", "sort": "Ebury Press"}], "rating": 4, "series": [], "series_ids": null, "size": 339560, "tag_ids": "42,62,75,76,177", "tags": [{"avg_rating": 8.545454545454545, "count": 53, "id": 76, "name": "Fantasy", "sort": 53}, {"avg_rating": 8.46808510638298, "count": 51, "id": 75, "name": "Science Fiction", "sort": 51}, {"avg_rating": 8.0, "count": 13, "id": 42, "name": "Humour", "sort": 13}, {"avg_rating": 7.8, "count": 10, "id": 62, "name": "Philosophy", "sort": 10}, {"avg_rating": 8.0, "count": 2, "id": 177, "name": "Reference", "sort": 2}], "timestamp": "2022-10-06 09:40:30.078477+00:00", "title": "The Science of Discworld"}])'></div>
          </div>
       </div>
    </div>
