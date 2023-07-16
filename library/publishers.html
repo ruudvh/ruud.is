@@ -202,189 +202,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
                 <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
@@ -517,189 +334,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
                     </nav>
                   </div>
                 </div>
@@ -709,7 +343,7 @@
             <div class="w-full overflow-hidden">
                 
    <div class="pb-4 border-solid border-b border-b-slate-300">
-      <div class="font-medium text-base">Publishers (112)</div>
+      <div class="font-medium text-base">Publishers (126)</div>
    </div>
    <ul class="pt-5">
       
@@ -735,13 +369,16 @@
          <li class="pb-3"><a href="./publishers/59.html">Anthos</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./publishers/138.html">Apress</a> (1)</li>
+         <li class="pb-3"><a href="./publishers/208.html">Apple Education</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/138.html">Apress</a> (2)</li>
       
          
          <li class="pb-3"><a href="./publishers/152.html">Arcturus</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./publishers/125.html">arXiv</a> (7)</li>
+         <li class="pb-3"><a href="./publishers/125.html">arXiv</a> (8)</li>
       
          
          <li class="pb-3"><a href="./publishers/26.html">B. Altemeyer</a> (1)</li>
@@ -765,7 +402,13 @@
          <li class="pb-3"><a href="./publishers/41.html">Berrett-Koehler</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./publishers/194.html">Big Nerd Ranch Guides</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./publishers/76.html">Bloomsbury Publishing</a> (2)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/201.html">BPB Publications</a> (1)</li>
       
          
          <li class="pb-3"><a href="./publishers/10.html">Brilliance Audio</a> (1)</li>
@@ -775,6 +418,9 @@
       
          
          <li class="pb-3"><a href="./publishers/77.html">Catapult</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/209.html">Cinebook</a> (7)</li>
       
          
          <li class="pb-3"><a href="./publishers/172.html">Clarkson Potter/Ten Speed</a> (1)</li>
@@ -787,6 +433,9 @@
       
          
          <li class="pb-3"><a href="./publishers/131.html">Courier Corporation</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/203.html">CRC Press</a> (1)</li>
       
          
          <li class="pb-3"><a href="./publishers/159.html">Createspace Independent Pub</a> (1)</li>
@@ -894,7 +543,7 @@
          <li class="pb-3"><a href="./publishers/135.html">Image Comics</a> (21)</li>
       
          
-         <li class="pb-3"><a href="./publishers/117.html">Independently published</a> (2)</li>
+         <li class="pb-3"><a href="./publishers/117.html">Independently Published</a> (8)</li>
       
          
          <li class="pb-3"><a href="./publishers/99.html">J.M. Meulenhoff</a> (1)</li>
@@ -924,6 +573,12 @@
          <li class="pb-3"><a href="./publishers/104.html">LSU Press</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./publishers/200.html">Manning</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/207.html">McGraw Hill</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./publishers/28.html">McGraw Hill Professional</a> (1)</li>
       
          
@@ -936,7 +591,10 @@
          <li class="pb-3"><a href="./publishers/118.html">New Canadian Library</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./publishers/140.html">O'Reilly Media</a> (1)</li>
+         <li class="pb-3"><a href="./publishers/196.html">O'Reilly</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/140.html">O'Reilly Media</a> (4)</li>
       
          
          <li class="pb-3"><a href="./publishers/85.html">One World</a> (1)</li>
@@ -951,6 +609,12 @@
          <li class="pb-3"><a href="./publishers/129.html">Oxford University Press</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./publishers/198.html">Packt Publishing</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/205.html">Packt Publishing Ltd</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./publishers/120.html">Pan Books</a> (1)</li>
       
          
@@ -958,6 +622,9 @@
       
          
          <li class="pb-3"><a href="./publishers/39.html">Peanut Butter Publishing</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/211.html">Penguin</a> (1)</li>
       
          
          <li class="pb-3"><a href="./publishers/150.html">Penguin Press</a> (4)</li>
@@ -981,13 +648,16 @@
          <li class="pb-3"><a href="./publishers/65.html">Pottermore</a> (8)</li>
       
          
-         <li class="pb-3"><a href="./publishers/8.html">Pragmatic Bookshelf</a> (1)</li>
+         <li class="pb-3"><a href="./publishers/8.html">Pragmatic Bookshelf</a> (5)</li>
       
          
          <li class="pb-3"><a href="./publishers/193.html">Random House</a> (4)</li>
       
          
          <li class="pb-3"><a href="./publishers/133.html">Random House Publishing Group</a> (2)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/199.html">Razeware LLC</a> (1)</li>
       
          
          <li class="pb-3"><a href="./publishers/83.html">Repeater Books</a> (1)</li>
@@ -1003,6 +673,12 @@
       
          
          <li class="pb-3"><a href="./publishers/22.html">Simon & Schuster</a> (6)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/197.html">Simon and Schuster</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./publishers/204.html">Sonic Workflow</a> (1)</li>
       
          
          <li class="pb-3"><a href="./publishers/103.html">Spectrum</a> (2)</li>
@@ -1041,7 +717,7 @@
          <li class="pb-3"><a href="./publishers/95.html">W. W. Norton Company</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./publishers/29.html">Wiley</a> (1)</li>
+         <li class="pb-3"><a href="./publishers/29.html">Wiley</a> (2)</li>
       
          
          <li class="pb-3"><a href="./publishers/53.html">William Morrow</a> (2)</li>

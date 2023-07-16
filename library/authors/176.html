@@ -202,189 +202,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
                 <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
@@ -517,189 +334,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
                     </nav>
                   </div>
                 </div>
@@ -708,1441 +342,383 @@
          
             <div class="w-full overflow-hidden">
                 
-   <div x-data="{activeTab:'tabCards', books:[]}">
-      <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Authors > Jack Cohen (4)</div>
-         <div class="flex flex-row">
-            <button
-               @click="activeTab = 'tabCards'"
-               :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+<div x-data="{activeTab:'tabCards'}">
+   <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
+      <div class="font-medium text-base">Authors > Jack Cohen (4)</div>
+      <div class="flex flex-row">
+         <button @click="activeTab = 'tabCards'"
+            :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
+         </button>
+         <button @click="activeTab = 'tabList'"
+            :class="activeTab === 'tabList' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+            </svg>
+         </button>
+      </div class="max-w">
+   </div>
+
+   <div class="pt-5">
+      <div x-data='tables.initGrid([{"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe acclaimed Science of Discworld centred around an original Pratchett story about the Wizards of Discworld. In it they accidentally witnessed the creation and evolution of our universe, a plot which was interleaved with a Cohen \u0026amp; Stewart non-fiction narrative about Big Science. In The Science of Discworld II our authors join forces again to see just what happens when the wizards meddle with history in a battle against the elves for the future of humanity on Earth. London is replaced by a dozy Neanderthal village. The Renaissance is given a push. The role of fat women in art is developed. And one very famous playwright gets born and writes The Play. Weaving together a fast-paced Discworld novelette with cutting-edge scientific commentary on the evolution and development of the human mind, culture, language, art, and science, this is a book in which \u0027the hard science is as gripping as the fiction\u0027. ( The Times )\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 332, "identifier_ids": "1095,1094,1096,1093", "identifiers": [{"book": 332, "id": 1093, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781407022611", "sort": "isbn", "type": "isbn", "val": "9781407022611"}, {"book": 332, "id": 1096, "name": "Google Books", "path": "https://books.google.com/books?id=MyozhndBMZkC", "sort": "google", "type": "google", "val": "MyozhndBMZkC"}, {"book": 332, "id": 1094, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/17425912", "sort": "goodreads", "type": "goodreads", "val": "17425912"}, {"book": 332, "id": 1095, "name": "Amazon", "path": "https://amazon.com/dp/140702261X", "sort": "amazon", "type": "amazon", "val": "140702261X"}], "isbn": "9781407022611", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2023-05-02 21:12:03.948771+00:00", "path": "Terry Pratchett/The Science of Discworld II_ The Gl (332)", "pubdate": "2002-01-01", "publisher_ids": "193", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 193, "name": "Random House", "sort": "Random House"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 528675, "tag_ids": "42,62,75,76", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.914285714285715, "count": 55, "id": 42, "name": "Humour", "sort": 55}, {"avg_rating": 7.833333333333333, "count": 12, "id": 62, "name": "Philosophy", "sort": 12}], "timestamp": "2023-05-02 21:12:03.948771+00:00", "title": "The Science of Discworld II: The Globe"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRoundworld is in trouble again, and this time it looks fatal. Having created it in the first place, the wizards of Unseen Univeristy feel vaguely responsible for its safety. They know the creatures who lived there escaped the impending Big Freeze by inventing the space elevator - they even intervened to rid the planet of a plague of elves, who attempted to divert humanity onto a different time track. But now it\u0027s all gone wrong - Victorian England has stagnated and the pace of progress would embarrass a limping snail. Unless something drastic is done, there won\u0027t be time for anyone to invent spaceflight and the human race will be turned into ice-pops.\u003c/p\u003e\n\u003cp\u003eWhy, though, did history come adrift? Was it Sir Arthur Nightingale\u0027s dismal book about natural selection? Or was it the devastating response by an obscure country vicar called Charles Darwin, whose bestselling Theology of Species made it impossible to refute the divine design of living creatures? Either way, it\u0027s no easy task to change history, as the wizards discover to their cost. Can the God of Evolution come to humanity\u0027s aid and ensure Darwin writes a very different book? And who stopped him writing it in the first place?\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 331, "identifier_ids": "1097,1098", "identifiers": [{"book": 331, "id": 1098, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781407022697", "sort": "isbn", "type": "isbn", "val": "9781407022697"}, {"book": 331, "id": 1097, "name": "Google Books", "path": "https://books.google.com/books?id=KthSyQRYucgC", "sort": "google", "type": "google", "val": "KthSyQRYucgC"}], "isbn": "9781407022697", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2023-05-02 21:12:03.669521+00:00", "path": "Terry Pratchett/The Science of Discworld III_ Darwi (331)", "pubdate": "2011-06-30", "publisher_ids": "193", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 193, "name": "Random House", "sort": "Random House"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 708106, "tag_ids": "58,60,136,333,334,335", "tags": [{"avg_rating": 8.454545454545455, "count": 24, "id": 60, "name": "History", "sort": 24}, {"avg_rating": 8.4, "count": 12, "id": 58, "name": "Science", "sort": 12}, {"avg_rating": null, "count": 2, "id": 136, "name": "Life Sciences", "sort": 2}, {"avg_rating": null, "count": 1, "id": 333, "name": "Essays", "sort": 1}, {"avg_rating": null, "count": 1, "id": 334, "name": "Evolution", "sort": 1}, {"avg_rating": null, "count": 1, "id": 335, "name": "Social History", "sort": 1}], "timestamp": "2023-05-02 21:12:03.669521+00:00", "title": "The Science of Discworld III: Darwin\u0027s Watch"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe fourth book in the Science of Discworld series, and this time around dealing with THE REALLY BIG QUESTIONS, Terry Pratchett\u2019s brilliant new Discworld story Judgement Day is annotated with very big footnotes (the interleaving chapters) by mathematician Ian Stewart and biologist Jack Cohen, to bring you a mind-mangling combination of fiction, cutting-edge science and philosophy.\u003c/p\u003e\n\u003cp\u003eMarjorie Daw is a librarian, and takes her job \u2013 and indeed the truth of words \u2013 very seriously. She doesn\u2019t know it, but her world and ours \u2013 Roundworld \u2013 is in big trouble. On Discworld, a colossal row is brewing\u2026\u003c/p\u003e\n\u003cp\u003eThe Wizards of Unseen University feel responsible for Roundworld (as one would for a pet gerbil). After all, they brought it into existence by bungling an experiment in Quantum ThaumoDynamics. But legal action is being brought against them by Omnians, who say that the Wizards\u2019 god-like actions make a mockery of their noble religion.\u003c/p\u003e\n\u003cp\u003eAs the finest legal brains in Discworld (a zombie and a priest) gird their loins to do battle \u2013 and when the Great Big Thing in the High Energy Magic Laboratory is switched on \u2013 Marjorie Daw finds herself thrown across the multiverse and right in the middle of the whole explosive affair.\u003c/p\u003e\n\u003cp\u003eAs God, the Universe and, frankly, Everything Else is investigated by the trio, you can expect world-bearing elephants, quantum gravity in the Escher-verse, evolutionary design, eternal inflation, dark matter, disbelief systems \u2013 and an in-depth study of how to invent a better mousetrap.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 330, "identifier_ids": "1102,1099,1100,1101", "identifiers": [{"book": 330, "id": 1101, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448147052", "sort": "isbn", "type": "isbn", "val": "9781448147052"}, {"book": 330, "id": 1100, "name": "Google Books", "path": "https://books.google.com/books?id=rIUUbB8g9O4C", "sort": "google", "type": "google", "val": "rIUUbB8g9O4C"}, {"book": 330, "id": 1099, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/17615188", "sort": "goodreads", "type": "goodreads", "val": "17615188"}, {"book": 330, "id": 1102, "name": "Amazon", "path": "https://amazon.com/dp/1448147050", "sort": "amazon", "type": "amazon", "val": "1448147050"}], "isbn": "9781448147052", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2023-05-02 21:12:03.339401+00:00", "path": "Terry Pratchett/The Science of Discworld IV_ Judgem (330)", "pubdate": "2013-04-11", "publisher_ids": "193", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 193, "name": "Random House", "sort": "Random House"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 782012, "tag_ids": "42,62,75,76", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.914285714285715, "count": 55, "id": 42, "name": "Humour", "sort": 55}, {"avg_rating": 7.833333333333333, "count": 12, "id": 62, "name": "Philosophy", "sort": 12}], "timestamp": "2023-05-02 21:12:03.339401+00:00", "title": "The Science of Discworld IV: Judgement Day"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe fantastic first book in the Sunday Times bestselling Science of Discworld series\u003c/p\u003e\n\u003cp\u003eWhen a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.\u003c/p\u003e\n\u003cp\u003eThe Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.\u003c/p\u003e\n\u003cp\u003eThrough this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.\u003c/p\u003e\n\u003cp\u003eTerry Pratchett is the acclaimed creator of the global bestselling Discworld series, the first of which, The Colour of Magic , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.\u003c/p\u003e\n\u003cp\u003ewww.terrypratchett.co.uk\u003cbr\u003e@terryandrob\u003c/p\u003e\n\u003cp\u003eProfessor Ian Stewart is the author of many popular science books. He is the mathematics consultant for New Scientist and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.\u003c/p\u003e\n\u003cp\u003eDr Jack Cohen is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 171, "identifier_ids": "564,563,562", "identifiers": [{"book": 171, "id": 562, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448176670", "sort": "isbn", "type": "isbn", "val": "9781448176670"}, {"book": 171, "id": 563, "name": "Google Books", "path": "https://books.google.com/books?id=Q1x0852ip1wC", "sort": "google", "type": "google", "val": "Q1x0852ip1wC"}, {"book": 171, "id": 564, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/233674", "sort": "goodreads", "type": "goodreads", "val": "233674"}], "isbn": "9781448176670", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2022-10-06 09:40:30.078477+00:00", "path": "Terry Pratchett/The Science of Discworld (171)", "pubdate": "1999-01-01", "publisher_ids": "116", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 116, "name": "Ebury Press", "sort": "Ebury Press"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 339560, "tag_ids": "42,62,75,76,177", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.914285714285715, "count": 55, "id": 42, "name": "Humour", "sort": 55}, {"avg_rating": 7.833333333333333, "count": 12, "id": 62, "name": "Philosophy", "sort": 12}, {"avg_rating": 8.0, "count": 2, "id": 177, "name": "Reference", "sort": 2}], "timestamp": "2022-10-06 09:40:30.078477+00:00", "title": "The Science of Discworld"}])' x-show="activeTab === 'tabCards'"
+         x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div class="flex justify-end">
+            <input x-ref="searchField" x-model="search" x-on:click="viewPage(0)"
+               x-on:keydown.window.prevent.slash=" viewPage(0), $refs.searchField.focus()"
+               placeholder="Search for a book .." type="search"
+               class="appearance-none rounded-lg border border-slate-300 px-3 py-2 font-medium outline-none dark:border-navy-450 dark:bg-navy-700 dark:text-navy-100" />
+         </div>
+         <div class="pt-5 book-cards">
+            <template x-for="book in filteredBooks" :key="book.id">
+               <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+                  <div class="flex relative">
+                     <img
+                        :src="book.has_cover ? '/library/images/covers/' + book.id + '.jpg' : '/library/images/covers/no_cover.jpg'"
+                        :alt="book.title"
+                        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+                        @click="showModal = true">
+                     <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+                        <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap" x-text="book.title">
+                        </div>
+
+                        <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by
+                           <template x-for="author in book.authors" :key="author.id">
+                              <a class="underline decoration-solid"
+                                 :href="'/library/authors/' + author.id + '.html'" x-text="author.name"></a>
+                           </template>
+                        </p>
+
+                        <div class="whitespace-nowrap mt-2 text-slate-300">
+                           <template x-for="r in 5">
+                              <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                 :class="{'text-orange-500': r < book.rating}" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24" fill="currentColor">
+                                 <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                           </template>
+                        </div>
+
+                        <div class="hidden sm:inline-block">
+                           <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4" x-html="book.comments"></div>
+                        </div>
+
+                        <div class="mt-4">
+                           <template x-if="book.custom_read_date">
+                              <div class="space-x-2 badge rounded-full border text-green-400 border-green-400">
+                                 <span>Read</span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                 </svg>
+                              </div>
+                           </template>
+                           <div
+                              class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="showModal = true">
+                              <span>Learn More</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <template x-teleport="#x-teleport-target">
+                     <div
+                        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+                        x-show="showModal" role="dialog" @keydown.window.escape="showModal = false">
+                        <div class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+                           @click="showModal = false" x-show="showModal" x-transition:enter="ease-out"
+                           x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                           x-transition:leave="ease-in" x-transition:leave-start="opacity-100"
+                           x-transition:leave-end="opacity-0"></div>
+                        <div
+                           class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+                           x-show="showModal" x-transition:enter="ease-out" x-transition:enter-start="opacity-0"
+                           x-transition:enter-end="opacity-100" x-transition:leave="ease-in"
+                           x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                           <div
+                              class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+                              <div class="col-span-12 hidden lg:block lg:col-span-4 bg-cover bg-left rounded-l-lg"
+                                 :class="book.has_cover ? 'bg-[url(\'/library/images/covers/' + book.id + '.jpg\')]' : 'bg-[url(\'/library/images/covers/no_cover.jpg\')]'">
+                              </div>
+                              <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+                                 <h1 class="pb-4 ml-0 text-3xl font-semibold" x-text="book.title">
+                                 </h1>
+
+                                 <table class="w-full text-left align-top">
+                                    <tbody>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Authors:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="author in book.authors" :key="author.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/authors/' + author.id + '.html'"
+                                                   x-text="author.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Series:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="series in book.series" :key="series.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/series/' + series.id + '.html'"
+                                                   x-text="series.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publishers:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="publisher in book.publishers" :key="publisher.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/publishers/' + publisher.id + '.html'"
+                                                   x-text="publisher.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publish Date:
+                                          </td>
+                                          <td class="space-x-1" x-text="book.pubdate">
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Languages:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="language in book.languages" :key="language.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/languages/' + language.id + '.html'"
+                                                   x-text="language.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <template x-if="book.isbn">
+                                          <tr>
+                                             <td class="whitespace-nowrap font-semibold">
+                                                ISBN:
+                                             </td>
+                                             <td class="">
+                                                <div class="flex items-center">
+                                                   <p class="text-xs px-1 border border-slate-400 rounded-md"
+                                                      id="clipboardISBN" x-text="book.isbn">
+                                                   </p>
+                                                   <button
+                                                      class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                                                      @click="$clipboard({
+                                      content:document.querySelector('#clipboardISBN').innerText,
+                                      success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                      error:()=>$notification({text:'Error',variant:'error'})
+                                    })">
+                                                      Copy
+                                                   </button>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </template>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Rating:
+                                          </td>
+                                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                                             <template x-for="r in 5">
+                                                <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                                   :class="{'text-orange-500': r < book.rating}"
+                                                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                   fill="currentColor">
+                                                   <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                      clip-rule="evenodd" />
+                                                </svg>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="pt-1 whitespace-nowrap font-semibold">
+                                             Tags:
+                                          </td>
+                                          <td class="pt-1 space-x-1 space-y-1">
+                                             <template x-for="tag in book.tags" :key="tag.id">
+                                                <a class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                                                   :href="'/library/tags/' + tag.id + '.html'"
+                                                   x-text="tag.name">
+                                                </a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+
+                                 <p class="pt-4 pb-1 font-semibold">Description:</p>
+                                 <div x-init="$nextTick(() => { $el._x_simplebar = new SimpleBar($el) })"
+                                    class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 h-36 text-gray-500 text-justify"
+                                    x-html="book.comments">
+                                 </div>
+
+                                 <template x-if="book.identifiers">
+                                    <div>
+                                       <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                                       <div class="space-x-1 space-y-1">
+                                          <template x-for="identifier in book.identifiers" :key="identifier.id">
+                                             <a href="`${identifier.path}`" target="_blank"
+                                                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                                                x-text="identifier.name">
+                                             </a>
+                                          </template>
+                                       </div>
+                                    </div>
+                                 </template>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </template>
+               </div>
+            </template>
+         </div>
+
+         <div
+            class="mt-6 w-full md:w-1/2 mx-auto py-6 flex justify-between items-center text-slate-600 dark:text-slate-300"
+            x-show="pageCount() > 1">
+            <!--First Button-->
+            <button x-on:click="viewPage(0)" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="19 20 9 12 19 4 19 20"></polygon>
+                  <line x1="5" y1="19" x2="5" y2="5"></line>
                </svg>
             </button>
-            <button
-               @click="activeTab = 'tabTable'"
-               :class="activeTab === 'tabTable' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+
+            <!--Previous Button-->
+            <button x-on:click="prevPage" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
                </svg>
             </button>
-         </div class="max-w">
-      </div>
 
-      <div class="pt-10">
-         <div
-            x-show="activeTab === 'tabCards'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-            class="book-cards"
-         >
-            
-               
-                  
-  
+            <!-- Display page numbers -->
+            <div class="flex flex-wrap space-x-1">
+               <template x-if="pageNumber < 9">
+                  <template x-for="index in 9" :key="index">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors"
+                        :class="index - 1 === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(index - 1)">
+                        <span x-text="index"></span>
+                     </button>
+                  </template>
+               </template>
 
+               <!-- show eclipses -->
+               <template x-if="pageNumber < 9 && pages().length > 9">
+                  <button
+                     class="flex h-8 min-w-[2rem] items-center justify-center rounded-full bg-slate-150 px-3 leading-tight transition-colors hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450"
+                     type="button" x-on:click="viewPage(9)">
+                     <span>..</span>
+                  </button>
+               </template>
 
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/332.jpg"
-        alt="The Science of Discworld II: The Globe"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Science of Discworld II: The Globe
+               <!-- show pageNumber +/- 4 -->
+               <template x-if="pageNumber >= 9">
+                  <template
+                     x-for="(page, index) in [pageNumber - 4,pageNumber - 3,pageNumber - 2,pageNumber - 1, pageNumber, pageNumber + 1, pageNumber + 2, pageNumber + 3, pageNumber + 4]"
+                     :key="page">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors focus:bg-slate-300 dark:focus:bg-navy-450"
+                        :class="page === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(page)">
+                        <span x-text="page+1"></span>
+                     </button>
+                  </template>
+               </template>
             </div>
 
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>The acclaimed Science of Discworld centred around an original Pratchett story about the Wizards of Discworld. In it they accidentally witnessed the creation and evolution of our universe, a plot which was interleaved with a Cohen &amp; Stewart non-fiction narrative about Big Science. In The Science of Discworld II our authors join forces again to see just what happens when the wizards meddle with history in a battle against the elves for the future of humanity on Earth. London is replaced by a dozy Neanderthal village. The Renaissance is given a push. The role of fat women in art is developed. And one very famous playwright gets born and writes The Play. Weaving together a fast-paced Discworld novelette with cutting-edge scientific commentary on the evolution and development of the human mind, culture, language, art, and science, this is a book in which 'the hard science is as gripping as the fiction'. ( The Times )</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            <!--Next Button-->
+            <button x-on:click="nextPage" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
                </svg>
-              </div>
-            </div>
-       </div>
-    </div>
+            </button>
 
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/332.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Science of Discworld II: The Globe
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/series/21.html">The Science of Discworld</a>
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/193.html">Random House</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2002-01-01
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9781407022611</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/76.html">
-                                Fantasy
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/75.html">
-                                Science Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/42.html">
-                                Humour
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/62.html">
-                                Philosophy
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>The acclaimed Science of Discworld centred around an original Pratchett story about the Wizards of Discworld. In it they accidentally witnessed the creation and evolution of our universe, a plot which was interleaved with a Cohen &amp; Stewart non-fiction narrative about Big Science. In The Science of Discworld II our authors join forces again to see just what happens when the wizards meddle with history in a battle against the elves for the future of humanity on Earth. London is replaced by a dozy Neanderthal village. The Renaissance is given a push. The role of fat women in art is developed. And one very famous playwright gets born and writes The Play. Weaving together a fast-paced Discworld novelette with cutting-edge scientific commentary on the evolution and development of the human mind, culture, language, art, and science, this is a book in which 'the hard science is as gripping as the fiction'. ( The Times )</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9781407022611" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=MyozhndBMZkC" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/17425912" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/140702261X" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/331.jpg"
-        alt="The Science of Discworld III: Darwin's Watch"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Science of Discworld III: Darwin's Watch
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>Roundworld is in trouble again, and this time it looks fatal. Having created it in the first place, the wizards of Unseen Univeristy feel vaguely responsible for its safety. They know the creatures who lived there escaped the impending Big Freeze by inventing the space elevator - they even intervened to rid the planet of a plague of elves, who attempted to divert humanity onto a different time track. But now it's all gone wrong - Victorian England has stagnated and the pace of progress would embarrass a limping snail. Unless something drastic is done, there won't be time for anyone to invent spaceflight and the human race will be turned into ice-pops.</p>
-<p>Why, though, did history come adrift? Was it Sir Arthur Nightingale's dismal book about natural selection? Or was it the devastating response by an obscure country vicar called Charles Darwin, whose bestselling Theology of Species made it impossible to refute the divine design of living creatures? Either way, it's no easy task to change history, as the wizards discover to their cost. Can the God of Evolution come to humanity's aid and ensure Darwin writes a very different book? And who stopped him writing it in the first place?</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            <!--Last Button-->
+            <button x-on:click="viewPage(Math.ceil(total/size)-1)" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                  <line x1="19" y1="5" x2="19" y2="19"></line>
                </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/331.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Science of Discworld III: Darwin's Watch
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/series/21.html">The Science of Discworld</a>
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/193.html">Random House</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2011-06-30
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9781407022697</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/60.html">
-                                History
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/58.html">
-                                Science
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/136.html">
-                                Life Sciences
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/333.html">
-                                Essays
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/334.html">
-                                Evolution
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/335.html">
-                                Social History
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>Roundworld is in trouble again, and this time it looks fatal. Having created it in the first place, the wizards of Unseen Univeristy feel vaguely responsible for its safety. They know the creatures who lived there escaped the impending Big Freeze by inventing the space elevator - they even intervened to rid the planet of a plague of elves, who attempted to divert humanity onto a different time track. But now it's all gone wrong - Victorian England has stagnated and the pace of progress would embarrass a limping snail. Unless something drastic is done, there won't be time for anyone to invent spaceflight and the human race will be turned into ice-pops.</p>
-<p>Why, though, did history come adrift? Was it Sir Arthur Nightingale's dismal book about natural selection? Or was it the devastating response by an obscure country vicar called Charles Darwin, whose bestselling Theology of Species made it impossible to refute the divine design of living creatures? Either way, it's no easy task to change history, as the wizards discover to their cost. Can the God of Evolution come to humanity's aid and ensure Darwin writes a very different book? And who stopped him writing it in the first place?</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9781407022697" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=KthSyQRYucgC" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/330.jpg"
-        alt="The Science of Discworld IV: Judgement Day"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Science of Discworld IV: Judgement Day
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>The fourth book in the Science of Discworld series, and this time around dealing with THE REALLY BIG QUESTIONS, Terry Pratchett’s brilliant new Discworld story Judgement Day is annotated with very big footnotes (the interleaving chapters) by mathematician Ian Stewart and biologist Jack Cohen, to bring you a mind-mangling combination of fiction, cutting-edge science and philosophy.</p>
-<p>Marjorie Daw is a librarian, and takes her job – and indeed the truth of words – very seriously. She doesn’t know it, but her world and ours – Roundworld – is in big trouble. On Discworld, a colossal row is brewing…</p>
-<p>The Wizards of Unseen University feel responsible for Roundworld (as one would for a pet gerbil). After all, they brought it into existence by bungling an experiment in Quantum ThaumoDynamics. But legal action is being brought against them by Omnians, who say that the Wizards’ god-like actions make a mockery of their noble religion.</p>
-<p>As the finest legal brains in Discworld (a zombie and a priest) gird their loins to do battle – and when the Great Big Thing in the High Energy Magic Laboratory is switched on – Marjorie Daw finds herself thrown across the multiverse and right in the middle of the whole explosive affair.</p>
-<p>As God, the Universe and, frankly, Everything Else is investigated by the trio, you can expect world-bearing elephants, quantum gravity in the Escher-verse, evolutionary design, eternal inflation, dark matter, disbelief systems – and an in-depth study of how to invent a better mousetrap.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-               </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/330.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Science of Discworld IV: Judgement Day
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/series/21.html">The Science of Discworld</a>
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/193.html">Random House</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2013-04-11
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9781448147052</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/76.html">
-                                Fantasy
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/75.html">
-                                Science Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/42.html">
-                                Humour
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/62.html">
-                                Philosophy
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>The fourth book in the Science of Discworld series, and this time around dealing with THE REALLY BIG QUESTIONS, Terry Pratchett’s brilliant new Discworld story Judgement Day is annotated with very big footnotes (the interleaving chapters) by mathematician Ian Stewart and biologist Jack Cohen, to bring you a mind-mangling combination of fiction, cutting-edge science and philosophy.</p>
-<p>Marjorie Daw is a librarian, and takes her job – and indeed the truth of words – very seriously. She doesn’t know it, but her world and ours – Roundworld – is in big trouble. On Discworld, a colossal row is brewing…</p>
-<p>The Wizards of Unseen University feel responsible for Roundworld (as one would for a pet gerbil). After all, they brought it into existence by bungling an experiment in Quantum ThaumoDynamics. But legal action is being brought against them by Omnians, who say that the Wizards’ god-like actions make a mockery of their noble religion.</p>
-<p>As the finest legal brains in Discworld (a zombie and a priest) gird their loins to do battle – and when the Great Big Thing in the High Energy Magic Laboratory is switched on – Marjorie Daw finds herself thrown across the multiverse and right in the middle of the whole explosive affair.</p>
-<p>As God, the Universe and, frankly, Everything Else is investigated by the trio, you can expect world-bearing elephants, quantum gravity in the Escher-verse, evolutionary design, eternal inflation, dark matter, disbelief systems – and an in-depth study of how to invent a better mousetrap.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9781448147052" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=rIUUbB8g9O4C" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/17615188" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/1448147050" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/171.jpg"
-        alt="The Science of Discworld"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Science of Discworld
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>The fantastic first book in the Sunday Times bestselling Science of Discworld series</p>
-<p>When a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.</p>
-<p>The Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.</p>
-<p>Through this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.</p>
-<p>Terry Pratchett is the acclaimed creator of the global bestselling Discworld series, the first of which, The Colour of Magic , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.</p>
-<p>www.terrypratchett.co.uk<br>@terryandrob</p>
-<p>Professor Ian Stewart is the author of many popular science books. He is the mathematics consultant for New Scientist and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.</p>
-<p>Dr Jack Cohen is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-               </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/171.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Science of Discworld
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/176.html">Jack Cohen</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/174.html">Terry Pratchett</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/184.html">Ian Stewart</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/series/21.html">The Science of Discworld</a>
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/116.html">Ebury Press</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            1999-01-01
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9781448176670</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/76.html">
-                                Fantasy
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/75.html">
-                                Science Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/42.html">
-                                Humour
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/62.html">
-                                Philosophy
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/177.html">
-                                Reference
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>The fantastic first book in the Sunday Times bestselling Science of Discworld series</p>
-<p>When a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.</p>
-<p>The Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.</p>
-<p>Through this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.</p>
-<p>Terry Pratchett is the acclaimed creator of the global bestselling Discworld series, the first of which, The Colour of Magic , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.</p>
-<p>www.terrypratchett.co.uk<br>@terryandrob</p>
-<p>Professor Ian Stewart is the author of many popular science books. He is the mathematics consultant for New Scientist and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.</p>
-<p>Dr Jack Cohen is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9781448176670" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=Q1x0852ip1wC" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/233674" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
+            </button>
          </div>
-         <div
-            x-show="activeTab === 'tabTable'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-         >
-            <div x-data='tables.initGridTable([{"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe acclaimed Science of Discworld centred around an original Pratchett story about the Wizards of Discworld. In it they accidentally witnessed the creation and evolution of our universe, a plot which was interleaved with a Cohen \u0026amp; Stewart non-fiction narrative about Big Science. In The Science of Discworld II our authors join forces again to see just what happens when the wizards meddle with history in a battle against the elves for the future of humanity on Earth. London is replaced by a dozy Neanderthal village. The Renaissance is given a push. The role of fat women in art is developed. And one very famous playwright gets born and writes The Play. Weaving together a fast-paced Discworld novelette with cutting-edge scientific commentary on the evolution and development of the human mind, culture, language, art, and science, this is a book in which \u0027the hard science is as gripping as the fiction\u0027. ( The Times )\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 332, "identifier_ids": "1095,1094,1096,1093", "identifiers": [{"book": 332, "id": 1093, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781407022611", "sort": "isbn", "type": "isbn", "val": "9781407022611"}, {"book": 332, "id": 1096, "name": "Google Books", "path": "https://books.google.com/books?id=MyozhndBMZkC", "sort": "google", "type": "google", "val": "MyozhndBMZkC"}, {"book": 332, "id": 1094, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/17425912", "sort": "goodreads", "type": "goodreads", "val": "17425912"}, {"book": 332, "id": 1095, "name": "Amazon", "path": "https://amazon.com/dp/140702261X", "sort": "amazon", "type": "amazon", "val": "140702261X"}], "isbn": "9781407022611", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2023-05-02 21:12:03.948771+00:00", "path": "Terry Pratchett/The Science of Discworld II_ The Gl (332)", "pubdate": "2002-01-01", "publisher_ids": "193", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 193, "name": "Random House", "sort": "Random House"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 528675, "tag_ids": "42,62,75,76", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 85, "id": 75, "name": "Science Fiction", "sort": 85}, {"avg_rating": 8.914285714285715, "count": 55, "id": 42, "name": "Humour", "sort": 55}, {"avg_rating": 7.833333333333333, "count": 12, "id": 62, "name": "Philosophy", "sort": 12}], "timestamp": "2023-05-02 21:12:03.948771+00:00", "title": "The Science of Discworld II: The Globe"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRoundworld is in trouble again, and this time it looks fatal. Having created it in the first place, the wizards of Unseen Univeristy feel vaguely responsible for its safety. They know the creatures who lived there escaped the impending Big Freeze by inventing the space elevator - they even intervened to rid the planet of a plague of elves, who attempted to divert humanity onto a different time track. But now it\u0027s all gone wrong - Victorian England has stagnated and the pace of progress would embarrass a limping snail. Unless something drastic is done, there won\u0027t be time for anyone to invent spaceflight and the human race will be turned into ice-pops.\u003c/p\u003e\n\u003cp\u003eWhy, though, did history come adrift? Was it Sir Arthur Nightingale\u0027s dismal book about natural selection? Or was it the devastating response by an obscure country vicar called Charles Darwin, whose bestselling Theology of Species made it impossible to refute the divine design of living creatures? Either way, it\u0027s no easy task to change history, as the wizards discover to their cost. Can the God of Evolution come to humanity\u0027s aid and ensure Darwin writes a very different book? And who stopped him writing it in the first place?\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 331, "identifier_ids": "1097,1098", "identifiers": [{"book": 331, "id": 1098, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781407022697", "sort": "isbn", "type": "isbn", "val": "9781407022697"}, {"book": 331, "id": 1097, "name": "Google Books", "path": "https://books.google.com/books?id=KthSyQRYucgC", "sort": "google", "type": "google", "val": "KthSyQRYucgC"}], "isbn": "9781407022697", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2023-05-02 21:12:03.669521+00:00", "path": "Terry Pratchett/The Science of Discworld III_ Darwi (331)", "pubdate": "2011-06-30", "publisher_ids": "193", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 193, "name": "Random House", "sort": "Random House"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 708106, "tag_ids": "58,60,136,333,334,335", "tags": [{"avg_rating": 8.454545454545455, "count": 24, "id": 60, "name": "History", "sort": 24}, {"avg_rating": 8.4, "count": 12, "id": 58, "name": "Science", "sort": 12}, {"avg_rating": null, "count": 2, "id": 136, "name": "Life Sciences", "sort": 2}, {"avg_rating": null, "count": 1, "id": 333, "name": "Essays", "sort": 1}, {"avg_rating": null, "count": 1, "id": 334, "name": "Evolution", "sort": 1}, {"avg_rating": null, "count": 1, "id": 335, "name": "Social History", "sort": 1}], "timestamp": "2023-05-02 21:12:03.669521+00:00", "title": "The Science of Discworld III: Darwin\u0027s Watch"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe fourth book in the Science of Discworld series, and this time around dealing with THE REALLY BIG QUESTIONS, Terry Pratchett\u2019s brilliant new Discworld story Judgement Day is annotated with very big footnotes (the interleaving chapters) by mathematician Ian Stewart and biologist Jack Cohen, to bring you a mind-mangling combination of fiction, cutting-edge science and philosophy.\u003c/p\u003e\n\u003cp\u003eMarjorie Daw is a librarian, and takes her job \u2013 and indeed the truth of words \u2013 very seriously. She doesn\u2019t know it, but her world and ours \u2013 Roundworld \u2013 is in big trouble. On Discworld, a colossal row is brewing\u2026\u003c/p\u003e\n\u003cp\u003eThe Wizards of Unseen University feel responsible for Roundworld (as one would for a pet gerbil). After all, they brought it into existence by bungling an experiment in Quantum ThaumoDynamics. But legal action is being brought against them by Omnians, who say that the Wizards\u2019 god-like actions make a mockery of their noble religion.\u003c/p\u003e\n\u003cp\u003eAs the finest legal brains in Discworld (a zombie and a priest) gird their loins to do battle \u2013 and when the Great Big Thing in the High Energy Magic Laboratory is switched on \u2013 Marjorie Daw finds herself thrown across the multiverse and right in the middle of the whole explosive affair.\u003c/p\u003e\n\u003cp\u003eAs God, the Universe and, frankly, Everything Else is investigated by the trio, you can expect world-bearing elephants, quantum gravity in the Escher-verse, evolutionary design, eternal inflation, dark matter, disbelief systems \u2013 and an in-depth study of how to invent a better mousetrap.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 330, "identifier_ids": "1102,1099,1100,1101", "identifiers": [{"book": 330, "id": 1101, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448147052", "sort": "isbn", "type": "isbn", "val": "9781448147052"}, {"book": 330, "id": 1100, "name": "Google Books", "path": "https://books.google.com/books?id=rIUUbB8g9O4C", "sort": "google", "type": "google", "val": "rIUUbB8g9O4C"}, {"book": 330, "id": 1099, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/17615188", "sort": "goodreads", "type": "goodreads", "val": "17615188"}, {"book": 330, "id": 1102, "name": "Amazon", "path": "https://amazon.com/dp/1448147050", "sort": "amazon", "type": "amazon", "val": "1448147050"}], "isbn": "9781448147052", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2023-05-02 21:12:03.339401+00:00", "path": "Terry Pratchett/The Science of Discworld IV_ Judgem (330)", "pubdate": "2013-04-11", "publisher_ids": "193", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 193, "name": "Random House", "sort": "Random House"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 782012, "tag_ids": "42,62,75,76", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 85, "id": 75, "name": "Science Fiction", "sort": 85}, {"avg_rating": 8.914285714285715, "count": 55, "id": 42, "name": "Humour", "sort": 55}, {"avg_rating": 7.833333333333333, "count": 12, "id": 62, "name": "Philosophy", "sort": 12}], "timestamp": "2023-05-02 21:12:03.339401+00:00", "title": "The Science of Discworld IV: Judgement Day"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe fantastic first book in the Sunday Times bestselling Science of Discworld series\u003c/p\u003e\n\u003cp\u003eWhen a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.\u003c/p\u003e\n\u003cp\u003eThe Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.\u003c/p\u003e\n\u003cp\u003eThrough this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.\u003c/p\u003e\n\u003cp\u003eTerry Pratchett is the acclaimed creator of the global bestselling Discworld series, the first of which, The Colour of Magic , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.\u003c/p\u003e\n\u003cp\u003ewww.terrypratchett.co.uk\u003cbr\u003e@terryandrob\u003c/p\u003e\n\u003cp\u003eProfessor Ian Stewart is the author of many popular science books. He is the mathematics consultant for New Scientist and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.\u003c/p\u003e\n\u003cp\u003eDr Jack Cohen is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 171, "identifier_ids": "564,563,562", "identifiers": [{"book": 171, "id": 562, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448176670", "sort": "isbn", "type": "isbn", "val": "9781448176670"}, {"book": 171, "id": 563, "name": "Google Books", "path": "https://books.google.com/books?id=Q1x0852ip1wC", "sort": "google", "type": "google", "val": "Q1x0852ip1wC"}, {"book": 171, "id": 564, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/233674", "sort": "goodreads", "type": "goodreads", "val": "233674"}], "isbn": "9781448176670", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2022-10-06 09:40:30.078477+00:00", "path": "Terry Pratchett/The Science of Discworld (171)", "pubdate": "1999-01-01", "publisher_ids": "116", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 116, "name": "Ebury Press", "sort": "Ebury Press"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 339560, "tag_ids": "42,62,75,76,177", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 85, "id": 75, "name": "Science Fiction", "sort": 85}, {"avg_rating": 8.914285714285715, "count": 55, "id": 42, "name": "Humour", "sort": 55}, {"avg_rating": 7.833333333333333, "count": 12, "id": 62, "name": "Philosophy", "sort": 12}, {"avg_rating": 8.0, "count": 2, "id": 177, "name": "Reference", "sort": 2}], "timestamp": "2022-10-06 09:40:30.078477+00:00", "title": "The Science of Discworld"}])'></div>
+
+         <div>
+            <div class="mt-6 flex flex-wrap justify-between items-center text-sm leading-5 text-gray-700">
+               <div class="w-full sm:w-auto text-center sm:text-left" x-show="pageCount() > 1">
+                  Page <span x-text="pageNumber+1"> </span> of
+                  <span x-text="pageCount()"></span> | Showing
+                  <span x-text="startResults()"></span> to
+                  <span x-text="endResults()"></span>
+               </div>
+
+               <div class="w-full sm:w-auto text-center sm:text-right" x-show="total > 0">
+                  Total <span class="font-bold" x-text="total"></span> results
+               </div>
+
+               <!--Message to display when no results-->
+               <div class="mx-auto flex items-center font-bold text-red-500" x-show="total===0">
+                  <svg class="h-8 w-8 text-red-500" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                     fill="none" stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" />
+                     <circle cx="12" cy="12" r="9" />
+                     <line x1="9" y1="10" x2="9.01" y2="10" />
+                     <line x1="15" y1="10" x2="15.01" y2="10" />
+                     <path d="M9.5 16a10 10 0 0 1 6 -1.5" />
+                  </svg>
+
+                  <span class="ml-4">No results.</span>
+               </div>
+            </div>
          </div>
+
+      </div>
+      <div x-show="activeTab === 'tabList'" x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div x-data='tables.initList([{"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe acclaimed Science of Discworld centred around an original Pratchett story about the Wizards of Discworld. In it they accidentally witnessed the creation and evolution of our universe, a plot which was interleaved with a Cohen \u0026amp; Stewart non-fiction narrative about Big Science. In The Science of Discworld II our authors join forces again to see just what happens when the wizards meddle with history in a battle against the elves for the future of humanity on Earth. London is replaced by a dozy Neanderthal village. The Renaissance is given a push. The role of fat women in art is developed. And one very famous playwright gets born and writes The Play. Weaving together a fast-paced Discworld novelette with cutting-edge scientific commentary on the evolution and development of the human mind, culture, language, art, and science, this is a book in which \u0027the hard science is as gripping as the fiction\u0027. ( The Times )\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 332, "identifier_ids": "1095,1094,1096,1093", "identifiers": [{"book": 332, "id": 1093, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781407022611", "sort": "isbn", "type": "isbn", "val": "9781407022611"}, {"book": 332, "id": 1096, "name": "Google Books", "path": "https://books.google.com/books?id=MyozhndBMZkC", "sort": "google", "type": "google", "val": "MyozhndBMZkC"}, {"book": 332, "id": 1094, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/17425912", "sort": "goodreads", "type": "goodreads", "val": "17425912"}, {"book": 332, "id": 1095, "name": "Amazon", "path": "https://amazon.com/dp/140702261X", "sort": "amazon", "type": "amazon", "val": "140702261X"}], "isbn": "9781407022611", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2023-05-02 21:12:03.948771+00:00", "path": "Terry Pratchett/The Science of Discworld II_ The Gl (332)", "pubdate": "2002-01-01", "publisher_ids": "193", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 193, "name": "Random House", "sort": "Random House"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 528675, "tag_ids": "42,62,75,76", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.914285714285715, "count": 55, "id": 42, "name": "Humour", "sort": 55}, {"avg_rating": 7.833333333333333, "count": 12, "id": 62, "name": "Philosophy", "sort": 12}], "timestamp": "2023-05-02 21:12:03.948771+00:00", "title": "The Science of Discworld II: The Globe"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eRoundworld is in trouble again, and this time it looks fatal. Having created it in the first place, the wizards of Unseen Univeristy feel vaguely responsible for its safety. They know the creatures who lived there escaped the impending Big Freeze by inventing the space elevator - they even intervened to rid the planet of a plague of elves, who attempted to divert humanity onto a different time track. But now it\u0027s all gone wrong - Victorian England has stagnated and the pace of progress would embarrass a limping snail. Unless something drastic is done, there won\u0027t be time for anyone to invent spaceflight and the human race will be turned into ice-pops.\u003c/p\u003e\n\u003cp\u003eWhy, though, did history come adrift? Was it Sir Arthur Nightingale\u0027s dismal book about natural selection? Or was it the devastating response by an obscure country vicar called Charles Darwin, whose bestselling Theology of Species made it impossible to refute the divine design of living creatures? Either way, it\u0027s no easy task to change history, as the wizards discover to their cost. Can the God of Evolution come to humanity\u0027s aid and ensure Darwin writes a very different book? And who stopped him writing it in the first place?\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 331, "identifier_ids": "1097,1098", "identifiers": [{"book": 331, "id": 1098, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781407022697", "sort": "isbn", "type": "isbn", "val": "9781407022697"}, {"book": 331, "id": 1097, "name": "Google Books", "path": "https://books.google.com/books?id=KthSyQRYucgC", "sort": "google", "type": "google", "val": "KthSyQRYucgC"}], "isbn": "9781407022697", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2023-05-02 21:12:03.669521+00:00", "path": "Terry Pratchett/The Science of Discworld III_ Darwi (331)", "pubdate": "2011-06-30", "publisher_ids": "193", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 193, "name": "Random House", "sort": "Random House"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 708106, "tag_ids": "58,60,136,333,334,335", "tags": [{"avg_rating": 8.454545454545455, "count": 24, "id": 60, "name": "History", "sort": 24}, {"avg_rating": 8.4, "count": 12, "id": 58, "name": "Science", "sort": 12}, {"avg_rating": null, "count": 2, "id": 136, "name": "Life Sciences", "sort": 2}, {"avg_rating": null, "count": 1, "id": 333, "name": "Essays", "sort": 1}, {"avg_rating": null, "count": 1, "id": 334, "name": "Evolution", "sort": 1}, {"avg_rating": null, "count": 1, "id": 335, "name": "Social History", "sort": 1}], "timestamp": "2023-05-02 21:12:03.669521+00:00", "title": "The Science of Discworld III: Darwin\u0027s Watch"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe fourth book in the Science of Discworld series, and this time around dealing with THE REALLY BIG QUESTIONS, Terry Pratchett\u2019s brilliant new Discworld story Judgement Day is annotated with very big footnotes (the interleaving chapters) by mathematician Ian Stewart and biologist Jack Cohen, to bring you a mind-mangling combination of fiction, cutting-edge science and philosophy.\u003c/p\u003e\n\u003cp\u003eMarjorie Daw is a librarian, and takes her job \u2013 and indeed the truth of words \u2013 very seriously. She doesn\u2019t know it, but her world and ours \u2013 Roundworld \u2013 is in big trouble. On Discworld, a colossal row is brewing\u2026\u003c/p\u003e\n\u003cp\u003eThe Wizards of Unseen University feel responsible for Roundworld (as one would for a pet gerbil). After all, they brought it into existence by bungling an experiment in Quantum ThaumoDynamics. But legal action is being brought against them by Omnians, who say that the Wizards\u2019 god-like actions make a mockery of their noble religion.\u003c/p\u003e\n\u003cp\u003eAs the finest legal brains in Discworld (a zombie and a priest) gird their loins to do battle \u2013 and when the Great Big Thing in the High Energy Magic Laboratory is switched on \u2013 Marjorie Daw finds herself thrown across the multiverse and right in the middle of the whole explosive affair.\u003c/p\u003e\n\u003cp\u003eAs God, the Universe and, frankly, Everything Else is investigated by the trio, you can expect world-bearing elephants, quantum gravity in the Escher-verse, evolutionary design, eternal inflation, dark matter, disbelief systems \u2013 and an in-depth study of how to invent a better mousetrap.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 330, "identifier_ids": "1102,1099,1100,1101", "identifiers": [{"book": 330, "id": 1101, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448147052", "sort": "isbn", "type": "isbn", "val": "9781448147052"}, {"book": 330, "id": 1100, "name": "Google Books", "path": "https://books.google.com/books?id=rIUUbB8g9O4C", "sort": "google", "type": "google", "val": "rIUUbB8g9O4C"}, {"book": 330, "id": 1099, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/17615188", "sort": "goodreads", "type": "goodreads", "val": "17615188"}, {"book": 330, "id": 1102, "name": "Amazon", "path": "https://amazon.com/dp/1448147050", "sort": "amazon", "type": "amazon", "val": "1448147050"}], "isbn": "9781448147052", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2023-05-02 21:12:03.339401+00:00", "path": "Terry Pratchett/The Science of Discworld IV_ Judgem (330)", "pubdate": "2013-04-11", "publisher_ids": "193", "publishers": [{"avg_rating": 8.0, "count": 4, "id": 193, "name": "Random House", "sort": "Random House"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 782012, "tag_ids": "42,62,75,76", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.914285714285715, "count": 55, "id": 42, "name": "Humour", "sort": 55}, {"avg_rating": 7.833333333333333, "count": 12, "id": 62, "name": "Philosophy", "sort": 12}], "timestamp": "2023-05-02 21:12:03.339401+00:00", "title": "The Science of Discworld IV: Judgement Day"}, {"author_ids": "174,176,184", "authors": [{"avg_rating": 8.0, "count": 4, "id": 176, "name": "Jack Cohen", "sort": "Cohen, Jack"}, {"avg_rating": 9.461538461538462, "count": 45, "id": 174, "name": "Terry Pratchett", "sort": "Pratchett, Terry"}, {"avg_rating": 8.0, "count": 4, "id": 184, "name": "Ian Stewart", "sort": "Stewart, Ian"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe fantastic first book in the Sunday Times bestselling Science of Discworld series\u003c/p\u003e\n\u003cp\u003eWhen a wizardly experiment goes adrift, the wizards of Unseen University find themselves with a pocket universe on their hands: Roundworld, where neither magic nor common sense seems to stand a chance against logic.\u003c/p\u003e\n\u003cp\u003eThe Universe, of course, is our own. And Roundworld is Earth. As the wizards watch their accidental creation grow, we follow the story of our universe from the primal singularity of the Big Bang to the internet and beyond.\u003c/p\u003e\n\u003cp\u003eThrough this original Terry Pratchett story (with intervening chapters from Cohen and Stewart) we discover how puny and insignificant individual lives are against a cosmic backdrop of creation and disaster. Yet, paradoxically, we see how the richness of a universe based on rules, has led to a complex world and at least one species that tried to get a grip of what was going on.\u003c/p\u003e\n\u003cp\u003eTerry Pratchett is the acclaimed creator of the global bestselling Discworld series, the first of which, The Colour of Magic , was published in 1983. Raising Steam is his fortieth Discworld novel. His books have been widely adapted for stage and screen, and he is the winner of multiple prizes, including the Carnegie Medal, as well as being awarded a knighthood for services to literature. After falling out with his keyboard he now talks to his computer. Occasionally, these days, it answers back.\u003c/p\u003e\n\u003cp\u003ewww.terrypratchett.co.uk\u003cbr\u003e@terryandrob\u003c/p\u003e\n\u003cp\u003eProfessor Ian Stewart is the author of many popular science books. He is the mathematics consultant for New Scientist and a Professor of Mathematics at the University of Warwick. He was awarded the Michael Faraday Prize for furthering the public understanding of science, and in 2001 became a Fellow of the Royal Society.\u003c/p\u003e\n\u003cp\u003eDr Jack Cohen is an internationally-known reproductive biologist, and lives in Newent, Gloucestershire. Jack has a laboratory in his kitchen, helps couples get pregnant by referring them to colleagues, invents biologically realistic aliens for science fiction writers and, in his spare time, throws boomerangs. Jack, who has more letters to his name than can be repeated here, writes, lectures, talks and campaigns to promote public awareness of science, particularly biology. He is mostly retired.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 171, "identifier_ids": "564,563,562", "identifiers": [{"book": 171, "id": 562, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781448176670", "sort": "isbn", "type": "isbn", "val": "9781448176670"}, {"book": 171, "id": 563, "name": "Google Books", "path": "https://books.google.com/books?id=Q1x0852ip1wC", "sort": "google", "type": "google", "val": "Q1x0852ip1wC"}, {"book": 171, "id": 564, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/233674", "sort": "goodreads", "type": "goodreads", "val": "233674"}], "isbn": "9781448176670", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2022-10-06 09:40:30.078477+00:00", "path": "Terry Pratchett/The Science of Discworld (171)", "pubdate": "1999-01-01", "publisher_ids": "116", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 116, "name": "Ebury Press", "sort": "Ebury Press"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 4, "id": 21, "name": "The Science of Discworld", "sort": "The Science of Discworld"}], "series_ids": "21", "size": 339560, "tag_ids": "42,62,75,76,177", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.914285714285715, "count": 55, "id": 42, "name": "Humour", "sort": 55}, {"avg_rating": 7.833333333333333, "count": 12, "id": 62, "name": "Philosophy", "sort": 12}, {"avg_rating": 8.0, "count": 2, "id": 177, "name": "Reference", "sort": 2}], "timestamp": "2022-10-06 09:40:30.078477+00:00", "title": "The Science of Discworld"}])'></div>
       </div>
    </div>
+</div>
 
             </div>
         </div>

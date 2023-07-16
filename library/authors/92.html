@@ -202,189 +202,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
                 <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
@@ -517,189 +334,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
                     </nav>
                   </div>
                 </div>
@@ -708,1676 +342,383 @@
          
             <div class="w-full overflow-hidden">
                 
-   <div x-data="{activeTab:'tabCards', books:[]}">
-      <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Authors > J.R.R. Tolkien (5)</div>
-         <div class="flex flex-row">
-            <button
-               @click="activeTab = 'tabCards'"
-               :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+<div x-data="{activeTab:'tabCards'}">
+   <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
+      <div class="font-medium text-base">Authors > J.R.R. Tolkien (5)</div>
+      <div class="flex flex-row">
+         <button @click="activeTab = 'tabCards'"
+            :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
+         </button>
+         <button @click="activeTab = 'tabList'"
+            :class="activeTab === 'tabList' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+            </svg>
+         </button>
+      </div class="max-w">
+   </div>
+
+   <div class="pt-5">
+      <div x-data='tables.initGrid([{"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBegin your journey into Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe inspiration for the upcoming original series on Prime Video, The Lord of the Rings: The Rings of Power.\u003c/p\u003e\n\u003cp\u003eThe Two Towers is the second part of J.R.R. Tolkien\u2019s epic adventure The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.\u003c/p\u003e\n\u003cp\u003eFrodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin\u2014alone, that is, save for the mysterious creeping figure that follows wherever they go.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 85, "identifier_ids": "200,201,199,198", "identifiers": [{"book": 85, "id": 198, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780008108304", "sort": "isbn", "type": "isbn", "val": "9780008108304"}, {"book": 85, "id": 199, "name": "Google Books", "path": "https://books.google.com/books?id=ns2qoAEACAAJ", "sort": "google", "type": "google", "val": "ns2qoAEACAAJ"}, {"book": 85, "id": 201, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215372", "sort": "goodreads", "type": "goodreads", "val": "61215372"}, {"book": 85, "id": 200, "name": "Amazon", "path": "https://amazon.com/dp/B007978PKY", "sort": "amazon", "type": "amazon", "val": "B007978PKY"}], "isbn": "9780008108304", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:56.058839+00:00", "path": "J.R.R. Tolkien/The Two Towers (85)", "pubdate": "1954-11-11", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1627453, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:56.058839+00:00", "title": "The Two Towers"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConcluding the story begun in The Hobbit, this is the final part of Tolkien s epic masterpiece, The Lord of the Rings, featuring an exclusive cover image from the film, the definitive text, and a detailed map of Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe armies of the Dark Lord Sauron are massing as his evil shadow spreads ever wider. Men, Dwarves, Elves and Ents unite forces to do battle agains the Dark. Meanwhile, Frodo and Sam struggle further into Mordor in their heroic quest to destroy the One Ring.\u003c/p\u003e\n\u003cp\u003eThe devastating conclusion of J.R.R. Tolkien s classic tale of magic and adventure, begun in The Fellowship of the Ring and The Two Towers, features the definitive edition of the text and includes the Appendices and a revised Index in full.\u003c/p\u003e\n\u003cp\u003eTo celebrate the release of the first of Peter Jackson s two-part film adaptation of The Hobbit, THE HOBBIT: AN UNEXPECTED JOURNEY, this third part of The Lord of the Rings is available for a limited time with an exclusive cover image from Peter Jackson s award-winning trilogy.\u003c/p\u003e\n\u003cp\u003e\"\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 84, "identifier_ids": "204,203,202", "identifiers": [{"book": 84, "id": 202, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780007488346", "sort": "isbn", "type": "isbn", "val": "9780007488346"}, {"book": 84, "id": 203, "name": "Google Books", "path": "https://books.google.com/books?id=1EcBuwAACAAJ", "sort": "google", "type": "google", "val": "1EcBuwAACAAJ"}, {"book": 84, "id": 204, "name": "Amazon", "path": "https://amazon.com/dp/B007978P18", "sort": "amazon", "type": "amazon", "val": "B007978P18"}], "isbn": "9780007488346", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.852391+00:00", "path": "J.R.R. Tolkien/The Return of the King_ Being the Th (84)", "pubdate": "2012-10-15", "publisher_ids": "32", "publishers": [{"avg_rating": 9.0, "count": 20, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1339613, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.852391+00:00", "title": "The Return of the King: Being the Third Part of the Lord of the Rings"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAn illustrated edition of the enchanting prequel to The Lord of the Rings, The Hobbit \u2014the classic fantasy that inspired Peter Jackson\u2019s major motion picture trilogy\u2014in a newly expanded edition.\u003c/p\u003e\n\u003cp\u003eWhen Thorin Oakenshield and his band of dwarves embark upon a dangerous quest to reclaim the hoard of gold stolen from them by the evil dragon Smaug, Gandalf the wizard suggests an unlikely accomplice: Bilbo Baggins, an unassuming Hobbit dwelling in peaceful Hobbiton.\u003c/p\u003e\n\u003cp\u003eAlong the way, the company faces trolls, goblins, giant spiders, and worse. But as they journey from the wonders of Rivendell to the terrors of Mirkwood and beyond, Bilbo will find that there is more to him than anyone\u2014himself included\u2014ever dreamed. Unexpected qualities of courage and cunning, and a love of adventure, propel Bilbo toward his great destiny ... a destiny that waits in the dark caverns beneath the Misty Mountains, where a twisted creature known as Gollum jealously guards a precious magic ring.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 83, "identifier_ids": "205,206", "identifiers": [{"book": 83, "id": 206, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780345445605", "sort": "isbn", "type": "isbn", "val": "9780345445605"}, {"book": 83, "id": 205, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/hobbit-charles-dixon/1002020903", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/hobbit-charles-dixon/1002020903"}], "isbn": "9780345445605", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.573138+00:00", "path": "J.R.R. Tolkien/The Hobbit_ An Illustrated Edition o (83)", "pubdate": "2001-05-29", "publisher_ids": "94", "publishers": [{"avg_rating": null, "count": 1, "id": 94, "name": "Ballantine Publishing Group", "sort": "Ballantine Publishing Group"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 65182995, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.573138+00:00", "title": "The Hobbit: An Illustrated Edition of the Fantasy Classic"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them\u003c/p\u003e\n\u003cp\u003eIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.\u003c/p\u003e\n\u003cp\u003eIn a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 82, "identifier_ids": "207,208", "identifiers": [{"book": 82, "id": 208, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215351", "sort": "goodreads", "type": "goodreads", "val": "61215351"}, {"book": 82, "id": 207, "name": "Amazon", "path": "https://amazon.com/dp/B007978NPG", "sort": "amazon", "type": "amazon", "val": "B007978NPG"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.348740+00:00", "path": "J.R.R. Tolkien/The Fellowship of the Ring (82)", "pubdate": "1954-07-29", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1906471, "tag_ids": "75,76,84,88", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}], "timestamp": "2022-10-04 19:51:55.348740+00:00", "title": "The Fellowship of the Ring"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAn alternate cover edition can be found here and here**\u003c/p\u003e\n\u003cp\u003eA great modern classic and the prelude to The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eBilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon.\u003c/p\u003e\n\u003cp\u003eBilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 81, "identifier_ids": "209,210", "identifiers": [{"book": 81, "id": 210, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/38819529", "sort": "goodreads", "type": "goodreads", "val": "38819529"}, {"book": 81, "id": 209, "name": "Amazon", "path": "https://amazon.com/dp/B0079KT81G", "sort": "amazon", "type": "amazon", "val": "B0079KT81G"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.080455+00:00", "path": "J.R.R. Tolkien/The Hobbit (81)", "pubdate": "1937-09-21", "publisher_ids": "55", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 55, "name": "Houghton Mifflin Harcourt", "sort": "Houghton Mifflin Harcourt"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 767482, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.080455+00:00", "title": "The Hobbit"}])' x-show="activeTab === 'tabCards'"
+         x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div class="flex justify-end">
+            <input x-ref="searchField" x-model="search" x-on:click="viewPage(0)"
+               x-on:keydown.window.prevent.slash=" viewPage(0), $refs.searchField.focus()"
+               placeholder="Search for a book .." type="search"
+               class="appearance-none rounded-lg border border-slate-300 px-3 py-2 font-medium outline-none dark:border-navy-450 dark:bg-navy-700 dark:text-navy-100" />
+         </div>
+         <div class="pt-5 book-cards">
+            <template x-for="book in filteredBooks" :key="book.id">
+               <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+                  <div class="flex relative">
+                     <img
+                        :src="book.has_cover ? '/library/images/covers/' + book.id + '.jpg' : '/library/images/covers/no_cover.jpg'"
+                        :alt="book.title"
+                        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+                        @click="showModal = true">
+                     <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+                        <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap" x-text="book.title">
+                        </div>
+
+                        <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by
+                           <template x-for="author in book.authors" :key="author.id">
+                              <a class="underline decoration-solid"
+                                 :href="'/library/authors/' + author.id + '.html'" x-text="author.name"></a>
+                           </template>
+                        </p>
+
+                        <div class="whitespace-nowrap mt-2 text-slate-300">
+                           <template x-for="r in 5">
+                              <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                 :class="{'text-orange-500': r < book.rating}" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24" fill="currentColor">
+                                 <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                           </template>
+                        </div>
+
+                        <div class="hidden sm:inline-block">
+                           <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4" x-html="book.comments"></div>
+                        </div>
+
+                        <div class="mt-4">
+                           <template x-if="book.custom_read_date">
+                              <div class="space-x-2 badge rounded-full border text-green-400 border-green-400">
+                                 <span>Read</span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                 </svg>
+                              </div>
+                           </template>
+                           <div
+                              class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="showModal = true">
+                              <span>Learn More</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <template x-teleport="#x-teleport-target">
+                     <div
+                        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+                        x-show="showModal" role="dialog" @keydown.window.escape="showModal = false">
+                        <div class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+                           @click="showModal = false" x-show="showModal" x-transition:enter="ease-out"
+                           x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                           x-transition:leave="ease-in" x-transition:leave-start="opacity-100"
+                           x-transition:leave-end="opacity-0"></div>
+                        <div
+                           class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+                           x-show="showModal" x-transition:enter="ease-out" x-transition:enter-start="opacity-0"
+                           x-transition:enter-end="opacity-100" x-transition:leave="ease-in"
+                           x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                           <div
+                              class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+                              <div class="col-span-12 hidden lg:block lg:col-span-4 bg-cover bg-left rounded-l-lg"
+                                 :class="book.has_cover ? 'bg-[url(\'/library/images/covers/' + book.id + '.jpg\')]' : 'bg-[url(\'/library/images/covers/no_cover.jpg\')]'">
+                              </div>
+                              <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+                                 <h1 class="pb-4 ml-0 text-3xl font-semibold" x-text="book.title">
+                                 </h1>
+
+                                 <table class="w-full text-left align-top">
+                                    <tbody>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Authors:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="author in book.authors" :key="author.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/authors/' + author.id + '.html'"
+                                                   x-text="author.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Series:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="series in book.series" :key="series.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/series/' + series.id + '.html'"
+                                                   x-text="series.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publishers:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="publisher in book.publishers" :key="publisher.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/publishers/' + publisher.id + '.html'"
+                                                   x-text="publisher.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publish Date:
+                                          </td>
+                                          <td class="space-x-1" x-text="book.pubdate">
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Languages:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="language in book.languages" :key="language.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/languages/' + language.id + '.html'"
+                                                   x-text="language.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <template x-if="book.isbn">
+                                          <tr>
+                                             <td class="whitespace-nowrap font-semibold">
+                                                ISBN:
+                                             </td>
+                                             <td class="">
+                                                <div class="flex items-center">
+                                                   <p class="text-xs px-1 border border-slate-400 rounded-md"
+                                                      id="clipboardISBN" x-text="book.isbn">
+                                                   </p>
+                                                   <button
+                                                      class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                                                      @click="$clipboard({
+                                      content:document.querySelector('#clipboardISBN').innerText,
+                                      success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                      error:()=>$notification({text:'Error',variant:'error'})
+                                    })">
+                                                      Copy
+                                                   </button>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </template>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Rating:
+                                          </td>
+                                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                                             <template x-for="r in 5">
+                                                <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                                   :class="{'text-orange-500': r < book.rating}"
+                                                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                   fill="currentColor">
+                                                   <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                      clip-rule="evenodd" />
+                                                </svg>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="pt-1 whitespace-nowrap font-semibold">
+                                             Tags:
+                                          </td>
+                                          <td class="pt-1 space-x-1 space-y-1">
+                                             <template x-for="tag in book.tags" :key="tag.id">
+                                                <a class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                                                   :href="'/library/tags/' + tag.id + '.html'"
+                                                   x-text="tag.name">
+                                                </a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+
+                                 <p class="pt-4 pb-1 font-semibold">Description:</p>
+                                 <div x-init="$nextTick(() => { $el._x_simplebar = new SimpleBar($el) })"
+                                    class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 h-36 text-gray-500 text-justify"
+                                    x-html="book.comments">
+                                 </div>
+
+                                 <template x-if="book.identifiers">
+                                    <div>
+                                       <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                                       <div class="space-x-1 space-y-1">
+                                          <template x-for="identifier in book.identifiers" :key="identifier.id">
+                                             <a href="`${identifier.path}`" target="_blank"
+                                                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                                                x-text="identifier.name">
+                                             </a>
+                                          </template>
+                                       </div>
+                                    </div>
+                                 </template>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </template>
+               </div>
+            </template>
+         </div>
+
+         <div
+            class="mt-6 w-full md:w-1/2 mx-auto py-6 flex justify-between items-center text-slate-600 dark:text-slate-300"
+            x-show="pageCount() > 1">
+            <!--First Button-->
+            <button x-on:click="viewPage(0)" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="19 20 9 12 19 4 19 20"></polygon>
+                  <line x1="5" y1="19" x2="5" y2="5"></line>
                </svg>
             </button>
-            <button
-               @click="activeTab = 'tabTable'"
-               :class="activeTab === 'tabTable' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+
+            <!--Previous Button-->
+            <button x-on:click="prevPage" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
                </svg>
             </button>
-         </div class="max-w">
-      </div>
 
-      <div class="pt-10">
-         <div
-            x-show="activeTab === 'tabCards'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-            class="book-cards"
-         >
-            
-               
-                  
-  
+            <!-- Display page numbers -->
+            <div class="flex flex-wrap space-x-1">
+               <template x-if="pageNumber < 9">
+                  <template x-for="index in 9" :key="index">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors"
+                        :class="index - 1 === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(index - 1)">
+                        <span x-text="index"></span>
+                     </button>
+                  </template>
+               </template>
 
+               <!-- show eclipses -->
+               <template x-if="pageNumber < 9 && pages().length > 9">
+                  <button
+                     class="flex h-8 min-w-[2rem] items-center justify-center rounded-full bg-slate-150 px-3 leading-tight transition-colors hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450"
+                     type="button" x-on:click="viewPage(9)">
+                     <span>..</span>
+                  </button>
+               </template>
 
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/85.jpg"
-        alt="The Two Towers"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Two Towers
+               <!-- show pageNumber +/- 4 -->
+               <template x-if="pageNumber >= 9">
+                  <template
+                     x-for="(page, index) in [pageNumber - 4,pageNumber - 3,pageNumber - 2,pageNumber - 1, pageNumber, pageNumber + 1, pageNumber + 2, pageNumber + 3, pageNumber + 4]"
+                     :key="page">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors focus:bg-slate-300 dark:focus:bg-navy-450"
+                        :class="page === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(page)">
+                        <span x-text="page+1"></span>
+                     </button>
+                  </template>
+               </template>
             </div>
 
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>Begin your journey into Middle-earth.</p>
-<p>The inspiration for the upcoming original series on Prime Video, The Lord of the Rings: The Rings of Power.</p>
-<p>The Two Towers is the second part of J.R.R. Tolkien’s epic adventure The Lord of the Rings.</p>
-<p>One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.</p>
-<p>Frodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin—alone, that is, save for the mysterious creeping figure that follows wherever they go.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            <!--Next Button-->
+            <button x-on:click="nextPage" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
                </svg>
-              </div>
-            </div>
-       </div>
-    </div>
+            </button>
 
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/85.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Two Towers
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/series/9.html">The Lord of the Rings</a>
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/53.html">William Morrow</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            1954-11-11
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9780008108304</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/76.html">
-                                Fantasy
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/75.html">
-                                Science Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/84.html">
-                                Adventure
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>Begin your journey into Middle-earth.</p>
-<p>The inspiration for the upcoming original series on Prime Video, The Lord of the Rings: The Rings of Power.</p>
-<p>The Two Towers is the second part of J.R.R. Tolkien’s epic adventure The Lord of the Rings.</p>
-<p>One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.</p>
-<p>Frodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin—alone, that is, save for the mysterious creeping figure that follows wherever they go.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9780008108304" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=ns2qoAEACAAJ" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/61215372" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/B007978PKY" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/84.jpg"
-        alt="The Return of the King: Being the Third Part of the Lord of the Rings"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Return of the King: Being the Third Part of the Lord of the Rings
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>Concluding the story begun in The Hobbit, this is the final part of Tolkien s epic masterpiece, The Lord of the Rings, featuring an exclusive cover image from the film, the definitive text, and a detailed map of Middle-earth.</p>
-<p>The armies of the Dark Lord Sauron are massing as his evil shadow spreads ever wider. Men, Dwarves, Elves and Ents unite forces to do battle agains the Dark. Meanwhile, Frodo and Sam struggle further into Mordor in their heroic quest to destroy the One Ring.</p>
-<p>The devastating conclusion of J.R.R. Tolkien s classic tale of magic and adventure, begun in The Fellowship of the Ring and The Two Towers, features the definitive edition of the text and includes the Appendices and a revised Index in full.</p>
-<p>To celebrate the release of the first of Peter Jackson s two-part film adaptation of The Hobbit, THE HOBBIT: AN UNEXPECTED JOURNEY, this third part of The Lord of the Rings is available for a limited time with an exclusive cover image from Peter Jackson s award-winning trilogy.</p>
-<p>"</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            <!--Last Button-->
+            <button x-on:click="viewPage(Math.ceil(total/size)-1)" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                  <line x1="19" y1="5" x2="19" y2="19"></line>
                </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/84.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Return of the King: Being the Third Part of the Lord of the Rings
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/series/9.html">The Lord of the Rings</a>
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/32.html">HarperCollins</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2012-10-15
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9780007488346</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/76.html">
-                                Fantasy
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/75.html">
-                                Science Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/84.html">
-                                Adventure
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>Concluding the story begun in The Hobbit, this is the final part of Tolkien s epic masterpiece, The Lord of the Rings, featuring an exclusive cover image from the film, the definitive text, and a detailed map of Middle-earth.</p>
-<p>The armies of the Dark Lord Sauron are massing as his evil shadow spreads ever wider. Men, Dwarves, Elves and Ents unite forces to do battle agains the Dark. Meanwhile, Frodo and Sam struggle further into Mordor in their heroic quest to destroy the One Ring.</p>
-<p>The devastating conclusion of J.R.R. Tolkien s classic tale of magic and adventure, begun in The Fellowship of the Ring and The Two Towers, features the definitive edition of the text and includes the Appendices and a revised Index in full.</p>
-<p>To celebrate the release of the first of Peter Jackson s two-part film adaptation of The Hobbit, THE HOBBIT: AN UNEXPECTED JOURNEY, this third part of The Lord of the Rings is available for a limited time with an exclusive cover image from Peter Jackson s award-winning trilogy.</p>
-<p>"</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9780007488346" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=1EcBuwAACAAJ" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/B007978P18" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/83.jpg"
-        alt="The Hobbit: An Illustrated Edition of the Fantasy Classic"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Hobbit: An Illustrated Edition of the Fantasy Classic
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>An illustrated edition of the enchanting prequel to The Lord of the Rings, The Hobbit —the classic fantasy that inspired Peter Jackson’s major motion picture trilogy—in a newly expanded edition.</p>
-<p>When Thorin Oakenshield and his band of dwarves embark upon a dangerous quest to reclaim the hoard of gold stolen from them by the evil dragon Smaug, Gandalf the wizard suggests an unlikely accomplice: Bilbo Baggins, an unassuming Hobbit dwelling in peaceful Hobbiton.</p>
-<p>Along the way, the company faces trolls, goblins, giant spiders, and worse. But as they journey from the wonders of Rivendell to the terrors of Mirkwood and beyond, Bilbo will find that there is more to him than anyone—himself included—ever dreamed. Unexpected qualities of courage and cunning, and a love of adventure, propel Bilbo toward his great destiny ... a destiny that waits in the dark caverns beneath the Misty Mountains, where a twisted creature known as Gollum jealously guards a precious magic ring.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-               </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/83.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Hobbit: An Illustrated Edition of the Fantasy Classic
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/series/9.html">The Lord of the Rings</a>
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/94.html">Ballantine Publishing Group</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2001-05-29
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9780345445605</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/76.html">
-                                Fantasy
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/75.html">
-                                Science Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/84.html">
-                                Adventure
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>An illustrated edition of the enchanting prequel to The Lord of the Rings, The Hobbit —the classic fantasy that inspired Peter Jackson’s major motion picture trilogy—in a newly expanded edition.</p>
-<p>When Thorin Oakenshield and his band of dwarves embark upon a dangerous quest to reclaim the hoard of gold stolen from them by the evil dragon Smaug, Gandalf the wizard suggests an unlikely accomplice: Bilbo Baggins, an unassuming Hobbit dwelling in peaceful Hobbiton.</p>
-<p>Along the way, the company faces trolls, goblins, giant spiders, and worse. But as they journey from the wonders of Rivendell to the terrors of Mirkwood and beyond, Bilbo will find that there is more to him than anyone—himself included—ever dreamed. Unexpected qualities of courage and cunning, and a love of adventure, propel Bilbo toward his great destiny ... a destiny that waits in the dark caverns beneath the Misty Mountains, where a twisted creature known as Gollum jealously guards a precious magic ring.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9780345445605" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://www.barnesandnoble.com/w/hobbit-charles-dixon/1002020903" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Barnes & Noble
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/82.jpg"
-        alt="The Fellowship of the Ring"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Fellowship of the Ring
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them</p>
-<p>In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.</p>
-<p>In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-               </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/82.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Fellowship of the Ring
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/series/9.html">The Lord of the Rings</a>
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/53.html">William Morrow</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            1954-07-29
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">None</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/76.html">
-                                Fantasy
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/75.html">
-                                Science Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/84.html">
-                                Adventure
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/88.html">
-                                Young Adult
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them</p>
-<p>In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.</p>
-<p>In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/61215351" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/B007978NPG" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/81.jpg"
-        alt="The Hobbit"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Hobbit
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>An alternate cover edition can be found here and here**</p>
-<p>A great modern classic and the prelude to The Lord of the Rings.</p>
-<p>Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon.</p>
-<p>Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-               </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/81.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Hobbit
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/92.html">J.R.R. Tolkien</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/series/9.html">The Lord of the Rings</a>
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/55.html">Houghton Mifflin Harcourt</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            1937-09-21
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">None</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/76.html">
-                                Fantasy
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/75.html">
-                                Science Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/84.html">
-                                Adventure
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>An alternate cover edition can be found here and here**</p>
-<p>A great modern classic and the prelude to The Lord of the Rings.</p>
-<p>Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon.</p>
-<p>Bilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/38819529" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/B0079KT81G" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
+            </button>
          </div>
-         <div
-            x-show="activeTab === 'tabTable'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-         >
-            <div x-data='tables.initGridTable([{"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBegin your journey into Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe inspiration for the upcoming original series on Prime Video, The Lord of the Rings: The Rings of Power.\u003c/p\u003e\n\u003cp\u003eThe Two Towers is the second part of J.R.R. Tolkien\u2019s epic adventure The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.\u003c/p\u003e\n\u003cp\u003eFrodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin\u2014alone, that is, save for the mysterious creeping figure that follows wherever they go.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 85, "identifier_ids": "200,201,199,198", "identifiers": [{"book": 85, "id": 198, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780008108304", "sort": "isbn", "type": "isbn", "val": "9780008108304"}, {"book": 85, "id": 199, "name": "Google Books", "path": "https://books.google.com/books?id=ns2qoAEACAAJ", "sort": "google", "type": "google", "val": "ns2qoAEACAAJ"}, {"book": 85, "id": 201, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215372", "sort": "goodreads", "type": "goodreads", "val": "61215372"}, {"book": 85, "id": 200, "name": "Amazon", "path": "https://amazon.com/dp/B007978PKY", "sort": "amazon", "type": "amazon", "val": "B007978PKY"}], "isbn": "9780008108304", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:56.058839+00:00", "path": "J.R.R. Tolkien/The Two Towers (85)", "pubdate": "1954-11-11", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1627453, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 85, "id": 75, "name": "Science Fiction", "sort": 85}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:56.058839+00:00", "title": "The Two Towers"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConcluding the story begun in The Hobbit, this is the final part of Tolkien s epic masterpiece, The Lord of the Rings, featuring an exclusive cover image from the film, the definitive text, and a detailed map of Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe armies of the Dark Lord Sauron are massing as his evil shadow spreads ever wider. Men, Dwarves, Elves and Ents unite forces to do battle agains the Dark. Meanwhile, Frodo and Sam struggle further into Mordor in their heroic quest to destroy the One Ring.\u003c/p\u003e\n\u003cp\u003eThe devastating conclusion of J.R.R. Tolkien s classic tale of magic and adventure, begun in The Fellowship of the Ring and The Two Towers, features the definitive edition of the text and includes the Appendices and a revised Index in full.\u003c/p\u003e\n\u003cp\u003eTo celebrate the release of the first of Peter Jackson s two-part film adaptation of The Hobbit, THE HOBBIT: AN UNEXPECTED JOURNEY, this third part of The Lord of the Rings is available for a limited time with an exclusive cover image from Peter Jackson s award-winning trilogy.\u003c/p\u003e\n\u003cp\u003e\"\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 84, "identifier_ids": "204,203,202", "identifiers": [{"book": 84, "id": 202, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780007488346", "sort": "isbn", "type": "isbn", "val": "9780007488346"}, {"book": 84, "id": 203, "name": "Google Books", "path": "https://books.google.com/books?id=1EcBuwAACAAJ", "sort": "google", "type": "google", "val": "1EcBuwAACAAJ"}, {"book": 84, "id": 204, "name": "Amazon", "path": "https://amazon.com/dp/B007978P18", "sort": "amazon", "type": "amazon", "val": "B007978P18"}], "isbn": "9780007488346", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.852391+00:00", "path": "J.R.R. Tolkien/The Return of the King_ Being the Th (84)", "pubdate": "2012-10-15", "publisher_ids": "32", "publishers": [{"avg_rating": 9.0, "count": 20, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1339613, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 85, "id": 75, "name": "Science Fiction", "sort": 85}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.852391+00:00", "title": "The Return of the King: Being the Third Part of the Lord of the Rings"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAn illustrated edition of the enchanting prequel to The Lord of the Rings, The Hobbit \u2014the classic fantasy that inspired Peter Jackson\u2019s major motion picture trilogy\u2014in a newly expanded edition.\u003c/p\u003e\n\u003cp\u003eWhen Thorin Oakenshield and his band of dwarves embark upon a dangerous quest to reclaim the hoard of gold stolen from them by the evil dragon Smaug, Gandalf the wizard suggests an unlikely accomplice: Bilbo Baggins, an unassuming Hobbit dwelling in peaceful Hobbiton.\u003c/p\u003e\n\u003cp\u003eAlong the way, the company faces trolls, goblins, giant spiders, and worse. But as they journey from the wonders of Rivendell to the terrors of Mirkwood and beyond, Bilbo will find that there is more to him than anyone\u2014himself included\u2014ever dreamed. Unexpected qualities of courage and cunning, and a love of adventure, propel Bilbo toward his great destiny ... a destiny that waits in the dark caverns beneath the Misty Mountains, where a twisted creature known as Gollum jealously guards a precious magic ring.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 83, "identifier_ids": "205,206", "identifiers": [{"book": 83, "id": 206, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780345445605", "sort": "isbn", "type": "isbn", "val": "9780345445605"}, {"book": 83, "id": 205, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/hobbit-charles-dixon/1002020903", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/hobbit-charles-dixon/1002020903"}], "isbn": "9780345445605", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.573138+00:00", "path": "J.R.R. Tolkien/The Hobbit_ An Illustrated Edition o (83)", "pubdate": "2001-05-29", "publisher_ids": "94", "publishers": [{"avg_rating": null, "count": 1, "id": 94, "name": "Ballantine Publishing Group", "sort": "Ballantine Publishing Group"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 65182995, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 85, "id": 75, "name": "Science Fiction", "sort": 85}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.573138+00:00", "title": "The Hobbit: An Illustrated Edition of the Fantasy Classic"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them\u003c/p\u003e\n\u003cp\u003eIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.\u003c/p\u003e\n\u003cp\u003eIn a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 82, "identifier_ids": "207,208", "identifiers": [{"book": 82, "id": 208, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215351", "sort": "goodreads", "type": "goodreads", "val": "61215351"}, {"book": 82, "id": 207, "name": "Amazon", "path": "https://amazon.com/dp/B007978NPG", "sort": "amazon", "type": "amazon", "val": "B007978NPG"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.348740+00:00", "path": "J.R.R. Tolkien/The Fellowship of the Ring (82)", "pubdate": "1954-07-29", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1906471, "tag_ids": "75,76,84,88", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 85, "id": 75, "name": "Science Fiction", "sort": 85}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}], "timestamp": "2022-10-04 19:51:55.348740+00:00", "title": "The Fellowship of the Ring"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAn alternate cover edition can be found here and here**\u003c/p\u003e\n\u003cp\u003eA great modern classic and the prelude to The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eBilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon.\u003c/p\u003e\n\u003cp\u003eBilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 81, "identifier_ids": "209,210", "identifiers": [{"book": 81, "id": 210, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/38819529", "sort": "goodreads", "type": "goodreads", "val": "38819529"}, {"book": 81, "id": 209, "name": "Amazon", "path": "https://amazon.com/dp/B0079KT81G", "sort": "amazon", "type": "amazon", "val": "B0079KT81G"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.080455+00:00", "path": "J.R.R. Tolkien/The Hobbit (81)", "pubdate": "1937-09-21", "publisher_ids": "55", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 55, "name": "Houghton Mifflin Harcourt", "sort": "Houghton Mifflin Harcourt"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 767482, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 85, "id": 75, "name": "Science Fiction", "sort": 85}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.080455+00:00", "title": "The Hobbit"}])'></div>
+
+         <div>
+            <div class="mt-6 flex flex-wrap justify-between items-center text-sm leading-5 text-gray-700">
+               <div class="w-full sm:w-auto text-center sm:text-left" x-show="pageCount() > 1">
+                  Page <span x-text="pageNumber+1"> </span> of
+                  <span x-text="pageCount()"></span> | Showing
+                  <span x-text="startResults()"></span> to
+                  <span x-text="endResults()"></span>
+               </div>
+
+               <div class="w-full sm:w-auto text-center sm:text-right" x-show="total > 0">
+                  Total <span class="font-bold" x-text="total"></span> results
+               </div>
+
+               <!--Message to display when no results-->
+               <div class="mx-auto flex items-center font-bold text-red-500" x-show="total===0">
+                  <svg class="h-8 w-8 text-red-500" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                     fill="none" stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" />
+                     <circle cx="12" cy="12" r="9" />
+                     <line x1="9" y1="10" x2="9.01" y2="10" />
+                     <line x1="15" y1="10" x2="15.01" y2="10" />
+                     <path d="M9.5 16a10 10 0 0 1 6 -1.5" />
+                  </svg>
+
+                  <span class="ml-4">No results.</span>
+               </div>
+            </div>
          </div>
+
+      </div>
+      <div x-show="activeTab === 'tabList'" x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div x-data='tables.initList([{"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBegin your journey into Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe inspiration for the upcoming original series on Prime Video, The Lord of the Rings: The Rings of Power.\u003c/p\u003e\n\u003cp\u003eThe Two Towers is the second part of J.R.R. Tolkien\u2019s epic adventure The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.\u003c/p\u003e\n\u003cp\u003eFrodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin\u2014alone, that is, save for the mysterious creeping figure that follows wherever they go.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 85, "identifier_ids": "200,201,199,198", "identifiers": [{"book": 85, "id": 198, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780008108304", "sort": "isbn", "type": "isbn", "val": "9780008108304"}, {"book": 85, "id": 199, "name": "Google Books", "path": "https://books.google.com/books?id=ns2qoAEACAAJ", "sort": "google", "type": "google", "val": "ns2qoAEACAAJ"}, {"book": 85, "id": 201, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215372", "sort": "goodreads", "type": "goodreads", "val": "61215372"}, {"book": 85, "id": 200, "name": "Amazon", "path": "https://amazon.com/dp/B007978PKY", "sort": "amazon", "type": "amazon", "val": "B007978PKY"}], "isbn": "9780008108304", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:56.058839+00:00", "path": "J.R.R. Tolkien/The Two Towers (85)", "pubdate": "1954-11-11", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1627453, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:56.058839+00:00", "title": "The Two Towers"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConcluding the story begun in The Hobbit, this is the final part of Tolkien s epic masterpiece, The Lord of the Rings, featuring an exclusive cover image from the film, the definitive text, and a detailed map of Middle-earth.\u003c/p\u003e\n\u003cp\u003eThe armies of the Dark Lord Sauron are massing as his evil shadow spreads ever wider. Men, Dwarves, Elves and Ents unite forces to do battle agains the Dark. Meanwhile, Frodo and Sam struggle further into Mordor in their heroic quest to destroy the One Ring.\u003c/p\u003e\n\u003cp\u003eThe devastating conclusion of J.R.R. Tolkien s classic tale of magic and adventure, begun in The Fellowship of the Ring and The Two Towers, features the definitive edition of the text and includes the Appendices and a revised Index in full.\u003c/p\u003e\n\u003cp\u003eTo celebrate the release of the first of Peter Jackson s two-part film adaptation of The Hobbit, THE HOBBIT: AN UNEXPECTED JOURNEY, this third part of The Lord of the Rings is available for a limited time with an exclusive cover image from Peter Jackson s award-winning trilogy.\u003c/p\u003e\n\u003cp\u003e\"\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 84, "identifier_ids": "204,203,202", "identifiers": [{"book": 84, "id": 202, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780007488346", "sort": "isbn", "type": "isbn", "val": "9780007488346"}, {"book": 84, "id": 203, "name": "Google Books", "path": "https://books.google.com/books?id=1EcBuwAACAAJ", "sort": "google", "type": "google", "val": "1EcBuwAACAAJ"}, {"book": 84, "id": 204, "name": "Amazon", "path": "https://amazon.com/dp/B007978P18", "sort": "amazon", "type": "amazon", "val": "B007978P18"}], "isbn": "9780007488346", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.852391+00:00", "path": "J.R.R. Tolkien/The Return of the King_ Being the Th (84)", "pubdate": "2012-10-15", "publisher_ids": "32", "publishers": [{"avg_rating": 9.0, "count": 20, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1339613, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.852391+00:00", "title": "The Return of the King: Being the Third Part of the Lord of the Rings"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAn illustrated edition of the enchanting prequel to The Lord of the Rings, The Hobbit \u2014the classic fantasy that inspired Peter Jackson\u2019s major motion picture trilogy\u2014in a newly expanded edition.\u003c/p\u003e\n\u003cp\u003eWhen Thorin Oakenshield and his band of dwarves embark upon a dangerous quest to reclaim the hoard of gold stolen from them by the evil dragon Smaug, Gandalf the wizard suggests an unlikely accomplice: Bilbo Baggins, an unassuming Hobbit dwelling in peaceful Hobbiton.\u003c/p\u003e\n\u003cp\u003eAlong the way, the company faces trolls, goblins, giant spiders, and worse. But as they journey from the wonders of Rivendell to the terrors of Mirkwood and beyond, Bilbo will find that there is more to him than anyone\u2014himself included\u2014ever dreamed. Unexpected qualities of courage and cunning, and a love of adventure, propel Bilbo toward his great destiny ... a destiny that waits in the dark caverns beneath the Misty Mountains, where a twisted creature known as Gollum jealously guards a precious magic ring.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 83, "identifier_ids": "205,206", "identifiers": [{"book": 83, "id": 206, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780345445605", "sort": "isbn", "type": "isbn", "val": "9780345445605"}, {"book": 83, "id": 205, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/hobbit-charles-dixon/1002020903", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/hobbit-charles-dixon/1002020903"}], "isbn": "9780345445605", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.573138+00:00", "path": "J.R.R. Tolkien/The Hobbit_ An Illustrated Edition o (83)", "pubdate": "2001-05-29", "publisher_ids": "94", "publishers": [{"avg_rating": null, "count": 1, "id": 94, "name": "Ballantine Publishing Group", "sort": "Ballantine Publishing Group"}], "rating": null, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 65182995, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.573138+00:00", "title": "The Hobbit: An Illustrated Edition of the Fantasy Classic"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eOne Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them\u003c/p\u003e\n\u003cp\u003eIn ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.\u003c/p\u003e\n\u003cp\u003eIn a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 82, "identifier_ids": "207,208", "identifiers": [{"book": 82, "id": 208, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/61215351", "sort": "goodreads", "type": "goodreads", "val": "61215351"}, {"book": 82, "id": 207, "name": "Amazon", "path": "https://amazon.com/dp/B007978NPG", "sort": "amazon", "type": "amazon", "val": "B007978NPG"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.348740+00:00", "path": "J.R.R. Tolkien/The Fellowship of the Ring (82)", "pubdate": "1954-07-29", "publisher_ids": "53", "publishers": [{"avg_rating": 8.0, "count": 2, "id": 53, "name": "William Morrow", "sort": "William Morrow"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 1906471, "tag_ids": "75,76,84,88", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}, {"avg_rating": 8.666666666666666, "count": 9, "id": 88, "name": "Young Adult", "sort": 9}], "timestamp": "2022-10-04 19:51:55.348740+00:00", "title": "The Fellowship of the Ring"}, {"author_ids": "92", "authors": [{"avg_rating": 8.0, "count": 5, "id": 92, "name": "J.R.R. Tolkien", "sort": "Tolkien, J.R.R."}], "comments": "\u003cdiv\u003e\n\u003cp\u003eAn alternate cover edition can be found here and here**\u003c/p\u003e\n\u003cp\u003eA great modern classic and the prelude to The Lord of the Rings.\u003c/p\u003e\n\u003cp\u003eBilbo Baggins is a hobbit who enjoys a comfortable, unambitious life, rarely traveling any farther than his pantry or cellar. But his contentment is disturbed when the wizard Gandalf and a company of dwarves arrive on his doorstep one day to whisk him away on an adventure. They have launched a plot to raid the treasure hoard guarded by Smaug the Magnificent, a large and very dangerous dragon.\u003c/p\u003e\n\u003cp\u003eBilbo reluctantly joins their quest, unaware that on his journey to the Lonely Mountain he will encounter both a magic ring and a frightening creature known as Gollum.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 81, "identifier_ids": "209,210", "identifiers": [{"book": 81, "id": 210, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/38819529", "sort": "goodreads", "type": "goodreads", "val": "38819529"}, {"book": 81, "id": 209, "name": "Amazon", "path": "https://amazon.com/dp/B0079KT81G", "sort": "amazon", "type": "amazon", "val": "B0079KT81G"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 19:51:55.080455+00:00", "path": "J.R.R. Tolkien/The Hobbit (81)", "pubdate": "1937-09-21", "publisher_ids": "55", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 55, "name": "Houghton Mifflin Harcourt", "sort": "Houghton Mifflin Harcourt"}], "rating": 4, "series": [{"avg_rating": 8.0, "count": 5, "id": 9, "name": "The Lord of the Rings", "sort": "The Lord of the Rings"}], "series_ids": "9", "size": 767482, "tag_ids": "75,76,84", "tags": [{"avg_rating": 8.898550724637682, "count": 96, "id": 76, "name": "Fantasy", "sort": 96}, {"avg_rating": 8.764705882352942, "count": 92, "id": 75, "name": "Science Fiction", "sort": 92}, {"avg_rating": 8.818181818181818, "count": 31, "id": 84, "name": "Adventure", "sort": 31}], "timestamp": "2022-10-04 19:51:55.080455+00:00", "title": "The Hobbit"}])'></div>
       </div>
    </div>
+</div>
 
             </div>
         </div>

@@ -202,189 +202,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
                 <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
@@ -517,189 +334,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
                     </nav>
                   </div>
                 </div>
@@ -708,1050 +342,383 @@
          
             <div class="w-full overflow-hidden">
                 
-   <div x-data="{activeTab:'tabCards', books:[]}">
-      <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Tags > Historical (3)</div>
-         <div class="flex flex-row">
-            <button
-               @click="activeTab = 'tabCards'"
-               :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+<div x-data="{activeTab:'tabCards'}">
+   <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
+      <div class="font-medium text-base">Tags > Historical (3)</div>
+      <div class="flex flex-row">
+         <button @click="activeTab = 'tabCards'"
+            :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
+         </button>
+         <button @click="activeTab = 'tabList'"
+            :class="activeTab === 'tabList' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+            </svg>
+         </button>
+      </div class="max-w">
+   </div>
+
+   <div class="pt-5">
+      <div x-data='tables.initGrid([{"author_ids": "243", "authors": [{"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConsidered by some to be the greatest novel ever written, Anna Karenina is Tolstoy\u0027s classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 208, "identifier_ids": "751,752,750", "identifiers": [{"book": 208, "id": 750, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679783305", "sort": "isbn", "type": "isbn", "val": "9780679783305"}, {"book": 208, "id": 752, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/1399", "sort": "gutenberg", "type": "gutenberg", "val": "1399"}, {"book": 208, "id": 751, "name": "Google Books", "path": "https://books.google.com/books?id=yBJShX4BLVYC", "sort": "google", "type": "google", "val": "yBJShX4BLVYC"}], "isbn": "9780679783305", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.688127+00:00", "path": "Leo Tolstoy/Anna Karenina (208)", "pubdate": "2000-10-10", "publisher_ids": "133", "publishers": [{"avg_rating": null, "count": 2, "id": 133, "name": "Random House Publishing Group", "sort": "Random House Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 3845227, "tag_ids": "4,18,148,152,153,210,214", "tags": [{"avg_rating": 9.310344827586206, "count": 62, "id": 4, "name": "Fiction", "sort": 62}, {"avg_rating": 8.941176470588236, "count": 20, "id": 18, "name": "Romance", "sort": 20}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 14, "id": 214, "name": "Gutenberg", "sort": 14}, {"avg_rating": 8.5, "count": 8, "id": 152, "name": "Literary", "sort": 8}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 1, "id": 210, "name": "Victorian", "sort": 1}], "timestamp": "2022-10-10 14:39:36.688127+00:00", "title": "Anna Karenina"}, {"author_ids": "125", "authors": [{"avg_rating": 8.0, "count": 1, "id": 125, "name": "Viet Thanh Nguyen", "sort": "Nguyen, Viet Thanh"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe sequel to The Sympathizer, which won the 2016 Pulitzer Prize in Fiction and went on to sell over a million copies worldwide, The Committed tells the story of \u201cthe man of two minds\u201d as he comes as a refugee to France and turns his hand to capitalism\u003c/p\u003e\n\u003cp\u003eThe long-awaited follow-up to the Pulitzer Prize-winning The Sympathizer, which has sold more than one million copies worldwide, The Committed follows the man of two minds as he arrives in Paris in the early 1980s with his blood brother Bon. The pair try to overcome their pasts and ensure their futures by engaging in capitalism in one of its purest forms: drug dealing.\u003c/p\u003e\n\u003cp\u003eTraumatized by his reeducation at the hands of his former best friend, Man, and struggling to assimilate into French culture, the Sympathizer finds Paris both seductive and disturbing. As he falls in with a group of left-wing intellectuals whom he meets at dinner parties given by his French Vietnamese \u201caunt,\u201d he finds stimulation for his mind but also customers for his narcotic merchandise. But the new life he is making has perils he has not foreseen, whether the self-torture of addiction, the authoritarianism of a state locked in a colonial mindset, or the seeming paradox of how to reunite his two closest friends whose worldviews put them in absolute opposition. The Sympathizer will need all his wits, resourcefulness, and moral flexibility if he is to prevail.\u003c/p\u003e\n\u003cp\u003eBoth highly suspenseful and existential, The Committed is a blistering portrayal of commitment and betrayal that will cement Viet Thanh Nguyen\u2019s position in the firmament of American letters.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 123, "identifier_ids": "404,402,403,405", "identifiers": [{"book": 123, "id": 405, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781472152527", "sort": "isbn", "type": "isbn", "val": "9781472152527"}, {"book": 123, "id": 403, "name": "Google Books", "path": "https://books.google.com/books?id=n7kIDgAAQBAJ", "sort": "google", "type": "google", "val": "n7kIDgAAQBAJ"}, {"book": 123, "id": 402, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/52260627", "sort": "goodreads", "type": "goodreads", "val": "52260627"}, {"book": 123, "id": 404, "name": "Amazon", "path": "https://amazon.com/dp/0802157068", "sort": "amazon", "type": "amazon", "val": "0802157068"}], "isbn": "9781472152527", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2022-10-05 15:54:07.284827+00:00", "path": "Viet Thanh Nguyen/The Committed (123)", "pubdate": "2021-03-02", "publisher_ids": "92", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 92, "name": "Grove Press", "sort": "Grove Press"}], "rating": 4, "series": [], "series_ids": null, "size": 2249337, "tag_ids": "49,148,194", "tags": [{"avg_rating": 8.89655172413793, "count": 51, "id": 49, "name": "Contemporary", "sort": 51}, {"avg_rating": 8.333333333333334, "count": 40, "id": 194, "name": "Time", "sort": 40}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}], "timestamp": "2022-10-05 15:54:07.284827+00:00", "title": "The Committed"}, {"author_ids": "160", "authors": [{"avg_rating": null, "count": 1, "id": 160, "name": "Amor Towles", "sort": "Towles, Amor"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\u0027s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden\u0027s car. Together, they have hatched an altogether different plan for Emmett\u0027s future, one that will take them all on a fateful journey in the opposite direction\u2014to the City of New York. Spanning just ten days and told from multiple points of view, Towles\u0027s third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 118, "identifier_ids": "423,424", "identifiers": [{"book": 118, "id": 424, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780735222373", "sort": "isbn", "type": "isbn", "val": "9780735222373"}, {"book": 118, "id": 423, "name": "Google Books", "path": "https://books.google.com/books?id=Kn4eEAAAQBAJ", "sort": "google", "type": "google", "val": "Kn4eEAAAQBAJ"}], "isbn": "9780735222373", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.426067+00:00", "path": "Amor Towles/The Lincoln Highway_ A Novel (118)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 6630557, "tag_ids": "4,148,151,152,194", "tags": [{"avg_rating": 9.310344827586206, "count": 62, "id": 4, "name": "Fiction", "sort": 62}, {"avg_rating": 8.333333333333334, "count": 40, "id": 194, "name": "Time", "sort": 40}, {"avg_rating": 8.5, "count": 8, "id": 152, "name": "Literary", "sort": 8}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 3, "id": 151, "name": "Coming of Age", "sort": 3}], "timestamp": "2022-10-05 15:54:05.426067+00:00", "title": "The Lincoln Highway: A Novel"}])' x-show="activeTab === 'tabCards'"
+         x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div class="flex justify-end">
+            <input x-ref="searchField" x-model="search" x-on:click="viewPage(0)"
+               x-on:keydown.window.prevent.slash=" viewPage(0), $refs.searchField.focus()"
+               placeholder="Search for a book .." type="search"
+               class="appearance-none rounded-lg border border-slate-300 px-3 py-2 font-medium outline-none dark:border-navy-450 dark:bg-navy-700 dark:text-navy-100" />
+         </div>
+         <div class="pt-5 book-cards">
+            <template x-for="book in filteredBooks" :key="book.id">
+               <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+                  <div class="flex relative">
+                     <img
+                        :src="book.has_cover ? '/library/images/covers/' + book.id + '.jpg' : '/library/images/covers/no_cover.jpg'"
+                        :alt="book.title"
+                        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+                        @click="showModal = true">
+                     <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+                        <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap" x-text="book.title">
+                        </div>
+
+                        <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by
+                           <template x-for="author in book.authors" :key="author.id">
+                              <a class="underline decoration-solid"
+                                 :href="'/library/authors/' + author.id + '.html'" x-text="author.name"></a>
+                           </template>
+                        </p>
+
+                        <div class="whitespace-nowrap mt-2 text-slate-300">
+                           <template x-for="r in 5">
+                              <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                 :class="{'text-orange-500': r < book.rating}" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24" fill="currentColor">
+                                 <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                           </template>
+                        </div>
+
+                        <div class="hidden sm:inline-block">
+                           <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4" x-html="book.comments"></div>
+                        </div>
+
+                        <div class="mt-4">
+                           <template x-if="book.custom_read_date">
+                              <div class="space-x-2 badge rounded-full border text-green-400 border-green-400">
+                                 <span>Read</span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                 </svg>
+                              </div>
+                           </template>
+                           <div
+                              class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="showModal = true">
+                              <span>Learn More</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <template x-teleport="#x-teleport-target">
+                     <div
+                        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+                        x-show="showModal" role="dialog" @keydown.window.escape="showModal = false">
+                        <div class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+                           @click="showModal = false" x-show="showModal" x-transition:enter="ease-out"
+                           x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                           x-transition:leave="ease-in" x-transition:leave-start="opacity-100"
+                           x-transition:leave-end="opacity-0"></div>
+                        <div
+                           class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+                           x-show="showModal" x-transition:enter="ease-out" x-transition:enter-start="opacity-0"
+                           x-transition:enter-end="opacity-100" x-transition:leave="ease-in"
+                           x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                           <div
+                              class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+                              <div class="col-span-12 hidden lg:block lg:col-span-4 bg-cover bg-left rounded-l-lg"
+                                 :class="book.has_cover ? 'bg-[url(\'/library/images/covers/' + book.id + '.jpg\')]' : 'bg-[url(\'/library/images/covers/no_cover.jpg\')]'">
+                              </div>
+                              <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+                                 <h1 class="pb-4 ml-0 text-3xl font-semibold" x-text="book.title">
+                                 </h1>
+
+                                 <table class="w-full text-left align-top">
+                                    <tbody>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Authors:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="author in book.authors" :key="author.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/authors/' + author.id + '.html'"
+                                                   x-text="author.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Series:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="series in book.series" :key="series.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/series/' + series.id + '.html'"
+                                                   x-text="series.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publishers:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="publisher in book.publishers" :key="publisher.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/publishers/' + publisher.id + '.html'"
+                                                   x-text="publisher.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publish Date:
+                                          </td>
+                                          <td class="space-x-1" x-text="book.pubdate">
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Languages:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="language in book.languages" :key="language.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/languages/' + language.id + '.html'"
+                                                   x-text="language.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <template x-if="book.isbn">
+                                          <tr>
+                                             <td class="whitespace-nowrap font-semibold">
+                                                ISBN:
+                                             </td>
+                                             <td class="">
+                                                <div class="flex items-center">
+                                                   <p class="text-xs px-1 border border-slate-400 rounded-md"
+                                                      id="clipboardISBN" x-text="book.isbn">
+                                                   </p>
+                                                   <button
+                                                      class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                                                      @click="$clipboard({
+                                      content:document.querySelector('#clipboardISBN').innerText,
+                                      success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                      error:()=>$notification({text:'Error',variant:'error'})
+                                    })">
+                                                      Copy
+                                                   </button>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </template>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Rating:
+                                          </td>
+                                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                                             <template x-for="r in 5">
+                                                <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                                   :class="{'text-orange-500': r < book.rating}"
+                                                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                   fill="currentColor">
+                                                   <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                      clip-rule="evenodd" />
+                                                </svg>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="pt-1 whitespace-nowrap font-semibold">
+                                             Tags:
+                                          </td>
+                                          <td class="pt-1 space-x-1 space-y-1">
+                                             <template x-for="tag in book.tags" :key="tag.id">
+                                                <a class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                                                   :href="'/library/tags/' + tag.id + '.html'"
+                                                   x-text="tag.name">
+                                                </a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+
+                                 <p class="pt-4 pb-1 font-semibold">Description:</p>
+                                 <div x-init="$nextTick(() => { $el._x_simplebar = new SimpleBar($el) })"
+                                    class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 h-36 text-gray-500 text-justify"
+                                    x-html="book.comments">
+                                 </div>
+
+                                 <template x-if="book.identifiers">
+                                    <div>
+                                       <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                                       <div class="space-x-1 space-y-1">
+                                          <template x-for="identifier in book.identifiers" :key="identifier.id">
+                                             <a href="`${identifier.path}`" target="_blank"
+                                                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                                                x-text="identifier.name">
+                                             </a>
+                                          </template>
+                                       </div>
+                                    </div>
+                                 </template>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </template>
+               </div>
+            </template>
+         </div>
+
+         <div
+            class="mt-6 w-full md:w-1/2 mx-auto py-6 flex justify-between items-center text-slate-600 dark:text-slate-300"
+            x-show="pageCount() > 1">
+            <!--First Button-->
+            <button x-on:click="viewPage(0)" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="19 20 9 12 19 4 19 20"></polygon>
+                  <line x1="5" y1="19" x2="5" y2="5"></line>
                </svg>
             </button>
-            <button
-               @click="activeTab = 'tabTable'"
-               :class="activeTab === 'tabTable' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+
+            <!--Previous Button-->
+            <button x-on:click="prevPage" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
                </svg>
             </button>
-         </div class="max-w">
-      </div>
 
-      <div class="pt-10">
-         <div
-            x-show="activeTab === 'tabCards'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-            class="book-cards"
-         >
-            
-               
-                  
-  
+            <!-- Display page numbers -->
+            <div class="flex flex-wrap space-x-1">
+               <template x-if="pageNumber < 9">
+                  <template x-for="index in 9" :key="index">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors"
+                        :class="index - 1 === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(index - 1)">
+                        <span x-text="index"></span>
+                     </button>
+                  </template>
+               </template>
 
+               <!-- show eclipses -->
+               <template x-if="pageNumber < 9 && pages().length > 9">
+                  <button
+                     class="flex h-8 min-w-[2rem] items-center justify-center rounded-full bg-slate-150 px-3 leading-tight transition-colors hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450"
+                     type="button" x-on:click="viewPage(9)">
+                     <span>..</span>
+                  </button>
+               </template>
 
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/208.jpg"
-        alt="Anna Karenina"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              Anna Karenina
+               <!-- show pageNumber +/- 4 -->
+               <template x-if="pageNumber >= 9">
+                  <template
+                     x-for="(page, index) in [pageNumber - 4,pageNumber - 3,pageNumber - 2,pageNumber - 1, pageNumber, pageNumber + 1, pageNumber + 2, pageNumber + 3, pageNumber + 4]"
+                     :key="page">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors focus:bg-slate-300 dark:focus:bg-navy-450"
+                        :class="page === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(page)">
+                        <span x-text="page+1"></span>
+                     </button>
+                  </template>
+               </template>
             </div>
 
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/243.html">Leo Tolstoy</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>Considered by some to be the greatest novel ever written, Anna Karenina is Tolstoy's classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            <!--Next Button-->
+            <button x-on:click="nextPage" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
                </svg>
-              </div>
-            </div>
-       </div>
-    </div>
+            </button>
 
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/208.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                Anna Karenina
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/243.html">Leo Tolstoy</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/133.html">Random House Publishing Group</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2000-10-10
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9780679783305</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/4.html">
-                                Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/18.html">
-                                Romance
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/153.html">
-                                Classics
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/214.html">
-                                Gutenberg
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/152.html">
-                                Literary
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/148.html">
-                                Historical
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/210.html">
-                                Victorian
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>Considered by some to be the greatest novel ever written, Anna Karenina is Tolstoy's classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9780679783305" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="http://www.gutenberg.org/ebooks/1399" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Gutenberg
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=yBJShX4BLVYC" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/123.jpg"
-        alt="The Committed"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Committed
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/125.html">Viet Thanh Nguyen</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>The sequel to The Sympathizer, which won the 2016 Pulitzer Prize in Fiction and went on to sell over a million copies worldwide, The Committed tells the story of “the man of two minds” as he comes as a refugee to France and turns his hand to capitalism</p>
-<p>The long-awaited follow-up to the Pulitzer Prize-winning The Sympathizer, which has sold more than one million copies worldwide, The Committed follows the man of two minds as he arrives in Paris in the early 1980s with his blood brother Bon. The pair try to overcome their pasts and ensure their futures by engaging in capitalism in one of its purest forms: drug dealing.</p>
-<p>Traumatized by his reeducation at the hands of his former best friend, Man, and struggling to assimilate into French culture, the Sympathizer finds Paris both seductive and disturbing. As he falls in with a group of left-wing intellectuals whom he meets at dinner parties given by his French Vietnamese “aunt,” he finds stimulation for his mind but also customers for his narcotic merchandise. But the new life he is making has perils he has not foreseen, whether the self-torture of addiction, the authoritarianism of a state locked in a colonial mindset, or the seeming paradox of how to reunite his two closest friends whose worldviews put them in absolute opposition. The Sympathizer will need all his wits, resourcefulness, and moral flexibility if he is to prevail.</p>
-<p>Both highly suspenseful and existential, The Committed is a blistering portrayal of commitment and betrayal that will cement Viet Thanh Nguyen’s position in the firmament of American letters.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            <!--Last Button-->
+            <button x-on:click="viewPage(Math.ceil(total/size)-1)" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                  <line x1="19" y1="5" x2="19" y2="19"></line>
                </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/123.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Committed
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/125.html">Viet Thanh Nguyen</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/92.html">Grove Press</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2021-03-02
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9781472152527</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/49.html">
-                                Contemporary
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/194.html">
-                                Time
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/148.html">
-                                Historical
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>The sequel to The Sympathizer, which won the 2016 Pulitzer Prize in Fiction and went on to sell over a million copies worldwide, The Committed tells the story of “the man of two minds” as he comes as a refugee to France and turns his hand to capitalism</p>
-<p>The long-awaited follow-up to the Pulitzer Prize-winning The Sympathizer, which has sold more than one million copies worldwide, The Committed follows the man of two minds as he arrives in Paris in the early 1980s with his blood brother Bon. The pair try to overcome their pasts and ensure their futures by engaging in capitalism in one of its purest forms: drug dealing.</p>
-<p>Traumatized by his reeducation at the hands of his former best friend, Man, and struggling to assimilate into French culture, the Sympathizer finds Paris both seductive and disturbing. As he falls in with a group of left-wing intellectuals whom he meets at dinner parties given by his French Vietnamese “aunt,” he finds stimulation for his mind but also customers for his narcotic merchandise. But the new life he is making has perils he has not foreseen, whether the self-torture of addiction, the authoritarianism of a state locked in a colonial mindset, or the seeming paradox of how to reunite his two closest friends whose worldviews put them in absolute opposition. The Sympathizer will need all his wits, resourcefulness, and moral flexibility if he is to prevail.</p>
-<p>Both highly suspenseful and existential, The Committed is a blistering portrayal of commitment and betrayal that will cement Viet Thanh Nguyen’s position in the firmament of American letters.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9781472152527" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=n7kIDgAAQBAJ" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/52260627" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/0802157068" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/118.jpg"
-        alt="The Lincoln Highway: A Novel"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Lincoln Highway: A Novel
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/160.html">Amor Towles</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>The bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett's intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden's car. Together, they have hatched an altogether different plan for Emmett's future, one that will take them all on a fateful journey in the opposite direction—to the City of New York. Spanning just ten days and told from multiple points of view, Towles's third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-               </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/118.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Lincoln Highway: A Novel
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/160.html">Amor Towles</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/90.html">Penguin Random House</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2021-10-05
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9780735222373</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/4.html">
-                                Fiction
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/194.html">
-                                Time
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/152.html">
-                                Literary
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/148.html">
-                                Historical
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/151.html">
-                                Coming of Age
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>The bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett's intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden's car. Together, they have hatched an altogether different plan for Emmett's future, one that will take them all on a fateful journey in the opposite direction—to the City of New York. Spanning just ten days and told from multiple points of view, Towles's third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9780735222373" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=Kn4eEAAAQBAJ" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
+            </button>
          </div>
-         <div
-            x-show="activeTab === 'tabTable'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-         >
-            <div x-data='tables.initGridTable([{"author_ids": "243", "authors": [{"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConsidered by some to be the greatest novel ever written, Anna Karenina is Tolstoy\u0027s classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 208, "identifier_ids": "751,752,750", "identifiers": [{"book": 208, "id": 750, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679783305", "sort": "isbn", "type": "isbn", "val": "9780679783305"}, {"book": 208, "id": 752, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/1399", "sort": "gutenberg", "type": "gutenberg", "val": "1399"}, {"book": 208, "id": 751, "name": "Google Books", "path": "https://books.google.com/books?id=yBJShX4BLVYC", "sort": "google", "type": "google", "val": "yBJShX4BLVYC"}], "isbn": "9780679783305", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.688127+00:00", "path": "Leo Tolstoy/Anna Karenina (208)", "pubdate": "2000-10-10", "publisher_ids": "133", "publishers": [{"avg_rating": null, "count": 2, "id": 133, "name": "Random House Publishing Group", "sort": "Random House Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 3845227, "tag_ids": "4,18,148,152,153,210,214", "tags": [{"avg_rating": 9.310344827586206, "count": 62, "id": 4, "name": "Fiction", "sort": 62}, {"avg_rating": 8.941176470588236, "count": 20, "id": 18, "name": "Romance", "sort": 20}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 14, "id": 214, "name": "Gutenberg", "sort": 14}, {"avg_rating": 8.5, "count": 8, "id": 152, "name": "Literary", "sort": 8}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 1, "id": 210, "name": "Victorian", "sort": 1}], "timestamp": "2022-10-10 14:39:36.688127+00:00", "title": "Anna Karenina"}, {"author_ids": "125", "authors": [{"avg_rating": 8.0, "count": 1, "id": 125, "name": "Viet Thanh Nguyen", "sort": "Nguyen, Viet Thanh"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe sequel to The Sympathizer, which won the 2016 Pulitzer Prize in Fiction and went on to sell over a million copies worldwide, The Committed tells the story of \u201cthe man of two minds\u201d as he comes as a refugee to France and turns his hand to capitalism\u003c/p\u003e\n\u003cp\u003eThe long-awaited follow-up to the Pulitzer Prize-winning The Sympathizer, which has sold more than one million copies worldwide, The Committed follows the man of two minds as he arrives in Paris in the early 1980s with his blood brother Bon. The pair try to overcome their pasts and ensure their futures by engaging in capitalism in one of its purest forms: drug dealing.\u003c/p\u003e\n\u003cp\u003eTraumatized by his reeducation at the hands of his former best friend, Man, and struggling to assimilate into French culture, the Sympathizer finds Paris both seductive and disturbing. As he falls in with a group of left-wing intellectuals whom he meets at dinner parties given by his French Vietnamese \u201caunt,\u201d he finds stimulation for his mind but also customers for his narcotic merchandise. But the new life he is making has perils he has not foreseen, whether the self-torture of addiction, the authoritarianism of a state locked in a colonial mindset, or the seeming paradox of how to reunite his two closest friends whose worldviews put them in absolute opposition. The Sympathizer will need all his wits, resourcefulness, and moral flexibility if he is to prevail.\u003c/p\u003e\n\u003cp\u003eBoth highly suspenseful and existential, The Committed is a blistering portrayal of commitment and betrayal that will cement Viet Thanh Nguyen\u2019s position in the firmament of American letters.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 123, "identifier_ids": "404,402,403,405", "identifiers": [{"book": 123, "id": 405, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781472152527", "sort": "isbn", "type": "isbn", "val": "9781472152527"}, {"book": 123, "id": 403, "name": "Google Books", "path": "https://books.google.com/books?id=n7kIDgAAQBAJ", "sort": "google", "type": "google", "val": "n7kIDgAAQBAJ"}, {"book": 123, "id": 402, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/52260627", "sort": "goodreads", "type": "goodreads", "val": "52260627"}, {"book": 123, "id": 404, "name": "Amazon", "path": "https://amazon.com/dp/0802157068", "sort": "amazon", "type": "amazon", "val": "0802157068"}], "isbn": "9781472152527", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2022-10-05 15:54:07.284827+00:00", "path": "Viet Thanh Nguyen/The Committed (123)", "pubdate": "2021-03-02", "publisher_ids": "92", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 92, "name": "Grove Press", "sort": "Grove Press"}], "rating": 4, "series": [], "series_ids": null, "size": 2249337, "tag_ids": "49,148,194", "tags": [{"avg_rating": 8.89655172413793, "count": 51, "id": 49, "name": "Contemporary", "sort": 51}, {"avg_rating": 8.333333333333334, "count": 40, "id": 194, "name": "Time", "sort": 40}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}], "timestamp": "2022-10-05 15:54:07.284827+00:00", "title": "The Committed"}, {"author_ids": "160", "authors": [{"avg_rating": null, "count": 1, "id": 160, "name": "Amor Towles", "sort": "Towles, Amor"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\u0027s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden\u0027s car. Together, they have hatched an altogether different plan for Emmett\u0027s future, one that will take them all on a fateful journey in the opposite direction\u2014to the City of New York. Spanning just ten days and told from multiple points of view, Towles\u0027s third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 118, "identifier_ids": "423,424", "identifiers": [{"book": 118, "id": 424, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780735222373", "sort": "isbn", "type": "isbn", "val": "9780735222373"}, {"book": 118, "id": 423, "name": "Google Books", "path": "https://books.google.com/books?id=Kn4eEAAAQBAJ", "sort": "google", "type": "google", "val": "Kn4eEAAAQBAJ"}], "isbn": "9780735222373", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.426067+00:00", "path": "Amor Towles/The Lincoln Highway_ A Novel (118)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 6630557, "tag_ids": "4,148,151,152,194", "tags": [{"avg_rating": 9.310344827586206, "count": 62, "id": 4, "name": "Fiction", "sort": 62}, {"avg_rating": 8.333333333333334, "count": 40, "id": 194, "name": "Time", "sort": 40}, {"avg_rating": 8.5, "count": 8, "id": 152, "name": "Literary", "sort": 8}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 3, "id": 151, "name": "Coming of Age", "sort": 3}], "timestamp": "2022-10-05 15:54:05.426067+00:00", "title": "The Lincoln Highway: A Novel"}])'></div>
+
+         <div>
+            <div class="mt-6 flex flex-wrap justify-between items-center text-sm leading-5 text-gray-700">
+               <div class="w-full sm:w-auto text-center sm:text-left" x-show="pageCount() > 1">
+                  Page <span x-text="pageNumber+1"> </span> of
+                  <span x-text="pageCount()"></span> | Showing
+                  <span x-text="startResults()"></span> to
+                  <span x-text="endResults()"></span>
+               </div>
+
+               <div class="w-full sm:w-auto text-center sm:text-right" x-show="total > 0">
+                  Total <span class="font-bold" x-text="total"></span> results
+               </div>
+
+               <!--Message to display when no results-->
+               <div class="mx-auto flex items-center font-bold text-red-500" x-show="total===0">
+                  <svg class="h-8 w-8 text-red-500" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                     fill="none" stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" />
+                     <circle cx="12" cy="12" r="9" />
+                     <line x1="9" y1="10" x2="9.01" y2="10" />
+                     <line x1="15" y1="10" x2="15.01" y2="10" />
+                     <path d="M9.5 16a10 10 0 0 1 6 -1.5" />
+                  </svg>
+
+                  <span class="ml-4">No results.</span>
+               </div>
+            </div>
          </div>
+
+      </div>
+      <div x-show="activeTab === 'tabList'" x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div x-data='tables.initList([{"author_ids": "243", "authors": [{"avg_rating": 8.0, "count": 2, "id": 243, "name": "Leo Tolstoy", "sort": "Tolstoy, Leo"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eConsidered by some to be the greatest novel ever written, Anna Karenina is Tolstoy\u0027s classic tale of love and adultery set against the backdrop of high society in Moscow and Saint Petersburg. A rich and complex masterpiece, the novel charts the disastrous course of a love affair between Anna, a beautiful married woman, and Count Vronsky, a wealthy army officer. Tolstoy seamlessly weaves together the lives of dozens of characters, and in doing so captures a breathtaking tapestry of late-nineteenth-century Russian society.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 6, "sort": "Must Read.10 Greatest Books of All Time", "value": "Must Read.10 Greatest Books of All Time"}, {"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "6,7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 208, "identifier_ids": "751,752,750", "identifiers": [{"book": 208, "id": 750, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780679783305", "sort": "isbn", "type": "isbn", "val": "9780679783305"}, {"book": 208, "id": 752, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/1399", "sort": "gutenberg", "type": "gutenberg", "val": "1399"}, {"book": 208, "id": 751, "name": "Google Books", "path": "https://books.google.com/books?id=yBJShX4BLVYC", "sort": "google", "type": "google", "val": "yBJShX4BLVYC"}], "isbn": "9780679783305", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-10 15:10:59.935171+00:00", "order_by": "2022-10-10 14:39:36.688127+00:00", "path": "Leo Tolstoy/Anna Karenina (208)", "pubdate": "2000-10-10", "publisher_ids": "133", "publishers": [{"avg_rating": null, "count": 2, "id": 133, "name": "Random House Publishing Group", "sort": "Random House Publishing Group"}], "rating": null, "series": [], "series_ids": null, "size": 3845227, "tag_ids": "4,18,148,152,153,210,214", "tags": [{"avg_rating": 9.310344827586206, "count": 62, "id": 4, "name": "Fiction", "sort": 62}, {"avg_rating": 8.941176470588236, "count": 20, "id": 18, "name": "Romance", "sort": 20}, {"avg_rating": 8.1, "count": 14, "id": 153, "name": "Classics", "sort": 14}, {"avg_rating": 7.666666666666667, "count": 14, "id": 214, "name": "Gutenberg", "sort": 14}, {"avg_rating": 8.5, "count": 8, "id": 152, "name": "Literary", "sort": 8}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 1, "id": 210, "name": "Victorian", "sort": 1}], "timestamp": "2022-10-10 14:39:36.688127+00:00", "title": "Anna Karenina"}, {"author_ids": "125", "authors": [{"avg_rating": 8.0, "count": 1, "id": 125, "name": "Viet Thanh Nguyen", "sort": "Nguyen, Viet Thanh"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe sequel to The Sympathizer, which won the 2016 Pulitzer Prize in Fiction and went on to sell over a million copies worldwide, The Committed tells the story of \u201cthe man of two minds\u201d as he comes as a refugee to France and turns his hand to capitalism\u003c/p\u003e\n\u003cp\u003eThe long-awaited follow-up to the Pulitzer Prize-winning The Sympathizer, which has sold more than one million copies worldwide, The Committed follows the man of two minds as he arrives in Paris in the early 1980s with his blood brother Bon. The pair try to overcome their pasts and ensure their futures by engaging in capitalism in one of its purest forms: drug dealing.\u003c/p\u003e\n\u003cp\u003eTraumatized by his reeducation at the hands of his former best friend, Man, and struggling to assimilate into French culture, the Sympathizer finds Paris both seductive and disturbing. As he falls in with a group of left-wing intellectuals whom he meets at dinner parties given by his French Vietnamese \u201caunt,\u201d he finds stimulation for his mind but also customers for his narcotic merchandise. But the new life he is making has perils he has not foreseen, whether the self-torture of addiction, the authoritarianism of a state locked in a colonial mindset, or the seeming paradox of how to reunite his two closest friends whose worldviews put them in absolute opposition. The Sympathizer will need all his wits, resourcefulness, and moral flexibility if he is to prevail.\u003c/p\u003e\n\u003cp\u003eBoth highly suspenseful and existential, The Committed is a blistering portrayal of commitment and betrayal that will cement Viet Thanh Nguyen\u2019s position in the firmament of American letters.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 123, "identifier_ids": "404,402,403,405", "identifiers": [{"book": 123, "id": 405, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9781472152527", "sort": "isbn", "type": "isbn", "val": "9781472152527"}, {"book": 123, "id": 403, "name": "Google Books", "path": "https://books.google.com/books?id=n7kIDgAAQBAJ", "sort": "google", "type": "google", "val": "n7kIDgAAQBAJ"}, {"book": 123, "id": 402, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/52260627", "sort": "goodreads", "type": "goodreads", "val": "52260627"}, {"book": 123, "id": 404, "name": "Amazon", "path": "https://amazon.com/dp/0802157068", "sort": "amazon", "type": "amazon", "val": "0802157068"}], "isbn": "9781472152527", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-05-04 17:55:52.136675+00:00", "order_by": "2022-10-05 15:54:07.284827+00:00", "path": "Viet Thanh Nguyen/The Committed (123)", "pubdate": "2021-03-02", "publisher_ids": "92", "publishers": [{"avg_rating": 8.0, "count": 1, "id": 92, "name": "Grove Press", "sort": "Grove Press"}], "rating": 4, "series": [], "series_ids": null, "size": 2249337, "tag_ids": "49,148,194", "tags": [{"avg_rating": 8.89655172413793, "count": 51, "id": 49, "name": "Contemporary", "sort": 51}, {"avg_rating": 8.333333333333334, "count": 40, "id": 194, "name": "Time", "sort": 40}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}], "timestamp": "2022-10-05 15:54:07.284827+00:00", "title": "The Committed"}, {"author_ids": "160", "authors": [{"avg_rating": null, "count": 1, "id": 160, "name": "Amor Towles", "sort": "Towles, Amor"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eThe bestselling author of A Gentleman in Moscow and Rules of Civility and master of absorbing, sophisticated fiction returns with a stylish and propulsive novel set in 1950s AmericaIn June, 1954, eighteen-year-old Emmett Watson is driven home to Nebraska by the warden of the juvenile work farm where he has just served fifteen months for involuntary manslaughter. His mother long gone, his father recently deceased, and the family farm foreclosed upon by the bank, Emmett\u0027s intention is to pick up his eight-year-old brother, Billy, and head to California where they can start their lives anew. But when the warden drives away, Emmett discovers that two friends from the work farm have hidden themselves in the trunk of the warden\u0027s car. Together, they have hatched an altogether different plan for Emmett\u0027s future, one that will take them all on a fateful journey in the opposite direction\u2014to the City of New York. Spanning just ten days and told from multiple points of view, Towles\u0027s third novel will satisfy fans of his multi-layered literary styling while providing them an array of new and richly imagined settings, characters, and themes.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 5, "sort": "Must Read.2021 Time", "value": "Must Read.2021 Time"}], "custom_lists_ids": "5", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 118, "identifier_ids": "423,424", "identifiers": [{"book": 118, "id": 424, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780735222373", "sort": "isbn", "type": "isbn", "val": "9780735222373"}, {"book": 118, "id": 423, "name": "Google Books", "path": "https://books.google.com/books?id=Kn4eEAAAQBAJ", "sort": "google", "type": "google", "val": "Kn4eEAAAQBAJ"}], "isbn": "9780735222373", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:40:33.417009+00:00", "order_by": "2022-10-05 15:54:05.426067+00:00", "path": "Amor Towles/The Lincoln Highway_ A Novel (118)", "pubdate": "2021-10-05", "publisher_ids": "90", "publishers": [{"avg_rating": 8.666666666666666, "count": 13, "id": 90, "name": "Penguin Random House", "sort": "Penguin Random House"}], "rating": null, "series": [], "series_ids": null, "size": 6630557, "tag_ids": "4,148,151,152,194", "tags": [{"avg_rating": 9.310344827586206, "count": 62, "id": 4, "name": "Fiction", "sort": 62}, {"avg_rating": 8.333333333333334, "count": 40, "id": 194, "name": "Time", "sort": 40}, {"avg_rating": 8.5, "count": 8, "id": 152, "name": "Literary", "sort": 8}, {"avg_rating": 8.0, "count": 3, "id": 148, "name": "Historical", "sort": 3}, {"avg_rating": null, "count": 3, "id": 151, "name": "Coming of Age", "sort": 3}], "timestamp": "2022-10-05 15:54:05.426067+00:00", "title": "The Lincoln Highway: A Novel"}])'></div>
       </div>
    </div>
+</div>
 
             </div>
         </div>

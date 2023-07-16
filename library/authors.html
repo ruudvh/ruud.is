@@ -202,189 +202,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
                 <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
@@ -517,189 +334,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
                     </nav>
                   </div>
                 </div>
@@ -709,7 +343,7 @@
             <div class="w-full overflow-hidden">
                 
    <div class="pb-4 border-solid border-b border-b-slate-300">
-      <div class="font-medium text-base">Authors (251)</div>
+      <div class="font-medium text-base">Authors (298)</div>
    </div>
    <ul class="pt-5">
       
@@ -768,16 +402,25 @@
          <li class="pb-3"><a href="./authors/316.html">Christian Bird</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/402.html">Rúnar Bjarnason</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/356.html">Steven Gary Blank</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/181.html">Sanne Blauw</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/405.html">Stefan Bocutiu</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/329.html">Piotr Bojanowski</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/60.html">Richard Nelson Bolles</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/429.html">Umar Bradshaw</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/320.html">Eric Breck</a> (1)</li>
@@ -813,6 +456,9 @@
          <li class="pb-3"><a href="./authors/321.html">Shanqing Cai</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/407.html">Massimo Carli</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/17.html">Dale Carnegie</a> (3)</li>
       
          
@@ -822,16 +468,25 @@
          <li class="pb-3"><a href="./authors/337.html">Allen Carr</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/420.html">Peter Chan</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/307.html">Vinay Chaudhary</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/249.html">Anton Chekhov</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/400.html">Paul Chiusano</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/154.html">Kat Chow</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/136.html">Lesley Chow</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/444.html">Pierre Christin</a> (7)</li>
       
          
          <li class="pb-3"><a href="./authors/176.html">Jack Cohen</a> (4)</li>
@@ -844,6 +499,9 @@
       
          
          <li class="pb-3"><a href="./authors/304.html">Eugene Davydov</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/380.html">Sophie Debenedetto</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/317.html">Robert DeLine</a> (1)</li>
@@ -867,7 +525,13 @@
          <li class="pb-3"><a href="./authors/270.html">Allen B. Downey</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/395.html">Mike Dunn</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/306.html">Dietmar Ebner</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/436.html">Apple Education</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/238.html">George Eliot</a> (1)</li>
@@ -912,6 +576,12 @@
          <li class="pb-3"><a href="./authors/116.html">Ashley C. Ford</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/425.html">Hammad Fozi</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/413.html">Charles Frederick</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/365.html">Sigmund Freud</a> (1)</li>
       
          
@@ -954,7 +624,16 @@
          <li class="pb-3"><a href="./authors/269.html">Daniel Roy Greenfeld</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/384.html">David Greenhalgh</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/65.html">Joseph Grenny</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/387.html">David Griffiths</a> (2)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/386.html">Dawn Griffiths</a> (2)</li>
       
          
          <li class="pb-3"><a href="./authors/177.html">Jacob Grimm</a> (1)</li>
@@ -996,6 +675,9 @@
          <li class="pb-3"><a href="./authors/151.html">Daisy Hernández</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/394.html">Amanda Hinchman-Dominguez</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/146.html">Elizabeth Hinton</a> (1)</li>
       
          
@@ -1017,19 +699,31 @@
          <li class="pb-3"><a href="./authors/230.html">Qiyuan Hu</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/403.html">John Hunt</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/283.html">Ben Hutchinson</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/277.html">Marcus Hutter</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/418.html">Eric Ingerson</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/119.html">Walter Isaacson</a> (2)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/409.html">Svetlana Isakova</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/325.html">Gautier Izacard</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/213.html">Varun Jampani</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/408.html">Dmitry Jemerov</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/368.html">J. G. Jones</a> (8)</li>
@@ -1074,6 +768,9 @@
          <li class="pb-3"><a href="./authors/220.html">Jong Wook Kim</a> (2)</li>
       
          
+         <li class="pb-3"><a href="./authors/434.html">Dorling Kindersley</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/370.html">Patrick King</a> (1)</li>
       
          
@@ -1086,10 +783,22 @@
          <li class="pb-3"><a href="./authors/145.html">Elizabeth Kolbert</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/391.html">Ken Kousen</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/144.html">Gabriel Krauze</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/98.html">Matt Kuhn</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/421.html">Pankaj Kumar</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/446.html">Scott Kupor</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/393.html">Pierre-Olivier Laurence</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/103.html">Jenny Lawson</a> (1)</li>
@@ -1140,6 +849,9 @@
          <li class="pb-3"><a href="./authors/345.html">Mark Manson</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/430.html">Goncalo Marques</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/90.html">George R.R. Martin</a> (4)</li>
       
          
@@ -1152,6 +864,9 @@
          <li class="pb-3"><a href="./authors/258.html">David Maxwell</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/383.html">Jonathan Mayer</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/138.html">Jesse McCarthy</a> (1)</li>
       
          
@@ -1159,6 +874,9 @@
       
          
          <li class="pb-3"><a href="./authors/140.html">Heather McGhee</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/397.html">Brett McLaughlin</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/290.html">Christine McLeavey</a> (1)</li>
@@ -1182,6 +900,9 @@
          <li class="pb-3"><a href="./authors/278.html">Margaret Mitchell</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/419.html">Bret Mogilefsky</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/180.html">Jelmer Mommers</a> (1)</li>
       
          
@@ -1201,6 +922,9 @@
       
          
          <li class="pb-3"><a href="./authors/41.html">John Mullins</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/445.html">Jean-Claude Mézières</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/245.html">Vladimir Vladimirovich Nabokov</a> (1)</li>
@@ -1239,6 +963,9 @@
          <li class="pb-3"><a href="./authors/219.html">Christine Payne</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/432.html">David Pereira</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/135.html">Larissa Pham</a> (1)</li>
       
          
@@ -1275,6 +1002,9 @@
          <li class="pb-3"><a href="./authors/285.html">Inioluwa Deborah Raji</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/406.html">Raywenderlich Tutorial Team</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/179.html">Mordecai Richler</a> (1)</li>
       
          
@@ -1302,6 +1032,15 @@
          <li class="pb-3"><a href="./authors/323.html">Michael Salib</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/404.html">Stephen Samuel</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/416.html">Tim Schafer</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/382.html">Sarah Scheffler</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/301.html">D. Sculley</a> (2)</li>
       
          
@@ -1318,6 +1057,9 @@
       
          
          <li class="pb-3"><a href="./authors/293.html">Noam Shazeer</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/431.html">Devin Sherry</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/338.html">Alexander Shulgin</a> (1)</li>
@@ -1350,7 +1092,13 @@
          <li class="pb-3"><a href="./authors/346.html">Aldo Sohm</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/433.html">The Editors Of Think Spanish</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/284.html">Elena Spitzer</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/423.html">Peter Späth</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/252.html">Fiona Staples</a> (10)</li>
@@ -1362,6 +1110,9 @@
          <li class="pb-3"><a href="./authors/97.html">Barney Stinson</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/392.html">Venkat Subramaniam</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/222.html">Ilya Sutskever</a> (2)</li>
       
          
@@ -1369,6 +1120,9 @@
       
          
          <li class="pb-3"><a href="./authors/236.html">Yaniv Taigman</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/379.html">Bruce A. Tate</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/52.html">Peter Thiel</a> (1)</li>
@@ -1389,6 +1143,9 @@
          <li class="pb-3"><a href="./authors/160.html">Amor Towles</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/417.html">Peter Tsacle</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/157.html">Kikuko Tsumura</a> (1)</li>
       
          
@@ -1401,6 +1158,9 @@
          <li class="pb-3"><a href="./authors/295.html">Jakob Uszkoreit</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/427.html">Sufyan Bin Uzayr</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/282.html">Lucy Vasserman</a> (1)</li>
       
          
@@ -1408,6 +1168,9 @@
       
          
          <li class="pb-3"><a href="./authors/207.html">Brian K. Vaughan</a> (23)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/401.html">Marco Vermeulen</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/171.html">Jules Verne</a> (2)</li>
@@ -1431,10 +1194,19 @@
          <li class="pb-3"><a href="./authors/168.html">Oscar Wilde</a> (2)</li>
       
          
+         <li class="pb-3"><a href="./authors/375.html">Bruce Williams</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/374.html">James W Williams</a> (1)</li>
       
          
+         <li class="pb-3"><a href="./authors/381.html">Ben Wilson</a> (1)</li>
+      
+         
          <li class="pb-3"><a href="./authors/355.html">Christina Wodtke</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/412.html">Gary K. Wolf</a> (4)</li>
       
          
          <li class="pb-3"><a href="./authors/162.html">Jan Wolkers</a> (1)</li>
@@ -1456,6 +1228,9 @@
       
          
          <li class="pb-3"><a href="./authors/308.html">Michael Young</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./authors/376.html">Carmine Zaccagnino</a> (1)</li>
       
          
          <li class="pb-3"><a href="./authors/280.html">Andrew Zaldivar</a> (1)</li>

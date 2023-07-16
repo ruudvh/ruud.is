@@ -202,189 +202,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
                 <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
@@ -517,189 +334,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
                     </nav>
                   </div>
                 </div>
@@ -708,376 +342,383 @@
          
             <div class="w-full overflow-hidden">
                 
-   <div x-data="{activeTab:'tabCards', books:[]}">
-      <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Authors > Sigmund Freud (1)</div>
-         <div class="flex flex-row">
-            <button
-               @click="activeTab = 'tabCards'"
-               :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+<div x-data="{activeTab:'tabCards'}">
+   <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
+      <div class="font-medium text-base">Authors > Sigmund Freud (1)</div>
+      <div class="flex flex-row">
+         <button @click="activeTab = 'tabCards'"
+            :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
+         </button>
+         <button @click="activeTab = 'tabList'"
+            :class="activeTab === 'tabList' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+            </svg>
+         </button>
+      </div class="max-w">
+   </div>
+
+   <div class="pt-5">
+      <div x-data='tables.initGrid([{"author_ids": "365", "authors": [{"avg_rating": null, "count": 1, "id": 365, "name": "Sigmund Freud", "sort": "Freud, Sigmund"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFirst published in 1899, \u0027The Interpretation of Dreams\u0027 written by Sigmund Freud, presents the theory of the unconscious with respect to dream interpretation and discusses what would later become the theory of the Oedipus complex. Sigmund Freud is an Austrian neurologist and the founding father of psychoanalysis, a method for treating mental illness and also a theory that explains human behavior. Freud believed that events in our childhood hold a great impact on our adult lives, shaping our personality. In creating psychoanalysis, Freud designed therapeutic techniques such as the use of free association and discovered transference, establishing its central role in the analytic process. Freud saw that man is at war with himself and often unable to tolerate too much reality. He propounded the theory that dreams are the contraband representations of the beast within man, smuggled into awareness during sleep. In Freudian interpretation, the analysis of dreams is the key to unlocking the secrets of the unconscious mind.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 275, "identifier_ids": "926,924,925", "identifiers": [{"book": 275, "id": 925, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789354992926", "sort": "isbn", "type": "isbn", "val": "9789354992926"}, {"book": 275, "id": 924, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/66048", "sort": "gutenberg", "type": "gutenberg", "val": "66048"}, {"book": 275, "id": 926, "name": "Google Books", "path": "https://books.google.com/books?id=VeI6zwEACAAJ", "sort": "google", "type": "google", "val": "VeI6zwEACAAJ"}], "isbn": "9789354992926", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-07-16 20:11:13.407698+00:00", "order_by": "2023-03-16 22:04:27.128124+00:00", "path": "Sigmund Freud/The Interpretation of Dreams (275)", "pubdate": "2021-06-10", "publisher_ids": "176", "publishers": [{"avg_rating": null, "count": 1, "id": 176, "name": "General Press", "sort": "General Press"}], "rating": null, "series": [], "series_ids": null, "size": 889821, "tag_ids": "31,214,271,272", "tags": [{"avg_rating": 8.0, "count": 20, "id": 31, "name": "Psychology", "sort": 20}, {"avg_rating": 7.666666666666667, "count": 14, "id": 214, "name": "Gutenberg", "sort": 14}, {"avg_rating": null, "count": 1, "id": 271, "name": "Dream interpretation", "sort": 1}, {"avg_rating": null, "count": 1, "id": 272, "name": "Psychoanalysis", "sort": 1}], "timestamp": "2023-03-16 22:04:27.128124+00:00", "title": "The Interpretation of Dreams"}])' x-show="activeTab === 'tabCards'"
+         x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div class="flex justify-end">
+            <input x-ref="searchField" x-model="search" x-on:click="viewPage(0)"
+               x-on:keydown.window.prevent.slash=" viewPage(0), $refs.searchField.focus()"
+               placeholder="Search for a book .." type="search"
+               class="appearance-none rounded-lg border border-slate-300 px-3 py-2 font-medium outline-none dark:border-navy-450 dark:bg-navy-700 dark:text-navy-100" />
+         </div>
+         <div class="pt-5 book-cards">
+            <template x-for="book in filteredBooks" :key="book.id">
+               <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+                  <div class="flex relative">
+                     <img
+                        :src="book.has_cover ? '/library/images/covers/' + book.id + '.jpg' : '/library/images/covers/no_cover.jpg'"
+                        :alt="book.title"
+                        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+                        @click="showModal = true">
+                     <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+                        <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap" x-text="book.title">
+                        </div>
+
+                        <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by
+                           <template x-for="author in book.authors" :key="author.id">
+                              <a class="underline decoration-solid"
+                                 :href="'/library/authors/' + author.id + '.html'" x-text="author.name"></a>
+                           </template>
+                        </p>
+
+                        <div class="whitespace-nowrap mt-2 text-slate-300">
+                           <template x-for="r in 5">
+                              <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                 :class="{'text-orange-500': r < book.rating}" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24" fill="currentColor">
+                                 <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                           </template>
+                        </div>
+
+                        <div class="hidden sm:inline-block">
+                           <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4" x-html="book.comments"></div>
+                        </div>
+
+                        <div class="mt-4">
+                           <template x-if="book.custom_read_date">
+                              <div class="space-x-2 badge rounded-full border text-green-400 border-green-400">
+                                 <span>Read</span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                 </svg>
+                              </div>
+                           </template>
+                           <div
+                              class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="showModal = true">
+                              <span>Learn More</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <template x-teleport="#x-teleport-target">
+                     <div
+                        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+                        x-show="showModal" role="dialog" @keydown.window.escape="showModal = false">
+                        <div class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+                           @click="showModal = false" x-show="showModal" x-transition:enter="ease-out"
+                           x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                           x-transition:leave="ease-in" x-transition:leave-start="opacity-100"
+                           x-transition:leave-end="opacity-0"></div>
+                        <div
+                           class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+                           x-show="showModal" x-transition:enter="ease-out" x-transition:enter-start="opacity-0"
+                           x-transition:enter-end="opacity-100" x-transition:leave="ease-in"
+                           x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                           <div
+                              class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+                              <div class="col-span-12 hidden lg:block lg:col-span-4 bg-cover bg-left rounded-l-lg"
+                                 :class="book.has_cover ? 'bg-[url(\'/library/images/covers/' + book.id + '.jpg\')]' : 'bg-[url(\'/library/images/covers/no_cover.jpg\')]'">
+                              </div>
+                              <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+                                 <h1 class="pb-4 ml-0 text-3xl font-semibold" x-text="book.title">
+                                 </h1>
+
+                                 <table class="w-full text-left align-top">
+                                    <tbody>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Authors:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="author in book.authors" :key="author.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/authors/' + author.id + '.html'"
+                                                   x-text="author.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Series:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="series in book.series" :key="series.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/series/' + series.id + '.html'"
+                                                   x-text="series.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publishers:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="publisher in book.publishers" :key="publisher.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/publishers/' + publisher.id + '.html'"
+                                                   x-text="publisher.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publish Date:
+                                          </td>
+                                          <td class="space-x-1" x-text="book.pubdate">
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Languages:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="language in book.languages" :key="language.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/languages/' + language.id + '.html'"
+                                                   x-text="language.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <template x-if="book.isbn">
+                                          <tr>
+                                             <td class="whitespace-nowrap font-semibold">
+                                                ISBN:
+                                             </td>
+                                             <td class="">
+                                                <div class="flex items-center">
+                                                   <p class="text-xs px-1 border border-slate-400 rounded-md"
+                                                      id="clipboardISBN" x-text="book.isbn">
+                                                   </p>
+                                                   <button
+                                                      class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                                                      @click="$clipboard({
+                                      content:document.querySelector('#clipboardISBN').innerText,
+                                      success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                      error:()=>$notification({text:'Error',variant:'error'})
+                                    })">
+                                                      Copy
+                                                   </button>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </template>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Rating:
+                                          </td>
+                                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                                             <template x-for="r in 5">
+                                                <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                                   :class="{'text-orange-500': r < book.rating}"
+                                                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                   fill="currentColor">
+                                                   <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                      clip-rule="evenodd" />
+                                                </svg>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="pt-1 whitespace-nowrap font-semibold">
+                                             Tags:
+                                          </td>
+                                          <td class="pt-1 space-x-1 space-y-1">
+                                             <template x-for="tag in book.tags" :key="tag.id">
+                                                <a class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                                                   :href="'/library/tags/' + tag.id + '.html'"
+                                                   x-text="tag.name">
+                                                </a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+
+                                 <p class="pt-4 pb-1 font-semibold">Description:</p>
+                                 <div x-init="$nextTick(() => { $el._x_simplebar = new SimpleBar($el) })"
+                                    class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 h-36 text-gray-500 text-justify"
+                                    x-html="book.comments">
+                                 </div>
+
+                                 <template x-if="book.identifiers">
+                                    <div>
+                                       <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                                       <div class="space-x-1 space-y-1">
+                                          <template x-for="identifier in book.identifiers" :key="identifier.id">
+                                             <a href="`${identifier.path}`" target="_blank"
+                                                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                                                x-text="identifier.name">
+                                             </a>
+                                          </template>
+                                       </div>
+                                    </div>
+                                 </template>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </template>
+               </div>
+            </template>
+         </div>
+
+         <div
+            class="mt-6 w-full md:w-1/2 mx-auto py-6 flex justify-between items-center text-slate-600 dark:text-slate-300"
+            x-show="pageCount() > 1">
+            <!--First Button-->
+            <button x-on:click="viewPage(0)" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="19 20 9 12 19 4 19 20"></polygon>
+                  <line x1="5" y1="19" x2="5" y2="5"></line>
                </svg>
             </button>
-            <button
-               @click="activeTab = 'tabTable'"
-               :class="activeTab === 'tabTable' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+
+            <!--Previous Button-->
+            <button x-on:click="prevPage" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
                </svg>
             </button>
-         </div class="max-w">
-      </div>
 
-      <div class="pt-10">
-         <div
-            x-show="activeTab === 'tabCards'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-            class="book-cards"
-         >
-            
-               
-                  
-  
+            <!-- Display page numbers -->
+            <div class="flex flex-wrap space-x-1">
+               <template x-if="pageNumber < 9">
+                  <template x-for="index in 9" :key="index">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors"
+                        :class="index - 1 === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(index - 1)">
+                        <span x-text="index"></span>
+                     </button>
+                  </template>
+               </template>
 
+               <!-- show eclipses -->
+               <template x-if="pageNumber < 9 && pages().length > 9">
+                  <button
+                     class="flex h-8 min-w-[2rem] items-center justify-center rounded-full bg-slate-150 px-3 leading-tight transition-colors hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450"
+                     type="button" x-on:click="viewPage(9)">
+                     <span>..</span>
+                  </button>
+               </template>
 
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/275.jpg"
-        alt="The Interpretation of Dreams"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              The Interpretation of Dreams
+               <!-- show pageNumber +/- 4 -->
+               <template x-if="pageNumber >= 9">
+                  <template
+                     x-for="(page, index) in [pageNumber - 4,pageNumber - 3,pageNumber - 2,pageNumber - 1, pageNumber, pageNumber + 1, pageNumber + 2, pageNumber + 3, pageNumber + 4]"
+                     :key="page">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors focus:bg-slate-300 dark:focus:bg-navy-450"
+                        :class="page === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(page)">
+                        <span x-text="page+1"></span>
+                     </button>
+                  </template>
+               </template>
             </div>
 
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/365.html">Sigmund Freud</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>First published in 1899, 'The Interpretation of Dreams' written by Sigmund Freud, presents the theory of the unconscious with respect to dream interpretation and discusses what would later become the theory of the Oedipus complex. Sigmund Freud is an Austrian neurologist and the founding father of psychoanalysis, a method for treating mental illness and also a theory that explains human behavior. Freud believed that events in our childhood hold a great impact on our adult lives, shaping our personality. In creating psychoanalysis, Freud designed therapeutic techniques such as the use of free association and discovered transference, establishing its central role in the analytic process. Freud saw that man is at war with himself and often unable to tolerate too much reality. He propounded the theory that dreams are the contraband representations of the beast within man, smuggled into awareness during sleep. In Freudian interpretation, the analysis of dreams is the key to unlocking the secrets of the unconscious mind.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            <!--Next Button-->
+            <button x-on:click="nextPage" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
                </svg>
-              </div>
+            </button>
+
+            <!--Last Button-->
+            <button x-on:click="viewPage(Math.ceil(total/size)-1)" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                  <line x1="19" y1="5" x2="19" y2="19"></line>
+               </svg>
+            </button>
+         </div>
+
+         <div>
+            <div class="mt-6 flex flex-wrap justify-between items-center text-sm leading-5 text-gray-700">
+               <div class="w-full sm:w-auto text-center sm:text-left" x-show="pageCount() > 1">
+                  Page <span x-text="pageNumber+1"> </span> of
+                  <span x-text="pageCount()"></span> | Showing
+                  <span x-text="startResults()"></span> to
+                  <span x-text="endResults()"></span>
+               </div>
+
+               <div class="w-full sm:w-auto text-center sm:text-right" x-show="total > 0">
+                  Total <span class="font-bold" x-text="total"></span> results
+               </div>
+
+               <!--Message to display when no results-->
+               <div class="mx-auto flex items-center font-bold text-red-500" x-show="total===0">
+                  <svg class="h-8 w-8 text-red-500" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                     fill="none" stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" />
+                     <circle cx="12" cy="12" r="9" />
+                     <line x1="9" y1="10" x2="9.01" y2="10" />
+                     <line x1="15" y1="10" x2="15.01" y2="10" />
+                     <path d="M9.5 16a10 10 0 0 1 6 -1.5" />
+                  </svg>
+
+                  <span class="ml-4">No results.</span>
+               </div>
             </div>
-       </div>
-    </div>
+         </div>
 
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/275.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                The Interpretation of Dreams
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/365.html">Sigmund Freud</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/176.html">General Press</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2021-06-10
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9789354992926</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/31.html">
-                                Psychology
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/214.html">
-                                Gutenberg
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/271.html">
-                                Dream interpretation
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/272.html">
-                                Psychoanalysis
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>First published in 1899, 'The Interpretation of Dreams' written by Sigmund Freud, presents the theory of the unconscious with respect to dream interpretation and discusses what would later become the theory of the Oedipus complex. Sigmund Freud is an Austrian neurologist and the founding father of psychoanalysis, a method for treating mental illness and also a theory that explains human behavior. Freud believed that events in our childhood hold a great impact on our adult lives, shaping our personality. In creating psychoanalysis, Freud designed therapeutic techniques such as the use of free association and discovered transference, establishing its central role in the analytic process. Freud saw that man is at war with himself and often unable to tolerate too much reality. He propounded the theory that dreams are the contraband representations of the beast within man, smuggled into awareness during sleep. In Freudian interpretation, the analysis of dreams is the key to unlocking the secrets of the unconscious mind.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9789354992926" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="http://www.gutenberg.org/ebooks/66048" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Gutenberg
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=VeI6zwEACAAJ" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
       </div>
-    </template>
- </div>
-               
-            
-         </div>
-         <div
-            x-show="activeTab === 'tabTable'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-         >
-            <div x-data='tables.initGridTable([{"author_ids": "365", "authors": [{"avg_rating": null, "count": 1, "id": 365, "name": "Sigmund Freud", "sort": "Freud, Sigmund"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFirst published in 1899, \u0027The Interpretation of Dreams\u0027 written by Sigmund Freud, presents the theory of the unconscious with respect to dream interpretation and discusses what would later become the theory of the Oedipus complex. Sigmund Freud is an Austrian neurologist and the founding father of psychoanalysis, a method for treating mental illness and also a theory that explains human behavior. Freud believed that events in our childhood hold a great impact on our adult lives, shaping our personality. In creating psychoanalysis, Freud designed therapeutic techniques such as the use of free association and discovered transference, establishing its central role in the analytic process. Freud saw that man is at war with himself and often unable to tolerate too much reality. He propounded the theory that dreams are the contraband representations of the beast within man, smuggled into awareness during sleep. In Freudian interpretation, the analysis of dreams is the key to unlocking the secrets of the unconscious mind.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 1, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 275, "identifier_ids": "926,924,925", "identifiers": [{"book": 275, "id": 925, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789354992926", "sort": "isbn", "type": "isbn", "val": "9789354992926"}, {"book": 275, "id": 924, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/66048", "sort": "gutenberg", "type": "gutenberg", "val": "66048"}, {"book": 275, "id": 926, "name": "Google Books", "path": "https://books.google.com/books?id=VeI6zwEACAAJ", "sort": "google", "type": "google", "val": "VeI6zwEACAAJ"}], "isbn": "9789354992926", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-03-25 21:53:50.451519+00:00", "order_by": "2023-03-16 22:04:27.128124+00:00", "path": "Sigmund Freud/The Interpretation of Dreams (275)", "pubdate": "2021-06-10", "publisher_ids": "176", "publishers": [{"avg_rating": null, "count": 1, "id": 176, "name": "General Press", "sort": "General Press"}], "rating": null, "series": [], "series_ids": null, "size": 889821, "tag_ids": "31,214,271,272", "tags": [{"avg_rating": 8.0, "count": 20, "id": 31, "name": "Psychology", "sort": 20}, {"avg_rating": 7.666666666666667, "count": 14, "id": 214, "name": "Gutenberg", "sort": 14}, {"avg_rating": null, "count": 1, "id": 271, "name": "Dream interpretation", "sort": 1}, {"avg_rating": null, "count": 1, "id": 272, "name": "Psychoanalysis", "sort": 1}], "timestamp": "2023-03-16 22:04:27.128124+00:00", "title": "The Interpretation of Dreams"}])'></div>
-         </div>
+      <div x-show="activeTab === 'tabList'" x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div x-data='tables.initList([{"author_ids": "365", "authors": [{"avg_rating": null, "count": 1, "id": 365, "name": "Sigmund Freud", "sort": "Freud, Sigmund"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eFirst published in 1899, \u0027The Interpretation of Dreams\u0027 written by Sigmund Freud, presents the theory of the unconscious with respect to dream interpretation and discusses what would later become the theory of the Oedipus complex. Sigmund Freud is an Austrian neurologist and the founding father of psychoanalysis, a method for treating mental illness and also a theory that explains human behavior. Freud believed that events in our childhood hold a great impact on our adult lives, shaping our personality. In creating psychoanalysis, Freud designed therapeutic techniques such as the use of free association and discovered transference, establishing its central role in the analytic process. Freud saw that man is at war with himself and often unable to tolerate too much reality. He propounded the theory that dreams are the contraband representations of the beast within man, smuggled into awareness during sleep. In Freudian interpretation, the analysis of dreams is the key to unlocking the secrets of the unconscious mind.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [{"id": 7, "sort": "Gutenberg Collection", "value": "Gutenberg Collection"}], "custom_lists_ids": "7", "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 275, "identifier_ids": "926,924,925", "identifiers": [{"book": 275, "id": 925, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9789354992926", "sort": "isbn", "type": "isbn", "val": "9789354992926"}, {"book": 275, "id": 924, "name": "Gutenberg", "path": "http://www.gutenberg.org/ebooks/66048", "sort": "gutenberg", "type": "gutenberg", "val": "66048"}, {"book": 275, "id": 926, "name": "Google Books", "path": "https://books.google.com/books?id=VeI6zwEACAAJ", "sort": "google", "type": "google", "val": "VeI6zwEACAAJ"}], "isbn": "9789354992926", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2023-07-16 20:11:13.407698+00:00", "order_by": "2023-03-16 22:04:27.128124+00:00", "path": "Sigmund Freud/The Interpretation of Dreams (275)", "pubdate": "2021-06-10", "publisher_ids": "176", "publishers": [{"avg_rating": null, "count": 1, "id": 176, "name": "General Press", "sort": "General Press"}], "rating": null, "series": [], "series_ids": null, "size": 889821, "tag_ids": "31,214,271,272", "tags": [{"avg_rating": 8.0, "count": 20, "id": 31, "name": "Psychology", "sort": 20}, {"avg_rating": 7.666666666666667, "count": 14, "id": 214, "name": "Gutenberg", "sort": 14}, {"avg_rating": null, "count": 1, "id": 271, "name": "Dream interpretation", "sort": 1}, {"avg_rating": null, "count": 1, "id": 272, "name": "Psychoanalysis", "sort": 1}], "timestamp": "2023-03-16 22:04:27.128124+00:00", "title": "The Interpretation of Dreams"}])'></div>
       </div>
    </div>
+</div>
 
             </div>
         </div>

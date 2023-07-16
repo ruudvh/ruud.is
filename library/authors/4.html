@@ -202,189 +202,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
               </nav>
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
                 <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
@@ -517,189 +334,6 @@
   </li>
   
 </ul>
-
-<div class="my-4 mx-4 h-px bg-slate-200 dark:bg-navy-500"></div>
-
-<ul class="space-y-1 font-inter">
-  <li>
-    <div
-      tabindex="0"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <a href="/library/list-7.html">
-        <span>Gutenberg Collection</span>
-      </a>
-    </div>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Machine Learning</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-3.html">
-            <span>Deep Learning</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Must Read</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-5.html">
-            <span>2021 Time.com</span>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-6.html">
-            <span>10 Greatest Books of All Time</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-  <li x-data="{expanded:true}">
-    <div
-      tabindex="0"
-      :class="expanded && 'text-slate-800 dark:text-navy-100'"
-      @click="expanded = !expanded"
-      class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-    >
-      <button
-        class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-4.5 w-4.5 transition-transform"
-          :class="expanded && 'rotate-90'"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <span>Programming</span>
-    </div>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li x-data="{expanded:true}">
-        <div
-          tabindex="0"
-          :class="expanded && 'text-slate-800 dark:text-navy-100'"
-          @click="expanded = !expanded"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <button
-            class="btn h-5 w-5 rounded-lg p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-4.5 w-4.5 transition-transform"
-              :class="expanded && 'rotate-90'"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <span>Elixir</span>
-        </div>
-        <ul x-show="expanded" x-collapse class="pl-4">
-          <li>
-            <div
-              tabindex="0"
-              class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-            >
-              <a href="/library/list-2.html">
-                <span>Phoenix</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <ul x-show="expanded" x-collapse class="pl-4">
-      <li>
-        <div
-          tabindex="0"
-          class="flex cursor-pointer items-center space-x-1.5 rounded px-2 py-1 tracking-wide outline-none transition-all hover:bg-slate-100 hover:text-slate-800 focus:bg-slate-100 focus:text-slate-800 dark:hover:bg-navy-600 dark:hover:text-navy-100 dark:focus:bg-navy-600 dark:focus:text-navy-100"
-        >
-          <a href="/library/list-1.html">
-            <span>Python</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-  </li>
-</ul>
                     </nav>
                   </div>
                 </div>
@@ -708,1059 +342,383 @@
          
             <div class="w-full overflow-hidden">
                 
-   <div x-data="{activeTab:'tabCards', books:[]}">
-      <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
-         <div class="font-medium text-base">Authors > Jason Fried (3)</div>
-         <div class="flex flex-row">
-            <button
-               @click="activeTab = 'tabCards'"
-               :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+<div x-data="{activeTab:'tabCards'}">
+   <div class="pb-4 border-solid border-b border-b-slate-300 flex justify-between">
+      <div class="font-medium text-base">Authors > Jason Fried (3)</div>
+      <div class="flex flex-row">
+         <button @click="activeTab = 'tabCards'"
+            :class="activeTab === 'tabCards' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+            </svg>
+         </button>
+         <button @click="activeTab = 'tabList'"
+            :class="activeTab === 'tabList' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
+            class="shrink-0 rounded-none px-3 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="w-6 h-6">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+            </svg>
+         </button>
+      </div class="max-w">
+   </div>
+
+   <div class="pt-5">
+      <div x-data='tables.initGrid([{"author_ids": "4,12,62", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}, {"avg_rating": 6.0, "count": 1, "id": 62, "name": "Matthew Linderman", "sort": "Linderman, Matthew"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBOOK REPORT\u003cbr\u003eGetting Real is the business, design, programming, and marketing philosophies of 37signals \u2014 a developer of web-based software used by over 1 million people and businesses in 70 countries.\u003c/p\u003e\n\u003cp\u003eWHY IS THE BOOK RELEVANT?\u003cbr\u003e37signals used the unconventional Getting Real process to launch five successful web-based applications (Basecamp, Campfire, Backpack, Writeboard, Ta-da List), and Ruby on Rails, an open-source web application framework, in just two years with no funding, no debt, and only 7 people.\u003c/p\u003e\n\u003cp\u003eWHAT\u0027S IN IT FOR ME?\u003cbr\u003eAnyone working on a web app \u2014 including entrepreneurs, designers, programmers, executives, or marketers \u2014 will find value, fresh perspectives, and inspiration in this practical book. At under 200 pages it\u0027s quick reading too. Makes a great airplane book.\u003c/p\u003e\n\u003cp\u003eWHO IS 37SIGNALS?\u003cbr\u003eWe\u2019re a privately-held Chicago-based company committed to building the best web-based software products possible with the least number of features necessary. Our products do less than the competition \u2014 intentionally. We\u2019ve been in business since 1999 and love what we do.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 59, "identifier_ids": "55,56", "identifiers": [{"book": 59, "id": 56, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11553059", "sort": "goodreads", "type": "goodreads", "val": "11553059"}, {"book": 59, "id": 55, "name": "Amazon", "path": "https://amazon.com/dp/B0053KHGWM", "sort": "amazon", "type": "amazon", "val": "B0053KHGWM"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:53.083000+00:00", "path": "Jason Fried/Getting Real (59)", "pubdate": "2006-01-01", "publisher_ids": "101", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 101, "name": "37signals", "sort": "37signals"}], "rating": 3, "series": [], "series_ids": null, "size": 5118368, "tag_ids": "11", "tags": [{"avg_rating": 8.2, "count": 13, "id": 11, "name": "Business \u0026 Economics", "sort": 13}], "timestamp": "2022-10-04 13:46:53.083000+00:00", "title": "Getting Real"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eJason Fried and David Heinemeier Hansson, the authors of the New York Times bestseller Rework, are back with a manifesto to combat all your modern workplace worries and fears. It Doesn\u0027t Have to Be Crazy at Work is a direct successor to Rework, the instant bestseller that showed readers a new path to working effectively. Now Fried and Heinemeier Hansson have returned with a new strategy for the ideal company culture - what they call the calm company . It is a direct attack on the chaos, anxiety and stress that plagues millions of workplaces and billions of people working their day jobs. Working to breaking point with long hours, excessive workload, and a lack of sleep have become a badge of honour for many people these days, when it should be a mark of stupidity. This isn\u0027t just a problem for large organisations; individuals, contractors and solopreneurs are burning themselves out in the very same way. As the authors reveal, the answer isn\u0027t more hours. Rather, it\u0027s less waste and fewer things that induce distraction, always-on anxiety and stress. It is time to stop celebrating crazy and start celebrating calm. Fried and Hansson have the proof to back up their argument. Calm has been the cornerstone of their company\u0027s culture since Basecamp began twenty years ago. Destined to become the management guide for the next generation, It Doesn\u0027t Have to Be Crazy at Work is a practical and inspiring distillation of their insights and experiences. It isn\u0027t a book telling you what to do. It\u0027s a book showing you what they\u0027ve done-and how any manager or executive no matter the industry or size of the company, can do it too.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 57, "identifier_ids": "594,596,592,593,595", "identifiers": [{"book": 57, "id": 595, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062874795", "sort": "isbn", "type": "isbn", "val": "9780062874795"}, {"book": 57, "id": 593, "name": "Google Books", "path": "https://books.google.com/books?id=aOlMDwAAQBAJ", "sort": "google", "type": "google", "val": "aOlMDwAAQBAJ"}, {"book": 57, "id": 592, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/39674332", "sort": "goodreads", "type": "goodreads", "val": "39674332"}, {"book": 57, "id": 596, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111"}, {"book": 57, "id": 594, "name": "Amazon", "path": "https://amazon.com/dp/0062874780", "sort": "amazon", "type": "amazon", "val": "0062874780"}], "isbn": "9780062874795", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:52.016000+00:00", "path": "Jason Fried/It Doesn\u0027t Have to Be Crazy at Work (57)", "pubdate": "2018-10-02", "publisher_ids": "32", "publishers": [{"avg_rating": 9.0, "count": 20, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": 4, "series": [], "series_ids": null, "size": 2765822, "tag_ids": "43,51", "tags": [{"avg_rating": 8.0, "count": 27, "id": 43, "name": "Self Help", "sort": 27}, {"avg_rating": 8.363636363636363, "count": 12, "id": 51, "name": "Business", "sort": 12}], "timestamp": "2022-10-04 13:46:52.016000+00:00", "title": "It Doesn\u0027t Have to Be Crazy at Work"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMost business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you\u0027re looking for a book like that, put this one back on the shelf.\u003c/p\u003e\n\u003cp\u003eRework shows you a better, faster, easier way to succeed in business. Read it and you\u0027ll know why plans are actually harmful, why you don\u0027t need outside investors, and why you\u0027re better off ignoring the competition. The truth is, you need less than you think. You don\u0027t need to be a workaholic. You don\u0027t need to staff up. You don\u0027t need to waste time on paperwork or meetings. You don\u0027t even need an office. Those are all just excuses.\u003c/p\u003e\n\u003cp\u003eWhat you really need to do is stop talking and start working. This book shows you the way. You\u0027ll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you.\u003c/p\u003e\n\u003cp\u003eWith its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who\u2019s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of \"downsizing,\" and artists who don\u2019t want to starve anymore will all find valuable guidance in these pages.\u003c/p\u003e\n\u003cp\u003eFrom the Hardcover edition.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 5, "identifier_ids": "99,103,100,101,102", "identifiers": [{"book": 5, "id": 102, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780307463760", "sort": "isbn", "type": "isbn", "val": "9780307463760"}, {"book": 5, "id": 101, "name": "Google Books", "path": "https://books.google.com/books?id=U77um_h_dgcC", "sort": "google", "type": "google", "val": "U77um_h_dgcC"}, {"book": 5, "id": 100, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/7850546", "sort": "goodreads", "type": "goodreads", "val": "7850546"}, {"book": 5, "id": 103, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/rework-jason-fried/1102048884", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/rework-jason-fried/1102048884"}, {"book": 5, "id": 99, "name": "Amazon", "path": "https://amazon.com/dp/0307463761", "sort": "amazon", "type": "amazon", "val": "0307463761"}], "isbn": "9780307463760", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2021-10-13 19:46:04.494000+00:00", "path": "Jason Fried/Rework (5)", "pubdate": "2010-03-09", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 7004338, "tag_ids": "11,12,26,43", "tags": [{"avg_rating": 8.0, "count": 27, "id": 43, "name": "Self Help", "sort": 27}, {"avg_rating": 8.2, "count": 13, "id": 11, "name": "Business \u0026 Economics", "sort": 13}, {"avg_rating": 9.0, "count": 5, "id": 12, "name": "Entrepreneurship", "sort": 5}, {"avg_rating": 9.0, "count": 3, "id": 26, "name": "Personal Growth", "sort": 3}], "timestamp": "2021-10-13 19:46:04.494000+00:00", "title": "Rework"}])' x-show="activeTab === 'tabCards'"
+         x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div class="flex justify-end">
+            <input x-ref="searchField" x-model="search" x-on:click="viewPage(0)"
+               x-on:keydown.window.prevent.slash=" viewPage(0), $refs.searchField.focus()"
+               placeholder="Search for a book .." type="search"
+               class="appearance-none rounded-lg border border-slate-300 px-3 py-2 font-medium outline-none dark:border-navy-450 dark:bg-navy-700 dark:text-navy-100" />
+         </div>
+         <div class="pt-5 book-cards">
+            <template x-for="book in filteredBooks" :key="book.id">
+               <div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
+                  <div class="flex relative">
+                     <img
+                        :src="book.has_cover ? '/library/images/covers/' + book.id + '.jpg' : '/library/images/covers/no_cover.jpg'"
+                        :alt="book.title"
+                        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
+                        @click="showModal = true">
+                     <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
+                        <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap" x-text="book.title">
+                        </div>
+
+                        <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by
+                           <template x-for="author in book.authors" :key="author.id">
+                              <a class="underline decoration-solid"
+                                 :href="'/library/authors/' + author.id + '.html'" x-text="author.name"></a>
+                           </template>
+                        </p>
+
+                        <div class="whitespace-nowrap mt-2 text-slate-300">
+                           <template x-for="r in 5">
+                              <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                 :class="{'text-orange-500': r < book.rating}" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 24 24" fill="currentColor">
+                                 <path fill-rule="evenodd"
+                                    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                    clip-rule="evenodd" />
+                              </svg>
+                           </template>
+                        </div>
+
+                        <div class="hidden sm:inline-block">
+                           <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4" x-html="book.comments"></div>
+                        </div>
+
+                        <div class="mt-4">
+                           <template x-if="book.custom_read_date">
+                              <div class="space-x-2 badge rounded-full border text-green-400 border-green-400">
+                                 <span>Read</span>
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                       d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                 </svg>
+                              </div>
+                           </template>
+                           <div
+                              class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                              @click="showModal = true">
+                              <span>Learn More</span>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                 <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                              </svg>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <template x-teleport="#x-teleport-target">
+                     <div
+                        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
+                        x-show="showModal" role="dialog" @keydown.window.escape="showModal = false">
+                        <div class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
+                           @click="showModal = false" x-show="showModal" x-transition:enter="ease-out"
+                           x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+                           x-transition:leave="ease-in" x-transition:leave-start="opacity-100"
+                           x-transition:leave-end="opacity-0"></div>
+                        <div
+                           class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
+                           x-show="showModal" x-transition:enter="ease-out" x-transition:enter-start="opacity-0"
+                           x-transition:enter-end="opacity-100" x-transition:leave="ease-in"
+                           x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+                           <div
+                              class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
+                              <div class="col-span-12 hidden lg:block lg:col-span-4 bg-cover bg-left rounded-l-lg"
+                                 :class="book.has_cover ? 'bg-[url(\'/library/images/covers/' + book.id + '.jpg\')]' : 'bg-[url(\'/library/images/covers/no_cover.jpg\')]'">
+                              </div>
+                              <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+                                 <h1 class="pb-4 ml-0 text-3xl font-semibold" x-text="book.title">
+                                 </h1>
+
+                                 <table class="w-full text-left align-top">
+                                    <tbody>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Authors:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="author in book.authors" :key="author.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/authors/' + author.id + '.html'"
+                                                   x-text="author.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Series:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="series in book.series" :key="series.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/series/' + series.id + '.html'"
+                                                   x-text="series.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publishers:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="publisher in book.publishers" :key="publisher.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/publishers/' + publisher.id + '.html'"
+                                                   x-text="publisher.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Publish Date:
+                                          </td>
+                                          <td class="space-x-1" x-text="book.pubdate">
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Languages:
+                                          </td>
+                                          <td class="space-x-1">
+                                             <template x-for="language in book.languages" :key="language.id">
+                                                <a class="underline decoration-solid"
+                                                   :href="'/library/languages/' + language.id + '.html'"
+                                                   x-text="language.name"></a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <template x-if="book.isbn">
+                                          <tr>
+                                             <td class="whitespace-nowrap font-semibold">
+                                                ISBN:
+                                             </td>
+                                             <td class="">
+                                                <div class="flex items-center">
+                                                   <p class="text-xs px-1 border border-slate-400 rounded-md"
+                                                      id="clipboardISBN" x-text="book.isbn">
+                                                   </p>
+                                                   <button
+                                                      class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                                                      @click="$clipboard({
+                                      content:document.querySelector('#clipboardISBN').innerText,
+                                      success:()=>$notification({text:'ISBN Copied',variant:'success'}),
+                                      error:()=>$notification({text:'Error',variant:'error'})
+                                    })">
+                                                      Copy
+                                                   </button>
+                                                </div>
+                                             </td>
+                                          </tr>
+                                       </template>
+                                       <tr>
+                                          <td class="whitespace-nowrap font-semibold">
+                                             Rating:
+                                          </td>
+                                          <td class="space-x-1 whitespace-nowrap text-slate-300">
+                                             <template x-for="r in 5">
+                                                <svg class="w-4 h-4 before:mr-1 text-xs inline-block"
+                                                   :class="{'text-orange-500': r < book.rating}"
+                                                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                   fill="currentColor">
+                                                   <path fill-rule="evenodd"
+                                                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                                                      clip-rule="evenodd" />
+                                                </svg>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="pt-1 whitespace-nowrap font-semibold">
+                                             Tags:
+                                          </td>
+                                          <td class="pt-1 space-x-1 space-y-1">
+                                             <template x-for="tag in book.tags" :key="tag.id">
+                                                <a class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
+                                                   :href="'/library/tags/' + tag.id + '.html'"
+                                                   x-text="tag.name">
+                                                </a>
+                                             </template>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+
+                                 <p class="pt-4 pb-1 font-semibold">Description:</p>
+                                 <div x-init="$nextTick(() => { $el._x_simplebar = new SimpleBar($el) })"
+                                    class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 h-36 text-gray-500 text-justify"
+                                    x-html="book.comments">
+                                 </div>
+
+                                 <template x-if="book.identifiers">
+                                    <div>
+                                       <p class="pt-4 pb-1 font-semibold">Find it at:</p>
+                                       <div class="space-x-1 space-y-1">
+                                          <template x-for="identifier in book.identifiers" :key="identifier.id">
+                                             <a href="`${identifier.path}`" target="_blank"
+                                                class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
+                                                x-text="identifier.name">
+                                             </a>
+                                          </template>
+                                       </div>
+                                    </div>
+                                 </template>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </template>
+               </div>
+            </template>
+         </div>
+
+         <div
+            class="mt-6 w-full md:w-1/2 mx-auto py-6 flex justify-between items-center text-slate-600 dark:text-slate-300"
+            x-show="pageCount() > 1">
+            <!--First Button-->
+            <button x-on:click="viewPage(0)" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="19 20 9 12 19 4 19 20"></polygon>
+                  <line x1="5" y1="19" x2="5" y2="5"></line>
                </svg>
             </button>
-            <button
-               @click="activeTab = 'tabTable'"
-               :class="activeTab === 'tabTable' ? ' text-primary dark:text-accent-light' : 'border-transparent hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100'"
-               class="shrink-0 rounded-none px-3 font-medium"
-            >
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h7.5c.621 0 1.125-.504 1.125-1.125m-9.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125m1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125m0 3.75h-7.5A1.125 1.125 0 0112 18.375m9.75-12.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125m19.5 0v1.5c0 .621-.504 1.125-1.125 1.125M2.25 5.625v1.5c0 .621.504 1.125 1.125 1.125m0 0h17.25m-17.25 0h7.5c.621 0 1.125.504 1.125 1.125M3.375 8.25c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m17.25-3.75h-7.5c-.621 0-1.125.504-1.125 1.125m8.625-1.125c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125M12 10.875v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 10.875c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125M13.125 12h7.5m-7.5 0c-.621 0-1.125.504-1.125 1.125M20.625 12c.621 0 1.125.504 1.125 1.125v1.5c0 .621-.504 1.125-1.125 1.125m-17.25 0h7.5M12 14.625v-1.5m0 1.5c0 .621-.504 1.125-1.125 1.125M12 14.625c0 .621.504 1.125 1.125 1.125m-2.25 0c.621 0 1.125.504 1.125 1.125m0 1.5v-1.5m0 0c0-.621.504-1.125 1.125-1.125m0 0h7.5" />
+
+            <!--Previous Button-->
+            <button x-on:click="prevPage" :disabled="pageNumber==0"
+               :class="pageNumber==0 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
                </svg>
             </button>
-         </div class="max-w">
-      </div>
 
-      <div class="pt-10">
-         <div
-            x-show="activeTab === 'tabCards'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-            class="book-cards"
-         >
-            
-               
-                  
-  
+            <!-- Display page numbers -->
+            <div class="flex flex-wrap space-x-1">
+               <template x-if="pageNumber < 9">
+                  <template x-for="index in 9" :key="index">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors"
+                        :class="index - 1 === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(index - 1)">
+                        <span x-text="index"></span>
+                     </button>
+                  </template>
+               </template>
 
+               <!-- show eclipses -->
+               <template x-if="pageNumber < 9 && pages().length > 9">
+                  <button
+                     class="flex h-8 min-w-[2rem] items-center justify-center rounded-full bg-slate-150 px-3 leading-tight transition-colors hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450"
+                     type="button" x-on:click="viewPage(9)">
+                     <span>..</span>
+                  </button>
+               </template>
 
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/59.jpg"
-        alt="Getting Real"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              Getting Real
+               <!-- show pageNumber +/- 4 -->
+               <template x-if="pageNumber >= 9">
+                  <template
+                     x-for="(page, index) in [pageNumber - 4,pageNumber - 3,pageNumber - 2,pageNumber - 1, pageNumber, pageNumber + 1, pageNumber + 2, pageNumber + 3, pageNumber + 4]"
+                     :key="page">
+                     <button
+                        class="flex h-8 min-w-[2rem] items-center justify-center rounded-full px-3 leading-tight transition-colors focus:bg-slate-300 dark:focus:bg-navy-450"
+                        :class="page === pageNumber ? 'bg-primary text-white dark:bg-accent' : 'bg-slate-150 hover:bg-slate-300 dark:bg-navy-500 dark:hover:bg-navy-450'"
+                        type="button" x-on:click="viewPage(page)">
+                        <span x-text="page+1"></span>
+                     </button>
+                  </template>
+               </template>
             </div>
 
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/4.html">Jason Fried</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/12.html">David Heinemeier Hansson</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/62.html">Matthew Linderman</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>BOOK REPORT<br>Getting Real is the business, design, programming, and marketing philosophies of 37signals — a developer of web-based software used by over 1 million people and businesses in 70 countries.</p>
-<p>WHY IS THE BOOK RELEVANT?<br>37signals used the unconventional Getting Real process to launch five successful web-based applications (Basecamp, Campfire, Backpack, Writeboard, Ta-da List), and Ruby on Rails, an open-source web application framework, in just two years with no funding, no debt, and only 7 people.</p>
-<p>WHAT'S IN IT FOR ME?<br>Anyone working on a web app — including entrepreneurs, designers, programmers, executives, or marketers — will find value, fresh perspectives, and inspiration in this practical book. At under 200 pages it's quick reading too. Makes a great airplane book.</p>
-<p>WHO IS 37SIGNALS?<br>We’re a privately-held Chicago-based company committed to building the best web-based software products possible with the least number of features necessary. Our products do less than the competition — intentionally. We’ve been in business since 1999 and love what we do.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-                <div
-                  class="space-x-2 badge rounded-full border text-green-400 border-green-400"
-                >
-                  <span>Read</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>                  
-                </div>
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            <!--Next Button-->
+            <button x-on:click="nextPage" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
                </svg>
-              </div>
-            </div>
-       </div>
-    </div>
+            </button>
 
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/59.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                Getting Real
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/4.html">Jason Fried</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/12.html">David Heinemeier Hansson</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/62.html">Matthew Linderman</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/101.html">37signals</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2006-01-01
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">None</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/11.html">
-                                Business & Economics
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>BOOK REPORT<br>Getting Real is the business, design, programming, and marketing philosophies of 37signals — a developer of web-based software used by over 1 million people and businesses in 70 countries.</p>
-<p>WHY IS THE BOOK RELEVANT?<br>37signals used the unconventional Getting Real process to launch five successful web-based applications (Basecamp, Campfire, Backpack, Writeboard, Ta-da List), and Ruby on Rails, an open-source web application framework, in just two years with no funding, no debt, and only 7 people.</p>
-<p>WHAT'S IN IT FOR ME?<br>Anyone working on a web app — including entrepreneurs, designers, programmers, executives, or marketers — will find value, fresh perspectives, and inspiration in this practical book. At under 200 pages it's quick reading too. Makes a great airplane book.</p>
-<p>WHO IS 37SIGNALS?<br>We’re a privately-held Chicago-based company committed to building the best web-based software products possible with the least number of features necessary. Our products do less than the competition — intentionally. We’ve been in business since 1999 and love what we do.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/11553059" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/B0053KHGWM" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/57.jpg"
-        alt="It Doesn't Have to Be Crazy at Work"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              It Doesn't Have to Be Crazy at Work
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/4.html">Jason Fried</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/12.html">David Heinemeier Hansson</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>Jason Fried and David Heinemeier Hansson, the authors of the New York Times bestseller Rework, are back with a manifesto to combat all your modern workplace worries and fears. It Doesn't Have to Be Crazy at Work is a direct successor to Rework, the instant bestseller that showed readers a new path to working effectively. Now Fried and Heinemeier Hansson have returned with a new strategy for the ideal company culture - what they call the calm company . It is a direct attack on the chaos, anxiety and stress that plagues millions of workplaces and billions of people working their day jobs. Working to breaking point with long hours, excessive workload, and a lack of sleep have become a badge of honour for many people these days, when it should be a mark of stupidity. This isn't just a problem for large organisations; individuals, contractors and solopreneurs are burning themselves out in the very same way. As the authors reveal, the answer isn't more hours. Rather, it's less waste and fewer things that induce distraction, always-on anxiety and stress. It is time to stop celebrating crazy and start celebrating calm. Fried and Hansson have the proof to back up their argument. Calm has been the cornerstone of their company's culture since Basecamp began twenty years ago. Destined to become the management guide for the next generation, It Doesn't Have to Be Crazy at Work is a practical and inspiring distillation of their insights and experiences. It isn't a book telling you what to do. It's a book showing you what they've done-and how any manager or executive no matter the industry or size of the company, can do it too.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+            <!--Last Button-->
+            <button x-on:click="viewPage(Math.ceil(total/size)-1)" :disabled="pageNumber >= pageCount() -1"
+               :class="pageNumber >= pageCount() -1 ? 'disabled cursor-not-allowed opacity-60' : 'text-primary dark:text-accent'">
+               <svg class="h-8 w-8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                  <line x1="19" y1="5" x2="19" y2="19"></line>
                </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/57.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                It Doesn't Have to Be Crazy at Work
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/4.html">Jason Fried</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/12.html">David Heinemeier Hansson</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/32.html">HarperCollins</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2018-10-02
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9780062874795</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/43.html">
-                                Self Help
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/51.html">
-                                Business
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>Jason Fried and David Heinemeier Hansson, the authors of the New York Times bestseller Rework, are back with a manifesto to combat all your modern workplace worries and fears. It Doesn't Have to Be Crazy at Work is a direct successor to Rework, the instant bestseller that showed readers a new path to working effectively. Now Fried and Heinemeier Hansson have returned with a new strategy for the ideal company culture - what they call the calm company . It is a direct attack on the chaos, anxiety and stress that plagues millions of workplaces and billions of people working their day jobs. Working to breaking point with long hours, excessive workload, and a lack of sleep have become a badge of honour for many people these days, when it should be a mark of stupidity. This isn't just a problem for large organisations; individuals, contractors and solopreneurs are burning themselves out in the very same way. As the authors reveal, the answer isn't more hours. Rather, it's less waste and fewer things that induce distraction, always-on anxiety and stress. It is time to stop celebrating crazy and start celebrating calm. Fried and Hansson have the proof to back up their argument. Calm has been the cornerstone of their company's culture since Basecamp began twenty years ago. Destined to become the management guide for the next generation, It Doesn't Have to Be Crazy at Work is a practical and inspiring distillation of their insights and experiences. It isn't a book telling you what to do. It's a book showing you what they've done-and how any manager or executive no matter the industry or size of the company, can do it too.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9780062874795" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=aOlMDwAAQBAJ" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/39674332" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                    <a
-                      href="https://www.barnesandnoble.com/w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Barnes & Noble
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/0062874780" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
-               
-                  
-  
-
-
-
-  
-
-
-
-  
-
-
-<div class="card mt-5 h-40 sm:h-60 pl-5 pb-5" x-data="{showModal:false}">
-    <div class="flex relative">
-       <img 
-        src="/library/images/covers/5.jpg"
-        alt="Rework"
-        class="w-24 h-40 sm:w-40 sm:h-60 -mt-9 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all cursor-pointer shadow-lg shadow-slate-500 dark:shadow-slate-900 hover:scale-105"
-        @click="showModal = true"
-        >
-       <div class="p-4 sm:px-8 sm:py-4 overflow-hidden relative">
-            <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap">
-              Rework
-            </div>
-
-            <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by 
-              
-                <a class="underline decoration-solid" href="/library/authors/4.html">Jason Fried</a>
-              
-                <a class="underline decoration-solid" href="/library/authors/12.html">David Heinemeier Hansson</a>
-               
-            </p>
-
-            <div class="whitespace-nowrap mt-2 text-slate-300">
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-                <svg
-                  class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                >
-                  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                </svg>
-              
-            </div>
-
-            <div class="hidden sm:inline-block">
-              <div class="overflow-hidden text-xs text-slate-400 line-clamp-4 mt-4">
-                <div>
-<p>Most business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you're looking for a book like that, put this one back on the shelf.</p>
-<p>Rework shows you a better, faster, easier way to succeed in business. Read it and you'll know why plans are actually harmful, why you don't need outside investors, and why you're better off ignoring the competition. The truth is, you need less than you think. You don't need to be a workaholic. You don't need to staff up. You don't need to waste time on paperwork or meetings. You don't even need an office. Those are all just excuses.</p>
-<p>What you really need to do is stop talking and start working. This book shows you the way. You'll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you.</p>
-<p>With its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who’s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of "downsizing," and artists who don’t want to starve anymore will all find valuable guidance in these pages.</p>
-<p>From the Hardcover edition.</p></div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              
-              <div
-                class="cursor-pointer space-x-2 badge rounded-full border text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                @click="showModal = true"
-              >
-                <span>Learn More</span>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-               </svg>
-              </div>
-            </div>
-       </div>
-    </div>
-
-    <template x-teleport="#x-teleport-target">
-      <div
-        class="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden px-4 py-6 sm:px-5"
-        x-show="showModal"
-        role="dialog"
-        @keydown.window.escape="showModal = false"
-      >
-        <div
-          class="absolute inset-0 bg-slate-900/60 transition-opacity duration-300"
-          @click="showModal = false"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        ></div>
-        <div
-          class="relative min-w-[50%] max-w-3xl rounded-lg bg-white transition-opacity duration-300 dark:bg-navy-700"
-          x-show="showModal"
-          x-transition:enter="ease-out"
-          x-transition:enter-start="opacity-0"
-          x-transition:enter-end="opacity-100"
-          x-transition:leave="ease-in"
-          x-transition:leave-start="opacity-100"
-          x-transition:leave-end="opacity-0"
-        >
-          <div class="text-sm text-slate-500 dark:bg-navy-700 dark:text-navy-200 grid grid-cols-12 gap-4 sm:gap-5 lg:gap-6">
-            <div class="col-span-12 hidden lg:block lg:col-span-4 
-                  bg-[url('/library/images/covers/5.jpg')] bg-cover bg-left rounded-l-lg"
-            ></div>
-            <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
-              <h1 class="pb-4 ml-0 text-3xl font-semibold">
-                Rework
-              </h1>
-
-              <table class="w-full text-left align-top">
-                  <tbody>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Authors:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/4.html">Jason Fried</a>
-                              
-                                  <a class="underline decoration-solid" href="/library/authors/12.html">David Heinemeier Hansson</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Series:
-                        </td>
-                        <td class="space-x-1">
-                             
-                        </td>
-                    </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Publishers:
-                          </td>
-                          <td class="space-x-1">
-                              
-                                  <a class="underline decoration-solid" href="/library/publishers/100.html">Crown Publishing Group</a>
-                               
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Publish Date:
-                        </td>
-                        <td class="space-x-1">
-                            2010-03-09
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            Languages:
-                        </td>
-                        <td class="space-x-1">
-                            
-                                <a class="underline decoration-solid" href="/library/languages/1.html">ENG</a>
-                             
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="whitespace-nowrap font-semibold">
-                            ISBN:
-                        </td>
-                        <td class="">
-                          <div class="flex items-center">
-                            <p 
-                              class="text-xs px-1 border border-slate-400 rounded-md"
-                              id="clipboardISBN">9780307463760</p>
-                            <button
-                              class="cursor-pointer px-2 text-xs text-primary dark:text-accent-light border-primary dark:border-accent-light"
-                              @click="$clipboard({
-                                content:document.querySelector('#clipboardISBN').innerText,
-                                success:()=>$notification({text:'ISBN Copied',variant:'success'}),
-                                error:()=>$notification({text:'Error',variant:'error'})
-                              })"
-                            >
-                              Copy
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                          <td class="whitespace-nowrap font-semibold">
-                              Rating:
-                          </td>
-                          <td class="space-x-1 whitespace-nowrap text-slate-300">
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block text-orange-500" 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                              <svg
-                                class="w-4 h-4 before:mr-1 text-xs inline-block " 
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                              >
-                                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd" />
-                              </svg>
-                            
-                          </td>
-                      </tr>
-                      <tr>
-                        <td class="pt-1 whitespace-nowrap font-semibold">
-                            Tags:
-                        </td>
-                        <td class="pt-1 space-x-1 space-y-1">
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/43.html">
-                                Self Help
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/11.html">
-                                Business & Economics
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/12.html">
-                                Entrepreneurship
-                            </a>
-                          
-                            <a 
-                              class="badge bg-slate-150 text-slate-800 dark:bg-navy-500 dark:text-navy-100"
-                              href="/library/tags/26.html">
-                                Personal Growth
-                            </a>
-                           
-                        </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-              <p class="pt-4 pb-1 font-semibold">Description:</p>
-              <div 
-                x-init="$el._x_simplebar = new SimpleBar($el)"
-                class="text-sm is-scrollbar-hidden overscroll-contain max-h-36 text-gray-500 text-justify">
-                <div>
-<p>Most business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you're looking for a book like that, put this one back on the shelf.</p>
-<p>Rework shows you a better, faster, easier way to succeed in business. Read it and you'll know why plans are actually harmful, why you don't need outside investors, and why you're better off ignoring the competition. The truth is, you need less than you think. You don't need to be a workaholic. You don't need to staff up. You don't need to waste time on paperwork or meetings. You don't even need an office. Those are all just excuses.</p>
-<p>What you really need to do is stop talking and start working. This book shows you the way. You'll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you.</p>
-<p>With its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who’s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of "downsizing," and artists who don’t want to starve anymore will all find valuable guidance in these pages.</p>
-<p>From the Hardcover edition.</p></div>
-              </div>
-    
-              
-                <p class="pt-4 pb-1 font-semibold">Find it at:</p>
-                <div class="space-x-1 space-y-1">
-                  
-                    <a
-                      href="https://www.worldcat.org/isbn/9780307463760" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      ISBN
-                    </a>
-                  
-                    <a
-                      href="https://books.google.com/books?id=U77um_h_dgcC" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Google Books
-                    </a>
-                  
-                    <a
-                      href="https://www.goodreads.com/book/show/7850546" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Goodreads
-                    </a>
-                  
-                    <a
-                      href="https://www.barnesandnoble.com/w/rework-jason-fried/1102048884" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Barnes & Noble
-                    </a>
-                  
-                    <a
-                      href="https://amazon.com/dp/0307463761" 
-                      target="_blank"
-                      class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
-                    >
-                      Amazon
-                    </a>
-                  
-                </div>
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </template>
- </div>
-               
-            
+            </button>
          </div>
-         <div
-            x-show="activeTab === 'tabTable'"
-            x-transition:enter="transition-all duration-500 easy-in-out"
-            x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
-            x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]"
-         >
-            <div x-data='tables.initGridTable([{"author_ids": "4,12,62", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}, {"avg_rating": 6.0, "count": 1, "id": 62, "name": "Matthew Linderman", "sort": "Linderman, Matthew"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBOOK REPORT\u003cbr\u003eGetting Real is the business, design, programming, and marketing philosophies of 37signals \u2014 a developer of web-based software used by over 1 million people and businesses in 70 countries.\u003c/p\u003e\n\u003cp\u003eWHY IS THE BOOK RELEVANT?\u003cbr\u003e37signals used the unconventional Getting Real process to launch five successful web-based applications (Basecamp, Campfire, Backpack, Writeboard, Ta-da List), and Ruby on Rails, an open-source web application framework, in just two years with no funding, no debt, and only 7 people.\u003c/p\u003e\n\u003cp\u003eWHAT\u0027S IN IT FOR ME?\u003cbr\u003eAnyone working on a web app \u2014 including entrepreneurs, designers, programmers, executives, or marketers \u2014 will find value, fresh perspectives, and inspiration in this practical book. At under 200 pages it\u0027s quick reading too. Makes a great airplane book.\u003c/p\u003e\n\u003cp\u003eWHO IS 37SIGNALS?\u003cbr\u003eWe\u2019re a privately-held Chicago-based company committed to building the best web-based software products possible with the least number of features necessary. Our products do less than the competition \u2014 intentionally. We\u2019ve been in business since 1999 and love what we do.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 59, "identifier_ids": "55,56", "identifiers": [{"book": 59, "id": 56, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11553059", "sort": "goodreads", "type": "goodreads", "val": "11553059"}, {"book": 59, "id": 55, "name": "Amazon", "path": "https://amazon.com/dp/B0053KHGWM", "sort": "amazon", "type": "amazon", "val": "B0053KHGWM"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:53.083000+00:00", "path": "Jason Fried/Getting Real (59)", "pubdate": "2006-01-01", "publisher_ids": "101", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 101, "name": "37signals", "sort": "37signals"}], "rating": 3, "series": [], "series_ids": null, "size": 5118368, "tag_ids": "11", "tags": [{"avg_rating": 8.0, "count": 12, "id": 11, "name": "Business \u0026 Economics", "sort": 12}], "timestamp": "2022-10-04 13:46:53.083000+00:00", "title": "Getting Real"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eJason Fried and David Heinemeier Hansson, the authors of the New York Times bestseller Rework, are back with a manifesto to combat all your modern workplace worries and fears. It Doesn\u0027t Have to Be Crazy at Work is a direct successor to Rework, the instant bestseller that showed readers a new path to working effectively. Now Fried and Heinemeier Hansson have returned with a new strategy for the ideal company culture - what they call the calm company . It is a direct attack on the chaos, anxiety and stress that plagues millions of workplaces and billions of people working their day jobs. Working to breaking point with long hours, excessive workload, and a lack of sleep have become a badge of honour for many people these days, when it should be a mark of stupidity. This isn\u0027t just a problem for large organisations; individuals, contractors and solopreneurs are burning themselves out in the very same way. As the authors reveal, the answer isn\u0027t more hours. Rather, it\u0027s less waste and fewer things that induce distraction, always-on anxiety and stress. It is time to stop celebrating crazy and start celebrating calm. Fried and Hansson have the proof to back up their argument. Calm has been the cornerstone of their company\u0027s culture since Basecamp began twenty years ago. Destined to become the management guide for the next generation, It Doesn\u0027t Have to Be Crazy at Work is a practical and inspiring distillation of their insights and experiences. It isn\u0027t a book telling you what to do. It\u0027s a book showing you what they\u0027ve done-and how any manager or executive no matter the industry or size of the company, can do it too.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 57, "identifier_ids": "594,596,592,593,595", "identifiers": [{"book": 57, "id": 595, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062874795", "sort": "isbn", "type": "isbn", "val": "9780062874795"}, {"book": 57, "id": 593, "name": "Google Books", "path": "https://books.google.com/books?id=aOlMDwAAQBAJ", "sort": "google", "type": "google", "val": "aOlMDwAAQBAJ"}, {"book": 57, "id": 592, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/39674332", "sort": "goodreads", "type": "goodreads", "val": "39674332"}, {"book": 57, "id": 596, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111"}, {"book": 57, "id": 594, "name": "Amazon", "path": "https://amazon.com/dp/0062874780", "sort": "amazon", "type": "amazon", "val": "0062874780"}], "isbn": "9780062874795", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:52.016000+00:00", "path": "Jason Fried/It Doesn\u0027t Have to Be Crazy at Work (57)", "pubdate": "2018-10-02", "publisher_ids": "32", "publishers": [{"avg_rating": 9.0, "count": 20, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": 4, "series": [], "series_ids": null, "size": 2765822, "tag_ids": "43,51", "tags": [{"avg_rating": 8.0, "count": 27, "id": 43, "name": "Self Help", "sort": 27}, {"avg_rating": 8.363636363636363, "count": 12, "id": 51, "name": "Business", "sort": 12}], "timestamp": "2022-10-04 13:46:52.016000+00:00", "title": "It Doesn\u0027t Have to Be Crazy at Work"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMost business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you\u0027re looking for a book like that, put this one back on the shelf.\u003c/p\u003e\n\u003cp\u003eRework shows you a better, faster, easier way to succeed in business. Read it and you\u0027ll know why plans are actually harmful, why you don\u0027t need outside investors, and why you\u0027re better off ignoring the competition. The truth is, you need less than you think. You don\u0027t need to be a workaholic. You don\u0027t need to staff up. You don\u0027t need to waste time on paperwork or meetings. You don\u0027t even need an office. Those are all just excuses.\u003c/p\u003e\n\u003cp\u003eWhat you really need to do is stop talking and start working. This book shows you the way. You\u0027ll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you.\u003c/p\u003e\n\u003cp\u003eWith its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who\u2019s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of \"downsizing,\" and artists who don\u2019t want to starve anymore will all find valuable guidance in these pages.\u003c/p\u003e\n\u003cp\u003eFrom the Hardcover edition.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 5, "identifier_ids": "99,103,100,101,102", "identifiers": [{"book": 5, "id": 102, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780307463760", "sort": "isbn", "type": "isbn", "val": "9780307463760"}, {"book": 5, "id": 101, "name": "Google Books", "path": "https://books.google.com/books?id=U77um_h_dgcC", "sort": "google", "type": "google", "val": "U77um_h_dgcC"}, {"book": 5, "id": 100, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/7850546", "sort": "goodreads", "type": "goodreads", "val": "7850546"}, {"book": 5, "id": 103, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/rework-jason-fried/1102048884", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/rework-jason-fried/1102048884"}, {"book": 5, "id": 99, "name": "Amazon", "path": "https://amazon.com/dp/0307463761", "sort": "amazon", "type": "amazon", "val": "0307463761"}], "isbn": "9780307463760", "language_ids": "1", "languages": [{"avg_rating": 8.429411764705883, "count": 240, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2021-10-13 19:46:04.494000+00:00", "path": "Jason Fried/Rework (5)", "pubdate": "2010-03-09", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 7004338, "tag_ids": "11,12,26,43", "tags": [{"avg_rating": 8.0, "count": 27, "id": 43, "name": "Self Help", "sort": 27}, {"avg_rating": 8.0, "count": 12, "id": 11, "name": "Business \u0026 Economics", "sort": 12}, {"avg_rating": 8.666666666666666, "count": 4, "id": 12, "name": "Entrepreneurship", "sort": 4}, {"avg_rating": 9.0, "count": 3, "id": 26, "name": "Personal Growth", "sort": 3}], "timestamp": "2021-10-13 19:46:04.494000+00:00", "title": "Rework"}])'></div>
+
+         <div>
+            <div class="mt-6 flex flex-wrap justify-between items-center text-sm leading-5 text-gray-700">
+               <div class="w-full sm:w-auto text-center sm:text-left" x-show="pageCount() > 1">
+                  Page <span x-text="pageNumber+1"> </span> of
+                  <span x-text="pageCount()"></span> | Showing
+                  <span x-text="startResults()"></span> to
+                  <span x-text="endResults()"></span>
+               </div>
+
+               <div class="w-full sm:w-auto text-center sm:text-right" x-show="total > 0">
+                  Total <span class="font-bold" x-text="total"></span> results
+               </div>
+
+               <!--Message to display when no results-->
+               <div class="mx-auto flex items-center font-bold text-red-500" x-show="total===0">
+                  <svg class="h-8 w-8 text-red-500" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                     fill="none" stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" />
+                     <circle cx="12" cy="12" r="9" />
+                     <line x1="9" y1="10" x2="9.01" y2="10" />
+                     <line x1="15" y1="10" x2="15.01" y2="10" />
+                     <path d="M9.5 16a10 10 0 0 1 6 -1.5" />
+                  </svg>
+
+                  <span class="ml-4">No results.</span>
+               </div>
+            </div>
          </div>
+
+      </div>
+      <div x-show="activeTab === 'tabList'" x-transition:enter="transition-all duration-500 easy-in-out"
+         x-transition:enter-start="opacity-0 [transform:translate3d(1rem,0,0)]"
+         x-transition:enter-end="opacity-100 [transform:translate3d(0,0,0)]">
+         <div x-data='tables.initList([{"author_ids": "4,12,62", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}, {"avg_rating": 6.0, "count": 1, "id": 62, "name": "Matthew Linderman", "sort": "Linderman, Matthew"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eBOOK REPORT\u003cbr\u003eGetting Real is the business, design, programming, and marketing philosophies of 37signals \u2014 a developer of web-based software used by over 1 million people and businesses in 70 countries.\u003c/p\u003e\n\u003cp\u003eWHY IS THE BOOK RELEVANT?\u003cbr\u003e37signals used the unconventional Getting Real process to launch five successful web-based applications (Basecamp, Campfire, Backpack, Writeboard, Ta-da List), and Ruby on Rails, an open-source web application framework, in just two years with no funding, no debt, and only 7 people.\u003c/p\u003e\n\u003cp\u003eWHAT\u0027S IN IT FOR ME?\u003cbr\u003eAnyone working on a web app \u2014 including entrepreneurs, designers, programmers, executives, or marketers \u2014 will find value, fresh perspectives, and inspiration in this practical book. At under 200 pages it\u0027s quick reading too. Makes a great airplane book.\u003c/p\u003e\n\u003cp\u003eWHO IS 37SIGNALS?\u003cbr\u003eWe\u2019re a privately-held Chicago-based company committed to building the best web-based software products possible with the least number of features necessary. Our products do less than the competition \u2014 intentionally. We\u2019ve been in business since 1999 and love what we do.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": "2021-10-06", "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 59, "identifier_ids": "55,56", "identifiers": [{"book": 59, "id": 56, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/11553059", "sort": "goodreads", "type": "goodreads", "val": "11553059"}, {"book": 59, "id": 55, "name": "Amazon", "path": "https://amazon.com/dp/B0053KHGWM", "sort": "amazon", "type": "amazon", "val": "B0053KHGWM"}], "isbn": null, "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:53.083000+00:00", "path": "Jason Fried/Getting Real (59)", "pubdate": "2006-01-01", "publisher_ids": "101", "publishers": [{"avg_rating": 6.0, "count": 1, "id": 101, "name": "37signals", "sort": "37signals"}], "rating": 3, "series": [], "series_ids": null, "size": 5118368, "tag_ids": "11", "tags": [{"avg_rating": 8.2, "count": 13, "id": 11, "name": "Business \u0026 Economics", "sort": 13}], "timestamp": "2022-10-04 13:46:53.083000+00:00", "title": "Getting Real"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eJason Fried and David Heinemeier Hansson, the authors of the New York Times bestseller Rework, are back with a manifesto to combat all your modern workplace worries and fears. It Doesn\u0027t Have to Be Crazy at Work is a direct successor to Rework, the instant bestseller that showed readers a new path to working effectively. Now Fried and Heinemeier Hansson have returned with a new strategy for the ideal company culture - what they call the calm company . It is a direct attack on the chaos, anxiety and stress that plagues millions of workplaces and billions of people working their day jobs. Working to breaking point with long hours, excessive workload, and a lack of sleep have become a badge of honour for many people these days, when it should be a mark of stupidity. This isn\u0027t just a problem for large organisations; individuals, contractors and solopreneurs are burning themselves out in the very same way. As the authors reveal, the answer isn\u0027t more hours. Rather, it\u0027s less waste and fewer things that induce distraction, always-on anxiety and stress. It is time to stop celebrating crazy and start celebrating calm. Fried and Hansson have the proof to back up their argument. Calm has been the cornerstone of their company\u0027s culture since Basecamp began twenty years ago. Destined to become the management guide for the next generation, It Doesn\u0027t Have to Be Crazy at Work is a practical and inspiring distillation of their insights and experiences. It isn\u0027t a book telling you what to do. It\u0027s a book showing you what they\u0027ve done-and how any manager or executive no matter the industry or size of the company, can do it too.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 57, "identifier_ids": "594,596,592,593,595", "identifiers": [{"book": 57, "id": 595, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780062874795", "sort": "isbn", "type": "isbn", "val": "9780062874795"}, {"book": 57, "id": 593, "name": "Google Books", "path": "https://books.google.com/books?id=aOlMDwAAQBAJ", "sort": "google", "type": "google", "val": "aOlMDwAAQBAJ"}, {"book": 57, "id": 592, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/39674332", "sort": "goodreads", "type": "goodreads", "val": "39674332"}, {"book": 57, "id": 596, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/it-doesnt-have-to-be-crazy-at-work-jason-fried/1128018111"}, {"book": 57, "id": 594, "name": "Amazon", "path": "https://amazon.com/dp/0062874780", "sort": "amazon", "type": "amazon", "val": "0062874780"}], "isbn": "9780062874795", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2022-10-04 13:46:52.016000+00:00", "path": "Jason Fried/It Doesn\u0027t Have to Be Crazy at Work (57)", "pubdate": "2018-10-02", "publisher_ids": "32", "publishers": [{"avg_rating": 9.0, "count": 20, "id": 32, "name": "HarperCollins", "sort": "HarperCollins"}], "rating": 4, "series": [], "series_ids": null, "size": 2765822, "tag_ids": "43,51", "tags": [{"avg_rating": 8.0, "count": 27, "id": 43, "name": "Self Help", "sort": 27}, {"avg_rating": 8.363636363636363, "count": 12, "id": 51, "name": "Business", "sort": 12}], "timestamp": "2022-10-04 13:46:52.016000+00:00", "title": "It Doesn\u0027t Have to Be Crazy at Work"}, {"author_ids": "4,12", "authors": [{"avg_rating": 7.333333333333333, "count": 3, "id": 4, "name": "Jason Fried", "sort": "Fried, Jason"}, {"avg_rating": 7.333333333333333, "count": 3, "id": 12, "name": "David Heinemeier Hansson", "sort": "Hansson, David Heinemeier"}], "comments": "\u003cdiv\u003e\n\u003cp\u003eMost business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you\u0027re looking for a book like that, put this one back on the shelf.\u003c/p\u003e\n\u003cp\u003eRework shows you a better, faster, easier way to succeed in business. Read it and you\u0027ll know why plans are actually harmful, why you don\u0027t need outside investors, and why you\u0027re better off ignoring the competition. The truth is, you need less than you think. You don\u0027t need to be a workaholic. You don\u0027t need to staff up. You don\u0027t need to waste time on paperwork or meetings. You don\u0027t even need an office. Those are all just excuses.\u003c/p\u003e\n\u003cp\u003eWhat you really need to do is stop talking and start working. This book shows you the way. You\u0027ll learn how to be more productive, how to get exposure without breaking the bank, and tons more counterintuitive ideas that will inspire and provoke you.\u003c/p\u003e\n\u003cp\u003eWith its straightforward language and easy-is-better approach, Rework is the perfect playbook for anyone who\u2019s ever dreamed of doing it on their own. Hardcore entrepreneurs, small-business owners, people stuck in day jobs they hate, victims of \"downsizing,\" and artists who don\u2019t want to starve anymore will all find valuable guidance in these pages.\u003c/p\u003e\n\u003cp\u003eFrom the Hardcover edition.\u003c/p\u003e\u003c/div\u003e", "custom_clean": 1, "custom_lists": [], "custom_lists_ids": null, "custom_read_date": null, "custom_reading_list": 0, "custom_types": [{"id": 1, "sort": "eBook", "value": "eBook"}], "custom_types_ids": "1", "flags": 1, "has_cover": 1, "id": 5, "identifier_ids": "99,103,100,101,102", "identifiers": [{"book": 5, "id": 102, "name": "ISBN", "path": "https://www.worldcat.org/isbn/9780307463760", "sort": "isbn", "type": "isbn", "val": "9780307463760"}, {"book": 5, "id": 101, "name": "Google Books", "path": "https://books.google.com/books?id=U77um_h_dgcC", "sort": "google", "type": "google", "val": "U77um_h_dgcC"}, {"book": 5, "id": 100, "name": "Goodreads", "path": "https://www.goodreads.com/book/show/7850546", "sort": "goodreads", "type": "goodreads", "val": "7850546"}, {"book": 5, "id": 103, "name": "Barnes \u0026 Noble", "path": "https://www.barnesandnoble.com/w/rework-jason-fried/1102048884", "sort": "barnesnoble", "type": "barnesnoble", "val": "w/rework-jason-fried/1102048884"}, {"book": 5, "id": 99, "name": "Amazon", "path": "https://amazon.com/dp/0307463761", "sort": "amazon", "type": "amazon", "val": "0307463761"}], "isbn": "9780307463760", "language_ids": "1", "languages": [{"avg_rating": 8.3717277486911, "count": 276, "id": 1, "name": "ENG", "sort": "ENG"}], "last_modified": "2022-10-06 17:19:38.709950+00:00", "order_by": "2021-10-13 19:46:04.494000+00:00", "path": "Jason Fried/Rework (5)", "pubdate": "2010-03-09", "publisher_ids": "100", "publishers": [{"avg_rating": 8.0, "count": 6, "id": 100, "name": "Crown Publishing Group", "sort": "Crown Publishing Group"}], "rating": 4, "series": [], "series_ids": null, "size": 7004338, "tag_ids": "11,12,26,43", "tags": [{"avg_rating": 8.0, "count": 27, "id": 43, "name": "Self Help", "sort": 27}, {"avg_rating": 8.2, "count": 13, "id": 11, "name": "Business \u0026 Economics", "sort": 13}, {"avg_rating": 9.0, "count": 5, "id": 12, "name": "Entrepreneurship", "sort": 5}, {"avg_rating": 9.0, "count": 3, "id": 26, "name": "Personal Growth", "sort": 3}], "timestamp": "2021-10-13 19:46:04.494000+00:00", "title": "Rework"}])'></div>
       </div>
    </div>
+</div>
 
             </div>
         </div>
