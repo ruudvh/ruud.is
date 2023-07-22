@@ -586,7 +586,7 @@
                                        <p class="pt-4 pb-1 font-semibold">Find it at:</p>
                                        <div class="space-x-1 space-y-1">
                                           <template x-for="identifier in book.identifiers" :key="identifier.id">
-                                             <a href="`${identifier.path}`" target="_blank"
+                                             <a href="identifier.path" target="_blank"
                                                 class="badge bg-indigo-600 hover:bg-indigo-500 text-white"
                                                 x-text="identifier.name">
                                              </a>
