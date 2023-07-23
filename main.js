@@ -15,7 +15,7 @@ window.onload = function mainFunction() {
 	const giphy = {
 		baseURL: "https://api.giphy.com/v1/gifs/",
 		apiKey: "6OjDYPnScVn68ZSJrSr3GlbLIcsKoWbR",
-		tag: "funny", // funny, fail, etc
+		tag: "animals", // funny, fail, etc
 		type: "random", //random, trending -> doens't work with trending yet, returns array instead of single gif
 		rating: "pg-13",
 		limit: 1
