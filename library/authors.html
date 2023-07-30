@@ -6,25 +6,25 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Books > Authors</title>
       
-      <script src="/library/js/app.js" defer></script>
-      <link rel="stylesheet" href="/library/css/app.css">
+      <script src="/js/app.js" defer></script>
+      <link rel="stylesheet" href="/css/app.css">
       <link rel="icon" href="/favicon.ico" type="image/x-icon">
    </head>
    <body 
-      class="bg-slate-150 dark:bg-navy-800 text-slate-500 dark:text-navy-200"
+      class="bg-slate-150 dark:bg-md-800 text-slate-500 dark:text-md-200"
       x-data
       x-bind="$store.global.documentBody"
     >
 
       <!-- App preloader-->
-      <div class="app-preloader fixed z-50 grid h-full w-full place-content-center bg-slate-50 dark:bg-navy-900">
+      <div class="app-preloader fixed z-50 grid h-full w-full place-content-center bg-slate-50 dark:bg-md-900">
         <div class="app-preloader-inner relative inline-block h-48 w-48"></div>
       </div>
   
       <div class="relative flex min-w-[1px] flex-col shadow-md dark:shadow-none print:border
-              min-h-screen max-w-[1400px] break-words my-0 mx-auto overflow-hidden bg-slate-50 dark:bg-navy-900">
-         <nav class="items-center justify-between px-7 py-4 relative flex w-full bg-white dark:bg-navy-750 print:hidden header">
-            <div class="flex flex-row items-center space-x-2 text-slate-800 dark:text-navy-50">
+              min-h-screen max-w-[1400px] break-words my-0 mx-auto overflow-hidden bg-slate-50 dark:bg-md-900">
+         <nav class="items-center justify-between px-7 py-4 relative flex w-full bg-white dark:bg-md-700 print:hidden header">
+            <div class="flex flex-row items-center space-x-2 text-slate-800 dark:text-md-50">
               <button 
                 class="hidden sm:inline h-7 w-7"
               >
@@ -34,7 +34,7 @@
               </button>
               <button 
                 @click="$dispatch('show-drawer', { drawerId: 'left-drawer' })"
-                class="inline sm:hidden h-7 w-7 text-primary dark:text-accent-light border-primary dark:border-accent-light"
+                class="inline sm:hidden h-7 w-7 text-primary dark:text-primary-light border-primary dark:border-primary-light"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -46,7 +46,7 @@
               <!-- Dark Mode Toggle -->
               <button
                 @click="$store.global.isDarkModeEnabled = !$store.global.isDarkModeEnabled"
-                class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25"
+                class="btn h-8 w-8 rounded-full p-0 hover:bg-slate-300/20 focus:bg-slate-300/20 active:bg-slate-300/25 dark:hover:bg-md-300/20 dark:focus:bg-md-300/20 dark:active:bg-md-300/25"
               >
                 <svg
                   x-show="$store.global.isDarkModeEnabled"
@@ -85,11 +85,11 @@
             
               <nav class="hidden sm:flex pr-7 flex-0 flex-col w-24 lg:w-48 shrink-0 whitespace-nowrap overflow-hidden">
                 <ul class="font-inter">
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/index.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/index.html"
         >
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -97,103 +97,103 @@
       <span>Books</span>
     </a>
   </li>
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
     <a
       class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-      href="/library/read-books.html"
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+      href="/read-books.html?page=read"
     >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       <span>Read</span>
     </a>
   </li>
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
     <a
       class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-      href="/library/reading-list.html"
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+      href="/reading-list.html?page=reading"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
       </svg>
       <span>Reading List</span>
     </a>
   </li>
   
-  <li class="text-slate-800 dark:text-navy-50">
+  <li class="text-slate-800 dark:text-md-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        bg-slate-150 dark:bg-navy-500"
-        href="/library/authors.html"
+        bg-slate-150 dark:bg-md-500"
+        href="/authors.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
 </svg>                             
           <span>Authors</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/series.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/series.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
 </svg>                             
           <span>Series</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/publishers.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/publishers.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
 </svg>                             
           <span>Publishers</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/languages.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/languages.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
 </svg>                             
           <span>Languages</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/ratings.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/ratings.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
 </svg>                             
           <span>Ratings</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/tags.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/tags.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
     <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
 </svg>                             
@@ -206,8 +206,8 @@
               <div x-show="showDrawer" x-data="{showDrawer:false}" @show-drawer.window="($event.detail.drawerId === 'left-drawer') &amp;&amp; (showDrawer = true)" @keydown.window.escape="showDrawer = false" style="display: none;">
                 <div class="fixed inset-0 z-[100] bg-slate-900/60 transition-opacity duration-200" @click="showDrawer = false" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
                 <div class="fixed left-0 top-0 z-[101] h-full w-72">
-                  <div class="flex h-full w-full transform-gpu flex-col bg-white transition-transform duration-200 dark:bg-navy-700" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="ease-in" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" style="display: none;">
-                    <div class="flex flex-row items-center px-5 py-4 space-x-2 text-slate-800 dark:text-navy-50">
+                  <div class="flex h-full w-full transform-gpu flex-col bg-white transition-transform duration-200 dark:bg-md-700" x-show="showDrawer" x-transition:enter="ease-out" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="ease-in" x-transition:leave-start="translate-x-0" x-transition:leave-end="-translate-x-full" style="display: none;">
+                    <div class="flex flex-row items-center px-5 py-4 space-x-2 text-slate-800 dark:text-md-50">
                       <button class="h-7 w-7">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -217,11 +217,11 @@
                     </div>
                     <nav class="grow space-y-1.5 px-5 font-inter font-medium">
                       <ul class="font-inter">
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/index.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/index.html"
         >
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
@@ -229,103 +229,103 @@
       <span>Books</span>
     </a>
   </li>
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
     <a
       class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-      href="/library/read-books.html"
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+      href="/read-books.html?page=read"
     >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       <span>Read</span>
     </a>
   </li>
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
     <a
       class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-      href="/library/reading-list.html"
+      hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+      href="/reading-list.html?page=reading"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
       </svg>
       <span>Reading List</span>
     </a>
   </li>
   
-  <li class="text-slate-800 dark:text-navy-50">
+  <li class="text-slate-800 dark:text-md-50">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        bg-slate-150 dark:bg-navy-500"
-        href="/library/authors.html"
+        bg-slate-150 dark:bg-md-500"
+        href="/authors.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
 </svg>                             
           <span>Authors</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/series.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/series.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
 </svg>                             
           <span>Series</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/publishers.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/publishers.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
 </svg>                             
           <span>Publishers</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/languages.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/languages.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802" />
 </svg>                             
           <span>Languages</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/ratings.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/ratings.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
 </svg>                             
           <span>Ratings</span>
       </a>
   </li>
   
-  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-navy-100 dark:focus:text-navy-100">
+  <li class="hover:text-slate-800 focus:text-slate-800 dark:hover:text-md-100 dark:focus:text-md-100">
       <a
         class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
-        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-navy-600 dark:focus:bg-navy-600"
-        href="/library/tags.html"
+        hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
+        href="/tags.html"
       >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-navy-300 dark:group-hover:text-navy-200 dark:group-focus:text-navy-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
     <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z" />
 </svg>                             
@@ -343,1086 +343,1089 @@
             <div class="w-full overflow-hidden">
                 
    <div class="pb-4 border-solid border-b border-b-slate-300">
-      <div class="font-medium text-base">Authors (359)</div>
+      <div class="font-medium text-base">Authors (360)</div>
    </div>
    <ul class="pt-5">
       
          
-         <li class="pb-3"><a href="./authors/141.html">Hanif Abdurraqib</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=141">Hanif Abdurraqib</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/216.html">Kfir Aberman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=216">Kfir Aberman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/101.html">Douglas Adams</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=101">Douglas Adams</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/519.html">Ben Affleck</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=519">Ben Affleck</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/163.html">Weiwei Ai</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=163">Weiwei Ai</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/492.html">Louisa May Alcott</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=492">Louisa May Alcott</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/271.html">Benjamin Bennett Alexander</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=271">Benjamin Bennett Alexander</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/49.html">Bob Altemeyer</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=49">Bob Altemeyer</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/314.html">Saleema Amershi</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=314">Saleema Amershi</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/228.html">Jie An</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=228">Jie An</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/158.html">Donald Antrim</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=158">Donald Antrim</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/232.html">Oron Ashual</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=232">Oron Ashual</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/188.html">Isaac Asimov</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=188">Isaac Asimov</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/479.html">Jane Austen</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=479">Jane Austen</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/257.html">Leif Azzopardi</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=257">Leif Azzopardi</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/72.html">Leo Babauta</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=72">Leo Babauta</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/539.html">Brett Baer</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=539">Brett Baer</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/527.html">Andrew Bailey</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=527">Andrew Bailey</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/87.html">Simon T. Bailey</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=87">Simon T. Bailey</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/518.html">Alan Ball</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=518">Alan Ball</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/333.html">Lundy Bancroft</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=333">Lundy Bancroft</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/281.html">Parker Barnes</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=281">Parker Barnes</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/315.html">Andrew Begel</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=315">Andrew Begel</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/316.html">Christian Bird</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=316">Christian Bird</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/402.html">Rúnar Bjarnason</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=402">Rúnar Bjarnason</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/526.html">Steven Blank</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=526">Steven Blank</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/181.html">Sanne Blauw</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=181">Sanne Blauw</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/405.html">Stefan Bocutiu</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=405">Stefan Bocutiu</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/329.html">Piotr Bojanowski</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=329">Piotr Bojanowski</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/60.html">Richard Nelson Bolles</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=60">Richard Nelson Bolles</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/489.html">Ray Bradbury</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=489">Ray Bradbury</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/429.html">Umar Bradshaw</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=429">Umar Bradshaw</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/320.html">Eric Breck</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=320">Eric Breck</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/161.html">Rutger Bregman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=161">Rutger Bregman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/289.html">Greg Brockman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=289">Greg Brockman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/491.html">Charlotte Bronte</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=491">Charlotte Bronte</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/473.html">Emily Bronte</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=473">Emily Bronte</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/85.html">Katharine Brooks</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=85">Katharine Brooks</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/183.html">Brené Brown</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=183">Brené Brown</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/123.html">Tarana Burke</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=123">Tarana Burke</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/127.html">Oliver Burkeman</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=127">Oliver Burkeman</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/363.html">Raymond Burton</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=363">Raymond Burton</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/3.html">Stephen Bussey</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=3">Stephen Bussey</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/344.html">Olivia Fox Cabane</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=344">Olivia Fox Cabane</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/321.html">Shanqing Cai</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=321">Shanqing Cai</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/407.html">Massimo Carli</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=407">Massimo Carli</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/17.html">Dale Carnegie</a> (4)</li>
+         <li class="pb-3"><a href="./?aut=17">Dale Carnegie</a> (4)</li>
       
          
-         <li class="pb-3"><a href="./authors/326.html">Mathilde Caron</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=326">Mathilde Caron</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/337.html">Allen Carr</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=337">Allen Carr</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/463.html">Lewis Carroll</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=463">Lewis Carroll</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/420.html">Peter Chan</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=420">Peter Chan</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/499.html">Graham Chapman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=499">Graham Chapman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/307.html">Vinay Chaudhary</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=307">Vinay Chaudhary</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/249.html">Anton Chekhov</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=249">Anton Chekhov</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/400.html">Paul Chiusano</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=400">Paul Chiusano</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/154.html">Kat Chow</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=154">Kat Chow</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/136.html">Lesley Chow</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=136">Lesley Chow</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/444.html">Pierre Christin</a> (7)</li>
+         <li class="pb-3"><a href="./?aut=444">Pierre Christin</a> (7)</li>
       
          
-         <li class="pb-3"><a href="./authors/500.html">John Cleese</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=500">John Cleese</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/521.html">Ethan Coen</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=521">Ethan Coen</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/522.html">Joel Coen</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=522">Joel Coen</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/176.html">Jack Cohen</a> (4)</li>
+         <li class="pb-3"><a href="./?aut=176">Jack Cohen</a> (4)</li>
       
          
-         <li class="pb-3"><a href="./authors/76.html">Brent Cole</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=76">Brent Cole</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/309.html">Jean-François Crespo</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=309">Jean-François Crespo</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/520.html">Matt Damon</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=520">Matt Damon</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/304.html">Eugene Davydov</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=304">Eugene Davydov</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/380.html">Sophie Debenedetto</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=380">Sophie Debenedetto</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/317.html">Robert DeLine</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=317">Robert DeLine</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/310.html">Dan Dennison</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=310">Dan Dennison</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/217.html">Prafulla Dhariwal</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=217">Prafulla Dhariwal</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/510.html">I. A. L. Diamon</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=510">I. A. L. Diamon</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/480.html">Charles Dickens</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=480">Charles Dickens</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/525.html">Rene Diekstra</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=525">Rene Diekstra</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/193.html">William C. Dietz</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=193">William C. Dietz</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/121.html">Tove Ditlevsen</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=121">Tove Ditlevsen</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/117.html">Rebecca Donner</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=117">Rebecca Donner</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/270.html">Allen B. Downey</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=270">Allen B. Downey</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/395.html">Mike Dunn</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=395">Mike Dunn</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/306.html">Dietmar Ebner</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=306">Dietmar Ebner</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/436.html">Apple Education</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=436">Apple Education</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/238.html">George Eliot</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=238">George Eliot</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/114.html">Andrea Elliott</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=114">Andrea Elliott</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/128.html">Nicole Eustace</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=128">Nicole Eustace</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/335.html">Tony Fadell</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=335">Tony Fadell</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/342.html">David Farber</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=342">David Farber</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/133.html">Melissa Febos</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=133">Melissa Febos</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/266.html">Audrey Feldroy</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=266">Audrey Feldroy</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/265.html">Daniel Feldroy</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=265">Daniel Feldroy</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/94.html">Tina Fey</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=94">Tina Fey</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/540.html">Dave Finkel</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=540">Dave Finkel</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/244.html">F. Scott Fitzgerald</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=244">F. Scott Fitzgerald</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/25.html">Rob Fitzpatrick</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=25">Rob Fitzpatrick</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/237.html">Gustave Flaubert</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=237">Gustave Flaubert</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/83.html">Gillian Flynn</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=83">Gillian Flynn</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/511.html">Dan Fogelman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=511">Dan Fogelman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/116.html">Ashley C. Ford</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=116">Ashley C. Ford</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/425.html">Hammad Fozi</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=425">Hammad Fozi</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/454.html">Anne Frank</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=454">Anne Frank</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/413.html">Charles Frederick</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=413">Charles Frederick</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/365.html">Sigmund Freud</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=365">Sigmund Freud</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/4.html">Jason Fried</a> (3)</li>
+         <li class="pb-3"><a href="./?aut=4">Jason Fried</a> (3)</li>
       
          
-         <li class="pb-3"><a href="./authors/233.html">Oran Gafni</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=233">Oran Gafni</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/318.html">Harald Gall</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=318">Harald Gall</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/286.html">Timnit Gebru</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=286">Timnit Gebru</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/360.html">Catherine Gildiner</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=360">Catherine Gildiner</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/502.html">Terry Gilliam</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=502">Terry Gilliam</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/165.html">Vincent van Gogh</a> (3)</li>
+         <li class="pb-3"><a href="./?aut=165">Vincent van Gogh</a> (3)</li>
       
          
-         <li class="pb-3"><a href="./authors/459.html">William Golding</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=459">William Golding</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/516.html">Akiva Goldsman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=516">Akiva Goldsman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/303.html">Daniel Golovin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=303">Daniel Golovin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/297.html">Aidan N. Gomez</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=297">Aidan N. Gomez</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/113.html">Annette Gordon-Reed</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=113">Annette Gordon-Reed</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/118.html">Amanda Gorman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=118">Amanda Gorman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/331.html">Edouard Grave</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=331">Edouard Grave</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/268.html">Audrey Roy Greenfeld</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=268">Audrey Roy Greenfeld</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/269.html">Daniel Roy Greenfeld</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=269">Daniel Roy Greenfeld</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/384.html">David Greenhalgh</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=384">David Greenhalgh</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/65.html">Joseph Grenny</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=65">Joseph Grenny</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/387.html">David Griffiths</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=387">David Griffiths</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/386.html">Dawn Griffiths</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=386">Dawn Griffiths</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/177.html">Jacob Grimm</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=177">Jacob Grimm</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/178.html">Wilhelm Grimm</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=178">Wilhelm Grimm</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/350.html">Pam Grout</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=350">Pam Grout</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/235.html">Sonal Gupta</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=235">Sonal Gupta</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/185.html">Peter Gzowski</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=185">Peter Gzowski</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/79.html">Freda Hansburg</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=79">Freda Hansburg</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/12.html">David Heinemeier Hansson</a> (3)</li>
+         <li class="pb-3"><a href="./?aut=12">David Heinemeier Hansson</a> (3)</li>
       
          
-         <li class="pb-3"><a href="./authors/153.html">Forsyth Harmon</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=153">Forsyth Harmon</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/132.html">Mark Harris</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=132">Mark Harris</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/343.html">Sam Harris</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=343">Sam Harris</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/226.html">Thomas Hayes</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=226">Thomas Hayes</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/32.html">Mel Helitzer</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=32">Mel Helitzer</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/151.html">Daisy Hernández</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=151">Daisy Hernández</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/394.html">Amanda Hinchman-Dominguez</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=394">Amanda Hinchman-Dominguez</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/146.html">Elizabeth Hinton</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=146">Elizabeth Hinton</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/263.html">Adrian Holovaty</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=263">Adrian Holovaty</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/302.html">Gary Holt</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=302">Gary Holt</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/22.html">Stephen Hoover</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=22">Stephen Hoover</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/464.html">Khaled Hosseini</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=464">Khaled Hosseini</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/327.html">Lucas Hosseini</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=327">Lucas Hosseini</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/24.html">Sabine Hossenfelder</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=24">Sabine Hossenfelder</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/230.html">Qiyuan Hu</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=230">Qiyuan Hu</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/403.html">John Hunt</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=403">John Hunt</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/283.html">Ben Hutchinson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=283">Ben Hutchinson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/277.html">Marcus Hutter</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=277">Marcus Hutter</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/501.html">Eric Idle</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=501">Eric Idle</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/418.html">Eric Ingerson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=418">Eric Ingerson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/119.html">Walter Isaacson</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=119">Walter Isaacson</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/409.html">Svetlana Isakova</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=409">Svetlana Isakova</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/325.html">Gautier Izacard</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=325">Gautier Izacard</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/213.html">Varun Jampani</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=213">Varun Jampani</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/408.html">Dmitry Jemerov</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=408">Dmitry Jemerov</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/538.html">Berkley Johnson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=538">Berkley Johnson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/368.html">J. G. Jones</a> (8)</li>
+         <li class="pb-3"><a href="./?aut=368">J. G. Jones</a> (8)</li>
       
          
-         <li class="pb-3"><a href="./authors/296.html">Llion Jones</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=296">Llion Jones</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/503.html">Terry Jones</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=503">Terry Jones</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/330.html">Armand Joulin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=330">Armand Joulin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/218.html">Heewoo Jun</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=218">Heewoo Jun</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/298.html">Lukasz Kaiser</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=298">Lukasz Kaiser</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/102.html">Mindy Kaling</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=102">Mindy Kaling</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/319.html">Ece Kamar</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=319">Ece Kamar</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/139.html">Jay Caspian Kang</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=139">Jay Caspian Kang</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/58.html">Steve Kaplan</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=58">Steve Kaplan</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/264.html">Jacob Kaplan-Moss</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=264">Jacob Kaplan-Moss</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/126.html">Patrick Radden Keefe</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=126">Patrick Radden Keefe</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/186.html">Gerard Keller</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=186">Gerard Keller</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/169.html">Anthony Kiedis</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=169">Anthony Kiedis</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/220.html">Jong Wook Kim</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=220">Jong Wook Kim</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/434.html">Dorling Kindersley</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=434">Dorling Kindersley</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/370.html">Patrick King</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=370">Patrick King</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/352.html">Emma Lucy Knowles</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=352">Emma Lucy Knowles</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/93.html">Herman Koch</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=93">Herman Koch</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/145.html">Elizabeth Kolbert</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=145">Elizabeth Kolbert</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/391.html">Ken Kousen</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=391">Ken Kousen</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/144.html">Gabriel Krauze</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=144">Gabriel Krauze</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/98.html">Matt Kuhn</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=98">Matt Kuhn</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/421.html">Pankaj Kumar</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=421">Pankaj Kumar</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/446.html">Scott Kupor</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=446">Scott Kupor</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/393.html">Pierre-Olivier Laurence</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=393">Pierre-Olivier Laurence</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/103.html">Jenny Lawson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=103">Jenny Lawson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/505.html">J. F. Lawton</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=505">J. F. Lawton</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/490.html">Harper Lee</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=490">Harper Lee</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/77.html">John Legere</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=77">John Legere</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/150.html">Deborah Levy</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=150">Deborah Levy</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/447.html">C. S. Lewis</a> (7)</li>
+         <li class="pb-3"><a href="./?aut=447">C. S. Lewis</a> (7)</li>
       
          
-         <li class="pb-3"><a href="./authors/212.html">Yuanzhen Li</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=212">Yuanzhen Li</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/488.html">Yali Lin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=488">Yali Lin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/62.html">Matthew Linderman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=62">Matthew Linderman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/512.html">Kenneth Lonergan</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=512">Kenneth Lonergan</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/57.html">Harry Lorayne</a> (3)</li>
+         <li class="pb-3"><a href="./?aut=57">Harry Lorayne</a> (3)</li>
       
          
-         <li class="pb-3"><a href="./authors/81.html">Leil Lowndes</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=81">Leil Lowndes</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/73.html">Jerry Lucas</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=73">Jerry Lucas</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/373.html">Jon Macks</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=373">Jon Macks</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/74.html">Andrew Macmillan</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=74">Andrew Macmillan</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/312.html">John Maeda</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=312">John Maeda</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/334.html">Sebastian Mallaby</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=334">Sebastian Mallaby</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/537.html">Josh Malmuth</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=537">Josh Malmuth</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/182.html">Hector Malot</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=182">Hector Malot</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/155.html">Geoff Manaugh</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=155">Geoff Manaugh</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/248.html">Amy Mandelker</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=248">Amy Mandelker</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/345.html">Mark Manson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=345">Mark Manson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/430.html">Goncalo Marques</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=430">Goncalo Marques</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/90.html">George R.R. Martin</a> (4)</li>
+         <li class="pb-3"><a href="./?aut=90">George R.R. Martin</a> (4)</li>
       
          
-         <li class="pb-3"><a href="./authors/53.html">Blake Masters</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=53">Blake Masters</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/247.html">Louise Maude</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=247">Louise Maude</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/258.html">David Maxwell</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=258">David Maxwell</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/383.html">Jonathan Mayer</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=383">Jonathan Mayer</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/138.html">Jesse McCarthy</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=138">Jesse McCarthy</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/524.html">Michael McCullers</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=524">Michael McCullers</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/359.html">Mark W McElroy Jr</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=359">Mark W McElroy Jr</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/140.html">Heather McGhee</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=140">Heather McGhee</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/397.html">Brett McLaughlin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=397">Brett McLaughlin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/290.html">Christine McLeavey</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=290">Christine McLeavey</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/66.html">Ron McMillan</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=66">Ron McMillan</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/515.html">Christopher McQuarrie</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=515">Christopher McQuarrie</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/34.html">Donella H. Meadows</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=34">Donella H. Meadows</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/134.html">Louis Menand</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=134">Louis Menand</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/533.html">Elizabeth Meriwether</a> (5)</li>
+         <li class="pb-3"><a href="./?aut=533">Elizabeth Meriwether</a> (5)</li>
       
          
-         <li class="pb-3"><a href="./authors/122.html">Tiya Miles</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=122">Tiya Miles</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/367.html">Mark Millar</a> (8)</li>
+         <li class="pb-3"><a href="./?aut=367">Mark Millar</a> (8)</li>
       
          
-         <li class="pb-3"><a href="./authors/278.html">Margaret Mitchell</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=278">Margaret Mitchell</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/419.html">Bret Mogilefsky</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=419">Bret Mogilefsky</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/180.html">Jelmer Mommers</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=180">Jelmer Mommers</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/195.html">Alan Moore</a> (10)</li>
+         <li class="pb-3"><a href="./?aut=195">Alan Moore</a> (10)</li>
       
          
-         <li class="pb-3"><a href="./authors/89.html">Richard K. Morgan</a> (3)</li>
+         <li class="pb-3"><a href="./?aut=89">Richard K. Morgan</a> (3)</li>
       
          
-         <li class="pb-3"><a href="./authors/369.html">Paul Mounts</a> (8)</li>
+         <li class="pb-3"><a href="./?aut=369">Paul Mounts</a> (8)</li>
       
          
-         <li class="pb-3"><a href="./authors/347.html">Christine Muhlke</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=347">Christine Muhlke</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/170.html">Mulish| Harry</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=170">Mulish| Harry</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/41.html">John Mullins</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=41">John Mullins</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/523.html">Mike Myers</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=523">Mike Myers</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/445.html">Jean-Claude Mézières</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=445">Jean-Claude Mézières</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/245.html">Vladimir Vladimirovich Nabokov</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=245">Vladimir Vladimirovich Nabokov</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/517.html">Sylvia Nassar</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=517">Sylvia Nassar</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/5.html">Cal Newport</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=5">Cal Newport</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/125.html">Viet Thanh Nguyen</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=125">Viet Thanh Nguyen</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/496.html">Andrew Niccol</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=496">Andrew Niccol</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/322.html">Eric Nielsen</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=322">Eric Nielsen</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/167.html">George Orwell</a> (4)</li>
+         <li class="pb-3"><a href="./?aut=167">George Orwell</a> (4)</li>
       
          
-         <li class="pb-3"><a href="./authors/68.html">Laura van Den Ouden</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=68">Laura van Den Ouden</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/129.html">Nadia Owusu</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=129">Nadia Owusu</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/504.html">Michael Palin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=504">Michael Palin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/14.html">Jerold Panas</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=14">Jerold Panas</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/234.html">Devi Parikh</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=234">Devi Parikh</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/294.html">Niki Parmar</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=294">Niki Parmar</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/64.html">Kerry Patterson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=64">Kerry Patterson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/219.html">Christine Payne</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=219">Christine Payne</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/432.html">David Pereira</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=432">David Pereira</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/135.html">Larissa Pham</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=135">Larissa Pham</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/535.html">J.J. Philbin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=535">J.J. Philbin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/305.html">Todd Phillips</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=305">Todd Phillips</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/276.html">Mary Phuong</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=276">Mary Phuong</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/299.html">Illia Polosukhin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=299">Illia Polosukhin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/225.html">Adam Polyak</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=225">Adam Polyak</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/536.html">Joe Port</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=536">Joe Port</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/174.html">Terry Pratchett</a> (86)</li>
+         <li class="pb-3"><a href="./?aut=174">Terry Pratchett</a> (86)</li>
       
          
-         <li class="pb-3"><a href="./authors/507.html">Jeffrey Price</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=507">Jeffrey Price</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/214.html">Yael Pritch</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=214">Yael Pritch</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/262.html">Lazy Programmer</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=262">Lazy Programmer</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/239.html">Marcel Proust</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=239">Marcel Proust</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/221.html">Alec Radford</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=221">Alec Radford</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/287.html">Alex Radford</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=287">Alex Radford</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/285.html">Inioluwa Deborah Raji</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=285">Inioluwa Deborah Raji</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/514.html">Harold Ramis</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=514">Harold Ramis</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/406.html">Raywenderlich Tutorial Team</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=406">Raywenderlich Tutorial Team</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/532.html">Adam Reed</a> (3)</li>
+         <li class="pb-3"><a href="./?aut=532">Adam Reed</a> (3)</li>
       
          
-         <li class="pb-3"><a href="./authors/179.html">Mordecai Richler</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=179">Mordecai Richler</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/328.html">Sebastian Riedel</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=328">Sebastian Riedel</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/156.html">Cruz Rodíguez</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=156">Cruz Rodíguez</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/364.html">Sally Rooney</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=364">Sally Rooney</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/112.html">J.K. Rowling</a> (8)</li>
+         <li class="pb-3"><a href="./?aut=112">J.K. Rowling</a> (8)</li>
       
          
-         <li class="pb-3"><a href="./authors/215.html">Michael Rubinstein</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=215">Michael Rubinstein</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/211.html">Nataniel Ruiz</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=211">Nataniel Ruiz</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/159.html">Sunjeev Sahota</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=159">Sunjeev Sahota</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/323.html">Michael Salib</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=323">Michael Salib</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/483.html">J. D. Salinger</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=483">J. D. Salinger</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/404.html">Stephen Samuel</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=404">Stephen Samuel</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/416.html">Tim Schafer</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=416">Tim Schafer</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/382.html">Sarah Scheffler</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=382">Sarah Scheffler</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/301.html">D. Sculley</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=301">D. Sculley</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/508.html">Peter S. Seaman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=508">Peter S. Seaman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/191.html">Christopher Sebela</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=191">Christopher Sebela</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/486.html">Adam Sexton</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=486">Adam Sexton</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/240.html">William Shakespeare</a> (3)</li>
+         <li class="pb-3"><a href="./?aut=240">William Shakespeare</a> (3)</li>
       
          
-         <li class="pb-3"><a href="./authors/33.html">Mark Shatz</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=33">Mark Shatz</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/311.html">Zed A. Shaw</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=541">Zed Shaw</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/293.html">Noam Shazeer</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=311">Zed A. Shaw</a> (3)</li>
       
          
-         <li class="pb-3"><a href="./authors/478.html">Mary Shelley</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=293">Noam Shazeer</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/431.html">Devin Sherry</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=478">Mary Shelley</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/338.html">Alexander Shulgin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=431">Devin Sherry</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/339.html">Ann Shulgin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=338">Alexander Shulgin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/78.html">Melvin L. Silberman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=339">Ann Shulgin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/189.html">Robert Silverberg</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=78">Melvin L. Silberman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/124.html">Suzanne Simard</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=189">Robert Silverberg</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/224.html">Uriel Singer</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=124">Suzanne Simard</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/528.html">Josh Skeen</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=224">Uriel Singer</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/115.html">Clint Smith</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=528">Josh Skeen</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/69.html">Erik Smithuis</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=115">Clint Smith</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/13.html">Andrew Sobel</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=69">Erik Smithuis</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/346.html">Aldo Sohm</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=13">Andrew Sobel</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/433.html">The Editors Of Think Spanish</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=346">Aldo Sohm</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/284.html">Elena Spitzer</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=433">The Editors Of Think Spanish</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/423.html">Peter Späth</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=284">Elena Spitzer</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/252.html">Fiona Staples</a> (10)</li>
+         <li class="pb-3"><a href="./?aut=423">Peter Späth</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/465.html">John Steinbeck</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=252">Fiona Staples</a> (10)</li>
       
          
-         <li class="pb-3"><a href="./authors/184.html">Ian Stewart</a> (4)</li>
+         <li class="pb-3"><a href="./?aut=465">John Steinbeck</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/97.html">Barney Stinson</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=184">Ian Stewart</a> (4)</li>
       
          
-         <li class="pb-3"><a href="./authors/392.html">Venkat Subramaniam</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=97">Barney Stinson</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/222.html">Ilya Sutskever</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=392">Venkat Subramaniam</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/67.html">Al Switzler</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=222">Ilya Sutskever</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/236.html">Yaniv Taigman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=67">Al Switzler</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/506.html">Quentin Tarantino</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=236">Yaniv Taigman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/379.html">Bruce A. Tate</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=506">Quentin Tarantino</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/52.html">Peter Thiel</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=379">Bruce A. Tate</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/497.html">Caroline Thompson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=52">Peter Thiel</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/353.html">Derek Thompson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=497">Caroline Thompson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/513.html">Peter Tolan</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=353">Derek Thompson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/92.html">J.R.R. Tolkien</a> (5)</li>
+         <li class="pb-3"><a href="./?aut=513">Peter Tolan</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/243.html">Leo Tolstoy</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=92">J.R.R. Tolkien</a> (5)</li>
       
          
-         <li class="pb-3"><a href="./authors/166.html">John Kennedy Toole</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=243">Leo Tolstoy</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/160.html">Amor Towles</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=166">John Kennedy Toole</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/417.html">Peter Tsacle</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=160">Amor Towles</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/157.html">Kikuko Tsumura</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=417">Peter Tsacle</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/246.html">Mark Twain</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=157">Kikuko Tsumura</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/143.html">Nicola Twilley</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=246">Mark Twain</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/295.html">Jakob Uszkoreit</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=143">Nicola Twilley</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/427.html">Sufyan Bin Uzayr</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=295">Jakob Uszkoreit</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/282.html">Lucy Vasserman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=427">Sufyan Bin Uzayr</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/292.html">Ashish Vaswani</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=282">Lucy Vasserman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/207.html">Brian K. Vaughan</a> (23)</li>
+         <li class="pb-3"><a href="./?aut=292">Ashish Vaswani</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/401.html">Marco Vermeulen</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=207">Brian K. Vaughan</a> (23)</li>
       
          
-         <li class="pb-3"><a href="./authors/171.html">Jules Verne</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=401">Marco Vermeulen</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/462.html">Kurt Vonnegut</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=171">Jules Verne</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/371.html">John Vorhaus</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=462">Kurt Vonnegut</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/448.html">Alice Walker</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=371">John Vorhaus</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/99.html">Danny Wallace</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=448">Alice Walker</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/172.html">David Foster Wallace</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=99">Danny Wallace</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/149.html">Elissa Washuta</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=172">David Foster Wallace</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/341.html">Jessica Wattman</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=149">Elissa Washuta</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/481.html">E. B. White</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=341">Jessica Wattman</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/168.html">Oscar Wilde</a> (2)</li>
+         <li class="pb-3"><a href="./?aut=481">E. B. White</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/509.html">Billy Wilder</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=168">Oscar Wilde</a> (2)</li>
       
          
-         <li class="pb-3"><a href="./authors/375.html">Bruce Williams</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=509">Billy Wilder</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/374.html">James W Williams</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=375">Bruce Williams</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/381.html">Ben Wilson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=374">James W Williams</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/498.html">Larry Wilson</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=381">Ben Wilson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/355.html">Christina Wodtke</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=498">Larry Wilson</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/412.html">Gary K. Wolf</a> (4)</li>
+         <li class="pb-3"><a href="./?aut=355">Christina Wodtke</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/162.html">Jan Wolkers</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=412">Gary K. Wolf</a> (4)</li>
       
          
-         <li class="pb-3"><a href="./authors/279.html">Simone Wu</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=162">Jan Wolkers</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/340.html">Stephen Wunker</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=279">Simone Wu</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/288.html">Tao Xu</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=340">Stephen Wunker</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/231.html">Harry Yang</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=288">Tao Xu</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/227.html">Xi Yin</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=231">Harry Yang</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/308.html">Michael Young</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=227">Xi Yin</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/376.html">Carmine Zaccagnino</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=308">Michael Young</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/280.html">Andrew Zaldivar</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=376">Carmine Zaccagnino</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/130.html">Michelle Zauner</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=280">Andrew Zaldivar</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/229.html">Songyang Zhang</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=130">Michelle Zauner</a> (1)</li>
       
          
-         <li class="pb-3"><a href="./authors/484.html">Markus Zusak</a> (1)</li>
+         <li class="pb-3"><a href="./?aut=229">Songyang Zhang</a> (1)</li>
+      
+         
+         <li class="pb-3"><a href="./?aut=484">Markus Zusak</a> (1)</li>
       
    </ul>
 
