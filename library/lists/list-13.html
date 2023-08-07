@@ -383,7 +383,7 @@
                 <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by
                    <template x-for="author in book.authors" :key="author.id">
                       <a class="underline decoration-solid"
-                         :href="'/library/authors/' + author.id + '.html'" x-text="author.name"></a>
+                         :href="'/library/?aut=' + author.id" x-text="author.name"></a>
                    </template>
                 </p>
 
@@ -446,8 +446,8 @@
   <img
     :src="book.has_cover ? '/library/images/covers/' + book.id + '.jpg' : '/library/images/covers/no_cover.jpg'"
     :alt="book.title"
-    class="col-span-12 hidden lg:block lg:col-span-4 rounded-l-lg">
-  <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8">
+    class="col-span-12 hidden lg:block lg:col-span-4 rounded-l-lg -mt-4 -ml-4 border-b-2 rounded-sm border-slate-300 dark:border-slate-700 object-cover mb-5 transition-all shadow-lg shadow-slate-500 dark:shadow-slate-900">
+  <div class="p-4 lg:pl-0 py-10 sm:pr-5 col-span-12 lg:col-span-8 overflow-y-auto lg:overflow-hidden h-screen lg:h-auto">
     <h1 class="pb-4 ml-0 text-3xl font-semibold" x-text="book.title">
     </h1>
 
@@ -461,7 +461,7 @@
             </td>
             <td class="space-x-1">
               <template x-for="author in book.authors" :key="author.id">
-                <a class="underline decoration-solid" :href="'/library/authors/' + author.id + '.html'"
+                <a class="underline decoration-solid" :href="'/library/?aut=' + author.id"
                   x-text="author.name"></a>
               </template>
             </td>
@@ -475,7 +475,7 @@
             </td>
             <td class="space-x-1">
               <template x-for="series in book.series" :key="series.id">
-                <a class="underline decoration-solid" :href="'/library/series/' + series.id + '.html'"
+                <a class="underline decoration-solid" :href="'/library/?ser=' + series.id"
                   x-text="series.name"></a>
               </template>
             </td>
@@ -489,7 +489,7 @@
             </td>
             <td class="space-x-1">
               <template x-for="publisher in book.publishers" :key="publisher.id">
-                <a class="underline decoration-solid" :href="'/library/publishers/' + publisher.id + '.html'"
+                <a class="underline decoration-solid" :href="'/library/?pub=' + publisher.id"
                   x-text="publisher.name"></a>
               </template>
             </td>
@@ -513,7 +513,7 @@
             </td>
             <td class="space-x-1">
               <template x-for="language in book.languages" :key="language.id">
-                <a class="underline decoration-solid" :href="'/library/languages/' + language.id + '.html'"
+                <a class="underline decoration-solid" :href="'/library/?lan=' + language.id"
                   x-text="language.name"></a>
               </template>
             </td>
@@ -569,7 +569,7 @@
             <td class="pt-1 space-x-1 space-y-1">
               <template x-for="tag in book.tags" :key="tag.id">
                 <a class="badge bg-slate-150 text-slate-800 dark:bg-md-500 dark:text-md-100"
-                  :href="'/library/tags/' + tag.id + '.html'" x-text="tag.name">
+                  :href="'/library/?tag=' + tag.id" x-text="tag.name">
                 </a>
               </template>
             </td>
