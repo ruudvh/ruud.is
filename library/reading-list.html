@@ -101,7 +101,7 @@
     <a
       class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
       hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
-      href="/library/read-books.html?page=read"
+      href="/library/read-books.html?read=true"
     >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -113,7 +113,7 @@
     <a
       class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
       bg-slate-150 dark:bg-md-500"
-      href="/library/reading-list.html?page=reading"
+      href="/library/reading-list.html?reading=true"
     >
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -233,7 +233,7 @@
     <a
       class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
       hover:bg-slate-100 focus:bg-slate-100 dark:hover:bg-md-600 dark:focus:bg-md-600"
-      href="/library/read-books.html?page=read"
+      href="/library/read-books.html?read=true"
     >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -245,7 +245,7 @@
     <a
       class="space-x-2 flex rounded-lg px-4 py-2.5 tracking-wide transition-all outline-none 
       bg-slate-150 dark:bg-md-500"
-      href="/library/reading-list.html?page=reading"
+      href="/library/reading-list.html?reading=true"
     >
       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-400 transition-colors group-hover:text-slate-500 group-focus:text-slate-500 dark:text-md-300 dark:group-hover:text-md-200 dark:group-focus:text-md-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
@@ -383,7 +383,7 @@
                 <p class="text-xs text-slate-400 mt-1 space-x-1 text-ellipsis overflow-hidden whitespace-nowrap">by
                    <template x-for="author in book.authors" :key="author.id">
                       <a class="underline decoration-solid"
-                         :href="'/library/?aut=' + author.id" x-text="author.name"></a>
+                         :href="'/library/?a=' + author.id" x-text="author.name"></a>
                    </template>
                 </p>
 
@@ -461,7 +461,7 @@
             </td>
             <td class="space-x-1">
               <template x-for="author in book.authors" :key="author.id">
-                <a class="underline decoration-solid" :href="'/library/?aut=' + author.id"
+                <a class="underline decoration-solid" :href="'/library/?a=' + author.id"
                   x-text="author.name"></a>
               </template>
             </td>
@@ -475,7 +475,7 @@
             </td>
             <td class="space-x-1">
               <template x-for="series in book.series" :key="series.id">
-                <a class="underline decoration-solid" :href="'/library/?ser=' + series.id"
+                <a class="underline decoration-solid" :href="'/library/?s=' + series.id"
                   x-text="series.name"></a>
               </template>
             </td>
@@ -489,7 +489,7 @@
             </td>
             <td class="space-x-1">
               <template x-for="publisher in book.publishers" :key="publisher.id">
-                <a class="underline decoration-solid" :href="'/library/?pub=' + publisher.id"
+                <a class="underline decoration-solid" :href="'/library/?p=' + publisher.id"
                   x-text="publisher.name"></a>
               </template>
             </td>
@@ -513,7 +513,7 @@
             </td>
             <td class="space-x-1">
               <template x-for="language in book.languages" :key="language.id">
-                <a class="underline decoration-solid" :href="'/library/?lan=' + language.id"
+                <a class="underline decoration-solid" :href="'/library/?l=' + language.id"
                   x-text="language.name"></a>
               </template>
             </td>

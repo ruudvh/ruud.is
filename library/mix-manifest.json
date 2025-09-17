@@ -2,11 +2,6 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/authors.html": "/authors.html",
-    "/books.json": "/books.json",
-    "/fonts/Roboto/OFL.txt": "/fonts/Roboto/OFL.txt",
-    "/fonts/Roboto/README.txt": "/fonts/Roboto/README.txt",
-    "/fonts/Roboto/RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf": "/fonts/Roboto/RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf",
-    "/fonts/Roboto/static/RobotoFlex/RobotoFlex-Regular.ttf": "/fonts/Roboto/static/RobotoFlex/RobotoFlex-Regular.ttf",
     "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf": "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf",
     "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2": "/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2",
     "/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf": "/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf",
@@ -540,7 +535,6 @@
     "/images/covers/95.jpg": "/images/covers/95.jpg",
     "/images/covers/96.jpg": "/images/covers/96.jpg",
     "/images/covers/98.jpg": "/images/covers/98.jpg",
-    "/images/covers/no_cover.jpg": "/images/covers/no_cover.jpg",
     "/index.html": "/index.html",
     "/js/app.js.LICENSE.txt": "/js/app.js.LICENSE.txt",
     "/languages.html": "/languages.html",
@@ -572,5 +566,11 @@
     "/read-books.html": "/read-books.html",
     "/reading-list.html": "/reading-list.html",
     "/series.html": "/series.html",
-    "/tags.html": "/tags.html"
+    "/tags.html": "/tags.html",
+    "/images/covers/no_cover.jpg": "/images/covers/no_cover.jpg",
+    "/fonts/Roboto/OFL.txt": "/fonts/Roboto/OFL.txt",
+    "/fonts/Roboto/README.txt": "/fonts/Roboto/README.txt",
+    "/fonts/Roboto/RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf": "/fonts/Roboto/RobotoFlex-VariableFont_GRAD,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf",
+    "/fonts/Roboto/static/RobotoFlex/RobotoFlex-Regular.ttf": "/fonts/Roboto/static/RobotoFlex/RobotoFlex-Regular.ttf",
+    "/books.json": "/books.json"
 }
