@@ -380,7 +380,7 @@
                 <div class="font-normal text-ellipsis overflow-hidden whitespace-nowrap" x-text="book.title">
                 </div>
 
-                <p class="text-xs text-slate-400 mt-1 text-ellipsis overflow-hidden whitespace-nowrap">by
+                <p class="text-xs text-slate-400 mt-1 space-x-1 text-ellipsis overflow-hidden whitespace-nowrap">by
                    <template x-for="author in book.authors" :key="author.id">
                       <a class="underline decoration-solid"
                          :href="'/library/?aut=' + author.id" x-text="author.name"></a>
@@ -722,7 +722,7 @@
         </div>
 
         <div class="px-7 text-center p-2">
-          Copyright © 2022. Made by <a class="underline decoration-solid" href="https://ruud.is">ruud</a>.
+          Made by <a class="underline decoration-solid" href="https://ruud.is">ruud</a>.
         </div>
     </div>
 
